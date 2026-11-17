@@ -39,6 +39,8 @@
       lab_badge: '🏠 랩 게재 {n}편', lab_hint: '우리 랩 홈페이지 출판 목록 기준', lab_pubs_title: '우리 랩 게재 논문', lab_more: '랩 게재 논문 {n}편 · 출처',
       only_lab: '🏠 랩이 낸 저널만',
       only_research: '🔬 내 연구 관련만', research_hint: '제출 분야·소개에 내 연구 키워드가 있음 (data/research.yml)',
+      scope_ai: '🤖 AI 중심', scope_all: '전체 보기',
+      scope_hint_ai: 'DL·의료 AI·이미지 처리 또는 🔬 내 연구 관련 · 학회 {c} · 저널 {j}', scope_hint_all: '의생명·통증·신경과학·광학 전부 · 학회 {c} · 저널 {j}',
       if_label: 'Impact Factor', special: '특집호', rolling: '상시 투고',
       cand_dl: '제출 마감 (AoE 가정)', first_seen: '첫 발견', category: '분류',
       cand_notice: 'WikiCFP 에서 자동 수집한 후보입니다. 검증되지 않았고 질 낮은(약탈적) 학회가 섞여 있을 수 있으니 투고 전 반드시 확인하세요.',
@@ -83,6 +85,8 @@
       lab_badge: '🏠 Lab: {n}', lab_hint: 'Papers listed on our lab publication page', lab_pubs_title: 'Our lab’s papers', lab_more: '{n} lab paper(s) · sources',
       only_lab: '🏠 Journals our lab used',
       only_research: '🔬 Related to my research', research_hint: 'Submission areas / description mention my research keywords (data/research.yml)',
+      scope_ai: '🤖 AI focus', scope_all: 'Show all',
+      scope_hint_ai: 'DL · medical AI · image processing, or 🔬 my research · {c} conferences · {j} journals', scope_hint_all: 'Everything incl. biomedical, pain, neuro, optics · {c} conferences · {j} journals',
       if_label: 'Impact Factor', special: 'Special issue', rolling: 'Rolling submission',
       cand_dl: 'Submission deadline (AoE assumed)', first_seen: 'First seen', category: 'Categories',
       cand_notice: 'Automatically collected from WikiCFP. Unverified and may include low-quality (predatory) venues — check carefully before submitting.',
@@ -97,7 +101,11 @@
   const SUBMIT = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'registration', 'other']);
 
   // fields: 선택된 분야 집합 (비어 있으면 전체). 여러 개 선택 시 모두 해당하는 학회만 표시 (AND)
-  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false, onlyLab: false, onlyResearch: false };
+  const state = { tab: 'conf', scope: 'ai', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false, onlyLab: false, onlyResearch: false };
+  try { const s = localStorage.getItem('scope'); if (s === 'ai' || s === 'all') state.scope = s; } catch {}
+  // AI 중심 범위: DL·의료 AI·이미지 처리 분야이거나 🔬 내 연구 키워드가 걸린 곳
+  const AI_FIELDS = ['dl', 'medai', 'imgproc'];
+  const inScope = (x) => state.scope === 'all' || x.fields.some((f) => AI_FIELDS.includes(f)) || (x.research_score || 0) > 0;
   let DATA = null;
   // 즐겨찾기 (브라우저 로컬 저장)
   const FAV = new Set();
@@ -382,6 +390,7 @@
       return [d?.about, e?.about, ...(d?.topics || []), ...(e?.topics || []), ...(d?.features || []), ...(e?.features || [])].join(' ');
     };
     const match = (x, extra = '') =>
+      inScope(x) &&
       fs.every((f) => allFields(x).includes(f)) &&
       (!q || `${x.name} ${x.full} ${x.name_en || ''} ${x.full_en || ''} ${extra} ${x.details ? deepText(x) : ''}`.toLowerCase().includes(q));
 
@@ -470,6 +479,8 @@
       if (state.tab === 'cand' && DATA.notices?.length) html = noticesBlock() + html;
     }
     $('#list').innerHTML = html;
+    $('#cnt-conf').textContent = DATA.conferences.filter(inScope).length;
+    $('#cnt-journal').textContent = DATA.journals.filter(inScope).length;
     const n = $('#notice');
     n.hidden = state.tab !== 'cand';
     n.textContent = t.cand_notice;
@@ -537,6 +548,14 @@
       const b = e.target.closest('button'); if (!b) return;
       state.region = b.dataset.v; syncUi(); render();
     });
+    $('#scope-seg').addEventListener('click', (e) => {
+      const b = e.target.closest('button'); if (!b) return;
+      state.scope = b.dataset.v;
+      try { localStorage.setItem('scope', state.scope); } catch {}
+      // AI 중심으로 돌아올 때 범위 밖 분야 체크는 해제
+      if (state.scope === 'ai') for (const f of [...state.fields]) if (!AI_FIELDS.includes(f) && f !== 'optics') state.fields.delete(f);
+      syncUi(); render();
+    });
     $('#lang-seg').addEventListener('click', (e) => {
       const b = e.target.closest('button'); if (!b) return;
       setLang(b.dataset.v);
@@ -577,7 +596,15 @@
     document.querySelectorAll('.fchk input').forEach((b) => {
       b.checked = b.dataset.v === 'all' ? state.fields.size === 0 : state.fields.has(b.dataset.v);
       b.parentElement.classList.toggle('on', b.checked);
+      // AI 중심일 때 비-AI 분야는 흐리게 (🔬 관련 항목만 남으므로)
+      b.parentElement.classList.toggle('dim', state.scope === 'ai' && ['neuro', 'biomed'].includes(b.dataset.v));
     });
+    document.querySelectorAll('#scope-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === state.scope));
+    if (DATA) {
+      const t = T();
+      const c = DATA.conferences.filter(inScope).length, j = DATA.journals.filter(inScope).length;
+      $('#scope-hint').textContent = (state.scope === 'ai' ? t.scope_hint_ai : t.scope_hint_all).replace('{c}', c).replace('{j}', j);
+    }
     document.querySelectorAll('#region-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === state.region));
     document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('active', b.dataset.tab === state.tab));
     $('#sort').innerHTML = sorts.map(([v, l]) => `<option value="${v}">${l}</option>`).join('');
@@ -591,12 +618,13 @@
     $('#only-research').checked = state.onlyResearch;
   }
   function saveHash() {
-    const h = new URLSearchParams({ tab: state.tab, field: selFields().join(',') || 'all', region: state.region, sort: state.sort, lang });
+    const h = new URLSearchParams({ tab: state.tab, scope: state.scope, field: selFields().join(',') || 'all', region: state.region, sort: state.sort, lang });
     history.replaceState(null, '', '#' + h.toString());
   }
   function loadHash() {
     const h = new URLSearchParams(location.hash.slice(1));
     for (const k of ['tab', 'region', 'sort']) if (h.get(k)) state[k] = h.get(k);
+    if (h.get('scope') === 'ai' || h.get('scope') === 'all') state.scope = h.get('scope');
     const f = h.get('field');
     if (f) state.fields = new Set(f === 'all' ? [] : f.split(',').filter((x) => I18N.ko.fields[x]));
     if (!I18N.ko.sorts[state.tab]) state.tab = 'conf';
@@ -622,6 +650,7 @@
     $('#cnt-journal').textContent = DATA.journals.length;
     $('#cnt-cand').textContent = DATA.candidates.length + (DATA.notices?.length || 0);
     applyStatic();
+    syncUi();
     render();
     tick();
     setInterval(tick, 1000);

@@ -87,6 +87,11 @@ h1 { margin: 0; font-size: 22px; letter-spacing: -0.02em; }
 .fchk input { width: 15px; height: 15px; margin: 0; accent-color: var(--accent); cursor: pointer; }
 .fchk.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .fchk.all { border-style: dashed; }
+.scope-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.seg.scope button { padding: 6px 14px; font-size: 13.5px; }
+.seg.scope button.on { background: var(--accent); color: #fff; }
+.scope-hint { font-size: 12px; color: var(--ink-3); }
+.fchk.dim { opacity: 0.45; }
 .row { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--card); }
 .seg button { border: 0; background: none; color: var(--ink-2); font: inherit; font-size: 13px; padding: 5px 12px; cursor: pointer; }
