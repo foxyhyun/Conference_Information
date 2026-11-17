@@ -12,13 +12,13 @@
       changes_title: '최근 변경된 마감', chg_new: '추가', chg_changed: '변경', prev: '이전',
       months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'], this_month: '이번 달', items: '건', days_left: '일 남음', today: '오늘', passed: '지남',
       field_all: '전체 분야', field_hint: '분야를 여러 개 고르면 모두 해당하는 학회만 보입니다', also_hint: '부 분야 — 제출은 가능하지만 이 분야의 점수 순위에는 포함되지 않음',
-      fields: { dl: 'Deep Learning', medai: '의료 AI', imgproc: '이미지 처리', optics: 'Optics', neuro: 'Bio / Neuro' },
-      fields_tiny: { dl: 'DL', medai: '의료AI', imgproc: '영상처리', optics: 'Optics', neuro: 'Neuro' },
+      fields: { dl: 'Deep Learning', medai: '의료 AI', imgproc: '이미지 처리', optics: 'Optics', neuro: 'Neuro (신경과학)', biomed: '의생명 (Bio·임상·통증)' },
+      fields_tiny: { dl: 'DL', medai: '의료AI', imgproc: '영상처리', optics: 'Optics', neuro: 'Neuro', biomed: '의생명' },
       region_all: '전체', region_intl: '국제', region_domestic: '국내',
       sort: '정렬', only_upcoming: '마감 일정 있는 것만', target_first: '★ 타겟 먼저', search: '검색 (이름, 장소…)',
       sorts: {
-        conf: [['deadline', '마감 임박순'], ['tier', '티어순'], ['difficulty', '난이도순 (채택률 낮은 순)'], ['name', '이름순']],
-        journal: [['if', 'IF 높은 순'], ['lab', '랩 게재 많은 순'], ['tier', '티어순'], ['name', '이름순']],
+        conf: [['deadline', '마감 임박순'], ['research', '내 연구 관련도순'], ['tier', '티어순'], ['difficulty', '난이도순 (채택률 낮은 순)'], ['name', '이름순']],
+        journal: [['if', 'IF 높은 순'], ['research', '내 연구 관련도순'], ['lab', '랩 게재 많은 순'], ['tier', '티어순'], ['name', '이름순']],
         cand: [['deadline', '마감 임박순'], ['name', '이름순']],
         timeline: [['deadline', '날짜순']],
       },
@@ -38,6 +38,7 @@
       oa_map: { 'full OA': '완전 오픈액세스', hybrid: '하이브리드 (선택 OA)', subscription: '구독형' },
       lab_badge: '🏠 랩 게재 {n}편', lab_hint: '우리 랩 홈페이지 출판 목록 기준', lab_pubs_title: '우리 랩 게재 논문', lab_more: '랩 게재 논문 {n}편 · 출처',
       only_lab: '🏠 랩이 낸 저널만',
+      only_research: '🔬 내 연구 관련만', research_hint: '제출 분야·소개에 내 연구 키워드가 있음 (data/research.yml)',
       if_label: 'Impact Factor', special: '특집호', rolling: '상시 투고',
       cand_dl: '제출 마감 (AoE 가정)', first_seen: '첫 발견', category: '분류',
       cand_notice: 'WikiCFP 에서 자동 수집한 후보입니다. 검증되지 않았고 질 낮은(약탈적) 학회가 섞여 있을 수 있으니 투고 전 반드시 확인하세요.',
@@ -55,13 +56,13 @@
       changes_title: 'Recently changed deadlines', chg_new: 'added', chg_changed: 'changed', prev: 'was',
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], this_month: 'this month', items: 'items', days_left: 'days left', today: 'today', passed: 'passed',
       field_all: 'All fields', field_hint: 'Pick several fields to show only venues matching all of them', also_hint: 'Secondary field — accepts such submissions but is not ranked within this field',
-      fields: { dl: 'Deep Learning', medai: 'Medical AI', imgproc: 'Image Processing', optics: 'Optics', neuro: 'Bio / Neuro' },
-      fields_tiny: { dl: 'DL', medai: 'Med AI', imgproc: 'Img Proc', optics: 'Optics', neuro: 'Neuro' },
+      fields: { dl: 'Deep Learning', medai: 'Medical AI', imgproc: 'Image Processing', optics: 'Optics', neuro: 'Neuroscience', biomed: 'Biomedical (bio · clinical · pain)' },
+      fields_tiny: { dl: 'DL', medai: 'Med AI', imgproc: 'Img Proc', optics: 'Optics', neuro: 'Neuro', biomed: 'Biomed' },
       region_all: 'All', region_intl: 'International', region_domestic: 'Korea',
       sort: 'Sort', only_upcoming: 'Only with upcoming deadline', target_first: '★ Targets first', search: 'Search (name, place…)',
       sorts: {
-        conf: [['deadline', 'Deadline (soonest)'], ['tier', 'Tier score'], ['difficulty', 'Difficulty (lowest acceptance)'], ['name', 'Name']],
-        journal: [['if', 'Impact factor'], ['lab', 'Lab papers'], ['tier', 'Tier score'], ['name', 'Name']],
+        conf: [['deadline', 'Deadline (soonest)'], ['research', 'Research relevance'], ['tier', 'Tier score'], ['difficulty', 'Difficulty (lowest acceptance)'], ['name', 'Name']],
+        journal: [['if', 'Impact factor'], ['research', 'Research relevance'], ['lab', 'Lab papers'], ['tier', 'Tier score'], ['name', 'Name']],
         cand: [['deadline', 'Deadline (soonest)'], ['name', 'Name']],
         timeline: [['deadline', 'By date']],
       },
@@ -81,6 +82,7 @@
       oa_map: { 'full OA': 'Fully open access', hybrid: 'Hybrid (optional OA)', subscription: 'Subscription' },
       lab_badge: '🏠 Lab: {n}', lab_hint: 'Papers listed on our lab publication page', lab_pubs_title: 'Our lab’s papers', lab_more: '{n} lab paper(s) · sources',
       only_lab: '🏠 Journals our lab used',
+      only_research: '🔬 Related to my research', research_hint: 'Submission areas / description mention my research keywords (data/research.yml)',
       if_label: 'Impact Factor', special: 'Special issue', rolling: 'Rolling submission',
       cand_dl: 'Submission deadline (AoE assumed)', first_seen: 'First seen', category: 'Categories',
       cand_notice: 'Automatically collected from WikiCFP. Unverified and may include low-quality (predatory) venues — check carefully before submitting.',
@@ -95,7 +97,7 @@
   const SUBMIT = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'registration', 'other']);
 
   // fields: 선택된 분야 집합 (비어 있으면 전체). 여러 개 선택 시 모두 해당하는 학회만 표시 (AND)
-  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false, onlyLab: false };
+  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false, onlyLab: false, onlyResearch: false };
   let DATA = null;
   // 즐겨찾기 (브라우저 로컬 저장)
   const FAV = new Set();
@@ -180,7 +182,7 @@
     const fs = selFields();
     const pill = (label, v, on) => `<span class="pill ${on ? 'on' : ''}"><span>${label}</span><b>${v == null ? '–' : v.toFixed(2)}</b></span>`;
     // 종합지(모든 분야)는 선택한 분야만 표시
-    const shown = x.fields.length >= 5 ? x.fields.filter((f) => fs.includes(f)) : x.fields;
+    const shown = x.fields.length >= 6 ? x.fields.filter((f) => fs.includes(f)) : x.fields;
     const parts = shown.map((f) => pill(t.fields_tiny[f], x.score.byField[f], fs.includes(f)));
     parts.push(pill(t.score_all, x.score.overall, fs.length === 0));
     return `<div class="pills">${parts.join('')}</div>`;
@@ -190,6 +192,12 @@
   const allFields = (x) => x.fields;
   const fieldTags = (x) => `<div class="fields">${x.fields.map((f) => `<span class="ftag ${state.fields.has(f) ? 'on' : ''}">${T().fields[f]}</span>`).join('')}</div>`;
   const L = (v) => (v == null ? null : typeof v === 'object' ? (v[lang] ?? v.ko ?? v.en) : v);
+  // 🔬 내 연구 관련 키워드 칩
+  const researchTags = (x) => {
+    if (!x.research?.length || !DATA.research) return '';
+    const kw = (id) => DATA.research.find((k) => k.id === id);
+    return `<div class="rtags" title="${T().research_hint}">🔬 ${x.research.map((id) => `<span class="rtag ${kw(id)?.main ? 'main' : ''}">${esc(kw(id)?.[lang] || id)}</span>`).join('')}</div>`;
+  };
 
   function confCard(c, now) {
     const t = T();
@@ -268,6 +276,7 @@
           <div class="full">${esc(fullOf(c))}</div>
           ${where ? `<div class="meta">${where}</div>` : ''}
           ${fieldTags(c)}
+          ${researchTags(c)}
           ${scorePills(c)}${m.h5 ? `<span class="h5">h5 ${m.h5}${warn(c)}</span>` : warn(c)}
         </div>
         <div class="cdwrap">${cd}</div>
@@ -316,6 +325,7 @@
           <div class="name"><a href="${esc(j.link)}" target="_blank" rel="noopener">${esc(j.name)}</a> ${badges}</div>
           <div class="full">${esc(j.full)}</div>
           ${fieldTags(j)}
+          ${researchTags(j)}
           ${scorePills(j)}
         </div>
         <div class="cdwrap">
@@ -379,10 +389,12 @@
       let list = DATA.conferences.filter((c) =>
         match(c, c.editions.map((e) => e.place).join(' ')) && (state.region === 'all' || c.region === state.region));
       if (state.onlyFav) list = list.filter((c) => FAV.has(c.id));
+      if (state.onlyResearch) list = list.filter((c) => c.research_score);
       const nd = new Map(list.map((c) => [c.id, nextDeadline(c, now)]));
       if (state.onlyUpcoming || state.tab === 'timeline') list = list.filter((c) => nd.get(c.id));
       const cmp = {
         deadline: (a, b) => (nd.get(a.id)?.t ?? Infinity) - (nd.get(b.id)?.t ?? Infinity) || tierOf(b) - tierOf(a),
+        research: (a, b) => (b.research_score || 0) - (a.research_score || 0) || (nd.get(a.id)?.t ?? Infinity) - (nd.get(b.id)?.t ?? Infinity),
         tier: (a, b) => tierOf(b) - tierOf(a),
         difficulty: (a, b) => (a.metrics.accept_rate ?? 2) - (b.metrics.accept_rate ?? 2) || tierOf(b) - tierOf(a),
         name: (a, b) => nameOf(a).localeCompare(nameOf(b)),
@@ -393,10 +405,12 @@
     if (state.tab === 'journal') {
       let list = DATA.journals.filter((j) => match(j, `${j.publisher || ''} ${L(j.quick?.scope) || ''} ${(L(j.quick?.looks_for) || []).join(' ')} ${j.lab_pubs.map((x) => x.title).join(' ')}`));
       if (state.onlyLab) list = list.filter((j) => j.lab_pubs.length);
+      if (state.onlyResearch) list = list.filter((j) => j.research_score);
       if (state.onlyFav) list = list.filter((j) => FAV.has(j.id));
       const cmp = {
         if: (a, b) => (b.if ?? -1) - (a.if ?? -1),
         lab: (a, b) => b.lab_pubs.length - a.lab_pubs.length || (b.if ?? -1) - (a.if ?? -1),
+        research: (a, b) => (b.research_score || 0) - (a.research_score || 0) || (b.if ?? -1) - (a.if ?? -1),
         tier: (a, b) => tierOf(b) - tierOf(a),
         name: (a, b) => a.name.localeCompare(b.name),
       }[state.sort];
@@ -465,6 +479,7 @@
     $('#target-first').parentElement.style.display = state.tab === 'conf' ? '' : 'none';
     $('#only-fav').parentElement.style.display = isConf || state.tab === 'journal' ? '' : 'none';
     $('#only-lab').parentElement.style.display = state.tab === 'journal' ? '' : 'none';
+    $('#only-research').parentElement.style.display = state.tab === 'cand' ? 'none' : '';
     $('#changes').hidden = !(state.tab === 'conf' && DATA.recentChanges?.length);
     saveHash();
   }
@@ -536,6 +551,7 @@
     $('#target-first').addEventListener('change', (e) => { state.targetFirst = e.target.checked; render(); });
     $('#only-fav').addEventListener('change', (e) => { state.onlyFav = e.target.checked; render(); });
     $('#only-lab').addEventListener('change', (e) => { state.onlyLab = e.target.checked; render(); });
+    $('#only-research').addEventListener('change', (e) => { state.onlyResearch = e.target.checked; render(); });
     $('#list').addEventListener('click', (e) => {
       const b = e.target.closest('.fav'); if (!b) return;
       const id = b.dataset.fav;
@@ -572,6 +588,7 @@
     $('#target-first').checked = state.targetFirst;
     $('#only-fav').checked = state.onlyFav;
     $('#only-lab').checked = state.onlyLab;
+    $('#only-research').checked = state.onlyResearch;
   }
   function saveHash() {
     const h = new URLSearchParams({ tab: state.tab, field: selFields().join(',') || 'all', region: state.region, sort: state.sort, lang });

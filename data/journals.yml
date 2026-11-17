@@ -2014,3 +2014,256 @@ acs-nano:
         - Nanobiotechnology and nanofabrication
   sources:
     - https://pubs.acs.org/journal/ancac3
+nat-mach-intell:
+  name: Nat. Mach. Intell.
+  full: Nature Machine Intelligence
+  publisher: Springer Nature
+  link: https://www.nature.com/natmachintell/
+  if: 29.8
+  if_year: 2025
+  if_source: https://www.nature.com/natmachintell/journal-impact
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 머신러닝·로보틱스·AI 연구와 그 과학·사회적 영향
+      en: ML, robotics and AI research and its impact on science/society
+    format:
+      ko: 'Article: 본문 ≤3,500단어, 초록 ≤150단어, 그림/표 ≤6개'
+      en: 'Article: ≤3,500 words, abstract ≤150, ≤6 display items'
+    review:
+      ko: 전문 편집자 심사; 첫 편집 결정 중앙값 10일, 수락 231일
+      en: Professional editors; median 10 d to 1st decision, 231 d to accept
+    looks_for:
+      ko:
+        - 고품질 독창적 ML·AI·로보틱스 연구
+        - 타 과학 분야로의 파급력
+        - 딥러닝·컴퓨터비전 포함
+      en:
+        - High-quality original ML/AI/robotics research
+        - Impact on other scientific disciplines
+        - Deep learning and computer vision in scope
+  sources:
+    - https://www.nature.com/natmachintell/journal-impact
+    - https://www.nature.com/natmachintell/aims
+    - https://www.nature.com/natmachintell/content
+    - https://www.nature.com/natmachintell/our-publishing-models
+nat-comput-sci:
+  name: Nat. Comput. Sci.
+  full: Nature Computational Science
+  publisher: Springer Nature
+  link: https://www.nature.com/natcomputsci/
+  if: 20.3
+  if_year: 2025
+  if_source: https://www.nature.com/natcomputsci/journal-impact
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 계산 기법·수리모델 개발과 과학 문제 응용
+      en: Computational methods/models and their use across sciences
+    format:
+      ko: 'Article: 본문 ≤3,500단어, 초록 ≤150단어, 그림/표 ≤6개'
+      en: 'Article: ≤3,500 words, abstract ≤150, ≤6 display items'
+    review:
+      ko: 전문 편집자 심사; 첫 편집 결정 중앙값 13일, 수락 193일
+      en: Professional editors; median 13 d to 1st decision, 193 d to accept
+    looks_for:
+      ko:
+        - 연구를 진전시키는 획기적 알고리즘·도구
+        - 컴퓨팅을 새롭게 활용한 방법론
+        - 다학제적 계산과학
+      en:
+        - Groundbreaking algorithms, tools, frameworks
+        - Novel uses of computing for new insights
+        - Multidisciplinary computational science
+  sources:
+    - https://www.nature.com/natcomputsci/journal-impact
+    - https://www.nature.com/natcomputsci/aims
+    - https://www.nature.com/natcomputsci/content
+    - https://www.nature.com/natcomputsci/our-publishing-models
+elight:
+  name: eLight
+  full: eLight
+  publisher: Springer Nature / CIOMP (Light Publishing Group)
+  link: https://link.springer.com/journal/43593
+  if: 31.4
+  if_year: 2025
+  if_source: https://link.springer.com/journal/43593
+  oa: full OA
+  apc_usd: 2590
+  quick:
+    scope:
+      ko: 광학·포토닉스·전자기학 전 분야, 신흥·융합 주제 중심
+      en: All of optics/photonics/EM, emphasis on emerging cross-field topics
+    format:
+      ko: 공식 페이지에 분량 제한 명시 없음
+      en: No length limits stated on pages read
+    review:
+      ko: 첫 결정까지 중앙값 5일
+      en: Median 5 days submission to first decision
+    looks_for:
+      ko:
+        - 최고 수준의 원고
+        - 광학 관련 신흥 주제
+        - 광학 관련 융합 연구
+      en:
+        - The finest manuscripts
+        - Emerging optics topics
+        - Cross-disciplinary research related to optics
+  sources:
+    - https://link.springer.com/journal/43593
+    - https://link.springer.com/journal/43593/aims-and-scope
+    - https://link.springer.com/journal/43593/how-to-publish-with-us
+j-microsc:
+  name: J. Microsc.
+  full: Journal of Microscopy
+  publisher: Wiley / Royal Microscopical Society
+  link: https://onlinelibrary.wiley.com/journal/13652818
+  if: 1.9
+  if_year: 2025
+  if_source: https://www.rms.org.uk/journal/
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 현미경·영상분석 기법 발전과 새로운 응용
+      en: Advances in microscopy/image analysis and new applications
+    format:
+      ko: 읽은 페이지에 분량 제한 명시 없음
+      en: No length limits stated on pages read
+    review:
+      ko: 공개된 심사 기간 정보 없음
+      en: No review timing published on pages read
+    looks_for:
+      ko:
+        - 현미경 기법의 최신 발전
+        - 최첨단 현미경이 핵심인 연구
+        - 영상 처리·분석, 생시료 동적 분석
+      en:
+        - Latest advances in microscopy techniques
+        - Research where state-of-the-art microscopy is key
+        - Image processing/analysis incl. live specimens
+  sources:
+    - https://www.rms.org.uk/journal/
+    - Wiley page https://onlinelibrary.wiley.com/journal/13652818 returned 403
+bioinformatics:
+  name: Bioinformatics
+  full: Bioinformatics
+  publisher: Oxford University Press / ISCB
+  link: https://academic.oup.com/bioinformatics
+  if: 5.5
+  if_year: 2025
+  if_source: https://academic.oup.com/bioinformatics
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 계산생물학 전반, 바이오이미지 인포매틱스 분야 포함
+      en: Computational biology incl. a bioimage informatics section
+    format:
+      ko: Original Paper ≤7쪽(약 5,000단어), App Note ≤4쪽
+      en: Original Paper ≤7 pp (~5,000 words); App Note ≤4 pp
+    review:
+      ko: 단일맹검, 보통 심사자 3인; 기간 미공개
+      en: Single-anonymized, typically 3 reviewers; timing not stated
+    looks_for:
+      ko:
+        - 바이오이미지 인포매틱스
+        - 데이터·텍스트 마이닝
+        - 소프트웨어 도구(Application Note)
+      en:
+        - Bioimage informatics
+        - Data and text mining
+        - Software tools (Application Notes)
+  sources:
+    - https://academic.oup.com/bioinformatics
+    - https://academic.oup.com/bioinformatics/pages/author-guidelines
+ap-nexus:
+  name: Adv. Photon. Nexus
+  full: Advanced Photonics Nexus
+  publisher: SPIE / Chinese Laser Press
+  link: https://www.spiedigitallibrary.org/journals/advanced-photonics-nexus
+  if: 6.3
+  if_year: null
+  if_source: https://spie.org/publications/spie-journals (via search snippet; year label not visible; site blocked direct fetch)
+  oa: full OA
+  apc_usd: 1675
+  quick:
+    scope:
+      ko: 광학·포토닉스 전반 (Advanced Photonics 자매지)
+      en: Optics and photonics (sibling of Advanced Photonics)
+    format:
+      ko: 분량 제한 확인 불가 (사이트 접근 차단)
+      en: Length limits not verified (site blocked fetch)
+    review:
+      ko: 심사 기간 확인 불가
+      en: Review timing not verified
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://spie.org/publications/spie-journals (search snippet)
+    - >-
+      https://www.spiedigitallibrary.org/journals/advanced-photonics-nexus/author-guidelines (search snippet: APC $1,675; no APC for
+      Review/Tutorial)
+  if_verified: false
+intell-comput:
+  name: Intell. Comput.
+  full: Intelligent Computing
+  publisher: AAAS (Science Partner Journal) / Zhejiang Lab
+  link: https://spj.science.org/journal/icomputing
+  if: 6.4
+  if_year: 2025
+  if_source: https://spj.science.org/journal/icomputing (via search snippet; site returned 403 to direct fetch)
+  oa: full OA
+  apc_usd: 0
+  quick:
+    scope:
+      ko: 지능형 컴퓨팅 연구·기술 혁신 공유 플랫폼
+      en: Platform for intelligent computing research and breakthroughs
+    format:
+      ko: 분량 제한 확인 불가 (사이트 접근 차단)
+      en: Length limits not verified (site blocked fetch)
+    review:
+      ko: 심사 기간 확인 불가
+      en: Review timing not verified
+    looks_for:
+      ko:
+        - 지능형 컴퓨팅 최신 연구
+        - 기술적 돌파구
+      en:
+        - Latest intelligent computing research
+        - Technological breakthroughs
+  sources:
+    - https://spj.science.org/journal/icomputing (search snippet)
+    - 'https://spj.science.org/page/icomputing/apc (search snippet: all APCs currently covered by Zhejiang Lab)'
+    - https://spj.science.org/page/icomputing/about (search snippet)
+  if_verified: false
+jcb:
+  name: J. Cell Biol.
+  full: Journal of Cell Biology
+  publisher: Rockefeller University Press
+  link: https://rupress.org/jcb
+  if: 6.1
+  if_year: null
+  if_source: https://rupress.org/jcb/pages/journal-metrics (via search snippet; year label not visible; site bot check blocked direct fetch)
+  oa: hybrid
+  apc_usd: 6000
+  quick:
+    scope:
+      ko: 세포생물학; 새 방법은 Tools 유형으로 투고 가능
+      en: Cell biology; new methods via the Tools article type
+    format:
+      ko: Article·Report·Tools 유형; 분량 제한 미확인
+      en: Articles, Reports, Tools; length limits not verified
+    review:
+      ko: 심사 기간 확인 불가
+      en: Review timing not verified
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://rupress.org/jcb/pages/journal-metrics (search snippet)
+    - 'https://rupress.org/jcb/pages/publication-fees-and-access-options (search snippet: Gold APC $6,000; Green $2,500 page charge)'
+  if_verified: false

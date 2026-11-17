@@ -1992,3 +1992,840 @@ ksbns:
     - https://ksbns2026.org/
     - https://ksbns2026.org/abstract/
     - https://www.newswire.co.kr/newsRead.php?no=1036298
+isc:
+  about: >-
+    Annual meeting of the American Heart Association / American Stroke Association, billed as the world's premier stroke and brain health
+    conference. Covers basic science to large clinical trials across 22 abstract categories. The 2027 edition is in Houston.
+  topics:
+    - Acute Ischemic Stroke Management
+    - Arteriosclerosis, Thrombosis, and Vascular Biology
+    - Brain Health and Cognitive Impairment
+    - Epidemiology, Risk Factors, and Prevention
+    - Hemorrhagic Stroke Treatment
+    - Imaging in Stroke
+    - Molecular and Cellular Brain Science
+    - Neurocritical Care and Complex Brain Physiology
+    - Neuroimmunology and Inflammation in Stroke
+    - Neurointervention
+    - Omics, Big Data, Precision Medicine, Bioengineering, and Artificial Intelligence
+    - Regenerative Medicine and Novel Therapeutic Strategies
+    - Rehabilitation and Recovery
+    - Translational Research, Therapeutic Development, and Biomarkers
+    - Vascular Malformations, Aneurysms, Moyamoya, and Other Vascular Conditions
+  features:
+    - 'Submission fee: $45 AHA members, $95 nonmembers; primary category required'
+    - Abstracts graded by the review team for the selected category
+    - Accepted abstracts published online on the Stroke journal website (not LB/OGCT)
+    - Top 30 abstracts invited to submit a manuscript to Stroke (expedited review)
+    - 'Late-Breaking Science / Ongoing Clinical Trials track: 2,500 characters, max 3 graphics'
+    - Abstract-based ISC awards and travel grants for students, trainees, early-career
+  acceptance_rate: null
+  sources:
+    - https://professional.heart.org/en/meetings/international-stroke-conference/submit-science
+esoc:
+  about: >-
+    The 13th annual conference of the European Stroke Organisation, held onsite in Vienna in 2027 and marking ESO's 20th anniversary.
+    Official figures: 4,200+ participants, 100+ countries, 2,000+ abstracts submitted.
+  topics:
+    - Regular abstracts (all aspects of stroke science and care)
+    - YSPR (Young Stroke Physicians and Researchers)
+    - Ongoing Trials (poster only)
+    - Late Breaking Science
+  features:
+    - Abstract submission opened 2 Nov 2026; regular deadline 19 Jan 2027, 17:00 CET
+    - YSPR for researchers 35 or under/in training; top 2 get an ESO Summer/Winter School place
+    - Accepted abstracts published in the peer-reviewed journal (embargo lifts 19 May 2027)
+    - 'Presentation types: oral, paper poster, e-poster'
+    - Travel grants for LIC/LMIC presenters; Young Investigator Awards (35 or under)
+    - Notification by late Feb 2027; LBA notification by end of March 2027
+  acceptance_rate: null
+  sources:
+    - https://eso-stroke.org/esoc2027/
+    - https://eso-stroke.org/esoc2027/abstracts/
+    - https://eso-stroke.org/wp-content/uploads/ESOC2027-Flyer.pdf
+wsc:
+  about: >-
+    Annual international stroke congress of the World Stroke Organization, attracting 2,500+ participants; hosts rotate Asia/Oceania,
+    Americas, Europe, Africa/Middle East. The 2026 (18th) congress was held Oct 21-23 at COEX, Seoul; 2027 dates and host are not yet
+    announced.
+  topics:
+    - Artificial Intelligence
+    - Basic Science
+    - Biomarkers
+    - Cognition and Dementia
+    - Epidemiology
+    - Intracranial Hemorrhage
+    - Large Artery Disease
+    - Neurocritical Care
+    - Neuroimaging
+    - Prevention
+    - Rehabilitation and Life After Stroke
+    - Small Vessel Disease
+    - Thrombectomy
+    - Thrombolysis
+  features:
+    - Abstract text 250 words incl. acknowledgements; images JPG ≤500 KB, ≤600x800 px
+    - Since 2026, ongoing trials accepted if results are ready by the congress
+    - Presented in Plenary, Large International Registry, Sub-Plenary or e-poster sessions
+    - Abstracts of presenters registered by early-bird deadline published in Int J Stroke
+    - 'Separate late-breaking track (2026: closed 25 May, 23:59 CEST)'
+    - Young Investigator Award
+  acceptance_rate: null
+  sources:
+    - https://www.world-stroke.org/what-we-do/uniting-the-stroke-community/world-stroke-congress/
+    - https://worldstrokecongress.org/abstract-guidelines-submission/
+    - https://worldstrokecongress.org/proposal-abstract-topics/
+    - https://www.world-stroke.org/news-and-blog/news/be-part-of-the-wsc-2026-program-submit-your-abstracts/
+brain-pet:
+  about: >-
+    Joint meeting of the 33rd International Symposium on Cerebral Blood Flow, Metabolism and Function (BRAIN) and the 18th BRAIN PET
+    conference, organised by ISCBFM. Brings together basic, translational and clinical neuroscientists; about 1,000 delegates expected. The
+    2027 theme is how AI is changing stroke, dementia and brain-injury research.
+  topics:
+    - BRAIN (cerebral blood flow, metabolism and function)
+    - BRAIN PET (quantification of brain function with PET)
+  features:
+    - 'Symposium proposals: lead organizer must be ISCBFM member; up to 5 speakers, 90 min, 300-word summary'
+    - Proposals judged on scientific excellence, relevance, diversity, programme balance
+    - 'Submission site: brain2027.sciconf.cn'
+    - ISCBFM Lab Travel Bursary listed
+    - 2025 abstracts published in JCBFM as 'Brain & Brain PET 2025 Abstracts'
+  acceptance_rate: null
+  sources:
+    - https://iscbfm.memberclicks.net/brain-2027
+    - https://iscbfm.memberclicks.net/symposia2025
+    - https://brain2027.sciconf.cn/en/web/index/36328
+    - https://www.ovid.com/journals/jcbfm/pdf/00004647-202545011-00316~brain-brain-pet-2025-abstracts
+aaic:
+  about: >-
+    Annual conference of the Alzheimer's Association, described as the largest international conference on dementia science. Spans basic
+    science, biomarkers, clinical, care and public health, in person and online. The 2027 edition is in Chicago.
+  topics:
+    - Basic Science and Pathogenesis
+    - Biomarkers (non-neuroimaging)
+    - Neuroimaging
+    - Clinical Manifestations
+    - Dementia Care and Psychosocial Factors
+    - Drug Development
+    - Public Health
+    - Genetics
+    - Human Neuropathology
+    - Molecular and Cell Biology
+  features:
+    - Theme/topic/subtopic required; peer review, then Program Committee picks orals
+    - Oral or poster; in-person or online presentation
+    - 'Developing Topics (Mar 30-Apr 9): poster only unless late-breaking'
+    - Encore abstracts are not published in Alzheimer's & Dementia
+    - Conference fellowships and awards (nominations Jan 5-Feb 5); Beyond the Data art competition
+  acceptance_rate: null
+  sources:
+    - https://aaic.alz.org/
+    - https://aaic.alz.org/abstracts/
+    - https://aaic.alz.org/abstracts/overview.asp
+    - https://aaic.alz.org/abstracts/abstr-aaic.asp
+adpd:
+  about: >-
+    International conference on Alzheimer's, Parkinson's and related neurological disorders, organised by Kenes Group and held each March in
+    hybrid format. Covers mechanisms, clinical trials, diagnostics, drug discovery, new therapies and prevention.
+  topics:
+    - Mechanisms
+    - Clinical Trials
+    - Diagnostics (fluid markers, neuroimaging)
+    - Drug Discovery
+    - New Therapies
+    - Prevention
+  features:
+    - 280-word structured abstract (Objectives/Methods/Results/Conclusions); 20-word title; JPG graphs
+    - Assigned Theme/Topic/Sub-Topic; accepted as oral or poster
+    - Up to 5 posters and 1 oral per participant
+    - Accepted abstracts published on conference website; no embargo
+    - Junior Faculty Awards (students, up to 5 yrs post-doctorate; not for LB)
+  acceptance_rate: null
+  sources:
+    - https://adpd.kenes.com/
+    - https://adpd.kenes.com/abstracts/abstract-submission/
+iasp:
+  about: >-
+    Biennial congress of the International Association for the Study of Pain and the largest gathering of pain professionals. The 21st
+    congress (Bangkok, 2026) drew 6,500+ attendees and 2,500+ expected abstracts. The 22nd is in Geneva in October 2028.
+  topics: []
+  features:
+    - Poster abstracts only; English, online; original unpublished work (encores allowed)
+    - 'Separate late-breaking poster track (2026: closed 6 May)'
+    - 'Programme: plenaries, topical workshops, poster sessions, refresher courses, SIG symposia'
+    - 2024 poster abstracts (2,000+) freely browsable online
+    - SIG Poster Awards, travel grants and financial aid
+  acceptance_rate: null
+  sources:
+    - https://www.iasp-pain.org/events/world-congress-on-pain/
+    - https://worldcongressonpain.secure-platform.com/a/page/About-root/About
+    - https://worldcongressonpain.secure-platform.com/a/page/submisisons/Poster-Abstracts
+    - https://www.geneve.com/fileadmin/user_upload/B2C/Pages/What_s_on/CVB_link-in-bio/Flyer_IASP28_web.pdf
+arvo:
+  about: >-
+    ARVO's annual meeting, held each May, is the flagship meeting of the largest eye and vision research organization in the world (more
+    than 11,000 members). The society is organized into 13 Scientific Sections and 3 Cross-sectional Groups.
+  topics:
+    - Anatomy and Pathology/Oncology
+    - Biochemistry/Molecular Biology
+    - Clinical, Data Science & Population Health Research
+    - Cornea
+    - Eye Movements/Strabismus/Amblyopia/Neuro-ophthalmology
+    - Glaucoma
+    - Immunology/Microbiology
+    - Lens
+    - Physiology/Pharmacology
+    - Retina
+    - Retinal Cell Biology
+    - Visual Neuroscience
+    - Visual Psychophysics/Physiological Optics
+  features:
+    - 2,500-character limit (title + body + image captions); up to 2 images
+    - One first-author abstract per person; 2027 ARVO membership required
+    - Reviewed by the AMPC, scheduled into paper (oral) or poster sessions; presentation preference incl. On-Demand
+    - Accepted abstracts published in IOVS online and the Online Planner
+    - Travel grants and MIT Outstanding Poster Award applied for only during abstract submission
+    - Early-submission raffle for registration discounts (Oct 16-Nov 28)
+  acceptance_rate: null
+  sources:
+    - https://www.arvo.org/annual-meeting/abstracts/
+    - https://www.arvo.org/annual-meeting/abstracts/policies-and-procedures
+    - https://www.arvo.org/membership/scientific-sections
+    - https://www.arvo.org/about/dates-deadlines
+aslms:
+  about: >-
+    ASLMS's annual conference, held each April, is described as the premier US event for laser, light, and energy-based technologies in
+    medicine, combining workshops, plenary sessions and abstract presentations on new developments.
+  topics:
+    - Laser, light, and energy-based device applications (multidisciplinary)
+    - Injectables and topicals used in combination
+  features:
+    - Abstract window Sep 1 - Dec 8; separate late-breaking window Jan 4 - Feb 1
+    - Presenting Author Scholarship for students/trainees accepted for oral presentation
+    - Peggy Nowell, RN Scholarship for Nursing/Allied Health oral presenters
+    - Conference abstracts published in Lasers in Surgery and Medicine (as for 2026)
+    - Abstract awards given at the conference
+  acceptance_rate: null
+  sources:
+    - https://www.aslms.org/annual-conference
+    - https://www.aslms.org/annual-conference/abstracts/
+walt:
+  about: >-
+    WALT is an international body promoting research, education and clinical use of photobiomodulation with lasers and other light sources,
+    formed in 1994 in Barcelona at a joint congress of ILTA and ISLAM. Its site lists a 'Biannual WALT Congress' as a membership benefit,
+    but no next congress is announced.
+  topics: []
+  features: []
+  acceptance_rate: null
+  sources:
+    - https://waltpbm.org/
+bps:
+  about: >-
+    The Biophysical Society's annual meeting, held each February, brings together nearly 5,000 scientists from the life, physical and
+    computational sciences, with over 600 daily posters and more than 500 speakers selected from submitted abstracts.
+  topics:
+    - Subgroup symposia (Saturday)
+    - 20 symposia incl. 4 Subgroup symposia
+    - 4 workshops
+    - 'Frontier symposium: genome engineering'
+    - 'Frontier symposium: molecular underpinnings of disease'
+  features:
+    - 300 words (title + body), 25-author limit, no graphics
+    - All abstracts need a sponsor; reviewed and scheduled by the 2027 Program Committee
+    - Late abstract fee $175 (non-refundable); late abstracts are NOT published
+    - Flash Talks and Symp/Workshop Select give attendees a stake in the program
+    - Travel Awards, Image Contest and Poster Competitions
+  acceptance_rate: null
+  sources:
+    - https://www.biophysics.org/2027meeting
+    - https://www.biophysics.org/2027meeting/general-info
+    - https://www.biophysics.org/meetings-events/annual-meeting/2027-annual-meeting/abstracts/submission-guidelines
+    - https://www.biophysics.org/2027meeting/abstracts/submission-instructions
+cellbio:
+  about: >-
+    The joint annual meeting of the American Society for Cell Biology and EMBO, held each December in the US, with keynotes, symposia, a
+    Digital Poster Program and roundtables.
+  topics: []
+  features:
+    - Abstracts submitted for talks and posters
+    - Tiered deadlines (early talk/poster, extended, final); rates rise after extended (2026)
+    - Digital Poster Program
+    - 'Separate travel grant application (2026: Aug 1-31)'
+  acceptance_rate: null
+  sources:
+    - https://www.ascb.org/meetings-events/future-ascb-meetings/
+    - https://www.ascb.org/cellbio2026/
+grc-optics-bio:
+  about: >-
+    A Gordon Research Conference begun in 1965 as 'Lasers in Medicine and Biology', held every 24 months in July at Bates College, Maine.
+    The 2026 theme was 'Enabling Technologies and Clinical Applications to Advance Science and Medicine with Light'; the next edition
+    (expected 2028) is not yet posted.
+  topics: []
+  features:
+    - Attendance by application and registration via MyGRC account
+    - Poster presentations by attendees
+  acceptance_rate: null
+  sources:
+    - https://www.grc.org/optics-and-photonics-in-medicine-and-biology-conference/
+brain-init:
+  about: >-
+    Open meeting of BRAIN Initiative awardees, federal partners (NIH, NSF, DARPA, IARPA, FDA), non-federal partners and the public. The 10th
+    conference (2024) drew 800+ in person and ~1,700 virtually. Moved from annual to biennial.
+  topics: []
+  features:
+    - Open to the public; free to attend (2026 notice)
+    - Plenaries, symposia and Innovation Domain sessions
+    - Poster abstract book (370+ abstracts in 2026)
+    - Scholar Spotlight awardee session
+  acceptance_rate: null
+  sources:
+    - https://www.braininitiative.org/events/brainconference
+    - https://www.braininitiative.org/event/2026-biennial-brain-initiative-conference/
+    - https://www.braininitiative.org/events/2026-brain-conference/
+ismrm:
+  about: >-
+    The largest annual MRI meeting, held jointly by ISMRM and ISMRT, bringing together thousands of researchers and clinicians. Held every
+    May; 2028 is a joint meeting with ESMRMB in Copenhagen.
+  topics: []
+  features:
+    - 'Types: Standard, MRI in Clinical Practice, MD-PhD Tandem (new 2027)'
+    - 750-word body + up to 5 figures, 100-word synopsis, 40-word impact statement
+    - Peer review by AMPC-appointed experts, assigned by category
+    - Oral, digital poster or paper poster assigned by AMPC; in-person presentation required
+    - Electronic proceedings only, online 2 weeks before meeting for registrants
+    - Stipend program for trainees
+  acceptance_rate: null
+  sources:
+    - https://www.ismrm.org/27m/
+    - https://www.ismrm.org/27m/call/
+    - https://www.ismrm.org/meetings-workshops/future-ismrm-meetings/
+bmes:
+  about: >-
+    Annual meeting of the Biomedical Engineering Society (6,700+ members). Held every October in a US city, organized into 20 technical
+    tracks.
+  topics: []
+  features:
+    - 'General abstract: intro & methods 50-250 words each, results/conclusions 50-350; figures optional'
+    - 20 technical tracks; podium or poster presentation
+    - Separate late-breaking (poster only) and undergraduate abstract calls
+    - Abstract fee $65 ($90 extended window); in-person presentation and registration required
+  acceptance_rate: null
+  sources:
+    - https://member.bmes.org/future-annual-meetings
+    - https://www.bmes.org/2026/annualmeeting/abstracts
+    - https://www.bmes.org/annualmeeting
+ner:
+  about: IEEE EMBS international conference on neural engineering; 2027 is the 13th edition, following San Diego (Nov 2025), now in Milan.
+  topics:
+    - Preclinical Models and Enabling Technologies for Neural Engineering
+    - AI and Computational Neuroscience for Brain Diagnosis and Understanding
+    - Personalized and Adaptive Neurotherapies
+    - Neurorehabilitation and Long-Term Monitoring
+    - Clinical Translation and Real-World Impact
+  features:
+    - 'Two tracks: 6-page full papers and 1-page abstracts (posters)'
+    - All contributions peer-reviewed (2025 CFP)
+    - Accepted full papers in IEEE Xplore proceedings (2025 CFP)
+    - Oral/poster selection; workshops, mini-symposia, special sessions
+  acceptance_rate: null
+  sources:
+    - https://neuro.embs.org/2027/
+    - https://neuro.embs.org/2025/call-for-papers/
+brain-stim-conf:
+  about: >-
+    The largest international brain stimulation conference, organized by Elsevier and integrated with the journal Brain Stimulation. Lyon
+    2027 is the 7th edition, co-chaired by Charlotte Stagg and Marom Bikson.
+  topics: []
+  features:
+    - 'Poster abstract: text only, max 300 words'
+    - Committee review for fit with meeting scope
+    - Accepted abstracts published as a Brain Stimulation supplement with DOIs
+    - Keynotes, plenaries, symposia, posters, 'Innovations Corner' for pre-market tech
+    - International Brain Stimulation Award and Early Career Award
+  acceptance_rate: null
+  sources:
+    - https://www.elsevier.com/events/conferences/international-brain-stimulation-conference
+    - https://www.elsevier.com/events/conferences/international-brain-stimulation-conference/about
+    - https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference/participate
+    - https://api.journals.elsevier.com/media/eoudndel/2602180932_brain-stimulation-2027-2pp-a5-flyer-_1_.pdf
+csh-neuro:
+  about: >-
+    Cold Spring Harbor Laboratory meeting on CNS barriers (BBB); 2027 is CSHL's tenth BBB conference. Aims to combine genetic model-organism
+    approaches with insights into vertebrate BBB physiology and development.
+  topics:
+    - Emerging Concepts and Hot Topics in CNS Barriers
+    - Barrier Biology Across the Lifespan
+    - Cell Biology & Physiology of CNS Barriers
+    - Barrier Neighborhoods & Cellular Crosstalk
+    - Extrinsic Influences on CNS Barriers
+    - Modeling Barriers in Health and Disease
+    - CNS Barrier Damage and Repair in Injury, Infection, and Disease
+    - CNS Barrier Access for Therapeutics
+  features:
+    - Most talks selected from openly submitted abstracts (some invited)
+    - Organizers and session chairs select talks/posters; posted online
+    - In-person expected; virtual option (Zoom, digital posters, Slack)
+    - 'Keynote: Jeremy Nathans (Johns Hopkins)'
+  acceptance_rate: null
+  sources:
+    - https://meetings.cshl.edu/meetings.aspx?meet=BBB
+    - https://meetings.cshl.edu/meetingshome.aspx
+kos:
+  name_en: KOS Annual Meeting
+  full_en: The Korean Ophthalmological Society Annual Meeting
+  about: >-
+    Korea's largest ophthalmology meeting, held twice a year by the Korean Ophthalmological Society: spring (late Mar-early Apr, usually
+    BEXCO Busan) and fall (Oct-Nov, Seoul area), the fall edition often joint with international meetings (APOIS, KCJ). The 136th was Oct
+    30-Nov 1, 2026 at Grand Walkerhill Seoul; the 137th (spring 2027) is not yet announced.
+  topics:
+    - Cornea
+    - Glaucoma
+    - Retina
+    - Cataract & Refractive Surgery
+    - Strabismus & Pediatric Ophthalmology
+    - Neuro-ophthalmology
+    - Oculoplastics
+    - Clinical Visual Electrophysiology
+    - Contact Lens
+    - Uveitis
+  features:
+    - 'Formats: oral / e-poster / video / symposium (study-group organized); original or case'
+    - 'Review: 3 independent reviewers per study group; all abstracts reviewed; rejected orals may convert to e-poster'
+    - 'Criteria: originality, validity of methods, clarity of results, importance/contribution'
+    - 'Awards: best oral 1 per subspecialty (10), 6 e-posters, 4 videos, KRW 500,000 each'
+    - Corresponding author must be a KOS member; presenter must pre-register; withdrawal/no-show penalized at next meeting
+    - English title max 200 chars; domestic talks need Korean + English title/authors
+  acceptance_rate: null
+  sources:
+    - https://kosmeeting.org/abstract/2026_136/abstract/info.html
+    - https://kosmeeting.org/abstract/2026_136/society/sub04.html
+    - https://kosmeeting.org/abstract/2026_135/abstract/info.html
+kstroke:
+  name_en: ICSU 2027
+  full_en: International Conference STROKE UPDATE (ICSU) 2027
+  about: >-
+    The Korean Stroke Society's annual international conference, held each autumn. 2025 was joint with ICAS at Paradise Hotel Busan (Nov
+    27-29); 2026 was combined with the World Stroke Congress (COEX Seoul, Oct 21-23). The society calendar lists ICSU 2027 for Nov 11-13,
+    2027 at Seoul Dragon City (separate domestic spring meeting Apr 17, 2027, Kimdaejung Convention Center).
+  topics:
+    - Acute Management & Prognosis of Stroke
+    - Basic Neuroscience in Stroke
+    - Epidemiology
+    - Interesting case
+    - Interventional Neuroradiology
+    - Intracranial Atherosclerosis
+    - Neuroimaging
+    - Pathophysiology of Stroke
+    - Rehabilitation & Restorative Therapy in Stroke
+    - Risk Factors and Prevention of Stroke
+    - Artificial Intelligence (AI)
+  features:
+    - 'English abstract: 400 words text only, or 300 words + 1 image/table (ICSU 2025 rules)'
+    - 'Preferred type: oral, poster, or either'
+    - Online submission via website; acceptance emailed to presenting author
+    - Presenting authors must register with full payment by pre-registration deadline
+    - Awards & travel grants; abstract book and program book published online
+  acceptance_rate: null
+  sources:
+    - https://www.stroke.or.kr/bbs/?code=schedule&last_year=2027
+    - https://www.strokeupdate-kss.org/abstract/
+    - https://www.strokeupdate-kss.org/
+kda:
+  name_en: KDA Conference
+  full_en: Korean Dementia Association Spring/Fall Conference
+  about: >-
+    The Korean Dementia Association holds spring (April) and fall (November) scientific meetings each year, plus its international IC-KDA
+    (joint with ASAD in 2025). The 2026 fall meeting was Nov 14 at the Science & Technology Convention Center, Seoul, themed on blood
+    biomarkers, cognitively unimpaired stage and patient-centred policy. 2027 dates not yet announced.
+  topics:
+    - Basic Science and Pathogenesis
+    - Genetics
+    - Human neuropathology
+    - Molecular and Cell Biology
+    - Biomarkers (Neuroimaging, Fluid, Digital)
+    - Multi-modal comparisons
+    - Prognostic utility
+    - Clinical Manifestations / BPSD
+    - Behavioral Neurology
+    - Neuropsychological assessment
+    - Dementia Care
+    - Pharmacological & Non-pharmacological treatment (anti-amyloid, anti-tau)
+    - Risk factors, Public health and Epidemiology
+    - Prevention
+    - Health service
+  features:
+    - Call for oral and poster presentations (cases included) on dementia
+    - Oral submissions may be switched to poster after review
+    - Online submission via the meeting website only
+    - 'Fall 2026: abstracts due Oct 11, pre-registration Nov 1 (~1 month before)'
+  acceptance_rate: null
+  sources:
+    - https://www.dementia.or.kr/workshop/convention/202609/abstract/
+    - https://www.dementia.or.kr/workshop/convention/202609/
+    - https://www.dementia.or.kr/bbs/?code=schedule
+ksmcb:
+  name_en: KSMCB Winter Conference 2027 / ICKSMCB
+  full_en: Korean Society for Molecular and Cellular Biology Winter Conference 2027; International Conference of the KSMCB (ICKSMCB)
+  about: >-
+    KSMCB runs an autumn annual meeting (international conference ICKSMCB; 2026: Oct 5-8, Daejeon Convention Center, English) and a winter
+    conference. The next event is the 2027 Winter Conference (Jan 4-6, Yongpyong Resort); ICKSMCB 2027 dates are not yet announced.
+  topics:
+    - Aging
+    - Biochemistry
+    - Biotechnology (incl. Bioimaging)
+    - Cancer Biology
+    - Cell Cycle and Cell Death
+    - Cell Signaling
+    - Intracellular Compartments and Architecture
+    - Computational and Systems Biology
+    - Developmental Biology
+    - Drug Discovery and Translational Medicine
+    - Genetics and Genome Biology
+    - Immunology
+    - Metabolism
+    - Microbiology
+    - Neuroscience
+    - Plant Science
+    - Proteostasis
+    - RNA Biology
+    - Stem Cell and Regeneration
+  features:
+    - English abstract up to 1,200 chars (oral speakers 1,500); registrants only
+    - Selected posters get a 2-min Data Blitz talk
+    - Young Investigator (talk + KRW 100k) and Excellent Poster awards (KRW 100k)
+    - Abstracts by Nov 26 go in printed book; later ones in web PDF only
+    - 'ICKSMCB: 1,200-char abstract, 5+ keywords; travel grant, YI and poster awards'
+  acceptance_rate: null
+  sources:
+    - https://www.ksmcb.or.kr/abstract/2027_winter/info.html
+    - https://www.ksmcb.or.kr/abstract/2027_winter/green/info.html
+    - https://www.ksmcb.or.kr/icksmcb2026/about/sub03.html
+    - https://www.ksmcb.or.kr/icksmcb2026/program/sub06.html
+kspain:
+  name_en: KPS 2026 Annual Meeting
+  full_en: The Korean Pain Society Annual Meeting (KPS 2026)
+  about: >-
+    Annual meeting of the Korean Pain Society (founded 1985). KPS 2026 runs Nov 20-22, 2026 at COEX Magok, Seoul (Nov 20 is an International
+    Workshop for overseas participants); English, ~800 attendees from 20 countries (600 domestic, 200 international), 100 posters, 70
+    sponsors/100 booths. 2027 not yet announced.
+  topics:
+    - Pain Research (Animal, Neuroscience, Big Data, Epidemiology)
+    - Cancer Pain & Postoperative Pain
+    - Neuropathic Pain, CRPS, and Dysfunctional Pain
+    - Spinal Pain
+    - Headache & Facial Pain
+    - Interventions
+    - Diagnosis
+    - Ultrasound
+    - Complications & Pharmacology
+    - Miscellaneous Issues
+  features:
+    - 'English abstract: Background/Methods/Results/Conclusion, 2,880 bytes (case 2,400), max 2 refs and 2 figures/tables'
+    - Registration required before abstract submission
+    - Some accepted abstracts selected for S-Poster presentation
+    - 'Foreign presenters: registration fee waived if abstract accepted'
+    - 'Program: workshop, symposia, clinical/morning sessions, posters, gala dinner'
+  acceptance_rate: null
+  sources:
+    - https://www.painfree.or.kr/abstract/2026_fall/eng/Congress_Overview.php
+    - https://www.painfree.or.kr/abstract/2026_fall/eng/green/info.html
+    - https://www.painfree.or.kr/abstract/2026_fall/eng/intro.php
+ksbb:
+  name_en: KSBB Spring Meeting 2027
+  full_en: The Korean Society for Biotechnology and Bioengineering Spring Meeting and International Symposium
+  about: >-
+    KSBB (founded 1984; 10,000+ active members, ten subdivisions, ten regional branches) holds a spring (April) and fall (Sep-Oct) national
+    meeting with an international symposium every year. 2026 spring was at Yeosu Expo (Apr 8-10) and fall at Jeju ICC (Sep 30-Oct 2). 2027
+    spring not yet announced.
+  topics:
+    - Antibody Engineering and Cell Culture Engineering
+    - Bio-based Chemicals and Cosmetic Bioengineering
+    - Biomedical and Biopharmaceutical Engineering
+    - Energy and Environmental Biotechnology
+    - Food Biotechnology
+    - Microbial and Bioprocess Engineering
+    - Nano-Bioengineering
+    - Protein and Enzyme Engineering
+    - Synthetic Biology and Metabolic Engineering
+    - Tissue Engineering and Biomaterial Engineering
+    - Gene and Cell Therapy
+    - AI-X session
+  features:
+    - English abstract up to 1,200 chars, 3+ keywords, online submission
+    - Abstracts published as submitted in the Abstract Book (no proofreading)
+    - 'Tracks: division sessions, fresh-PhD orals, student orals (MS/PhD), 3-minute speech & e-poster'
+    - Symposia are invited only
+    - Presenting authors must register online by the set date
+  acceptance_rate: null
+  sources:
+    - https://www.ksbb.or.kr/abstract/2026_spring/
+    - https://www.ksbb.or.kr/abstract/2026_spring/green/info.html
+    - https://www.ksbb.or.kr/abstract/2026_spring/overview/about.html
+    - https://www.ksbb.or.kr/conference/past_conferences.html
+usasp:
+  about: >-
+    Annual scientific meeting of the US Association for the Study of Pain, bringing together basic, translational and clinical pain
+    researchers plus pain management and advocacy. Held yearly around March; the society is linked to The Journal of Pain. The 2027 meeting
+    is in Denver, Mar 15-18 (pre-conference workshops Mar 15).
+  topics:
+    - Basic/preclinical science
+    - Clinical/translational science
+    - Engagement of people with lived experience
+    - Pain management
+    - Advocacy
+  features:
+    - Poster abstract max 250 words, single paragraph, no figures/tables, no abbreviations
+    - One abstract per presenting author; unpublished work strongly preferred
+    - Posters presented in person
+    - Abstracts published as a supplement of The Journal of Pain
+    - Trainee poster awards and travel awards (registration, up to 3 nights, travel); decisions January 2027
+    - Separate calls for symposia and pre-conference workshops
+  acceptance_rate: null
+  sources:
+    - https://www.usasp.org/posterabstracts
+    - https://www.usasp.org/event-details/2027-usasp-annual-scientific-meeting
+    - https://www.usasp.org/callforworkshops2027
+efic:
+  about: >-
+    The main congress of the European Pain Federation (EFIC). The 15th edition, Pain in Europe XV, takes place in Glasgow on 21-23 April
+    2027, with more than 2,500 colleagues from across the pain field expected, spanning basic, translational and clinical research.
+  topics:
+    - Peripheral Mechanisms of Pain and Nociception
+    - Central Mechanisms and Central Sensitization
+    - Pain Modulation Systems
+    - Neuroimmune and Inflammatory Mechanisms
+    - Genetics, Epigenetics and Molecular Biology of Pain
+    - Brain Mechanisms and Neuroimaging in Pain
+    - Pain Phenotyping and Biomarkers
+    - Experimental and Translational Pain Models
+    - Mechanisms of Neuropathic Pain
+    - Transition from Acute to Chronic Pain
+    - Neuropathic Pain Disorders
+    - Headache and Orofacial Pain
+    - Novel and Emerging Analgesic Therapies
+    - Neuromodulation and Neurostimulation
+  features:
+    - Abstract body max 250 words (title 25 words, upper case); up to 3 figures and 3 tables
+    - Blind peer review by the Scientific Programme Committee, which assigns the format
+    - Preference for poster, Guided Poster Walk or oral (oral for top-rated abstracts)
+    - Accepted abstracts appear in the official congress abstract publication
+    - Poster prizes only for Round 1 abstracts (ECRs/PhD students); late-breaking opens Dec 2026, posters only
+    - Financial aid for applicants from low-resource/currency-restricted countries
+  acceptance_rate: null
+  sources:
+    - https://europeanpainfederation.eu/efic2027/
+    - https://europeanpainfederation.eu/efic2027/efic2027-abstract-submission/
+    - https://europeanpainfederation.eu/efic2027/efic2027-congress-topics/
+    - https://europeanpainfederation.eu/news/efic2027-abstract-submission-now-open/
+neupsig:
+  about: >-
+    Biennial international congress of IASP's Neuropathic Pain Special Interest Group (NeuPSIG, founded 1999, one of IASP's largest SIGs).
+    Recent editions: London (2019), Lisbon (2023), Berlin (2025); the 2027 congress is in Helsinki, 2-4 September.
+  topics:
+    - Emerging mechanisms and molecular targets in neuropathic pain
+    - Advances in phenotyping, biomarkers, and precision pain medicine
+  features:
+    - Invites speaker nominations, workshop proposals and abstracts (deadlines not yet posted)
+    - Programme includes oral abstract sessions and poster presentations
+    - Focused on neuropathic pain mechanisms, assessment, prevention and treatment
+  acceptance_rate: null
+  sources:
+    - https://neupsigcongress.org/
+    - https://www.iasp-pain.org/membership/special-interest-groups-sigs/neuropathic-pain-neupsig/
+asra-pain:
+  about: >-
+    ASRA Pain Medicine's fall Annual Pain Medicine Meeting, held every November; the 26th edition is in Atlanta in 2027. ASRA notes award
+    abstracts are presented to about 1,000 attendees. It accepts research (Scientific) abstracts but is clinically oriented.
+  topics:
+    - Acute Pain
+    - Chronic Pain
+    - Regional Anesthesia
+    - Emerging Technology
+    - Education
+    - Case Series (5+ patients)
+    - Medically Challenging Cases
+    - Safety/QA/QI Projects
+  features:
+    - Accepts research abstracts (IRB approval/waiver required), but clinically oriented
+    - 500-word body; up to 3 tables, 2 images, 5 references (not counted)
+    - Blind review by 2+ members (1-9 scale); ASRA states it is not peer review
+    - All accepted abstracts are ePosters; some in moderated oral poster sessions
+    - RAPM lists titles/authors; full text only for award abstracts
+    - Best of Meeting, resident/fellow travel awards (members only); late-breaking window (no awards)
+  acceptance_rate: null
+  sources:
+    - https://asra.com/events-education/event-item/2027/11/18/events/26th-annual-pain-medicine-meeting
+    - https://asra.com/events-education/past-events/past-pain-medicine-meetings/fall-2025/abstracts
+    - https://asra.com/about-asra/deadlines/deadline-item/2026/08/11/events/abstract-deadline-annual-pain-medicine-meeting
+kasp:
+  name_en: KASP Scientific Meeting
+  full_en: Scientific Meeting of the Korean Association for the Study of Pain (IASP Korean Chapter)
+  about: >-
+    Meetings of the Korean Association for the Study of Pain, founded on 2 Sep 1983 as the Korean branch (chapter) of IASP. A
+    multidisciplinary society of anesthesiology, neurology, neurosurgery, rehabilitation, dentistry and basic scientists, holding spring
+    (March) and fall (Sep-Oct) meetings. Its journal, International Journal of Pain, is KCI-listed.
+  topics:
+    - Head and Neck Pain (2026 fall theme)
+    - Neuropathic pain/trigeminal neuralgia
+    - Cervicogenic headache
+    - Basic pain research
+    - Ultrasound-guided interventions
+  features:
+    - English-only abstracts; originals use Background & objective/Methods/Results/Conclusions
+    - Online submission only; scientific committee selects, notifies individually
+    - Poster presentation only (on site, 90x180 cm)
+    - Two best poster awards
+    - Ultrasound-guided block workshop alongside (2026 fall)
+  acceptance_rate: null
+  sources:
+    - https://www.koreapain.org/
+    - https://www.iasp-pain.org/membership/chapters/south-korea/
+    - https://www.koreapain.org/abstract/2026_fall/info.html
+    - https://www.koreapain.org/abstract/2026_fall/green/info.html
+    - https://www.koreapain.org/abstract/2026_spring/intro.html
+cvmi:
+  about: >-
+    Annual microscopy image analysis workshop at CVPR. The 2026 edition was the 11th (CVPR 2026, Denver, Jun 4, hybrid), renamed 'Computer
+    Vision and Multimodal Microscopy Image Analysis'. No 2027 workshop page yet (CVPR workshop proposal decisions due Dec 23, 2026).
+  topics:
+    - Microscopy image generation, annotation, augmentation, enhancement
+    - Open-source datasets, software, benchmarking
+    - Object detection, segmentation, classification
+    - Stitching and registration
+    - Tracking and event detection
+    - Shape, texture and 3D analysis
+    - Disease classification and prediction
+    - Domain adaptation, OOD, foundation models
+    - Explainability and domain knowledge integration
+    - Mitigating hallucinations / reliable models
+    - Multimodal microscopy + omics integration
+    - AI-based cancer scoring
+    - Efficient methods for drug design
+  features:
+    - CVPR format, 8 pages excluding references; over-length papers rejected without review
+    - Double-blind per CVPR policy, via CMT; no supplementary or rebuttal
+    - 'Archival: accepted papers in CVPR Workshops proceedings (CVF Open Access + IEEE Xplore), IEEE copyright transfer'
+    - Hard deadlines, no extensions; one author must present
+    - 2026 also had a Work-in-Progress Spotlight deadline (Mar 31 AoE)
+  acceptance_rate: null
+  sources:
+    - https://cvmi-workshop.github.io/callForPaper.html
+    - https://cvmi-workshop.github.io/dates.html
+    - https://cvmi-workshop.github.io/submission.html
+    - https://openaccess.thecvf.com/CVPR2026_workshops/CVMI
+    - https://cvpr.thecvf.com/Conferences/2027/Dates
+    - https://cvpr.thecvf.com/Conferences/2027
+bic:
+  about: >-
+    BioImage computing workshop held with ICCV/ECCV, running almost yearly since 2015 (CVPR). Recent: ICCV 2025 (Honolulu), ECCV 2026 (Sep
+    9, Malmö area). Contact: Alexander Krull, University of Birmingham. Nothing announced yet for the expected next host, ICCV 2027.
+  topics:
+    - Light and electron microscopy restoration and reconstruction
+    - Deep learning for bioimaging
+    - 3D registration
+    - Segmentation of subcellular objects, cells, animals
+    - Learning with little or no training data
+    - Multimodal analysis (correlative LM/EM)
+    - Cell and organism tracking
+    - Motion estimation
+    - Automated behavior recognition
+    - Diffusion computation
+    - Statistical shape analysis
+    - Image-based phenotyping
+    - Benchmarking and large labelled datasets
+    - Interactive analysis
+  features:
+    - Papers in main-conference (ECCV/ICCV) style, submitted via OpenReview
+    - Double-blind; supplementary due with the paper
+    - >-
+      Archival: CFP says accepted papers appear in the conference proceedings; ICCV 2025 BIC papers are in CVF Open Access workshop
+      proceedings
+    - '2026 timeline: submission Jul 20 (extended), camera-ready Aug 15, workshop Sep 9 (no timezone stated)'
+    - Scope explicitly lists LM/EM restoration and reconstruction
+  acceptance_rate: null
+  sources:
+    - https://bioimagecomputing.com
+    - https://bioimagecomputing.com/call-for-papers/
+    - https://openaccess.thecvf.com/ICCV2025_workshops/BIC
+    - https://eccv2024.ecva.net/virtual/2026/workshop/3079
+    - https://iccv.thecvf.com/
+ntire:
+  about: >-
+    Annual image restoration and enhancement workshop plus challenges at CVPR. The 2026 edition was the 11th (Jun 4, Denver, streamed on
+    Zoom) with 47 challenges. No 2027 page yet.
+  topics:
+    - Image/video denoising
+    - Super-resolution
+    - Deblurring
+    - Inpainting
+    - Dehazing, deraining, desnowing
+    - Demosaicing
+    - Compression artifact removal
+    - Shadow, glare, reflection removal
+    - Low-light enhancement
+    - Hyperspectral and light field imaging
+    - Image quality assessment
+    - Restoration on mobile / constrained devices
+    - Depth estimation, segmentation, saliency
+    - Image generation and translation
+  features:
+    - CVPR format, 8 pages excluding references, double column
+    - Double-blind; no dual submission; papers accepted at CVPR not allowed
+    - 'Archival: CVPR 2026 Workshops proceedings (CVF Open Access + IEEE Xplore)'
+    - Later deadline for challenge papers and papers reviewed elsewhere (Mar 22 in 2026)
+    - Challenge tracks incl. light field SR and image denoising, with awards session
+  acceptance_rate: null
+  sources:
+    - https://www.cvlai.net/ntire/2026/
+    - https://cvpr.thecvf.com/Conferences/2027/Dates
+    - https://cvpr.thecvf.com/Conferences/2027
+i2k:
+  about: >-
+    Conference for developers, researchers and students in computational image analysis of microscopy data, centred on open-source tool
+    tutorials. Recent editions: Milan 2024 (Human Technopole, Oct 23-25) and I2KxBINA 2026 with BioImaging North America (Madison, WI, Sep
+    27-Oct 2, hybrid). No 2027/2028 edition announced yet.
+  topics:
+    - Computational and multiscale imaging
+    - Image analysis with QuPath, Fiji, napari, CellProfiler
+    - Deep learning segmentation and restoration (Cellpose, StarDist, SAM, CAREamics)
+    - Metadata and data formats (N5, OME-Zarr)
+    - Image publication practices
+    - Colocalization, FLIM/phasor analysis
+    - Microscope control, AI-driven acquisition
+    - LLM tools for image analysis
+    - Volume EM, expansion microscopy
+    - Intravital microscopy
+    - Cell tracking benchmarks
+  features:
+    - Talks, interactive tutorials, vendor hands-on workshops and posters
+    - Talk/poster/workshop proposals via an Airtable form
+    - 2026 poster submission closed Aug 10; no abstract format published
+    - Hybrid; recorded talks posted on YouTube
+    - Travel awards and BINA awards (e.g. open-source imaging award)
+  acceptance_rate: null
+  sources:
+    - https://www.i2kconference.org/
+    - https://www.bioimagingnorthamerica.org/events/i2kxbina2026/
+    - https://events.humantechnopole.it/event/1/
+cosyne:
+  about: >-
+    Founded in 2004, Cosyne is a forum for experimental and theoretical systems neuroscience on the neural basis of behavior and cognition,
+    drawing over 1,000 researchers yearly. 2027: Montréal, main meeting Mar 11-14, workshops Mar 15-16. Abstract submission for 2027 is
+    closed; outcomes in Dec 2026.
+  topics:
+    - Systems neuroscience
+    - Computational neuroscience
+    - Theory and modeling of neural systems
+    - Neural basis of behavior
+    - Neural basis of cognition
+    - Computational biology
+  features:
+    - 'Abstract: 2-page PDF (A4/Letter), title ≤100 chars, 300-word text summary (only part published)'
+    - 'Double-blind since 2020; criteria: significance, originality, clarity, relevance to Cosyne audience'
+    - 'Outcome: talk / poster / reject'
+    - Pure ML without brain ties or single-neuron work without systems implications usually not accepted
+    - Travel grants; 2 days of workshops after main meeting
+  acceptance_rate: null
+  sources:
+    - https://www.cosyne.org
+    - https://www.cosyne.org/abstracts

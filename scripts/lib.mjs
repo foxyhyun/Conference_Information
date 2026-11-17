@@ -20,6 +20,13 @@ export const writeJson = (f, obj) => {
 
 const NAMED_TZ = { AOE: -12, UTC: 0, GMT: 0, PST: -8, PDT: -7, EST: -5, EDT: -4, CET: 1, CEST: 2, KST: 9, JST: 9 };
 
+/** 알아들을 수 있는 시간대 표기인지 (검사기용) */
+export function isKnownTz(tz) {
+  if (tz == null) return true;
+  const s = String(tz).trim().toUpperCase();
+  return NAMED_TZ[s] !== undefined || /^(?:UTC|GMT)?\s*[+-]\s*\d{1,2}(?::?\d{2})?$/.test(s);
+}
+
 /** "UTC-8", "AoE", "UTC+05:30", "PST" → 분 단위 오프셋 (없으면 AoE) */
 export function tzOffsetMinutes(tz) {
   if (!tz) return -12 * 60;

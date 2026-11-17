@@ -6,7 +6,8 @@
 #    medai    = 의료 인공지능
 #    imgproc  = 이미지 처리
 #    optics   = Optics / Photonics
-#    neuro    = Bio / Neuroscience
+#    neuro    = Neuroscience (신경과학)
+#    biomed   = 의생명 (Biomedical: 임상·세포생물·의공학·안과·통증 등)
 #
 #  region: intl(국제) | domestic(국내)
 #  target: true  → 사이트에서 ★ 고정 표시
@@ -193,7 +194,7 @@ conferences:
   - id: embc
     name: EMBC
     full: IEEE Engineering in Medicine and Biology Conference
-    fields: [medai, neuro, optics]
+    fields: [medai, neuro, optics, biomed]
     region: intl
     link: https://embc.embs.org/
     scrape: { url: "https://embc.embs.org/{year}/important-dates/", label: after }
@@ -247,7 +248,7 @@ conferences:
   - id: pw-bios
     name: Photonics West (BiOS)
     full: SPIE Photonics West — BiOS (Biomedical Optics)
-    fields: [optics, neuro, medai]
+    fields: [optics, neuro, medai, biomed]
     region: intl
     link: https://spie.org/conferences-and-exhibitions/photonics-west
     metrics: { tier: 0.65 }
@@ -264,7 +265,7 @@ conferences:
   - id: optica-biophotonics
     name: Optica Biophotonics Congress
     full: Optica Biophotonics Congress (incl. Optics in the Life Sciences)
-    fields: [optics, neuro]
+    fields: [optics, neuro, biomed]
     region: intl
     link: https://www.optica.org/events/congress/biophotonics_congress/
     scrape: { url: "https://www.optica.org/events/congress/biophotonics_congress/", timezone: UTC-5 }
@@ -273,7 +274,7 @@ conferences:
   - id: ecbo
     name: ECBO
     full: European Conferences on Biomedical Optics
-    fields: [optics, medai]
+    fields: [optics, medai, biomed]
     region: intl
     link: https://www.optica.org/events/congress/european_conferences_on_biomedical_optics/
     metrics: { tier: 0.6 }
@@ -297,7 +298,7 @@ conferences:
   - id: fom
     name: Focus on Microscopy
     full: Focus on Microscopy (FOM) — International Conference on 3D Image Processing in Microscopy / Confocal Microscopy
-    fields: [optics, neuro, imgproc]
+    fields: [optics, neuro, imgproc, biomed]
     region: intl
     link: https://www.focusonmicroscopy.org/
     metrics: { tier: 0.6 }
@@ -313,7 +314,7 @@ conferences:
   - id: abc
     name: SPIE ABC
     full: SPIE Advanced Biophotonics Conference (한국광학회 주관)
-    fields: [optics, medai, neuro]
+    fields: [optics, medai, neuro, biomed]
     region: intl
     link: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14016
     metrics: { tier: 0.5 }
@@ -339,7 +340,7 @@ conferences:
   - id: fnirs
     name: fNIRS
     full: Society for functional Near-Infrared Spectroscopy Biennial Meeting
-    fields: [neuro, optics]
+    fields: [neuro, optics, biomed]
     region: intl
     link: https://fnirs.org/conferences/
     metrics: { tier: 0.6 }
@@ -350,7 +351,7 @@ conferences:
   - id: sfn
     name: SfN Neuroscience
     full: Society for Neuroscience Annual Meeting
-    fields: [neuro]
+    fields: [neuro, biomed]
     region: intl
     link: https://www.sfn.org/meetings
     scrape: { url: "https://www.sfn.org/meetings/neuroscience-{year}/general-information/dates-and-deadlines", timezone: UTC-5, yearless: true, exclude: "Art of Neuroscience|booth|switch|presenters to" }
@@ -359,7 +360,7 @@ conferences:
   - id: ohbm
     name: OHBM
     full: Organization for Human Brain Mapping Annual Meeting
-    fields: [neuro, medai]
+    fields: [neuro, medai, biomed]
     region: intl
     link: https://www.humanbrainmapping.org/
     scrape: { url: "https://www.humanbrainmapping.org/{year}CallforContent/", timezone: UTC-6 }
@@ -368,7 +369,7 @@ conferences:
   - id: fens
     name: FENS Forum
     full: FENS Forum of Neuroscience
-    fields: [neuro]
+    fields: [neuro, biomed]
     region: intl
     link: https://www.fens.org/meetings
     metrics: { tier: 0.6 }
@@ -432,7 +433,7 @@ conferences:
   - id: kosombe
     name: 대한의용생체공학회 학술대회
     full: 대한의용생체공학회 춘계/추계 학술대회 (KOSOMBE)
-    fields: [medai, optics, neuro]
+    fields: [medai, optics, neuro, biomed]
     region: domestic
     link: https://www.kosombe.or.kr/
     watch: https://www.kosombe.or.kr/
@@ -467,7 +468,7 @@ conferences:
   - id: ksbns
     name: 한국뇌신경과학회 학술대회
     full: 한국뇌신경과학회 정기학술대회 (KSBNS)
-    fields: [neuro]
+    fields: [neuro, biomed]
     region: domestic
     link: https://www.ksbns.org/
     watch: https://www.ksbns.org/
@@ -478,6 +479,461 @@ conferences:
         link: https://www.ksbns.org/
         deadlines:
           - { type: other, at: "2027-01-10 23:59", label: "Call for Symposia 마감" }
+
+  # ---------------- 의생명 / 뇌졸중 · 치매 · 통증 · 안과 · 광생물조절 (2026-11 추가) ----------------
+  - id: isc
+    name: ISC
+    full: International Stroke Conference (American Heart Association / American Stroke Association)
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://professional.heart.org/en/meetings/international-stroke-conference
+    metrics:
+      tier: 0.65
+    editions:
+      - {year: 2027, date: 'Feb 10-12, 2027 (pre-cons Feb 9)', place: 'Houston, Texas, USA (George R. Brown Convention Center)', link: https://professional.heart.org/en/meetings/international-stroke-conference/submit-science, timezone: UTC-5, deadlines: [{type: abstract, at: '2026-08-18', label: Regular abstract submission - closed}, {type: abstract, at: 2026-10-28 23:59, label: Late-Breaking Science & Ongoing Clinical Trials abstracts (CDT) - closed}, {type: other, at: 2026-12-31 23:59, label: Last day to request abstract withdrawal (in writing)}]}
+
+  - id: esoc
+    name: ESOC
+    full: European Stroke Organisation Conference
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://eso-stroke.org/esoc2027/
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'May 19-21, 2027', place: 'Vienna, Austria', link: https://eso-stroke.org/esoc2027/, timezone: UTC+1, deadlines: [{type: abstract, at: 2027-01-19 17:00, label: Regular abstract & YSPR submission (CET)}, {type: abstract, at: 2027-02-25 17:00, label: Ongoing Trials abstracts (poster only) (CET)}, {type: abstract, at: '2027-02-25', label: Late Breaking Abstract ends (opens 20 Jan 2027; time not stated)}]}
+
+  - id: wsc
+    name: WSC
+    full: World Stroke Congress (World Stroke Organization)
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://worldstrokecongress.org/
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027}
+
+  - id: brain-pet
+    name: BRAIN & BRAIN PET
+    full: >-
+      BRAIN & BRAIN PET: International Symposium on Cerebral Blood Flow, Metabolism and Function & International Conference on Quantification of Brain Function
+      with PET (ISCBFM)
+    fields:
+      - neuro
+      - biomed
+      - optics
+    region: intl
+    link: https://iscbfm.memberclicks.net/brain-2027
+    metrics:
+      tier: 0.6
+    editions:
+      - {year: 2027, date: 'May 9-12, 2027', place: 'Suzhou, China (Suzhou Jinji Lake Conference Center)', link: https://brain2027.sciconf.cn/en/web/index/36328, deadlines: [{type: other, at: '2026-11-03', label: Symposium proposal deadline - closed}, {type: abstract, at: '2026-12-18', label: Abstract submission deadline (extended)}]}
+
+  - id: aaic
+    name: AAIC
+    full: Alzheimer's Association International Conference
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://aaic.alz.org/
+    metrics:
+      tier: 0.65
+    editions:
+      - {year: 2027, date: 'Jul 18-21, 2027 (workshops Jul 16-17; AAIC For All Jul 22)', place: 'Chicago, USA (McCormick Place) and online', link: https://aaic.alz.org/, deadlines: [{type: abstract, at: '2027-01-11', label: General abstract & session submission deadline}, {type: abstract, at: '2027-01-18', label: ISTAART-related submission deadline}, {type: abstract, at: '2027-04-09', label: Developing Topics submission closes (opens Mar 30)}]}
+
+  - id: adpd
+    name: AD/PD
+    full: AD/PD International Conference on Alzheimer's and Parkinson's Diseases and Related Neurological Disorders
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://adpd.kenes.com/
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'Mar 16-20, 2027', place: 'Barcelona, Spain (hybrid)', link: https://adpd.kenes.com/, timezone: UTC+1, deadlines: [{type: abstract, at: '2026-09-08', label: 'Regular abstract deadline (Sep 1, extended to Sep 8) - closed'}, {type: abstract, at: 2026-11-18 23:59, label: Late-breaking abstract deadline (midnight CET)}, {type: notification, at: '2026-12-02', label: Late-breaking notification}, {type: registration, at: '2026-12-09', label: Early registration savings end}]}
+
+  - id: iasp
+    name: IASP World Congress on Pain
+    full: IASP World Congress on Pain (International Association for the Study of Pain)
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://www.iasp-pain.org/events/world-congress-on-pain/
+    metrics:
+      tier: 0.65
+    editions:
+      - {year: 2028, date: 'Oct 4-7, 2028', place: 'Geneva, Switzerland (Palexpo)', link: https://www.geneve.com/fileadmin/user_upload/B2C/Pages/What_s_on/CVB_link-in-bio/Flyer_IASP28_web.pdf}
+
+  - id: arvo
+    name: ARVO
+    full: ARVO Annual Meeting (Association for Research in Vision and Ophthalmology)
+    fields:
+      - biomed
+      - optics
+      - medai
+    region: intl
+    link: https://www.arvo.org/annual-meeting/
+    metrics:
+      tier: 0.65
+    editions:
+      - {year: 2027, date: 'May 2-6, 2027', place: 'San Diego, CA, USA', link: https://www.arvo.org/annual-meeting/abstracts/, timezone: UTC-5, deadlines: [{type: abstract, at: 2026-12-04 17:00, label: Abstract submission (5pm U.S. EST; ARVO 2027 membership required)}, {type: notification, at: '2027-01-14', label: Accept/reject notification to first authors}, {type: notification, at: '2027-02-11', label: Scheduling/presentation type notification}]}
+
+  - id: aslms
+    name: ASLMS
+    full: American Society for Laser Medicine and Surgery Annual Conference
+    fields:
+      - optics
+      - biomed
+    region: intl
+    link: https://www.aslms.org/annual-conference
+    metrics:
+      tier: 0.45
+    editions:
+      - {year: 2027, date: 'Apr 15-18, 2027 (pre-conference Apr 14)', place: 'Dallas, Texas, USA (Hilton Anatole)', link: https://aslms2027.eventscribe.net/, timezone: UTC-6, deadlines: [{type: abstract, at: 2026-12-08 13:00, label: Abstract submission (closes 1:00 PM CST; opened Sep 1)}, {type: other, at: 2026-12-08 13:00, label: Presenting Author Scholarship application}, {type: abstract, at: 2027-02-01 13:00, label: 'Late-breaking abstracts (window Jan 4 - Feb 1, 1:00 PM CST)'}]}
+
+  - id: walt
+    name: WALT
+    full: World Association for Photobiomodulation Therapy (WALT) Congress
+    fields:
+      - optics
+      - biomed
+    region: intl
+    link: https://waltpbm.org/
+    metrics:
+      tier: 0.4
+
+  - id: bps
+    name: BPS
+    full: Biophysical Society 71st Annual Meeting
+    fields:
+      - biomed
+      - optics
+    region: intl
+    link: https://www.biophysics.org/2027meeting
+    metrics:
+      tier: 0.6
+    editions:
+      - {year: 2027, date: 'Feb 20-24, 2027', place: 'Philadelphia, PA, USA (Pennsylvania Convention Center)', link: https://www.biophysics.org/2027meeting, timezone: UTC-5, deadlines: [{type: abstract, at: 2027-01-05 23:59, label: Late abstract submission ($175 fee; late abstracts not published)}]}
+
+  - id: cellbio
+    name: Cell Bio
+    full: Cell Bio - An ASCB|EMBO Meeting
+    fields:
+      - biomed
+    region: intl
+    link: https://www.ascb.org/meetings-events/future-ascb-meetings/
+    metrics:
+      tier: 0.6
+    editions:
+      - {year: 2027, date: 'Dec 4-8, 2027', place: 'Philadelphia, PA, USA', link: https://www.ascb.org/meetings-events/future-ascb-meetings/}
+
+  - id: grc-optics-bio
+    name: GRC OPMB
+    full: 'Gordon Research Conference: Optics and Photonics in Medicine and Biology'
+    fields:
+      - optics
+      - biomed
+    region: intl
+    link: https://www.grc.org/optics-and-photonics-in-medicine-and-biology-conference/
+    metrics:
+      tier: 0.6
+
+  - id: brain-init
+    name: BRAIN Conference
+    full: The BRAIN Initiative Conference (NIH BRAIN Initiative)
+    fields:
+      - neuro
+      - optics
+      - biomed
+    region: intl
+    link: https://www.braininitiative.org/events/brainconference
+    metrics:
+      tier: 0.6
+
+  - id: ismrm
+    name: ISMRM
+    full: ISMRM & ISMRT Annual Meeting & Exhibition
+    fields:
+      - medai
+      - neuro
+      - biomed
+      - imgproc
+    region: intl
+    link: https://www.ismrm.org/
+    metrics:
+      tier: 0.7
+    editions:
+      - {year: 2027, date: 'May 8-13, 2027', place: 'Vancouver, BC, Canada', link: https://www.ismrm.org/27m/, deadlines: [{type: abstract, at: '2026-10-28', label: 'Abstract submission (closed; window Oct 1-28, 2026)'}, {type: other, at: '2026-10-28', label: Stipend application}, {type: notification, at: '2027-02-09', label: Acceptance notification}, {type: other, at: '2027-02-25', label: Presentation confirmation}, {type: other, at: '2027-04-23', label: Proceedings online for registrants}]}
+
+  - id: bmes
+    name: BMES
+    full: Biomedical Engineering Society (BMES) Annual Meeting
+    fields:
+      - biomed
+      - medai
+    region: intl
+    link: https://www.bmes.org/annualmeeting
+    metrics:
+      tier: 0.5
+    editions:
+      - {year: 2027, date: 'Oct 6-9, 2027', place: 'Columbus, Ohio, USA', link: https://member.bmes.org/future-annual-meetings}
+
+  - id: ner
+    name: IEEE NER
+    full: International IEEE EMBS Conference on Neural Engineering (NER)
+    fields:
+      - neuro
+      - biomed
+      - medai
+    region: intl
+    link: https://neuro.embs.org/
+    metrics:
+      tier: 0.5
+    editions:
+      - {year: 2027, date: 'Sep 7-10, 2027', place: 'Milan, Italy (Politecnico di Milano, Leonardo Campus)', link: https://neuro.embs.org/2027/, deadlines: [{type: notification, at: '2026-12-07', label: Paper submission & registration open}, {type: paper, at: '2027-03-15', label: 6-page paper submission}, {type: notification, at: '2027-05-15', label: 6-page paper notification}, {type: abstract, at: '2027-06-02', label: 1-page abstract submission}, {type: paper, at: '2027-06-02', label: Final 6-page paper}, {type: notification, at: '2027-06-18', label: 1-page abstract notification}]}
+
+  - id: brain-stim-conf
+    name: Brain Stimulation Conf.
+    full: International Brain Stimulation Conference
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://www.elsevier.com/events/conferences/international-brain-stimulation-conference
+    metrics:
+      tier: 0.5
+    editions:
+      - {year: 2027, date: 'Feb 21-24, 2027', place: 'Lyon, France', link: https://www.elsevier.com/events/conferences/international-brain-stimulation-conference, deadlines: [{type: other, at: '2026-07-31', label: Award nomination}, {type: abstract, at: '2026-08-28', label: Poster abstract submission (closed)}, {type: other, at: '2026-08-28', label: Early Career Award application}, {type: other, at: '2026-09-18', label: Symposium submission (extended; closed)}, {type: registration, at: '2026-12-04', label: Early registration discount}]}
+
+  - id: csh-neuro
+    name: CSHL Brain Barriers
+    full: 'Cold Spring Harbor Laboratory Meeting: Brain Barriers'
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://meetings.cshl.edu/meetingshome.aspx
+    metrics:
+      tier: 0.6
+    editions:
+      - {year: 2027, date: 'Apr 6-10, 2027', place: 'Cold Spring Harbor, NY, USA (Cold Spring Harbor Laboratory)', link: https://meetings.cshl.edu/meetings.aspx?meet=BBB, deadlines: [{type: abstract, at: '2027-01-22', label: Abstract submission}]}
+
+  - id: kos
+    name: KOS
+    full: 대한안과학회 학술대회 (The Korean Ophthalmological Society Annual Meeting)
+    fields:
+      - biomed
+      - medai
+    region: domestic
+    link: https://www.ophthalmology.org/
+    metrics:
+      tier: 0.35
+    editions:
+      - {year: 2027, link: https://kosmeeting.org/, timezone: UTC+9}
+
+  - id: kstroke
+    name: ICSU
+    full: International Conference STROKE UPDATE (Korean Stroke Society)
+    fields:
+      - neuro
+      - biomed
+    region: domestic
+    link: https://www.strokeupdate-kss.org/
+    metrics:
+      tier: 0.35
+    editions:
+      - {year: 2027, date: 'Nov 11-13, 2027', place: 'Seoul, Korea (Seoul Dragon City)', link: https://www.stroke.or.kr/bbs/?code=schedule&last_year=2027, timezone: UTC+9}
+
+  - id: kda
+    name: KDA
+    full: 대한치매학회 학술대회 (Korean Dementia Association Conference)
+    fields:
+      - neuro
+      - biomed
+    region: domestic
+    link: https://www.dementia.or.kr/
+    metrics:
+      tier: 0.35
+    editions:
+      - {year: 2027, link: https://www.dementia.or.kr/, timezone: UTC+9}
+
+  - id: ksmcb
+    name: KSMCB
+    full: 한국분자·세포생물학회 학술대회 (Korean Society for Molecular and Cellular Biology)
+    fields:
+      - biomed
+    region: domestic
+    link: https://www.ksmcb.or.kr/
+    metrics:
+      tier: 0.4
+    editions:
+      - {year: 2027, date: 'Jan 4-6, 2027', place: 'Pyeongchang, Korea (Yongpyong Resort Birch Hill, Wellness Hall 2F) — 2027 동계학술대회', link: https://www.ksmcb.or.kr/abstract/2027_winter/info.html, deadlines: [{type: other, at: '2026-11-15', label: Speaker (oral) abstract deadline}, {type: other, at: '2026-11-22', label: YI / Excellent Poster / Data Blitz application deadline}, {type: abstract, at: '2026-11-26', label: Poster abstract deadline for printed abstract book}, {type: registration, at: '2026-12-13', label: Pre-registration deadline}, {type: abstract, at: '2026-12-17', label: Final poster abstract deadline (web PDF only)}]}
+
+  - id: kspain
+    name: KPS
+    full: 대한통증학회 학술대회 (KPS Annual Meeting, The Korean Pain Society)
+    fields:
+      - biomed
+      - neuro
+    region: domestic
+    link: https://www.painfree.or.kr/
+    metrics:
+      tier: 0.35
+    editions:
+      - {year: 2026, date: 'Nov 20-22, 2026', place: 'Seoul, Korea (COEX Magok)', link: https://www.painfree.or.kr/abstract/2026_fall/eng/intro.php, timezone: UTC+9, deadlines: [{type: abstract, at: 2026-10-10 24:00, label: Poster abstract submission (closed)}, {type: notification, at: 2026-10-21 17:00, label: Notification of acceptance}, {type: registration, at: '2026-10-23', label: Pre-registration (closed)}]}
+
+  - id: ksbb
+    name: KSBB
+    full: 한국생물공학회 춘계/추계 학술발표대회 및 국제심포지엄 (KSBB Spring/Fall Meeting and International Symposium)
+    fields:
+      - biomed
+    region: domestic
+    link: https://www.ksbb.or.kr/
+    metrics:
+      tier: 0.35
+    editions:
+      - {year: 2027, link: https://www.ksbb.or.kr/conference/past_conferences.html, timezone: UTC+9}
+
+  - id: usasp
+    name: USASP
+    full: US Association for the Study of Pain Annual Scientific Meeting
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://www.usasp.org/
+    metrics:
+      tier: 0.5
+    editions:
+      - {year: 2027, date: 'Mar 15-18, 2027', place: 'Denver, CO, USA (Sheraton Denver Downtown Hotel)', link: https://www.usasp.org/event-details/2027-usasp-annual-scientific-meeting, timezone: UTC-5, deadlines: [{type: other, at: 2026-10-19 23:59, label: Pre-conference workshop proposals}, {type: abstract, at: 2026-11-09 23:59, label: Poster abstract submission (closed)}]}
+
+  - id: efic
+    name: EFIC Congress
+    full: EFIC Congress - Pain in Europe XV (European Pain Federation)
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://europeanpainfederation.eu/efic2027/
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'Apr 21-23, 2027', place: 'Glasgow, UK (Scottish Event Campus)', link: https://europeanpainfederation.eu/efic2027/, timezone: UTC+1, deadlines: [{type: abstract, at: 2026-09-30 23:59, label: 'Abstract submission, Round 1 (closed)'}, {type: registration, at: 2026-12-14 23:59, label: Early registration}, {type: registration, at: '2027-03-01', label: Presenter registration payment deadline}, {type: registration, at: 2027-03-22 23:59, label: Standard registration}]}
+
+  - id: neupsig
+    name: NeuPSIG
+    full: NeuPSIG International Congress on Neuropathic Pain (IASP SIG on Neuropathic Pain)
+    fields:
+      - neuro
+      - biomed
+    region: intl
+    link: https://neupsigcongress.org/
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'Sep 2-4, 2027', place: 'Helsinki, Finland (Messukeskus Helsinki)', link: https://neupsigcongress.org/}
+
+  - id: asra-pain
+    name: ASRA Pain Medicine Meeting
+    full: ASRA Pain Medicine Annual Pain Medicine Meeting
+    fields:
+      - biomed
+    region: intl
+    link: https://asra.com/events-education/pain-medicine-meeting
+    metrics:
+      tier: 0.4
+    editions:
+      - {year: 2027, date: 'Nov 18-20, 2027', place: 'Atlanta, GA, USA (Atlanta Marriott Marquis)', link: https://asra.com/events-education/event-item/2027/11/18/events/26th-annual-pain-medicine-meeting}
+
+  - id: kasp
+    name: 대한통증연구학회
+    full: 대한통증연구학회 학술대회 (The Korean Association for the Study of Pain)
+    fields:
+      - neuro
+      - biomed
+    region: domestic
+    link: https://www.koreapain.org/
+    metrics:
+      tier: 0.35
+    editions:
+      - {year: 2027, link: https://www.koreapain.org/}
+
+  - id: cvmi
+    name: CVMI
+    full: CVPR Workshop on Computer Vision and Multimodal Microscopy Image Analysis (formerly Computer Vision for Microscopy Image Analysis)
+    fields:
+      - dl
+      - imgproc
+      - biomed
+    region: intl
+    link: https://cvmi-workshop.github.io
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'Jun 20-21, 2027 (CVPR 2027 workshop days; CVMI 2027 not yet announced)', place: 'Seattle, WA, USA (CVPR 2027)', link: https://cvpr.thecvf.com/Conferences/2027/Dates}
+
+  - id: bic
+    name: BIC
+    full: BioImage Computing Workshop (at ICCV / ECCV)
+    fields:
+      - dl
+      - imgproc
+      - biomed
+    region: intl
+    link: https://bioimagecomputing.com
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'Oct 2-8, 2027 (ICCV 2027 span; site header also shows Oct 3-7; BIC 2027 not yet announced)', place: 'Hong Kong (Hong Kong Convention and Exhibition Centre, ICCV 2027)', link: https://iccv.thecvf.com/}
+
+  - id: ntire
+    name: NTIRE
+    full: New Trends in Image Restoration and Enhancement Workshop and Challenges (CVPR)
+    fields:
+      - dl
+      - imgproc
+    region: intl
+    link: https://www.cvlai.net/ntire/2026/
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'Jun 20-21, 2027 (CVPR 2027 workshop days; NTIRE 2027 not yet announced)', place: 'Seattle, WA, USA (CVPR 2027)', link: https://cvpr.thecvf.com/Conferences/2027/Dates}
+
+  - id: i2k
+    name: I2K
+    full: From Images to Knowledge (I2K) Conference
+    fields:
+      - imgproc
+      - biomed
+      - dl
+    region: intl
+    link: https://www.i2kconference.org/
+    metrics:
+      tier: 0.45
+
+  - id: cosyne
+    name: COSYNE
+    full: Computational and Systems Neuroscience (Cosyne)
+    fields:
+      - neuro
+      - dl
+    region: intl
+    link: https://www.cosyne.org
+    metrics:
+      tier: 0.65
+    editions:
+      - {year: 2027, date: 'Mar 11-14, 2027 (main meeting); workshops Mar 15-16, 2027', place: 'Montréal, QC, Canada (Fairmont The Queen Elizabeth; workshops at Le Westin Montréal)', link: https://www.cosyne.org, deadlines: [{type: registration, at: 2027-01-31 23:59, label: Presenting-author registration (EST per abstracts page; AoE per home page)}, {type: registration, at: 2027-02-02 23:59, label: Early-bird registration (EST)}]}
 
 # =====================================================================
 #  저널 — 이름·IF·범위 등 조사 정보는 data/journals.yml 에 있습니다 (출처 포함).
@@ -492,21 +948,21 @@ conferences:
 
 journals:
   # ---- 종합 / Cell · Nature · Science ----
-  - { id: cell,             fields: [neuro],                    match: "^Cell$" }
+  - { id: cell,             fields: [neuro, biomed],                    match: "^Cell$" }
   - { id: neuron,           fields: [neuro],                    match: "^Neuron$" }
-  - { id: cell-reports,     fields: [neuro],                    match: "^Cell Reports$" }
-  - { id: cell-rep-methods, fields: [neuro, optics, imgproc],   match: "Cell Reports Methods" }
-  - { id: cell-rep-med,     fields: [medai, neuro],             match: "Cell Reports Medicine" }
-  - { id: iscience,         fields: [neuro, optics],            match: "iScience" }
-  - { id: cell-systems,     fields: [neuro],                    match: "Cell Systems" }
+  - { id: cell-reports,     fields: [neuro, biomed],                    match: "^Cell Reports$" }
+  - { id: cell-rep-methods, fields: [neuro, optics, imgproc, biomed],   match: "Cell Reports Methods" }
+  - { id: cell-rep-med,     fields: [medai, neuro, biomed],             match: "Cell Reports Medicine" }
+  - { id: iscience,         fields: [neuro, optics, biomed],            match: "iScience" }
+  - { id: cell-systems,     fields: [neuro, biomed],                    match: "Cell Systems" }
   - { id: patterns,         fields: [dl, medai],                match: "^Patterns$" }
   - { id: nature,           fields: [all],                      match: "^Nature$" }
   - { id: nat-neurosci,     fields: [neuro],                    match: "Nature Neuroscience|Nat\\.? Neurosci" }
-  - { id: nat-methods,      fields: [neuro, optics, imgproc],   match: "Nature Methods|Nat\\.? Methods" }
+  - { id: nat-methods,      fields: [neuro, optics, imgproc, biomed],   match: "Nature Methods|Nat\\.? Methods" }
   - { id: nat-commun,       fields: [all],                      match: "Nature Communications|Nat\\.? Commun" }
-  - { id: nat-bme,          fields: [medai, optics, neuro],     match: "Nature Biomedical Engineering|Nat\\.? Biomed" }
+  - { id: nat-bme,          fields: [medai, optics, neuro, biomed],     match: "Nature Biomedical Engineering|Nat\\.? Biomed" }
   - { id: sci-rep,          fields: [all],                      match: "Scientific Reports|Sci\\.? Rep" }
-  - { id: commun-biol,      fields: [neuro],                    match: "Communications Biology" }
+  - { id: commun-biol,      fields: [neuro, biomed],                    match: "Communications Biology" }
   - { id: science,          fields: [all],                      match: "^Science$" }
   - { id: sci-adv,          fields: [all],                      match: "Science Advances|Sci\\.? Adv" }
   - { id: pnas,             fields: [all],                      match: "Proceedings of the National Academy|PNAS" }
@@ -522,34 +978,34 @@ journals:
   - { id: lpr,              fields: [optics],                   match: "Laser (&|and) Photonics Reviews" }
   - { id: oe,               fields: [optics],                   match: "^Optics Express" }
   - { id: ol,               fields: [optics],                   match: "^Optics Letters" }
-  - { id: boe,              fields: [optics, medai, neuro],     match: "Biomedical Optics Express" }
-  - { id: jbo,              fields: [optics, medai],            match: "Journal of Biomedical Optics|J\\.? Biomed\\.? Opt" }
+  - { id: boe,              fields: [optics, medai, neuro, biomed],     match: "Biomedical Optics Express" }
+  - { id: jbo,              fields: [optics, medai, biomed],            match: "Journal of Biomedical Optics|J\\.? Biomed\\.? Opt" }
   - { id: nph,              fields: [optics, neuro],            match: "^Neurophotonics" }
-  - { id: jbio,             fields: [optics, medai],            match: "Journal of Biophotonics|J\\.? Biophotonics" }
-  - { id: pacs,             fields: [optics, medai],            match: "Photoacoustics" }
+  - { id: jbio,             fields: [optics, medai, biomed],            match: "Journal of Biophotonics|J\\.? Biophotonics" }
+  - { id: pacs,             fields: [optics, medai, biomed],            match: "Photoacoustics" }
   - { id: copp,             fields: [optics],                   match: "Current Optics and Photonics" }
-  - { id: jppb,             fields: [optics, neuro],            match: "Photochemistry (&|and) Photobiology,? B" }
+  - { id: jppb,             fields: [optics, neuro, biomed],            match: "Photochemistry (&|and) Photobiology,? B" }
   - { id: tci,              fields: [imgproc, optics, dl],      match: "Transactions on Computational Imaging" }
 
   # ---- 뇌과학 / 바이오 / 안과 ----
   - { id: jneurosci,        fields: [neuro],                    match: "Journal of Neuroscience|J\\.? Neurosci" }
-  - { id: elife,            fields: [neuro],                    match: "eLife" }
+  - { id: elife,            fields: [neuro, biomed],                    match: "eLife" }
   - { id: neuroimage,       fields: [neuro, medai],             match: "NeuroImage" }
-  - { id: jcbfm,            fields: [neuro],                    match: "Cerebral Blood Flow" }
-  - { id: brain-stim,       fields: [neuro, medai],             match: "Brain Stimulation" }
-  - { id: nbd,              fields: [neuro],                    match: "Neurobiology of Disease" }
-  - { id: exp-neurol,       fields: [neuro],                    match: "^Experimental Neurology" }
-  - { id: tsr,              fields: [neuro, medai],             match: "Translational Stroke Research" }
+  - { id: jcbfm,            fields: [neuro, biomed],                    match: "Cerebral Blood Flow" }
+  - { id: brain-stim,       fields: [neuro, medai, biomed],             match: "Brain Stimulation" }
+  - { id: nbd,              fields: [neuro, biomed],                    match: "Neurobiology of Disease" }
+  - { id: exp-neurol,       fields: [neuro, biomed],                    match: "^Experimental Neurology" }
+  - { id: tsr,              fields: [neuro, medai, biomed],             match: "Translational Stroke Research" }
   - { id: exp-neurobiol,    fields: [neuro],                    match: "Experimental Neurobiology|Exp\\.? Neurobiol" }
-  - { id: emm,              fields: [neuro, medai],             match: "Experimental (&|and) Molecular Medicine" }
-  - { id: theranostics,     fields: [medai, optics],            match: "Theranostics" }
-  - { id: iovs,             fields: [medai, neuro, optics],     match: "Invest(igative)?\\.? Ophthalmol" }
-  - { id: cornea,           fields: [medai],                    match: "^Cornea$" }
-  - { id: oph-sci,          fields: [medai, dl],                match: "Ophthalmology Science" }
-  - { id: ocular-surface,   fields: [medai],                    match: "Ocular Surface" }
-  - { id: trans-oncol,      fields: [medai],                    match: "Translational Oncology" }
-  - { id: biomedicines,     fields: [medai],                    match: "^Biomedicines$" }
-  - { id: in-vivo,          fields: [medai],                    match: "^In Vivo$" }
+  - { id: emm,              fields: [neuro, medai, biomed],             match: "Experimental (&|and) Molecular Medicine" }
+  - { id: theranostics,     fields: [medai, optics, biomed],            match: "Theranostics" }
+  - { id: iovs,             fields: [medai, neuro, optics, biomed],     match: "Invest(igative)?\\.? Ophthalmol" }
+  - { id: cornea,           fields: [medai, biomed],                    match: "^Cornea$" }
+  - { id: oph-sci,          fields: [medai, dl, biomed],                match: "Ophthalmology Science" }
+  - { id: ocular-surface,   fields: [medai, biomed],                    match: "Ocular Surface" }
+  - { id: trans-oncol,      fields: [medai, biomed],                    match: "Translational Oncology" }
+  - { id: biomedicines,     fields: [medai, biomed],                    match: "^Biomedicines$" }
+  - { id: in-vivo,          fields: [medai, biomed],                    match: "^In Vivo$" }
 
   # ---- 공학 / AI / 나노 ----
   - { id: tpami,            fields: [dl, imgproc],              match: "Pattern Analysis and Machine Intelligence|TPAMI" }
@@ -559,10 +1015,20 @@ journals:
   - { id: media,            fields: [medai, imgproc, dl],       match: "Medical Image Analysis" }
   - { id: tmi,              fields: [medai, imgproc, dl],       match: "Transactions on Medical Imaging" }
   - { id: npjdm,            fields: [medai, dl],                match: "npj Digital Medicine" }
-  - { id: tbme,             fields: [medai, neuro],             match: "Transactions on Biomedical Engineering" }
+  - { id: tbme,             fields: [medai, neuro, biomed],             match: "Transactions on Biomedical Engineering" }
   - { id: tnsre,            fields: [neuro, medai],             match: "Neural Syst(ems)?\\.? (and )?Rehabil" }
   - { id: jbhi,             fields: [medai, dl],                match: "Biomedical and Health Informatics" }
-  - { id: bmel,             fields: [medai, optics],            match: "Biomedical Engineering Letters" }
+  - { id: bmel,             fields: [medai, optics, biomed],            match: "Biomedical Engineering Letters" }
   - { id: nano-lett,        fields: [optics],                   match: "Nano Letters|Nano Lett" }
-  - { id: acs-anm,          fields: [optics],                   match: "ACS Appl(ied)?\\.? Nano Mater" }
+  - { id: acs-anm,          fields: [optics, biomed],                   match: "ACS Appl(ied)?\\.? Nano Mater" }
   - { id: acs-nano,         fields: [optics],                   match: "^ACS Nano$" }
+
+  # ---- 계산 현미경 / AI for science ----
+  - { id: nat-mach-intell,  fields: [dl],                       match: "Nature Machine Intelligence" }
+  - { id: nat-comput-sci,   fields: [dl, biomed],               match: "Nature Computational Science" }
+  - { id: elight,           fields: [optics, imgproc],          match: "^eLight$" }
+  - { id: j-microsc,        fields: [optics, imgproc, biomed],  match: "Journal of Microscopy|J\\.? Microsc" }
+  - { id: bioinformatics,   fields: [dl, biomed],               match: "^Bioinformatics$" }
+  - { id: ap-nexus,         fields: [optics],                   match: "Advanced Photonics Nexus" }
+  - { id: intell-comput,    fields: [dl],                       match: "Intelligent Computing" }
+  - { id: jcb,              fields: [biomed],                   match: "Journal of Cell Biology|J\\.? Cell Biol" }

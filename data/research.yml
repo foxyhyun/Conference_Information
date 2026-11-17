@@ -1,0 +1,32 @@
+# 내 연구 키워드 — 학회·저널의 제출 분야/소개/특징/범위 텍스트와 맞춰서 "🔬 내 연구" 배지를 붙입니다.
+#   match: 정규식 (대소문자 무시). 영어·한국어 모두 검사합니다.
+#   main: true 인 키워드는 가중치 2 (정렬 시 더 위로)
+# 키워드를 추가·수정하고 push 하면 바로 반영됩니다.
+
+keywords:
+  - id: lfm
+    ko: "LFM·3D 복원"
+    en: "Light-field / 3D recon"
+    main: true
+    match: "light[- ]?field|3[- ]?d (image |volume |volumetric )?(reconstruct|processing)|3[- ]?d microscop|volumetric (imaging|reconstruct)|computational (imaging|microscop|optic)|inverse problem|tomograph|3차원 (복원|재구성)|라이트필드"
+  - id: microscopy
+    ko: "현미경 영상"
+    en: "Microscopy"
+    main: true
+    match: "microscop|bio-?image|cell imag|fluorescen|현미경"
+  - id: denoise
+    ko: "디노이징·복원"
+    en: "Denoising / restoration"
+    match: "denois|image restoration|restoration and enhancement|low[- ]light|noise reduction|디노이징|잡음 제거|영상 복원"
+  - id: sr
+    ko: "Super-resolution"
+    en: "Super-resolution"
+    match: "super[- ]?resolution|초해상"
+  - id: seg
+    ko: "세포 분할"
+    en: "Segmentation"
+    match: "segmentation|분할"
+  - id: calcium
+    ko: "칼슘 이미징·신경 신호"
+    en: "Calcium imaging / neural signals"
+    match: "calcium|neural activit|neuronal activit|spike|neural (signal|record)|칼슘|신경 활동"

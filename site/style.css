@@ -111,6 +111,9 @@ input[type=search] { flex: 1; min-width: 160px; }
 .fav.on { color: var(--star); }
 .badge.chg { background: var(--red-soft); color: var(--red); }
 .badge.lab { background: var(--green-soft); color: var(--green); }
+.rtags { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 6px; font-size: 12px; }
+.rtag { font-size: 11.5px; border-radius: 4px; padding: 0 6px; background: var(--orange-soft); color: var(--orange); }
+.rtag.main { font-weight: 700; }
 .cd.small { font-size: 15px; }
 .cdwrap .src a, a.src { font-size: 11.5px; font-weight: 500; }
 

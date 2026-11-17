@@ -92,7 +92,8 @@ function guessFields(text) {
   const f = new Set();
   if (/medic|health|clinical|biomed|surg/.test(t)) f.add('medai');
   if (/optic|photon|laser/.test(t)) f.add('optics');
-  if (/neuro|brain|biolog|bioinformatic/.test(t)) f.add('neuro');
+  if (/neuro|brain/.test(t)) f.add('neuro');
+  if (/biolog|bioinformatic|biomed|clinical|pain|stroke|ophthalm|cell/.test(t)) f.add('biomed');
   if (/image|imaging|video|multimedia|visual|graphic/.test(t)) f.add('imgproc');
   if (/vision|learning|neural|artificial intelligence|\bai\b|pattern/.test(t)) f.add('dl');
   return f.size ? [...f] : ['dl'];

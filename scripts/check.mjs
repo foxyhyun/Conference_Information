@@ -1,8 +1,8 @@
 // 데이터 파일 검사: 손으로 고친 YAML 이 사이트를 깨뜨리지 않도록 빌드 전에 실행
 //   node scripts/check.mjs   (오류가 있으면 종료 코드 1)
-import { p, readYaml, toUtcIso } from './lib.mjs';
+import { p, readYaml, toUtcIso, isKnownTz } from './lib.mjs';
 
-const FIELDS = new Set(['dl', 'medai', 'imgproc', 'optics', 'neuro']);
+const FIELDS = new Set(['dl', 'medai', 'imgproc', 'optics', 'neuro', 'biomed']);
 const TYPES = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'notification', 'registration', 'other']);
 const errors = [];
 const warns = [];
@@ -28,6 +28,8 @@ if (venues) {
     if (m.core && !['A*', 'A', 'B', 'C'].includes(m.core)) err(`${tag}: core 는 A*, A, B, C 중 하나`);
     for (const e of v.editions || []) {
       if (!e.year) err(`${tag}: editions 항목에 year 가 없습니다`);
+      if (!isKnownTz(e.timezone)) err(`${tag} ${e.year}: 알 수 없는 timezone '${e.timezone}' (예: UTC+1, UTC-5, AoE, KST)`);
+      for (const d of e.deadlines || []) if (!isKnownTz(d.timezone)) err(`${tag} ${e.year}: 알 수 없는 timezone '${d.timezone}'`);
       for (const d of e.deadlines || []) {
         const type = String(d.type || '').toLowerCase();
         if (!TYPES.has(type)) err(`${tag} ${e.year}: 알 수 없는 마감 type '${d.type}'`);

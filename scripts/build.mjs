@@ -12,7 +12,8 @@ export const FIELDS = {
   medai: '의료 AI',
   imgproc: '이미지 처리',
   optics: 'Optics',
-  neuro: 'Bio / Neuro',
+  neuro: 'Neuro',
+  biomed: '의생명',
 };
 
 const venues = readYaml(p('data/venues.yml'), {});
@@ -159,6 +160,20 @@ const unmatched = labPubs.items.filter((x) => x.type !== 'patent' && x.venue && 
   && !(venues.journals || []).some((j) => j.match && new RegExp(j.match, 'i').test(x.venue)));
 if (unmatched.length) console.log('lab venues not in tracker:', [...new Set(unmatched.map((x) => x.venue))].join(' | '));
 
+// ------------------------------------------------------------------ 내 연구 관련도
+const research = (readYaml(p('data/research.yml'), {}) || {}).keywords || [];
+const KW = research.map((k) => ({ ...k, re: new RegExp(k.match, 'i') }));
+const textOf = (x) => {
+  const d = x.details || {}, e = x.details_en || {}, q = x.quick || {};
+  const flat = (v) => (v == null ? '' : Array.isArray(v) ? v.map(flat).join(' ') : typeof v === 'object' ? Object.values(v).map(flat).join(' ') : String(v));
+  return [x.name, x.full, flat(d.about), flat(d.topics), flat(d.features), flat(e.about), flat(e.topics), flat(e.features), flat(q.scope), flat(q.looks_for), flat(q.format)].join(' \n ');
+};
+for (const x of [...confList, ...journals]) {
+  const txt = textOf(x);
+  x.research = KW.filter((k) => k.re.test(txt)).map((k) => k.id);
+  x.research_score = x.research.reduce((s, id) => s + (KW.find((k) => k.id === id).main ? 2 : 1), 0);
+}
+
 // ------------------------------------------------------------------ 출력
 const out = {
   generatedAt: NOW.toISOString(),
@@ -168,6 +183,7 @@ const out = {
   fields: FIELDS,
   conferences: confList,
   journals,
+  research: research.map(({ id, ko, en, main }) => ({ id, ko, en, main: !!main })),
   labPubsSource: labPubs.source || null,
   labPubsTotal: labPubs.items.filter((x) => x.type !== 'patent').length,
   candidates: candidates.filter((c) => !c.lowq).map(({ hidden, lowq, ...c }) => c),

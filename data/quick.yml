@@ -1195,3 +1195,682 @@ ksbns:
     - https://ksbns2026.org/abstract/
     - https://ksbns2026.org/
     - https://www.ksbns.org/
+isc:
+  format:
+    ko: 구조화 초록(가설·방법·결과·결론), LB는 2,500자
+    en: Structured abstract; LB/OGCT 2,500 chars + 3 graphics
+  review:
+    ko: 카테고리별 동료 심사팀 채점
+    en: Peer-graded by category review teams
+  proceedings:
+    ko: 채택 초록이 Stroke 저널 웹사이트에 게재
+    en: Accepted abstracts published online in Stroke
+  cadence:
+    ko: 매년 2월 · 초록 마감 전년 8월, LB 10월
+    en: Annual, February; abstracts due Aug, LB Oct
+  looks_for:
+    ko:
+      - 향후 뇌졸중 치료에 영향을 줄 LB 결과
+      - 명확한 가설·표본수·결론
+    en:
+      - LB results that impact future stroke care
+      - Clear hypothesis, sample size, conclusion
+  sources:
+    - https://professional.heart.org/en/meetings/international-stroke-conference/submit-science
+esoc:
+  format:
+    ko: 온라인 초록 (정규/YSPR/진행중 임상/LBS)
+    en: Online abstract (Regular/YSPR/Ongoing/LBS)
+  review:
+    ko: 심사 후 2월 말 채택 통보
+    en: Reviewed; decisions by late February
+  proceedings:
+    ko: 채택 초록이 동료심사 저널에 게재
+    en: Accepted abstracts published in peer-reviewed journal
+  cadence:
+    ko: 매년 5월 · 초록 마감 1월, LB 2월
+    en: Annual, May; abstracts Jan, late-breaking Feb
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://eso-stroke.org/esoc2027/abstracts/
+    - https://eso-stroke.org/wp-content/uploads/ESOC2027-Flyer.pdf
+wsc:
+  format:
+    ko: 초록 250단어 + 이미지(JPG)
+    en: 250-word abstract + JPG images
+  review:
+    ko: 위원회 심사 후 조기등록 마감 전 통보
+    en: Committee review; notified before early-bird
+  proceedings:
+    ko: International Journal of Stroke에 초록 게재
+    en: Abstracts published in Int J Stroke
+  cadence:
+    ko: 매년 10월 · 초록 마감 4월, LB 5월 (2026 기준)
+    en: Annual, October; abstracts Apr, LB May (2026)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://worldstrokecongress.org/abstract-guidelines-submission/
+    - https://www.world-stroke.org/news-and-blog/news/be-part-of-the-wsc-2026-program-submit-your-abstracts/
+brain-pet:
+  format:
+    ko: 초록 제출 (BRAIN / BRAIN PET 트랙)
+    en: Abstract (BRAIN or BRAIN PET track)
+  review:
+    ko: 프로그램 위원회 선정
+    en: Selected by Program Committee
+  proceedings:
+    ko: 초록이 JCBFM 별책으로 게재 (2025 기준)
+    en: Abstracts published in JCBFM (as in 2025)
+  cadence:
+    ko: 2년 주기 5월 · 초록 마감 전년 12월
+    en: Biennial (2025, 2027), May; abstracts due Dec
+  looks_for:
+    ko:
+      - 최신 연구·신개념·기술 혁신·학제간 접근
+    en:
+      - Cutting-edge research, emerging concepts, technological innovation, interdisciplinary approaches
+  sources:
+    - https://iscbfm.memberclicks.net/brain-2027
+aaic:
+  format:
+    ko: 온라인 초록 (theme/topic/subtopic 선택)
+    en: Online abstract with theme/topic/subtopic
+  review:
+    ko: 동료 심사 점수로 구연 선정
+    en: Peer review; scores used to pick orals
+  proceedings:
+    ko: 정규 초록 게재 형태 공식 페이지에 미기재
+    en: Publication terms not stated on pages read
+  cadence:
+    ko: 매년 7월 · 초록 마감 1월, Developing Topics 4월
+    en: Annual, July; abstracts Jan, Developing Topics Apr
+  looks_for:
+    ko:
+      - 초록의 질과 관심도(quality of and interest in)
+    en:
+      - Quality of and interest in the abstract
+  sources:
+    - https://aaic.alz.org/abstracts/abstr-aaic.asp
+adpd:
+  format:
+    ko: 초록 280단어 구조화 + 그래프(JPG)
+    en: 280-word structured abstract + JPG graphs
+  review:
+    ko: 위원회가 구연/포스터 배정
+    en: Committee assigns oral or poster
+  proceedings:
+    ko: 채택 초록이 학회 웹사이트에 게재
+    en: Accepted abstracts posted on conference site
+  cadence:
+    ko: 매년 3월 · 초록 마감 전년 9월, LB 11월
+    en: Annual, March; abstracts Sep, late-breaking Nov
+  looks_for:
+    ko:
+      - 미출판·미발표 새 데이터
+    en:
+      - Unpublished, not previously presented data
+  sources:
+    - https://adpd.kenes.com/abstracts/abstract-submission/
+iasp:
+  format:
+    ko: 포스터 초록 (영어, 온라인 제출)
+    en: Poster abstract (English, online)
+  review:
+    ko: 동료 심사 (세부 기준 미공개)
+    en: Peer-reviewed (details not stated)
+  proceedings:
+    ko: 공식 학회 출판물에 초록 수록
+    en: Listed in official meeting publications
+  cadence:
+    ko: 2년 주기 10월 · 초록 마감 2월, LB 5월 (2026 기준)
+    en: Biennial, Oct; abstracts Feb, LB May (2026)
+  looks_for:
+    ko:
+      - 새로운 데이터 우선 (이전 IASP 미발표)
+    en:
+      - New data preferred, not shown at prior IASP congresses
+  sources:
+    - https://worldcongressonpain.secure-platform.com/a/page/submisisons/Poster-Abstracts
+arvo:
+  format:
+    ko: 초록 2,500자(제목·캡션 포함) + 이미지 2개
+    en: 2,500-char abstract incl. title + 2 images
+  review:
+    ko: AMPC 심사 후 구두/포스터 배정
+    en: AMPC review; assigned to paper or poster
+  proceedings:
+    ko: 초록이 IOVS 온라인에 게재
+    en: Abstracts published in IOVS online
+  cadence:
+    ko: 매년 5월 · 초록 10월 오픈, 12월 초 마감
+    en: Every May; abstracts open Oct, close early Dec
+  looks_for:
+    ko:
+      - 명확한 가설, 방법, 가설을 검증하는 데이터, 함의 논의
+      - 미발표 원저 연구, 가능하면 신기술 활용
+    en:
+      - Clear hypothesis, methods, data that unequivocally tests it
+      - Original unpublished results; newer technologies
+  sources:
+    - https://www.arvo.org/annual-meeting/abstracts/
+    - https://www.arvo.org/annual-meeting/abstracts/policies-and-procedures
+aslms:
+  format:
+    ko: null
+    en: null
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: 초록이 Lasers Surg Med(LSM)에 게재
+    en: Abstracts published in Lasers Surg Med
+  cadence:
+    ko: 매년 4월 · 초록 12월 초 마감, LBA 2월
+    en: Every April; abstracts due early Dec, LBA Feb
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.aslms.org/annual-conference/abstracts/
+walt:
+  format:
+    ko: null
+    en: null
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 격년 개최(공식) · 다음 대회 미공지
+    en: Biennial per WALT; next congress not announced
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://waltpbm.org/
+bps:
+  format:
+    ko: 초록 300단어(제목 포함), 그림 불가
+    en: 300-word abstract incl. title, no graphics
+  review:
+    ko: Program Committee 심사·배정
+    en: Program Committee review and scheduling
+  proceedings:
+    ko: Late 초록은 미출판
+    en: Late abstracts not published
+  cadence:
+    ko: 매년 2월 · 정규 마감 가을, late 마감 1월
+    en: Every Feb; regular deadline fall, late Jan
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.biophysics.org/meetings-events/annual-meeting/2027-annual-meeting/abstracts/submission-guidelines
+cellbio:
+  format:
+    ko: null
+    en: null
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 매년 12월 · talk 6월, 최종 9월 마감(2026)
+    en: Every Dec; talks due Jun, final Sep (2026)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.ascb.org/cellbio2026/
+grc-optics-bio:
+  format:
+    ko: null
+    en: null
+  review:
+    ko: 신청서 기반 참가 선정
+    en: Attendance by application
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 격년 7월(짝수 해) · 2028 미공지
+    en: Every 2 yrs, July (even years); 2028 TBA
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.grc.org/optics-and-photonics-in-medicine-and-biology-conference/
+brain-init:
+  format:
+    ko: 포스터 초록 (세부 규정 미확인)
+    en: Poster abstracts (rules not confirmed)
+  review:
+    ko: 공식 안내 없음
+    en: Not stated officially
+  proceedings:
+    ko: 포스터 초록집 온라인 공개
+    en: Poster abstract book posted online
+  cadence:
+    ko: 격년 · 2026년 8월 개최, 다음 회차 미발표
+    en: Biennial · last Aug 2026; next TBA
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.braininitiative.org/events/brainconference
+    - https://www.braininitiative.org/event/2026-biennial-brain-initiative-conference/
+ismrm:
+  format:
+    ko: 750단어 + 그림 5개 + synopsis 100단어
+    en: 750 words + 5 figures + 100-word synopsis
+  review:
+    ko: AMPC 지명 전문가 동료심사
+    en: Peer review by AMPC-appointed experts
+  proceedings:
+    ko: 전자 proceedings (학회 2주 전 공개)
+    en: Electronic proceedings, 2 weeks pre-meeting
+  cadence:
+    ko: 매년 5월 · 초록 마감 전년 10월 말
+    en: Annual, May · abstracts due late Oct prior year
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.ismrm.org/27m/call/
+bmes:
+  format:
+    ko: 구조화 초록(섹션별 단어 제한) + 그림 선택
+    en: Structured abstract, per-section word limits
+  review:
+    ko: 공식 안내 없음(채점 루브릭 예고)
+    en: Not stated (scoring rubric 'coming soon')
+  proceedings:
+    ko: 공식 안내 없음
+    en: Not stated officially
+  cadence:
+    ko: 매년 10월 · 초록 마감 6월 초(2026 기준)
+    en: Annual, Oct · abstracts due early Jun (2026)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.bmes.org/2026/annualmeeting/abstracts
+ner:
+  format:
+    ko: 6쪽 IEEE 논문 또는 1쪽 초록
+    en: 6-page IEEE paper or 1-page abstract
+  review:
+    ko: 전 제출물 동료심사
+    en: All submissions peer-reviewed
+  proceedings:
+    ko: 풀페이퍼 IEEE Xplore 게재
+    en: Full papers in IEEE Xplore
+  cadence:
+    ko: 격년 · 2027 논문 마감 3월, 초록 6월
+    en: Biennial · 2027 papers Mar, abstracts Jun
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://neuro.embs.org/2027/
+brain-stim-conf:
+  format:
+    ko: 텍스트 초록 300단어 이내
+    en: Text-only abstract, max 300 words
+  review:
+    ko: 위원회 범위 적합성 심사
+    en: Committee review for scope fit
+  proceedings:
+    ko: Brain Stimulation 저널 supplement
+    en: Brain Stimulation journal supplement
+  cadence:
+    ko: 2027년 2월 · 초록 마감 전년 8월 말
+    en: Feb 2027 · abstracts due late Aug prior year
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference/participate
+csh-neuro:
+  format:
+    ko: 초록 제출(분량 규정 미확인)
+    en: Abstract (length rules not confirmed)
+  review:
+    ko: 주최자·세션 의장 선정
+    en: Selected by organizers and session chairs
+  proceedings:
+    ko: 공식 안내 없음
+    en: Not stated officially
+  cadence:
+    ko: 2027년 4월 · 초록 마감 1월 말
+    en: Apr 2027 · abstracts due late Jan
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://meetings.cshl.edu/meetings.aspx?meet=BBB
+kos:
+  format:
+    ko: 구연·E-포스터·비디오, 영문 제목 200자
+    en: Oral/e-poster/video; English title 200 chars
+  review:
+    ko: 연구회별 심사위원 3인 독립 심사
+    en: 3 independent reviewers per study group
+  proceedings:
+    ko: E-포스터·비디오 홈페이지 다시보기 제공
+    en: E-posters/videos replayed on meeting site
+  cadence:
+    ko: 춘계 3~4월(초록 1월) · 추계 10~11월(초록 5~7월)
+    en: Spring Mar-Apr (abstracts Jan); fall Oct-Nov (May-Jul)
+  looks_for:
+    ko:
+      - 목적의 독창성
+      - 연구방법의 타당성
+      - 결과분석의 명확성
+      - 연구의 중요성 및 기여도
+    en:
+      - Originality of aim
+      - Validity of methods
+      - Clarity of result analysis
+      - Importance and contribution
+  sources:
+    - https://kosmeeting.org/abstract/2026_136/abstract/info.html
+    - https://kosmeeting.org/abstract/2026_135/abstract/info.html
+kstroke:
+  format:
+    ko: 영문 400단어 또는 300단어+그림 1개
+    en: 400 words, or 300 words + 1 figure
+  review:
+    ko: 채택 여부 이메일 통보 (심사 방식 미공개)
+    en: Acceptance by email; process not stated
+  proceedings:
+    ko: 웹사이트에 Abstract Book 공개
+    en: Abstract Book posted on website
+  cadence:
+    ko: '매년 11월 · 초록 마감 9월 (2025: 9/21 연장)'
+    en: 'Annually Nov; abstracts due Sep (2025: Sep 21 ext.)'
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.strokeupdate-kss.org/abstract/
+kda:
+  format:
+    ko: 구연·포스터(증례 포함) 온라인 접수
+    en: Oral/poster (incl. cases), online only
+  review:
+    ko: 심사 후 구연→포스터 전환 가능
+    en: Reviewed; oral may become poster
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 춘계 4월 · 추계 11월(초록 10월 중순)
+    en: Spring Apr; fall Nov (abstracts mid-Oct)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.dementia.or.kr/workshop/convention/202609/abstract/
+ksmcb:
+  format:
+    ko: 영문 초록 1,200자 (연사 1,500자)
+    en: English abstract, 1,200 chars (speakers 1,500)
+  review:
+    ko: YI·우수포스터·Data Blitz 별도 선정
+    en: YI, poster award, Data Blitz selected
+  proceedings:
+    ko: 초록집 인쇄본 + 웹 PDF
+    en: Printed abstract book + web PDF
+  cadence:
+    ko: 동계 1월(초록 11~12월) · 정기 10월(초록 9월)
+    en: Winter Jan (abs. Nov-Dec); annual Oct (abs. Sep)
+  looks_for:
+    ko:
+      - 연구 목적, 방법, 결과 요약, 결론 포함 권장
+    en:
+      - Purpose, methods, results summary and conclusion recommended
+  sources:
+    - https://www.ksmcb.or.kr/abstract/2027_winter/green/info.html
+    - https://www.ksmcb.or.kr/icksmcb2026/program/sub06.html
+kspain:
+  format:
+    ko: 영문 2,880 bytes, 그림·표 최대 2개
+    en: English, 2,880 bytes, max 2 figures/tables
+  review:
+    ko: 채택 통보, 일부 S-Poster 선정
+    en: Accept/notify; some chosen as S-Poster
+  proceedings:
+    ko: 초록 다운로드 제공 (웹)
+    en: Abstracts downloadable on meeting site
+  cadence:
+    ko: 매년 11월 · 초록 마감 10월 초
+    en: Annually Nov; abstracts due early Oct
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.painfree.or.kr/abstract/2026_fall/eng/green/info.html
+ksbb:
+  format:
+    ko: 영문 초록 1,200자 + 키워드 3개
+    en: English abstract, 1,200 chars + 3 keywords
+  review:
+    ko: 심사 방식 공식 안내 없음
+    en: Review process not stated
+  proceedings:
+    ko: Abstract Book에 그대로 게재
+    en: Published as submitted in Abstract Book
+  cadence:
+    ko: 춘계 4월(초록 2월 말) · 추계 9~10월
+    en: Spring Apr (abstracts late Feb); fall Sep-Oct
+  looks_for:
+    ko:
+      - 연구 목적, 방법, 결과 요약, 결론 포함
+    en:
+      - Purpose, methods, results summary and conclusion
+  sources:
+    - https://www.ksbb.or.kr/abstract/2026_spring/green/info.html
+    - https://www.ksbb.or.kr/abstract/2026_spring/
+usasp:
+  format:
+    ko: 250단어 한 문단 초록, 그림·표 불가
+    en: 250-word one-paragraph abstract, no figures
+  review:
+    ko: '프로그램위원회 심사(트래블상: 질·참신성·영향)'
+    en: Program committee; awards by quality/novelty/impact
+  proceedings:
+    ko: 초록이 The Journal of Pain supplement로 출판
+    en: Abstracts in The Journal of Pain supplement
+  cadence:
+    ko: 매년 3월 · 초록 마감 전년 11월 초
+    en: Annual, March · abstracts due early Nov
+  looks_for:
+    ko:
+      - 미발표 연구 강력 선호
+      - 초록의 질·참신성·잠재적 영향(트래블상)
+    en:
+      - Unpublished work strongly preferred
+      - Quality, novelty, potential impact (travel awards)
+  sources:
+    - https://www.usasp.org/posterabstracts
+efic:
+  format:
+    ko: 250단어 구조화 초록 + 그림·표 각 3개
+    en: 250-word structured abstract + 3 figs/3 tables
+  review:
+    ko: 학술위원회 블라인드 동료 심사
+    en: Blind peer review by programme committee
+  proceedings:
+    ko: 공식 학회 초록집 수록
+    en: Official congress abstract publication
+  cadence:
+    ko: 2027년 4월 · 초록 마감 전년 9월 말, LBA 12월
+    en: Apr 2027 · abstracts due Sep 30; LBA from Dec
+  looks_for:
+    ko:
+      - 구연은 최고 점수 초록에 배정
+    en:
+      - Orals reserved for highest-rated abstracts
+  sources:
+    - https://europeanpainfederation.eu/efic2027/efic2027-abstract-submission/
+neupsig:
+  format:
+    ko: null
+    en: null
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 격년 9월 · 2027 초록 마감 미발표
+    en: Biennial, September · 2027 deadline TBA
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://neupsigcongress.org/
+asra-pain:
+  format:
+    ko: 500단어 초록 + 표 3·이미지 2
+    en: 500-word abstract + 3 tables, 2 images
+  review:
+    ko: 2인 이상 블라인드 점수 심사
+    en: Blind scoring by 2+ reviewers
+  proceedings:
+    ko: RAPM에 목록, 수상작만 전문 게재
+    en: Listed in RAPM; full text for awardees
+  cadence:
+    ko: 매년 11월 · 초록 마감 8월 초(ET)
+    en: Annual, November · abstracts due early Aug ET
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://asra.com/events-education/past-events/past-pain-medicine-meetings/fall-2025/abstracts
+    - https://asra.com/about-asra/deadlines/deadline-item/2026/08/11/events/abstract-deadline-annual-pain-medicine-meeting
+kasp:
+  format:
+    ko: 영문 구조화 초록, 온라인 접수
+    en: English structured abstract, online only
+  review:
+    ko: 학술위원회 선별
+    en: Selected by scientific committee
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 연 2회(3월·9-10월) · 2026 추계 마감 대회 1주 전
+    en: 'Twice yearly (Mar, Sep-Oct) · 2026 fall: 1 wk before'
+  looks_for:
+    ko:
+      - 학회 학술활동 취지에 부합하는 내용
+    en:
+      - Content consistent with the society's aims
+  sources:
+    - https://www.koreapain.org/abstract/2026_fall/green/info.html
+cvmi:
+  format:
+    ko: CVPR 양식 8쪽 + 참고문헌
+    en: CVPR format, 8 pages + references
+  review:
+    ko: CVPR 정책 double-blind, CMT, rebuttal 없음
+    en: Double-blind (CVPR policy), CMT, no rebuttal
+  proceedings:
+    ko: '아카이브: CVF Open Access·IEEE Xplore'
+    en: 'Archival: CVF Open Access + IEEE Xplore'
+  cadence:
+    ko: '매년 6월 CVPR · 논문 마감 3월 초(2026: 3/8 AoE)'
+    en: Yearly at CVPR (Jun) · paper due early Mar (Mar 8 AoE '26)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://cvmi-workshop.github.io/dates.html
+    - https://cvmi-workshop.github.io/submission.html
+bic:
+  format:
+    ko: ECCV/ICCV 본회의 양식 논문
+    en: Full paper in ECCV/ICCV main style
+  review:
+    ko: Double-blind, OpenReview
+    en: Double-blind, OpenReview
+  proceedings:
+    ko: '아카이브: ICCV/ECCV 워크숍 proceedings'
+    en: 'Archival: ICCV/ECCV workshop proceedings'
+  cadence:
+    ko: '매년 ICCV/ECCV 교대 · 논문 마감 7월(2026: 7/20)'
+    en: 'Yearly, ICCV/ECCV alternating · paper due Jul (''26: Jul 20)'
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://bioimagecomputing.com
+    - https://bioimagecomputing.com/call-for-papers/
+ntire:
+  format:
+    ko: CVPR 양식 8쪽 + 참고문헌
+    en: CVPR format, 8 pages + references
+  review:
+    ko: Double-blind, 이중 투고 금지
+    en: Double-blind, no dual submission
+  proceedings:
+    ko: '아카이브: CVF Open Access·IEEE Xplore'
+    en: 'Archival: CVF Open Access + IEEE Xplore'
+  cadence:
+    ko: 매년 6월 CVPR · 논문 마감 3월 중순(PT)
+    en: Yearly at CVPR (Jun) · paper due mid-Mar (PT)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.cvlai.net/ntire/2026/
+i2k:
+  format:
+    ko: 포스터/발표/튜토리얼 제안 (Airtable 폼)
+    en: Poster/talk/tutorial proposal (Airtable form)
+  review:
+    ko: 공식 심사 기준 미공개
+    en: Selection process not stated
+  proceedings:
+    ko: 출판 없음(녹화 YouTube 공개)
+    en: No proceedings stated; talks on YouTube
+  cadence:
+    ko: 가을 개최(2024 10월, 2026 9-10월) · 다음 미정
+    en: Autumn (Oct 2024, Sep-Oct 2026) · next TBA
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.i2kconference.org/
+    - https://www.bioimagingnorthamerica.org/events/i2kxbina2026/
+cosyne:
+  format:
+    ko: 2쪽 PDF 초록 + 300단어 요약
+    en: 2-page PDF + 300-word summary
+  review:
+    ko: Double-blind, talk/poster/reject 결정
+    en: Double-blind; talk/poster/reject
+  proceedings:
+    ko: 300단어 요약만 공개, 저널 출판 없음
+    en: Only 300-word summary published
+  cadence:
+    ko: 매년 3월 · 초록 마감 전년 가을(2027분 마감됨)
+    en: Yearly in Mar · abstracts due prior autumn (closed)
+  looks_for:
+    ko:
+      - significance, originality, clarity, relevance
+    en:
+      - Significance, originality, clarity, relevance to Cosyne audience
+  sources:
+    - https://www.cosyne.org/abstracts
