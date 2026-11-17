@@ -125,19 +125,39 @@ for (const x of confList) {
 normalize(confList);
 
 // ------------------------------------------------------------------ 저널
-const ifMax = Math.max(...(venues.journals || []).map((j) => j.if || 0), 1);
-const journals = (venues.journals || []).map((j) => {
-  const item = {
-    id: j.id, name: j.name, full: j.full, kind: 'journal', fields: j.fields || [], link: j.link,
-    if: j.if ?? null, if_year: j.if_year ?? null, quartile: j.quartile ?? null, verified: !!j.verified,
+//   venues.yml: id·분야·랩 게재 매칭 / data/journals.yml: 조사된 이름·IF·범위 (venues.yml 값이 우선)
+const jinfo = readYaml(p('data/journals.yml'), {}) || {};
+const labPubs = readJson(p('data/crawled/lab_pubs.json'), { items: [] });
+const ALL_FIELDS = Object.keys(FIELDS);
+const journalsRaw = (venues.journals || []).map((j) => {
+  const info = jinfo[j.id] || {};
+  const ifv = j.if ?? info.if ?? null;
+  const re = j.match ? new RegExp(j.match, 'i') : null;
+  const pubs = re
+    ? labPubs.items.filter((x) => x.type !== 'patent' && re.test(x.venue || '')).map((x) => ({ year: x.year, title: x.title, doi: x.doi || null }))
+    : [];
+  return {
+    id: j.id, name: j.name || info.name || j.id, full: j.full || info.full || '', kind: 'journal',
+    fields: (j.fields || []).includes('all') ? ALL_FIELDS : (j.fields || []),
+    link: j.link || info.link || null, publisher: info.publisher || null,
+    if: ifv, if_year: j.if_year ?? info.if_year ?? null, if_source: j.if != null ? 'manual' : info.if_source || null,
+    // 공식 출처가 있거나 직접 확인(verified)했으면 검증된 값으로 표시
+    verified: !!(j.verified || (j.if == null && info.if != null && info.if_source && info.if_verified !== false)),
+    quartile: j.quartile ?? null, oa: info.oa || null, apc_usd: info.apc_usd ?? null,
+    quick: info.quick || null, sources: info.sources || [],
+    lab_pubs: pubs.sort((a, b) => (b.year || 0) - (a.year || 0)),
     special_issues: (j.special_issues || [])
-      .map((s) => ({ title: s.title, link: s.link || j.link, at: toUtcIso(s.at, s.timezone || 'UTC+0') }))
+      .map((s) => ({ title: s.title, link: s.link || j.link || info.link, at: toUtcIso(s.at, s.timezone || 'UTC+0') }))
       .filter((s) => s.at),
   };
-  item._raw = j.if ? Math.log1p(j.if) / Math.log1p(ifMax) : null;
-  return item;
 });
+const ifMax = Math.max(...journalsRaw.map((j) => j.if || 0), 1);
+const journals = journalsRaw.map((j) => ({ ...j, _raw: j.if ? Math.log1p(j.if) / Math.log1p(ifMax) : null }));
 normalize(journals);
+// 트래커에 없는 랩 게재 저널 (venues.yml 에 추가할 후보) 을 빌드 로그에 표시
+const unmatched = labPubs.items.filter((x) => x.type !== 'patent' && x.venue && !/journal name|patent/i.test(x.venue)
+  && !(venues.journals || []).some((j) => j.match && new RegExp(j.match, 'i').test(x.venue)));
+if (unmatched.length) console.log('lab venues not in tracker:', [...new Set(unmatched.map((x) => x.venue))].join(' | '));
 
 // ------------------------------------------------------------------ 출력
 const out = {
@@ -148,6 +168,8 @@ const out = {
   fields: FIELDS,
   conferences: confList,
   journals,
+  labPubsSource: labPubs.source || null,
+  labPubsTotal: labPubs.items.filter((x) => x.type !== 'patent').length,
   candidates: candidates.filter((c) => !c.lowq).map(({ hidden, lowq, ...c }) => c),
   candidatesLowQ: candidates.filter((c) => c.lowq).length,
   notices: notices.map(({ hidden, ...n }) => n).sort((a, b) => b.first_seen.localeCompare(a.first_seen)),

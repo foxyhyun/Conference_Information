@@ -18,7 +18,7 @@
       sort: '정렬', only_upcoming: '마감 일정 있는 것만', target_first: '★ 타겟 먼저', search: '검색 (이름, 장소…)',
       sorts: {
         conf: [['deadline', '마감 임박순'], ['tier', '티어순'], ['difficulty', '난이도순 (채택률 낮은 순)'], ['name', '이름순']],
-        journal: [['if', 'IF 높은 순'], ['tier', '티어순'], ['name', '이름순']],
+        journal: [['if', 'IF 높은 순'], ['lab', '랩 게재 많은 순'], ['tier', '티어순'], ['name', '이름순']],
         cand: [['deadline', '마감 임박순'], ['name', '이름순']],
         timeline: [['deadline', '날짜순']],
       },
@@ -34,6 +34,10 @@
       diff: { '최상': '최상', '상': '상', '중상': '중상', '중': '중', '하': '하' },
       all_dates: '전체 일정', detail: '더 보기 — 소개 · 특징 · 제출 분야 · 전체 일정', features: '특징', topics: '제출 분야', schedule: '일정 패턴', sources: '출처',
       f_format: '형식', f_review: '심사', f_proc: '논문집', f_accept: '채택률', f_cadence: '시기', f_looks: '이런 논문을 봅니다',
+      f_scope: '범위', f_oa: '공개', f_publisher: '출판사', f_looks_j: '이런 논문을 봅니다',
+      oa_map: { 'full OA': '완전 오픈액세스', hybrid: '하이브리드 (선택 OA)', subscription: '구독형' },
+      lab_badge: '🏠 랩 게재 {n}편', lab_hint: '우리 랩 홈페이지 출판 목록 기준', lab_pubs_title: '우리 랩 게재 논문', lab_more: '랩 게재 논문 {n}편 · 출처',
+      only_lab: '🏠 랩이 낸 저널만',
       if_label: 'Impact Factor', special: '특집호', rolling: '상시 투고',
       cand_dl: '제출 마감 (AoE 가정)', first_seen: '첫 발견', category: '분류',
       cand_notice: 'WikiCFP 에서 자동 수집한 후보입니다. 검증되지 않았고 질 낮은(약탈적) 학회가 섞여 있을 수 있으니 투고 전 반드시 확인하세요.',
@@ -57,7 +61,7 @@
       sort: 'Sort', only_upcoming: 'Only with upcoming deadline', target_first: '★ Targets first', search: 'Search (name, place…)',
       sorts: {
         conf: [['deadline', 'Deadline (soonest)'], ['tier', 'Tier score'], ['difficulty', 'Difficulty (lowest acceptance)'], ['name', 'Name']],
-        journal: [['if', 'Impact factor'], ['tier', 'Tier score'], ['name', 'Name']],
+        journal: [['if', 'Impact factor'], ['lab', 'Lab papers'], ['tier', 'Tier score'], ['name', 'Name']],
         cand: [['deadline', 'Deadline (soonest)'], ['name', 'Name']],
         timeline: [['deadline', 'By date']],
       },
@@ -73,6 +77,10 @@
       diff: { '최상': 'very hard', '상': 'hard', '중상': 'mod. hard', '중': 'moderate', '하': 'easy' },
       all_dates: 'All dates', detail: 'More — about · characteristics · submission areas · all dates', features: 'Characteristics', topics: 'Submission areas', schedule: 'Typical schedule', sources: 'Sources',
       f_format: 'Format', f_review: 'Review', f_proc: 'Proceedings', f_accept: 'Acceptance', f_cadence: 'When', f_looks: 'What they look for',
+      f_scope: 'Scope', f_oa: 'Access', f_publisher: 'Publisher', f_looks_j: 'What they look for',
+      oa_map: { 'full OA': 'Fully open access', hybrid: 'Hybrid (optional OA)', subscription: 'Subscription' },
+      lab_badge: '🏠 Lab: {n}', lab_hint: 'Papers listed on our lab publication page', lab_pubs_title: 'Our lab’s papers', lab_more: '{n} lab paper(s) · sources',
+      only_lab: '🏠 Journals our lab used',
       if_label: 'Impact Factor', special: 'Special issue', rolling: 'Rolling submission',
       cand_dl: 'Submission deadline (AoE assumed)', first_seen: 'First seen', category: 'Categories',
       cand_notice: 'Automatically collected from WikiCFP. Unverified and may include low-quality (predatory) venues — check carefully before submitting.',
@@ -87,7 +95,7 @@
   const SUBMIT = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'registration', 'other']);
 
   // fields: 선택된 분야 집합 (비어 있으면 전체). 여러 개 선택 시 모두 해당하는 학회만 표시 (AND)
-  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false };
+  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false, onlyLab: false };
   let DATA = null;
   // 즐겨찾기 (브라우저 로컬 저장)
   const FAV = new Set();
@@ -171,7 +179,9 @@
     const t = T();
     const fs = selFields();
     const pill = (label, v, on) => `<span class="pill ${on ? 'on' : ''}"><span>${label}</span><b>${v == null ? '–' : v.toFixed(2)}</b></span>`;
-    const parts = x.fields.map((f) => pill(t.fields_tiny[f], x.score.byField[f], fs.includes(f)));
+    // 종합지(모든 분야)는 선택한 분야만 표시
+    const shown = x.fields.length >= 5 ? x.fields.filter((f) => fs.includes(f)) : x.fields;
+    const parts = shown.map((f) => pill(t.fields_tiny[f], x.score.byField[f], fs.includes(f)));
     parts.push(pill(t.score_all, x.score.overall, fs.length === 0));
     return `<div class="pills">${parts.join('')}</div>`;
   }
@@ -270,21 +280,53 @@
 
   function journalCard(j, now) {
     const t = T();
+    const q = j.quick || {};
     const si = j.special_issues.filter((s) => Date.parse(s.at) > now).sort((a, b) => a.at.localeCompare(b.at))[0];
-    const cd = si
+    const siHtml = si
       ? `<div class="${level(Date.parse(si.at) - now)}"><div class="cd-type">${t.special}: <a href="${esc(si.link)}" target="_blank" rel="noopener">${esc(si.title)}</a></div>
-         <div class="cd" data-at="${Date.parse(si.at)}">${countdown(Date.parse(si.at) - now)}</div><div class="cd-date">${kst(si.at)}</div></div>`
-      : `<div class="cd-none">${t.rolling}</div>`;
+         <div class="cd small" data-at="${Date.parse(si.at)}">${countdown(Date.parse(si.at) - now)}</div></div>`
+      : `<div class="src">${t.rolling}</div>`;
+    const ifSrc = j.if_source && j.if_source !== 'manual'
+      ? ` <a class="src" href="${esc(j.if_source)}" target="_blank" rel="noopener">${t.src_orig}</a>` : '';
+    const n = j.lab_pubs?.length || 0;
+    const badges = [
+      `<button class="fav ${FAV.has(j.id) ? 'on' : ''}" data-fav="${j.id}" title="${t.fav_hint}">${FAV.has(j.id) ? '★' : '☆'}</button>`,
+      j.quartile ? `<span class="badge">${esc(j.quartile)}</span>` : '',
+      n ? `<span class="badge lab" title="${t.lab_hint}">${t.lab_badge.replace('{n}', n)}</span>` : '',
+      j.oa === 'full OA' ? '<span class="badge gray">Open Access</span>' : '',
+    ].join('');
+    const oaStr = [j.oa ? (t.oa_map[j.oa] || j.oa) : null, j.apc_usd ? `APC $${Number(j.apc_usd).toLocaleString('en-US')}` : null].filter(Boolean).join(' · ');
+    const facts = [
+      [t.f_scope, L(q.scope)],
+      [t.f_format, L(q.format)],
+      [t.f_review, L(q.review)],
+      [t.f_oa, oaStr || null],
+      [t.f_publisher, j.publisher],
+    ].filter(([, v]) => v);
+    const looks = L(q.looks_for);
+    const pubList = n
+      ? `<h4>${t.lab_pubs_title}</h4><ul class="dlist">${j.lab_pubs.map((x) => `<li>${x.year ? `<b>${x.year}</b> · ` : ''}${x.doi ? `<a href="https://doi.org/${esc(x.doi)}" target="_blank" rel="noopener">${esc(x.title)}</a>` : esc(x.title)}</li>`).join('')}</ul>`
+      : '';
+    const srcs = j.sources?.length
+      ? `<p class="dsrc">${t.sources}: ${j.sources.map((s) => `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, '').split('/')[0])}</a>`).join(' · ')}</p>` : '';
+    const more = pubList || srcs ? `<details class="dl detail"><summary>${n ? t.lab_more.replace('{n}', n) : t.sources}</summary><div class="dbody">${pubList}${srcs}</div></details>` : '';
     return `<article class="item">
-      <div>
-        <div class="name"><a href="${esc(j.link)}" target="_blank" rel="noopener">${esc(j.name)}</a>
-          ${j.quartile ? `<span class="badge">${esc(j.quartile)}</span>` : ''}</div>
-        <div class="full">${esc(j.full)}</div>
-        ${fieldTags(j)}
+      <div class="head">
+        <div>
+          <div class="name"><a href="${esc(j.link)}" target="_blank" rel="noopener">${esc(j.name)}</a> ${badges}</div>
+          <div class="full">${esc(j.full)}</div>
+          ${fieldTags(j)}
+          ${scorePills(j)}
+        </div>
+        <div class="cdwrap">
+          <div class="cd-type">${t.if_label}${j.if_year ? ` ${j.if_year}` : ''}</div>
+          <div class="cd">${j.if != null ? j.if.toFixed(1) : '–'}${j.if != null ? warn(j) : ''}${ifSrc}</div>
+          ${siHtml}
+        </div>
       </div>
-      <div><div class="cd-type">${t.if_label}${j.if_year ? ` (${j.if_year})` : ''}</div>
-        <div class="cd">${j.if != null ? j.if.toFixed(1) : '–'}${warn(j)}</div>${cd}</div>
-      <div>${scorePills(j)}</div>
+      ${facts.length ? `<dl class="facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>` : ''}
+      ${looks?.length ? `<div class="looks"><span class="lk">${t.f_looks_j}</span><ul>${looks.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      ${more}
     </article>`;
   }
 
@@ -349,9 +391,12 @@
       return list;
     }
     if (state.tab === 'journal') {
-      const list = DATA.journals.filter((j) => match(j));
+      let list = DATA.journals.filter((j) => match(j, `${j.publisher || ''} ${L(j.quick?.scope) || ''} ${(L(j.quick?.looks_for) || []).join(' ')} ${j.lab_pubs.map((x) => x.title).join(' ')}`));
+      if (state.onlyLab) list = list.filter((j) => j.lab_pubs.length);
+      if (state.onlyFav) list = list.filter((j) => FAV.has(j.id));
       const cmp = {
         if: (a, b) => (b.if ?? -1) - (a.if ?? -1),
+        lab: (a, b) => b.lab_pubs.length - a.lab_pubs.length || (b.if ?? -1) - (a.if ?? -1),
         tier: (a, b) => tierOf(b) - tierOf(a),
         name: (a, b) => a.name.localeCompare(b.name),
       }[state.sort];
@@ -418,7 +463,8 @@
     $('#region-seg').style.display = isConf ? '' : 'none';
     $('#only-upcoming').parentElement.style.display = state.tab === 'conf' ? '' : 'none';
     $('#target-first').parentElement.style.display = state.tab === 'conf' ? '' : 'none';
-    $('#only-fav').parentElement.style.display = isConf ? '' : 'none';
+    $('#only-fav').parentElement.style.display = isConf || state.tab === 'journal' ? '' : 'none';
+    $('#only-lab').parentElement.style.display = state.tab === 'journal' ? '' : 'none';
     $('#changes').hidden = !(state.tab === 'conf' && DATA.recentChanges?.length);
     saveHash();
   }
@@ -489,6 +535,7 @@
     $('#only-upcoming').addEventListener('change', (e) => { state.onlyUpcoming = e.target.checked; render(); });
     $('#target-first').addEventListener('change', (e) => { state.targetFirst = e.target.checked; render(); });
     $('#only-fav').addEventListener('change', (e) => { state.onlyFav = e.target.checked; render(); });
+    $('#only-lab').addEventListener('change', (e) => { state.onlyLab = e.target.checked; render(); });
     $('#list').addEventListener('click', (e) => {
       const b = e.target.closest('.fav'); if (!b) return;
       const id = b.dataset.fav;
@@ -524,6 +571,7 @@
     $('#only-upcoming').checked = state.onlyUpcoming;
     $('#target-first').checked = state.targetFirst;
     $('#only-fav').checked = state.onlyFav;
+    $('#only-lab').checked = state.onlyLab;
   }
   function saveHash() {
     const h = new URLSearchParams({ tab: state.tab, field: selFields().join(',') || 'all', region: state.region, sort: state.sort, lang });

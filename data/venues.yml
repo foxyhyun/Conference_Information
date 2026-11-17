@@ -480,31 +480,89 @@ conferences:
           - { type: other, at: "2027-01-10 23:59", label: "Call for Symposia 마감" }
 
 # =====================================================================
-#  저널 — IF는 JCR(Clarivate)에서 직접 확인 후 입력하세요. (매년 6월 발표)
-#  아래 값은 대략적인 초기값이며 verified: false 상태입니다.
-#    if:       Journal Impact Factor
-#    if_year:  IF 기준 연도 (JCR 발표연도 - 1)
-#    quartile: JCR 분야 내 Q1~Q4
+#  저널 — 이름·IF·범위 등 조사 정보는 data/journals.yml 에 있습니다 (출처 포함).
+#  여기서는 분야와 랩 게재 이력 매칭만 정합니다.
+#    fields:  분야 (위와 동일한 키)
+#    match:   랩 홈페이지 출판 목록의 저널명과 맞출 정규식 (대소문자 무시)
+#    if / if_year / verified: true  → JCR 에서 직접 확인한 값으로 덮어쓰기
 #    special_issues: 특집호 마감 (선택)
 #      - { title: "...", at: "2027-03-01 23:59", timezone: UTC+0, link: https://... }
+#  분야 키에 all 을 쓰면 5개 분야 전부 (Nature, Science 같은 종합지)
 # =====================================================================
 
 journals:
-  - { id: tpami,    name: IEEE TPAMI, full: IEEE Transactions on Pattern Analysis and Machine Intelligence, fields: [dl, imgproc], if: 18.6, if_year: 2024, quartile: Q1, link: https://www.computer.org/csdl/journal/tp }
-  - { id: ijcv,     name: IJCV, full: International Journal of Computer Vision, fields: [dl, imgproc], if: 9.3, if_year: 2024, quartile: Q1, link: https://link.springer.com/journal/11263 }
-  - { id: tnnls,    name: IEEE TNNLS, full: IEEE Transactions on Neural Networks and Learning Systems, fields: [dl], if: 8.9, if_year: 2024, quartile: Q1, link: https://cis.ieee.org/publications/t-neural-networks-and-learning-systems }
-  - { id: tip,      name: IEEE TIP, full: IEEE Transactions on Image Processing, fields: [imgproc, dl], if: 13.7, if_year: 2024, quartile: Q1, link: https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing }
-  - { id: tci,      name: IEEE TCI, full: IEEE Transactions on Computational Imaging, fields: [imgproc, optics], if: 4.8, if_year: 2024, quartile: Q1, link: https://signalprocessingsociety.org/publications-resources/ieee-transactions-computational-imaging }
-  - { id: media,    name: Medical Image Analysis, full: Medical Image Analysis, fields: [medai, imgproc], if: 11.8, if_year: 2024, quartile: Q1, link: https://www.sciencedirect.com/journal/medical-image-analysis }
-  - { id: tmi,      name: IEEE TMI, full: IEEE Transactions on Medical Imaging, fields: [medai, imgproc], if: 9.8, if_year: 2024, quartile: Q1, link: https://www.embs.org/tmi/ }
-  - { id: npjdm,    name: npj Digital Medicine, full: npj Digital Medicine, fields: [medai], if: 15.1, if_year: 2024, quartile: Q1, link: https://www.nature.com/npjdigitalmed/ }
-  - { id: natphoton, name: Nature Photonics, full: Nature Photonics, fields: [optics], if: 32.3, if_year: 2024, quartile: Q1, link: https://www.nature.com/nphoton/ }
-  - { id: lsa,      name: "Light: Sci & Appl", full: "Light: Science & Applications", fields: [optics], if: 23.4, if_year: 2024, quartile: Q1, link: https://www.nature.com/lsa/ }
-  - { id: optica,   name: Optica, full: Optica, fields: [optics], if: 8.4, if_year: 2024, quartile: Q1, link: https://opg.optica.org/optica/ }
-  - { id: boe,      name: Biomedical Optics Express, full: Biomedical Optics Express, fields: [optics, medai], if: 3.2, if_year: 2024, quartile: Q2, link: https://opg.optica.org/boe/ }
-  - { id: ol,       name: Optics Letters, full: Optics Letters, fields: [optics], if: 3.3, if_year: 2024, quartile: Q2, link: https://opg.optica.org/ol/ }
-  - { id: jbo,      name: J. Biomedical Optics, full: Journal of Biomedical Optics, fields: [optics, medai], if: 2.9, if_year: 2024, quartile: Q2, link: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics }
-  - { id: nph,      name: Neurophotonics, full: Neurophotonics, fields: [optics, neuro], if: 3.6, if_year: 2024, quartile: Q2, link: https://www.spiedigitallibrary.org/journals/neurophotonics }
-  - { id: pacs,     name: Photoacoustics, full: Photoacoustics, fields: [optics, medai], if: 7.0, if_year: 2024, quartile: Q1, link: https://www.sciencedirect.com/journal/photoacoustics }
-  - { id: natmeth,  name: Nature Methods, full: Nature Methods, fields: [neuro, optics], if: 32.0, if_year: 2024, quartile: Q1, link: https://www.nature.com/nmeth/ }
-  - { id: neuroimage, name: NeuroImage, full: NeuroImage, fields: [neuro, medai], if: 4.5, if_year: 2024, quartile: Q1, link: https://www.sciencedirect.com/journal/neuroimage }
+  # ---- 종합 / Cell · Nature · Science ----
+  - { id: cell,             fields: [neuro],                    match: "^Cell$" }
+  - { id: neuron,           fields: [neuro],                    match: "^Neuron$" }
+  - { id: cell-reports,     fields: [neuro],                    match: "^Cell Reports$" }
+  - { id: cell-rep-methods, fields: [neuro, optics, imgproc],   match: "Cell Reports Methods" }
+  - { id: cell-rep-med,     fields: [medai, neuro],             match: "Cell Reports Medicine" }
+  - { id: iscience,         fields: [neuro, optics],            match: "iScience" }
+  - { id: cell-systems,     fields: [neuro],                    match: "Cell Systems" }
+  - { id: patterns,         fields: [dl, medai],                match: "^Patterns$" }
+  - { id: nature,           fields: [all],                      match: "^Nature$" }
+  - { id: nat-neurosci,     fields: [neuro],                    match: "Nature Neuroscience|Nat\\.? Neurosci" }
+  - { id: nat-methods,      fields: [neuro, optics, imgproc],   match: "Nature Methods|Nat\\.? Methods" }
+  - { id: nat-commun,       fields: [all],                      match: "Nature Communications|Nat\\.? Commun" }
+  - { id: nat-bme,          fields: [medai, optics, neuro],     match: "Nature Biomedical Engineering|Nat\\.? Biomed" }
+  - { id: sci-rep,          fields: [all],                      match: "Scientific Reports|Sci\\.? Rep" }
+  - { id: commun-biol,      fields: [neuro],                    match: "Communications Biology" }
+  - { id: science,          fields: [all],                      match: "^Science$" }
+  - { id: sci-adv,          fields: [all],                      match: "Science Advances|Sci\\.? Adv" }
+  - { id: pnas,             fields: [all],                      match: "Proceedings of the National Academy|PNAS" }
+  - { id: plos-one,         fields: [all],                      match: "PLOS ONE|PLoS One" }
+
+  # ---- 광학 / 포토닉스 ----
+  - { id: natphoton,        fields: [optics],                   match: "Nature Photonics" }
+  - { id: lsa,              fields: [optics],                   match: "Light: Science" }
+  - { id: optica,           fields: [optics, imgproc],          match: "^Optica$" }
+  - { id: adv-photon,       fields: [optics],                   match: "^Advanced Photonics$" }
+  - { id: photonix,         fields: [optics, imgproc],          match: "PhotoniX" }
+  - { id: adv-imaging,      fields: [optics, imgproc],          match: "^Advanced Imaging$" }
+  - { id: lpr,              fields: [optics],                   match: "Laser (&|and) Photonics Reviews" }
+  - { id: oe,               fields: [optics],                   match: "^Optics Express" }
+  - { id: ol,               fields: [optics],                   match: "^Optics Letters" }
+  - { id: boe,              fields: [optics, medai, neuro],     match: "Biomedical Optics Express" }
+  - { id: jbo,              fields: [optics, medai],            match: "Journal of Biomedical Optics|J\\.? Biomed\\.? Opt" }
+  - { id: nph,              fields: [optics, neuro],            match: "^Neurophotonics" }
+  - { id: jbio,             fields: [optics, medai],            match: "Journal of Biophotonics|J\\.? Biophotonics" }
+  - { id: pacs,             fields: [optics, medai],            match: "Photoacoustics" }
+  - { id: copp,             fields: [optics],                   match: "Current Optics and Photonics" }
+  - { id: jppb,             fields: [optics, neuro],            match: "Photochemistry (&|and) Photobiology,? B" }
+  - { id: tci,              fields: [imgproc, optics, dl],      match: "Transactions on Computational Imaging" }
+
+  # ---- 뇌과학 / 바이오 / 안과 ----
+  - { id: jneurosci,        fields: [neuro],                    match: "Journal of Neuroscience|J\\.? Neurosci" }
+  - { id: elife,            fields: [neuro],                    match: "eLife" }
+  - { id: neuroimage,       fields: [neuro, medai],             match: "NeuroImage" }
+  - { id: jcbfm,            fields: [neuro],                    match: "Cerebral Blood Flow" }
+  - { id: brain-stim,       fields: [neuro, medai],             match: "Brain Stimulation" }
+  - { id: nbd,              fields: [neuro],                    match: "Neurobiology of Disease" }
+  - { id: exp-neurol,       fields: [neuro],                    match: "^Experimental Neurology" }
+  - { id: tsr,              fields: [neuro, medai],             match: "Translational Stroke Research" }
+  - { id: exp-neurobiol,    fields: [neuro],                    match: "Experimental Neurobiology|Exp\\.? Neurobiol" }
+  - { id: emm,              fields: [neuro, medai],             match: "Experimental (&|and) Molecular Medicine" }
+  - { id: theranostics,     fields: [medai, optics],            match: "Theranostics" }
+  - { id: iovs,             fields: [medai, neuro, optics],     match: "Invest(igative)?\\.? Ophthalmol" }
+  - { id: cornea,           fields: [medai],                    match: "^Cornea$" }
+  - { id: oph-sci,          fields: [medai, dl],                match: "Ophthalmology Science" }
+  - { id: ocular-surface,   fields: [medai],                    match: "Ocular Surface" }
+  - { id: trans-oncol,      fields: [medai],                    match: "Translational Oncology" }
+  - { id: biomedicines,     fields: [medai],                    match: "^Biomedicines$" }
+  - { id: in-vivo,          fields: [medai],                    match: "^In Vivo$" }
+
+  # ---- 공학 / AI / 나노 ----
+  - { id: tpami,            fields: [dl, imgproc],              match: "Pattern Analysis and Machine Intelligence|TPAMI" }
+  - { id: ijcv,             fields: [dl, imgproc],              match: "International Journal of Computer Vision" }
+  - { id: tnnls,            fields: [dl],                       match: "Neural Networks and Learning Systems" }
+  - { id: tip,              fields: [imgproc, dl],              match: "Transactions on Image Processing" }
+  - { id: media,            fields: [medai, imgproc, dl],       match: "Medical Image Analysis" }
+  - { id: tmi,              fields: [medai, imgproc, dl],       match: "Transactions on Medical Imaging" }
+  - { id: npjdm,            fields: [medai, dl],                match: "npj Digital Medicine" }
+  - { id: tbme,             fields: [medai, neuro],             match: "Transactions on Biomedical Engineering" }
+  - { id: tnsre,            fields: [neuro, medai],             match: "Neural Syst(ems)?\\.? (and )?Rehabil" }
+  - { id: jbhi,             fields: [medai, dl],                match: "Biomedical and Health Informatics" }
+  - { id: bmel,             fields: [medai, optics],            match: "Biomedical Engineering Letters" }
+  - { id: nano-lett,        fields: [optics],                   match: "Nano Letters|Nano Lett" }
+  - { id: acs-anm,          fields: [optics],                   match: "ACS Appl(ied)?\\.? Nano Mater" }
+  - { id: acs-nano,         fields: [optics],                   match: "^ACS Nano$" }

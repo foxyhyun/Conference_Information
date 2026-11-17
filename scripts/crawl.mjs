@@ -8,6 +8,7 @@ import yaml from 'js-yaml';
 import { p, readYaml, writeYaml, writeJson, fetchText, toUtcIso, normType, sleep } from './lib.mjs';
 import { scrapeVenue, watchNotices } from './scrape.mjs';
 import { updateHistory } from './merge.mjs';
+import { crawlLabPubs, LAB_PUB_URL } from './labpubs.mjs';
 import { readJson } from './lib.mjs';
 
 const NOW = new Date();
@@ -281,6 +282,15 @@ for (const n of prevNotices) {
 writeYaml(noticeFile, notices,
   '# 국내 학회 홈페이지에서 수집한 논문/초록 모집 공지. 숨기려면 hidden: true\n\n');
 console.log(`  ${notices.length} notices (${newNotices} new)`);
+
+// ------------------------------------------------------------------ 랩 게재 이력 (저널 탭의 "랩 게재" 배지)
+try {
+  const items = await crawlLabPubs();
+  if (items.length) writeJson(p('data/crawled/lab_pubs.json'), { source: LAB_PUB_URL, crawledAt: NOW.toISOString(), items });
+  console.log(`lab publications: ${items.length}`);
+} catch (e) {
+  console.warn('lab publications: failed, kept previous', e.message);
+}
 
 // ------------------------------------------------------------------ 마감 변경 이력
 const history = readJson(p('data/history.json'), {});

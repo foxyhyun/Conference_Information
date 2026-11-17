@@ -1,0 +1,2016 @@
+# 저널 조사 결과 (출판사 공식 페이지 기준). if_verified: false = 공식 페이지를 직접 못 읽고 검색 결과에서 가져온 값
+# 직접 JCR 에서 확인했다면 venues.yml 의 해당 저널에 if / if_year / verified: true 로 덮어쓰세요.
+
+cell:
+  name: Cell
+  full: Cell
+  publisher: Cell Press
+  link: https://www.cell.com/cell/home
+  if: 45.1
+  if_year: 2025
+  if_source: https://www.cell.com/cell/home
+  oa: hybrid
+  apc_usd: 11400
+  quick:
+    scope:
+      ko: 실험생물학 전 분야의 탁월한 의의를 지닌 연구
+      en: Findings of unusual significance across experimental biology
+    format:
+      ko: 'Research: 7,000단어 미만, 그림/표 7개 이하'
+      en: 'Research: <7,000 words, ≤7 figures/tables'
+    review:
+      ko: 첫 편집 결정까지 중앙값 10일
+      en: Median 10 days to first editorial decision
+    looks_for:
+      ko:
+        - 중요한 생물학 질문에 대한 개념적 진전
+        - 도발적인 질문·가설을 제기하는 결과
+      en:
+        - Significant conceptual advances on important biological questions
+        - Results raising provocative questions or hypotheses
+  sources:
+    - https://www.cell.com/cell/home
+    - https://www.cell.com/cell/aims
+    - https://www.cell.com/cell/information-for-authors/article-types
+    - https://www.cell.com/open-access
+neuron:
+  name: Neuron
+  full: Neuron
+  publisher: Cell Press
+  link: https://www.cell.com/neuron/home
+  if: 16.9
+  if_year: 2025
+  if_source: https://www.cell.com/neuron/home
+  oa: hybrid
+  apc_usd: 10400
+  quick:
+    scope:
+      ko: 분자부터 인간 인지까지 신경과학 전반의 학제간 연구
+      en: Interdisciplinary neuroscience, molecules to human cognition
+    format:
+      ko: 'Research: 7,000단어 미만, 그림/표 8개 이하'
+      en: 'Research: <7,000 words, ≤8 figures/tables'
+    review:
+      ko: 첫 편집 결정까지 중앙값 4일
+      en: Median 4 days to first editorial decision
+    looks_for:
+      ko:
+        - 모델생물의 기전 연구부터 시스템 수준 인간 연구
+        - AI 관련 이론·계산 신경과학
+        - 'NeuroResource: 새 연구를 여는 첨단 기술·방법'
+      en:
+        - Mechanistic to systems-level studies
+        - Theoretical/computational work relevant to AI
+        - 'NeuroResource: cutting-edge tools and methods'
+  sources:
+    - https://www.cell.com/neuron/home
+    - https://www.cell.com/neuron/aims
+    - https://www.cell.com/neuron/information-for-authors/article-types
+    - https://www.cell.com/open-access
+cell-reports:
+  name: Cell Reports
+  full: Cell Reports
+  publisher: Cell Press
+  link: https://www.cell.com/cell-reports/home
+  if: 7.7
+  if_year: 2025
+  if_source: https://www.cell.com/cell-reports/home
+  oa: full OA
+  apc_usd: 5790
+  quick:
+    scope:
+      ko: 생명과학 전반의 고품질 연구
+      en: High-quality research across the life sciences
+    format:
+      ko: 'Article: 7,000단어·그림/표 7개, Report: 4,000단어·4개'
+      en: 'Article: 7,000 words/7 items; Report: 4,000 words/4 items'
+    review:
+      ko: 첫 편집 결정까지 중앙값 5일
+      en: Median 5 days to first editorial decision
+    looks_for:
+      ko:
+        - 새로운 생물학적 통찰(주요 기준)
+        - 'Resource: 생물학적 진전을 보이는 기술·데이터셋'
+      en:
+        - New biological insight (primary criterion)
+        - 'Resources: technical advances or datasets showing a biological advance'
+  sources:
+    - https://www.cell.com/cell-reports/home
+    - https://www.cell.com/cell-reports/aims
+    - https://www.cell.com/cell-reports/information-for-authors/article-types
+    - https://www.cell.com/open-access
+cell-rep-methods:
+  name: Cell Rep Methods
+  full: Cell Reports Methods
+  publisher: Cell Press
+  link: https://www.cell.com/cell-reports-methods/home
+  if: 5.8
+  if_year: 2025
+  if_source: https://www.cell.com/cell-reports-methods/home
+  oa: full OA
+  apc_usd: 4970
+  quick:
+    scope:
+      ko: 생물·의학 연구 방식을 바꾸는 방법·플랫폼·분석 틀
+      en: Transformative methods, platforms and frameworks for biology
+    format:
+      ko: 'Article: 7,000단어 미만·그림/표 7개, Report: 4,000단어·4개'
+      en: 'Article: <7,000 words/7 items; Report: <4,000 words/4 items'
+    review:
+      ko: 첫 편집 결정까지 중앙값 7일
+      en: Median 7 days to first editorial decision
+    looks_for:
+      ko:
+        - 방법론 혁신과 폭넓은 과학적 유용성의 결합
+        - 일반화·재사용 가능한 계산-실험 통합 접근
+        - 이미징·시퀀싱·AI 등 실현 기술
+      en:
+        - Methodological innovation with broad utility
+        - Generalizable, reusable computational-experimental approaches
+        - Enabling tech incl. imaging, sequencing, AI
+  sources:
+    - https://www.cell.com/cell-reports-methods/home
+    - https://www.cell.com/cell-reports-methods/aims
+    - https://www.cell.com/cell-reports-methods/information-for-authors/article-types
+    - https://www.cell.com/open-access
+cell-rep-med:
+  name: Cell Rep Med
+  full: Cell Reports Medicine
+  publisher: Cell Press
+  link: https://www.cell.com/cell-reports-medicine/home
+  if: 14
+  if_year: 2025
+  if_source: https://www.cell.com/cell-reports-medicine/home
+  oa: full OA
+  apc_usd: 5790
+  quick:
+    scope:
+      ko: 중개·임상 생의학 연구
+      en: Translational and clinical biomedical research
+    format:
+      ko: 'Article: 7,000단어 미만, 그림/표 7개 이하'
+      en: 'Article: <7,000 words, ≤7 figures/tables'
+    review:
+      ko: 첫 편집 결정까지 중앙값 6일
+      en: Median 6 days to first editorial decision
+    looks_for:
+      ko:
+        - 임상 연구·진료에 새 방향을 여는 아이디어
+        - 진단·치료·의료에 기여하는 기술 개발
+        - 임상시험·바이오마커·유전체 연구
+      en:
+        - Ideas opening new directions in clinical practice
+        - Technology for diagnostics, treatment, healthcare
+        - Clinical trials, biomarkers, genomics
+  sources:
+    - https://www.cell.com/cell-reports-medicine/home
+    - https://www.cell.com/cell-reports-medicine/aims
+    - https://www.cell.com/cell-reports-medicine/information-for-authors/article-types
+    - https://www.cell.com/open-access
+iscience:
+  name: iScience
+  full: iScience
+  publisher: Cell Press
+  link: https://www.cell.com/iscience/home
+  if: 4.5
+  if_year: 2025
+  if_source: https://www.cell.com/iscience/home
+  oa: full OA
+  apc_usd: 3240
+  quick:
+    scope:
+      ko: 생명·물리·지구·보건과학의 학제간 원저 연구
+      en: Interdisciplinary research in life, physical, health sciences
+    format:
+      ko: 'Article: 8,000단어 이하 권장'
+      en: 'Article: advised to stay below 8,000 words'
+    review:
+      ko: 첫 편집 결정까지 중앙값 6일
+      en: Median 6 days to first editorial decision
+    looks_for:
+      ko:
+        - 관련 분야에 의미 있는 기여
+        - 견고한 결과와 방법론
+        - 가치 있는 재현·음성 결과 연구도 고려
+      en:
+        - Significant contribution to a relevant field
+        - Robust results and methodology
+        - Replication/negative results with clear value
+  sources:
+    - https://www.cell.com/iscience/home
+    - https://www.cell.com/iscience/aims
+    - https://www.cell.com/iscience/information-for-authors/article-types
+    - https://www.cell.com/open-access
+cell-systems:
+  name: Cell Systems
+  full: Cell Systems
+  publisher: Cell Press
+  link: https://www.cell.com/cell-systems/home
+  if: 7.5
+  if_year: 2025
+  if_source: https://www.cell.com/cell-systems/home
+  oa: hybrid
+  apc_usd: 9350
+  quick:
+    scope:
+      ko: 시스템생물학의 근본 질문을 다루는 정량적 연구
+      en: Quantitative work on fundamental systems-biology questions
+    format:
+      ko: 엄격한 단어 제한 명시 없음, 짧을수록 좋다고 안내
+      en: No strict word limit stated; shorter is generally better
+    review:
+      ko: 첫 편집 결정까지 중앙값 11일
+      en: Median 11 days to first editorial decision
+    looks_for:
+      ko:
+        - 물리·공학·수학·CS의 정량·추론적 접근
+        - 주관보다 타당성·과학적 예리함 중심 심사
+        - 투명하고 공정한 비교·시각화
+      en:
+        - Quantitative, inference-based approaches from physics/eng/CS
+        - Review focused on validity and scientific acuity
+        - Transparent, fair comparisons and visualization
+  sources:
+    - https://www.cell.com/cell-systems/home
+    - https://www.cell.com/cell-systems/aims
+    - https://www.cell.com/cell-systems/information-for-authors/article-types
+    - https://www.cell.com/open-access
+patterns:
+  name: Patterns
+  full: Patterns
+  publisher: Cell Press
+  link: https://www.cell.com/patterns/home
+  if: null
+  if_year: null
+  if_source: null
+  oa: full OA
+  apc_usd: 4900
+  quick:
+    scope:
+      ko: 모든 분야의 데이터 과학·계산 중심 연구
+      en: Data science and computational research from all fields
+    format:
+      ko: 'Research article: 약 5,000–7,000단어, 그림 수 제한 없음'
+      en: 'Research article: ~5,000–7,000 words, no figure limit'
+    review:
+      ko: 첫 편집 결정까지 중앙값 7일
+      en: Median 7 days to first editorial decision
+    looks_for:
+      ko:
+        - 학제간 독자에게 폭넓은 관심을 끄는 주요 진전
+        - 데이터·코드·모델의 개방성과 FAIR 원칙
+        - ML·AI·통계·데이터 시각화
+      en:
+        - Major advances of broad interdisciplinary interest
+        - Open, FAIR data, code and models
+        - ML, AI, statistics, data visualization
+  sources:
+    - https://www.cell.com/patterns/home
+    - https://www.cell.com/patterns/aims
+    - https://www.cell.com/patterns/information-for-authors/article-types
+    - https://www.cell.com/open-access
+nature:
+  name: Nature
+  full: Nature
+  publisher: Springer Nature
+  link: https://www.nature.com/nature/
+  if: 56.1
+  if_year: 2025
+  if_source: https://www.nature.com/nature/journal-impact
+  oa: hybrid
+  apc_usd: 12850
+  quick:
+    scope:
+      ko: 과학·기술 전 분야 최고 수준의 동료심사 연구
+      en: Finest peer-reviewed research in all fields of science
+    format:
+      ko: '6쪽 Article: 본문 2,500단어·그림 4개 (8쪽: 4,300단어)'
+      en: '6-page Article: 2,500 words, 4 items (8-page: 4,300)'
+    review:
+      ko: 첫 편집 결정까지 중앙값 8일
+      en: Median 8 days to first editorial decision
+    looks_for:
+      ko:
+        - 독창성과 중요성
+        - 학제간 관심과 시의성
+        - 접근성·명료함·놀라운 결론
+      en:
+        - Originality and importance
+        - Interdisciplinary interest and timeliness
+        - Accessibility, elegance, surprising conclusions
+  sources:
+    - https://www.nature.com/nature/journal-impact
+    - https://www.nature.com/nature/journal-information
+    - https://www.nature.com/nature/for-authors/initial-submission
+    - https://www.nature.com/nature/for-authors/publishing-options
+nat-neurosci:
+  name: Nat Neurosci
+  full: Nature Neuroscience
+  publisher: Springer Nature
+  link: https://www.nature.com/neuro/
+  if: 20.3
+  if_year: 2025
+  if_source: https://www.nature.com/neuro/journal-impact
+  oa: hybrid
+  apc_usd: 12850
+  quick:
+    scope:
+      ko: 신경과학 전 분야의 최고 수준 연구
+      en: Highest-quality research in all areas of neuroscience
+    format:
+      ko: 'Article: 본문 4,500단어, 초록 150단어, 그림/표 3–8개'
+      en: 'Article: 4,500 words, 150-word abstract, 3–8 items'
+    review:
+      ko: 첫 편집 결정까지 중앙값 9일
+      en: Median 9 days to first editorial decision
+    looks_for:
+      ko:
+        - 신경계 기능에 대한 근본적 통찰 우선
+        - 분자·세포·시스템·인지·계산 신경과학
+      en:
+        - Priority to fundamental insights into nervous system function
+        - Molecular, cellular, systems, cognitive, computational work
+  sources:
+    - https://www.nature.com/neuro/journal-impact
+    - https://www.nature.com/neuro/aims
+    - https://www.nature.com/neuro/content
+    - https://www.nature.com/neuro/submission-guidelines/publishing-options
+nat-methods:
+  name: Nat Methods
+  full: Nature Methods
+  publisher: Springer Nature
+  link: https://www.nature.com/nmeth/
+  if: 28.2
+  if_year: 2025
+  if_source: https://www.nature.com/nmeth/journal-impact
+  oa: hybrid
+  apc_usd: 12850
+  quick:
+    scope:
+      ko: 생명과학의 새 방법·기존 기법의 의미 있는 개선
+      en: Novel methods and major improvements in life-science techniques
+    format:
+      ko: 'Article: 본문 3,000단어(재량 5,000), 그림/표 6개 이하'
+      en: 'Article: 3,000 words (≤5,000 at discretion), ≤6 items'
+    review:
+      ko: 첫 편집 결정까지 중앙값 10일
+      en: Median 10 days to first editorial decision
+    looks_for:
+      ko:
+        - 즉각적 실용성과 새 생물학 응용 가능성
+        - 성능·재현성·일반 적용성의 강한 검증
+      en:
+        - Immediate practical relevance, new biological applications
+        - Strong validation of performance and reproducibility
+  sources:
+    - https://www.nature.com/nmeth/journal-impact
+    - https://www.nature.com/nmeth/aims
+    - https://www.nature.com/nmeth/content
+    - https://www.nature.com/nmeth/submission-guidelines/publishing-options
+nat-commun:
+  name: Nat Commun
+  full: Nature Communications
+  publisher: Springer Nature
+  link: https://www.nature.com/ncomms/
+  if: 18.1
+  if_year: 2025
+  if_source: https://www.nature.com/ncomms/journal-impact
+  oa: full OA
+  apc_usd: 7350
+  quick:
+    scope:
+      ko: 자연·공학·사회과학 전 분야의 다학제 OA 저널
+      en: Multidisciplinary OA journal across all sciences
+    format:
+      ko: 'Article: 본문 5,000단어 이내 권장, 초록 200단어'
+      en: 'Article: main text ideally ≤5,000 words, 200-word abstract'
+    review:
+      ko: 첫 편집 결정까지 중앙값 9일
+      en: Median 9 days to first editorial decision
+    looks_for:
+      ko:
+        - 각 분야 전문가에게 의미 있는 중요한 진전
+      en:
+        - Important advances of significance to specialists in the field
+  sources:
+    - https://www.nature.com/ncomms/journal-impact
+    - https://www.nature.com/ncomms/aims
+    - https://www.nature.com/ncomms/submit/article
+    - https://www.nature.com/ncomms/open-access
+nat-bme:
+  name: Nat Biomed Eng
+  full: Nature Biomedical Engineering
+  publisher: Springer Nature
+  link: https://www.nature.com/natbiomedeng/
+  if: 26.3
+  if_year: 2025
+  if_source: https://www.nature.com/natbiomedeng/journal-impact
+  oa: hybrid
+  apc_usd: 12850
+  quick:
+    scope:
+      ko: 응용 생의학·헬스 기술의 주요 진전
+      en: Notable advances in applied biomedicine and health tech
+    format:
+      ko: 'Article: 본문 3,500단어, 초록 175단어, 그림/표 8개'
+      en: 'Article: 3,500 words, 175-word abstract, ≤8 items'
+    review:
+      ko: 첫 편집 결정까지 중앙값 9일
+      en: Median 9 days to first editorial decision
+    looks_for:
+      ko:
+        - 생의학공학 전 스펙트럼의 연구
+        - 보건 난제 해결에 기여하는 연구
+      en:
+        - Research across the full spectrum of biomedical engineering
+        - Work that helps solve outstanding health challenges
+  sources:
+    - https://www.nature.com/natbiomedeng/journal-impact
+    - https://www.nature.com/natbiomedeng/aims
+    - https://www.nature.com/natbiomedeng/content
+    - https://www.nature.com/natbiomedeng/submission-guidelines/publishing-options
+sci-rep:
+  name: Sci Rep
+  full: Scientific Reports
+  publisher: Springer Nature
+  link: https://www.nature.com/srep/
+  if: 4.9
+  if_year: 2025
+  if_source: https://www.nature.com/srep/about
+  oa: full OA
+  apc_usd: 2850
+  quick:
+    scope:
+      ko: 자연과학·의학·공학 전 분야 원저 OA 저널
+      en: OA original research across natural sciences, medicine, eng.
+    format:
+      ko: 본문 4,500단어 이하, 제목 20단어, 약 11쪽 이내
+      en: Main text ≤4,500 words, title ≤20 words, ~11 pages
+    review:
+      ko: 첫 결정까지 기간 공개 확인 안 됨
+      en: Time to first decision not found on journal pages
+    looks_for:
+      ko:
+        - 모든 자연과학·의학·공학 분야의 연구 환영
+      en:
+        - Welcomes research from all natural sciences, medicine, engineering
+  sources:
+    - https://www.nature.com/srep/about
+    - https://www.nature.com/srep/author-instructions/submission-guidelines
+    - https://www.nature.com/srep/open-access
+commun-biol:
+  name: Commun Biol
+  full: Communications Biology
+  publisher: Springer Nature
+  link: https://www.nature.com/commsbio/
+  if: 5.8
+  if_year: 2025
+  if_source: https://www.nature.com/commsbio/journal-impact
+  oa: full OA
+  apc_usd: 4390
+  quick:
+    scope:
+      ko: 생물학 전 분야의 OA 연구·리뷰
+      en: OA research and reviews in all biological sciences
+    format:
+      ko: 'Article: 본문 약 5,000단어 미만, 그림/표 10개'
+      en: 'Article: <~5,000 words main text, ≤10 display items'
+    review:
+      ko: 첫 편집 결정까지 중앙값 6일
+      en: Median 6 days to first editorial decision
+    looks_for:
+      ko:
+        - 전문 분야에 새 생물학적 통찰을 주는 진전
+        - 새 실험 결과, 2차 데이터 분석, 새 방법
+      en:
+        - Advances bringing new biological insight to a field
+        - Novel results, secondary analyses, new methods
+  sources:
+    - https://www.nature.com/commsbio/journal-impact
+    - https://www.nature.com/commsbio/aims
+    - https://www.nature.com/commsbio/submit/content-types
+    - https://www.nature.com/commsbio/open-access
+science:
+  name: Science
+  full: Science
+  publisher: AAAS
+  link: https://www.science.org/journal/science
+  if: 47.3
+  if_year: 2025
+  if_source: https://www.science.org/content/page/journal-metrics-overview
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 전 분야에서 가장 영향력 있는 연구
+      en: Most influential papers in their fields or across fields
+    format:
+      ko: 'Research Article: 본문 3,000단어, 그림/표 3–5개'
+      en: 'Research Article: 3,000 words, 3–5 display items'
+    review:
+      ko: 첫 결정 중앙값 8일, 심사 후 첫 결정 64일 (2025)
+      en: Median 8 days to 1st decision; 64 to post-review (2025)
+    looks_for:
+      ko:
+        - 새롭고 폭넓게 중요한 데이터·종합·개념
+        - 과학적 이해를 크게 진전시키는 연구
+      en:
+        - Novel, broadly important data, syntheses or concepts
+        - Work that significantly advances scientific understanding
+  sources:
+    - https://www.science.org/content/page/journal-metrics-overview
+    - https://www.science.org/content/page/mission-and-scope
+    - https://www.science.org/content/page/science-information-authors
+sci-adv:
+  name: Sci Adv
+  full: Science Advances
+  publisher: AAAS
+  link: https://www.science.org/journal/sciadv
+  if: 13.9
+  if_year: 2025
+  if_source: https://www.science.org/content/page/journal-metrics-overview
+  oa: full OA
+  apc_usd: 5450
+  quick:
+    scope:
+      ko: AAAS의 전 분야 다학제 OA 저널
+      en: AAAS open-access multidisciplinary journal, any area
+    format:
+      ko: 'Research Article: 최대 15,000단어, 그림/표 10개, 참고문헌 80'
+      en: 'Research Article: ≤15,000 words, ≤10 items, 80 refs'
+    review:
+      ko: 첫 결정 중앙값 8일, 심사 후 첫 결정 58일 (2025)
+      en: Median 8 days to 1st decision; 58 to post-review (2025)
+    looks_for:
+      ko:
+        - 주요 진전을 제시하는 연구
+        - 분야 특화 및 학제간 영향력 있는 연구
+      en:
+        - Research presenting a major advance
+        - Impactful disciplinary or interdisciplinary work
+  sources:
+    - https://www.science.org/content/page/journal-metrics-overview
+    - https://www.science.org/content/page/science-advances-mission-and-scope
+    - https://www.science.org/content/page/science-advances-information-authors
+    - https://www.science.org/content/page/science-advances-licensing-and-charges
+pnas:
+  name: PNAS
+  full: Proceedings of the National Academy of Sciences of the United States of America
+  publisher: National Academy of Sciences
+  link: https://www.pnas.org/
+  if: 9.5
+  if_year: 2025
+  if_source: https://www.pnas.org/about/article-journal-metrics
+  oa: hybrid
+  apc_usd: 6075
+  quick:
+    scope:
+      ko: 생물·물리·사회과학 전반의 다학제 원저 연구
+      en: Multidisciplinary research in biological, physical, social sci.
+    format:
+      ko: 'Research Report: 권장 6쪽(약 4,000단어), 최대 12쪽'
+      en: 'Research Report: 6 pages (~4,000 words) preferred, max 12'
+    review:
+      ko: 첫 결정 10일, 심사 후 첫 결정 45일 (2025)
+      en: 10 days to first decision; 45 to post-review (2025)
+    looks_for:
+      ko:
+        - 탁월한 중요성을 지닌 원저 연구
+      en:
+        - Original research of exceptional importance
+  sources:
+    - https://www.pnas.org/about
+    - https://www.pnas.org/about/article-journal-metrics
+    - https://www.pnas.org/author-center/publication-charges
+    - https://www.pnas.org/author-center/submitting-your-manuscript
+natphoton:
+  name: Nature Photonics
+  full: Nature Photonics
+  publisher: Springer Nature
+  link: https://www.nature.com/nphoton/
+  if: 38.1
+  if_year: 2025
+  if_source: https://www.nature.com/nphoton/journal-impact
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 빛의 생성·조작·검출 전 분야 광자학 연구
+      en: All areas of light generation, manipulation and detection
+    format:
+      ko: 'Article: 본문 3,000단어, 초록 200단어, 그림·표 6개, 참고문헌 ~50'
+      en: 'Article: 3,000 words, 200-word abstract, 6 display items, ~50 refs'
+    review:
+      ko: 전임 편집자 결정; 첫 편집 결정 중앙값 18일, 게재승인 208일
+      en: Professional editors; median 18 d to first decision, 208 d to accept
+    looks_for:
+      ko:
+        - 빛-물질 상호작용의 근본 성질 연구
+        - 광전자 소자의 최신 설계
+        - 광자를 활용하는 신규 응용
+      en:
+        - Fundamental properties of light and light-matter interaction
+        - Latest optoelectronic device designs
+        - Emerging applications that exploit photons
+  sources:
+    - https://www.nature.com/nphoton/journal-impact
+    - https://www.nature.com/nphoton/aims
+    - https://www.nature.com/nphoton/content
+    - https://www.nature.com/nphoton/our-publishing-models
+lsa:
+  name: Light Sci Appl
+  full: 'Light: Science & Applications'
+  publisher: Springer Nature
+  link: https://www.nature.com/lsa/
+  if: 24
+  if_year: 2025
+  if_source: https://www.nature.com/lsa/journal-information
+  oa: full OA
+  apc_usd: 4290
+  quick:
+    scope:
+      ko: 광학·광자학 전 분야의 기초·응용·공학 연구
+      en: Basic, applied and engineering research across optics and photonics
+    format:
+      ko: 공개된 Article 분량 제한 정보 확인 못함
+      en: Article length limits not found on pages read
+    review:
+      ko: 첫 편집 결정 중앙값 6일, 게재승인 154일
+      en: Median 6 d to first editorial decision, 154 d to acceptance
+    looks_for:
+      ko:
+        - 최첨단·신흥 광학/광자학 주제의 새 결과
+        - 전통적 광공학 주제도 포함
+      en:
+        - New results in cutting-edge and emerging optics/photonics topics
+        - Traditional optical engineering topics also covered
+  sources:
+    - https://www.nature.com/lsa/journal-information
+    - https://www.nature.com/lsa/open-access
+optica:
+  name: Optica
+  full: Optica
+  publisher: Optica Publishing Group
+  link: https://opg.optica.org/optica/
+  if: 8.8
+  if_year: 2025
+  if_source: https://opg.optica.org/optica/journal/optica/about.cfm
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 광학·광자학 전 분야의 고임팩트 연구 신속 출판
+      en: Rapid publication of high-impact research in all of optics/photonics
+    format:
+      ko: Letter 4쪽, Article 6-8쪽, Mini-review 8-12쪽
+      en: Letters 4 pp; Articles 6-8 pp; Mini-reviews 8-12 pp
+    review:
+      ko: 편집 검토 7영업일 내 목표; 첫 결정 중앙값 18일
+      en: Editorial check within 7 business days; median 18 d to first decision
+    looks_for:
+      ko:
+        - 중요성·잠재적 임팩트·독창성
+        - 높은 기술 수준과 과학적 엄밀성
+        - 광학계·광범위 과학계에 대한 가독성과 흥미
+      en:
+        - Significance, potential impact and originality
+        - High technical quality, integrity and rigor
+        - Readable and of interest to the broad optics community
+  sources:
+    - https://opg.optica.org/optica/journal/optica/about.cfm
+adv-photon:
+  name: Advanced Photonics
+  full: Advanced Photonics
+  publisher: SPIE / Chinese Laser Press
+  link: https://www.spiedigitallibrary.org/journals/advanced-photonics
+  if: 18.8
+  if_year: 2024
+  if_source: https://www.spiedigitallibrary.org/journals/advanced-photonics
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: SPIE·CLP 공동 광자학 학술지 (범위 페이지 접근 불가)
+      en: SPIE-CLP photonics journal (scope page not reachable)
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 확인 못함
+      en: Not verified
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://www.spiedigitallibrary.org/journals/advanced-photonics (search snippet only; fetch blocked)
+    - https://www.spiedigitallibrary.org/journals/open-access (search snippet only)
+  if_verified: false
+photonix:
+  name: PhotoniX
+  full: PhotoniX
+  publisher: Springer Nature (SpringerOpen)
+  link: https://link.springer.com/journal/43074
+  if: 18
+  if_year: 2025
+  if_source: https://link.springer.com/journal/43074
+  oa: full OA
+  apc_usd: 2317
+  quick:
+    scope:
+      ko: 광자학이 가능케 하는 X-학제 연구·공학 응용·과학 발견
+      en: X-disciplinary research, applications and discoveries enabled by photonics
+    format:
+      ko: Letter·Article·Review·기술진보 보고 모두 환영
+      en: Letters, articles, reviews and tech progress reports welcome
+    review:
+      ko: 첫 결정까지 중앙값 11일
+      en: Median 11 days submission to first decision
+    looks_for:
+      ko:
+        - 광자학의 응용 실현 능력
+        - 광 조작·통신·컴퓨팅, AI용 광자학
+        - 광 센싱, 테라헤르츠·X선 광학
+      en:
+        - Application-enabling power of photonics
+        - Light manipulation, optical comms/computing, photonics for AI
+        - Optical sensing, terahertz and X-ray optics
+  sources:
+    - https://link.springer.com/journal/43074
+    - https://link.springer.com/journal/43074/aims-and-scope
+    - https://link.springer.com/journal/43074/how-to-publish-with-us
+adv-imaging:
+  name: Advanced Imaging
+  full: Advanced Imaging
+  publisher: Chinese Laser Press / Hangzhou Institute of Technology, Xidian University
+  link: https://www.researching.cn/ai
+  if: null
+  if_year: null
+  if_source: null
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 고선택성 격월간 OA 이미징 학술지
+      en: Highly selective bimonthly open-access imaging journal
+    format:
+      ko: 연구논문 외 Letter·Review·Commentary 게재
+      en: Research articles plus letters, reviews, commentaries
+    review:
+      ko: 확인 못함
+      en: Not verified
+    looks_for:
+      ko:
+        - 이미징용 AI, 라이트필드 이미징
+        - 산란 매질 투과 이미징
+        - 메타표면·집적광학, 3D 이미징·디스플레이
+      en:
+        - AI in imaging; light-field imaging
+        - Imaging through turbid media
+        - Metasurfaces/integrated optics; 3D imaging and display
+  sources:
+    - https://www.researching.cn/ai/about (search snippet only; site TLS error on fetch)
+lpr:
+  name: Laser Photonics Rev
+  full: Laser & Photonics Reviews
+  publisher: Wiley
+  link: https://onlinelibrary.wiley.com/journal/18638899
+  if: 9.7
+  if_year: null
+  if_source: https://onlinelibrary.wiley.com/journal/18638899
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 광자학·광학 전반의 리뷰·연구논문·관점 (이론·실험)
+      en: Reviews, research articles, perspectives across photonics (theory+expt)
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 채택률 34% (Wiley 페이지 스니펫)
+      en: Acceptance rate 34% (Wiley page snippet)
+    looks_for:
+      ko:
+        - 나노광자학·메타물질·플라즈모닉스
+        - 양자 광자학, 바이오광자학
+      en:
+        - Nanophotonics, metamaterials, plasmonics
+        - Quantum photonics, biophotonics
+  sources:
+    - https://onlinelibrary.wiley.com/journal/18638899 (search snippet only; 403)
+    - https://onlinelibrary.wiley.com/page/journal/18638899/homepage/aims.htm (search snippet only)
+  if_verified: false
+oe:
+  name: Optics Express
+  full: Optics Express
+  publisher: Optica Publishing Group
+  link: https://opg.optica.org/oe/
+  if: 3.4
+  if_year: 2025
+  if_source: https://opg.optica.org/oe/journal/oe/about.cfm
+  oa: full OA
+  apc_usd: 2300
+  quick:
+    scope:
+      ko: 광학·광자학 전 분야의 과학·기술 혁신
+      en: Scientific and technology innovations in all aspects of optics
+    format:
+      ko: 분량 제한 명시 없음 (15쪽 초과 시 추가 APC)
+      en: No length limit stated (APC tier up to 15 pages)
+    review:
+      ko: 첫 결정까지 중앙값 32일
+      en: Median 32 days to first decision
+    looks_for:
+      ko:
+        - 과학·기술적 혁신 강조
+        - 원저·특집호·초청 리뷰·코멘트
+      en:
+        - Emphasis on scientific and technological innovation
+        - Original research, special issues, invited reviews, comments
+  sources:
+    - https://opg.optica.org/oe/journal/oe/about.cfm
+    - https://opg.optica.org/content/author/portal/item/review-pub-charge/ (search snippet only)
+ol:
+  name: Optics Letters
+  full: Optics Letters
+  publisher: Optica Publishing Group
+  link: https://opg.optica.org/ol/
+  if: 3.3
+  if_year: 2025
+  if_source: https://opg.optica.org/ol/journal/ol/about.cfm
+  oa: hybrid
+  apc_usd: 2300
+  quick:
+    scope:
+      ko: 광학·광자학 전 분야 최신 연구 단신
+      en: Short communications on latest research in all of optics/photonics
+    format:
+      ko: 짧은 논문(단신); 구체 쪽수 제한은 이 페이지에 없음
+      en: Short letters; page limit not stated on about page
+    review:
+      ko: 첫 결정까지 중앙값 28일
+      en: Median 28 days to first decision
+    looks_for:
+      ko:
+        - 광학계 상당 부분에 대한 뉴스 가치
+        - 신속 출판이 타 연구에 주는 영향
+      en:
+        - Newsworthiness to a substantial part of the optics community
+        - Benefit of rapid publication to others' research
+  sources:
+    - https://opg.optica.org/ol/journal/ol/about.cfm
+    - https://opg.optica.org/content/author/portal/item/review-pub-charge/ (search snippet only)
+boe:
+  name: Biomed Opt Express
+  full: Biomedical Optics Express
+  publisher: Optica Publishing Group
+  link: https://opg.optica.org/boe/
+  if: 3.2
+  if_year: 2025
+  if_source: https://opg.optica.org/boe/journal/boe/about.cfm
+  oa: full OA
+  apc_usd: 1775
+  quick:
+    scope:
+      ko: 생의학용 광학·광자학·광학 이미징의 기초~임상
+      en: Biomedical optics, photonics and imaging, basic to clinical
+    format:
+      ko: 분량 제한 명시 없음 (15쪽 초과 시 쪽당 추가 요금)
+      en: No limit stated (extra fee per page beyond 15)
+    review:
+      ko: 첫 결정까지 중앙값 22일
+      en: Median 22 days to first decision
+    looks_for:
+      ko:
+        - 핵심 생의학 광학기술과 밀접한 영상처리·ML
+        - X선은 광학적 신규성이 있을 때만
+        - 기술개발·생의학 연구·임상 응용
+      en:
+        - Image processing/ML closely tied to core biomedical optics
+        - X-ray only if novelty is optical/photonic
+        - Tech development, biomedical studies, clinical use
+  sources:
+    - https://opg.optica.org/boe/journal/boe/about.cfm
+    - https://opg.optica.org/content/author/portal/item/review-pub-charge/ (search snippet only)
+jbo:
+  name: J Biomed Opt
+  full: Journal of Biomedical Optics
+  publisher: SPIE
+  link: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics
+  if: 2.9
+  if_year: 2024
+  if_source: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics
+  oa: full OA
+  apc_usd: 1675
+  quick:
+    scope:
+      ko: 생의학 광학 (범위 페이지 접근 불가)
+      en: Biomedical optics (scope page not reachable)
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 확인 못함
+      en: Not verified
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics (search snippet only; fetch blocked)
+    - https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/call-for-papers (search snippet only)
+  if_verified: false
+nph:
+  name: Neurophotonics
+  full: Neurophotonics
+  publisher: SPIE
+  link: https://www.spiedigitallibrary.org/journals/neurophotonics
+  if: 3.8
+  if_year: 2024
+  if_source: https://www.spiedigitallibrary.org/journals/neurophotonics
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 신경과학용 광학 기술 (범위 페이지 접근 불가)
+      en: Optical technologies for neuroscience (scope page not reachable)
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 확인 못함
+      en: Not verified
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://www.spiedigitallibrary.org/journals/neurophotonics (search snippet only; fetch blocked)
+    - https://www.spiedigitallibrary.org/journals/neurophotonics/scope-and-details (not read)
+  if_verified: false
+jbio:
+  name: J Biophotonics
+  full: Journal of Biophotonics
+  publisher: Wiley
+  link: https://onlinelibrary.wiley.com/journal/18640648
+  if: 2
+  if_year: null
+  if_source: https://onlinelibrary.wiley.com/journal/18640648
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 학제간 바이오광자학 분야
+      en: The interdisciplinary field of biophotonics
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 채택률 35% (Wiley 페이지 스니펫)
+      en: Acceptance rate 35% (Wiley page snippet)
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://onlinelibrary.wiley.com/journal/18640648 (search snippet only; 403)
+  if_verified: false
+pacs:
+  name: Photoacoustics
+  full: Photoacoustics
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/photoacoustics
+  if: 6.8
+  if_year: null
+  if_source: https://www.sciencedirect.com/journal/photoacoustics/about/insights
+  oa: full OA
+  apc_usd: 3460
+  quick:
+    scope:
+      ko: 광음향 이미징·센싱 (범위 페이지 접근 불가)
+      en: Photoacoustic imaging and sensing (scope page not reachable)
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 채택률 37% (ScienceDirect 스니펫)
+      en: Acceptance rate 37% (ScienceDirect snippet)
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://www.sciencedirect.com/journal/photoacoustics/about/insights (search snippet only; 403)
+    - https://www.sciencedirect.com/journal/photoacoustics/publish/open-access-options (search snippet only)
+  if_verified: false
+copp:
+  name: Curr Opt Photon
+  full: Current Optics and Photonics
+  publisher: Optical Society of Korea (with Optica Publishing Group)
+  link: https://opg.optica.org/copp/
+  if: 1
+  if_year: 2025
+  if_source: https://opg.optica.org/copp/journal/copp/about.cfm
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 광학 전 기술 분야(소재·소자·시스템) 원저
+      en: Original work in all technical fields of optics
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 확인 못함
+      en: Not verified
+    looks_for:
+      ko:
+        - 광학 소재·소자·시스템
+        - 바이오광자학·디스플레이·양자광학 등
+      en:
+        - Optical materials, devices and systems
+        - Biophotonics, displays, quantum optics, etc.
+  sources:
+    - https://opg.optica.org/copp/journal/copp/about.cfm (search snippet only; bot check)
+  if_verified: false
+jppb:
+  name: J Photochem Photobiol B
+  full: 'Journal of Photochemistry and Photobiology B: Biology'
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/journal-of-photochemistry-and-photobiology-b-biology
+  if: 3.7
+  if_year: null
+  if_source: https://www.sciencedirect.com/journal/journal-of-photochemistry-and-photobiology-b-biology/about/insights
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 광화학·광생물학의 생물학적 측면 (범위 페이지 접근 불가)
+      en: Biological photochemistry/photobiology (scope page not reachable)
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 확인 못함
+      en: Not verified
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://www.sciencedirect.com/journal/journal-of-photochemistry-and-photobiology-b-biology/about/insights (search snippet only; 403)
+  if_verified: false
+tci:
+  name: IEEE TCI
+  full: IEEE Transactions on Computational Imaging
+  publisher: IEEE (Signal Processing Society)
+  link: https://signalprocessingsociety.org/publications-resources/ieee-transactions-computational-imaging
+  if: 4.8
+  if_year: null
+  if_source: https://signalprocessingsociety.org/publications-resources/ieee-transactions-computational-imaging/about-tci
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 계산이 영상 형성에 핵심적인 컴퓨테이셔널 이미징
+      en: Imaging where computation is integral to image formation
+    format:
+      ko: 확인 못함
+      en: Not verified
+    review:
+      ko: 확인 못함
+      en: Not verified
+    looks_for:
+      ko:
+        - 이론적 방법부터 새 시스템 설계까지
+      en:
+        - From theoretical methods to novel system designs
+  sources:
+    - https://signalprocessingsociety.org/publications-resources/ieee-transactions-computational-imaging
+    - https://signalprocessingsociety.org/publications-resources/ieee-transactions-computational-imaging/about-tci
+jneurosci:
+  name: J Neurosci
+  full: The Journal of Neuroscience
+  publisher: Society for Neuroscience
+  link: https://www.jneurosci.org/
+  if: 4.3
+  if_year: 2025
+  if_source: https://www.jneurosci.org/content/about-jneurosci
+  oa: hybrid
+  apc_usd: 3840
+  quick:
+    scope:
+      ko: 분자~임상까지 신경과학 전 분야 (학제간)
+      en: All neuroscience, molecular to clinical, transdisciplinary
+    format:
+      ko: 서론 650·고찰 1,500·초록 250단어, 그림 수 제한 없음
+      en: Intro 650, Discussion 1,500, Abstract 250 words; no figure cap
+    review:
+      ko: 공개 심사, 첫 결정까지 중앙값 32일
+      en: Open peer review; median 32 days to first decision
+    looks_for:
+      ko:
+        - 신경과학계와 폭넓은 독자에게 흥미로운 결과
+        - 과학적 엄밀성·재현성
+        - 방법론만 있는 연구는 eNeuro로 안내
+      en:
+        - Findings of interest to neuroscience and a broad audience
+        - Scientific rigor and reproducibility
+        - Pure methods/replications steered to eNeuro
+  sources:
+    - https://www.jneurosci.org/content/about-jneurosci
+    - https://www.jneurosci.org/content/information-authors
+elife:
+  name: eLife
+  full: eLife
+  publisher: eLife Sciences Publications
+  link: https://elifesciences.org/
+  if: null
+  if_year: null
+  if_source: https://elifesciences.org/inside-elife/16afe6ec/update-on-elife-s-indexing-status-at-web-of-science
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 생명과학·의학 전 분야
+      en: All areas of the life sciences and medicine
+    format:
+      ko: Reviewed Preprint 모델 (형식 제한 미확인)
+      en: Reviewed Preprint model (length limits not checked)
+    review:
+      ko: 공개 평가(PRC), 첫 Reviewed Preprint까지 중앙값 95일
+      en: Publish-review-curate; median 95 days to Reviewed Preprint
+    looks_for:
+      ko:
+        - 'eLife Assessment: 중요도(landmark/important/valuable)'
+        - 근거 강도(solid/convincing/compelling 등)
+      en:
+        - eLife Assessment of significance (landmark/important/valuable)
+        - Strength of evidence (solid/convincing/compelling...)
+  sources:
+    - https://elifesciences.org/about
+    - https://elifesciences.org/inside-elife/16afe6ec/update-on-elife-s-indexing-status-at-web-of-science
+    - https://elifesciences.org/inside-elife/8947f033/the-elife-model-two-year-update
+neuroimage:
+  name: NeuroImage
+  full: NeuroImage
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/neuroimage
+  if: 5.3
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/neuroimage/about/insights
+  oa: full OA
+  apc_usd: 3540
+  quick:
+    scope:
+      ko: 모든 뉴로이미징 기법으로 뇌 기능·구조 연구 및 분석법
+      en: Brain function/structure via all neuroimaging modalities + methods
+    format:
+      ko: 원저·리뷰·방법·모델/리소스 논문 (제한은 GfA 참조)
+      en: 'Research, review, methods, models/resources (limits: see GfA)'
+    review:
+      ko: 첫 결정 4일, 심사 후 결정 60일, 채택 147일
+      en: 4 d to first decision; 60 d after review; 147 d to acceptance
+    looks_for:
+      ko:
+        - 인간 뇌의 거시적 수준 이해
+        - 다층 분석을 위한 이론·기술 혁신
+        - 동물·환자 연구는 인간 뇌 시스템 이해에 기여 시
+      en:
+        - Macroscopic-level understanding of the human brain
+        - Theoretical/technological innovation across levels
+        - Animal/clinical work if it informs human systems
+  sources:
+    - https://www.sciencedirect.com/journal/neuroimage
+    - https://www.sciencedirect.com/journal/neuroimage/about/insights
+    - https://www.sciencedirect.com/journal/neuroimage/about/aims-and-scope
+jcbfm:
+  name: JCBFM
+  full: Journal of Cerebral Blood Flow & Metabolism
+  publisher: SAGE
+  link: https://journals.sagepub.com/home/jcb
+  if: 4.7
+  if_year: 2025
+  if_source: https://journals.sagepub.com/metrics/jcb
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 뇌 순환·대사·영상, 기초~임상 신경혈관 과학
+      en: Brain circulation, metabolism, imaging; neurovascular science
+    format:
+      ko: 형식 제한 미확인
+      en: Length limits not checked
+    review:
+      ko: 첫 결정 중앙값 5일, 심사 46일, 채택 149일
+      en: Median 5 d first decision; 46 d review; 149 d to accept
+    looks_for:
+      ko:
+        - 기초·임상 신경혈관 과학의 접점
+        - 뇌 순환·대사의 실험·이론·임상 측면
+      en:
+        - Interface of basic and clinical neurovascular science
+        - Experimental/theoretical/clinical brain circulation & metabolism
+  sources:
+    - https://journals.sagepub.com/home/jcb
+    - https://journals.sagepub.com/metrics/jcb
+brain-stim:
+  name: Brain Stimulation
+  full: 'Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation'
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/brain-stimulation
+  if: 9.7
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/brain-stimulation/about/insights
+  oa: full OA
+  apc_usd: 4860
+  quick:
+    scope:
+      ko: 침습·비침습 뇌자극/신경조절 (전기·자기·빛·초음파 등)
+      en: 'Invasive/noninvasive neuromodulation: electric, magnetic, light, sound'
+    format:
+      ko: 원저·리뷰·코멘터리·서신 (제한은 GfA 참조)
+      en: Original articles, reviews, commentaries, letters (see GfA)
+    review:
+      ko: 첫 결정 22일, 심사 후 결정 50일, 채택 84일
+      en: 22 d to first decision; 50 d after review; 84 d to acceptance
+    looks_for:
+      ko:
+        - 신경기능을 직접 변화시키는 물리적 자극
+        - 자극의 치료 잠재력·부작용
+        - 자극 생물물리·연결성 탐침 연구
+      en:
+        - Physical methods that directly alter neural function
+        - Therapeutic potential and adverse effects
+        - Biophysics of stimulation; connectivity probing
+  sources:
+    - https://www.sciencedirect.com/journal/brain-stimulation/about/insights
+    - https://www.sciencedirect.com/journal/brain-stimulation/about/aims-and-scope
+nbd:
+  name: Neurobiol Dis
+  full: Neurobiology of Disease
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/neurobiology-of-disease
+  if: 6
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/neurobiology-of-disease/about/insights
+  oa: full OA
+  apc_usd: 4060
+  quick:
+    scope:
+      ko: 기초·임상 신경과학 접점의 질환 기전 연구
+      en: Disease mechanisms at basic-clinical neuroscience interface
+    format:
+      ko: 원저·리뷰 (제한은 GfA 참조)
+      en: 'Research and review papers (limits: see GfA)'
+    review:
+      ko: 첫 결정 1일, 심사 후 결정 29일, 채택 86일
+      en: 1 d to first decision; 29 d after review; 86 d to acceptance
+    looks_for:
+      ko:
+        - 분자·세포 수준 질환 기전
+        - 중요성이 입증된 음성 결과도 환영
+        - 단일 기법(영상·오믹스)만의 연구는 부적합
+      en:
+        - Molecular/cellular disease mechanisms
+        - Negative results welcome if well argued
+        - Not single-technique (imaging/omics-only) studies
+  sources:
+    - https://www.sciencedirect.com/journal/neurobiology-of-disease/about/insights
+    - https://www.sciencedirect.com/journal/neurobiology-of-disease/about/aims-and-scope
+exp-neurol:
+  name: Exp Neurol
+  full: Experimental Neurology
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/experimental-neurology
+  if: 4.8
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/experimental-neurology/about/insights
+  oa: hybrid
+  apc_usd: 3850
+  quick:
+    scope:
+      ko: 신경질환의 기초 기전에 초점을 둔 신경과학 원저
+      en: Neuroscience research on basic mechanisms of neurological disorders
+    format:
+      ko: 형식 제한 미확인 (GfA 참조)
+      en: Length limits not checked (see GfA)
+    review:
+      ko: 첫 결정 8일, 심사 후 결정 46일, 채택 103일
+      en: 8 d to first decision; 46 d after review; 103 d to acceptance
+    looks_for:
+      ko:
+        - 신경질환의 기초 기전 연구
+      en:
+        - Basic mechanisms underlying neurological disorders
+  sources:
+    - https://www.sciencedirect.com/journal/experimental-neurology/about/insights
+    - https://www.sciencedirect.com/journal/experimental-neurology/about/aims-and-scope
+tsr:
+  name: Transl Stroke Res
+  full: Translational Stroke Research
+  publisher: Springer Nature
+  link: https://link.springer.com/journal/12975
+  if: 4.2
+  if_year: 2025
+  if_source: https://link.springer.com/journal/12975
+  oa: hybrid
+  apc_usd: 5690
+  quick:
+    scope:
+      ko: 뇌졸중·신경외상의 예방·평가·치료·회복 전략
+      en: Prevention, assessment, treatment, repair after stroke/neurotrauma
+    format:
+      ko: 원저·리뷰·연구보고·서신·프로토콜 (제한 미확인)
+      en: Articles, reviews, reports, letters, protocols (limits not checked)
+    review:
+      ko: 첫 결정 중앙값 5일 (개요엔 평균 26일로 표기)
+      en: Median 5 d to first decision (overview text says avg 26 d)
+    looks_for:
+      ko:
+        - 기초·중개·임상의 새로운 접근
+        - 뇌졸중·신경외상 신규 전략 개발
+      en:
+        - Novel approaches in basic, translational, clinical studies
+        - New strategies for stroke and neurotrauma
+  sources:
+    - https://link.springer.com/journal/12975
+    - https://link.springer.com/journal/12975/how-to-publish-with-us
+exp-neurobiol:
+  name: Exp Neurobiol
+  full: Experimental Neurobiology
+  publisher: Korean Society for Brain and Neural Sciences / Korean Society for Neurodegenerative Disease
+  link: https://www.en-journal.org/
+  if: 2.4
+  if_year: 2025
+  if_source: https://www.en-journal.org/asset/img/main/img_impact_2026.png
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 신경계 전 분야 학제간 연구 (세포·질환·시스템·BMI 등)
+      en: Interdisciplinary neuroscience incl. disease, systems, BMI, tools
+    format:
+      ko: 초록 250단어, 그래픽 요약 그림 필요
+      en: Abstract ≤250 words; representative schematic figure required
+    review:
+      ko: 심사 기간 미공개
+      en: Review times not stated
+    looks_for:
+      ko:
+        - 신경과학 전 분야의 새로운 관찰
+        - 넓은 과학 독자층의 관심
+      en:
+        - Novel observations in any field of neuroscience
+        - Interest to a broad scientific audience
+  sources:
+    - https://www.en-journal.org/main.html
+    - https://www.en-journal.org/content/about/aims_and_scope.html
+    - https://www.en-journal.org/content/policy/instruction_to_authors.html
+emm:
+  name: Exp Mol Med
+  full: Experimental & Molecular Medicine
+  publisher: Springer Nature (Korean Society for Biochemistry and Molecular Biology)
+  link: https://www.nature.com/emm/
+  if: 17.5
+  if_year: 2025
+  if_source: https://www.nature.com/emm/journal-information
+  oa: full OA
+  apc_usd: 4690
+  quick:
+    scope:
+      ko: 인간 생리·질환의 유전·분자·세포 중개연구
+      en: Genetic, molecular, cellular translational studies of human disease
+    format:
+      ko: 원저·리뷰 (제한 미확인)
+      en: Original Articles and Reviews (limits not checked)
+    review:
+      ko: 첫 결정 중앙값 29일, 채택 161일
+      en: Median 29 d to first decision; 161 d to acceptance
+    looks_for:
+      ko:
+        - 명확한 in vivo 관련성과 새로움
+        - 임상적 의의가 있는 기초 발견
+        - 분자 도구를 이용한 중개연구
+      en:
+        - Clear in vivo relevance and novelty
+        - Basic discoveries with clinical relevance
+        - Translational work using molecular tools
+  sources:
+    - https://www.nature.com/emm/journal-information
+    - https://www.nature.com/emm/open-access
+theranostics:
+  name: Theranostics
+  full: Theranostics
+  publisher: Ivyspring International Publisher
+  link: https://www.thno.org/
+  if: 14.9
+  if_year: null
+  if_source: https://www.thno.org/
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 체외진단·분자영상·영상유도치료·나노의학
+      en: Diagnostics, molecular imaging, image-guided therapy, nanomedicine
+    format:
+      ko: 형식 제한 미확인
+      en: Length limits not checked
+    review:
+      ko: 심사 기간 미공개
+      en: Review times not stated
+    looks_for:
+      ko:
+        - 진단·치료 융합의 혁신적 연구
+        - 중개·맞춤의학 연구
+      en:
+        - Innovative diagnostic/therapeutic research
+        - Translational and personalized medicine
+  sources:
+    - https://www.thno.org/
+    - https://www.thno.org/ms/author
+iovs:
+  name: IOVS
+  full: Investigative Ophthalmology & Visual Science
+  publisher: ARVO
+  link: https://iovs.arvojournals.org/
+  if: null
+  if_year: null
+  if_source: null
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 안과·시각과학 연구 (공식 범위 페이지 접근 불가)
+      en: Ophthalmology/vision research (official scope page blocked)
+    format:
+      ko: 형식 제한 미확인
+      en: Length limits not checked
+    review:
+      ko: 심사 기간 미확인
+      en: Review times not checked
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://en.wikipedia.org/wiki/Investigative_Ophthalmology_%26_Visual_Science
+cornea:
+  name: Cornea
+  full: Cornea
+  publisher: Wolters Kluwer
+  link: https://journals.lww.com/corneajrnl/pages/default.aspx
+  if: 2.3
+  if_year: null
+  if_source: https://www.ovid.com/jnls/corneajrnl
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 각막·외안부 질환 (About 페이지 내용 로드 안 됨)
+      en: Cornea/external eye (About page content did not load)
+    format:
+      ko: 형식 제한 미확인
+      en: Length limits not checked
+    review:
+      ko: 심사 기간 미확인
+      en: Review times not checked
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://www.ovid.com/jnls/corneajrnl
+oph-sci:
+  name: Ophthalmol Sci
+  full: Ophthalmology Science
+  publisher: Elsevier (American Academy of Ophthalmology)
+  link: https://www.sciencedirect.com/journal/ophthalmology-science
+  if: 5
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/ophthalmology-science/about/insights
+  oa: full OA
+  apc_usd: 2750
+  quick:
+    scope:
+      ko: 전임상·1/2상 임상시험·실험실 연구·안과 정보학
+      en: Preclinical, phase 1/2 trials, lab work, ophthalmic informatics
+    format:
+      ko: 형식 제한 미확인 (GfA 참조)
+      en: Length limits not checked (see GfA)
+    review:
+      ko: 첫 결정 12일, 채택 134일, 채택률 31%
+      en: 12 d to first decision; 134 d to accept; 31% acceptance
+    looks_for:
+      ko:
+        - 전임상 개발 및 초기 임상시험
+        - 실험실 기반 연구·안과 정보학
+      en:
+        - Pre-clinical development and early-phase trials
+        - Laboratory-based work and ophthalmology informatics
+  sources:
+    - https://www.sciencedirect.com/journal/ophthalmology-science/about/insights
+    - https://www.sciencedirect.com/journal/ophthalmology-science/about/aims-and-scope
+ocular-surface:
+  name: Ocul Surf
+  full: The Ocular Surface
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/the-ocular-surface
+  if: 6.6
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/the-ocular-surface/about/insights
+  oa: hybrid
+  apc_usd: 3500
+  quick:
+    scope:
+      ko: 안구표면 생리·병리·치료 (리뷰 중심, 일부 원저)
+      en: Ocular surface physiology, pathology, therapy; review-led
+    format:
+      ko: 비평적 리뷰 중심, 일부 원저·기술 논문
+      en: Mainly critical reviews; select original research/technique papers
+    review:
+      ko: 첫 결정 7일, 채택 123일, 채택률 14%
+      en: 7 d to first decision; 123 d to accept; 14% acceptance
+    looks_for:
+      ko:
+        - 안구표면 병리의 내·외과적 관리
+        - 손상·질환에 대한 안구표면 반응
+        - 약물·기기 개발 최신 동향
+      en:
+        - Medical/surgical management of ocular surface disease
+        - How the ocular surface responds to injury/disease
+        - Drug and device development updates
+  sources:
+    - https://www.sciencedirect.com/journal/the-ocular-surface/about/insights
+    - https://www.sciencedirect.com/journal/the-ocular-surface/about/aims-and-scope
+    - https://www.sciencedirect.com/journal/the-ocular-surface/publish/open-access-options
+trans-oncol:
+  name: Transl Oncol
+  full: Translational Oncology
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/translational-oncology
+  if: 4.9
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/translational-oncology/about/insights
+  oa: full OA
+  apc_usd: 3960
+  quick:
+    scope:
+      ko: 실험실과 임상을 잇는 암 진단·치료 중개연구
+      en: 'Lab-to-clinic cancer research: detection, diagnosis, treatment'
+    format:
+      ko: 원저·리뷰·사설만, 증례보고 불가
+      en: Original Reports, Reviews, Editorials; no Case Reports
+    review:
+      ko: 첫 결정 22일, 채택 150일, 채택률 10%
+      en: 22 d to first decision; 150 d to accept; 10% acceptance
+    looks_for:
+      ko:
+        - 실험실-임상 가교 연구
+        - 새로운 치료 개입의 실험 연구
+        - 새 치료 패러다임 임상시험
+      en:
+        - Research bridging lab and clinic
+        - Lab studies of novel therapeutic interventions
+        - Trials of new treatment paradigms
+  sources:
+    - https://www.sciencedirect.com/journal/translational-oncology/about/insights
+    - https://www.sciencedirect.com/journal/translational-oncology/about/aims-and-scope
+plos-one:
+  name: PLOS ONE
+  full: PLOS ONE
+  publisher: PLOS
+  link: https://journals.plos.org/plosone/
+  if: null
+  if_year: null
+  if_source: null
+  oa: full OA
+  apc_usd: 2477
+  quick:
+    scope:
+      ko: 자연과학·의학·공학 등 200개 이상 분야
+      en: 200+ subject areas across science, medicine, engineering
+    format:
+      ko: 원저·체계적 고찰·방법·프로토콜 (제한 미확인)
+      en: Research, systematic reviews, methods, protocols (limits n/c)
+    review:
+      ko: 첫 결정 중앙값 45일, 채택 188일 (2023 상반기)
+      en: Median 45 d to first decision; 188 d to accept (H1 2023)
+    looks_for:
+      ko:
+        - 독창적·미발표 연구
+        - 높은 기술적 기준과 충분한 기술
+        - 데이터로 뒷받침된 결론
+        - 윤리·데이터 공개 기준 준수
+      en:
+        - Original, unpublished research
+        - High technical standard, fully described
+        - Conclusions supported by the data
+        - Ethics, reporting and data-availability compliance
+  sources:
+    - https://journals.plos.org/plosone/s/journal-information
+    - https://plos.org/fees/
+biomedicines:
+  name: Biomedicines
+  full: Biomedicines
+  publisher: MDPI
+  link: https://www.mdpi.com/journal/biomedicines
+  if: 4.5
+  if_year: 2025
+  if_source: https://www.mdpi.com/journal/biomedicines/stats
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 인간 건강·질환, 신규 치료표적·전략, 바이오의약품
+      en: Human health/disease, new therapeutic targets, biopharmaceuticals
+    format:
+      ko: 형식 제한 미확인
+      en: Length limits not checked
+    review:
+      ko: 첫 결정 19일, 채택→게재 3일
+      en: 19 d to first decision; 3 d acceptance to publication
+    looks_for:
+      ko:
+        - 질환 발병 기전
+        - 중개·임상 연구와 응용
+      en:
+        - Pathogenesis mechanisms of disease
+        - Translational and clinical research and applications
+  sources:
+    - https://www.mdpi.com/journal/biomedicines/stats
+    - https://www.mdpi.com/journal/biomedicines/about
+    - https://www.mdpi.com/journal/biomedicines/apc
+in-vivo:
+  name: In Vivo
+  full: In Vivo
+  publisher: International Institute of Anticancer Research (IIAR)
+  link: https://iv.iiarjournals.org/
+  if: 1.8
+  if_year: 2023
+  if_source: https://iiar-anticancer.org/category/in-vivo/
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 실험·임상 생의학 연구 (생리·병리·질환 관리)
+      en: Experimental and clinical biomedical research and reviews
+    format:
+      ko: 형식 제한 미확인
+      en: Length limits not checked
+    review:
+      ko: 심사 기간 미확인
+      en: Review times not checked
+    looks_for:
+      ko:
+        - 독창적 고품질 원저·리뷰
+      en:
+        - Original high-quality works and reviews
+  sources:
+    - https://iiar-anticancer.org/category/in-vivo/
+    - https://iv.iiarjournals.org/
+  if_verified: false
+tpami:
+  name: IEEE TPAMI
+  full: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  publisher: IEEE (Computer Society)
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34
+  if: 20.4
+  if_year: 2025
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34
+  oa: hybrid
+  apc_usd: 2800
+  quick:
+    scope:
+      ko: 컴퓨터 비전·패턴 인식·패턴 분석용 기계학습
+      en: Computer vision, pattern recognition, ML for pattern analysis
+    format: null
+    review: null
+    looks_for:
+      ko:
+        - 컴퓨터 비전·영상 이해의 전통적 전 분야
+        - 패턴 분석을 위한 기계학습에 중점
+        - 의료영상 분석·비디오 분석·얼굴/제스처 인식 포함
+      en:
+        - All traditional areas of computer vision and image understanding
+        - Emphasis on machine learning for pattern analysis
+        - Covers medical image, video analysis, face/gesture recognition
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34
+ijcv:
+  name: IJCV
+  full: International Journal of Computer Vision
+  publisher: Springer
+  link: https://link.springer.com/journal/11263
+  if: 10.3
+  if_year: 2025
+  if_source: https://link.springer.com/journal/11263
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 컴퓨터 비전의 과학과 공학 (이론·응용·인간 지각)
+      en: Science and engineering of computer vision
+    format: null
+    review:
+      ko: 첫 결정 중앙값 37일 (심사 진행 원고는 약 96일)
+      en: Median 37 days to first decision (~96 days if reviewed)
+    looks_for:
+      ko:
+        - 폭넓은 관심을 끄는 주요 기술적 진전
+        - 최신 기술의 비판적 리뷰·튜토리얼 서베이
+      en:
+        - Major technical advances of broad general interest
+        - Critical reviews / tutorial surveys of the state of the art
+  sources:
+    - https://link.springer.com/journal/11263
+tnnls:
+  name: IEEE TNNLS
+  full: IEEE Transactions on Neural Networks and Learning Systems
+  publisher: IEEE (Computational Intelligence Society)
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385
+  if: 9.7
+  if_year: 2025
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385
+  oa: hybrid
+  apc_usd: 2800
+  quick:
+    scope:
+      ko: 신경망 및 관련 학습 시스템의 이론·설계·응용
+      en: Theory, design, applications of neural nets and learning systems
+    format: null
+    review: null
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385
+tip:
+  name: IEEE TIP
+  full: IEEE Transactions on Image Processing
+  publisher: IEEE (Signal Processing Society)
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83
+  if: 15.3
+  if_year: 2025
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83
+  oa: hybrid
+  apc_usd: 2800
+  quick:
+    scope:
+      ko: 영상·비디오·다차원 신호의 형성·처리·분석 이론과 알고리즘
+      en: Theory/algorithms for forming, processing, analyzing images & video
+    format: null
+    review: null
+    looks_for:
+      ko:
+        - 새로운 이론·알고리즘·아키텍처
+        - 생체의료 영상 등 다양한 응용
+      en:
+        - Novel theory, algorithms and architectures
+        - Applications incl. biomedical imaging and remote sensing
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83
+media:
+  name: Medical Image Analysis
+  full: Medical Image Analysis
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/medical-image-analysis
+  if: 14
+  if_year: 2025
+  if_source: https://www.sciencedirect.com/journal/medical-image-analysis/about/insights
+  oa: hybrid
+  apc_usd: 4570
+  quick:
+    scope:
+      ko: 'MICCAI 공식 저널: 의료·생물 영상 분석 신규 연구'
+      en: 'MICCAI journal: new research in medical & biological image analysis'
+    format: null
+    review:
+      ko: 첫 결정 7일, 심사 후 결정 88일, 채택까지 253일
+      en: 7 days to first decision; 88 after review; 253 to acceptance
+    looks_for:
+      ko:
+        - 의료·생물 영상 분석의 새로운 연구 결과
+        - 컴퓨터 비전·VR·로보틱스의 생의학 응용
+      en:
+        - New results in medical and biological image analysis
+        - Computer vision, VR and robotics applied to biomedicine
+  sources:
+    - https://www.sciencedirect.com/journal/medical-image-analysis/about/insights
+tmi:
+  name: IEEE TMI
+  full: IEEE Transactions on Medical Imaging
+  publisher: IEEE (EMBS and others)
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42
+  if: 12.4
+  if_year: 2025
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42
+  oa: hybrid
+  apc_usd: 2800
+  quick:
+    scope:
+      ko: 구조·형태·기능 영상 (세포·분자·현미경 포함) 및 분석 방법
+      en: Imaging of body structure/function incl. cell, molecular, microscopy
+    format: null
+    review: null
+    looks_for:
+      ko:
+        - 새로운 방법을 담은 강한 응용 논문
+        - 고도로 기술적인 관점의 연구
+        - 방법론 혁신 없는 기존 방법 응용은 타 저널로
+      en:
+        - Strong application papers describing novel methods
+        - Highly technical perspectives welcome
+        - Established methods without innovation are redirected
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42
+npjdm:
+  name: npj Digital Medicine
+  full: npj Digital Medicine
+  publisher: Springer Nature (Nature Portfolio; with Seoul National University Bundang Hospital)
+  link: https://www.nature.com/npjdigitalmed/
+  if: 18
+  if_year: 2025
+  if_source: https://www.nature.com/npjdigitalmed/journal-impact
+  oa: full OA
+  apc_usd: null
+  quick:
+    scope:
+      ko: 디지털·모바일 기술, 가상의료, AI의 임상 적용 등 디지털 의학
+      en: 'Digital medicine: clinical use of digital/mobile tech, AI'
+    format: null
+    review:
+      ko: 첫 편집 결정 중앙값 10일, 채택까지 144일
+      en: Median 10 days to first decision; 144 days to acceptance
+    looks_for:
+      ko:
+        - 디지털·모바일 기술의 임상 적용·구현
+        - AI·정보학의 혁신적 응용
+        - 보건의료 혁신을 이끄는 연구
+      en:
+        - Clinical application/implementation of digital & mobile tech
+        - Innovative applications of AI and informatics
+        - Work guiding transformation of healthcare
+  sources:
+    - https://www.nature.com/npjdigitalmed/journal-impact
+    - https://www.nature.com/npjdigitalmed/aims
+    - https://www.nature.com/npjdigitalmed/journal-information
+tbme:
+  name: IEEE TBME
+  full: IEEE Transactions on Biomedical Engineering
+  publisher: IEEE (EMBS)
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10
+  if: 4.4
+  if_year: 2025
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10
+  oa: hybrid
+  apc_usd: 2800
+  quick:
+    scope:
+      ko: 생체의공학 기초·응용 논문 (방법 개발부터 임상 연구까지)
+      en: Basic and applied biomedical engineering, methods to clinic
+    format: null
+    review: null
+    looks_for:
+      ko:
+        - 생의학 응용을 위한 공학적 방법·기술 개발
+        - 공학적 기여가 있는 실험·임상 연구
+      en:
+        - Engineering methods/techniques with biomedical applications
+        - Experimental/clinical studies with engineering contributions
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10
+    - https://www.embs.org/tbme/
+tnsre:
+  name: IEEE TNSRE
+  full: IEEE Transactions on Neural Systems and Rehabilitation Engineering
+  publisher: IEEE (EMBS)
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7333
+  if: 6.6
+  if_year: 2025
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7333
+  oa: full OA
+  apc_usd: 2160
+  quick:
+    scope:
+      ko: 생체의공학의 재활·신경 분야 (FES, EMG, 운동제어, 보조기기)
+      en: 'Rehabilitative and neural BME: FES, EMG, motor control, assistive'
+    format: null
+    review: null
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7333
+jbhi:
+  name: IEEE JBHI
+  full: IEEE Journal of Biomedical and Health Informatics
+  publisher: IEEE (EMBS)
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020
+  if: 7.7
+  if_year: 2025
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020
+  oa: hybrid
+  apc_usd: 2800
+  quick:
+    scope:
+      ko: 정보통신기술과 보건·의료·생명과학이 만나는 생의학·보건 정보학
+      en: 'Biomedical & health informatics: ICT meets health and biomedicine'
+    format: null
+    review: null
+    looks_for:
+      ko:
+        - 이론 분석·방법·기술 개발 또는 새로운 임상 응용
+        - 웨어러블·원격의료·의사결정지원 등 통합
+      en:
+        - Original theory, methods, tech development or clinical apps
+        - 'Integration: wearables, telemedicine, decision support'
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020
+bmel:
+  name: BMEL
+  full: Biomedical Engineering Letters
+  publisher: Springer (co-published with KOSOMBE)
+  link: https://link.springer.com/journal/13534
+  if: 3.4
+  if_year: 2025
+  if_source: https://link.springer.com/journal/13534
+  oa: hybrid
+  apc_usd: null
+  quick:
+    scope:
+      ko: 생체의공학·응용 생물물리학 학제간 원저 연구
+      en: Interdisciplinary biomedical engineering and applied biophysics
+    format: null
+    review:
+      ko: 첫 결정 중앙값 24일
+      en: Median 24 days to first decision
+    looks_for:
+      ko:
+        - 혁신적 실험 과학·기술 개발
+        - 새 개발의 임상 적용
+      en:
+        - Innovative experimental science and technology development
+        - Clinical application of new developments
+  sources:
+    - https://link.springer.com/journal/13534
+nano-lett:
+  name: Nano Letters
+  full: Nano Letters
+  publisher: ACS
+  link: https://pubs.acs.org/journal/nalefd
+  if: 9.1
+  if_year: 2025
+  if_source: https://pubs.acs.org/journal/nalefd
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 나노과학·나노기술 커뮤니케이션의 글로벌 저널
+      en: Global home for communications in nanoscience and nanotechnology
+    format: null
+    review: null
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://pubs.acs.org/journal/nalefd
+acs-anm:
+  name: ACS Applied Nano Materials
+  full: ACS Applied Nano Materials
+  publisher: ACS
+  link: https://pubs.acs.org/journal/aanmf6
+  if: 5.8
+  if_year: 2025
+  if_source: https://pubs.acs.org/journal/aanmf6
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 나노소재 응용 관련 공학·화학·물리·생물 전 분야
+      en: Engineering, chemistry, physics, biology of nanomaterial applications
+    format: null
+    review: null
+    looks_for:
+      ko: []
+      en: []
+  sources:
+    - https://pubs.acs.org/journal/aanmf6
+acs-nano:
+  name: ACS Nano
+  full: ACS Nano
+  publisher: ACS
+  link: https://pubs.acs.org/journal/ancac3
+  if: 17.3
+  if_year: 2025
+  if_source: https://pubs.acs.org/journal/ancac3
+  oa: null
+  apc_usd: null
+  quick:
+    scope:
+      ko: 나노구조 합성·조립·특성분석, 이론, 나노바이오, 나노공정
+      en: Nanostructure synthesis/characterization, theory, nanobio, nanofab
+    format: null
+    review: null
+    looks_for:
+      ko:
+        - 나노구조 합성·조립·특성 분석의 획기적 연구
+        - 나노바이오기술·나노제조
+      en:
+        - Breakthrough studies on nanostructure synthesis and assembly
+        - Nanobiotechnology and nanofabrication
+  sources:
+    - https://pubs.acs.org/journal/ancac3

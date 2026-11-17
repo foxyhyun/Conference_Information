@@ -1,0 +1,334 @@
+{
+  "source": "https://gistnpl.github.io/gist-neurophotonicslab/publication/",
+  "crawledAt": "2026-11-17T10:38:10.286Z",
+  "items": [
+    {
+      "type": "journal",
+      "venue": "Brain Stimulation",
+      "year": 2026,
+      "title": "High-fidelity transcranial ultrasound multi-focal stimulation via physics-aware hologram technique",
+      "note": "Brain Stimulation (2026) 19(4), 103158. DOI: 10.1016/j.brs.2026.103158",
+      "doi": "10.1016/j.brs.2026.103158"
+    },
+    {
+      "type": "journal",
+      "venue": "Biomedical Optics Express",
+      "year": 2026,
+      "title": "Dual-scale and dual-channel oblique plane microscopy for multi-resolution imaging of large tissue specimens",
+      "note": "Biomedical Optics Express (2026) 17(7), 3540-3552. DOI: 10.1364/BOE.596780",
+      "doi": "10.1364/BOE.596780"
+    },
+    {
+      "type": "journal",
+      "venue": "Cornea",
+      "year": 2026,
+      "title": "A Novel Interferometric Device for Measurement of Tear Film Lipid Layer Thickness in Mice",
+      "note": "Cornea (2026) 45(5), 612-621. DOI: 10.1097/ICO.0000000000004032",
+      "doi": "10.1097/ICO.0000000000004032"
+    },
+    {
+      "type": "journal",
+      "venue": "PhotoniX",
+      "year": 2026,
+      "title": "Event-based optical imaging and reconstruction of in vivo neuronal and vascular dynamics",
+      "note": "PhotoniX (2026) 7:21. DOI: 10.1186/s43074-026-00240-8",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "IEEE Trans. Neural Syst. Rehabil. Eng.",
+      "year": 2026,
+      "title": "Ultra High Frequency–Low Intensity Magnetic Stimulation Enhances Functional Recovery in a Rat Model for Chronic Capsule Infarct",
+      "note": "IEEE Transactions on Neural Systems and Rehabilitation Engineering (2026). DOI: 10.1109/TNSRE.2026.3683434",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Neurophotonics (SPIE)",
+      "year": 2025,
+      "title": "Rapid axially scanned and de-scanned line-scan confocal microscopy with a tunable acoustic gradient index of refraction lens for high-speed volumetric in vivo imaging",
+      "note": "Neurophotonics (2025) Vol. 12(4), 045013.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Scientific Reports",
+      "year": 2025,
+      "title": "MoSeq based 3D behavioral profiling uncovers neuropathic behavior changes in diabetic mouse model",
+      "note": "Scientific Reports (2025) 15:15114. DOI: 10.1038/s41598-025-98184-9",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Translational Stroke Research",
+      "year": 2025,
+      "title": "Photobiomodulation Promotes Early Recovery of Olfactory Function and Modulates Neuroprotective Gene Expression in a Mouse Model of Ischemic Stroke",
+      "note": "Translational Stroke Research (2025). DOI: 10.1007/s12975-025-01343-3",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Photoacoustics",
+      "year": 2025,
+      "title": "All-optical in vivo photoacoustic tomography by adaptive multilayer acoustic backpropagation",
+      "note": "Photoacoustics 45 (2025) 100753.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Neurobiology of Disease",
+      "year": 2025,
+      "title": "Vascular and glymphatic dysfunction as drivers of cognitive impairment in Alzheimer’s disease: Insights from computational approaches",
+      "note": "Review article on vascular–glymphatic dysfunction and ML-based analysis in Alzheimer’s disease.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Invest Ophthalmol Vis Sci.",
+      "year": 2025,
+      "title": "Modeling Neuropathic Corneal Pain: Pulled Nerve Approach With Elevated Krt16 Gene Expression",
+      "note": "Invest Ophthalmol Vis Sci. 2025;66(2):35.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Neurophotonics (SPIE)",
+      "year": 2025,
+      "title": "Ultrafast optical imaging techniques for exploring rapid neuronal dynamics",
+      "note": "Review (Special Issue).",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Advanced Imaging",
+      "year": 2025,
+      "title": "Comments on high-speed mesoscale light-field microscopy",
+      "note": "Vol. 2(2), Article 023001. DOI: 10.3788/AI.2025.30002",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Ophthalmology Science",
+      "year": 2024,
+      "title": "Evaluating the Preclinical Efficacy of Photobiomodulation in Alleviating Neuropathic Corneal Pain: A Behavioral Study",
+      "note": "American Academy of Ophthalmology (open access).",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Scientific Reports",
+      "year": 2024,
+      "title": "Infrared thermal modulation endoscopy for label-free tumor detection",
+      "note": "Scientific Reports (2024) 14:31575.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Experimental & Molecular Medicine",
+      "year": 2024,
+      "title": "Tonic excitation by astrocytic GABA causes neuropathic pain by augmenting neuronal activity and glucose metabolism",
+      "note": "Experimental & Molecular Medicine (2024) 56:1193–1205.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "In Vivo",
+      "year": 2023,
+      "title": "Orthotopic Mouse Models of Urinary Bladder Cancer",
+      "note": "In Vivo (2023) 37:2039–2043. DOI: 10.21873/invivo.13301",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Experimental Neurology",
+      "year": 2023,
+      "title": "Photobiomodulation Therapy Restores Olfactory Function Impaired by Photothrombosis in Mouse Olfactory Bulb",
+      "note": "Experimental Neurology (2023) 367:114462.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Journal of Biophotonics",
+      "year": 2023,
+      "title": "Advances in laser speckle imaging: From qualitative to quantitative hemodynamic assessment",
+      "note": "Review. DOI: 10.1002/jbio.202300126",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "The Ocular Surface",
+      "year": 2022,
+      "title": "Automated quantification of meibomian gland dropout in infrared meibography using deep learning",
+      "note": "Research article (Elsevier / ScienceDirect).",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Theranostics",
+      "year": 2022,
+      "title": "Nanozyme-based colorimetric biosensor with a systemic quantification algorithm for noninvasive glucose monitoring",
+      "note": "Theranostics (2022) 12(14):6308–6338. DOI: 10.7150/thno.72152",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Experimental Neurobiology",
+      "year": 2022,
+      "title": "Cranial and Spinal Window Preparation for in vivo Optical Neuroimaging in Rodents and Related Experimental Techniques",
+      "note": "Exp Neurobiol. 2022 Jun;31(3):131–146. DOI: 10.5607/en.2022.31.3.131",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Optics Express",
+      "year": 2022,
+      "title": "Fast volumetric imaging with line-scan confocal microscopy by electrically tunable lens at resonant frequency",
+      "note": "Optics Express, Vol. 30, No. 11 (2022) 19152.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "[Journal Name]",
+      "year": 2022,
+      "title": "Single-shot temporal speckle correlation imaging using rolling shutter image sensors",
+      "note": "Research article.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Nano Letters",
+      "year": 2021,
+      "title": "Optical Assessment of Tear Glucose by Smart Biosensor Based on Nanoparticle Embedded Contact Lens",
+      "note": "Nano Letters (2021) 21:8933–8940.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Current Optics and Photonics",
+      "year": 2021,
+      "title": "Enhancement of Speckle Contrast in vivo by Combining Linearly Polarized Laser Light and an Analyzer",
+      "note": "Current Optics and Photonics (2021) 5(4):351–361. DOI: 10.3807/COPP.2021.5.4.351",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Optica",
+      "year": 2021,
+      "title": "Quantitative blood flow estimation in vivo by optical speckle image velocimetry",
+      "note": "Optica (2021) 8(8). DOI: 10.1364/OPTICA.422871",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "ACS Applied Nano Materials",
+      "year": 2021,
+      "title": "Cerium Oxide Nanoparticle-Containing Colorimetric Contact Lenses for Noninvasively Monitoring Human Tear Glucose",
+      "note": "ACS Appl. Nano Mater. (2021) 4:5198–5210.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Biomedical Optics Express",
+      "year": 2021,
+      "title": "Open-top axially swept light-sheet microscopy",
+      "note": "Biomedical Optics Express (2021) 12(4):2328. DOI: 10.1364/BOE.419030",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Biomedicines",
+      "year": 2021,
+      "title": "Non-Oncologic Applications of Nanomedicine-Based Photo-Therapy",
+      "note": "Biomedicines (2021) 9:113. DOI: 10.3390/biomedicines9020113",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Journal of Photochemistry & Photobiology, B: Biology",
+      "year": 2020,
+      "title": "Neurite growth of trigeminal ganglion neurons in vitro with near-infrared light irradiation",
+      "note": "Journal of Photochemistry & Photobiology, B: Biology (2020) 210:111959.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Scientific Reports",
+      "year": 2020,
+      "title": "Tear Glucose Measurement by Reflectance Spectrum of a Nanoparticle Embedded Contact Lens",
+      "note": "Scientific Reports (2020) 10:8254.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Journal of Biophotonics",
+      "year": 2020,
+      "title": "Fast and sensitive delineation of brain tumor with clinically compatible moxifloxacin labeling and confocal microscopy",
+      "note": "Journal of Biophotonics (2020), DOI: 10.1002/jbio.201900197.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Scientific Reports",
+      "year": null,
+      "title": "Laser speckle decorrelation time-based platelet function testing in microfluidic system",
+      "note": "",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "PLOS ONE",
+      "year": 2019,
+      "title": "Optofluidic laser speckle image decorrelation analysis for the assessment of red blood cell storage",
+      "note": "PLOS ONE (2019) 14(10): e0224036. DOI: 10.1371/journal.pone.0224036.",
+      "doi": ""
+    },
+    {
+      "type": "patent",
+      "venue": "United States Patent Application",
+      "year": 2019,
+      "title": "Endoscope, Handpiece of Endoscope, Calibration Method for the Endoscope, Using Method for the Endoscope",
+      "note": "Publication No.: US 2016/0242633 A1. Publication Date: August 25, 2016.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Scientific Reports",
+      "year": 2019,
+      "title": "Planar coil-based contact-mode magnetic stimulation: synaptic responses in hippocampal slices and thermal considerations",
+      "note": "Scientific Reports (2018) 8:13423. DOI: 10.1038/s41598-018-31536-w.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Biomedical Engineering Letters",
+      "year": 2019,
+      "title": "Light sheet microscopy for histopathology applications",
+      "note": "Biomedical Engineering Letters (2019) 9:279–291. DOI: 10.1007/s13534-019-00122-y.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "year": 2019,
+      "title": "Experimental and computational analyses reveal dynamics of tumor vessel cooption and optimal treatment strategies",
+      "note": "Proceedings of the National Academy of Sciences (2019) 116(7): 2662–2671. DOI: 10.1073/pnas.1818322116.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Current Optics and Photonics",
+      "year": 2019,
+      "title": "Optical Stimulation and Pacing of the Embryonic Chicken Heart via Thulium Laser Irradiation",
+      "note": "Current Optics and Photonics (2019) 3(1): 1–7. DOI: 10.3807/COPP.2019.3.1.001.",
+      "doi": ""
+    },
+    {
+      "type": "journal",
+      "venue": "Translational Oncology",
+      "year": 2019,
+      "title": "Multi-Spectral Fluorescence Imaging of Colon Dysplasia In Vivo Using a Multi-Spectral Endoscopy System",
+      "note": "Translational Oncology (2019) 12(2): 226–235. DOI: 10.1016/j.tranon.2018.10.006.",
+      "doi": ""
+    }
+  ]
+}
