@@ -12,6 +12,8 @@ on:
       - 'data/venues.yml'
       - 'scripts/crawl.mjs'
       - 'scripts/scrape.mjs'
+      - 'scripts/merge.mjs'
+      - 'scripts/lib.mjs'
       - '.github/workflows/update.yml'
 
 permissions:
