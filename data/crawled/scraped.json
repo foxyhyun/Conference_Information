@@ -1,4 +1,4 @@
-{
+﻿{
   "midl": [
     {
       "year": 2027,
@@ -101,6 +101,20 @@
           "type": "camera_ready",
           "label": "1 Page Research Poster Papers · Final Submission Deadline",
           "at": "2027-05-17T11:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "cleo": [
+    {
+      "year": 2027,
+      "link": "https://cleoconference.org/2027-call-for-papers/",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "Abstract and Summary Submission Deadline",
+          "at": "2026-11-24T07:59:00.000Z"
         }
       ],
       "source": "scraped"

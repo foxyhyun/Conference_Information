@@ -237,14 +237,24 @@ console.log(`  ${wiki.total} candidates (${wiki.fresh} new)`);
 // ------------------------------------------------------------------ 공식 사이트 추출 + 국내 공지
 console.log('official sites ...');
 const allVenues = [...confs, ...(readYaml(p('data/discovered.yml'), []) || [])];
+// 사이트가 일시적으로 막히면(특히 GitHub 러너 IP 차단) 이전에 읽은 값을 유지 — 아직 미래 마감이 남아 있는 경우만
+const prevScraped = readJson(p('data/crawled/scraped.json'), {});
 const scraped = {};
 for (const v of allVenues.filter((v) => v.scrape)) {
+  let eds = [];
   try {
-    const eds = await scrapeVenue(v, NOW);
-    if (eds.length) scraped[v.id] = eds;
-    console.log(`  ${v.name}: ${eds.reduce((s, e) => s + e.deadlines.length, 0)} dates`);
+    eds = await scrapeVenue(v, NOW);
   } catch (e) {
     console.warn(`  ${v.name}: failed (${e.message})`);
+  }
+  if (eds.length) {
+    scraped[v.id] = eds;
+    console.log(`  ${v.name}: ${eds.reduce((s, e) => s + e.deadlines.length, 0)} dates`);
+  } else if (prevScraped[v.id]?.some((e) => e.deadlines.some((d) => Date.parse(d.at) > NOW.getTime()))) {
+    scraped[v.id] = prevScraped[v.id];
+    console.log(`  ${v.name}: unreachable, kept previous result`);
+  } else {
+    console.log(`  ${v.name}: 0 dates`);
   }
   await sleep(800);
 }
