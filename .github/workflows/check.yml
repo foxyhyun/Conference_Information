@@ -1,0 +1,20 @@
+name: check
+
+# PR 이나 다른 브랜치 push 에서 데이터 파일 검사 (main 은 deploy 워크플로가 검사)
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/check.mjs
+      - run: node scripts/build.mjs

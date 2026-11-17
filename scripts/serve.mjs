@@ -5,7 +5,7 @@ import path from 'node:path';
 import { p } from './lib.mjs';
 
 const root = p('site');
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json' };
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.ics': 'text/calendar; charset=utf-8' };
 const port = Number(process.env.PORT || 8080);
 http.createServer((req, res) => {
   const url = decodeURIComponent(req.url.split('?')[0]);

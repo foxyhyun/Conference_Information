@@ -5,7 +5,12 @@
   const I18N = {
     ko: {
       subtitle: 'Neurophotonics Lab · 학회·저널 마감 트래커',
-      tab_conf: '학회', tab_journal: '저널', tab_cand: '신규 후보',
+      tab_conf: '학회', tab_journal: '저널', tab_cand: '신규 후보', tab_timeline: '타임라인',
+      calendar: '📅 캘린더 구독', calendar_hint: '구글/애플/아웃룩 캘린더에 구독하면 마감 7일·1일 전에 알림이 옵니다. 링크를 복사해서 캘린더의 "URL로 추가"에 넣으세요.',
+      only_fav: '☆ 내 즐겨찾기만', fav_hint: '즐겨찾기 (이 브라우저에만 저장)',
+      stale: '⚠ 자동 갱신이 {d}일 동안 실행되지 않았습니다. 마감 정보가 오래됐을 수 있으니 공식 사이트를 확인하세요.',
+      changes_title: '최근 변경된 마감', chg_new: '추가', chg_changed: '변경', prev: '이전',
+      months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'], this_month: '이번 달', items: '건', days_left: '일 남음', today: '오늘', passed: '지남',
       field_all: '전체 분야', field_hint: '분야를 여러 개 고르면 모두 해당하는 학회만 보입니다', also_hint: '부 분야 — 제출은 가능하지만 이 분야의 점수 순위에는 포함되지 않음',
       fields: { dl: 'Deep Learning', medai: '의료 AI', imgproc: '이미지 처리', optics: 'Optics', neuro: 'Bio / Neuro' },
       fields_tiny: { dl: 'DL', medai: '의료AI', imgproc: '영상처리', optics: 'Optics', neuro: 'Neuro' },
@@ -15,6 +20,7 @@
         conf: [['deadline', '마감 임박순'], ['tier', '티어순'], ['difficulty', '난이도순 (채택률 낮은 순)'], ['name', '이름순']],
         journal: [['if', 'IF 높은 순'], ['tier', '티어순'], ['name', '이름순']],
         cand: [['deadline', '마감 임박순'], ['name', '이름순']],
+        timeline: [['deadline', '날짜순']],
       },
       updated: '데이터 갱신', loading: '데이터 불러오는 중…', load_fail: 'data.json 을 불러오지 못했습니다.', empty: '조건에 맞는 항목이 없습니다.',
       types: { abstract: 'Abstract 마감', paper: 'Paper 마감', supplementary: 'Supplementary 마감', rebuttal: 'Rebuttal 마감', camera_ready: 'Camera-ready', registration: '등록 마감', notification: '결과 발표', other: '마감' },
@@ -38,7 +44,12 @@
     },
     en: {
       subtitle: 'Neurophotonics Lab · conference & journal deadline tracker',
-      tab_conf: 'Conferences', tab_journal: 'Journals', tab_cand: 'New candidates',
+      tab_conf: 'Conferences', tab_journal: 'Journals', tab_cand: 'New candidates', tab_timeline: 'Timeline',
+      calendar: '📅 Subscribe (ICS)', calendar_hint: 'Subscribe in Google/Apple/Outlook Calendar to get reminders 7 days and 1 day before each deadline. Copy the link into your calendar\'s "Add by URL".',
+      only_fav: '☆ My favorites only', fav_hint: 'Favorite (stored in this browser only)',
+      stale: '⚠ The automatic update has not run for {d} days. Deadlines may be outdated — verify on official sites.',
+      changes_title: 'Recently changed deadlines', chg_new: 'added', chg_changed: 'changed', prev: 'was',
+      months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], this_month: 'this month', items: 'items', days_left: 'days left', today: 'today', passed: 'passed',
       field_all: 'All fields', field_hint: 'Pick several fields to show only venues matching all of them', also_hint: 'Secondary field — accepts such submissions but is not ranked within this field',
       fields: { dl: 'Deep Learning', medai: 'Medical AI', imgproc: 'Image Processing', optics: 'Optics', neuro: 'Bio / Neuro' },
       fields_tiny: { dl: 'DL', medai: 'Med AI', imgproc: 'Img Proc', optics: 'Optics', neuro: 'Neuro' },
@@ -48,6 +59,7 @@
         conf: [['deadline', 'Deadline (soonest)'], ['tier', 'Tier score'], ['difficulty', 'Difficulty (lowest acceptance)'], ['name', 'Name']],
         journal: [['if', 'Impact factor'], ['tier', 'Tier score'], ['name', 'Name']],
         cand: [['deadline', 'Deadline (soonest)'], ['name', 'Name']],
+        timeline: [['deadline', 'By date']],
       },
       updated: 'Data updated', loading: 'Loading…', load_fail: 'Could not load data.json.', empty: 'Nothing matches the current filters.',
       types: { abstract: 'Abstract deadline', paper: 'Paper deadline', supplementary: 'Supplementary deadline', rebuttal: 'Rebuttal deadline', camera_ready: 'Camera-ready', registration: 'Registration deadline', notification: 'Notification', other: 'Deadline' },
@@ -75,8 +87,12 @@
   const SUBMIT = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'registration', 'other']);
 
   // fields: 선택된 분야 집합 (비어 있으면 전체). 여러 개 선택 시 모두 해당하는 학회만 표시 (AND)
-  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true };
+  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false };
   let DATA = null;
+  // 즐겨찾기 (브라우저 로컬 저장)
+  const FAV = new Set();
+  try { for (const id of JSON.parse(localStorage.getItem('fav') || '[]')) FAV.add(id); } catch {}
+  const saveFav = () => { try { localStorage.setItem('fav', JSON.stringify([...FAV])); } catch {} };
   const $ = (s) => document.querySelector(s);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -170,8 +186,11 @@
     const nd = nextDeadline(c, now);
     const ed = shownEdition(c, nd);
     const m = c.metrics;
+    const chg = c.editions.flatMap((e) => e.deadlines).find((d) => d.changed || d.added);
     const badges = [
       c.target ? `<span class="star" title="${t.target_title}">★</span>` : '',
+      `<button class="fav ${FAV.has(c.id) ? 'on' : ''}" data-fav="${c.id}" title="${t.fav_hint}">${FAV.has(c.id) ? '★' : '☆'}</button>`,
+      chg ? `<span class="badge chg" title="${chg.changed ? `${t.prev}: ${kst(chg.prev)}` : ''}">${chg.changed ? t.chg_changed : t.chg_new}</span>` : '',
       c.status === 'new' ? '<span class="badge new">NEW</span>' : '',
       c.region === 'domestic' ? `<span class="badge dom">${t.domestic}</span>` : '',
       m.core ? `<span class="badge">CORE ${esc(m.core)}</span>` : '',
@@ -305,15 +324,21 @@
   function filtered(now) {
     const q = state.q.trim().toLowerCase();
     const fs = selFields();
+    // 검색: 이름·장소 + 제출 분야·소개·특징까지
+    const deepText = (x) => {
+      const d = x.details, e = x.details_en;
+      return [d?.about, e?.about, ...(d?.topics || []), ...(e?.topics || []), ...(d?.features || []), ...(e?.features || [])].join(' ');
+    };
     const match = (x, extra = '') =>
       fs.every((f) => allFields(x).includes(f)) &&
-      (!q || `${x.name} ${x.full} ${x.name_en || ''} ${x.full_en || ''} ${extra}`.toLowerCase().includes(q));
+      (!q || `${x.name} ${x.full} ${x.name_en || ''} ${x.full_en || ''} ${extra} ${x.details ? deepText(x) : ''}`.toLowerCase().includes(q));
 
-    if (state.tab === 'conf') {
+    if (state.tab === 'conf' || state.tab === 'timeline') {
       let list = DATA.conferences.filter((c) =>
         match(c, c.editions.map((e) => e.place).join(' ')) && (state.region === 'all' || c.region === state.region));
+      if (state.onlyFav) list = list.filter((c) => FAV.has(c.id));
       const nd = new Map(list.map((c) => [c.id, nextDeadline(c, now)]));
-      if (state.onlyUpcoming) list = list.filter((c) => nd.get(c.id));
+      if (state.onlyUpcoming || state.tab === 'timeline') list = list.filter((c) => nd.get(c.id));
       const cmp = {
         deadline: (a, b) => (nd.get(a.id)?.t ?? Infinity) - (nd.get(b.id)?.t ?? Infinity) || tierOf(b) - tierOf(a),
         tier: (a, b) => tierOf(b) - tierOf(a),
@@ -336,21 +361,65 @@
     return list.sort(state.sort === 'name' ? (a, b) => a.name.localeCompare(b.name) : (a, b) => a.deadline.localeCompare(b.deadline));
   }
 
+  // 타임라인: 다가오는 모든 마감(제출·결과 포함)을 월별로
+  function timeline(list, now) {
+    const t = T();
+    const rows = [];
+    for (const c of list) for (const e of c.editions) for (const d of e.deadlines) {
+      const at = Date.parse(d.at);
+      if (at < now - 864e5 || at > now + 400 * 864e5) continue;
+      rows.push({ c, e, d, at });
+    }
+    rows.sort((a, b) => a.at - b.at);
+    if (!rows.length) return `<div class="empty">${t.empty}</div>`;
+    const byMonth = new Map();
+    for (const r of rows) {
+      const dt = new Date(r.at + 9 * 3600e3); // KST 기준 월
+      const key = `${dt.getUTCFullYear()}-${dt.getUTCMonth()}`;
+      if (!byMonth.has(key)) byMonth.set(key, { y: dt.getUTCFullYear(), m: dt.getUTCMonth(), rows: [] });
+      byMonth.get(key).rows.push(r);
+    }
+    const nowK = new Date(now + 9 * 3600e3);
+    return [...byMonth.values()].map((g) => {
+      const isNow = g.y === nowK.getUTCFullYear() && g.m === nowK.getUTCMonth();
+      const head = `<div class="tl-month">${lang === 'en' ? `${t.months[g.m]} ${g.y}` : `${g.y}년 ${t.months[g.m]}`}${isNow ? ` <small>· ${t.this_month}</small>` : ''}<small>${g.rows.length}${lang === 'en' ? ' ' : ''}${t.items}</small></div>`;
+      return head + g.rows.map((r) => {
+        const ms = r.at - now;
+        const days = Math.ceil(ms / 864e5);
+        const left = ms < 0 ? t.passed : days === 0 ? t.today : `D-${days}`;
+        const typeLabel = t.types[r.d.type] || r.d.label;
+        const extra = r.d.label && /\(/.test(r.d.label) ? ' ' + esc(r.d.label.replace(/^[^(]*/, '')) : (r.d.type === 'other' ? ' ' + esc(r.d.label) : '');
+        return `<div class="tl-row ${ms < 0 ? 'past' : level(ms)}">
+          <span class="d">${kst(r.d.at, true)}</span>
+          <span class="v">${r.c.target ? '<span class="star">★</span> ' : ''}<a href="${esc(r.e.link || r.c.link)}" target="_blank" rel="noopener">${esc(nameOf(r.c))} ${r.e.year}</a> <span class="lb">· ${esc(typeLabel)}${extra}${r.d.changed ? ` <span class="badge chg">${t.chg_changed}</span>` : ''}</span>${r.e.place ? `<span class="lb"> · 📍 ${esc(r.e.place)}</span>` : ''}</span>
+          <span class="left">${left}</span>
+        </div>`;
+      }).join('');
+    }).join('');
+  }
+
   function render() {
     if (!DATA) return;
     const t = T();
     const now = Date.now();
     const list = filtered(now);
-    const card = { conf: confCard, journal: journalCard, cand: candCard }[state.tab];
-    let html = list.length ? list.map((x) => card(x, now)).join('') : `<div class="empty">${t.empty}</div>`;
-    if (state.tab === 'cand' && DATA.notices?.length) html = noticesBlock() + html;
+    let html;
+    if (state.tab === 'timeline') html = timeline(list, now);
+    else {
+      const card = { conf: confCard, journal: journalCard, cand: candCard }[state.tab];
+      html = list.length ? list.map((x) => card(x, now)).join('') : `<div class="empty">${t.empty}</div>`;
+      if (state.tab === 'cand' && DATA.notices?.length) html = noticesBlock() + html;
+    }
     $('#list').innerHTML = html;
     const n = $('#notice');
     n.hidden = state.tab !== 'cand';
     n.textContent = t.cand_notice;
-    $('#region-seg').style.display = state.tab === 'conf' ? '' : 'none';
+    const isConf = state.tab === 'conf' || state.tab === 'timeline';
+    $('#region-seg').style.display = isConf ? '' : 'none';
     $('#only-upcoming').parentElement.style.display = state.tab === 'conf' ? '' : 'none';
     $('#target-first').parentElement.style.display = state.tab === 'conf' ? '' : 'none';
+    $('#only-fav').parentElement.style.display = isConf ? '' : 'none';
+    $('#changes').hidden = !(state.tab === 'conf' && DATA.recentChanges?.length);
     saveHash();
   }
 
@@ -378,9 +447,18 @@
       Object.entries(t.fields).map(([k, v]) => `<label class="fchk"><input type="checkbox" data-v="${k}"> ${v}</label>`).join('');
     $('#field-chips').title = t.field_hint;
     document.querySelectorAll('#lang-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === lang));
+    $('#cal-link').title = t.calendar_hint;
     if (DATA) {
       const upd = DATA.crawledAt || DATA.generatedAt;
       $('#updated').textContent = `${t.updated} ${kst(upd).replace(' KST', '')}`;
+      const stale = $('#stale');
+      stale.hidden = !DATA.crawlStale;
+      if (DATA.crawlStale) stale.textContent = t.stale.replace('{d}', Math.floor((Date.now() - Date.parse(upd)) / 864e5));
+      const ch = $('#changes');
+      if (DATA.recentChanges?.length) {
+        ch.innerHTML = `<b>${t.changes_title}</b><ul>${DATA.recentChanges.slice(0, 8).map((c) =>
+          `<li>${esc(c.when)} · ${esc(c.venue)} ${c.year} · ${esc(c.label)}: ${c.kind === 'changed' ? `${kst(c.prev, true)} → ` : ''}<b>${kst(c.at, true)}</b> (${c.kind === 'changed' ? t.chg_changed : t.chg_new})</li>`).join('')}</ul>`;
+      }
     } else $('#updated').textContent = t.loading;
   }
 
@@ -410,6 +488,20 @@
     $('#q').addEventListener('input', (e) => { state.q = e.target.value; render(); });
     $('#only-upcoming').addEventListener('change', (e) => { state.onlyUpcoming = e.target.checked; render(); });
     $('#target-first').addEventListener('change', (e) => { state.targetFirst = e.target.checked; render(); });
+    $('#only-fav').addEventListener('change', (e) => { state.onlyFav = e.target.checked; render(); });
+    $('#list').addEventListener('click', (e) => {
+      const b = e.target.closest('.fav'); if (!b) return;
+      const id = b.dataset.fav;
+      if (FAV.has(id)) FAV.delete(id); else FAV.add(id);
+      saveFav();
+      b.classList.toggle('on', FAV.has(id)); b.textContent = FAV.has(id) ? '★' : '☆';
+      if (state.onlyFav) render();
+    });
+    // 캘린더 링크: webcal:// 로 바로 구독 시도 (지원 안 하면 .ics 다운로드)
+    $('#cal-link').addEventListener('click', (e) => {
+      const url = new URL('deadlines.ics', location.href).href;
+      if (location.protocol === 'https:') { e.preventDefault(); location.href = url.replace(/^https:/, 'webcal:'); }
+    });
   }
   function setLang(l) {
     if (!I18N[l]) return;
@@ -431,6 +523,7 @@
     $('#q').value = state.q;
     $('#only-upcoming').checked = state.onlyUpcoming;
     $('#target-first').checked = state.targetFirst;
+    $('#only-fav').checked = state.onlyFav;
   }
   function saveHash() {
     const h = new URLSearchParams({ tab: state.tab, field: selFields().join(',') || 'all', region: state.region, sort: state.sort, lang });

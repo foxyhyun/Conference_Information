@@ -1,3 +1,4 @@
 node_modules/
 site/data.json
+site/deadlines.ics
 .DS_Store

@@ -1,6 +1,8 @@
 // 빌드: venues.yml + 크롤링 결과를 합치고 점수를 계산해 site/data.json 을 만듭니다.
 //   node scripts/build.mjs
 import { p, readYaml, readJson, writeJson, toUtcIso, normType, TYPE_LABEL } from './lib.mjs';
+import { writeIcs } from './ics.mjs';
+import { mergeEditions } from './merge.mjs';
 
 const NOW = new Date();
 const MIN_YEAR = NOW.getUTCFullYear() - 1;
@@ -33,34 +35,20 @@ const pickDetails = (d) => (d ? {
   acceptance_rate: d.acceptance_rate || null, typical_schedule: d.typical_schedule || null, sources: d.sources || [],
 } : null);
 
-// ------------------------------------------------------------------ 일정 병합
-function manualEditions(v) {
-  return (v.editions || []).map((e) => ({
-    year: Number(e.year), date: e.date, place: e.place, link: e.link || v.link, source: 'manual',
-    deadlines: (e.deadlines || [])
-      .map((d) => {
-        const type = normType(d.type);
-        return { type, label: d.label || TYPE_LABEL[type], at: toUtcIso(d.at, d.timezone || e.timezone || 'UTC+9') };
-      })
-      .filter((d) => d.at),
+// ------------------------------------------------------------------ 일정 병합 + 변경 표시
+const history = readJson(p('data/history.json'), {});
+const RECENT = 14 * 864e5;
+function editionsWithChanges(v) {
+  return mergeEditions(v, { ccf, hf, scraped }, MIN_YEAR).map((e) => ({
+    ...e,
+    deadlines: e.deadlines.map((d) => {
+      const h = history[`${v.id}|${e.year}|${d.type}|${d.label}`];
+      const out = { ...d };
+      if (h?.changed_at && NOW - Date.parse(h.changed_at) < RECENT) { out.changed = true; out.prev = h.prev; }
+      else if (h?.since && NOW - Date.parse(h.since) < RECENT) out.added = true;
+      return out;
+    }),
   }));
-}
-
-function mergeEditions(v) {
-  // 우선순위: 수동 입력 > ccfddl > huggingface > 공식 사이트 자동 추출
-  const pools = [manualEditions(v), ccf[v.sources?.ccfddl]?.editions || [], hf[v.sources?.hf]?.editions || [], scraped[v.id] || []];
-  const years = new Set(pools.flat().map((e) => e.year));
-  const out = [];
-  for (const y of [...years].sort()) {
-    if (y < MIN_YEAR) continue;
-    const cands = pools.map((pool) => pool.find((e) => e.year === y)).filter(Boolean);
-    const pick = (k) => cands.find((e) => e[k])?.[k];
-    const withDl = cands.find((e) => e.deadlines?.length);
-    const deadlines = (withDl?.deadlines || []).map((d) => ({ ...d, label: d.label || TYPE_LABEL[d.type] }));
-    deadlines.sort((a, b) => a.at.localeCompare(b.at));
-    out.push({ year: y, date: pick('date'), place: pick('place'), link: pick('link') || v.link, source: withDl?.source || cands[0].source, deadlines });
-  }
-  return out;
 }
 
 // ------------------------------------------------------------------ 점수
@@ -111,7 +99,7 @@ const confList = [...(venues.conferences || []), ...discovered].map((v) => {
     id: v.id, name: v.name, full: v.full || c?.full || h?.full || '', kind: 'conference',
     fields: v.fields || [], region: v.region || 'intl', target: !!v.target, link: v.link,
     status: v.status || null, verified: !!(m.verified ?? v.verified),
-    metrics, difficulty: difficulty(metrics.accept_rate), editions: mergeEditions(v),
+    metrics, difficulty: difficulty(metrics.accept_rate), editions: editionsWithChanges(v),
     details: pickDetails(details[v.id]),
     details_en: pickDetails(detailsEn[v.id]),
     quick: pickQuick(quick[v.id]),
@@ -155,13 +143,17 @@ normalize(journals);
 const out = {
   generatedAt: NOW.toISOString(),
   crawledAt: meta.crawledAt || null,
+  crawlStale: !meta.crawledAt || NOW - Date.parse(meta.crawledAt) > 21 * 864e5,
+  recentChanges: (meta.changes || []).slice(0, 30),
   fields: FIELDS,
   conferences: confList,
   journals,
-  candidates: candidates.map(({ hidden, ...c }) => c),
+  candidates: candidates.filter((c) => !c.lowq).map(({ hidden, lowq, ...c }) => c),
+  candidatesLowQ: candidates.filter((c) => c.lowq).length,
   notices: notices.map(({ hidden, ...n }) => n).sort((a, b) => b.first_seen.localeCompare(a.first_seen)),
 };
 writeJson(p('site/data.json'), out);
+writeIcs();
 
 const withNext = confList.filter((c) => c.editions.some((e) => e.deadlines.some((d) => new Date(d.at) > NOW)));
 console.log(`conferences: ${confList.length} (upcoming deadline: ${withNext.length}), journals: ${journals.length}, candidates: ${candidates.length}`);

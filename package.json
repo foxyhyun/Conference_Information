@@ -5,8 +5,9 @@
   "description": "Neurophotonics Lab 학회·저널 마감 트래커",
   "type": "module",
   "scripts": {
+    "check": "node scripts/check.mjs",
     "crawl": "node scripts/crawl.mjs",
-    "build": "node scripts/build.mjs",
+    "build": "node scripts/check.mjs && node scripts/build.mjs",
     "serve": "node scripts/serve.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs"
   },

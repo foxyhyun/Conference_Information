@@ -7,6 +7,8 @@
 import yaml from 'js-yaml';
 import { p, readYaml, writeYaml, writeJson, fetchText, toUtcIso, normType, sleep } from './lib.mjs';
 import { scrapeVenue, watchNotices } from './scrape.mjs';
+import { updateHistory } from './merge.mjs';
+import { readJson } from './lib.mjs';
 
 const NOW = new Date();
 const MIN_YEAR = NOW.getUTCFullYear() - 1;
@@ -186,9 +188,19 @@ async function crawlWikiCfp() {
     }
     await sleep(1500); // 서버 부담을 줄이기 위해 천천히
   }
-  // 마감이 30일 이상 지난 후보는 정리
+  // 마감이 30일 이상 지난 후보는 정리. 이미 등록된 학회(약어 일치)와 흔한 저품질 패턴은 숨김
   const cutoff = NOW.getTime() - 30 * 864e5;
-  const list = [...byId.values()].filter((c) => Date.parse(c.deadline) >= cutoff).sort((a, b) => a.deadline.localeCompare(b.deadline));
+  const known = new Set(confs.map((c) => c.name.toLowerCase().replace(/[^a-z0-9]/g, '')));
+  const LOWQ = /^(ieee|acm|spie)?-?-?\s*20\d\d\s+\d+(st|nd|rd|th)\s+international conference|\(\w+ 20\d\d\)$|conference proceedings citation index|ei compendex|scopus/i;
+  const list = [...byId.values()]
+    .filter((c) => Date.parse(c.deadline) >= cutoff)
+    .map((c) => {
+      const acro = c.name.replace(/\s*20\d\d$/, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (known.has(acro)) c.hidden = true;             // 이미 정식 등록된 학회
+      if (LOWQ.test(c.full)) c.lowq = true;             // "IEEE--2027 11th International Conference on ..." 류
+      return c;
+    })
+    .sort((a, b) => (a.lowq ? 1 : 0) - (b.lowq ? 1 : 0) || a.deadline.localeCompare(b.deadline));
   writeYaml(file, list,
     '# WikiCFP 에서 수집한 후보 (검증 전). 약탈적 학회가 섞여 있을 수 있습니다.\n' +
     '# 숨기려면 hidden: true, 정식 등록하려면 venues.yml 로 옮기세요.\n\n');
@@ -260,11 +272,21 @@ writeYaml(noticeFile, notices,
   '# 국내 학회 홈페이지에서 수집한 논문/초록 모집 공지. 숨기려면 hidden: true\n\n');
 console.log(`  ${notices.length} notices (${newNotices} new)`);
 
+// ------------------------------------------------------------------ 마감 변경 이력
+const history = readJson(p('data/history.json'), {});
+const changes = updateHistory(history, allVenues, { ccf, hf, scraped }, NOW);
+writeJson(p('data/history.json'), history);
+const prevMeta = readJson(p('data/crawled/meta.json'), {});
+const changeLog = [...changes.map((c) => ({ ...c, when: NOW.toISOString().slice(0, 10) })), ...(prevMeta.changes || [])]
+  .filter((c) => NOW - Date.parse(c.when) < 60 * 864e5).slice(0, 100);
+console.log(`deadline changes: ${changes.length}` + (changes.length ? ' — ' + changes.map((c) => `${c.venue} ${c.year} ${c.label} (${c.kind})`).join(', ') : ''));
+
 writeJson(p('data/crawled/meta.json'), {
   crawledAt: NOW.toISOString(),
   discovered: added.map((a) => a.name),
   wikicfpNew: wiki.fresh,
   scraped: Object.keys(scraped),
   noticesNew: newNotices,
+  changes: changeLog,
 });
 console.log(`done in ${((Date.now() - t0) / 1000).toFixed(1)}s`);

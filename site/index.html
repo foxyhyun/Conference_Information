@@ -33,8 +33,12 @@
     <nav class="tabs" role="tablist">
       <button class="tab active" data-tab="conf" role="tab"><span data-i18n="tab_conf"></span> <span class="count" id="cnt-conf"></span></button>
       <button class="tab" data-tab="journal" role="tab"><span data-i18n="tab_journal"></span> <span class="count" id="cnt-journal"></span></button>
+      <button class="tab" data-tab="timeline" role="tab"><span data-i18n="tab_timeline"></span></button>
       <button class="tab" data-tab="cand" role="tab"><span data-i18n="tab_cand"></span> <span class="count" id="cnt-cand"></span></button>
+      <a class="tab cal" id="cal-link" href="deadlines.ics" title=""><span data-i18n="calendar"></span></a>
     </nav>
+    <div id="stale" class="notice warn" hidden></div>
+    <div id="changes" class="notice info" hidden></div>
 
     <section class="controls">
       <div class="chips" id="field-chips"></div>
@@ -49,6 +53,7 @@
         </label>
         <label class="chk"><input type="checkbox" id="only-upcoming"> <span data-i18n="only_upcoming"></span></label>
         <label class="chk"><input type="checkbox" id="target-first" checked> <span data-i18n="target_first"></span></label>
+        <label class="chk"><input type="checkbox" id="only-fav"> <span data-i18n="only_fav"></span></label>
         <input type="search" id="q">
       </div>
     </section>

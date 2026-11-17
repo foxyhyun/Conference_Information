@@ -1,0 +1,606 @@
+{
+  "cvpr|2025|abstract|abstract": {
+    "at": "2024-11-08T07:59:59.000Z",
+    "since": null
+  },
+  "cvpr|2025|paper|paper": {
+    "at": "2024-11-15T07:59:59.000Z",
+    "since": null
+  },
+  "cvpr|2026|abstract|abstract": {
+    "at": "2025-11-08T11:59:59.000Z",
+    "since": null
+  },
+  "cvpr|2026|paper|paper": {
+    "at": "2025-11-14T11:59:59.000Z",
+    "since": null
+  },
+  "cvpr|2027|abstract|abstract": {
+    "at": "2026-11-11T11:59:59.000Z",
+    "since": null
+  },
+  "cvpr|2027|paper|paper": {
+    "at": "2026-11-17T11:59:59.000Z",
+    "since": null
+  },
+  "cvpr|2027|rebuttal|rebuttal": {
+    "at": "2027-02-02T11:59:59.000Z",
+    "since": null
+  },
+  "cvpr|2027|notification|notification": {
+    "at": "2027-02-26T11:59:59.000Z",
+    "since": null
+  },
+  "iccv|2025|abstract|abstract": {
+    "at": "2025-03-04T09:59:59.000Z",
+    "since": null
+  },
+  "iccv|2025|paper|paper": {
+    "at": "2025-03-08T09:59:59.000Z",
+    "since": null
+  },
+  "eccv|2026|abstract|abstract": {
+    "at": "2026-02-26T22:00:00.000Z",
+    "since": null
+  },
+  "eccv|2026|paper|paper": {
+    "at": "2026-03-05T22:00:00.000Z",
+    "since": null
+  },
+  "wacv|2025|paper|paper (first round)": {
+    "at": "2024-07-16T06:59:59.000Z",
+    "since": null
+  },
+  "wacv|2025|paper|paper (second round)": {
+    "at": "2024-09-10T06:59:59.000Z",
+    "since": null
+  },
+  "wacv|2026|abstract|abstract (First round)": {
+    "at": "2025-07-12T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2026|paper|paper (First round)": {
+    "at": "2025-07-19T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2026|abstract|abstract (Second round)": {
+    "at": "2025-09-13T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2026|paper|paper (Second round)": {
+    "at": "2025-09-20T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2027|abstract|abstract (First round)": {
+    "at": "2026-06-20T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2027|paper|paper (First round)": {
+    "at": "2026-06-27T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2027|abstract|abstract (Second round)": {
+    "at": "2026-08-22T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2027|rebuttal|rebuttal (First round)": {
+    "at": "2026-08-29T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2027|paper|paper (Second round)": {
+    "at": "2026-08-29T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2027|notification|notification (First round)": {
+    "at": "2026-10-10T11:59:59.000Z",
+    "since": null
+  },
+  "wacv|2027|notification|notification (Second round)": {
+    "at": "2026-10-15T11:59:59.000Z",
+    "since": null
+  },
+  "neurips|2025|abstract|abstract": {
+    "at": "2025-05-12T11:59:59.000Z",
+    "since": null
+  },
+  "neurips|2025|paper|paper": {
+    "at": "2025-05-16T11:59:59.000Z",
+    "since": null
+  },
+  "neurips|2026|abstract|abstract": {
+    "at": "2026-05-05T11:59:00.000Z",
+    "since": null
+  },
+  "neurips|2026|paper|paper": {
+    "at": "2026-05-07T11:59:59.000Z",
+    "since": null
+  },
+  "neurips|2026|notification|notification": {
+    "at": "2026-09-25T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2025|abstract|abstract": {
+    "at": "2024-09-28T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2025|paper|paper": {
+    "at": "2024-10-02T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2026|abstract|abstract": {
+    "at": "2025-09-20T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2026|paper|paper": {
+    "at": "2025-09-25T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2027|abstract|abstract": {
+    "at": "2026-09-19T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2027|paper|paper": {
+    "at": "2026-09-26T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2027|rebuttal|rebuttal": {
+    "at": "2026-11-19T11:59:59.000Z",
+    "since": null
+  },
+  "iclr|2027|notification|notification": {
+    "at": "2026-12-17T11:59:59.000Z",
+    "since": null
+  },
+  "icml|2025|abstract|abstract (Paper Submissions Open on OpenReview Jan 08 2025 11:59 PM UTC)": {
+    "at": "2025-01-24T11:59:59.000Z",
+    "since": null
+  },
+  "icml|2025|paper|paper (Paper Submissions Open on OpenReview Jan 08 2025 11:59 PM UTC)": {
+    "at": "2025-01-31T11:59:59.000Z",
+    "since": null
+  },
+  "icml|2026|abstract|abstract (Paper Submissions Open on OpenReview Jan 08 2026 12:00AM UTC-0)": {
+    "at": "2026-01-24T11:59:59.000Z",
+    "since": null
+  },
+  "icml|2026|paper|paper (Paper Submissions Open on OpenReview Jan 08 2026 12:00AM UTC-0)": {
+    "at": "2026-01-29T11:59:59.000Z",
+    "since": null
+  },
+  "icml|2027|abstract|abstract": {
+    "at": "2027-01-15T11:59:59.000Z",
+    "since": null
+  },
+  "icml|2027|paper|paper": {
+    "at": "2027-01-23T11:59:59.000Z",
+    "since": null
+  },
+  "icml|2027|notification|notification": {
+    "at": "2027-05-04T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2025|abstract|abstract": {
+    "at": "2024-08-08T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2025|paper|paper": {
+    "at": "2024-08-16T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2026|abstract|abstract": {
+    "at": "2025-07-26T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2026|paper|paper": {
+    "at": "2025-08-02T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2027|abstract|abstract": {
+    "at": "2026-07-22T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2027|paper|paper": {
+    "at": "2026-07-29T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2027|rebuttal|rebuttal": {
+    "at": "2026-11-01T11:59:59.000Z",
+    "since": null
+  },
+  "aaai|2027|notification|notification": {
+    "at": "2026-12-01T11:59:59.000Z",
+    "since": null
+  },
+  "bmvc|2025|abstract|abstract": {
+    "at": "2025-05-13T23:59:59.000Z",
+    "since": null
+  },
+  "bmvc|2025|paper|paper": {
+    "at": "2025-05-16T23:59:59.000Z",
+    "since": null
+  },
+  "bmvc|2026|abstract|abstract": {
+    "at": "2026-05-23T11:59:59.000Z",
+    "since": null
+  },
+  "bmvc|2026|paper|paper": {
+    "at": "2026-05-30T11:59:59.000Z",
+    "since": null
+  },
+  "bmvc|2026|rebuttal|rebuttal": {
+    "at": "2026-07-11T11:59:59.000Z",
+    "since": null
+  },
+  "bmvc|2026|notification|notification": {
+    "at": "2026-08-08T11:59:59.000Z",
+    "since": null
+  },
+  "accv|2026|abstract|abstract": {
+    "at": "2026-07-03T23:59:59.000Z",
+    "since": null
+  },
+  "accv|2026|paper|paper": {
+    "at": "2026-07-05T23:59:59.000Z",
+    "since": null
+  },
+  "accv|2026|rebuttal|rebuttal": {
+    "at": "2026-09-02T23:59:59.000Z",
+    "since": null
+  },
+  "accv|2026|notification|notification": {
+    "at": "2026-09-20T23:59:59.000Z",
+    "since": null
+  },
+  "3dv|2025|paper|paper": {
+    "at": "2024-08-13T06:59:59.000Z",
+    "since": null
+  },
+  "3dv|2026|paper|paper": {
+    "at": "2025-08-19T06:59:59.000Z",
+    "since": null
+  },
+  "3dv|2027|abstract|abstract (Regular-paper abstract registration and paper submission are both due Aug 28.)": {
+    "at": "2026-08-29T11:59:59.000Z",
+    "since": null
+  },
+  "3dv|2027|paper|paper (Regular-paper abstract registration and paper submission are both due Aug 28.)": {
+    "at": "2026-08-29T11:59:59.000Z",
+    "since": null
+  },
+  "3dv|2027|notification|notification (Regular-paper abstract registration and paper submission are both due Aug 28.)": {
+    "at": "2026-12-02T19:00:00.000Z",
+    "since": null
+  },
+  "miccai|2025|abstract|abstract": {
+    "at": "2025-02-14T07:59:59.000Z",
+    "since": null
+  },
+  "miccai|2025|paper|paper": {
+    "at": "2025-02-28T07:59:59.000Z",
+    "since": null
+  },
+  "miccai|2026|abstract|abstract": {
+    "at": "2026-02-13T07:59:59.000Z",
+    "since": null
+  },
+  "miccai|2026|paper|paper": {
+    "at": "2026-02-27T07:59:59.000Z",
+    "since": null
+  },
+  "midl|2027|abstract|Abstract registration deadline": {
+    "at": "2026-12-01T11:59:00.000Z",
+    "since": null
+  },
+  "midl|2027|paper|Full paper submission deadline": {
+    "at": "2026-12-05T11:59:00.000Z",
+    "since": null
+  },
+  "midl|2027|rebuttal|Rebuttal period: 18": {
+    "at": "2027-01-25T11:59:00.000Z",
+    "since": null
+  },
+  "midl|2027|notification|Authors notification": {
+    "at": "2027-02-13T11:59:00.000Z",
+    "since": null
+  },
+  "midl|2027|camera_ready|Camera-ready deadline": {
+    "at": "2027-03-13T11:59:00.000Z",
+    "since": null
+  },
+  "isbi|2027|paper|Four Page Papers · Submission": {
+    "at": "2026-11-03T04:59:00.000Z",
+    "since": null
+  },
+  "isbi|2027|notification|Four Page Papers · Notification": {
+    "at": "2027-01-13T04:59:00.000Z",
+    "since": null
+  },
+  "isbi|2027|camera_ready|Four Page Papers · Final Submission": {
+    "at": "2027-01-27T04:59:00.000Z",
+    "since": null
+  },
+  "isbi|2027|abstract|One Page Abstracts · Submission": {
+    "at": "2027-02-02T04:59:00.000Z",
+    "since": null
+  },
+  "isbi|2027|notification|One Page Abstracts · Notification": {
+    "at": "2027-02-16T04:59:00.000Z",
+    "since": null
+  },
+  "embc|2027|paper|Full Contributed Papers · Submission Deadline": {
+    "at": "2027-01-25T11:59:00.000Z",
+    "since": null
+  },
+  "embc|2027|notification|Full Contributed Papers · Accept/Reject Notification": {
+    "at": "2027-04-17T11:59:00.000Z",
+    "since": null
+  },
+  "embc|2027|paper|1 Page Research Poster Papers · Submission Deadline": {
+    "at": "2027-04-24T11:59:00.000Z",
+    "since": null
+  },
+  "embc|2027|camera_ready|Full Contributed Papers · Final Submission Deadline": {
+    "at": "2027-05-01T11:59:00.000Z",
+    "since": null
+  },
+  "embc|2027|notification|1 Page Research Poster Papers · Accept/Reject Notification": {
+    "at": "2027-05-08T11:59:00.000Z",
+    "since": null
+  },
+  "embc|2027|camera_ready|1 Page Research Poster Papers · Final Submission Deadline": {
+    "at": "2027-05-17T11:59:00.000Z",
+    "since": null
+  },
+  "chil|2026|paper|Paper Submission": {
+    "at": "2026-02-05T11:59:59.000Z",
+    "since": null
+  },
+  "chil|2026|notification|Reviews Released": {
+    "at": "2026-03-11T11:59:59.000Z",
+    "since": null
+  },
+  "chil|2026|rebuttal|Rebuttal Period Ends": {
+    "at": "2026-03-18T11:59:59.000Z",
+    "since": null
+  },
+  "chil|2026|notification|Final Decisions": {
+    "at": "2026-04-10T11:59:59.000Z",
+    "since": null
+  },
+  "icip|2025|paper|paper": {
+    "at": "2025-02-06T11:59:59.000Z",
+    "since": null
+  },
+  "icip|2026|paper|paper": {
+    "at": "2026-02-05T11:59:59.000Z",
+    "since": null
+  },
+  "icip|2027|paper|paper": {
+    "at": "2027-04-01T11:59:59.000Z",
+    "since": null
+  },
+  "icip|2027|rebuttal|rebuttal": {
+    "at": "2027-07-08T11:59:59.000Z",
+    "since": null
+  },
+  "icip|2027|notification|notification": {
+    "at": "2027-08-07T11:59:59.000Z",
+    "since": null
+  },
+  "icassp|2025|paper|paper": {
+    "at": "2024-09-10T07:59:59.000Z",
+    "since": null
+  },
+  "icassp|2026|paper|paper": {
+    "at": "2025-09-18T11:59:59.000Z",
+    "since": null
+  },
+  "icassp|2027|paper|paper": {
+    "at": "2026-09-24T11:59:59.000Z",
+    "since": null
+  },
+  "icassp|2027|notification|notification": {
+    "at": "2027-01-14T11:59:59.000Z",
+    "since": null
+  },
+  "cleo|2027|abstract|Abstract and Summary Submission Deadline": {
+    "at": "2026-11-24T07:59:00.000Z",
+    "since": null
+  },
+  "optica-biophotonics|2027|paper|Deadline": {
+    "at": "2026-12-08T17:00:00.000Z",
+    "since": null
+  },
+  "ecbo|2027|abstract|Abstract": {
+    "at": "2027-01-28T04:55:59.000Z",
+    "since": null
+  },
+  "fom|2027|abstract|Abstract": {
+    "at": "2027-01-07T22:59:59.000Z",
+    "since": null
+  },
+  "optica-imaging|2027|abstract|Abstract + 2-page summary": {
+    "at": "2027-03-09T17:00:59.000Z",
+    "since": null
+  },
+  "sfn|2026|abstract|Abstracts and Sessions": {
+    "at": "2026-01-27T04:59:00.000Z",
+    "since": null
+  },
+  "sfn|2026|abstract|Extended deadline for abstract submission, 2 p.m. EDT": {
+    "at": "2026-06-13T04:59:00.000Z",
+    "since": null
+  },
+  "sfn|2026|registration|Registration": {
+    "at": "2026-07-15T04:59:00.000Z",
+    "since": null
+  },
+  "sfn|2026|notification|Notifications of abstract acceptance status sent to presenting authors": {
+    "at": "2026-09-09T04:59:00.000Z",
+    "since": null
+  },
+  "sfn|2026|registration|Deadline for online advance registration, 11:59 p.m. EDT": {
+    "at": "2026-10-07T04:59:00.000Z",
+    "since": null
+  },
+  "ohbm|2027|paper|Snapshot deadline": {
+    "at": "2026-12-15T04:59:00.000Z",
+    "since": null
+  },
+  "ohbm|2027|paper|Submissions close": {
+    "at": "2026-12-15T05:59:00.000Z",
+    "since": null
+  },
+  "ipiu|2027|paper|논문제출 마감": {
+    "at": "2026-12-18T14:59:00.000Z",
+    "since": null
+  },
+  "ipiu|2027|notification|심사 결과 통보": {
+    "at": "2027-01-18T14:59:00.000Z",
+    "since": null
+  },
+  "ipiu|2027|camera_ready|최종 수정 논문 제출": {
+    "at": "2027-01-22T14:59:00.000Z",
+    "since": null
+  },
+  "ipiu|2027|registration|저자 등록 마감": {
+    "at": "2027-01-29T14:59:00.000Z",
+    "since": null
+  },
+  "ipiu|2027|registration|일반 사전 등록 마감": {
+    "at": "2027-02-05T14:59:00.000Z",
+    "since": null
+  },
+  "ksc|2026|paper|Paper": {
+    "at": "2026-10-26T14:59:59.000Z",
+    "since": null
+  },
+  "osk|2027|abstract|Abstract": {
+    "at": "2026-12-13T14:59:59.000Z",
+    "since": null
+  },
+  "osk|2027|registration|사전등록 마감": {
+    "at": "2027-01-25T14:59:59.000Z",
+    "since": null
+  },
+  "ksbns|2027|other|Call for Symposia 마감": {
+    "at": "2027-01-10T14:59:59.000Z",
+    "since": null
+  },
+  "auto-icpr|2026|paper|paper": {
+    "at": "2026-01-11T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icpr|2027|abstract|abstract (All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified))": {
+    "at": "2027-03-02T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icpr|2027|paper|paper (All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified))": {
+    "at": "2027-03-09T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icpr|2027|notification|notification (All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified))": {
+    "at": "2027-06-01T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icme|2025|paper|paper": {
+    "at": "2024-12-23T23:59:59.000Z",
+    "since": null
+  },
+  "auto-icme|2026|paper|paper": {
+    "at": "2026-01-01T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icme|2027|paper|paper": {
+    "at": "2026-12-31T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icme|2027|rebuttal|rebuttal": {
+    "at": "2027-03-05T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icme|2027|notification|notification": {
+    "at": "2027-03-25T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icmr|2025|paper|paper": {
+    "at": "2025-02-24T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icmr|2026|paper|paper": {
+    "at": "2026-02-14T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icmr|2027|paper|paper": {
+    "at": "2027-02-01T11:59:59.000Z",
+    "since": null
+  },
+  "auto-icmr|2027|notification|notification": {
+    "at": "2027-04-02T11:59:59.000Z",
+    "since": null
+  },
+  "auto-acm-mm|2025|abstract|abstract": {
+    "at": "2025-04-05T11:59:59.000Z",
+    "since": null
+  },
+  "auto-acm-mm|2025|paper|paper": {
+    "at": "2025-04-12T11:59:59.000Z",
+    "since": null
+  },
+  "auto-acm-mm|2026|abstract|abstract": {
+    "at": "2026-03-26T11:59:00.000Z",
+    "since": null
+  },
+  "auto-acm-mm|2026|paper|paper": {
+    "at": "2026-04-02T11:59:59.000Z",
+    "since": null
+  },
+  "auto-mmm|2025|paper|paper": {
+    "at": "2024-08-20T11:59:59.000Z",
+    "since": null
+  },
+  "auto-mmm|2026|paper|paper": {
+    "at": "2025-09-03T11:59:59.000Z",
+    "since": null
+  },
+  "auto-mmm|2027|paper|paper (Regular papers; extended deadline)": {
+    "at": "2026-08-31T11:59:59.000Z",
+    "since": null
+  },
+  "auto-mmm|2027|notification|notification (Regular papers; extended deadline)": {
+    "at": "2026-10-20T11:59:59.000Z",
+    "since": null
+  },
+  "auto-euvip|2026|paper|Paper submission deadline": {
+    "at": "2026-06-05T21:59:59.000Z",
+    "since": null
+  },
+  "auto-euvip|2026|notification|Notification of acceptance": {
+    "at": "2026-07-18T21:59:59.000Z",
+    "since": null
+  },
+  "auto-euvip|2026|camera_ready|Camera-ready submission deadline": {
+    "at": "2026-07-25T21:59:59.000Z",
+    "since": null
+  },
+  "auto-sibgrapi|2026|paper|Paper submission deadline": {
+    "at": "2026-05-30T23:59:59.000Z",
+    "since": null
+  },
+  "auto-sibgrapi|2026|notification|First notification": {
+    "at": "2026-07-07T23:59:59.000Z",
+    "since": null
+  },
+  "auto-sibgrapi|2026|other|Revision submission deadline": {
+    "at": "2026-07-18T23:59:59.000Z",
+    "since": null
+  },
+  "auto-sibgrapi|2026|notification|Final notification": {
+    "at": "2026-08-03T23:59:59.000Z",
+    "since": null
+  },
+  "auto-sibgrapi|2026|camera_ready|Camera-ready version": {
+    "at": "2026-08-15T23:59:59.000Z",
+    "since": null
+  }
+}

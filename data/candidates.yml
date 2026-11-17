@@ -1,21 +1,6 @@
 # WikiCFP 에서 수집한 후보 (검증 전). 약탈적 학회가 섞여 있을 수 있습니다.
 # 숨기려면 hidden: true, 정식 등록하려면 venues.yml 로 옮기세요.
 
-- eventid: 203994
-  name: CVIP 2026
-  full: IEEE 2026 3rd International Conference on Computer Vision, Image Processing and Computational Imaging
-  when: Dec 18, 2026 - Dec 20, 2026
-  where: Yinchuan, China
-  deadline: '2026-11-17'
-  categories:
-    - computer vision
-    - image processing
-  fields:
-    - imgproc
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203994
-  hidden: false
-  first_seen: '2026-11-17'
 - eventid: 203217
   name: NFGNN 2027
   full: 'New Frontiers in Graph Neural Networks: Emerging Architectures and Training Paradigms'
@@ -28,19 +13,6 @@
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203217
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 191061
-  name: IEEE-DSIS 2026
-  full: 2026 IEEE 2nd International Conference on Data Science and Intelligent Systems (DSIS 2026)
-  when: Nov 20, 2026 - Nov 22, 2026
-  where: Hangzhou, China
-  deadline: '2026-11-17'
-  categories:
-    - machine learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191061
   hidden: false
   first_seen: '2026-11-17'
 - eventid: 203865
@@ -67,33 +39,6 @@
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192996
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 194782
-  name: SPIE IVSP 2027
-  full: SPIE--2027 9th  International Conference on Image, Video and Signal Processing (IVSP 2027)
-  when: Mar 3, 2027 - Mar 5, 2027
-  where: Sapporo, Japan
-  deadline: '2026-11-19'
-  categories:
-    - computer vision
-    - image processing
-  fields:
-    - imgproc
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194782
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 202910
-  name: ICCVDA 2026
-  full: 2026 2nd International Conference on Computer Vision and Digital Art
-  when: Dec 4, 2026 - Dec 6, 2026
-  where: Brussels, Belgium
-  deadline: '2026-11-19'
-  categories:
-    - computer vision
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202910
   hidden: false
   first_seen: '2026-11-17'
 - eventid: 190921
@@ -138,264 +83,6 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192402
   hidden: false
   first_seen: '2026-11-17'
-- eventid: 194576
-  name: SPIE IPMV 2027
-  full: SPIE--2027 9th International Conference on Image Processing and Machine Vision (IPMV 2027)
-  when: Jan 9, 2027 - Jan 11, 2027
-  where: Tokyo, Japan
-  deadline: '2026-11-19'
-  categories:
-    - computer vision
-    - image processing
-  fields:
-    - imgproc
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194576
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 200016
-  name: ICOIP 2026
-  full: 2026 6th International Conference on Optical Imaging and Image Processing
-  when: Dec 10, 2026 - Dec 12, 2026
-  where: Suzhou, China
-  deadline: '2026-11-19'
-  categories:
-    - image processing
-    - optics
-  fields:
-    - optics
-    - imgproc
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200016
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 199496
-  name: IEEE ICBCB 2027
-  full: IEEE--2027 15th International Conference on Bioinformatics and Computational Biology (ICBCB 2027)
-  when: Mar 26, 2027 - Mar 29, 2027
-  where: Xi'an, China
-  deadline: '2026-11-19'
-  categories:
-    - image processing
-    - bioinformatics
-  fields:
-    - neuro
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199496
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 199498
-  name: IEEE ICBEA 2027
-  full: IEEE--2027 11th International Conference on Biomedical Engineering and Applications (ICBEA 2027)
-  when: Mar 26, 2027 - Mar 29, 2027
-  where: Xi'an, China
-  deadline: '2026-11-19'
-  categories:
-    - image processing
-    - bioinformatics
-  fields:
-    - medai
-    - neuro
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199498
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 200261
-  name: Springer ICGDA 2027
-  full: Springer--2027 10th International Conference on Geoinformatics and Data Analysis (ICGDA 2027)
-  when: Apr 5, 2027 - Apr 7, 2027
-  where: Paris, France
-  deadline: '2026-11-19'
-  categories:
-    - image processing
-  fields:
-    - imgproc
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200261
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 199499
-  name: ICBEA 2027
-  full: IEEE--2027 11th International Conference on Biomedical Engineering and Applications (ICBEA 2027)
-  when: Mar 26, 2027 - Mar 29, 2027
-  where: Xi'an, China
-  deadline: '2026-11-19'
-  categories:
-    - medical imaging
-    - biomedical engineering
-  fields:
-    - medai
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199499
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 175829
-  name: IEEE-MLNLP 2026
-  full: 2026 IEEE 9th International Conference on Machine Learning and Natural Language Processing (MLNLP 2026)
-  when: Dec 26, 2026 - Dec 28, 2026
-  where: Xiamen, China
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-    - machine learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=175829
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 192660
-  name: MCVR 2026
-  full: SPIE--2026 The 3rd International Conference on Measurement, Communication and Virtual Reality (MCVR 2026)
-  when: Dec 25, 2026 - Dec 27, 2026
-  where: Harbin, China
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192660
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 199497
-  name: ICBCB 2027
-  full: IEEE--2027 15th International Conference on Bioinformatics and Computational Biology (ICBCB 2027)
-  when: Mar 26, 2027 - Mar 29, 2027
-  where: Xi'an, China
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-  fields:
-    - neuro
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199497
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 200158
-  name: ICAID 2027
-  full: IEEE--2027 The International Conference on Artificial Intelligence and Data Engineering (ICAID 2027)
-  when: Mar 17, 2027 - Mar 19, 2027
-  where: Paris, France
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200158
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 199708
-  name: Ei/Scopus-MLBDM 2026
-  full: 2026 6th International Conference on Machine Learning and Big Data Management (MLBDM 2026)
-  when: Dec 18, 2026 - Dec 20, 2026
-  where: Hangzhou, China
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-    - machine learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199708
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 194945
-  name: Springer AIES 2026
-  full: Springer--2026 International Conference on Artificial Intelligence and Education Systems (AIES 2026)
-  when: Dec 18, 2026 - Dec 20, 2026
-  where: Kunming, China
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194945
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 194956
-  name: AAIE 2027
-  full: 2027 Asia Conference on Advances in Artificial Intelligence and Education (AAIE 2027)
-  when: Jan 9, 2027 - Jan 11, 2027
-  where: Tokyo, Japan
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194956
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 200264
-  name: ICoSSE--Ei 2027
-  full: 2027 10th International Conference on Software and System Engineering (ICoSSE 2027)
-  when: Apr 5, 2027 - Apr 7, 2027
-  where: Paris, France
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200264
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 202553
-  name: ACM MLCI 2027
-  full: ACM--2027 the 2nd International Conference on Machine Learning and Computational Intelligence (MLCI 2027)
-  when: Apr 24, 2027 - Apr 26, 2027
-  where: Okinawa, Japan
-  deadline: '2026-11-19'
-  categories:
-    - deep learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202553
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 200077
-  name: ACM-AAMLDS 2026
-  full: 2026 International Conference on Advanced Algorithms, Machine Learning, and Data Science (AAMLDS 2026)
-  when: Dec 4, 2026 - Dec 6, 2026
-  where: Xiamen, China
-  deadline: '2026-11-19'
-  categories:
-    - machine learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200077
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 202554
-  name: MLCI 2027
-  full: ACM--2027 the 2nd International Conference on Machine Learning and Computational Intelligence (MLCI 2027)
-  when: Apr 24, 2027 - Apr 26, 2027
-  where: Okinawa, Japan
-  deadline: '2026-11-19'
-  categories:
-    - machine learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202554
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 194946
-  name: AIES 2026
-  full: Springer--2026 International Conference on Artificial Intelligence and Education Systems (AIES 2026)
-  when: Dec 18, 2026 - Dec 20, 2026
-  where: Kunming, China
-  deadline: '2026-11-19'
-  categories:
-    - machine learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194946
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 194957
-  name: AAIE--EI 2027
-  full: 2027 Asia Conference on Advances in Artificial Intelligence and Education (AAIE 2027)
-  when: Jan 9, 2027 - Jan 11, 2027
-  where: Tokyo, Japan
-  deadline: '2026-11-19'
-  categories:
-    - machine learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194957
-  hidden: false
-  first_seen: '2026-11-17'
 - eventid: 203789
   name: WMAC 2027
   full: 'Third Workshop on Multi-Agent Collaboration: Measuring Collective Intelligence in Agentic Systems (AAAI-27)'
@@ -420,46 +107,6 @@
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203483
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 199495
-  name: ICCCP 2027
-  full: 2027 16th International Conference on Chemistry and Chemical Process (ICCCP 2027)
-  when: Mar 3, 2027 - Mar 5, 2027
-  where: Sapporo, Japan
-  deadline: '2026-11-19'
-  categories:
-    - biomedical engineering
-  fields:
-    - medai
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199495
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 203702
-  name: EEICE 2026
-  full: 2026 7th International Conference on Electrical, Electronic Information and Communication Engineering
-  when: Dec 4, 2026 - Dec 6, 2026
-  where: Xinxiang, China
-  deadline: '2026-11-19'
-  categories:
-    - photonics
-  fields:
-    - optics
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203702
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 193059
-  name: ICHIH 2026
-  full: 2026 5th International Conference on Health Big Data and Intelligent Healthcare
-  when: Dec 25, 2026 - Dec 27, 2026
-  where: Hangzhou, China
-  deadline: '2026-11-19'
-  categories:
-    - bioinformatics
-  fields:
-    - medai
-    - neuro
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193059
   hidden: false
   first_seen: '2026-11-17'
 - eventid: 191645
@@ -1045,35 +692,6 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199582
   hidden: false
   first_seen: '2026-11-17'
-- eventid: 194947
-  name: ICBBB 2027
-  full: 2027 17th International Conference on Bioscience, Biochemistry and Bioinformatics (ICBBB 2027)
-  when: Jan 15, 2027 - Jan 18, 2027
-  where: Osaka, Japan
-  deadline: '2026-11-24'
-  categories:
-    - biomedical engineering
-    - bioinformatics
-  fields:
-    - neuro
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194947
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 194948
-  name: ICBMT 2027
-  full: 2027 9th International Conference on BioMedical Technology (ICBMT 2027)
-  when: Jan 15, 2027 - Jan 18, 2027
-  where: Osaka, Japan
-  deadline: '2026-11-24'
-  categories:
-    - biomedical engineering
-    - bioinformatics
-  fields:
-    - medai
-    - neuro
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194948
-  hidden: false
-  first_seen: '2026-11-17'
 - eventid: 200097
   name: BIOIMAGING 2027
   full: 14th International Conference on Bioimaging
@@ -1143,131 +761,6 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200099
   hidden: false
   first_seen: '2026-11-17'
-- eventid: 200165
-  name: ICHSM 2027
-  full: 2027 10th International Conference on Healthcare Service Management (ICHSM 2027)
-  when: Jan 7, 2027 - Jan 10, 2027
-  where: Chiang Mai, Thailand
-  deadline: '2026-11-29'
-  categories:
-    - biomedical engineering
-  fields:
-    - medai
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200165
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 201539
-  name: ICBBT--EI 2027
-  full: 2027 19th International Conference on Bioinformatics and Biomedical Technology (ICBBT 2027)
-  when: May 21, 2027 - May 24, 2027
-  where: Qingdao, China
-  deadline: '2026-11-29'
-  categories:
-    - biomedical engineering
-  fields:
-    - medai
-    - neuro
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201539
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 199955
-  name: SPIE ICMIP 2027
-  full: SPIE--2027 12th International Conference on Multimedia and Image Processing (ICMIP 2027)
-  when: Mar 27, 2027 - Mar 30, 2027
-  where: Nagoya, Japan
-  deadline: '2026-12-04'
-  categories:
-    - medical imaging
-  fields:
-    - medai
-    - imgproc
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199955
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 201223
-  name: IMIP--EI 2027
-  full: 2027 9th International Conference on Intelligent Medicine and Image Processing (IMIP 2027)
-  when: Apr 23, 2027 - Apr 26, 2027
-  where: Seoul, South Korea
-  deadline: '2026-12-09'
-  categories:
-    - medical imaging
-    - biomedical engineering
-  fields:
-    - medai
-    - imgproc
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201223
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 201231
-  name: ACM ICMHI 2027
-  full: ACM--2027 11th International Conference on Medical and Health Informatics (ICMHI 2027)
-  when: May 27, 2027 - May 30, 2027
-  where: Kyoto, Japan
-  deadline: '2026-12-09'
-  categories:
-    - biomedical engineering
-  fields:
-    - medai
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201231
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 195281
-  name: ICCBS 2027
-  full: 2027 14th International Conference on Chemical and Biological Sciences (ICCBS 2027)
-  when: Apr 2, 2027 - Apr 5, 2027
-  where: Kyoto University (Yoshida Campus), Japan
-  deadline: '2026-12-24'
-  categories:
-    - biomedical engineering
-  fields:
-    - medai
-    - neuro
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195281
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 180624
-  name: MLANN 2027
-  full: 2027 5th Asia Conference on Machine Learning, Algorithms and Neural Networks (MLANN 2027)
-  when: Apr 16, 2027 - Apr 18, 2027
-  where: Xi'an, China
-  deadline: '2027-01-19'
-  categories:
-    - optics
-  fields:
-    - optics
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=180624
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 203816
-  name: SPC 2027
-  full: Sustainable Photonics Conference (SPC 2027)
-  when: Apr 17, 2027 - Apr 19, 2027
-  where: Hangzhou, China
-  deadline: '2027-01-19'
-  categories:
-    - photonics
-  fields:
-    - optics
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203816
-  hidden: false
-  first_seen: '2026-11-17'
-- eventid: 203762
-  name: ICBIP--EI 2027
-  full: 2027 12th International Conference on Biomedical Signal and Image Processing (ICBIP 2027)
-  when: Jul 16, 2027 - Jul 18, 2027
-  where: Jeju Island, South Korea
-  deadline: '2027-01-24'
-  categories:
-    - medical imaging
-    - biomedical engineering
-  fields:
-    - medai
-    - imgproc
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203762
-  hidden: false
-  first_seen: '2026-11-17'
 - eventid: 203438
   name: META 2027
   full: META 2027, 17th International Conference on Metamaterials, Photonic Crystals & Plasmonics
@@ -1295,6 +788,550 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203154
   hidden: false
   first_seen: '2026-11-17'
+- eventid: 203994
+  name: CVIP 2026
+  full: IEEE 2026 3rd International Conference on Computer Vision, Image Processing and Computational Imaging
+  when: Dec 18, 2026 - Dec 20, 2026
+  where: Yinchuan, China
+  deadline: '2026-11-17'
+  categories:
+    - computer vision
+    - image processing
+  fields:
+    - imgproc
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203994
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 191061
+  name: IEEE-DSIS 2026
+  full: 2026 IEEE 2nd International Conference on Data Science and Intelligent Systems (DSIS 2026)
+  when: Nov 20, 2026 - Nov 22, 2026
+  where: Hangzhou, China
+  deadline: '2026-11-17'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191061
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194782
+  name: SPIE IVSP 2027
+  full: SPIE--2027 9th  International Conference on Image, Video and Signal Processing (IVSP 2027)
+  when: Mar 3, 2027 - Mar 5, 2027
+  where: Sapporo, Japan
+  deadline: '2026-11-19'
+  categories:
+    - computer vision
+    - image processing
+  fields:
+    - imgproc
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194782
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 202910
+  name: ICCVDA 2026
+  full: 2026 2nd International Conference on Computer Vision and Digital Art
+  when: Dec 4, 2026 - Dec 6, 2026
+  where: Brussels, Belgium
+  deadline: '2026-11-19'
+  categories:
+    - computer vision
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202910
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194576
+  name: SPIE IPMV 2027
+  full: SPIE--2027 9th International Conference on Image Processing and Machine Vision (IPMV 2027)
+  when: Jan 9, 2027 - Jan 11, 2027
+  where: Tokyo, Japan
+  deadline: '2026-11-19'
+  categories:
+    - computer vision
+    - image processing
+  fields:
+    - imgproc
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194576
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 200016
+  name: ICOIP 2026
+  full: 2026 6th International Conference on Optical Imaging and Image Processing
+  when: Dec 10, 2026 - Dec 12, 2026
+  where: Suzhou, China
+  deadline: '2026-11-19'
+  categories:
+    - image processing
+    - optics
+  fields:
+    - optics
+    - imgproc
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200016
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 199496
+  name: IEEE ICBCB 2027
+  full: IEEE--2027 15th International Conference on Bioinformatics and Computational Biology (ICBCB 2027)
+  when: Mar 26, 2027 - Mar 29, 2027
+  where: Xi'an, China
+  deadline: '2026-11-19'
+  categories:
+    - image processing
+    - bioinformatics
+  fields:
+    - neuro
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199496
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 199498
+  name: IEEE ICBEA 2027
+  full: IEEE--2027 11th International Conference on Biomedical Engineering and Applications (ICBEA 2027)
+  when: Mar 26, 2027 - Mar 29, 2027
+  where: Xi'an, China
+  deadline: '2026-11-19'
+  categories:
+    - image processing
+    - bioinformatics
+  fields:
+    - medai
+    - neuro
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199498
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 200261
+  name: Springer ICGDA 2027
+  full: Springer--2027 10th International Conference on Geoinformatics and Data Analysis (ICGDA 2027)
+  when: Apr 5, 2027 - Apr 7, 2027
+  where: Paris, France
+  deadline: '2026-11-19'
+  categories:
+    - image processing
+  fields:
+    - imgproc
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200261
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 199499
+  name: ICBEA 2027
+  full: IEEE--2027 11th International Conference on Biomedical Engineering and Applications (ICBEA 2027)
+  when: Mar 26, 2027 - Mar 29, 2027
+  where: Xi'an, China
+  deadline: '2026-11-19'
+  categories:
+    - medical imaging
+    - biomedical engineering
+  fields:
+    - medai
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199499
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 175829
+  name: IEEE-MLNLP 2026
+  full: 2026 IEEE 9th International Conference on Machine Learning and Natural Language Processing (MLNLP 2026)
+  when: Dec 26, 2026 - Dec 28, 2026
+  where: Xiamen, China
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=175829
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 192660
+  name: MCVR 2026
+  full: SPIE--2026 The 3rd International Conference on Measurement, Communication and Virtual Reality (MCVR 2026)
+  when: Dec 25, 2026 - Dec 27, 2026
+  where: Harbin, China
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192660
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 199497
+  name: ICBCB 2027
+  full: IEEE--2027 15th International Conference on Bioinformatics and Computational Biology (ICBCB 2027)
+  when: Mar 26, 2027 - Mar 29, 2027
+  where: Xi'an, China
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+  fields:
+    - neuro
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199497
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 200158
+  name: ICAID 2027
+  full: IEEE--2027 The International Conference on Artificial Intelligence and Data Engineering (ICAID 2027)
+  when: Mar 17, 2027 - Mar 19, 2027
+  where: Paris, France
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200158
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 199708
+  name: Ei/Scopus-MLBDM 2026
+  full: 2026 6th International Conference on Machine Learning and Big Data Management (MLBDM 2026)
+  when: Dec 18, 2026 - Dec 20, 2026
+  where: Hangzhou, China
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199708
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194945
+  name: Springer AIES 2026
+  full: Springer--2026 International Conference on Artificial Intelligence and Education Systems (AIES 2026)
+  when: Dec 18, 2026 - Dec 20, 2026
+  where: Kunming, China
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194945
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194956
+  name: AAIE 2027
+  full: 2027 Asia Conference on Advances in Artificial Intelligence and Education (AAIE 2027)
+  when: Jan 9, 2027 - Jan 11, 2027
+  where: Tokyo, Japan
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194956
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 200264
+  name: ICoSSE--Ei 2027
+  full: 2027 10th International Conference on Software and System Engineering (ICoSSE 2027)
+  when: Apr 5, 2027 - Apr 7, 2027
+  where: Paris, France
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200264
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 202553
+  name: ACM MLCI 2027
+  full: ACM--2027 the 2nd International Conference on Machine Learning and Computational Intelligence (MLCI 2027)
+  when: Apr 24, 2027 - Apr 26, 2027
+  where: Okinawa, Japan
+  deadline: '2026-11-19'
+  categories:
+    - deep learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202553
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 200077
+  name: ACM-AAMLDS 2026
+  full: 2026 International Conference on Advanced Algorithms, Machine Learning, and Data Science (AAMLDS 2026)
+  when: Dec 4, 2026 - Dec 6, 2026
+  where: Xiamen, China
+  deadline: '2026-11-19'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200077
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 202554
+  name: MLCI 2027
+  full: ACM--2027 the 2nd International Conference on Machine Learning and Computational Intelligence (MLCI 2027)
+  when: Apr 24, 2027 - Apr 26, 2027
+  where: Okinawa, Japan
+  deadline: '2026-11-19'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202554
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194946
+  name: AIES 2026
+  full: Springer--2026 International Conference on Artificial Intelligence and Education Systems (AIES 2026)
+  when: Dec 18, 2026 - Dec 20, 2026
+  where: Kunming, China
+  deadline: '2026-11-19'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194946
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194957
+  name: AAIE--EI 2027
+  full: 2027 Asia Conference on Advances in Artificial Intelligence and Education (AAIE 2027)
+  when: Jan 9, 2027 - Jan 11, 2027
+  where: Tokyo, Japan
+  deadline: '2026-11-19'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194957
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 199495
+  name: ICCCP 2027
+  full: 2027 16th International Conference on Chemistry and Chemical Process (ICCCP 2027)
+  when: Mar 3, 2027 - Mar 5, 2027
+  where: Sapporo, Japan
+  deadline: '2026-11-19'
+  categories:
+    - biomedical engineering
+  fields:
+    - medai
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199495
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 203702
+  name: EEICE 2026
+  full: 2026 7th International Conference on Electrical, Electronic Information and Communication Engineering
+  when: Dec 4, 2026 - Dec 6, 2026
+  where: Xinxiang, China
+  deadline: '2026-11-19'
+  categories:
+    - photonics
+  fields:
+    - optics
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203702
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 193059
+  name: ICHIH 2026
+  full: 2026 5th International Conference on Health Big Data and Intelligent Healthcare
+  when: Dec 25, 2026 - Dec 27, 2026
+  where: Hangzhou, China
+  deadline: '2026-11-19'
+  categories:
+    - bioinformatics
+  fields:
+    - medai
+    - neuro
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193059
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194947
+  name: ICBBB 2027
+  full: 2027 17th International Conference on Bioscience, Biochemistry and Bioinformatics (ICBBB 2027)
+  when: Jan 15, 2027 - Jan 18, 2027
+  where: Osaka, Japan
+  deadline: '2026-11-24'
+  categories:
+    - biomedical engineering
+    - bioinformatics
+  fields:
+    - neuro
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194947
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 194948
+  name: ICBMT 2027
+  full: 2027 9th International Conference on BioMedical Technology (ICBMT 2027)
+  when: Jan 15, 2027 - Jan 18, 2027
+  where: Osaka, Japan
+  deadline: '2026-11-24'
+  categories:
+    - biomedical engineering
+    - bioinformatics
+  fields:
+    - medai
+    - neuro
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194948
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 200165
+  name: ICHSM 2027
+  full: 2027 10th International Conference on Healthcare Service Management (ICHSM 2027)
+  when: Jan 7, 2027 - Jan 10, 2027
+  where: Chiang Mai, Thailand
+  deadline: '2026-11-29'
+  categories:
+    - biomedical engineering
+  fields:
+    - medai
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200165
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 201539
+  name: ICBBT--EI 2027
+  full: 2027 19th International Conference on Bioinformatics and Biomedical Technology (ICBBT 2027)
+  when: May 21, 2027 - May 24, 2027
+  where: Qingdao, China
+  deadline: '2026-11-29'
+  categories:
+    - biomedical engineering
+  fields:
+    - medai
+    - neuro
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201539
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 199955
+  name: SPIE ICMIP 2027
+  full: SPIE--2027 12th International Conference on Multimedia and Image Processing (ICMIP 2027)
+  when: Mar 27, 2027 - Mar 30, 2027
+  where: Nagoya, Japan
+  deadline: '2026-12-04'
+  categories:
+    - medical imaging
+  fields:
+    - medai
+    - imgproc
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199955
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 201223
+  name: IMIP--EI 2027
+  full: 2027 9th International Conference on Intelligent Medicine and Image Processing (IMIP 2027)
+  when: Apr 23, 2027 - Apr 26, 2027
+  where: Seoul, South Korea
+  deadline: '2026-12-09'
+  categories:
+    - medical imaging
+    - biomedical engineering
+  fields:
+    - medai
+    - imgproc
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201223
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 201231
+  name: ACM ICMHI 2027
+  full: ACM--2027 11th International Conference on Medical and Health Informatics (ICMHI 2027)
+  when: May 27, 2027 - May 30, 2027
+  where: Kyoto, Japan
+  deadline: '2026-12-09'
+  categories:
+    - biomedical engineering
+  fields:
+    - medai
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201231
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 195281
+  name: ICCBS 2027
+  full: 2027 14th International Conference on Chemical and Biological Sciences (ICCBS 2027)
+  when: Apr 2, 2027 - Apr 5, 2027
+  where: Kyoto University (Yoshida Campus), Japan
+  deadline: '2026-12-24'
+  categories:
+    - biomedical engineering
+  fields:
+    - medai
+    - neuro
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195281
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 180624
+  name: MLANN 2027
+  full: 2027 5th Asia Conference on Machine Learning, Algorithms and Neural Networks (MLANN 2027)
+  when: Apr 16, 2027 - Apr 18, 2027
+  where: Xi'an, China
+  deadline: '2027-01-19'
+  categories:
+    - optics
+  fields:
+    - optics
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=180624
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 203816
+  name: SPC 2027
+  full: Sustainable Photonics Conference (SPC 2027)
+  when: Apr 17, 2027 - Apr 19, 2027
+  where: Hangzhou, China
+  deadline: '2027-01-19'
+  categories:
+    - photonics
+  fields:
+    - optics
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203816
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
+- eventid: 203762
+  name: ICBIP--EI 2027
+  full: 2027 12th International Conference on Biomedical Signal and Image Processing (ICBIP 2027)
+  when: Jul 16, 2027 - Jul 18, 2027
+  where: Jeju Island, South Korea
+  deadline: '2027-01-24'
+  categories:
+    - medical imaging
+    - biomedical engineering
+  fields:
+    - medai
+    - imgproc
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203762
+  hidden: false
+  first_seen: '2026-11-17'
+  lowq: true
 - eventid: 202559
   name: ICBET 2027
   full: IEEE--2027 17th International Conference on Biomedical Engineering and Technology (ICBET 2027)
@@ -1309,3 +1346,4 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202559
   hidden: false
   first_seen: '2026-11-17'
+  lowq: true
