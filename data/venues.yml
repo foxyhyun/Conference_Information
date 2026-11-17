@@ -8,6 +8,8 @@
 #    optics   = Optics / Photonics
 #    neuro    = Bio / Neuroscience
 #
+#  also: 부 분야 (필터에는 잡히지만 분야 내 점수 정규화에는 안 들어감)
+#        예: CVPR 은 fields: [dl, imgproc], also: [medai] → 의료 AI 필터에 나오지만 의료 AI 분야 1위는 MICCAI 유지
 #  region: intl(국제) | domestic(국내)
 #  target: true  → 사이트에서 ★ 고정 표시
 #
@@ -54,6 +56,7 @@ conferences:
     name: CVPR
     full: IEEE/CVF Conference on Computer Vision and Pattern Recognition
     fields: [dl, imgproc]
+    also: [medai]
     region: intl
     target: true
     link: https://cvpr.thecvf.com/
@@ -64,6 +67,7 @@ conferences:
     name: ICCV
     full: IEEE/CVF International Conference on Computer Vision
     fields: [dl, imgproc]
+    also: [medai]
     region: intl
     target: true
     link: https://iccv.thecvf.com/
@@ -74,6 +78,7 @@ conferences:
     name: ECCV
     full: European Conference on Computer Vision
     fields: [dl, imgproc]
+    also: [medai]
     region: intl
     target: true
     link: https://eccv.ecva.net/
@@ -84,6 +89,7 @@ conferences:
     name: WACV
     full: IEEE/CVF Winter Conference on Applications of Computer Vision
     fields: [dl, imgproc]
+    also: [medai]
     region: intl
     target: true
     link: https://wacv.thecvf.com/
@@ -130,6 +136,7 @@ conferences:
     name: BMVC
     full: British Machine Vision Conference
     fields: [dl, imgproc]
+    also: [medai]
     region: intl
     link: https://bmvc2025.bmva.org/
     sources: { ccfddl: BMVC }
@@ -139,6 +146,7 @@ conferences:
     name: ACCV
     full: Asian Conference on Computer Vision
     fields: [dl, imgproc]
+    also: [medai]
     region: intl
     link: https://accv2026.org/
     sources: { ccfddl: ACCV }
@@ -148,6 +156,7 @@ conferences:
     name: 3DV
     full: International Conference on 3D Vision
     fields: [dl, imgproc]
+    also: [medai]
     region: intl
     link: https://3dvconf.github.io/
     sources: { ccfddl: 3DV, hf: 3dv }
@@ -158,6 +167,7 @@ conferences:
     name: MICCAI
     full: Medical Image Computing and Computer Assisted Intervention
     fields: [medai, imgproc]
+    also: [dl]
     region: intl
     target: true
     link: https://conferences.miccai.org/
@@ -168,6 +178,7 @@ conferences:
     name: MIDL
     full: Medical Imaging with Deep Learning
     fields: [medai, dl]
+    also: [imgproc]
     region: intl
     link: https://www.midl.io/
     scrape: { url: "https://{year}.midl.io/", follow: true }
@@ -177,6 +188,7 @@ conferences:
     name: ISBI
     full: IEEE International Symposium on Biomedical Imaging
     fields: [medai, imgproc, optics]
+    also: [dl]
     region: intl
     link: https://biomedicalimaging.org/
     scrape: { url: "https://biomedicalimaging.org/{year}/", timezone: UTC-5 }
@@ -186,6 +198,7 @@ conferences:
     name: IPMI
     full: Information Processing in Medical Imaging
     fields: [medai]
+    also: [dl, imgproc]
     region: intl
     link: https://ipmi2025.org/
     metrics: { h5: 40, tier: 0.75, accept_rate: 0.30 }
@@ -203,6 +216,7 @@ conferences:
     name: SPIE Medical Imaging
     full: SPIE Medical Imaging Symposium
     fields: [medai, imgproc, optics]
+    also: [dl]
     region: intl
     link: https://spie.org/conferences-and-exhibitions/medical-imaging
     metrics: { tier: 0.5 }
@@ -230,6 +244,7 @@ conferences:
     name: ICASSP
     full: IEEE International Conference on Acoustics, Speech and Signal Processing
     fields: [imgproc]
+    also: [dl, medai]
     region: intl
     link: https://2026.ieeeicassp.org/
     sources: { ccfddl: ICASSP, hf: icassp }
@@ -239,6 +254,7 @@ conferences:
     name: ICCP
     full: IEEE International Conference on Computational Photography
     fields: [imgproc, optics]
+    also: [dl]
     region: intl
     link: https://iccp-conference.org/
     metrics: { tier: 0.65 }

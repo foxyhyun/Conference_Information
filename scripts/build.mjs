@@ -104,7 +104,7 @@ const confList = [...(venues.conferences || []), ...discovered].map((v) => {
   };
   return {
     id: v.id, name: v.name, full: v.full || c?.full || h?.full || '', kind: 'conference',
-    fields: v.fields || [], region: v.region || 'intl', target: !!v.target, link: v.link,
+    fields: v.fields || [], also: (v.also || []).filter((f) => !(v.fields || []).includes(f)), region: v.region || 'intl', target: !!v.target, link: v.link,
     status: v.status || null, verified: !!(m.verified ?? v.verified),
     metrics, difficulty: difficulty(metrics.accept_rate), editions: mergeEditions(v),
     details: pickDetails(details[v.id]),

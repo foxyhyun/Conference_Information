@@ -6,7 +6,7 @@
     ko: {
       subtitle: 'Neurophotonics Lab · 학회·저널 마감 트래커',
       tab_conf: '학회', tab_journal: '저널', tab_cand: '신규 후보',
-      field_all: '전체 분야',
+      field_all: '전체 분야', field_hint: '분야를 여러 개 고르면 모두 해당하는 학회만 보입니다', also_hint: '부 분야 — 제출은 가능하지만 이 분야의 점수 순위에는 포함되지 않음',
       fields: { dl: 'Deep Learning', medai: '의료 AI', imgproc: '이미지 처리', optics: 'Optics', neuro: 'Bio / Neuro' },
       fields_tiny: { dl: 'DL', medai: '의료AI', imgproc: '영상처리', optics: 'Optics', neuro: 'Neuro' },
       region_all: '전체', region_intl: '국제', region_domestic: '국내',
@@ -38,7 +38,7 @@
     en: {
       subtitle: 'Neurophotonics Lab · conference & journal deadline tracker',
       tab_conf: 'Conferences', tab_journal: 'Journals', tab_cand: 'New candidates',
-      field_all: 'All fields',
+      field_all: 'All fields', field_hint: 'Pick several fields to show only venues matching all of them', also_hint: 'Secondary field — accepts such submissions but is not ranked within this field',
       fields: { dl: 'Deep Learning', medai: 'Medical AI', imgproc: 'Image Processing', optics: 'Optics', neuro: 'Bio / Neuro' },
       fields_tiny: { dl: 'DL', medai: 'Med AI', imgproc: 'Img Proc', optics: 'Optics', neuro: 'Neuro' },
       region_all: 'All', region_intl: 'International', region_domestic: 'Korea',
@@ -72,7 +72,8 @@
   const T = () => I18N[lang];
   const SUBMIT = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'registration', 'other']);
 
-  const state = { tab: 'conf', field: 'all', region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true };
+  // fields: 선택된 분야 집합 (비어 있으면 전체). 여러 개 선택 시 모두 해당하는 학회만 표시 (AND)
+  const state = { tab: 'conf', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true };
   let DATA = null;
   const $ = (s) => document.querySelector(s);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -139,7 +140,14 @@
     const y = new Date().getFullYear();
     return c.editions.find((e) => e.year >= y) || c.editions.at(-1) || null;
   }
-  const tierOf = (x) => (state.field === 'all' ? x.score.overall : x.score.byField[state.field]) ?? -1;
+  const selFields = () => [...state.fields];
+  // 선택 분야가 없으면 전체 점수, 하나면 그 분야 점수, 여러 개면 평균
+  const tierOf = (x) => {
+    const fs = selFields();
+    if (!fs.length) return x.score.overall ?? -1;
+    const v = fs.map((f) => x.score.byField[f]).filter((s) => s != null);
+    return v.length ? v.reduce((a, b) => a + b, 0) / v.length : -1;
+  };
 
   // ---------------------------------------------------------------- 렌더링
   function scoreBlock(x, extra = '') {
@@ -147,16 +155,19 @@
     const rows = [];
     const bar = (label, v) =>
       `<div class="srow"><span>${label}</span><div class="bar"><i style="width:${Math.round((v ?? 0) * 100)}%"></i></div><b>${v == null ? '–' : v.toFixed(2)}</b></div>`;
-    if (state.field !== 'all') rows.push(bar(t.score_field, x.score.byField[state.field]));
+    const fs = selFields();
+    if (fs.length === 1) rows.push(bar(t.score_field, x.score.byField[fs[0]]));
+    else for (const f of fs) rows.push(bar(t.fields_tiny[f], x.score.byField[f]));
     rows.push(bar(t.score_all, x.score.overall));
-    if (state.field === 'all' && x.fields.length > 1) {
+    if (!fs.length && x.fields.length > 1) {
       for (const f of x.fields) rows.push(bar(t.fields_tiny[f], x.score.byField[f]));
     }
     return `<div class="score">${rows.join('')}${extra}</div>`;
   }
   const warn = (x) => (x.verified ? '' : ` <span class="warn-ico" title="${T().unverified}">⚠</span>`);
   const placeLine = (ed) => (ed?.place ? `<div class="cd-place">📍 ${esc(ed.place)}</div>` : '');
-  const fieldTags = (x) => `<div class="fields">${x.fields.map((f) => `<span class="ftag">${T().fields[f]}</span>`).join('')}</div>`;
+  const allFields = (x) => [...x.fields, ...(x.also || [])];
+  const fieldTags = (x) => `<div class="fields">${x.fields.map((f) => `<span class="ftag">${T().fields[f]}</span>`).join('')}${(x.also || []).map((f) => `<span class="ftag sec" title="${T().also_hint}">${T().fields[f]}</span>`).join('')}</div>`;
 
   function confCard(c, now) {
     const t = T();
@@ -282,8 +293,9 @@
 
   function filtered(now) {
     const q = state.q.trim().toLowerCase();
+    const fs = selFields();
     const match = (x, extra = '') =>
-      (state.field === 'all' || x.fields.includes(state.field)) &&
+      fs.every((f) => allFields(x).includes(f)) &&
       (!q || `${x.name} ${x.full} ${x.name_en || ''} ${x.full_en || ''} ${extra}`.toLowerCase().includes(q));
 
     if (state.tab === 'conf') {
@@ -353,6 +365,7 @@
     $('#q').placeholder = t.search;
     $('#field-chips').innerHTML = [['all', t.field_all], ...Object.entries(t.fields)]
       .map(([k, v]) => `<button class="chip" data-v="${k}">${v}</button>`).join('');
+    $('#field-chips').title = t.field_hint;
     document.querySelectorAll('#lang-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === lang));
     if (DATA) {
       const upd = DATA.crawledAt || DATA.generatedAt;
@@ -364,7 +377,11 @@
   function setupControls() {
     $('#field-chips').addEventListener('click', (e) => {
       const b = e.target.closest('.chip'); if (!b) return;
-      state.field = b.dataset.v; syncUi(); render();
+      const v = b.dataset.v;
+      if (v === 'all') state.fields.clear();
+      else if (state.fields.has(v)) state.fields.delete(v);
+      else state.fields.add(v);
+      syncUi(); render();
     });
     $('#region-seg').addEventListener('click', (e) => {
       const b = e.target.closest('button'); if (!b) return;
@@ -391,7 +408,7 @@
   }
   function syncUi() {
     const sorts = T().sorts[state.tab];
-    document.querySelectorAll('.chip').forEach((b) => b.classList.toggle('on', b.dataset.v === state.field));
+    document.querySelectorAll('.chip').forEach((b) => b.classList.toggle('on', b.dataset.v === 'all' ? state.fields.size === 0 : state.fields.has(b.dataset.v)));
     document.querySelectorAll('#region-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === state.region));
     document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('active', b.dataset.tab === state.tab));
     $('#sort').innerHTML = sorts.map(([v, l]) => `<option value="${v}">${l}</option>`).join('');
@@ -402,12 +419,14 @@
     $('#target-first').checked = state.targetFirst;
   }
   function saveHash() {
-    const h = new URLSearchParams({ tab: state.tab, field: state.field, region: state.region, sort: state.sort, lang });
+    const h = new URLSearchParams({ tab: state.tab, field: selFields().join(',') || 'all', region: state.region, sort: state.sort, lang });
     history.replaceState(null, '', '#' + h.toString());
   }
   function loadHash() {
     const h = new URLSearchParams(location.hash.slice(1));
-    for (const k of ['tab', 'field', 'region', 'sort']) if (h.get(k)) state[k] = h.get(k);
+    for (const k of ['tab', 'region', 'sort']) if (h.get(k)) state[k] = h.get(k);
+    const f = h.get('field');
+    if (f) state.fields = new Set(f === 'all' ? [] : f.split(',').filter((x) => I18N.ko.fields[x]));
     if (!I18N.ko.sorts[state.tab]) state.tab = 'conf';
     if (h.get('lang') && I18N[h.get('lang')]) lang = h.get('lang');
   }

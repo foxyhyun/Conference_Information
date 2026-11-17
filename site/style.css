@@ -120,6 +120,7 @@ input[type=search] { flex: 1; min-width: 160px; }
 .star { color: var(--star); }
 .fields { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
 .ftag { font-size: 11px; color: var(--ink-3); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; }
+.ftag.sec { border-style: dashed; opacity: 0.8; }
 
 /* countdown */
 .cd-type { font-size: 12px; color: var(--ink-3); }
