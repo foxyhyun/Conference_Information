@@ -1,0 +1,16 @@
+﻿{
+  "name": "lab-deadlines",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Neurophotonics Lab 학회·저널 마감 트래커",
+  "type": "module",
+  "scripts": {
+    "crawl": "node scripts/crawl.mjs",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

@@ -1,0 +1,102 @@
+# 크롤러가 자동으로 추가한 학회입니다. 분야(fields)를 확인하고, 필요 없으면 hidden: true 로 바꾸세요.
+# 확인이 끝난 항목은 status: new 줄을 지우면 NEW 배지가 사라집니다.
+
+- id: auto-icpr
+  name: ICPR
+  full: International Conference on Pattern Recognition
+  fields:
+    - dl
+  region: intl
+  link: https://www.icpr2027.com/
+  sources:
+    ccfddl: ICPR
+  metrics:
+    core: B
+  status: new
+  discovered: '2026-11-17'
+  hidden: false
+- id: auto-icme
+  name: ICME
+  full: The IEEE International Conference on Multimedia & Expo
+  fields:
+    - imgproc
+  region: intl
+  link: https://2027.ieeeicme.org/
+  sources:
+    ccfddl: ICME
+  metrics:
+    core: A
+  status: new
+  discovered: '2026-11-17'
+  hidden: false
+- id: auto-icmr
+  name: ICMR
+  full: ACM SIGMM International Conference on Multimedia Retrieval
+  fields:
+    - imgproc
+  region: intl
+  link: https://www.icmr2027.org/
+  sources:
+    ccfddl: ICMR
+  metrics:
+    core: B
+  status: new
+  discovered: '2026-11-17'
+  hidden: false
+- id: auto-acm-mm
+  name: ACM MM
+  full: ACM International Conference on Multimedia
+  fields:
+    - imgproc
+  region: intl
+  link: https://2026.acmmm.org/
+  sources:
+    ccfddl: ACM MM
+    hf: acm_mm
+  metrics:
+    core: A*
+  status: new
+  discovered: '2026-11-17'
+  hidden: false
+- id: auto-mmm
+  name: MMM
+  full: International Conference on Multimedia Modeling
+  fields:
+    - imgproc
+  region: intl
+  link: https://www.mmm2027.net/
+  sources:
+    ccfddl: MMM
+  metrics:
+    core: B
+  status: new
+  discovered: '2026-11-17'
+  hidden: false
+- id: auto-euvip
+  name: EUVIP
+  full: European Conference on Visual Information Processing
+  fields:
+    - imgproc
+    - dl
+  region: intl
+  link: https://euvip2026.github.io/
+  sources:
+    hf: euvip
+  metrics: {}
+  status: new
+  discovered: '2026-11-17'
+  hidden: false
+- id: auto-sibgrapi
+  name: SIBGRAPI
+  full: Conference on Graphics, Patterns and Images
+  fields:
+    - imgproc
+    - dl
+  region: intl
+  link: https://sibgrapi.sbc.org.br/2026/
+  sources:
+    hf: sibgrapi
+  metrics: {}
+  status: new
+  discovered: '2026-11-17'
+  hidden: false

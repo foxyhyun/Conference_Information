@@ -1,0 +1,65 @@
+name: update
+
+# 매월 1일, 15일 09:00 KST (00:00 UTC) 자동 실행. Actions 탭에서 수동 실행도 가능.
+on:
+  schedule:
+    - cron: '0 0 1,15 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/crawl.mjs
+
+      # 1) 등록된 학회 일정 + WikiCFP 후보는 바로 main 에 반영
+      - name: Commit crawled schedules
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp data/discovered.yml /tmp/discovered.yml 2>/dev/null || true
+          git checkout -- data/discovered.yml 2>/dev/null || rm -f data/discovered.yml
+          git add data/crawled data/candidates.yml
+          if git diff --cached --quiet; then
+            echo "no schedule changes"
+          else
+            git commit -m "chore: 일정 자동 갱신 $(date -u +%F)"
+            git push
+          fi
+          cp /tmp/discovered.yml data/discovered.yml 2>/dev/null || true
+
+      # 2) 새로 발견된 학회는 PR 로 올려서 검토 후 반영
+      - name: Open PR for newly discovered venues
+        uses: peter-evans/create-pull-request@v7
+        with:
+          add-paths: data/discovered.yml
+          branch: auto/new-venues
+          delete-branch: true
+          commit-message: "feat: 새로 발견된 학회 추가"
+          title: "새로 발견된 학회 검토"
+          body: |
+            크롤러가 새 학회를 발견했습니다. `data/discovered.yml` 의 분야(fields)를 확인하세요.
+            - 필요 없는 학회는 `hidden: true` 로 바꾸고 커밋
+            - 괜찮으면 그대로 Merge → 사이트에 NEW 배지로 표시됩니다
+
+  deploy:
+    needs: crawl
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

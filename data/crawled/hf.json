@@ -1,0 +1,4613 @@
+{
+  "3dv": {
+    "title": "3DV",
+    "full": "International Conference on 3D Vision",
+    "tags": [
+      "machine-learning",
+      "computer-vision"
+    ],
+    "rankings": "CCF: C, CORE: N, THCPL: N",
+    "editions": [
+      {
+        "year": 2027,
+        "link": "https://3dvconf.github.io/2027/",
+        "date": "April 6-9, 2027",
+        "place": "Thessaloniki Concert Hall (M2 building), Thessaloniki, Greece",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission Deadline",
+            "at": "2026-08-28T18:00:00.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary Material Deadline",
+            "at": "2026-09-02T18:00:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Preliminary Notification",
+            "at": "2026-10-27T18:00:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Notification",
+            "at": "2026-12-02T18:00:00.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "aaai": {
+    "title": "AAAI",
+    "full": "AAAI Conference on Artificial Intelligence",
+    "hindex": 220,
+    "tags": [
+      "data-mining",
+      "machine-learning",
+      "natural-language-processing",
+      "computer-vision"
+    ],
+    "rankings": "CCF: A, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://aaai.org/conference/aaai/aaai-25/",
+        "date": "February 25 - March 4, 2025",
+        "place": "Pennsylvania Convention Center, Philadelphia, USA",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2024-08-08T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2024-08-16T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2024-12-10T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2024-12-20T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://aaai.org/conference/aaai/aaai-26/",
+        "date": "January 20 - 27, 2026",
+        "place": "Singapore EXPO, Singapore",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2025-07-26T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-08-02T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary material and code deadline",
+            "at": "2025-08-05T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Phase 1 rejection notifications",
+            "at": "2025-09-16T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author feedback window start",
+            "at": "2025-10-08T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author feedback window end",
+            "at": "2025-10-14T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final acceptance/rejection notices",
+            "at": "2025-11-09T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-11-14T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://aaai.org/conference/aaai/aaai-27/",
+        "date": "February 16 - 23, 2027",
+        "place": "Palais des congrès de Montréal, Montréal, Canada",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2026-07-22T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-07-29T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary material and code deadline",
+            "at": "2026-08-01T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Phase 1 rejection notifications",
+            "at": "2026-09-25T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author feedback window start",
+            "at": "2026-10-20T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author feedback window end",
+            "at": "2026-10-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final acceptance/rejection notices",
+            "at": "2026-12-01T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-12-15T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "aamas": {
+    "title": "AAMAS",
+    "full": "International Conference on Autonomous Agents and Multiagent Systems",
+    "tags": [
+      "machine-learning",
+      "robotics"
+    ],
+    "rankings": "CCF: B, CORE: A*, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://aamas2025.org/",
+        "date": "May 19-23, 2025",
+        "place": "Detroit Marriott at the Renaissance Center, Detroit, Michigan",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2024-10-10T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2024-10-17T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://cyprusconferences.org/aamas2026/",
+        "date": "May 25-29, 2026",
+        "place": "Coral Beach Hotel & Resort, Paphos, Cyprus",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-10-02T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2025-10-09T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2025-11-22T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2025-11-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2025-12-23T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-02-12T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/",
+        "date": "May 3-7, 2027",
+        "place": "JW Marriott Hotel, Hanoi, Vietnam",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2026-10-02T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2026-10-09T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2026-11-21T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2026-11-25T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-12-22T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2027-01-26T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "acl": {
+    "title": "ACL",
+    "full": "Annual Meeting of the Association for Computational Linguistics",
+    "tags": [
+      "natural-language-processing"
+    ],
+    "rankings": "CCF: A, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.aclweb.org/",
+        "date": "July 27 - August 1, 2025",
+        "place": "Austria Center Vienna, Bruno-Kreisky-Platz 1, 1220 Wien, Austria",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-02-16T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "Author response period begins",
+            "at": "2025-03-28T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "Author response period ends",
+            "at": "2025-04-04T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "ARR reviews available",
+            "at": "2025-04-16T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "ARR commitment deadline",
+            "at": "2025-04-21T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification date",
+            "at": "2025-05-16T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "Withdrawal deadline",
+            "at": "2025-05-31T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-05-31T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.aclweb.org/",
+        "date": "July 2 - 7, 2026",
+        "place": "Grand Hyatt Manchester San Diego, 1 Market Place, San Diego, CA 92101",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-01-06T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "ARR reviews available",
+            "at": "2026-03-11T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "ARR commitment deadline",
+            "at": "2026-03-15T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification date",
+            "at": "2026-04-05T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "Withdrawal deadline",
+            "at": "2026-04-20T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-04-20T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "acm_mm": {
+    "title": "ACM MM",
+    "full": "ACM Multimedia",
+    "tags": [
+      "computer-vision",
+      "machine-learning",
+      "human-computer-interaction"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://acmmm2025.org/",
+        "date": "October 27-31, 2025",
+        "place": "Royal Dublin Convention Centre, Dublin, Ireland",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission for regular papers",
+            "at": "2025-04-05T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Regular paper submission (including supplementary materials, if applicable)",
+            "at": "2025-04-12T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2025-06-10T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2025-06-20T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.acmmm.org/",
+        "date": "November 10-14, 2026",
+        "place": "Rio de Janeiro, Brazil",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Contribution registration",
+            "at": "2026-03-26T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Contribution submission",
+            "at": "2026-04-02T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary material submission",
+            "at": "2026-04-09T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2026-06-05T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-07-10T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready submission",
+            "at": "2026-08-07T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Author registration",
+            "at": "2026-08-21T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "aistats": {
+    "title": "AISTATS",
+    "full": "International Conference on Artificial Intelligence and Statistics",
+    "hindex": 101,
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: C, CORE: A, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://aistats.org/aistats2025",
+        "date": "May 3-5, 2025",
+        "place": "Splash Beach Resort",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2024-10-04T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2024-10-11T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://virtual.aistats.org/Conferences/2026",
+        "date": "May 2-5, 2026",
+        "place": "Hilton Tangier Al Houara Resort & Spa",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2025-09-26T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2025-10-03T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary material deadline",
+            "at": "2025-10-10T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2025-11-22T00:00:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper decision notifications",
+            "at": "2026-01-23T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-04-01T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "alt": {
+    "title": "ALT",
+    "full": "International Conference on Algorithmic Learning Theory",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: C, CORE: B, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://algorithmiclearningtheory.org/alt2025/",
+        "date": "February 24-27, 2025",
+        "place": "Politecnico di Milano, Milan, Italy",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2024-10-01T09:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://algorithmiclearningtheory.org/alt2026/",
+        "date": "February 23-26, 2026",
+        "place": "Fields Institute, Toronto, Canada",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-10-03T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2025-12-19T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author feedback period start",
+            "at": "2025-11-18T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author feedback period end",
+            "at": "2025-11-24T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "bis": {
+    "title": "BIS",
+    "full": "International Conference on Business Information Systems",
+    "tags": [
+      "information-systems",
+      "machine-learning",
+      "natural-language-processing",
+      "data-mining",
+      "large-language-models",
+      "knowledge-graphs"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://bisconf.org/2026",
+        "date": "June 10-12, 2026",
+        "place": "Prague University of Economics and Business, Nám. W. Churchilla 4, Prague 130 67, Czech Republic",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline (extended)",
+            "at": "2026-01-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-03-10T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Final paper submission",
+            "at": "2026-03-26T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "cec": {
+    "title": "CEC",
+    "full": "IEEE Congress on Evolutionary Computation",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: N, CORE: B, THCPL: N",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://www.cec2025.org/",
+        "date": "June 8-12, 2025",
+        "place": "Hangzhou, China",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-01-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://attend.ieee.org/wcci-2026/",
+        "date": "June 21-26, 2026",
+        "place": "Maastricht Exhibition & Congress Centre (MECC)",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-02-01T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper acceptance notification",
+            "at": "2026-03-16T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready papers deadline",
+            "at": "2026-04-16T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Early bird registration deadline",
+            "at": "2026-05-02T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "http://ieeecec.org",
+        "date": "July 25-28, 2027",
+        "place": "Edinburgh, United Kingdom",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2027-01-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "chi": {
+    "title": "CHI",
+    "full": "The ACM Conference on Human Factors in Computing Systems",
+    "hindex": 128,
+    "tags": [
+      "human-computer-interaction"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://chi2025.acm.org/",
+        "date": "April 26 - May 01, 2025",
+        "place": "Pacifico Yokohama Conference Center, Yokohama, Japan",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract/Metadata Due",
+            "at": "2024-09-06T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full Paper Due",
+            "at": "2024-09-13T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://chi2026.acm.org/",
+        "date": "April 13 - April 17, 2026",
+        "place": "Centre de Convencions Internacional de Barcelona, Barcelona, Spain",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract/Metadata Due",
+            "at": "2025-09-05T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full Paper Due",
+            "at": "2025-09-12T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2025-11-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Resubmission Due",
+            "at": "2025-12-05T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Decisions Notification",
+            "at": "2026-01-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://chi2027.acm.org/",
+        "date": "May 10 - May 14, 2027",
+        "place": "David L. Lawrence Convention Center, Pittsburgh, USA",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Full Paper Due",
+            "at": "2026-09-11T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2026-11-06T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Resubmission Due",
+            "at": "2026-12-04T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Decisions Notification",
+            "at": "2026-12-18T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Publication-Ready Deadline",
+            "at": "2027-02-19T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "chil": {
+    "title": "CHIL",
+    "full": "AHLI Conference on Health, Inference, and Learning",
+    "hindex": 30,
+    "tags": [
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://chil.ahli.cc/submit/call-for-papers/",
+        "date": "June 28-30, 2026",
+        "place": "Seattle Children's Research Institute, B. Wayne Hughes Building",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-02-05T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2026-03-11T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Ends",
+            "at": "2026-03-18T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Decisions",
+            "at": "2026-04-10T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "cikm": {
+    "title": "CIKM",
+    "full": "Conference on Information and Knowledge Management",
+    "hindex": 91,
+    "tags": [
+      "web-search",
+      "data-mining",
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://cikm2025.org/",
+        "date": "November 10-14, 2025",
+        "place": "COEX, Seoul, South Korea",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2025-05-17T11:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2025-05-24T11:59:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2025-08-05T11:59:00.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-08-28T11:59:00.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://cikm2026.diag.uniroma1.it/",
+        "date": "November 7-11, 2026",
+        "place": "Rome, Italy",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2026-05-17T11:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2026-05-24T11:59:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-08-08T11:59:00.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-08-21T11:59:00.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "coling": {
+    "title": "COLING",
+    "full": "International Conference on Computational Linguistics",
+    "hindex": 73,
+    "tags": [
+      "natural-language-processing"
+    ],
+    "rankings": "CCF: B, CORE: B, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://coling2025.org/",
+        "date": "Jan 19 - Jan 24, 2025",
+        "place": "Abu Dhabi National Exhibition Centre (ADNEC), Abu Dhabi, UAE",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2024-09-17T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "collas": {
+    "title": "CoLLAs",
+    "full": "Fifth Conference on Lifelong Learning Agents",
+    "tags": [
+      "machine-learning",
+      "lifelong-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://lifelong-ml.cc",
+        "date": "August 11-14, 2025",
+        "place": "Philadelphia, USA",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2025-02-27T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-03-04T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://lifelong-ml.cc",
+        "date": "September 14-17, 2026",
+        "place": "National University of Science and Technology Politehnica Bucharest",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract registration deadline",
+            "at": "2026-04-10T23:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-04-15T23:59:00.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "colm": {
+    "title": "COLM",
+    "full": "Conference on Language Modeling",
+    "tags": [
+      "natural-language-processing",
+      "large-language-models"
+    ],
+    "rankings": "CCF: N, CORE: N, THCPL: N",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://colmweb.org/cfp.html",
+        "date": "October 7-10, 2025",
+        "place": "Palais des Congrès Montreal, Canada",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2025-03-23T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-03-29T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Start",
+            "at": "2025-05-27T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period End",
+            "at": "2025-06-11T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Decision Notification",
+            "at": "2025-07-08T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready Deadline",
+            "at": "2025-08-08T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://colmweb.org/",
+        "date": "October 6-9, 2026",
+        "place": "Hilton San Francisco Union Square, USA",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-03-27T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-04-01T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Start",
+            "at": "2026-05-22T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period End",
+            "at": "2026-06-09T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Decision Notification",
+            "at": "2026-07-09T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "colt": {
+    "title": "COLT",
+    "full": "Annual Conference on Learning Theory",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: B, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://learningtheory.org/colt2025/",
+        "date": "June 30 - July 4, 2025",
+        "place": "Lyon, France",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-02-06T21:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://learningtheory.org/colt2026/",
+        "date": "June 29 - July 3, 2026",
+        "place": "Bahia Resort Hotel",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-02-05T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews released",
+            "at": "2026-04-03T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Initial author response due",
+            "at": "2026-04-10T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Discussion period ends",
+            "at": "2026-04-21T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-05-04T12:00:00.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "conll": {
+    "title": "CoNLL",
+    "full": "The SIGNLL Conference on Computational Natural Language Learning",
+    "tags": [
+      "natural-language-processing"
+    ],
+    "rankings": "CCF: B, CORE: A, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://conll.org/",
+        "date": "July 31 - August 1, 2025",
+        "place": "Vienna, Austria",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-03-15T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2025-05-24T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready papers due",
+            "at": "2025-06-18T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://conll.org/",
+        "date": "July 3-4, 2026",
+        "place": "San Diego, California, USA",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-02-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2026-04-22T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready papers due",
+            "at": "2026-05-19T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "corl": {
+    "title": "CoRL",
+    "full": "The Conference on Robot Learning",
+    "tags": [
+      "machine-learning",
+      "robotics"
+    ],
+    "rankings": "CCF: N, CORE: N, THCPL: N",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://www.corl.org/",
+        "date": "September 27-30, 2025",
+        "place": "COEX Convention & Exhibition Center, Seoul, South Korea",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2025-05-01T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://www.corl.org/",
+        "date": "November 9-12, 2026",
+        "place": "JW Marriott Austin, 110 E 2nd St, Austin, TX 78701",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2026-05-26T11:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-05-29T11:59:00.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-10-13T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "cpal": {
+    "title": "CPAL",
+    "full": "The Conference on Parsimony and Learning",
+    "tags": [
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://cpal.cc/",
+        "date": "March 24-27, 2025",
+        "place": "Simonyi Conference Center, Stanford University",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2024-11-26T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://cpal.cc/",
+        "date": "March 23-26, 2026",
+        "place": "Max Planck Institute for Intelligent Systems",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Tutorial proposals deadline",
+            "at": "2025-12-11T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-12-13T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Rising Stars Award applications",
+            "at": "2025-12-16T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Review deadline",
+            "at": "2026-01-06T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2026-01-09T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2026-01-15T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Tutorial notification",
+            "at": "2026-01-15T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Spotlight Track submission deadline",
+            "at": "2026-01-16T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final decisions (Proceedings and Spotlight)",
+            "at": "2026-01-21T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Rising Stars Award notification",
+            "at": "2026-01-22T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Hotel registration deadline",
+            "at": "2026-02-17T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "cvpr": {
+    "title": "CVPR",
+    "full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "hindex": 450,
+    "tags": [
+      "computer-vision",
+      "robotics",
+      "machine-learning",
+      "optimization-methods",
+      "representation-learning"
+    ],
+    "rankings": "CCF: A, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://cvpr.thecvf.com/Conferences/2025/CallForPapers",
+        "date": "June 10-17, 2025",
+        "place": "Music City Center, Nashville, USA",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract",
+            "at": "2024-11-08T07:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2024-11-15T07:59:00.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://cvpr.thecvf.com/Conferences/2026/CallForPapers",
+        "date": "June 3-7, 2026",
+        "place": "Colorado Convention Center, Denver, USA",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2025-11-08T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-11-14T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary Materials",
+            "at": "2025-11-21T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2026-01-23T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Starts",
+            "at": "2026-01-23T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Ends",
+            "at": "2026-01-30T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Decisions",
+            "at": "2026-02-21T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://cvpr.thecvf.com/",
+        "date": "June 19-26, 2027",
+        "place": "Seattle Convention Center, Seattle, USA",
+        "deadlines": [],
+        "source": "hf"
+      }
+    ]
+  },
+  "ecai": {
+    "title": "ECAI",
+    "full": "European Conference on Artificial Intelligence",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: B, CORE: A, THCPL: N",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://ecai2025.org/deadlines/",
+        "date": "October 25-30, 2025",
+        "place": "Bologna Congress Center and The Engineering School (University of Bologna)",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract deadline",
+            "at": "2025-04-30T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-05-07T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2025-06-24T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2025-06-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2025-07-11T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-08-27T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Early registration deadline",
+            "at": "2025-09-04T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.ijcai.org/",
+        "date": "August 15-21, 2026",
+        "place": "University of Bremen and Bremen Exhibition Center",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2026-01-13T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2026-01-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Summary rejection notification",
+            "at": "2026-03-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author response period start",
+            "at": "2026-04-08T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author response period end",
+            "at": "2026-04-11T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper notification",
+            "at": "2026-04-30T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-05-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "eccv": {
+    "title": "ECCV",
+    "full": "European Conference on Computer Vision",
+    "tags": [
+      "computer-vision"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://eccv.ecva.net/Conferences/2026",
+        "date": "September 8-12, 2026",
+        "place": "Malmö Arena and Malmömässan",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Tutorial Proposal Submission",
+            "at": "2026-02-16T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Paper Registration",
+            "at": "2026-02-26T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Workshop Proposal Submission",
+            "at": "2026-02-28T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-03-05T22:00:00.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplemental Materials",
+            "at": "2026-03-12T22:00:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Tutorial/Workshop Decisions",
+            "at": "2026-04-12T20:00:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released to Authors",
+            "at": "2026-05-02T23:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Deadline",
+            "at": "2026-05-11T21:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "AI Art Submission",
+            "at": "2026-06-15T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Decisions",
+            "at": "2026-06-17T23:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready Deadline",
+            "at": "2026-06-27T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "AI Art Acceptance Notification",
+            "at": "2026-06-30T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "ecir": {
+    "title": "ECIR",
+    "full": "European Conference on Information Retrieval",
+    "tags": [
+      "data-mining"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://ecir2025.eu/",
+        "date": "April 6 - April 10, 2025",
+        "place": "IMT School for Advanced Studies Lucca, Lucca, Italy",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract deadline",
+            "at": "2024-10-03T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2024-10-10T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://ecir2026.eu/",
+        "date": "March 29 - April 2, 2026",
+        "place": "Lijm & Cultuur, Delft, The Netherlands",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract deadline",
+            "at": "2025-09-26T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-10-03T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2025-12-17T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://www.ecir2027.co.uk/",
+        "date": "March 21 - March 25, 2027",
+        "place": "Southampton Football Club (St Mary's Stadium), Southampton, United Kingdom",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Workshop proposal deadline",
+            "at": "2026-09-08T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Full paper abstract deadline",
+            "at": "2026-09-22T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2026-10-06T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Short paper abstract deadline",
+            "at": "2026-10-06T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Short paper submission deadline",
+            "at": "2026-10-13T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Reproducibility abstract deadline",
+            "at": "2026-10-13T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Reproducibility paper submission deadline",
+            "at": "2026-10-20T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Doctoral Consortium abstract deadline",
+            "at": "2026-10-27T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Demo / Doctoral Consortium paper / Industry Day / tutorial proposal / resource paper deadline",
+            "at": "2026-11-03T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2026-12-08T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Author and early registration deadline",
+            "at": "2026-12-22T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Tutorial camera-ready deadline",
+            "at": "2027-01-11T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Regular registration deadline",
+            "at": "2027-02-09T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "ecml_pkdd": {
+    "title": "ECML PKDD",
+    "full": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+    "tags": [
+      "machine-learning",
+      "data-mining"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://ecmlpkdd.org/2025/",
+        "date": "September 15 - 19, 2025",
+        "place": "Alfândega Porto Congress Centre",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-03-08T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2025-03-15T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://ecmlpkdd.org/2026/",
+        "date": "September 7 - 11, 2026",
+        "place": "University of Naples Federico II & Mostra d'Oltremare",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission (Research Track)",
+            "at": "2026-03-06T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (Research Track)",
+            "at": "2026-03-13T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-05-28T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera ready submission",
+            "at": "2026-06-19T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "emnlp": {
+    "title": "EMNLP",
+    "full": "The annual Conference on Empirical Methods in Natural Language Processing",
+    "tags": [
+      "natural-language-processing"
+    ],
+    "rankings": "CCF: B, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://2026.emnlp.org/",
+        "date": "October 24 - 29, 2026",
+        "place": "Hungexpo, Budapest, Hungary",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-05-26T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Reviewer registration deadline",
+            "at": "2026-05-28T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author response period start",
+            "at": "2026-07-08T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author response period end",
+            "at": "2026-07-14T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Meta review release",
+            "at": "2026-07-31T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "EMNLP commitment deadline",
+            "at": "2026-08-03T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification date",
+            "at": "2026-08-21T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-08-31T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "emnlp_industry_track": {
+    "title": "EMNLP (Industry Track)",
+    "full": "The annual Conference on Empirical Methods in Natural Language Processing (Industry Track)",
+    "tags": [
+      "natural-language-processing"
+    ],
+    "rankings": "CCF: B, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.emnlp.org/",
+        "date": "November 5 - 9, 2025",
+        "place": "Suzhou, China",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-07-05T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2025-09-25T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-10-09T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.emnlp.org/",
+        "date": "October 24 - 29, 2026",
+        "place": "HUNGEXPO Budapest Congress & Exhibition Center, Albertirsai út 10, 1101 Budapest, Hungary",
+        "deadlines": [
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-08-31T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "emnlp_system_demonstrations_track": {
+    "title": "EMNLP (System Demonstrations Track)",
+    "full": "The annual Conference on Empirical Methods in Natural Language Processing (System Demonstrations Track)",
+    "tags": [
+      "natural-language-processing"
+    ],
+    "rankings": "CCF: B, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.emnlp.org/",
+        "date": "November 5-9, 2025",
+        "place": "Suzhou, China",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-07-05T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2025-09-10T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready submission",
+            "at": "2025-09-20T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.emnlp.org/",
+        "date": "October 24-29, 2026",
+        "place": "HUNGEXPO Budapest Congress & Exhibition Center, Budapest, Hungary",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-07-11T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2026-08-23T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready submission",
+            "at": "2026-08-31T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "esann": {
+    "title": "ESANN",
+    "full": "European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning",
+    "tags": [
+      "machine learning"
+    ],
+    "rankings": "CCF: N, CORE: B, THCPL: N",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://www.esann.org/",
+        "date": "April 23 - 25, 2025",
+        "place": "Bruges, Belgium",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2024-11-20T08:00:00.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://www.esann.org/",
+        "date": "April 22 - 24, 2026",
+        "place": "Crowne Plaza Bruges, Burg 10, 8000 Brugge",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-11-27T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-01-24T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Early registration deadline",
+            "at": "2026-02-14T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Final registration deadline",
+            "at": "2026-04-11T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "eurographics": {
+    "title": "Eurographics",
+    "full": "The 48th Annual Conference of the European Association for Computer Graphics",
+    "tags": [
+      "computer-graphics"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://eg25.cs.ucl.ac.uk/",
+        "date": "May 12 - 16, 2025",
+        "place": "BFI Southbank",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2024-10-03T23:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://eg2026.github.io/",
+        "date": "May 4 - 8, 2026",
+        "place": "Aachen, Germany",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract and submission form deadline",
+            "at": "2025-09-22T23:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2025-09-26T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews released",
+            "at": "2025-11-19T23:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal due",
+            "at": "2025-11-26T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Conditional acceptance/rejection notification",
+            "at": "2025-12-15T23:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Revised version deadline",
+            "at": "2026-01-23T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final notification",
+            "at": "2026-02-06T23:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready version due",
+            "at": "2026-02-20T23:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Author registration deadline",
+            "at": "2026-04-03T23:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://eg2027.isti.cnr.it/",
+        "date": "May 10 - 14, 2027",
+        "place": "IMT Campus, Lucca, Italy",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract and submission form deadline",
+            "at": "2026-09-25T23:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2026-10-01T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews released",
+            "at": "2026-11-23T23:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal due",
+            "at": "2026-11-30T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Conditional acceptance or rejection notification",
+            "at": "2026-12-18T23:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Revised version deadline",
+            "at": "2027-01-26T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final notification",
+            "at": "2027-02-09T23:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready version due",
+            "at": "2027-02-23T23:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "euvip": {
+    "title": "EUVIP",
+    "full": "European Conference on Visual Information Processing",
+    "tags": [
+      "computer vision",
+      "image processing",
+      "signal processing",
+      "machine learning",
+      "deep learning",
+      "visual information processing"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://euvip2026.github.io/",
+        "date": "September 28 - October 1, 2026",
+        "place": "Parc Hotel Alvisse, 120 Rte d'Echternach, 1453 Dommeldange, Luxembourg",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-06-05T21:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2026-07-18T21:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready submission deadline",
+            "at": "2026-07-25T21:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "facct": {
+    "title": "FAccT",
+    "full": "ACM Conference on Fairness, Accountability, and Transparency",
+    "hindex": 103,
+    "tags": [
+      "fairness",
+      "machine-learning",
+      "natural-language-processing",
+      "computer-vision"
+    ],
+    "rankings": "CCF: , CORE: , THCPL: ",
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://facctconference.org/2026/index.html",
+        "date": "June 25 - June 28, 2026",
+        "place": "Le Centre Sheraton Montréal, Montreal, QC, Canada",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-01-09T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-01-14T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Preliminary Reviews Released",
+            "at": "2026-02-21T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Submission",
+            "at": "2026-02-25T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Initial Notification",
+            "at": "2026-03-03T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Revision Deadline",
+            "at": "2026-03-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Notification",
+            "at": "2026-04-09T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready Deadline (Round 1)",
+            "at": "2026-04-18T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready Deadline (Revised Papers)",
+            "at": "2026-05-12T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "fg": {
+    "title": "FG",
+    "full": "International Conference on Automatic Face and Gesture Recognition",
+    "tags": [
+      "computer-vision"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://fg2026.ieee-biometrics.org/",
+        "date": "May 25-29, 2026",
+        "place": "Kyoto Research Park (KRP)",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission (Round 1)",
+            "at": "2025-09-26T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission (Round 1) - Extended",
+            "at": "2025-10-07T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notifications to authors (Round 1)",
+            "at": "2025-12-12T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Revisions due (Round 1)",
+            "at": "2026-01-26T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Abstract Submission (Round 2)",
+            "at": "2026-01-10T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission (Round 2) - Extended",
+            "at": "2026-01-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notifications to authors (Round 2)",
+            "at": "2026-04-03T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready (for all accepted papers)",
+            "at": "2026-04-22T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "hicss": {
+    "title": "HICSS",
+    "full": "Hawaii International Conference on System Sciences",
+    "tags": [
+      "information-systems"
+    ],
+    "editions": [
+      {
+        "year": 2027,
+        "link": "https://hicss.hawaii.edu/",
+        "date": "January 5-8, 2027",
+        "place": "Waikoloa, USA",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-06-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "icann": {
+    "title": "ICANN",
+    "full": "35th International Conference on Artificial Neural Networks",
+    "hindex": 32,
+    "tags": [
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://e-nns.org/icann2025/",
+        "date": "September, 9-12, 2025",
+        "place": "Kaunas, Lithuania",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Abstract and Full Paper Submission",
+            "at": "2025-03-30T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://e-nns.org/icann2026/",
+        "date": "September 14-17, 2026",
+        "place": "Conference center of the School of Psychology, University of Padua, Padua, Italy",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract and Full Paper Submission",
+            "at": "2026-03-31T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full Paper Submission",
+            "at": "2026-03-31T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Notification",
+            "at": "2026-05-30T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready Paper Upload",
+            "at": "2026-06-16T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Author Registration and Early Registration",
+            "at": "2026-06-30T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "icassp": {
+    "title": "ICASSP",
+    "full": "International Conference on Acoustics, Speech and Signal Processing",
+    "tags": [
+      "speech",
+      "signal-processing"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.ieeeicassp.org/",
+        "date": "April 6-11, 2025",
+        "place": "Hyderabad International Convention Center, Hyderabad, India",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-09-18T06:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.ieeeicassp.org",
+        "date": "May 4-8, 2026",
+        "place": "Barcelona International Convention Center (CCIB), Barcelona, Spain",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-09-18T06:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "iccv": {
+    "title": "ICCV",
+    "full": "IEEE International Conference on Computer Vision",
+    "tags": [
+      "machine-learning",
+      "computer-vision"
+    ],
+    "rankings": "CCF: A, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://iccv.thecvf.com/Conferences/2025",
+        "date": "October 19-25, 2025",
+        "place": "Hawaii Convention Center",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-03-04T09:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2025-03-08T09:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews released",
+            "at": "2025-05-10T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2025-05-10T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2025-05-17T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final decision",
+            "at": "2025-06-21T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "icdar": {
+    "title": "ICDAR",
+    "full": "International Conference on Document Analysis and Recognition",
+    "tags": [
+      "computer-vision"
+    ],
+    "rankings": "CCF: C, CORE: A, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://www.icdar2025.com/home",
+        "date": "September 17-21, 2025",
+        "place": "Wuhan, China",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-03-01T07:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2025-03-15T07:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary materials",
+            "at": "2025-03-20T07:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Acceptance notification",
+            "at": "2025-06-07T07:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-06-28T07:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://icdar2026.org/",
+        "date": "August 30 - September 4, 2026",
+        "place": "TU Wien, Campus Gußhaus",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2026-02-14T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2026-02-28T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews released",
+            "at": "2026-04-18T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period ends",
+            "at": "2026-04-25T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Acceptance notification",
+            "at": "2026-05-16T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-06-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://icdar2027.org/",
+        "date": "August 18-22, 2027",
+        "place": "Kuala Lumpur, Malaysia",
+        "deadlines": [],
+        "source": "hf"
+      }
+    ]
+  },
+  "icdm": {
+    "title": "ICDM",
+    "full": "International Conference on Data Mining",
+    "tags": [
+      "data-mining"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://www3.cs.stonybrook.edu/~icdm2025/index.html",
+        "date": "November 12 - 15, 2025",
+        "place": "Washington DC, USA",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Full Paper Submission",
+            "at": "2025-06-07T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author Notification",
+            "at": "2025-08-26T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready Deadline",
+            "at": "2025-09-26T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "http://icdm2026.neu.edu.cn/",
+        "date": "November 12 - 15, 2026",
+        "place": "Shenyang, China",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-05-31T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full Paper Submission",
+            "at": "2026-06-07T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author Notification",
+            "at": "2026-08-17T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready Deadline",
+            "at": "2026-09-10T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "iclr": {
+    "title": "ICLR",
+    "full": "The Fifteenth International Conference on Learning Representations",
+    "hindex": 304,
+    "tags": [
+      "machine-learning",
+      "computer-vision",
+      "natural-language-processing",
+      "signal-processing",
+      "representation-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://iclr.cc/Conferences/2025",
+        "date": "April 24-28, 2025",
+        "place": "Singapore EXPO - 1 Expo Drive, Singapore",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2024-09-28T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2024-10-02T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://iclr.cc/Conferences/2026",
+        "date": "April 23-27, 2026",
+        "place": "Riocentro Convention and Event Center",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2025-09-20T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-09-25T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2025-11-12T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Discussion Period End",
+            "at": "2025-12-04T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification",
+            "at": "2026-01-26T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://iclr.cc/Conferences/2027",
+        "date": "April 26-30, 2027",
+        "place": "Moscone Center, San Francisco, CA",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-09-19T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-09-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2026-11-06T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author-Reviewer Discussion End",
+            "at": "2026-11-19T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Decisions",
+            "at": "2026-12-17T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "icml": {
+    "title": "ICML",
+    "full": "International Conference on Machine Learning",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: A, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://icml.cc/Conferences/2025",
+        "date": "July 13-19, 2025",
+        "place": "Vancouver Convention Center",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2025-01-24T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-01-31T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2025-03-26T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author Response Deadline",
+            "at": "2025-04-01T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author Notification",
+            "at": "2025-05-02T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready Deadline",
+            "at": "2025-06-10T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://icml.cc/Conferences/2026/CallForPapers",
+        "date": "July 6-11, 2026",
+        "place": "Coex Convention & Exhibition Center",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-01-24T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-01-29T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2026-03-25T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author Response Deadline",
+            "at": "2026-03-31T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author Notification",
+            "at": "2026-05-01T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "icomp": {
+    "title": "ICOMP",
+    "full": "International Conference on Computational Optimization",
+    "tags": [
+      "machine-learning",
+      "optimization-methods"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://icomp.cc/",
+        "date": "September 11-13, 2025",
+        "place": "Yerevan, Armenia",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-04-06T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2025-04-16T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper decision notification",
+            "at": "2025-07-11T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://icomp.cc/",
+        "date": "September 11-13, 2026",
+        "place": "Yerevan, Armenia",
+        "deadlines": [],
+        "source": "hf"
+      }
+    ]
+  },
+  "icra": {
+    "title": "ICRA",
+    "full": "IEEE International Conference on Robotics and Automation",
+    "hindex": 129,
+    "tags": [
+      "robotics",
+      "computer-vision",
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.ieee-icra.org",
+        "date": "May 19 - 23, 2025",
+        "place": "Georgia World Congress Center, Atlanta, USA",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2024-09-16T07:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.ieee-icra.org/",
+        "date": "June 1 - June 5, 2026",
+        "place": "Messe Wien Exhibition & Congress Center, Vienna, Austria",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-09-16T07:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of Acceptance",
+            "at": "2026-02-01T07:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready Submission",
+            "at": "2026-03-07T07:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://2027.ieee-icra.org/",
+        "date": "May 24 - 28, 2027",
+        "place": "COEX, Seoul, South Korea",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-09-16T07:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of Acceptance",
+            "at": "2027-02-01T07:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready Submission",
+            "at": "2027-03-07T07:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "ijcai": {
+    "title": "IJCAI",
+    "full": "International Joint Conference on Artificial Intelligence",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: A, CORE: A*, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.ijcai.org/",
+        "date": "August 16-22, 2025",
+        "place": "Palais des congrès, Montreal",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2025-01-17T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2025-01-24T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper notification",
+            "at": "2025-04-29T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.ijcai.org/",
+        "date": "August 15-21, 2026",
+        "place": "Bremen Exhibition Center",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2026-01-13T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2026-01-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Phase I notification",
+            "at": "2026-03-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author response period start",
+            "at": "2026-04-07T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author response period end",
+            "at": "2026-04-11T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper notification",
+            "at": "2026-04-30T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera ready deadline",
+            "at": "2026-05-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "ijcnlp_and_aacl": {
+    "title": "IJCNLP & AACL",
+    "full": "International Joint Conference on Natural Language Processing & Asia-Pacific Chapter of the Association for Computational Linguistics",
+    "hindex": null,
+    "tags": [
+      "natural-language-processing"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.aaclnet.org/",
+        "date": "December 20-24, 2025",
+        "place": "Mumbai, India",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract",
+            "at": "2025-07-29T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2025-07-29T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "ijcnn": {
+    "title": "IJCNN",
+    "full": "International Joint Conference on Neural Networks",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: C, CORE: B, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.ijcnn.org/",
+        "date": "June 30 - July 5, 2025",
+        "place": "Rome, Italy",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-01-31T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper Acceptance Notification",
+            "at": "2025-04-01T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready Paper Submission",
+            "at": "2025-05-02T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://attend.ieee.org/wcci-2026/",
+        "date": "June 21 - 26, 2026",
+        "place": "MECC Maastricht",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-02-01T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper acceptance notification",
+            "at": "2026-03-17T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready papers",
+            "at": "2026-04-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "inlg": {
+    "title": "INLG",
+    "full": "International Conference on Natural Language Generation",
+    "tags": [
+      "natural-language-processing"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://2026.inlgmeeting.org/",
+        "date": "October 17-21, 2026",
+        "place": "Utrecht, Netherlands",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Direct submission",
+            "at": "2026-07-19T11:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "Pre-reviewed ARR commitment",
+            "at": "2026-08-06T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification date",
+            "at": "2026-08-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "interspeech": {
+    "title": "Interspeech",
+    "full": "Interspeech",
+    "tags": [
+      "speech",
+      "signal-processing"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://interspeech2026.org",
+        "date": "September 28-October 1, 2026",
+        "place": "International Convention Centre (ICC) Sydney",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-02-26T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Paper update deadline",
+            "at": "2026-03-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2026-04-25T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2026-05-02T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper acceptance notification",
+            "at": "2026-06-06T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready paper submission",
+            "at": "2026-06-20T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "iros": {
+    "title": "IROS",
+    "full": "IEEE\\RSJ International Conference on Intelligent Robots and Systems",
+    "tags": [
+      "robotics"
+    ],
+    "rankings": "CCF: C, CORE: A, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "http://www.iros25.org/",
+        "date": "October 19-25, 2025",
+        "place": "Hangzhou International Expo Center (HIEC)",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-03-03T07:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance",
+            "at": "2025-07-01T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Final paper submission deadline",
+            "at": "2025-08-01T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://2026.ieee-iros.org/",
+        "date": "September 27 - October 1, 2026",
+        "place": "David L. Lawrence Convention Center",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-03-03T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper video submission deadline",
+            "at": "2026-03-08T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Paper acceptance notification",
+            "at": "2026-06-17T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Final paper submission deadline",
+            "at": "2026-07-11T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "iui": {
+    "title": "IUI",
+    "full": "ACM Conference on Intelligent User Interfaces",
+    "tags": [
+      "human-computer-interaction"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://iui.acm.org/2026/",
+        "date": "July 13-16, 2026",
+        "place": "St. Raphael Resort & Marina",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-10-04T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission",
+            "at": "2025-10-11T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Decision notification",
+            "at": "2025-12-13T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready submission",
+            "at": "2026-01-24T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Author registration deadline",
+            "at": "2026-01-24T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "kdd": {
+    "title": "KDD",
+    "full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "hindex": 124,
+    "tags": [
+      "data-mining",
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://kdd2025.kdd.org/",
+        "date": "August 3 - 7, 2025",
+        "place": "Toronto Convention Centre",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-02-04T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2025-02-11T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start",
+            "at": "2025-04-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end",
+            "at": "2025-04-19T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification",
+            "at": "2025-05-17T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://kdd2026.kdd.org/",
+        "date": "August 9 - 13, 2026",
+        "place": "International Convention Center Jeju",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission (First Cycle)",
+            "at": "2025-07-25T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (First Cycle)",
+            "at": "2025-08-01T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start (First Cycle)",
+            "at": "2025-10-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end (First Cycle)",
+            "at": "2025-10-19T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification (First Cycle)",
+            "at": "2025-11-24T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Abstract submission (Second Cycle)",
+            "at": "2026-02-02T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (Second Cycle)",
+            "at": "2026-02-09T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period start (Second Cycle)",
+            "at": "2026-04-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal period end (Second Cycle)",
+            "at": "2026-04-18T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification (Second Cycle)",
+            "at": "2026-05-17T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "ksem": {
+    "title": "KSEM",
+    "full": "International Conference on Knowledge Science, Engineering and Management",
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: C, CORE: C, THCPL: N",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://ksem2025.scimeeting.cn/",
+        "date": "August 4-7, 2025",
+        "place": "Wynn Palace",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-03-21T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Acceptance notification",
+            "at": "2025-05-31T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-06-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "lrec": {
+    "title": "LREC",
+    "full": "Language Resources and Evaluation Conference",
+    "tags": [
+      "natural-language-processing"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://lrec2026.info/",
+        "date": "May 11-16, 2026",
+        "place": "Palau de Congressos de Palma",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-10-25T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of Acceptance",
+            "at": "2026-02-14T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready Due",
+            "at": "2026-03-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "mathai": {
+    "title": "MathAI",
+    "full": "The International Conference dedicated to mathematics in artificial intelligence",
+    "hindex": 100,
+    "tags": [
+      "machine-learning",
+      "mathematics"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://mathai.club",
+        "date": "March, 24-28, 2025",
+        "place": "Sirius International Mathematics Center, Sirius",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2025-02-15T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2025-02-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Decision notification",
+            "at": "2025-03-11T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://mathai.club",
+        "date": "March, 30 - April 3, 2026",
+        "place": "Sirius International Mathematics Center, Sirius",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2026-02-18T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full paper submission deadline",
+            "at": "2026-03-02T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Decision notification",
+            "at": "2026-03-13T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "miccai": {
+    "title": "MICCAI",
+    "full": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+    "hindex": 98,
+    "tags": [
+      "computer-vision"
+    ],
+    "rankings": "CCF: A, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://conferences.miccai.org/2026/",
+        "date": "September 27 - October 1, 2026",
+        "place": "Strasbourg Convention Center",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-02-13T07:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-02-27T07:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Early Acceptance & Reviews Released",
+            "at": "2026-05-08T07:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Starts",
+            "at": "2026-05-09T07:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Ends",
+            "at": "2026-05-15T07:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Decisions",
+            "at": "2026-06-13T07:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready (Early Accepted Papers)",
+            "at": "2026-05-26T07:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready (All Other Papers)",
+            "at": "2026-06-27T07:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "naacl": {
+    "title": "NAACL",
+    "full": "The Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics",
+    "hindex": 132,
+    "tags": [
+      "natural-language-processing"
+    ],
+    "rankings": "CCF: B, CORE: A, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://2025.naacl.org/",
+        "date": "April 29-May 4, 2025",
+        "place": "Albuquerque, New Mexico",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2024-10-16T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://2027.naacl.org/",
+        "date": "June 1-5, 2027",
+        "place": "San Francisco, USA",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2026-10-13T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "neurips": {
+    "title": "NeurIPS",
+    "full": "Conference on Neural Information Processing Systems",
+    "tags": [
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://neurips.cc/",
+        "date": "November 30 - December 7, 2025",
+        "place": "San Diego Convention Center, USA & Hilton Mexico City Reforma, Mexico",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission deadline",
+            "at": "2025-05-12T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-05-16T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary materials deadline",
+            "at": "2025-05-23T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author rebuttal begins",
+            "at": "2025-07-24T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author rebuttal ends",
+            "at": "2025-07-31T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2025-09-19T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2025-10-24T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://neurips.cc/",
+        "date": "December 6-12, 2026",
+        "place": "International Convention Centre, Sydney, Australia (Main venue, Dec 6-12). Satellite events at Georgia World Congress Center, Atlanta, USA (Dec 9-13) and Paris, France (Dec 9-13).",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract registration deadline",
+            "at": "2026-05-05T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-05-07T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary materials deadline",
+            "at": "2026-05-07T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews released to authors",
+            "at": "2026-07-23T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author + Reviewer + AC Discussion Period starts",
+            "at": "2026-07-27T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Author + Reviewer + AC Discussion Period ends",
+            "at": "2026-08-04T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-09-25T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "nlbse": {
+    "title": "NLBSE",
+    "full": "The 5th International Workshop on Natural Language-based Software Engineering",
+    "tags": [
+      "natural-language-processing",
+      "software engineering"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://nlbse2026.github.io/",
+        "date": "April 12, 2026",
+        "place": "Windsor Convention Center and Hotels",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2025-11-04T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2025-12-02T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-01-27T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "rlc": {
+    "title": "RLC",
+    "full": "Reinforcement Learning Conference",
+    "tags": [
+      "machine-learning",
+      "reinforcement-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://rl-conference.cc/",
+        "date": "August 5 - 9, 2025",
+        "place": "Centennial Centre for Interdisciplinary Science (CCIS), University of Alberta",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2025-02-22T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2025-03-01T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2025-05-10T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://rl-conference.cc/",
+        "date": "August 15 - 18, 2026",
+        "place": "Montreal, Canada",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2026-03-02T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2026-03-06T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-05-09T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-07-19T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "rss": {
+    "title": "RSS",
+    "full": "Robotics Science and Systems",
+    "hindex": 83,
+    "tags": [
+      "robotics",
+      "machine-learning"
+    ],
+    "rankings": "CCF: N, CORE: A*, THCPL: A",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://roboticsconference.org",
+        "date": "June 21-25, 2025",
+        "place": "University of Southern California",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2025-01-18T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-01-25T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://roboticsconference.org",
+        "date": "July 13-17, 2026",
+        "place": "University of Technology Sydney",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-01-24T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-01-31T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Supplementary Materials",
+            "at": "2026-02-07T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Reviews Released",
+            "at": "2026-03-21T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Starts",
+            "at": "2026-03-21T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Ends",
+            "at": "2026-03-28T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final Decisions",
+            "at": "2026-04-28T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "ruleml+rr": {
+    "title": "RuleML+RR",
+    "full": "International Joint Conference on Rules and Reasoning",
+    "hindex": null,
+    "tags": [
+      "reasoning",
+      "machine-learning",
+      "knowledge representation"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://2026.declarativeai.net/events/ruleml-rr",
+        "date": "August 24–26, 2026",
+        "place": "Vilnius, Lithuania",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Title and Abstract Submission (AoE)",
+            "at": "2026-05-09T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission (AoE)",
+            "at": "2026-05-16T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification",
+            "at": "2026-06-27T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "sgp": {
+    "title": "SGP",
+    "full": "Symposium on Geometry Processing",
+    "tags": [
+      "computer-vision",
+      "machine-learning"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://sgp2025.my.canva.site/",
+        "date": "June 30-July 4, 2025",
+        "place": "Bizkaia Aretoa, Bilbao, Spain",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission (Round 1)",
+            "at": "2025-02-04T23:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (Round 1)",
+            "at": "2025-02-07T23:59:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance (Round 1)",
+            "at": "2025-03-15T23:59:00.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Revised version due (Round 1)",
+            "at": "2025-03-29T23:59:00.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera ready due (Round 1)",
+            "at": "2025-04-05T23:59:00.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Abstract submission (Round 2)",
+            "at": "2025-04-08T23:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (Round 2)",
+            "at": "2025-04-11T23:59:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance (Round 2)",
+            "at": "2025-05-16T23:59:00.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Revised version due (Round 2)",
+            "at": "2025-05-30T23:59:00.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera ready due (Round 2)",
+            "at": "2025-06-06T23:59:00.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://sgp26.org/",
+        "date": "July 1-3, 2026",
+        "place": "University of Bern, Switzerland",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission (Round 1)",
+            "at": "2026-02-02T22:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (Round 1)",
+            "at": "2026-02-04T22:59:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance (Round 1)",
+            "at": "2026-03-17T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Revised version due (Round 1)",
+            "at": "2026-03-27T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera ready due (Round 1)",
+            "at": "2026-04-03T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Abstract submission (Round 2)",
+            "at": "2026-04-13T22:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (Round 2)",
+            "at": "2026-04-15T22:59:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification of acceptance (Round 2)",
+            "at": "2026-05-26T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Revised version due (Round 2)",
+            "at": "2026-06-05T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera ready due (Round 2)",
+            "at": "2026-06-12T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "sibgrapi": {
+    "title": "SIBGRAPI",
+    "full": "Conference on Graphics, Patterns and Images",
+    "hindex": 22,
+    "tags": [
+      "image-processing",
+      "pattern-recognition",
+      "computer-vision",
+      "computer-graphics"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://sibgrapi.sbc.org.br/2026/",
+        "date": "September 29 to October 2, 2026",
+        "place": "Federal University of Goiás (UFG)",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper submission deadline",
+            "at": "2026-05-30T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "First notification",
+            "at": "2026-07-07T23:59:59.000Z"
+          },
+          {
+            "type": "other",
+            "label": "Revision submission deadline",
+            "at": "2026-07-18T23:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Final notification",
+            "at": "2026-08-03T23:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready version",
+            "at": "2026-08-15T23:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "siggraph": {
+    "title": "SIGGRAPH",
+    "full": "Conference on Computer Graphics and Interactive Techniques",
+    "tags": [
+      "computer-graphics"
+    ],
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://s2025.siggraph.org/",
+        "date": "August 10-14, 2025",
+        "place": "Convention Centre, Vancouver, Canada",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Submission form and conflicts deadline",
+            "at": "2025-01-16T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper deadline",
+            "at": "2025-01-23T22:00:00.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://s2026.siggraph.org/",
+        "date": "July 19-23, 2026",
+        "place": "Los Angeles Convention Center, Los Angeles, California",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Art Papers deadline",
+            "at": "2026-01-13T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Student Volunteers Team Leader Applications deadline",
+            "at": "2026-01-13T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Technical Papers submission form deadline",
+            "at": "2026-01-15T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Technical Papers deadline",
+            "at": "2026-01-22T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Upload and conflicts deadline",
+            "at": "2026-01-23T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Art Gallery deadline",
+            "at": "2026-01-27T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Technical Workshops deadline",
+            "at": "2026-01-27T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Talks, Production Sessions, Panels, Courses, Educator's Forum, Spatial Storytelling, Immersive Pavilion, Emerging Technologies deadline",
+            "at": "2026-02-10T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Student Volunteers Applications deadline",
+            "at": "2026-02-10T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Computer Animation Festival deadline",
+            "at": "2026-03-17T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Frontiers deadline",
+            "at": "2026-04-07T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Real-Time Live! deadline",
+            "at": "2026-04-07T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Posters deadline",
+            "at": "2026-04-21T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Appy Hour deadline",
+            "at": "2026-04-21T22:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Student Research Competition deadline",
+            "at": "2026-04-21T22:00:00.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://www.siggraph.org/",
+        "date": "August 8-12, 2027",
+        "place": "Anaheim Convention Center, Anaheim, California",
+        "deadlines": [],
+        "source": "hf"
+      }
+    ]
+  },
+  "sigir": {
+    "title": "SIGIR",
+    "full": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "hindex": 123,
+    "tags": [
+      "information-retrieval",
+      "natural-language-processing",
+      "web-search",
+      "data-mining"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://sigir2026.org/en-AU",
+        "date": "July 20-24, 2026",
+        "place": "Melbourne Convention and Exhibition Centre (MCEC)",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Full research paper abstract deadline",
+            "at": "2026-01-16T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Full research paper submission deadline",
+            "at": "2026-01-23T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification deadline",
+            "at": "2026-04-03T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-ready deadline",
+            "at": "2026-04-30T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Author registration deadline",
+            "at": "2026-04-30T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "uai": {
+    "title": "UAI",
+    "full": "Conference on Uncertainty in Artificial Intelligence",
+    "hindex": 50,
+    "tags": [
+      "machine-learning"
+    ],
+    "rankings": "CCF: B, CORE: A, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://www.auai.org/uai2025/",
+        "date": "July 21-25, 2025",
+        "place": "Rio de Janeiro, Brazil",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2025-02-11T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://www.auai.org/uai2026/",
+        "date": "August 17-21, 2025",
+        "place": "Amsterdam, Netherlands",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper",
+            "at": "2026-02-26T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "wacv": {
+    "title": "WACV",
+    "full": "IEEE/CVF Winter Conference on Applications of Computer Vision",
+    "hindex": 131,
+    "tags": [
+      "machine-learning",
+      "computer-vision"
+    ],
+    "rankings": "CCF: N, CORE: A, THCPL: N",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://wacv2025.thecvf.com/",
+        "date": "February 28 - March 4, 2025",
+        "place": "JW Marriott Starpass in Tucson, Arizona, USA",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "Paper Submission Deadline",
+            "at": "2024-07-16T06:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://wacv.thecvf.com/",
+        "date": "March 6 - March 10, 2026",
+        "place": "JW Marriott Starpass in Tucson, Arizona, USA",
+        "deadlines": [
+          {
+            "type": "registration",
+            "label": "Round 1 Paper Registration",
+            "at": "2025-07-12T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Round 1 Paper Submission",
+            "at": "2025-07-19T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Round 1 Supplementary Material Submission",
+            "at": "2025-07-19T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Round 1 Reviews Released",
+            "at": "2025-09-06T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Round 1 Rebuttal and Revision Submission",
+            "at": "2025-09-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Round 1 Final Decisions Released to Authors",
+            "at": "2025-11-07T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Round 2 New Paper Registration",
+            "at": "2025-09-13T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Round 2 Paper Submission",
+            "at": "2025-09-20T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Round 2 Supplementary Material Submission",
+            "at": "2025-09-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Round 2 Reviews and Final Decisions to Authors",
+            "at": "2025-11-07T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera-Ready Deadline",
+            "at": "2026-01-11T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://wacv.thecvf.com/",
+        "date": "January 4 - January 8, 2027",
+        "place": "Disney Springs, Buena Vista, FL",
+        "deadlines": [
+          {
+            "type": "registration",
+            "label": "Round 1 Paper Registration",
+            "at": "2026-06-20T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Round 1 Paper Submission",
+            "at": "2026-06-27T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Round 1 Supplementary Material",
+            "at": "2026-06-29T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Round 1 Reviews and Decisions To Authors",
+            "at": "2026-08-10T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Round 1 Rebuttal and Revision Submission",
+            "at": "2026-08-22T11:59:59.000Z"
+          },
+          {
+            "type": "registration",
+            "label": "Round 2 New Paper Registration",
+            "at": "2026-08-22T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Round 2 Paper Submissions",
+            "at": "2026-08-29T11:59:59.000Z"
+          },
+          {
+            "type": "supplementary",
+            "label": "Round 2 Supplemental Material",
+            "at": "2026-08-31T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Round 2 Reviews and Final Decisions to Authors",
+            "at": "2026-10-10T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Round 1 Final Decisions Released to Authors",
+            "at": "2026-10-10T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready Both Rounds",
+            "at": "2026-11-03T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "wsdm": {
+    "title": "WSDM",
+    "full": "ACM International Conference on Web Search and Data Mining",
+    "tags": [
+      "web-search",
+      "data-mining"
+    ],
+    "rankings": "CCF: B, CORE: A*, THCPL: B",
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://www.wsdm-conference.org/2025/",
+        "date": "March 10-14, 2025",
+        "place": "Hannover Congress Center, Hannover, Germany",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission",
+            "at": "2024-08-08T11:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission",
+            "at": "2024-08-15T11:59:00.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2026,
+        "link": "https://wsdm-conference.org/2026/",
+        "date": "February 22-26, 2026",
+        "place": "Boise, Idaho, USA",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission (full papers)",
+            "at": "2025-08-08T11:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (full papers)",
+            "at": "2025-08-15T11:59:00.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "Abstract submission (short papers)",
+            "at": "2025-09-19T11:59:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (short papers)",
+            "at": "2025-09-26T11:59:00.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification (full papers)",
+            "at": "2025-10-24T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification (short papers)",
+            "at": "2025-11-28T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://www.wsdm-conference.org/2027/",
+        "date": "February 15-19, 2027",
+        "place": "Cordis, Hong Kong",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract submission (full papers)",
+            "at": "2026-08-18T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (full papers)",
+            "at": "2026-08-25T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification (full papers)",
+            "at": "2026-11-03T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper submission (short papers)",
+            "at": "2026-11-18T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Author notification (short papers)",
+            "at": "2026-12-19T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  },
+  "www": {
+    "title": "WWW",
+    "full": "The Web Conference",
+    "tags": [
+      "machine-learning",
+      "recommendation",
+      "semantics and knowledge",
+      "retrieval",
+      "web mining",
+      "content analysis"
+    ],
+    "editions": [
+      {
+        "year": 2026,
+        "link": "https://www2026.thewebconf.org/",
+        "date": "April 13-17, 2026",
+        "place": "InterContinental Dubai Festival City by IHG",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2025-10-01T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2025-10-08T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Start",
+            "at": "2025-11-24T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period End",
+            "at": "2025-12-02T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification",
+            "at": "2026-01-14T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready",
+            "at": "2026-01-26T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      },
+      {
+        "year": 2027,
+        "link": "https://www2027.thewebconf.org/",
+        "date": "May 10-14, 2027",
+        "place": "Dublin, Ireland",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "Abstract Submission",
+            "at": "2026-10-19T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "Paper Submission",
+            "at": "2026-10-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Result Release",
+            "at": "2026-12-22T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period Start",
+            "at": "2026-12-21T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "Rebuttal Period End",
+            "at": "2027-01-01T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "Notification",
+            "at": "2027-01-05T11:59:59.000Z"
+          },
+          {
+            "type": "camera_ready",
+            "label": "Camera Ready",
+            "at": "2027-02-01T11:59:59.000Z"
+          }
+        ],
+        "source": "hf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+// 크롤러: 공개 데드라인 저장소 + WikiCFP 에서 일정을 수집합니다.
+//   node scripts/crawl.mjs
+// 결과:
+//   data/crawled/ccfddl.json, data/crawled/hf.json  — 연결된 학회의 최신 일정
+//   data/discovered.yml  — 큐레이션된 소스에서 새로 발견된 관련 학회 (사이트에 NEW 로 표시)
+//   data/candidates.yml  — WikiCFP 에서 찾은 후보 (검증 전, 사이트의 '후보' 탭에만 표시)
+import yaml from 'js-yaml';
+import { p, readYaml, writeYaml, writeJson, fetchText, toUtcIso, normType, sleep } from './lib.mjs';
+
+const NOW = new Date();
+const MIN_YEAR = NOW.getUTCFullYear() - 1;
+const venues = readYaml(p('data/venues.yml'), {});
+const confs = venues.conferences || [];
+
+// ------------------------------------------------------------------ ccfddl
+async function crawlCcfddl() {
+  const txt = await fetchText('https://ccfddl.github.io/conference/allconf.yml');
+  const all = yaml.load(txt) || [];
+  const out = {};
+  for (const c of all) {
+    const editions = (c.confs || [])
+      .filter((e) => Number(e.year) >= MIN_YEAR)
+      .map((e) => {
+        const deadlines = [];
+        for (const t of e.timeline || []) {
+          const note = t.comment ? ` (${t.comment})` : '';
+          const add = (key, type) => {
+            const at = toUtcIso(t[key], e.timezone);
+            if (at) deadlines.push({ type, label: type + note, at });
+          };
+          add('abstract_deadline', 'abstract');
+          add('deadline', 'paper');
+          add('rebuttal_deadline', 'rebuttal');
+          add('decision_deadline', 'notification');
+        }
+        return { year: Number(e.year), link: e.link, date: e.date, place: e.place, timezone: e.timezone, deadlines, source: 'ccfddl' };
+      });
+    out[c.title] = { title: c.title, full: c.description, sub: c.sub, rank: c.rank || {}, editions };
+  }
+  return out;
+}
+
+// ------------------------------------------------------------------ huggingface/ai-deadlines
+async function crawlHf() {
+  const list = JSON.parse(await fetchText('https://api.github.com/repos/huggingface/ai-deadlines/contents/src/data/conferences'));
+  const out = {};
+  for (const f of list.filter((x) => x.name.endsWith('.yml'))) {
+    const key = f.name.replace(/\.yml$/, '');
+    let items;
+    try {
+      items = yaml.load(await fetchText(f.download_url)) || [];
+    } catch (e) {
+      console.warn('  hf parse fail', key, e.message);
+      continue;
+    }
+    const editions = [];
+    let meta = {};
+    for (const it of items) {
+      meta = { title: it.title, full: it.full_name, hindex: it.hindex, tags: it.tags, rankings: it.rankings };
+      if (Number(it.year) < MIN_YEAR) continue;
+      const deadlines = [];
+      if (Array.isArray(it.deadlines)) {
+        for (const d of it.deadlines) {
+          const at = toUtcIso(d.date, d.timezone || it.timezone);
+          if (at) deadlines.push({ type: normType(d.type), label: d.label || d.type, at });
+        }
+      } else {
+        const ab = toUtcIso(it.abstract_deadline, it.timezone);
+        if (ab) deadlines.push({ type: 'abstract', label: 'Abstract', at: ab });
+        const dl = toUtcIso(it.deadline, it.timezone);
+        if (dl) deadlines.push({ type: 'paper', label: 'Paper', at: dl });
+      }
+      const place = it.venue || [it.city, it.country].filter(Boolean).join(', ');
+      editions.push({ year: Number(it.year), link: it.link, date: it.date, place, deadlines, source: 'hf' });
+    }
+    out[key] = { ...meta, editions };
+    await sleep(100);
+  }
+  return out;
+}
+
+// ------------------------------------------------------------------ 신규 학회 발견 (큐레이션 소스)
+// 랩 관련 분야만: 비전/영상, 의료, 광학, 뉴로. (일반 ML 이론·NLP·시각화는 제외)
+const RELEVANT = /vision|image|imaging|video|medical|biomedical|health|clinical|surg|optic|photon|laser|neuro|brain|pattern recognition|multimedia|visual (?:information|computing|signal)/i;
+
+function guessFields(text) {
+  const t = text.toLowerCase();
+  const f = new Set();
+  if (/medic|health|clinical|biomed|surg/.test(t)) f.add('medai');
+  if (/optic|photon|laser/.test(t)) f.add('optics');
+  if (/neuro|brain|biolog|bioinformatic/.test(t)) f.add('neuro');
+  if (/image|imaging|video|multimedia|visual|graphic/.test(t)) f.add('imgproc');
+  if (/vision|learning|neural|artificial intelligence|\bai\b|pattern/.test(t)) f.add('dl');
+  return f.size ? [...f] : ['dl'];
+}
+const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+function discover(ccf, hf) {
+  const file = p('data/discovered.yml');
+  const existing = readYaml(file, []) || [];
+  const mappedCcf = new Set(confs.map((c) => c.sources?.ccfddl).filter(Boolean));
+  const mappedHf = new Set(confs.map((c) => c.sources?.hf).filter(Boolean));
+  for (const d of existing) {
+    if (d.sources?.ccfddl) mappedCcf.add(d.sources.ccfddl);
+    if (d.sources?.hf) mappedHf.add(d.sources.hf);
+  }
+  const added = [];
+  const hasFuture = (eds) => eds.some((e) => e.year >= NOW.getUTCFullYear());
+
+  for (const c of Object.values(ccf)) {
+    if (mappedCcf.has(c.title)) continue;
+    const good = ['A*', 'A', 'B'].includes(c.rank.core) || ['A', 'B'].includes(c.rank.ccf);
+    const text = `${c.title} ${c.full}`;
+    if (!good || !RELEVANT.test(text) || !hasFuture(c.editions)) continue;
+    if (!['AI', 'CG', 'MX', 'HI'].includes(c.sub)) continue;
+    // hf 에 같은 학회가 있으면 함께 연결
+    const hfKey = Object.keys(hf).find((k) => !mappedHf.has(k) && hf[k].title?.toLowerCase() === c.title.toLowerCase());
+    const entry = {
+      id: 'auto-' + slug(c.title), name: c.title, full: c.full, fields: guessFields(text), region: 'intl',
+      link: c.editions.at(-1)?.link, sources: { ccfddl: c.title, ...(hfKey ? { hf: hfKey } : {}) },
+      metrics: { ...(c.rank.core && c.rank.core !== 'N' ? { core: c.rank.core } : {}) },
+      status: 'new', discovered: NOW.toISOString().slice(0, 10), hidden: false,
+    };
+    if (hfKey) mappedHf.add(hfKey);
+    mappedCcf.add(c.title);
+    added.push(entry);
+  }
+  for (const [k, h] of Object.entries(hf)) {
+    if (mappedHf.has(k)) continue;
+    const text = `${h.title} ${h.full} ${(h.tags || []).join(' ')}`;
+    if (!RELEVANT.test(`${h.title} ${h.full}`) || !hasFuture(h.editions)) continue;
+    const id = 'auto-' + slug(h.title || k);
+    if (added.some((a) => a.id === id) || existing.some((a) => a.id === id)) continue;
+    added.push({
+      id, name: h.title || k, full: h.full, fields: guessFields(text), region: 'intl',
+      link: h.editions.at(-1)?.link, sources: { hf: k }, metrics: {},
+      status: 'new', discovered: NOW.toISOString().slice(0, 10), hidden: false,
+    });
+  }
+  if (added.length) {
+    writeYaml(file, [...existing, ...added],
+      '# 크롤러가 자동으로 추가한 학회입니다. 분야(fields)를 확인하고, 필요 없으면 hidden: true 로 바꾸세요.\n' +
+      '# 확인이 끝난 항목은 status: new 줄을 지우면 NEW 배지가 사라집니다.\n\n');
+  }
+  return added;
+}
+
+// ------------------------------------------------------------------ WikiCFP 후보
+const WIKICFP_CATEGORIES = [
+  'computer vision', 'image processing', 'medical imaging', 'deep learning', 'machine learning',
+  'biomedical engineering', 'optics', 'photonics', 'neuroscience', 'bioinformatics',
+];
+
+async function crawlWikiCfp() {
+  const file = p('data/candidates.yml');
+  const prev = readYaml(file, []) || [];
+  const byId = new Map(prev.map((c) => [String(c.eventid), c]));
+  const rowRe = /event\.showcfp\?eventid=(\d+)[^"]*">([^<]+)<\/a><\/td>\s*<td[^>]*colspan="3">([^<]*)<\/td>[\s\S]*?<tr[^>]*>\s*<td align="left">([^<]*)<\/td>\s*<td align="left">([^<]*)<\/td>\s*<td align="left">([^<]*)<\/td>/g;
+  let fresh = 0;
+  for (const cat of WIKICFP_CATEGORIES) {
+    let html;
+    try {
+      html = await fetchText('http://www.wikicfp.com/cfp/call?conference=' + encodeURIComponent(cat));
+    } catch (e) {
+      console.warn('  wikicfp fail', cat, e.message);
+      continue;
+    }
+    for (const m of html.matchAll(rowRe)) {
+      const [, eventid, acronym, title, when, where, deadlineRaw] = m;
+      const dl = Date.parse(deadlineRaw.replace(/\(.*\)/, '').trim());
+      if (!Number.isFinite(dl) || dl < NOW.getTime()) continue;
+      const cur = byId.get(eventid);
+      const rec = {
+        eventid: Number(eventid), name: decode(acronym.trim()), full: decode(title.trim()),
+        when: when.trim(), where: decode(where.trim()),
+        deadline: new Date(dl).toISOString().slice(0, 10),
+        categories: [...new Set([...(cur?.categories || []), cat])],
+        fields: guessFields(`${title} ${cat}`),
+        link: `http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=${eventid}`,
+        hidden: cur?.hidden ?? false,
+        first_seen: cur?.first_seen || NOW.toISOString().slice(0, 10),
+      };
+      if (!cur) fresh++;
+      byId.set(eventid, rec);
+    }
+    await sleep(1500); // 서버 부담을 줄이기 위해 천천히
+  }
+  // 마감이 30일 이상 지난 후보는 정리
+  const cutoff = NOW.getTime() - 30 * 864e5;
+  const list = [...byId.values()].filter((c) => Date.parse(c.deadline) >= cutoff).sort((a, b) => a.deadline.localeCompare(b.deadline));
+  writeYaml(file, list,
+    '# WikiCFP 에서 수집한 후보 (검증 전). 약탈적 학회가 섞여 있을 수 있습니다.\n' +
+    '# 숨기려면 hidden: true, 정식 등록하려면 venues.yml 로 옮기세요.\n\n');
+  return { total: list.length, fresh };
+}
+
+function decode(s) {
+  return s.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+}
+
+// ------------------------------------------------------------------ main
+const t0 = Date.now();
+console.log('ccfddl ...');
+const ccf = await crawlCcfddl();
+console.log(`  ${Object.keys(ccf).length} venues`);
+console.log('huggingface/ai-deadlines ...');
+const hf = await crawlHf();
+console.log(`  ${Object.keys(hf).length} venues`);
+writeJson(p('data/crawled/ccfddl.json'), ccf);
+writeJson(p('data/crawled/hf.json'), hf);
+
+const added = discover(ccf, hf);
+console.log(`discovered ${added.length} new venue(s)` + (added.length ? ': ' + added.map((a) => a.name).join(', ') : ''));
+
+console.log('WikiCFP ...');
+let wiki = { total: 0, fresh: 0 };
+try {
+  wiki = await crawlWikiCfp();
+} catch (e) {
+  console.warn('  WikiCFP skipped:', e.message);
+}
+console.log(`  ${wiki.total} candidates (${wiki.fresh} new)`);
+
+writeJson(p('data/crawled/meta.json'), {
+  crawledAt: NOW.toISOString(),
+  discovered: added.map((a) => a.name),
+  wikicfpNew: wiki.fresh,
+});
+console.log(`done in ${((Date.now() - t0) / 1000).toFixed(1)}s`);

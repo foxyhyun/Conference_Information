@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab Deadlines</title>
+  <meta name="description" content="Neurophotonics Lab — 학회·저널 마감 트래커">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱</text></svg>">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <div>
+        <h1>Lab Deadlines</h1>
+        <p class="sub">Neurophotonics Lab · 학회·저널 마감 트래커</p>
+      </div>
+      <div class="clock">
+        <div id="now-kst" class="clock-time">--:--</div>
+        <div class="clock-meta" id="updated">데이터 불러오는 중…</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="conf" role="tab">학회 <span class="count" id="cnt-conf"></span></button>
+      <button class="tab" data-tab="journal" role="tab">저널 <span class="count" id="cnt-journal"></span></button>
+      <button class="tab" data-tab="cand" role="tab">신규 후보 <span class="count" id="cnt-cand"></span></button>
+    </nav>
+
+    <section class="controls">
+      <div class="chips" id="field-chips"></div>
+      <div class="row">
+        <div class="seg" id="region-seg">
+          <button data-v="all" class="on">전체</button>
+          <button data-v="intl">국제</button>
+          <button data-v="domestic">국내</button>
+        </div>
+        <label class="sel">정렬
+          <select id="sort"></select>
+        </label>
+        <label class="chk"><input type="checkbox" id="only-upcoming"> 마감 일정 있는 것만</label>
+        <label class="chk"><input type="checkbox" id="target-first" checked> ★ 타겟 먼저</label>
+        <input type="search" id="q" placeholder="검색 (이름, 장소…)">
+      </div>
+    </section>
+
+    <div id="notice" class="notice" hidden></div>
+    <section id="list" class="list" aria-live="polite"></section>
+
+    <footer class="foot">
+      <p>점수: 학회는 h5-index(로그) · CORE · CCF 등급(지표가 없는 학회는 수동 티어)을 가중 평균한 뒤, <b>분야 내 최고 = 1.0</b>, <b>전체 최고 = 1.0</b> 으로 각각 정규화했습니다. 저널은 직전 IF 기준입니다.</p>
+      <p><span class="warn-ico">⚠</span> 표시는 아직 검증되지 않은 근사값입니다. 마감은 모두 한국시간(KST)으로 표시합니다. 공식 사이트에서 최종 확인하세요.</p>
+      <p>출처: <a href="https://github.com/ccfddl/ccf-deadlines" target="_blank" rel="noopener">ccfddl</a> · <a href="https://github.com/huggingface/ai-deadlines" target="_blank" rel="noopener">huggingface/ai-deadlines</a> · <a href="http://www.wikicfp.com" target="_blank" rel="noopener">WikiCFP</a></p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+# =====================================================================
+#  학회/저널 마스터 목록  —  이 파일만 직접 수정하면 됩니다.
+# =====================================================================
+#  fields (분야 키):
+#    dl       = Deep Learning / Computer Vision
+#    medai    = 의료 인공지능
+#    imgproc  = 이미지 처리
+#    optics   = Optics / Photonics
+#    neuro    = Bio / Neuroscience
+#
+#  region: intl(국제) | domestic(국내)
+#  target: true  → 사이트에서 ★ 고정 표시
+#
+#  sources: 크롤링 소스와 연결 (있으면 데드라인 자동 갱신)
+#    ccfddl: ccfddl 저장소의 title   (https://github.com/ccfddl/ccf-deadlines)
+#    hf:     huggingface/ai-deadlines 파일 이름 (확장자 제외)
+#
+#  metrics (점수 계산용, 모르는 값은 비워두세요)
+#    h5:          Google Scholar h5-index  (비워두면 크롤링 값 사용)
+#    core:        CORE 등급 A* / A / B / C
+#    accept_rate: 최근 채택률 (0~1)
+#    tier:        지표가 없는 학회용 수동 티어 (0~1). 예: SfN, Photonics West
+#    verified:    true 로 바꾸면 사이트의 "⚠ 미검증" 표시가 사라짐
+#
+#  editions: 크롤링 소스가 없는 학회(국내, Optics 등)의 일정을 직접 입력
+#    - year: 2027
+#      date: "Feb 3-5, 2027"
+#      place: "Seoul, Korea"
+#      link: https://...
+#      timezone: UTC+9          # AoE, UTC-8, UTC+9 ...
+#      deadlines:
+#        - { type: abstract, at: "2026-12-01 23:59" }
+#        - { type: paper,    at: "2026-12-08 23:59" }
+#    type: abstract | paper | supplementary | rebuttal | camera_ready | notification | registration
+#    수동 입력값은 크롤링 값보다 우선합니다.
+# =====================================================================
+
+conferences:
+
+  # ---------------- Deep Learning / Computer Vision ----------------
+  - id: cvpr
+    name: CVPR
+    full: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+    fields: [dl, imgproc]
+    region: intl
+    target: true
+    link: https://cvpr.thecvf.com/
+    sources: { ccfddl: CVPR, hf: cvpr }
+    metrics: { core: A*, accept_rate: 0.22 }
+
+  - id: iccv
+    name: ICCV
+    full: IEEE/CVF International Conference on Computer Vision
+    fields: [dl, imgproc]
+    region: intl
+    target: true
+    link: https://iccv.thecvf.com/
+    sources: { ccfddl: ICCV, hf: iccv }
+    metrics: { h5: 260, core: A*, accept_rate: 0.24 }
+
+  - id: eccv
+    name: ECCV
+    full: European Conference on Computer Vision
+    fields: [dl, imgproc]
+    region: intl
+    target: true
+    link: https://eccv.ecva.net/
+    sources: { ccfddl: ECCV, hf: eccv }
+    metrics: { h5: 240, core: A*, accept_rate: 0.28 }
+
+  - id: wacv
+    name: WACV
+    full: IEEE/CVF Winter Conference on Applications of Computer Vision
+    fields: [dl, imgproc]
+    region: intl
+    target: true
+    link: https://wacv.thecvf.com/
+    sources: { ccfddl: WACV, hf: wacv }
+    metrics: { core: A, accept_rate: 0.40 }
+
+  - id: neurips
+    name: NeurIPS
+    full: Conference on Neural Information Processing Systems
+    fields: [dl]
+    region: intl
+    link: https://neurips.cc/
+    sources: { ccfddl: NeurIPS, hf: neurips }
+    metrics: { h5: 370, core: A*, accept_rate: 0.25 }
+
+  - id: iclr
+    name: ICLR
+    full: International Conference on Learning Representations
+    fields: [dl]
+    region: intl
+    link: https://iclr.cc/
+    sources: { ccfddl: ICLR, hf: iclr }
+    metrics: { core: A*, accept_rate: 0.32 }
+
+  - id: icml
+    name: ICML
+    full: International Conference on Machine Learning
+    fields: [dl]
+    region: intl
+    link: https://icml.cc/
+    sources: { ccfddl: ICML, hf: icml }
+    metrics: { h5: 270, core: A*, accept_rate: 0.27 }
+
+  - id: aaai
+    name: AAAI
+    full: AAAI Conference on Artificial Intelligence
+    fields: [dl]
+    region: intl
+    link: https://aaai.org/
+    sources: { ccfddl: AAAI, hf: aaai }
+    metrics: { core: A*, accept_rate: 0.23 }
+
+  - id: bmvc
+    name: BMVC
+    full: British Machine Vision Conference
+    fields: [dl, imgproc]
+    region: intl
+    link: https://bmvc2025.bmva.org/
+    sources: { ccfddl: BMVC }
+    metrics: { h5: 75, core: A, accept_rate: 0.33 }
+
+  - id: accv
+    name: ACCV
+    full: Asian Conference on Computer Vision
+    fields: [dl, imgproc]
+    region: intl
+    link: https://accv2026.org/
+    sources: { ccfddl: ACCV }
+    metrics: { h5: 50, core: B }
+
+  - id: 3dv
+    name: 3DV
+    full: International Conference on 3D Vision
+    fields: [dl, imgproc]
+    region: intl
+    link: https://3dvconf.github.io/
+    sources: { ccfddl: 3DV, hf: 3dv }
+    metrics: { h5: 50 }
+
+  # ---------------- 의료 인공지능 ----------------
+  - id: miccai
+    name: MICCAI
+    full: Medical Image Computing and Computer Assisted Intervention
+    fields: [medai, imgproc]
+    region: intl
+    target: true
+    link: https://conferences.miccai.org/
+    sources: { ccfddl: MICCAI, hf: miccai }
+    metrics: { core: A, accept_rate: 0.31 }
+
+  - id: midl
+    name: MIDL
+    full: Medical Imaging with Deep Learning
+    fields: [medai, dl]
+    region: intl
+    link: https://www.midl.io/
+    metrics: { h5: 45, tier: 0.6, accept_rate: 0.40 }
+
+  - id: isbi
+    name: ISBI
+    full: IEEE International Symposium on Biomedical Imaging
+    fields: [medai, imgproc, optics]
+    region: intl
+    link: https://biomedicalimaging.org/
+    metrics: { h5: 65, core: B }
+
+  - id: ipmi
+    name: IPMI
+    full: Information Processing in Medical Imaging
+    fields: [medai]
+    region: intl
+    link: https://ipmi2025.org/
+    metrics: { h5: 40, tier: 0.75, accept_rate: 0.30 }
+
+  - id: embc
+    name: EMBC
+    full: IEEE Engineering in Medicine and Biology Conference
+    fields: [medai, neuro, optics]
+    region: intl
+    link: https://embc.embs.org/
+    metrics: { h5: 55, tier: 0.5 }
+
+  - id: spie-mi
+    name: SPIE Medical Imaging
+    full: SPIE Medical Imaging Symposium
+    fields: [medai, imgproc, optics]
+    region: intl
+    link: https://spie.org/conferences-and-exhibitions/medical-imaging
+    metrics: { tier: 0.5 }
+
+  - id: chil
+    name: CHIL
+    full: Conference on Health, Inference, and Learning
+    fields: [medai, dl]
+    region: intl
+    link: https://chilconference.org/
+    sources: { hf: chil }
+    metrics: {}
+
+  # ---------------- 이미지 처리 ----------------
+  - id: icip
+    name: ICIP
+    full: IEEE International Conference on Image Processing
+    fields: [imgproc]
+    region: intl
+    link: https://2026.ieeeicip.org/
+    sources: { ccfddl: ICIP }
+    metrics: { h5: 80, core: B, accept_rate: 0.45 }
+
+  - id: icassp
+    name: ICASSP
+    full: IEEE International Conference on Acoustics, Speech and Signal Processing
+    fields: [imgproc]
+    region: intl
+    link: https://2026.ieeeicassp.org/
+    sources: { ccfddl: ICASSP, hf: icassp }
+    metrics: { h5: 145, core: B }
+
+  - id: iccp
+    name: ICCP
+    full: IEEE International Conference on Computational Photography
+    fields: [imgproc, optics]
+    region: intl
+    link: https://iccp-conference.org/
+    metrics: { tier: 0.65 }
+
+  # ---------------- Optics / Photonics ----------------
+  - id: pw-bios
+    name: Photonics West (BiOS)
+    full: SPIE Photonics West — BiOS (Biomedical Optics)
+    fields: [optics, neuro, medai]
+    region: intl
+    link: https://spie.org/conferences-and-exhibitions/photonics-west
+    metrics: { tier: 0.65 }
+
+  - id: cleo
+    name: CLEO
+    full: Conference on Lasers and Electro-Optics
+    fields: [optics]
+    region: intl
+    link: https://www.cleoconference.org/
+    metrics: { tier: 0.7 }
+
+  - id: optica-biophotonics
+    name: Optica Biophotonics Congress
+    full: Optica Biophotonics Congress (incl. Optics in the Life Sciences)
+    fields: [optics, neuro]
+    region: intl
+    link: https://www.optica.org/events/congress/
+    metrics: { tier: 0.65 }
+
+  - id: ecbo
+    name: ECBO
+    full: European Conferences on Biomedical Optics
+    fields: [optics, medai]
+    region: intl
+    link: https://www.optica.org/events/congress/european_conferences_on_biomedical_optics/
+    metrics: { tier: 0.6 }
+
+  - id: spie-optics-photonics
+    name: SPIE Optics + Photonics
+    full: SPIE Optics + Photonics
+    fields: [optics, imgproc]
+    region: intl
+    link: https://spie.org/conferences-and-exhibitions/optics-and-photonics
+    metrics: { tier: 0.55 }
+
+  # ---------------- Bio / Neuroscience ----------------
+  - id: sfn
+    name: SfN Neuroscience
+    full: Society for Neuroscience Annual Meeting
+    fields: [neuro]
+    region: intl
+    link: https://www.sfn.org/meetings
+    metrics: { tier: 0.7 }
+
+  - id: ohbm
+    name: OHBM
+    full: Organization for Human Brain Mapping Annual Meeting
+    fields: [neuro, medai]
+    region: intl
+    link: https://www.humanbrainmapping.org/
+    metrics: { tier: 0.65 }
+
+  - id: fens
+    name: FENS Forum
+    full: FENS Forum of Neuroscience
+    fields: [neuro]
+    region: intl
+    link: https://www.fens.org/meetings
+    metrics: { tier: 0.6 }
+
+  # ---------------- 국내 ----------------
+  - id: kccv
+    name: KCCV
+    full: 한국컴퓨터비전학회 학술대회 (Korean Conference on Computer Vision)
+    fields: [dl, imgproc]
+    region: domestic
+    link: https://kccv.kr/
+    metrics: { tier: 0.5 }
+
+  - id: ipiu
+    name: IPIU
+    full: 영상처리 및 이해에 관한 워크샵
+    fields: [imgproc, dl]
+    region: domestic
+    link: https://www.ipiu.or.kr/
+    metrics: { tier: 0.4 }
+
+  - id: kcc
+    name: KCC
+    full: 한국정보과학회 한국컴퓨터종합학술대회
+    fields: [dl]
+    region: domestic
+    link: https://www.kiise.or.kr/
+    metrics: { tier: 0.4 }
+
+  - id: ksc
+    name: KSC
+    full: 한국정보과학회 한국소프트웨어종합학술대회
+    fields: [dl]
+    region: domestic
+    link: https://www.kiise.or.kr/
+    metrics: { tier: 0.4 }
+
+  - id: ieie
+    name: 대한전자공학회 학술대회
+    full: 대한전자공학회 하계/추계 종합학술대회
+    fields: [imgproc, dl]
+    region: domestic
+    link: https://www.theieie.org/
+    metrics: { tier: 0.35 }
+
+  - id: kosombe
+    name: 대한의용생체공학회 학술대회
+    full: 대한의용생체공학회 춘계/추계 학술대회 (KOSOMBE)
+    fields: [medai, optics, neuro]
+    region: domestic
+    link: https://www.kosombe.or.kr/
+    metrics: { tier: 0.35 }
+
+  - id: osk
+    name: 한국광학회 학술대회
+    full: 한국광학회 동계/하계 학술발표회 (OSK)
+    fields: [optics]
+    region: domestic
+    link: https://www.osk.or.kr/
+    metrics: { tier: 0.4 }
+
+  - id: kosaim
+    name: 대한의료인공지능학회 학술대회
+    full: 대한의료인공지능학회 (KoSAIM) 학술대회
+    fields: [medai]
+    region: domestic
+    link: https://kosaim.org/
+    metrics: { tier: 0.35 }
+
+  - id: ksbns
+    name: 한국뇌신경과학회 학술대회
+    full: 한국뇌신경과학회 정기학술대회 (KSBNS)
+    fields: [neuro]
+    region: domestic
+    link: https://www.ksbns.org/
+    metrics: { tier: 0.4 }
+
+# =====================================================================
+#  저널 — IF는 JCR(Clarivate)에서 직접 확인 후 입력하세요. (매년 6월 발표)
+#  아래 값은 대략적인 초기값이며 verified: false 상태입니다.
+#    if:       Journal Impact Factor
+#    if_year:  IF 기준 연도 (JCR 발표연도 - 1)
+#    quartile: JCR 분야 내 Q1~Q4
+#    special_issues: 특집호 마감 (선택)
+#      - { title: "...", at: "2027-03-01 23:59", timezone: UTC+0, link: https://... }
+# =====================================================================
+
+journals:
+  - { id: tpami,    name: IEEE TPAMI, full: IEEE Transactions on Pattern Analysis and Machine Intelligence, fields: [dl, imgproc], if: 18.6, if_year: 2024, quartile: Q1, link: https://www.computer.org/csdl/journal/tp }
+  - { id: ijcv,     name: IJCV, full: International Journal of Computer Vision, fields: [dl, imgproc], if: 9.3, if_year: 2024, quartile: Q1, link: https://link.springer.com/journal/11263 }
+  - { id: tnnls,    name: IEEE TNNLS, full: IEEE Transactions on Neural Networks and Learning Systems, fields: [dl], if: 8.9, if_year: 2024, quartile: Q1, link: https://cis.ieee.org/publications/t-neural-networks-and-learning-systems }
+  - { id: tip,      name: IEEE TIP, full: IEEE Transactions on Image Processing, fields: [imgproc, dl], if: 13.7, if_year: 2024, quartile: Q1, link: https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing }
+  - { id: tci,      name: IEEE TCI, full: IEEE Transactions on Computational Imaging, fields: [imgproc, optics], if: 4.8, if_year: 2024, quartile: Q1, link: https://signalprocessingsociety.org/publications-resources/ieee-transactions-computational-imaging }
+  - { id: media,    name: Medical Image Analysis, full: Medical Image Analysis, fields: [medai, imgproc], if: 11.8, if_year: 2024, quartile: Q1, link: https://www.sciencedirect.com/journal/medical-image-analysis }
+  - { id: tmi,      name: IEEE TMI, full: IEEE Transactions on Medical Imaging, fields: [medai, imgproc], if: 9.8, if_year: 2024, quartile: Q1, link: https://www.embs.org/tmi/ }
+  - { id: npjdm,    name: npj Digital Medicine, full: npj Digital Medicine, fields: [medai], if: 15.1, if_year: 2024, quartile: Q1, link: https://www.nature.com/npjdigitalmed/ }
+  - { id: natphoton, name: Nature Photonics, full: Nature Photonics, fields: [optics], if: 32.3, if_year: 2024, quartile: Q1, link: https://www.nature.com/nphoton/ }
+  - { id: lsa,      name: "Light: Sci & Appl", full: "Light: Science & Applications", fields: [optics], if: 23.4, if_year: 2024, quartile: Q1, link: https://www.nature.com/lsa/ }
+  - { id: optica,   name: Optica, full: Optica, fields: [optics], if: 8.4, if_year: 2024, quartile: Q1, link: https://opg.optica.org/optica/ }
+  - { id: boe,      name: Biomedical Optics Express, full: Biomedical Optics Express, fields: [optics, medai], if: 3.2, if_year: 2024, quartile: Q2, link: https://opg.optica.org/boe/ }
+  - { id: ol,       name: Optics Letters, full: Optics Letters, fields: [optics], if: 3.3, if_year: 2024, quartile: Q2, link: https://opg.optica.org/ol/ }
+  - { id: jbo,      name: J. Biomedical Optics, full: Journal of Biomedical Optics, fields: [optics, medai], if: 2.9, if_year: 2024, quartile: Q2, link: https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics }
+  - { id: nph,      name: Neurophotonics, full: Neurophotonics, fields: [optics, neuro], if: 3.6, if_year: 2024, quartile: Q2, link: https://www.spiedigitallibrary.org/journals/neurophotonics }
+  - { id: pacs,     name: Photoacoustics, full: Photoacoustics, fields: [optics, medai], if: 7.0, if_year: 2024, quartile: Q1, link: https://www.sciencedirect.com/journal/photoacoustics }
+  - { id: natmeth,  name: Nature Methods, full: Nature Methods, fields: [neuro, optics], if: 32.0, if_year: 2024, quartile: Q1, link: https://www.nature.com/nmeth/ }
+  - { id: neuroimage, name: NeuroImage, full: NeuroImage, fields: [neuro, medai], if: 4.5, if_year: 2024, quartile: Q1, link: https://www.sciencedirect.com/journal/neuroimage }
