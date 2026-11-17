@@ -1,11 +1,12 @@
 {
-  "crawledAt": "2026-11-17T09:45:19.573Z",
+  "crawledAt": "2026-11-17T09:50:39.799Z",
   "discovered": [],
   "wikicfpNew": 0,
   "scraped": [
     "midl",
     "isbi",
     "embc",
+    "cleo",
     "optica-biophotonics",
     "sfn",
     "ohbm",
