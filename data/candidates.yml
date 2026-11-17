@@ -161,6 +161,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191645
   hidden: false
   first_seen: '2026-11-17'
@@ -188,7 +189,7 @@
     - computer vision
     - bioinformatics
   fields:
-    - neuro
+    - biomed
     - imgproc
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191851
   hidden: false
@@ -369,7 +370,7 @@
     - image processing
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191688
   hidden: false
   first_seen: '2026-11-17'
@@ -516,6 +517,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192456
   hidden: false
   first_seen: '2026-11-17'
@@ -529,7 +531,7 @@
     - biomedical engineering
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201306
   hidden: false
   first_seen: '2026-11-17'
@@ -544,7 +546,7 @@
     - bioinformatics
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203625
   hidden: false
   first_seen: '2026-11-17'
@@ -557,7 +559,7 @@
   categories:
     - bioinformatics
   fields:
-    - neuro
+    - biomed
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506
   hidden: false
@@ -572,7 +574,7 @@
     - bioinformatics
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191553
   hidden: false
   first_seen: '2026-11-17'
@@ -585,7 +587,7 @@
   categories:
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195388
   hidden: false
   first_seen: '2026-11-17'
@@ -598,7 +600,7 @@
   categories:
     - bioinformatics
   fields:
-    - neuro
+    - biomed
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191883
   hidden: false
@@ -612,7 +614,7 @@
   categories:
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191991
   hidden: false
   first_seen: '2026-11-17'
@@ -625,7 +627,7 @@
   categories:
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192076
   hidden: false
   first_seen: '2026-11-17'
@@ -639,7 +641,7 @@
     - bioinformatics
     - deep learning
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192324
   hidden: false
   first_seen: '2026-11-17'
@@ -652,7 +654,7 @@
   categories:
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192808
   hidden: false
   first_seen: '2026-11-17'
@@ -665,7 +667,7 @@
   categories:
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194649
   hidden: false
   first_seen: '2026-11-17'
@@ -692,7 +694,7 @@
     - image processing
     - bioinformatics
   fields:
-    - neuro
+    - biomed
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191788
   hidden: false
@@ -723,6 +725,33 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195438
   hidden: false
   first_seen: '2026-11-17'
+- eventid: 195439
+  name: DSA 2026
+  full: 7th International Conference on Data Science and Applications
+  when: Nov 27, 2026 - Nov 28, 2026
+  where: Zurich, Switzerland
+  deadline: '2026-11-21'
+  categories:
+    - deep learning
+    - bioinformatics
+  fields:
+    - biomed
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195439
+  hidden: false
+  first_seen: '2026-11-17'
+- eventid: 201716
+  name: NGNCT 2026
+  full: 12th International Conference on Next Generation Networks and Communication Technologies
+  when: Dec 26, 2026 - Dec 27, 2026
+  where: Dubai, UAE
+  deadline: '2026-11-21'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201716
+  hidden: false
+  first_seen: '2026-11-17'
 - eventid: 199582
   name: IJBB 2026
   full: International Journal on Bioinformatics & Biosciences
@@ -733,7 +762,7 @@
     - biomedical engineering
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199582
   hidden: false
   first_seen: '2026-11-17'
@@ -748,6 +777,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
     - imgproc
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200097
   hidden: false
@@ -762,6 +792,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200102
   hidden: false
   first_seen: '2026-11-17'
@@ -776,7 +807,7 @@
     - bioinformatics
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200094
   hidden: false
   first_seen: '2026-11-17'
@@ -790,6 +821,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200095
   hidden: false
   first_seen: '2026-11-17'
@@ -935,7 +967,7 @@
     - image processing
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199496
   hidden: false
   first_seen: '2026-11-17'
@@ -951,7 +983,7 @@
     - bioinformatics
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199498
   hidden: false
   first_seen: '2026-11-17'
@@ -981,6 +1013,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199499
   hidden: false
   first_seen: '2026-11-17'
@@ -1023,7 +1056,7 @@
   categories:
     - deep learning
   fields:
-    - neuro
+    - biomed
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199497
   hidden: false
@@ -1180,6 +1213,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199495
   hidden: false
   first_seen: '2026-11-17'
@@ -1208,7 +1242,7 @@
     - bioinformatics
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193059
   hidden: false
   first_seen: '2026-11-17'
@@ -1223,7 +1257,7 @@
     - biomedical engineering
     - bioinformatics
   fields:
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194947
   hidden: false
   first_seen: '2026-11-17'
@@ -1239,7 +1273,7 @@
     - bioinformatics
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194948
   hidden: false
   first_seen: '2026-11-17'
@@ -1254,6 +1288,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200165
   hidden: false
   first_seen: '2026-11-17'
@@ -1268,7 +1303,7 @@
     - biomedical engineering
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201539
   hidden: false
   first_seen: '2026-11-17'
@@ -1299,6 +1334,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
     - imgproc
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201223
   hidden: false
@@ -1314,6 +1350,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201231
   hidden: false
   first_seen: '2026-11-17'
@@ -1328,7 +1365,7 @@
     - biomedical engineering
   fields:
     - medai
-    - neuro
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195281
   hidden: false
   first_seen: '2026-11-17'
@@ -1373,6 +1410,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
     - imgproc
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203762
   hidden: false
@@ -1389,6 +1427,7 @@
     - biomedical engineering
   fields:
     - medai
+    - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202559
   hidden: false
   first_seen: '2026-11-17'

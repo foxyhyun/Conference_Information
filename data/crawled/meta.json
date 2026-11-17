@@ -1,7 +1,7 @@
 {
-  "crawledAt": "2026-11-17T10:56:48.649Z",
+  "crawledAt": "2026-11-17T12:21:40.114Z",
   "discovered": [],
-  "wikicfpNew": 3,
+  "wikicfpNew": 2,
   "scraped": [
     "midl",
     "isbi",
@@ -13,5 +13,446 @@
     "ipiu"
   ],
   "noticesNew": 0,
-  "changes": []
+  "changes": [
+    {
+      "venue": "ISC",
+      "year": 2027,
+      "label": "Regular abstract submission - closed",
+      "kind": "new",
+      "at": "2026-08-19T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ISC",
+      "year": 2027,
+      "label": "Late-Breaking Science & Ongoing Clinical Trials abstracts (CDT) - closed",
+      "kind": "new",
+      "at": "2026-10-29T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ISC",
+      "year": 2027,
+      "label": "Last day to request abstract withdrawal (in writing)",
+      "kind": "new",
+      "at": "2027-01-01T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ESOC",
+      "year": 2027,
+      "label": "Regular abstract & YSPR submission (CET)",
+      "kind": "new",
+      "at": "2027-01-19T16:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ESOC",
+      "year": 2027,
+      "label": "Ongoing Trials abstracts (poster only) (CET)",
+      "kind": "new",
+      "at": "2027-02-25T16:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ESOC",
+      "year": 2027,
+      "label": "Late Breaking Abstract ends (opens 20 Jan 2027; time not stated)",
+      "kind": "new",
+      "at": "2027-02-25T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "BRAIN & BRAIN PET",
+      "year": 2027,
+      "label": "Symposium proposal deadline - closed",
+      "kind": "new",
+      "at": "2026-11-03T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "BRAIN & BRAIN PET",
+      "year": 2027,
+      "label": "Abstract submission deadline (extended)",
+      "kind": "new",
+      "at": "2026-12-18T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "AAIC",
+      "year": 2027,
+      "label": "General abstract & session submission deadline",
+      "kind": "new",
+      "at": "2027-01-11T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "AAIC",
+      "year": 2027,
+      "label": "ISTAART-related submission deadline",
+      "kind": "new",
+      "at": "2027-01-18T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "AAIC",
+      "year": 2027,
+      "label": "Developing Topics submission closes (opens Mar 30)",
+      "kind": "new",
+      "at": "2027-04-09T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "AD/PD",
+      "year": 2027,
+      "label": "Regular abstract deadline (Sep 1, extended to Sep 8) - closed",
+      "kind": "new",
+      "at": "2026-09-08T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "AD/PD",
+      "year": 2027,
+      "label": "Late-breaking abstract deadline (midnight CET)",
+      "kind": "new",
+      "at": "2026-11-18T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "AD/PD",
+      "year": 2027,
+      "label": "Late-breaking notification",
+      "kind": "new",
+      "at": "2026-12-02T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "AD/PD",
+      "year": 2027,
+      "label": "Early registration savings end",
+      "kind": "new",
+      "at": "2026-12-09T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ARVO",
+      "year": 2027,
+      "label": "Abstract submission (5pm U.S. EST; ARVO 2027 membership required)",
+      "kind": "new",
+      "at": "2026-12-04T22:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ARVO",
+      "year": 2027,
+      "label": "Accept/reject notification to first authors",
+      "kind": "new",
+      "at": "2027-01-15T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ARVO",
+      "year": 2027,
+      "label": "Scheduling/presentation type notification",
+      "kind": "new",
+      "at": "2027-02-12T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ASLMS",
+      "year": 2027,
+      "label": "Abstract submission (closes 1:00 PM CST; opened Sep 1)",
+      "kind": "new",
+      "at": "2026-12-08T19:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ASLMS",
+      "year": 2027,
+      "label": "Presenting Author Scholarship application",
+      "kind": "new",
+      "at": "2026-12-08T19:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ASLMS",
+      "year": 2027,
+      "label": "Late-breaking abstracts (window Jan 4 - Feb 1, 1:00 PM CST)",
+      "kind": "new",
+      "at": "2027-02-01T19:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "BPS",
+      "year": 2027,
+      "label": "Late abstract submission ($175 fee; late abstracts not published)",
+      "kind": "new",
+      "at": "2027-01-06T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ISMRM",
+      "year": 2027,
+      "label": "Abstract submission (closed; window Oct 1-28, 2026)",
+      "kind": "new",
+      "at": "2026-10-28T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ISMRM",
+      "year": 2027,
+      "label": "Stipend application",
+      "kind": "new",
+      "at": "2026-10-28T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ISMRM",
+      "year": 2027,
+      "label": "Acceptance notification",
+      "kind": "new",
+      "at": "2027-02-09T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ISMRM",
+      "year": 2027,
+      "label": "Presentation confirmation",
+      "kind": "new",
+      "at": "2027-02-25T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "ISMRM",
+      "year": 2027,
+      "label": "Proceedings online for registrants",
+      "kind": "new",
+      "at": "2027-04-23T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "IEEE NER",
+      "year": 2027,
+      "label": "Paper submission & registration open",
+      "kind": "new",
+      "at": "2026-12-07T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "IEEE NER",
+      "year": 2027,
+      "label": "6-page paper submission",
+      "kind": "new",
+      "at": "2027-03-15T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "IEEE NER",
+      "year": 2027,
+      "label": "6-page paper notification",
+      "kind": "new",
+      "at": "2027-05-15T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "IEEE NER",
+      "year": 2027,
+      "label": "1-page abstract submission",
+      "kind": "new",
+      "at": "2027-06-02T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "IEEE NER",
+      "year": 2027,
+      "label": "Final 6-page paper",
+      "kind": "new",
+      "at": "2027-06-02T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "IEEE NER",
+      "year": 2027,
+      "label": "1-page abstract notification",
+      "kind": "new",
+      "at": "2027-06-18T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "Brain Stimulation Conf.",
+      "year": 2027,
+      "label": "Award nomination",
+      "kind": "new",
+      "at": "2026-07-31T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "Brain Stimulation Conf.",
+      "year": 2027,
+      "label": "Poster abstract submission (closed)",
+      "kind": "new",
+      "at": "2026-08-28T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "Brain Stimulation Conf.",
+      "year": 2027,
+      "label": "Early Career Award application",
+      "kind": "new",
+      "at": "2026-08-28T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "Brain Stimulation Conf.",
+      "year": 2027,
+      "label": "Symposium submission (extended; closed)",
+      "kind": "new",
+      "at": "2026-09-18T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "Brain Stimulation Conf.",
+      "year": 2027,
+      "label": "Early registration discount",
+      "kind": "new",
+      "at": "2026-12-04T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "CSHL Brain Barriers",
+      "year": 2027,
+      "label": "Abstract submission",
+      "kind": "new",
+      "at": "2027-01-22T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KSMCB",
+      "year": 2027,
+      "label": "Speaker (oral) abstract deadline",
+      "kind": "new",
+      "at": "2026-11-15T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KSMCB",
+      "year": 2027,
+      "label": "YI / Excellent Poster / Data Blitz application deadline",
+      "kind": "new",
+      "at": "2026-11-22T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KSMCB",
+      "year": 2027,
+      "label": "Poster abstract deadline for printed abstract book",
+      "kind": "new",
+      "at": "2026-11-26T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KSMCB",
+      "year": 2027,
+      "label": "Pre-registration deadline",
+      "kind": "new",
+      "at": "2026-12-13T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KSMCB",
+      "year": 2027,
+      "label": "Final poster abstract deadline (web PDF only)",
+      "kind": "new",
+      "at": "2026-12-17T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KPS",
+      "year": 2026,
+      "label": "Poster abstract submission (closed)",
+      "kind": "new",
+      "at": "2026-10-10T15:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KPS",
+      "year": 2026,
+      "label": "Notification of acceptance",
+      "kind": "new",
+      "at": "2026-10-21T08:00:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "KPS",
+      "year": 2026,
+      "label": "Pre-registration (closed)",
+      "kind": "new",
+      "at": "2026-10-23T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "USASP",
+      "year": 2027,
+      "label": "Pre-conference workshop proposals",
+      "kind": "new",
+      "at": "2026-10-20T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "USASP",
+      "year": 2027,
+      "label": "Poster abstract submission (closed)",
+      "kind": "new",
+      "at": "2026-11-10T04:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "EFIC Congress",
+      "year": 2027,
+      "label": "Abstract submission, Round 1 (closed)",
+      "kind": "new",
+      "at": "2026-09-30T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "EFIC Congress",
+      "year": 2027,
+      "label": "Early registration",
+      "kind": "new",
+      "at": "2026-12-14T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "EFIC Congress",
+      "year": 2027,
+      "label": "Presenter registration payment deadline",
+      "kind": "new",
+      "at": "2027-03-01T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "EFIC Congress",
+      "year": 2027,
+      "label": "Standard registration",
+      "kind": "new",
+      "at": "2027-03-22T22:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "COSYNE",
+      "year": 2027,
+      "label": "Presenting-author registration (EST per abstracts page; AoE per home page)",
+      "kind": "new",
+      "at": "2027-01-31T14:59:59.000Z",
+      "when": "2026-11-17"
+    },
+    {
+      "venue": "COSYNE",
+      "year": 2027,
+      "label": "Early-bird registration (EST)",
+      "kind": "new",
+      "at": "2027-02-02T14:59:59.000Z",
+      "when": "2026-11-17"
+    }
+  ]
 }

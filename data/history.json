@@ -602,5 +602,225 @@
   "auto-sibgrapi|2026|camera_ready|Camera-ready version": {
     "at": "2026-08-15T23:59:59.000Z",
     "since": null
+  },
+  "isc|2027|abstract|Regular abstract submission - closed": {
+    "at": "2026-08-19T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "isc|2027|abstract|Late-Breaking Science & Ongoing Clinical Trials abstracts (CDT) - closed": {
+    "at": "2026-10-29T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "isc|2027|other|Last day to request abstract withdrawal (in writing)": {
+    "at": "2027-01-01T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "esoc|2027|abstract|Regular abstract & YSPR submission (CET)": {
+    "at": "2027-01-19T16:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "esoc|2027|abstract|Ongoing Trials abstracts (poster only) (CET)": {
+    "at": "2027-02-25T16:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "esoc|2027|abstract|Late Breaking Abstract ends (opens 20 Jan 2027; time not stated)": {
+    "at": "2027-02-25T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "brain-pet|2027|other|Symposium proposal deadline - closed": {
+    "at": "2026-11-03T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "brain-pet|2027|abstract|Abstract submission deadline (extended)": {
+    "at": "2026-12-18T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "aaic|2027|abstract|General abstract & session submission deadline": {
+    "at": "2027-01-11T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "aaic|2027|abstract|ISTAART-related submission deadline": {
+    "at": "2027-01-18T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "aaic|2027|abstract|Developing Topics submission closes (opens Mar 30)": {
+    "at": "2027-04-09T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "adpd|2027|abstract|Regular abstract deadline (Sep 1, extended to Sep 8) - closed": {
+    "at": "2026-09-08T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "adpd|2027|abstract|Late-breaking abstract deadline (midnight CET)": {
+    "at": "2026-11-18T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "adpd|2027|notification|Late-breaking notification": {
+    "at": "2026-12-02T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "adpd|2027|registration|Early registration savings end": {
+    "at": "2026-12-09T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "arvo|2027|abstract|Abstract submission (5pm U.S. EST; ARVO 2027 membership required)": {
+    "at": "2026-12-04T22:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "arvo|2027|notification|Accept/reject notification to first authors": {
+    "at": "2027-01-15T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "arvo|2027|notification|Scheduling/presentation type notification": {
+    "at": "2027-02-12T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "aslms|2027|abstract|Abstract submission (closes 1:00 PM CST; opened Sep 1)": {
+    "at": "2026-12-08T19:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "aslms|2027|other|Presenting Author Scholarship application": {
+    "at": "2026-12-08T19:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "aslms|2027|abstract|Late-breaking abstracts (window Jan 4 - Feb 1, 1:00 PM CST)": {
+    "at": "2027-02-01T19:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "bps|2027|abstract|Late abstract submission ($175 fee; late abstracts not published)": {
+    "at": "2027-01-06T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ismrm|2027|abstract|Abstract submission (closed; window Oct 1-28, 2026)": {
+    "at": "2026-10-28T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ismrm|2027|other|Stipend application": {
+    "at": "2026-10-28T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ismrm|2027|notification|Acceptance notification": {
+    "at": "2027-02-09T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ismrm|2027|other|Presentation confirmation": {
+    "at": "2027-02-25T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ismrm|2027|other|Proceedings online for registrants": {
+    "at": "2027-04-23T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ner|2027|notification|Paper submission & registration open": {
+    "at": "2026-12-07T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ner|2027|paper|6-page paper submission": {
+    "at": "2027-03-15T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ner|2027|notification|6-page paper notification": {
+    "at": "2027-05-15T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ner|2027|abstract|1-page abstract submission": {
+    "at": "2027-06-02T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ner|2027|paper|Final 6-page paper": {
+    "at": "2027-06-02T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ner|2027|notification|1-page abstract notification": {
+    "at": "2027-06-18T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "brain-stim-conf|2027|other|Award nomination": {
+    "at": "2026-07-31T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "brain-stim-conf|2027|abstract|Poster abstract submission (closed)": {
+    "at": "2026-08-28T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "brain-stim-conf|2027|other|Early Career Award application": {
+    "at": "2026-08-28T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "brain-stim-conf|2027|other|Symposium submission (extended; closed)": {
+    "at": "2026-09-18T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "brain-stim-conf|2027|registration|Early registration discount": {
+    "at": "2026-12-04T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "csh-neuro|2027|abstract|Abstract submission": {
+    "at": "2027-01-22T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ksmcb|2027|other|Speaker (oral) abstract deadline": {
+    "at": "2026-11-15T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ksmcb|2027|other|YI / Excellent Poster / Data Blitz application deadline": {
+    "at": "2026-11-22T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ksmcb|2027|abstract|Poster abstract deadline for printed abstract book": {
+    "at": "2026-11-26T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ksmcb|2027|registration|Pre-registration deadline": {
+    "at": "2026-12-13T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "ksmcb|2027|abstract|Final poster abstract deadline (web PDF only)": {
+    "at": "2026-12-17T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "kspain|2026|abstract|Poster abstract submission (closed)": {
+    "at": "2026-10-10T15:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "kspain|2026|notification|Notification of acceptance": {
+    "at": "2026-10-21T08:00:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "kspain|2026|registration|Pre-registration (closed)": {
+    "at": "2026-10-23T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "usasp|2027|other|Pre-conference workshop proposals": {
+    "at": "2026-10-20T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "usasp|2027|abstract|Poster abstract submission (closed)": {
+    "at": "2026-11-10T04:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "efic|2027|abstract|Abstract submission, Round 1 (closed)": {
+    "at": "2026-09-30T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "efic|2027|registration|Early registration": {
+    "at": "2026-12-14T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "efic|2027|registration|Presenter registration payment deadline": {
+    "at": "2027-03-01T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "efic|2027|registration|Standard registration": {
+    "at": "2027-03-22T22:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "cosyne|2027|registration|Presenting-author registration (EST per abstracts page; AoE per home page)": {
+    "at": "2027-01-31T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
+  },
+  "cosyne|2027|registration|Early-bird registration (EST)": {
+    "at": "2027-02-02T14:59:59.000Z",
+    "since": "2026-11-17T12:21:40.114Z"
   }
 }
