@@ -277,6 +277,14 @@ conferences:
     region: intl
     link: https://www.optica.org/events/congress/european_conferences_on_biomedical_optics/
     metrics: { tier: 0.6 }
+    editions:
+      - year: 2027
+        date: "Jun 20-24, 2027"
+        place: "ICM – International Congress Center Messe München, Munich, Germany"
+        link: https://www.optica.org/events/congress/european_conferences_on_biomedical_optics/
+        timezone: UTC-5
+        deadlines:
+          - { type: abstract, at: "2027-01-27 23:55" }
 
   - id: spie-optics-photonics
     name: SPIE Optics + Photonics
@@ -286,7 +294,59 @@ conferences:
     link: https://spie.org/conferences-and-exhibitions/optics-and-photonics
     metrics: { tier: 0.55 }
 
+  - id: fom
+    name: Focus on Microscopy
+    full: Focus on Microscopy (FOM) — International Conference on 3D Image Processing in Microscopy / Confocal Microscopy
+    fields: [optics, neuro, imgproc]
+    region: intl
+    link: https://www.focusonmicroscopy.org/
+    metrics: { tier: 0.6 }
+    editions:
+      - year: 2027
+        date: "Mar 21-24, 2027"
+        place: "Osaka International Convention Center, Osaka, Japan"
+        link: https://www.focusonmicroscopy.org/
+        timezone: UTC+1
+        deadlines:
+          - { type: abstract, at: "2027-01-07 23:59" }
+
+  - id: abc
+    name: SPIE ABC
+    full: SPIE Advanced Biophotonics Conference (한국광학회 주관)
+    fields: [optics, medai, neuro]
+    region: intl
+    link: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14016
+    metrics: { tier: 0.5 }
+    # 홀수 해 가을 개최 (2021 부산, 2023 제주, 2025 제주 10/29-11/1). 2027 공지 아직 없음
+
+  - id: optica-imaging
+    name: Optica ImageSense
+    full: Optica ImageSense Congress (구 Imaging and Applied Optics Congress; incl. COSI — Computational Optical Sensing and Imaging)
+    fields: [optics, imgproc]
+    region: intl
+    link: https://www.optica.org/events/congress/optica_imagesense_congress/
+    metrics: { tier: 0.6 }
+    editions:
+      - year: 2027
+        date: "Jul 11-15, 2027"
+        place: "The Westin Ottawa, Ottawa, Canada"
+        link: https://www.optica.org/events/congress/optica_imagesense_congress/
+        timezone: UTC-5
+        deadlines:
+          - { type: abstract, at: "2027-03-09 12:00", label: "Abstract + 2-page summary" }
+
   # ---------------- Bio / Neuroscience ----------------
+  - id: fnirs
+    name: fNIRS
+    full: Society for functional Near-Infrared Spectroscopy Biennial Meeting
+    fields: [neuro, optics]
+    region: intl
+    link: https://fnirs.org/conferences/
+    metrics: { tier: 0.6 }
+    # 격년 개최. 2026 마카오(10/16-19) 종료, 2028 아메리카 대륙 (도시·일정 미정)
+    editions:
+      - { year: 2028, date: "TBA", place: "America (TBA)", link: "https://fnirs.org/conferences/" }
+
   - id: sfn
     name: SfN Neuroscience
     full: Society for Neuroscience Annual Meeting
@@ -319,8 +379,11 @@ conferences:
     full: 한국컴퓨터비전학회 학술대회 (Korean Conference on Computer Vision)
     fields: [dl, imgproc]
     region: domestic
-    link: https://kccv.kr/
+    link: https://kcvs.kr/
     metrics: { tier: 0.5 }
+    # KCCV 는 CVPR/ICCV 등에 이미 채택된 논문을 초청 발표하는 형식이라 별도 논문 마감이 없음 (2026: 8/3-5 부산 BEXCO)
+    editions:
+      - { year: 2026, date: "Aug 3-5, 2026", place: "BEXCO, Busan", link: "https://kcvs.kr/" }
 
   - id: ipiu
     name: IPIU
@@ -328,7 +391,7 @@ conferences:
     fields: [imgproc, dl]
     region: domestic
     link: https://www.ipiu.or.kr/
-    scrape: { url: "https://www.ipiu.or.kr/" }
+    scrape: { url: "https://www.ipiu.or.kr/", label: after }
     watch: https://www.ipiu.or.kr/
     metrics: { tier: 0.4 }
 
@@ -347,6 +410,13 @@ conferences:
     region: domestic
     link: https://www.kiise.or.kr/
     metrics: { tier: 0.4 }
+    editions:
+      - year: 2026
+        date: "Dec 21-23, 2026"
+        place: "경주화백컨벤션센터"
+        link: https://www.kiise.or.kr/conference/main/index.do?CC=ksc&CS=2026
+        deadlines:
+          - { type: paper, at: "2026-10-26 23:59" }
 
   - id: ieie
     name: 대한전자공학회 학술대회
@@ -374,6 +444,14 @@ conferences:
     link: https://www.osk.or.kr/
     watch: https://www.osk.or.kr/
     metrics: { tier: 0.4 }
+    editions:
+      - year: 2027
+        date: "Feb 16-19, 2027 (동계학술발표회 / 제38회 정기총회)"
+        place: "BEXCO, Busan"
+        link: https://www.osk.or.kr/
+        deadlines:
+          - { type: abstract, at: "2026-12-13 23:59" }
+          - { type: registration, at: "2027-01-25 23:59", label: "사전등록 마감" }
 
   - id: kosaim
     name: 대한의료인공지능학회 학술대회
@@ -392,6 +470,12 @@ conferences:
     link: https://www.ksbns.org/
     watch: https://www.ksbns.org/
     metrics: { tier: 0.4 }
+    editions:
+      - year: 2027
+        date: "TBA (K-Brain 2027)"
+        link: https://www.ksbns.org/
+        deadlines:
+          - { type: other, at: "2027-01-10 23:59", label: "Call for Symposia 마감" }
 
 # =====================================================================
 #  저널 — IF는 JCR(Clarivate)에서 직접 확인 후 입력하세요. (매년 6월 발표)

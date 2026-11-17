@@ -1,0 +1,1476 @@
+# 학회 상세 설명 (사이트의 "학회 상세" 패널). 직접 수정해도 됩니다.
+#   about: 소개 / topics: 제출 분야 / features: 특징 / acceptance_rate / typical_schedule / sources
+
+cvpr:
+  about: >-
+    IEEE Computer Society와 Computer Vision Foundation(CVF)이 공동 후원하는 컴퓨터 비전 분야 최대 규모의 연례 학회로, 1985년부터 매년 개최된다. 2026년 Denver 대회에는 16,092편이
+    투고되어 4,071편이 채택되었고 등록자는 12,322명에 달하는 등, 컴퓨터 비전·패턴 인식 커뮤니티의 대표 학회로 꼽힌다. Wikipedia에 따르면 전체 논문의 30% 미만, 구두 발표는 5% 미만만 채택하는 선별적 학회다.
+  topics:
+    - 3D from multi-view and sensors / 3D from single images
+    - Computational imaging
+    - Medical and biological vision, cell microscopy
+    - Low-level vision
+    - Image and video synthesis and generation
+    - 'Recognition: categorization, detection, retrieval'
+    - Segmentation, grouping and shape analysis
+    - Self-, semi-, meta- and unsupervised learning
+    - Transfer / low-shot / continual / long-tail learning
+    - Vision, language, and reasoning
+    - Multimodal learning
+    - Datasets and evaluation
+    - Efficient and scalable vision
+    - Physics-based vision and shape-from-X
+    - 'Video: action and event understanding / low-level analysis, motion, tracking'
+  features:
+    - 본문 8페이지 제한(그림·표 포함, 참고문헌 제외), CVPR 스타일 템플릿 필수. 초과 시 리뷰 없이 거절.
+    - OpenReview 기반 이중 맹검(double-blind) 심사. 모든 공저자가 최신 OpenReview 프로필을 보유해야 하며, 기관 이메일 없는 프로필은 승인에 최대 2주 소요.
+    - '리뷰 공개 후 1페이지 PDF 리버틀(rebuttal) 기간(2026 대회: 1월 22~29일). 리버틀에 새 기여·외부 링크 추가 불가.'
+    - 모든 저자는 초청 시 리뷰어·AC·SAC로 참여할 것을 약속해야 하며(reviewer-service commitment), 예외는 사전에 프로그램 체어 승인 필요. 2027 CFP에도 동일 조항 유지.
+    - '채택 논문은 학회 2주 전 CVF 오픈액세스로 공개. 2027년 CFP에는 ''Agentic AI'', ''Physical AI: World Models, VLA, Planning, Simulation'' 등 신규 토픽이 추가됨.'
+    - 이중 투고 금지(20% 이상 내용 중복 시 거절), arXiv 프리프린트는 출판물로 간주하지 않음. 존재하지 않는 문헌 인용 등 LLM 관련 오류는 거절 사유('an LLM did it'은 방어가 아님).
+    - '초록 제출과 논문 제출 마감이 분리되어 있고 연장 없음(2026: 초록 11/7, 논문 11/13; 2027: 등록 11/10, 논문 11/16).'
+  acceptance_rate: '2026: 25.3% (4071/16092); 2025: 22.1% (2872/13008) — Wikipedia (CVPR article) 표 기준'
+  sources:
+    - https://cvpr.thecvf.com/Conferences/2026/CallForPapers
+    - https://cvpr.thecvf.com/Conferences/2026/AuthorGuidelines
+    - https://cvpr.thecvf.com/Conferences/2027/CallForPapers
+    - https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition
+    - https://github.com/lixin4ever/Conference-Acceptance-Rate
+iccv:
+  about: >-
+    IEEE가 후원하는 컴퓨터 비전 학회로 1987년에 시작되어 ECCV가 열리지 않는 홀수 해에 2년마다 개최된다. CVPR·ECCV와 함께 컴퓨터 비전 3대 학회 중 하나로 꼽히며, 최우수 논문상은 신경과학자 David Marr의 이름을 딴
+    Marr Prize다. 2025년 대회(하와이)에는 약 1만 1천 편이 투고되어 약 2,700편이 채택되었다.
+  topics:
+    - 3D from multi-view and sensors / single images
+    - Computational imaging
+    - Medical and biological vision, cell microscopy
+    - Low-level vision
+    - Image and video synthesis and generation
+    - 'Recognition: categorization, detection, retrieval'
+    - Segmentation, grouping and shape analysis
+    - Self-, semi-, meta- and unsupervised learning
+    - Transfer / low-shot / continual / long-tail learning
+    - Vision, language, and reasoning
+    - Multimodal learning
+    - Datasets and evaluation
+    - Physics-based vision and shape-from-X
+    - 'Video: action and event understanding / motion and tracking'
+    - Photogrammetry and remote sensing
+  features:
+    - 본문 8페이지 제한(그림·표 포함, 참고문헌 제외), ICCV 스타일. 초과 시 리뷰 없이 거절.
+    - 'OpenReview 기반 이중 맹검 심사, 리뷰 공개 후 1페이지 PDF 리버틀(2025: 5/10~5/16). 리버틀에 외부 링크(코드·영상) 불가.'
+    - 저자는 요청 시 리뷰어로 참여해야 하며 모든 저자가 최신 OpenReview 프로필 필요.
+    - 이중 투고 금지(20% 이상 중복 시 위반), arXiv 프리프린트·기술보고서는 출판물로 간주하지 않음. 존재하지 않는 문헌 인용 등 LLM 관련 오류는 거절 사유.
+    - 채택 논문은 학회 2주 전 CVF 오픈액세스로 공개(IEEE Xplore와 병행).
+    - '논문 등록·제출 마감 연장 없음(2025: 등록 3/3, 제출 3/7 HST).'
+    - 2025년 CFP는 37개 토픽 영역을 열거하며 'Medical and biological vision, cell microscopy'를 명시적으로 포함.
+  acceptance_rate: '2025: 약 24.2% (2698/11152) — Paper Copilot(제3자 집계, 공식 수치 아님)'
+  sources:
+    - https://iccv.thecvf.com/Conferences/2025/CallForPapers
+    - https://iccv.thecvf.com/Conferences/2025/AuthorGuidelines
+    - https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision
+    - https://papercopilot.com/venue-overview/iccv-2025-venue-overview/
+eccv:
+  about: >-
+    스위스 취리히에 기반한 비영리 단체 European Computer Vision Association(ECVA)이 주관하는 컴퓨터 비전 학회로, 1990년 프랑스 Antibes에서 시작되어 짝수 해에 2년마다 열린다. CVPR·ICCV와 함께
+    컴퓨터 비전 3대 학회로 평가되며, 논문집은 Springer(LNCS 템플릿)로 출판된다. 2024년 밀라노 대회에는 약 8,585편이 투고되었다.
+  topics:
+    - 3D from multi-view and sensors / single images
+    - Camera pose estimation and calibration
+    - Computational imaging
+    - Medical and biological vision, cell microscopy
+    - Low-level vision
+    - Image and video synthesis and generation
+    - (Neural) scene representations
+    - 'Recognition: categorization, detection, retrieval'
+    - Segmentation, grouping and shape analysis
+    - Self-, semi-, meta- and unsupervised learning
+    - Vision, language, and reasoning
+    - Synthetic data and simulation
+    - Visual localization, SLAM, Structure-from-Motion
+    - Geometric deep learning
+    - Vision for climate and sustainability
+  features:
+    - 본문 14페이지 제한(그림·표 포함, 참고문헌 제외), ECCV 2026 LNCS 템플릿 필수. 다른 학회 템플릿·폰트 사용이나 여백 변경 시 데스크 리젝.
+    - 'OpenReview 기반 이중 맹검 심사. 리뷰 공개 후 1페이지 2단 PDF 리버틀(2026: 5/2 리뷰 공개, 5/11 리버틀 마감).'
+    - 모든 저자가 자동으로 리뷰어 풀에 추가되며(예외는 극히 제한적), 리뷰어는 투고 논문을 LLM에 업로드·처리 금지.
+    - 채택 논문은 Springer 및/또는 ECVA를 통해 학회 4주 전 이후 공개. 2026 투고는 iThenticate로 표절 검사.
+    - '저자 목록은 등록 마감(2026: 2/26) 이후 추가·삭제 불가(순서 변경만 가능). 2026부터 주 Contribution Type 선택 필수, Datasets/Benchmarks 유형은 카메라레디 시점에 공개 필수.'
+    - 1월 29일부터 최종 결정까지 미디어·소셜미디어 엠바고 적용. 투고·보충자료·리버틀에 외부 링크 금지.
+    - 채택 논문은 저자 또는 위임자가 현장 발표해야 함.
+  acceptance_rate: '2024: 27.9% (2395/8585, 포스터 기준; 구두 200편 포함 시 30.2%) — Paper Copilot/aiwiki 집계(검색 결과 기반, 공식 발표 수치 재인용)'
+  sources:
+    - https://eccv.ecva.net/Conferences/2026/CallForPapers
+    - https://eccv.ecva.net/Conferences/2026/SubmissionPolicies
+    - https://www.ecva.net/
+    - https://en.wikipedia.org/wiki/European_Conference_on_Computer_Vision
+    - https://papercopilot.com/statistics/ECCV-statistics
+wacv:
+  about: >-
+    IEEE/CVF가 후원하는 컴퓨터 비전 응용 중심 연례 학회로, 매년 겨울(2~3월)에 개최된다. 알고리즘 논문도 받지만 '비전 요소가 큰 시스템과 응용'에 중점을 두는 것이 특징이며, Applications 트랙과 Algorithms 트랙으로
+    나뉘어 각기 다른 심사 기준을 적용한다. 2027년부터는 Evaluations & Dataset 트랙이 신설되었다.
+  topics:
+    - 'Applications track: Biomedical, healthcare, and medicine'
+    - 'Applications track: Robotics / Autonomous driving / Remote sensing'
+    - 'Applications track: Virtual and augmented reality / Visualization'
+    - 'Applications track: Embedded sensing and real-time techniques'
+    - 'Applications track: Agriculture / Environmental monitoring / Social good'
+    - 'Algorithms track: 3D computer vision'
+    - 'Algorithms track: Computational photography'
+    - 'Algorithms track: Generative models for image, video, 3D'
+    - 'Algorithms track: Low-level and physics-based vision'
+    - 'Algorithms track: Image recognition and understanding (detection, segmentation, scene modeling)'
+    - 'Algorithms track: Video recognition and understanding (tracking, action recognition)'
+    - 'Algorithms track: Vision + language and/or other modalities'
+    - 'Algorithms track: Foundation models for downstream vision tasks'
+    - 'Algorithms track: Datasets and evaluations'
+    - Evaluations & Dataset track (2027 신설)
+  features:
+    - >-
+      두 번의 투고 라운드 운영. Round 1(7월) 논문은 accept / revise-and-resubmit / reject 판정을 받고, 수정본과 1페이지 리버틀을 제출해 Round 2에서 재심사. Round 2(9월) 신규 투고는 리버틀
+      없이 accept/reject만 결정.
+    - 본문 8페이지 제한(그림·표 포함, 참고문헌 제외), WACV 템플릿 필수. OpenReview 기반 이중 맹검 심사, 논문당 최소 3명 리뷰어.
+    - Applications 트랙은 시스템 수준 혁신·도메인 신규성·비교 평가로, Algorithms 트랙은 CVPR/ICCV/ECCV와 유사하게 알고리즘 신규성·정량 비교로 심사.
+    - 모든 저자는 리뷰어/AC로 참여할 의향이 있어야 하며, 질 낮은 리뷰를 제출한 저자의 논문은 데스크 리젝될 수 있음.
+    - 채택 논문은 CVF 오픈액세스로 학회 2주 전 공개. 최소 1명 현장 등록 필수(미등록 시 논문집에서 제외). 2026 채택 논문 확장판은 Machine Vision and Applications(MVA) 저널 특집호에 게재 예정.
+    - 'LLM 정책은 NeurIPS 2025 가이드라인 기반: 방법론에 LLM을 사용한 경우 기술 필수, 존재하지 않는 문헌 인용 시 거절.'
+    - 'Round 1 단독 채택률은 매우 낮음(2025 Round 1: 1,329편 중 85편 채택, 732편 Round 2 재투고 초청).'
+  acceptance_rate: >-
+    2024: 41.4% (846/2043) — Paper Copilot(제3자 집계); 2025 Round 1: 6.4% (85/1329), Round 2: 재투고 440편·신규 303편 채택(1,809편 중) — 공식 라운드별 수치, 종합
+    채택률 공식 미발표
+  sources:
+    - https://wacv.thecvf.com/Conferences/2026/CallForPapers
+    - https://wacv.thecvf.com/Conferences/2027/AuthorGuides
+    - https://papercopilot.com/statistics/wacv-statistics/
+    - https://ami.kaist.ac.kr/275fdae6-c854-80b1-8169-dff86cc4665e
+neurips:
+  about: >-
+    1987년 시작된 머신러닝·계산신경과학 분야의 연례 학회로, 매년 12월에 열리며 NeurIPS Foundation이 주관한다(초대 대회는 IEEE 후원). 원래 생물학적·인공 신경망 연구자들의 학제적 모임으로 출발했으며 2018년 약칭을
+    NIPS에서 NeurIPS로 변경했다. 2025년 메인 트랙에 21,575편이 투고되어 5,290편이 채택되는 등 ICML·ICLR과 함께 ML 분야 최고 권위 학회로 평가된다.
+  topics:
+    - Applications (vision, language, speech, etc.)
+    - Deep learning
+    - Evaluation
+    - General machine learning
+    - Infrastructure / ML systems
+    - Machine learning for sciences
+    - Neuroscience and cognitive science
+    - Optimization
+    - Probabilistic methods
+    - Reinforcement learning
+    - Social and economic aspects of machine learning
+    - Theory
+    - Robotics and embodied systems (2026 CFP)
+    - AI/ML for health, sustainability, creative work (2026 CFP)
+  features:
+    - 본문 9페이지 제한(그림·표 포함; 참고문헌·체크리스트·기술 부록 제외), 채택 시 카메라레디에 1페이지 추가. 논문 끝에 Paper Checklist 필수 첨부.
+    - OpenReview 기반 이중 맹검 심사. 초록 마감 이후 저자 추가·삭제 불가(순서 변경만). 리뷰에 대한 1주 author response 기간이 있으나 논문 수정본 제출은 불가.
+    - '메인 트랙 외에 Datasets & Benchmarks(2026: Evaluations and Datasets) 트랙과 Position Paper 트랙(2025 신설)을 별도 포털로 운영, 제출 후 트랙 간 이동 불가.'
+    - 저자에게 리뷰 참여 요청(reciprocal reviewing)이 있으며, 담합(collusion) 적발 시 거절·향후 제재. 프로그램 체어가 IRB 승인 하에 리뷰 과정에 대한 무작위 대조 실험을 수행.
+    - arXiv 프리프린트 허용(단 'Under review at NeurIPS' 표기 금지). 2025년 3월 1일 이후 공개된 논문은 동시기 연구로 간주해 비교 누락만으로 거절되지 않음.
+    - 카메라레디에 자금 출처 공개 필수, 코드·데이터 공개 강력 권장. 2026년에는 복수 도시(Sydney, Paris, Atlanta)에서 개최.
+    - Wikipedia에 따르면 2021년 중복 투고 실험에서 23%의 논문이 상이한 채택 결정을 받아 심사 일관성 논쟁이 있음.
+  acceptance_rate: '2025: 24.5% (5290/21575); 2024: 25.8% (4037/15671) — lixin4ever/Conference-Acceptance-Rate 집계'
+  sources:
+    - https://neurips.cc/Conferences/2025/CallForPapers
+    - https://neurips.cc/Conferences/2026/CallForPapers
+    - https://en.wikipedia.org/wiki/Conference_on_Neural_Information_Processing_Systems
+    - https://github.com/lixin4ever/Conference-Acceptance-Rate
+    - https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/
+iclr:
+  about: >-
+    Yann LeCun과 Yoshua Bengio가 2012년에 창립해 2013년 첫 대회를 연 표현 학습(representation learning) 중심의 연례 머신러닝 학회로, 보통 4월 말~5월 초에 개최된다. 출범 이래 OpenReview
+    기반의 공개 동료 심사(open peer review)를 채택한 것이 가장 큰 특징이며, NeurIPS·ICML과 함께 ML 분야 3대 학회로 꼽힌다. 2025년 싱가포르 대회에는 85개국 11,039명이 참가했고, 2026년에는 19,525편
+    투고 중 5,355편이 채택되었다.
+  topics:
+    - Representation learning (supervised, self-supervised, semi-supervised, unsupervised)
+    - Reinforcement learning
+    - Generative models
+    - Causal reasoning
+    - Optimization
+    - Learning theory
+    - Fairness, safety, privacy
+    - Datasets and benchmarks
+    - Neurosymbolic systems
+    - Robotics
+    - Applications to neuroscience and cognitive science
+    - Applications to physical sciences
+    - General machine learning
+  features:
+    - 본문 9페이지 제한(투고 시), 리버틀·카메라레디 단계에서 10페이지로 확장. 참고문헌·부록 무제한, 초과 시 데스크 리젝.
+    - '리뷰가 OpenReview에 익명으로 공개되고, 약 3주간(2026: 11/11~12/3) 공개 토론 기간 동안 저자가 응답하고 논문을 수정할 수 있음. 결정 후 모든 투고가 비익명화되어 공개되며 거절 논문의 리뷰도 그대로 남음.'
+    - '강력한 상호 리뷰 의무: 3편 이상 투고한 저자는 최소 6편 리뷰, 모든 투고에 최소 1명의 리뷰 가능 저자(ICLR/NeurIPS/ICML 등 채택 이력 보유) 등록 필수. 미이행 시 데스크 리젝 가능.'
+    - 이중 맹검이지만 arXiv 공개 허용. 마감 후 철회한 논문도 즉시 비익명화되어 공개 상태 유지.
+    - LLM이 아이디어 도출·집필에 상당한 역할을 했다면 별도 섹션에 공개 필수, 미공개 시 데스크 리젭 가능. LLM은 저자 자격 없음.
+    - 논문집은 OpenReview에 오픈액세스로 호스팅(별도 출판사 없음). Ethics statement(1페이지)·reproducibility statement는 선택이지만 권장.
+  acceptance_rate: '2026: 27% (5355/19525); 2025: 31.9% — Wikipedia (ICLR article)'
+  sources:
+    - https://iclr.cc/Conferences/2026/CallForPapers
+    - https://iclr.cc/Conferences/2026/AuthorGuide
+    - https://en.wikipedia.org/wiki/International_Conference_on_Learning_Representations
+icml:
+  about: >-
+    1980년 Carnegie Mellon에서 워크숍으로 시작해 1993년 정식 학회 시리즈가 된 가장 오래된 머신러닝 학회로, International Machine Learning Society(IMLS)가 주관하며 매년 1월 말 마감, 7월
+    개최된다. NeurIPS·ICLR과 함께 ML 분야 3대 최고 권위 학회로 평가되며, 투고 수가 2015년 1,037편에서 2025년 12,107편, 2026년 약 2만 4천 편으로 급증했다. 2026년 대회는 서울에서 개최되었다.
+  topics:
+    - General machine learning
+    - Deep learning
+    - Evaluation
+    - Theory
+    - ML systems
+    - Optimization
+    - Probabilistic methods
+    - Reinforcement learning
+    - Trustworthy machine learning
+    - Application-driven machine learning
+  features:
+    - 본문 8페이지 제한(참고문헌·impact statement·부록 무제한), 카메라레디에 1페이지 추가. 참고문헌 앞에 Impact Statement 섹션 필수, 채택 후 lay summary 제출 필수.
+    - OpenReview 기반 이중 맹검 심사. 채택 논문은 원 투고본·익명 리뷰·메타리뷰·리버틀·토론이 카메라레디와 함께 공개됨(거절 논문은 선택).
+    - '상호 리뷰 의무: 투고마다 최소 1명의 저자가 리뷰어로 참여(한 저자가 최대 2편 담당), 4편 이상 투고한 저자는 리뷰 필수. 미이행 또는 불성실 리뷰 시 투고 논문 데스크 리젝 가능.'
+    - 논문집은 PMLR(Proceedings of Machine Learning Research, JMLR 산하)에 오픈액세스로 출판.
+    - Position paper 트랙을 메인 트랙과 별도 OpenReview 사이트로 운영. 2026년부터 채택 논문의 proceedings-only(가상 등록) 옵션 허용.
+    - arXiv 프리프린트 허용(단 ICML 투고임을 광고 금지). LLM 사용 가능하되 저자 전적 책임, 프롬프트 인젝션은 데스크 리젝. 복수 투고 저자는 선택적으로 자기 논문 순위를 integrity chair에게만 제출 가능.
+    - '초록·논문 마감 연장 없음(2026: 초록 1/23, 논문 1/28). 초록 마감 후 저자 목록 변경 불가.'
+  acceptance_rate: '2026: 26.6%; 2025: 26.9% (3260/12107); 2024: 30.5% — Wikipedia (ICML article)'
+  sources:
+    - https://icml.cc/Conferences/2026/CallForPapers
+    - https://en.wikipedia.org/wiki/International_Conference_on_Machine_Learning
+aaai:
+  about: >-
+    Association for the Advancement of Artificial Intelligence(AAAI)가 주관하는 종합 인공지능 학회로, 1980년 스탠퍼드에서 첫 대회가 열렸고 매년 개최된다(투고 8월 전후, 개최 1~2월).
+    머신러닝·NLP·컴퓨터 비전·계획·추론·다중 에이전트 등 AI 전 분야를 포괄하며, Google Scholar H5 지수 기준 AI 출판물 중 ICLR·NeurIPS·ICML에 이어 4위다. AAAI-26(싱가포르)은 2만 편 이상의 투고를
+    받았다.
+  topics:
+    - Machine learning
+    - Natural language processing
+    - Computer vision
+    - Data mining
+    - Multiagent systems
+    - Knowledge representation
+    - Human-in-the-loop AI
+    - Search, planning, reasoning
+    - Robotics and perception
+    - Ethics
+    - 'Special track: AI for Social Impact'
+    - 'Special track: AI Alignment'
+  features:
+    - 기술 본문 7페이지 제한 + 참고문헌 전용 추가 페이지. 모든 저자에게 재현성 체크리스트(reproducibility checklist) 필수.
+    - >-
+      OpenReview 기반 2단계 심사: Phase 1에서 인간 리뷰 2건 + AI 생성 리뷰 1건(비결정적)으로 SPC가 통과 여부 결정, Phase 2에서 추가 인간 리뷰 후 author response·토론·메타리뷰. Phase 1 탈락
+      논문은 리버틀 기회 없음.
+    - 'AAAI-26부터 AI 보조 심사 파일럿 운영: AI 리뷰는 점수·추천 없이 참고용이며 최종 결정은 인간이 내림. 저자는 AI 리뷰에도 응답 가능.'
+    - LLM 생성 텍스트는 실험 분석 대상이 아닌 한 금지(저자가 쓴 글의 교정·윤문 용도는 허용). AI 도구는 저자·인용 출처 불가.
+    - 모든 저자에게 리뷰 참여 기대(가벼운 부담), 불이행 시 거절 포함 제재 가능.
+    - 초록(7월 말)·본문(8월 초) 마감 분리. 보충자료는 리뷰어가 읽을 의무가 없으므로 핵심 내용은 본문에 포함해야 함.
+    - 학제 간 연구(신경과학·인지과학과의 연계 등) 및 헬스케어·지속가능성 응용을 명시적으로 장려.
+  acceptance_rate: '2026: 약 17.6% (4167/23680) — Bohrium 블로그(제3자, 출처 미표기); 2025: 23.4% (3032/12957) — lixin4ever/Conference-Acceptance-Rate'
+  sources:
+    - https://aaai.org/conference/aaai/aaai-26/main-technical-track-call/
+    - https://en.wikipedia.org/wiki/AAAI_Conference_on_Artificial_Intelligence
+    - https://github.com/lixin4ever/Conference-Acceptance-Rate
+    - https://www.bohrium.com/en/blog/research-notes/aaai-2026-accepted-papers-highlights/
+bmvc:
+  about: >-
+    British Machine Vision Association(BMVA)이 주관하는 영국의 연례 컴퓨터 비전 학회로, 2026년 Lancaster 대회가 37회째다. 구두·포스터 발표로 구성된 단일 트랙(single-track) 학회라는 점이
+    특징이며, 2026년에는 1,448편 투고 중 406편이 채택되었다. 영상처리·컴퓨터 비전·머신러닝 전반을 다루며 의료·생물 영상 분석 토픽을 명시적으로 포함한다.
+  topics:
+    - 3D from X, Shape Modeling and Processing
+    - Medical and Biological Image Analysis
+    - Computational Photography and Photogrammetry
+    - Low-level and Physics-based Vision
+    - Generative Models
+    - Recognition, Segmentation, and Scene Understanding
+    - Representation, Self-supervised, and Transfer Learning
+    - Multimodal Learning (Vision + Language, Audio, etc.)
+    - Motion Estimation and Tracking
+    - Action, Event, and Video Understanding
+    - Uncertainty
+    - Explainable, Fair, and Ethical AI
+    - Datasets and Evaluation
+    - Vision Applications, Systems, and Robotics
+    - Brave New Ideas (벤치마크 성능 향상이 아닌 새로운 접근·이론)
+  features:
+    - 본문 14페이지 제한(참고문헌 제외), 공식 BMVC LaTeX/Word 템플릿 필수. 보충자료는 단일 zip으로 논문 마감과 동시에 제출.
+    - 'OpenReview 기반 이중 맹검 심사, 논문당 최소 3명 리뷰어 + Area Chair 메타리뷰. 리버틀 기간 운영(2026: 7/3~7/10).'
+    - '커뮤니티 리뷰 제도: 저자는 투고 수에 비례한 편수를 리뷰할 것을 약속하며, 불성실 참여 시 거절 가능.'
+    - '''Brave New Ideas'' 토픽을 두어 벤치마크 성능 향상 없이도 새로운 접근·이론을 장려.'
+    - 단일 트랙(구두+포스터) 운영, 논문집은 BMVA가 출판. 다른 학회·저널 동시 심사 금지, arXiv 프리프린트는 선행 출판으로 보지 않음.
+    - 초록(5월 22일)·논문(5월 29일) 마감 분리, 연장 없음. 2026년 워크숍에 MFM4Health(헬스케어용 멀티모달 파운데이션 모델) 등 의료 관련 워크숍 포함.
+    - 채택 논문 중 상위 논문은 IJCV 특집호 확장판 투고에 초청(검색 결과 요약 기준).
+  acceptance_rate: '2026: 28.0% (406/1448) — 공식 accepted papers 페이지'
+  sources:
+    - https://bmvc2026.bmva.org/calls/call-for-papers/
+    - https://bmvc2026.bmva.org/programme/accepted_papers/
+accv:
+  about: >-
+    Asian Federation of Computer Vision(AFCV)이 후원하는 아시아 지역의 대표 컴퓨터 비전 학회로, 짝수 해에 2년마다 개최되며 2026년 오사카 대회가 18회째다. 논문집은 Springer LNCS로 출판되고 CVF
+    오픈액세스에도 병행 게재되며, 2024년 하노이 대회에는 839편 투고 중 270편이 채택되었다. CVPR/ICCV/ECCV와 유사한 토픽 구조에 'Biomedical Image Analysis'를 별도 영역으로 둔다.
+  topics:
+    - 3D Computer Vision
+    - Biomedical Image Analysis
+    - Computational Photography, Sensing, and Display
+    - Low-level Vision and Image Processing
+    - Illumination and Reflectance Modeling
+    - Physics-based Vision and Shape from X
+    - Deep Learning for Computer Vision
+    - Generative Models for Computer Vision
+    - Recognition (Feature Detection, Indexing, Matching, Shape Representation)
+    - Segmentation and Grouping
+    - Motion and Tracking
+    - Scene Analysis and Understanding
+    - Video Analysis and Event Recognition
+    - Vision and Language
+    - Datasets and Performance Analysis
+  features:
+    - 본문 14페이지 제한(그림·표 포함, 참고문헌 제외), 공식 LNCS 스타일·ACCV LaTeX 템플릿 필수. 카메라레디 추가 페이지 없음.
+    - 'OpenReview 기반 이중 맹검 심사. 1페이지 PDF 리버틀(2026: 8/26 리뷰 공개, 9/2 리버틀 마감), 새 기여·외부 링크 불가.'
+    - 논문집은 Springer LNCS 사후 간행(2027년 1월경) + CVF Open Access 병행 게재.
+    - 모든 저자는 요청 시 리뷰어로 참여해야 하며 자동으로 리뷰어 풀에 추가될 수 있음.
+    - LLM으로 생성된 논문·허위 인용 금지(제한적 언어 교정만 허용), 숨은 프롬프트·보이지 않는 텍스트 삽입 시 데스크 리젝.
+    - 저자 목록은 등록 후 고정, 최소 1명 현장 발표 필수(1인 등록으로 최대 2편 커버). 기여로 주장한 데이터셋은 카메라레디까지 공개 필수.
+    - 등록(7/3)·제출(7/5)·보충자료(7/8) 마감 분리(2026, 23:59 GMT). 수상 논문은 IJCV 특집호 투고 초청(검색 결과 요약 기준).
+  acceptance_rate: '2024: 약 32% (270/839) — Springer LNCS 논문집 소개문 기준(검색 결과), 공식 채택률 발표는 미확인'
+  sources:
+    - https://accv2026.org/
+    - https://accv2026.org/submissions/author-guidelines/
+    - https://link.springer.com/978-981-96-0916-1
+3dv:
+  about: >-
+    3D 컴퓨터 비전·그래픽스 전문 국제 학회로 2013년부터 매년 열리며, IEEE Computer Society가 기술 후원(technically co-sponsored)한다. 2026년 밴쿠버 대회가 13회째로 177편의 논문이 채택되었으며,
+    단일 트랙 구두·포스터 발표와 산업 전시, 멘토링 세션으로 구성된 비교적 소규모의 커뮤니티 밀착형 학회다. 취득(acquisition)·모델링·분석·렌더링·응용의 5개 축으로 토픽을 구분하며 응용 영역에 medical, biology,
+    neuroscience를 명시한다.
+  topics:
+    - 'Acquisition: geometry, calibration, photogrammetry, SfM and SLAM'
+    - 'Acquisition: dense reconstruction and stereo, structured light and ToF sensors'
+    - 'Acquisition: physics-based vision and shape from X, computational photography'
+    - 'Modelling: shape representation, geometry processing, registration'
+    - 'Modelling: 4D dynamic shapes and scenes, generative and morphable models'
+    - 'Analysis: shape recognition and analysis, segmentation, motion and tracking'
+    - 'Analysis: body/face/gesture, dataset and benchmarking'
+    - 'Rendering and Interaction: neural rendering, image-based rendering, AR/MR'
+    - 'Applications: medical, biology, neuroscience'
+    - 'Applications: robotics, industrial, cultural heritage, digital fabrication'
+  features:
+    - 본문 8페이지 제한(그림·표 포함, 참고문헌 제외), 초록 4,000자 제한. 초과 시 리뷰 없이 거절.
+    - OpenReview 기반 이중 맹검 심사이며, 2026 대회는 리버틀 없음('there will be no rebuttal at 3DV 2026').
+    - 이중 투고 금지(20% 이상 중복 시 위반), arXiv·기술보고서는 출판물로 간주하지 않음. 보충자료(PDF/ZIP, 200MB)에 새 데이터셋 결과·개선된 방법 결과 포함 불가.
+    - '모든 마감은 23:59 Pacific Time, 연장 없음(2026: 논문 8/18, 보충자료 8/21, 통보 11/5). 최소 1명 저자 등록·발표 필수.'
+    - 최종 결정 전까지 SNS에 학회명을 언급하지 않는 조건으로 투고 논문 홍보 가능. 특허 공개 기준일은 학회 1주 전.
+    - Vision Systems Inc. 후원 최우수 논문상, Dissertation Award, 별도 마감의 Nectar Track 운영. 단일 트랙 구두·포스터, 산업 전시, 멘토링 세션 포함.
+    - '채택률이 주요 CV 학회보다 높은 편(2025: 약 40%, 제3자 집계).'
+  acceptance_rate: '2026: 177편 채택(공식, SFU 보도) / 404편 투고·43.8% (Voxel51 데이터셋 카드, 제3자); 2025: 약 40.2% (142/353) — Paper Copilot(제3자)'
+  sources:
+    - https://3dvconf.github.io/2026/call-for-papers/
+    - https://3dvconf.github.io/2026/author-guidelines/
+    - https://www.sfu.ca/fas/computing/news-events/news/2026/march/sfu-computing-science-helps-bring-the-global-3d-vision-research-.html
+    - https://papercopilot.com/statistics/3dv-statistics/
+miccai:
+  about: >-
+    MICCAI(Medical Image Computing and Computer Assisted Intervention)는 MICCAI Society가 주관하는 의료영상 컴퓨팅 및 컴퓨터 보조 중재 분야의 대표 국제학회로, 매년 개최된다.
+    2025년 3,677편, 2026년 4,601편(공식 수치 기준)의 투고가 몰린 대규모 학회이며, 2026년(제29회)은 프랑스 스트라스부르(9월 27일–10월 1일)에서 열렸다. 의료영상 분석(MIC)과 컴퓨터 보조 중재(CAI) 두 축의
+    방법론 연구자와 임상 연구자가 모이는 커뮤니티다.
+  topics:
+    - Image formation and reconstruction
+    - Image segmentation and anomaly detection
+    - Multimodal data integration
+    - Computer-aided diagnosis
+    - Trustworthy and generalizable AI
+    - Algorithmic fairness
+    - Surgical data science
+    - Image-guided robotic surgery
+    - Point-of-care imaging
+    - Teleradiology
+    - Medical Image Computing (MIC) / Computer Assisted Intervention (CAI) primary areas
+  features:
+    - 본문 최대 8페이지 + 참고문헌 최대 2페이지, MICCAI 전용 LNCS 템플릿 필수(여백·행간 변경 등 형식 위반 시 자동 desk reject)
+    - '완전 이중맹검(double-blind) 리뷰: 논문당 외부 리뷰어 평균 3명 + Area Chair 1–3명'
+    - '2단계 결정: 1차에서 15–20%는 early accept, 40–50%는 early reject, 나머지는 1주일 rebuttal 후 AC 3명이 독립 판정(새 실험·결과 추가 불가)'
+    - 투고 2주 전 abstract(intention-to-submit) 등록 필수, 본문 마감은 연장 없음; 공동저자 리뷰어 등록 요구
+    - 보충자료는 비디오(avi/mp4/wmv)만 허용, PDF 보충자료 불가(2026 기준)
+    - 채택 논문은 Springer LNCS로 출판되고 MICCAI Society 사이트에 오픈액세스 버전 공개
+    - '채택률은 약 27–29% 수준(2025: 1,027/3,677 ≈ 28%; 2026: 공식 발표 약 27%)'
+  acceptance_rate: '2025: 약 28% (1,027/3,677, MICCAI 2025 General Chair 보고); 2026: 약 27% (1,167편 채택 / 4,601편 투고, MICCAI 2026 공식 수치 인용 보도)'
+  sources:
+    - https://conferences.miccai.org/2026/en/CALL-FOR-PAPERS.html
+    - https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html
+    - https://conferences.miccai.org/2026/en/THE-MICCAI-REVIEW-PROCESS.html
+    - https://www.uni-bamberg.de/en/xai/news/artikel/2026-conference-miccai/
+    - https://miccai.org/index.php/publications/newsletters/december-winter-2025/memories-of-miccai-2025/
+midl:
+  about: >-
+    MIDL(Medical Imaging with Deep Learning)은 MIDL Foundation이 주관하는 의료영상 딥러닝 전문 국제학회로 매년 개최된다. 2026년(7월 8–10일)은 타이베이에서 현장 개최와 무료 온라인 스트리밍을
+    병행했다. 의료영상에 특화된 딥러닝 방법론 연구자 중심의 커뮤니티로, 채택 full paper는 PMLR로 출판된다.
+  topics:
+    - Segmentation, detection, and classification of medical images
+    - Learning-based image registration and reconstruction
+    - Clinical integration, workflow, and deployment
+    - Self-, semi-, and unsupervised representation learning
+    - Transfer learning, domain adaptation, learning with limited or noisy labels
+    - Generative AI and diffusion models for imaging
+    - Foundation and large vision-language models for healthcare
+    - Multimodal learning (imaging with text, omics, sensors, clinical data)
+    - Uncertainty estimation, calibration, and interpretability
+    - Federated, distributed, and privacy-preserving learning
+    - Safe, trustworthy, and responsible AI
+    - Validation and benchmarking across radiology, pathology, endoscopy, dermatology, ophthalmology
+  features:
+    - 'Main Track(방법론) full paper: 투고 시 최대 10페이지(참고문헌·감사·부록 제외), 카메라레디 최대 12페이지; 공식 MIDL LaTeX 템플릿 필수'
+    - '2026년 신설 Special Track(Validation Studies): 투고 최대 14페이지, 카메라레디 최대 16페이지, 별도 OpenReview 포털'
+    - Short paper(3페이지 이하, 참고문헌 제외)는 포스터/스포트라이트로 발표되며 proceedings에 포함되지 않음
+    - 'OpenReview 기반 단일맹검(single-blind) 리뷰: 리뷰어는 저자를 알지만 저자는 리뷰어를 모름'
+    - Full paper는 약 1주 rebuttal + 리뷰어 토론 기간 후 meta-review로 최종 결정
+    - 채택 full paper는 Proceedings of Machine Learning Research(PMLR)에 출판
+  acceptance_rate: null
+  sources:
+    - https://2026.midl.io/call-for-papers
+isbi:
+  about: >-
+    ISBI(IEEE International Symposium on Biomedical Imaging)는 IEEE Signal Processing Society(SPS)와 IEEE Engineering in Medicine and Biology
+    Society(EMBS)가 공동 주관하는 연례 심포지엄으로, 생물·의료영상의 수학적·알고리즘적·계산적 측면을 다룬다. 2026년(제23회)은 런던 ExCeL(4월 8–11일)에서 수백 명 규모로 열렸고, 2027년(5월 25–28일, 로잔
+    EPFL)은 첫 ISBI 이후 25주년이 되는 해다. 키노트·튜토리얼·챌린지·clinical day 등으로 구성된 프로그램을 운영한다.
+  topics:
+    - Image formation and reconstruction
+    - Computational and statistical image processing and analysis
+    - Segmentation
+    - Image quality assessment
+    - Biological and biomedical imaging (nano to macro)
+  features:
+    - '두 가지 투고 트랙: 4페이지 full paper(IEEE 형식, IEEE Xplore 출판)와 1페이지 abstract(마감이 더 늦음)'
+    - 4페이지 논문은 가을(2027년 기준 11월 2일) 마감, 1페이지 abstract는 이듬해 2월 마감 등 시차가 큼
+    - 채택 논문은 발표 저자가 등록·현장 발표해야 IEEE Xplore에 게재(2025 카메라레디 정책)
+    - 메인 트랙 외 워크숍 논문, 챌린지 논문, 튜토리얼·스페셜세션·데모 제안 트랙 운영; 챌린지 논문은 EDAS로 리뷰 전달
+    - 2025년(휴스턴) 채택 논문 631편 중 190편 구두 발표
+  acceptance_rate: '2026: 51.0% (893편 채택; ISBI 2026 Program PDF 통계 — 검색 스니펫으로만 확인, 원문 PDF 직접 열람 불가)'
+  sources:
+    - https://biomedicalimaging.org/2026/
+    - https://biomedicalimaging.org/2027/
+    - https://signalprocessingsociety.org/newsletter/2025/11/isbi-2026-london-where-machines-learn-see-body-and-humans-learn-what-comes-next
+    - https://warwick.ac.uk/fac/cross_fac/tia/news/highlights_from_isbi
+    - https://confcats-event-sessions.s3.us-east-1.amazonaws.com/isbi26/uploads/isbi26-cfp_web-05.pdf
+    - https://confcats-event-sessions.s3.us-east-1.amazonaws.com/isbi26/uploads/ISBI_2026_Program_v11b.pdf
+ipmi:
+  about: >-
+    IPMI(Information Processing in Medical Imaging)는 2년마다 열리는 의료영상 컴퓨팅 방법론 학회로, 약 58년 전통을 가진 분야 최고(premier) 포럼 중 하나로 소개된다. 2027년 제30회는 캐나다
+    퀘벡 오르포드의 Jouvence 센터(6월 27일–7월 2일)에서 열리며 예상 참가자는 약 120명으로, 참가자 전원이 함께 숙박·식사하는 retreat 형식이다. 채택 논문은 Springer LNCS로 출판된다.
+  topics:
+    - Mathematical foundations and computational methods
+    - Image formation and reconstruction
+    - Machine learning and intelligence
+    - Clinical applications and translation
+    - Visualization and human-AI interaction
+  features:
+    - 본문 12페이지(참고문헌 제외) Springer LNCS 형식, 보충자료 일체 불허; 형식 위반 시 desk reject
+    - 이중맹검(double-blind) 리뷰; abstract 마감 1주 후 full paper 마감(연장 없음)
+    - 발표 후 시간제한 없는 Q&A(Unlimited Q&A)가 학회의 핵심
+    - '참가자 약 120명 규모의 소규모 retreat: 숙박·식사 포함 all-inclusive 등록'
+    - 저자는 반드시 현장 참석, 채택 논문 1편당 1건의 저자 등록 필요
+    - 채택 논문은 Springer LNCS 출판, 우수 논문은 Medical Image Analysis(MedIA) 특집호 확장 초청(2027, 출판사 절차 진행 중)
+  acceptance_rate: null
+  sources:
+    - https://2027.ipmi-conf.org/
+embc:
+  about: >-
+    EMBC는 IEEE Engineering in Medicine and Biology Society(EMBS)의 연례 플래그십 학회로, 1979년 덴버에서 첫 회가 열렸고 평균 참가자는 약 3,000명이다. 2026년 제48회는 캐나다 토론토
+    Metro Toronto Convention Centre(7월 26–30일)에서 열리며 80개국 이상에서 투고된다. 생체신호처리, 의료영상, 신경공학, 웨어러블 센서 등 의공학 전 분야를 아우르는 광범위한 커뮤니티다.
+  topics:
+    - Biomedical Signal Processing
+    - Biomedical Imaging and Image Processing
+    - Bionanotechnology & BioMEMS (BNM)
+    - Cardio-Pulmonary Systems and Physiological Engineering
+    - Neural and Rehabilitation Engineering
+    - Therapeutic & Diagnostic Systems and Technologies
+    - Wearable Biomedical Sensors and Systems
+    - Biorobotics and Biomechanics
+    - Biomedical & Health Informatics
+    - 'Biomedical Engineering for Society: Educating Innovators and Advancing Health Equity'
+    - 'From Fashion to Function: User-Centered Smart Textiles for Healthcare'
+  features:
+    - Full Contributed Paper(2026 템플릿 기준 4–7페이지)와 1-Page Research Poster Paper 두 트랙
+    - Full paper가 높은 점수로 불채택되면 1페이지 포스터 트랙으로 전환 기회 제공
+    - 단일맹검(single-blind) 리뷰, 테마·키워드 기반 리뷰어 배정
+    - 채택 full paper는 현장 발표 후 IEEE Xplore 및 PubMed/MEDLINE 색인 대상; 1페이지 논문은 출판·색인 불가
+    - 리뷰 점수 기준 상위 약 7% 투고는 IEEE TBME 특집호 확장 투고 초청
+    - 등록 1건당 채택 논문 최대 2편, 논문당 저자 최대 35명
+  acceptance_rate: null
+  sources:
+    - https://embc.embs.org/2026/
+    - https://embc.embs.org/2026/papers/
+    - https://embs.org/events/sponsorship
+spie-mi:
+  about: >-
+    SPIE Medical Imaging은 SPIE(국제광공학회)가 매년 2월에 개최하는 의료영상 전문 심포지엄으로, 영상처리·물리·컴퓨터 보조 진단·지각·영상유도 시술 등 9개 세부 컨퍼런스로 구성된다. 2027년은 캐나다 밴쿠버(2월
+    14–18일)에서 열리며, abstract 마감은 2026년 8월 5일이었다. 영상 물리·하드웨어부터 CAD·병리까지 기술개발과 임상 평가 연구자가 함께 모이는 커뮤니티다.
+  topics:
+    - Physics of medical imaging
+    - Medical image processing
+    - Computer-aided diagnosis
+    - Image perception and observer performance
+    - Image-guided procedures
+    - Digital and computational pathology
+    - Ultrasonic imaging and tomography
+    - Imaging informatics
+    - AI/ML application track (artificial intelligence, machine learning, deep learning)
+  features:
+    - 'abstract 선투고 방식: 기술심사용 abstract(200–300단어) + 프로그램용 요약(50–150단어) + 심사 전용 2–4페이지 보충 PDF 제출'
+    - 학회 chair/editor가 기술적 가치와 적합성을 심사하고 구두/포스터 배정 결정
+    - 채택 후 4페이지 이상 technical manuscript를 학회 약 3주 전까지 제출해야 Proceedings of SPIE(SPIE Digital Library)에 출판
+    - 현장 발표되고 기한 내 제출된 원고만 출판; 구두 발표는 녹화되어 슬라이드와 함께 Proceedings에 게재
+    - abstract 마감(8월)에서 학회(2월)까지 약 6개월, 원고 마감은 학회 직전 1월
+  acceptance_rate: null
+  sources:
+    - https://www.spie.org/conferences-and-exhibitions/medical-imaging/presenters/abstract-submission-guidelines
+    - https://www.electrooptics.com/event/spie-medical-imaging-2027
+chil:
+  about: >-
+    CHIL(Conference on Health, Inference, and Learning)은 Association for Health Learning and Inference(AHLI)가 주관하는 의료 머신러닝 학회로, 2022년부터 AHLI
+    공식 학회이며 매년 개최된다. 2026년 제7회는 시애틀 아동연구소(6월 29–30일)에서 열렸고 PMLR Volume 333에 40편의 논문이 수록되었다. ML 연구자, 임상의, 산업계, 정책 전문가가 함께 모이는 비교적 소규모의 건강 AI
+    커뮤니티다.
+  topics:
+    - Models and Methods (2024 CFP 트랙)
+    - Applications and Practice (2024 CFP 트랙)
+    - Policy, Impact and Society (2024 CFP 트랙)
+    - AI/ML for clinical healthcare, public health, health economics, informatics
+  features:
+    - OpenReview 기반 투고, 익명화된 PDF 제출(2024 CFP)
+    - 저자 응답(author response) 기간과 리뷰어 토론 기간을 모두 운영(2024 CFP)
+    - '채택 논문은 Proceedings of Machine Learning Research(PMLR)에 출판(2026: Vol. 333, 40편)'
+    - 본회의 외 Research Roundtables(주제별 30분 토론 세션) 등 토론 중심 프로그램 운영(2025)
+    - 참가자는 CS·통계·역학·의학·공공정책 등 다학제 구성
+  acceptance_rate: null
+  sources:
+    - https://proceedings.mlr.press/v333
+    - https://physionet.org/news/post/chil-conference-call-for-papers-1/
+    - https://arxiv.org/html/2510.15217v2
+    - https://ahli.cc/
+icip:
+  about: >-
+    ICIP(IEEE International Conference on Image Processing)는 IEEE Signal Processing Society의 영상처리·비전·이미징 분야 플래그십 학회로 1994년부터 매년 개최되며, 100개국
+    이상에서 1,000명 이상이 참가한다. 2026년 제33회는 핀란드 탐페레(9월 13–17일)에서 열린다. 영상처리 전반을 다루는 대규모 커뮤니티로 100개 이상의 기술 세션, 위성 워크숍, 스페셜 세션, 그랜드 챌린지를 운영한다.
+  topics:
+    - Image processing
+    - Computer vision
+    - Imaging
+    - Special sessions
+    - Satellite workshops
+    - Grand challenges
+  features:
+    - 정규 논문 최대 5페이지 + 참고문헌 전용 1페이지, IEEE Xplore 출판
+    - 'OJSP(IEEE Open Journal of Signal Processing) 트랙: 8+1페이지, 학회와 동일 일정으로 심사, 오픈액세스 저널 출판 후 학회 발표'
+    - 이중맹검(double-anonymous) 리뷰 + 저자 rebuttal 기간
+    - 1페이지 Work-in-Progress abstract 트랙(5월 마감) 및 최근 SPS 저널 채택 논문 발표 트랙 운영
+    - 상위 논문은 Spotlight 세션에 선정되고 IEEE TIP/TCI 확장판 신속 심사 기회 제공
+    - 'Open Preview: 채택 논문을 학회 전 IEEE Xplore에서 무료 공개; 엄격한 no-show 정책(미발표 시 미출판)'
+  acceptance_rate: null
+  sources:
+    - https://2026.ieeeicip.org/
+    - https://2026.ieeeicip.org/call-for-papers-and-abstracts/
+    - https://ieeeicip.org/
+icassp:
+  about: >-
+    ICASSP(IEEE International Conference on Acoustics, Speech and Signal Processing)는 IEEE Signal Processing Society의 플래그십 학회로 1976년 필라델피아에서
+    시작해 매년 열린다. 2024년 서울 4,403명, 2025년 하이데라바드 약 4,000명이 참가하고 2025년 채택 논문이 3,393편에 이르는 신호처리 분야 최대 규모 학회이며, 2026년 제51회는 바르셀로나(5월 4–8일), 2027년
+    제52회는 토론토(5월 16–21일)에서 열린다. 오디오·음성·영상·의료영상·머신러닝 등 신호처리 전 분야 커뮤니티가 모인다.
+  topics:
+    - Biomedical Imaging & Signal Processing
+    - Computational Imaging
+    - Image, Video & Multidimensional Signal Processing
+    - Machine Learning and Generative AI
+    - Computer Vision
+    - Compressive Sensing, Sparse Modeling
+    - Signal Processing Theory & Methods
+    - Sensor Array & Multichannel SP
+    - Audio & Acoustic Signal Processing
+    - Speech & Language Processing
+    - Signal Processing over Graphs
+    - Multimedia Signal Processing
+    - Remote Sensing & Signal Processing
+    - Applied Signal Processing Systems
+  features:
+    - 정규 논문 기술 본문 최대 4페이지 + 참고문헌 전용 5페이지(총 5페이지 초과 불가)
+    - 단일맹검(single-anonymous) 리뷰, 논문당 최소 3명 리뷰어, 1주 이상의 선택적 rebuttal(TC/Area Chair만 열람)
+    - 12개 Technical Committee가 분야별로 심사 담당
+    - 'OJSP 특별 트랙(8+1페이지): 학회와 동일 심사 일정, 저널 출판 후 학회 발표(proceedings 미포함)'
+    - 'Open Preview: 학회 30일 전부터 IEEE Xplore에서 proceedings 무료 공개'
+    - IEEE SPS/EURASIP 저널 채택 논문의 발표 트랙 운영(재심사 없음, proceedings 미포함)
+    - 채택 논문은 저자 중 1인이 반드시 현장 발표; 등록 미완료 시 proceedings에서 자동 철회
+  acceptance_rate: null
+  sources:
+    - https://2026.ieeeicassp.org/call-for-papers/
+    - https://2026.ieeeicassp.org/editorial-policies/
+    - https://2026.ieeeicassp.org/?p=4445
+    - https://2027.ieeeicassp.org/call-for-papers/
+    - https://en.wikipedia.org/wiki/International_Conference_on_Acoustics,_Speech,_and_Signal_Processing
+iccp:
+  about: >-
+    ICCP(IEEE International Conference on Computational Photography)는 2009년부터 매년 열리는 계산 이미징·계산 사진학 전문 학회로, IEEE Computer Society의 PAMI
+    기술위원회와 연계되어 있다. 2026년은 프린스턴(7월 13–15일), 2027년은 미국 메릴랜드 College Park(8월 2–4일)에서 열린다. 광학·센서·조명 하드웨어부터 물리기반 렌더링과 머신러닝 결합까지 다루는 소규모 전문
+    커뮤니티로, 의학·생물학 응용 이미징도 포함한다.
+  topics:
+    - High-performance imaging
+    - Computational cameras, illumination, and displays
+    - Advanced image and video processing
+    - Integration of imaging, physics, and machine learning
+    - Structured light and time-of-flight imaging
+    - Appearance, shape, and illumination capture
+    - Computational optics (wavefront coding, digital holography, compressive sensing)
+    - Sensor and illumination hardware
+    - Imaging models and limits
+    - Physics-based, neural, and differentiable rendering
+    - 'Applications: mobile imaging, scientific imaging, medicine and biology, AR/VR'
+  features:
+    - 이중맹검(double-blind) 리뷰 + 1차 리뷰 후 rebuttal(2025 CFP)
+    - 단일 심사로 IEEE TPAMI 특집호(완전히 새로운 archival 수준 연구) 또는 ICCP Proceedings 중 하나로 채택 결정(2025 CFP)
+    - 두 트랙 채택 논문 모두 구두 발표(2025 CFP)
+    - '별도 Posters & Demos 트랙: 기발표 연구·late-breaking 결과 포스터와 동작 시연, 채택 논문에는 포스터 공간 보장(2026)'
+    - '투고 마감 연장 없음(2025: 4월 9일 PT 고정)'
+    - 학회와 연계된 ICCP Summer School 운영
+  acceptance_rate: null
+  sources:
+    - https://iccp2027.iccp-conference.org/
+    - https://iccp2026.iccp-conference.org/
+    - https://www.f4news.com/2025/02/24/international-conference-on-computational-photography-iccp-2025-call-for-papers
+    - https://www.f4news.com/2026/04/26/iccp-2026-posts-call-for-posters-demos-registrations-open/
+pw-bios:
+  about: >-
+    SPIE Photonics West 안에서 열리는 생의학광학/바이오포토닉스 심포지엄(BiOS)으로, SPIE가 매년 1월 말~2월 초 샌프란시스코 Moscone Center에서 개최한다. Photonics West 전체는 약 24,000명
+    참가, 100개 이상 컨퍼런스, 4,500편 이상의 발표(2027 예고 기준) 규모이며, BiOS는 그중 바이오포토닉스·생의학광학·이미징을 다루는 트랙으로 'the most comprehensive biophotonics conference
+    in the field'로 소개된다. 2027년 Photonics West는 1월 30일~2월 4일, BiOS Expo는 1월 30~31일이다.
+  topics:
+    - Neurophotonics, Neurosurgery, and Optogenetics
+    - Clinical and Translational Neurophotonics
+    - 'Photons Plus Ultrasound: Imaging and Sensing'
+    - Multiphoton Microscopy in the Biomedical Sciences
+    - Optical Coherence Tomography
+    - Therapeutics and Diagnostics
+    - Tissue Optics
+    - Nanophotonics (biomedical)
+    - New imaging modalities
+  features:
+    - >-
+      제출은 초록(abstract)만 - SPIE 2025 플라이어 기준 기술심사용 250단어 초록 + 프로그램용 100단어 요약, 2026 플라이어에서는 200~300단어 기술초록 + 50~150단어 요약으로 변경(검색 스니펫 기준,
+      컨퍼런스별로 상이)
+    - 채택 후 SPIE Proceedings 원고(manuscript)를 별도 제출하는 구조 - 발표 후 원고 제출, 채택 여부는 컨퍼런스 체어가 결정
+    - Photonics West 6개 기술 분야 중 하나이며, BiOS Expo(1월 30~31일)와 Photonics West 전시회(2월 2~4일, 1,400개 이상 출품사)가 병행
+    - >-
+      신경광학 관련 컨퍼런스가 둘 이상 분리 운영됨 - 'Neurophotonics, Neurosurgery, and Optogenetics'와 'Clinical and Translational Neurophotonics'(2026년 1월
+      17~19일 개최 확인)
+    - Hot Topics 및 plenary 세션이 주간 중 진행(보도자료 기준)
+    - >-
+      2027 BiOS 초록 마감일은 접근 가능한 페이지에서 확인 불가(spie.org 차단) - 타 Photonics West 컨퍼런스 LA303은 2026-07-22 마감으로 공개되어 있어 BiOS도 2026년 중반 마감 가능성이 있으나
+      미확인
+  acceptance_rate: null
+  sources:
+    - https://via.tt.se/pressmeddelande/4596753/international-optics-and-photonics-community-invited-to-spie-photonics-west-2027?lang=en
+    - https://www.laserfocusworld.com/events/event/55389685/spie-the-intl-society-for-optics-photonics-spie-bios-2027
+    - https://www.gophotonics.com/events/details/1173-spie-bios-expo-2027
+    - https://www.photonics.com/Articles/Photonics-West-Prepares-for-2026-Showcase/p1/a71728
+    - https://www.proceedings.com/content/085/085196webtoc.pdf
+    - https://www.proceedings.com/content/085/085213webtoc.pdf
+    - https://spie.org/documents/cfp-flyers/PW25/BO603call.pdf
+    - https://lux.spie.org/conferences-and-exhibitions/photonics-west/presenters/abstract-submission-guidelines
+    - https://en.wikipedia.org/wiki/Photonics_West
+cleo:
+  about: >-
+    CLEO(Conference on Lasers and Electro-Optics)는 Optica, IEEE Photonics Society, American Physical Society가 공동 후원하는 레이저·전기광학 분야의 대표 국제학회로
+    매년 5월 미국에서 열린다. 29개 토픽 카테고리에 걸쳐 2,000편 이상의 기술 발표가 이루어지며, 기초과학부터 산업 응용까지 포괄한다. 2027년은 5월 2~7일 Long Beach Convention Center(캘리포니아)에서 개최되고
+    전시회는 5월 4~5일이다.
+  topics:
+    - Fundamental Science
+    - Science & Innovations
+    - Applications & Technology
+    - Quantum computing / quantum technologies
+    - Advanced imaging technologies
+    - Laser science
+    - Photonics / electro-optic technologies
+  features:
+    - '제출 형식: 35단어 초록 + 2페이지 요약(summary), 요약은 채택 시 Technical Digest에 수록(CLEO 제출 안내 페이지 스니펫 기준)'
+    - '''comprehensive, peer-reviewed'' 기술 세션 - 2026년 프로그램위원회가 ''thousands of submitted abstracts''를 심사했다고 IEEE Photonics Society가 발표'
+    - Postdeadline paper 제도 있음 - 'strictly oral'(스니펫 기준)
+    - 세 개의 핵심 영역(Fundamental Science / Science & Innovations / Applications & Technology)으로 초청 연사와 프로그램이 구성됨
+    - Technical Conference(5/2~7)와 별도로 2일간 전시회(5/4~5) 병행
+    - '2027 제출 마감: 공식 사이트에서는 ''Now Accepting Submissions''만 확인, 집계 사이트(cantonfair.net)에서 2026-11-23으로 표기 - 공식 확인 필요'
+  acceptance_rate: null
+  sources:
+    - https://www.cleoconference.org/
+    - https://www.cleoconference.org/home/about/
+    - https://www.cleoconference.org/home/submissions/submit-electronically
+    - https://ieeephotonics.org/announcements/cleo-2026-promotes-breakthroughs-in-research-and-applied-innovations/
+    - https://cantonfair.net/event/34302-cleo-conference-and-exhibition
+optica-biophotonics:
+  about: >-
+    Optica Biophotonics Congress는 Optica(구 OSA)가 매년 4월 미국에서 개최하는 바이오포토닉스 전 분야 학회로, 과거 Optica의 Biomedical Optics(BIOMED) 및 Optics in Life
+    Sciences 미팅의 주제들을 하나의 통합 프로그램으로 묶은 것이다. 'a leading international forum covering the full spectrum of biophotonics'로 소개되며 기술 세션, 산업 패널,
+    포스터, postdeadline 논문, 네트워킹으로 구성된다. 2027년은 4월 18~21일 덴버(Embassy Suites by Hilton Denver Downtown), 2026년은 4월 26~29일 포트로더데일에서 열렸다.
+  topics:
+    - 'Bio-Optics: Design and Application'
+    - Clinical and Translational Biophotonics
+    - Novel Techniques in Microscopy
+    - Optical Manipulation and Its Applications
+    - Optical Molecular Probes, Imaging and Drug Delivery
+    - Optics and the Brain (Brain)
+    - '  - Optics in the human central nervous system and peripheral nerves'
+    - '  - Rethinking scan patterns and shaping light'
+    - '  - Structural and super-resolution techniques'
+    - '  - Analyzing circuitry, network function and information processing'
+    - '  - Optogenetics, genetic encoding and novel probes'
+    - '  - Scattering, clearing and wavefront engineering'
+    - '  - Brain physiology and disease'
+    - '  - Functional brain imaging and neurodevelopment'
+    - '  - Big data tools / Optical hybrids'
+  features:
+    - '제출 형식: 35단어 초록 + 2페이지 요약(summary), 요약은 Technical Digest로 Optica Publishing Group 플랫폼에 게재(Ei Compendex, Scopus, Google Scholar 색인)'
+    - '''All paper submissions are carefully peer-reviewed'' - 발표 유형은 Oral Only / Poster Only / Oral or Poster Acceptable 중 선택, 최종 결정은 위원회'
+    - '2027 마감: 2026-12-08 12:00 미동부시간(UTC-5), 마감 후 수정 불가'
+    - 신경광학 커뮤니티는 'Optics and the Brain' 카테고리(과거 BRAIN 토피컬 미팅)로 참여 - 10개 세부 주제가 공식 카테고리에 명시
+    - 2026년까지는 Translational / Microscopy / OCT / OT&S / Brain 5개 토피컬 미팅 체제였고 2027년부터 6개 토픽 카테고리 체제로 재편
+    - 발표 녹화는 종료 후 최대 60일간 Optica 웹사이트에 공개, postdeadline papers 세션 포함
+  acceptance_rate: null
+  sources:
+    - https://www.optica.org/events/congress/biophotonics_congress/about/
+    - https://www.optica.org/events/congress/biophotonics_congress/submit_papers/
+    - https://www.optica.org/events/congress/biophotonics_congress/program/topic_categories/
+ecbo:
+  about: >-
+    European Conferences on Biomedical Optics(ECBO)는 Optica와 SPIE가 공동 후원하는 유럽 최대 생의학광학 학회로, 2년마다(홀수 해 6월) 뮌헨 ICM에서 열리는 World of Photonics
+    Congress의 일부로 개최되며 LASER World of PHOTONICS 전시회와 병행된다. 광학·포토닉스를 의료 및 생의학 문제에 적용하는 연구자·엔지니어·임상의가 모이며, 2027년은 6월 20~24일 뮌헨에서 열린다. World of
+    Photonics Congress 2025 전체는 참가자 3,500명, 구두·포스터 발표 2,670편 규모였다.
+  topics:
+    - 'ECBO 1: Translational Biophotonics: Diagnostics and Therapeutics'
+    - 'ECBO 2: Diffuse Optical Spectroscopy and Imaging'
+    - 'ECBO 3: Optical Systems for Mechanical and Biophysical Investigation (OMBI)'
+    - 'ECBO 4: Advances in Microscopic Imaging'
+    - 'ECBO 5: Optoacoustic Methods and Applications in Biophotonics'
+    - 'ECBO 6: Optical Coherence Imaging Techniques and Imaging in Scattering Media'
+  features:
+    - '2년 주기(biennial) - World of Photonics Congress(2027: 6/20~25)와 LASER World of PHOTONICS 전시회(2027: 6/22~25)와 동시 개최'
+    - '2027 초록 마감: 2027-01-27 23:55 미동부시간(UTC-5) (Optica 제출 페이지 기준)'
+    - >-
+      Optica와 SPIE 공동 후원 - 발표 논문은 SPIE Digital Library와 Optica Publishing Group 양쪽에 게재(SPIE 안내 스니펫 기준), Optica 측에서는 'Technical Digest
+      papers'로 제공
+    - 6개 서브컨퍼런스(ECBO 1~6) 체제(2025년 기준 토픽 목록) - 확산광 분광/이미징(ECBO 2), 광음향(ECBO 5) 등 신경광학 관련 트랙 포함
+    - 같은 Congress 안에 CLEO/Europe-EQEC, Optical Metrology, Digital Optical Technologies, LiM 등이 함께 열려 교차 참석 가능
+  acceptance_rate: null
+  sources:
+    - https://www.optica.org/events/topical_meetings/european_conferences_biomedical_optics/about/
+    - https://optica.org/events/topical_meetings/european_conferences_biomedical_optics/program/scope_and_topics/
+    - https://www.optica.org/events/topical_meetings/european_conferences_biomedical_optics/submit_papers/
+    - https://world-of-photonics.com/en/congress
+    - https://lux.spie.org/conferences-and-exhibitions/european-conferences-on-biomedical-optics/programme/conferences
+spie-optics-photonics:
+  about: >-
+    SPIE Optics + Photonics는 SPIE가 매년 8월 샌디에이고 컨벤션센터에서 개최하는 북미 최대의 다학제 광학·포토닉스 학회('the largest international, multidisciplinary optical
+    sciences and technology meeting in North America')로, 기술 프로그램·산업 전시회·네트워킹으로 구성된다. 제3자 집계에서는 참가자 약 4,000명 규모로 나타난다. 광공학, 나노포토닉스, 양자기술, 유기
+    포토닉스, 천문 계측 등을 폭넓게 다루며 생의학광학은 주요 트랙이 아니다.
+  topics:
+    - Nanoscience + Engineering (Applications)
+    - Optical Engineering + Applications
+    - Organic Photonics + Electronics
+    - Nano-photonics
+    - Quantum technologies / quantum science
+    - Imaging
+    - Astronomical instrumentation
+  features:
+    - 세 개의 프로그램(Nanoscience + Engineering / Optical Engineering + Applications / Organic Photonics + Electronics)으로 구성(검색 결과 기준)
+    - SPIE 방식의 초록 제출 후 SPIE Proceedings 원고 제출 구조(Photonics West와 동일 체계로 추정되나 O+P 2027 공식 안내는 접근 불가)
+    - 산업 전시회 병행 - 2026년 전시는 8월 25~27일(제3자 목록 기준)
+    - 2027년 샌디에이고 개최 예정이나 날짜 'TBD', 초록 마감 미공개(2025년은 5월 7일 마감이었음)
+    - 2026년 개최일은 자료마다 상이(8/17~21 vs 8/23~27) - 공식 확인 필요
+  acceptance_rate: null
+  sources:
+    - https://starbridge.ai/conferences/spie-optics-photonics-2026
+    - https://www.showsbee.com/fairs/90242-SPIE-Optics-Photonics-2027.html
+    - https://www.gophotonics.com/events/details/1128-spie-optics-photonics-2026
+    - https://spie.org/conferences-and-exhibitions/optics-and-photonics/presenters
+sfn:
+  about: >-
+    Society for Neuroscience(SfN, 1969년 설립, 회원 약 3만 5천~3만 7천 명)가 매년 10~11월 미국 주요 도시에서 개최하는 세계 최대 신경과학 학회 'Neuroscience 20xx'이다. 2024년 시카고 대회
+    참가자는 22,359명이었다. 2026년 대회는 11월 14~18일 워싱턴 D.C. Walter E. Washington Convention Center에서 열리며, 11월 5일~12월 20일 가상 구성요소가 병행된다.
+  topics:
+    - 'Theme A: Development'
+    - 'Theme B: Neural Excitability, Synapses, and Glia'
+    - 'Theme C: Neural Aging and Degeneration'
+    - 'Theme D: Neuroimmunity, Neurovasculature, and Neural Injury'
+    - 'Theme E: Sensory Systems'
+    - 'Theme F: Motor Systems'
+    - 'Theme G: Integrative Physiology and Behavior'
+    - 'Theme H: Motivation and Emotion'
+    - 'Theme I: Cognition'
+    - 'Theme J: Techniques'
+    - 'Theme K: History, Education, and Society'
+  features:
+    - '초록(abstract)만 제출, 정규 초록 접수 기간은 짧음(2026: 5/27~6/10 오후 5시 EDT), 늦은 초록(late-breaking)은 9/8~15 또는 2,500편 상한 도달 시까지'
+    - SfN 정회원이 제출자(submitting author)로 서명해야 하며, 1인은 과학 초록 1편 + Theme K 초록 1편에만 발표자(presenting author)로 참여 가능
+    - '초록당 환불 불가 수수료: 정규 $175, late-breaking $260'
+    - '발표 형식: Nanosymposium(구두), Poster, Theme K Poster - 정규 초록은 채택 총수 상한 없음, 규칙 위반 시 Program Committee가 거절'
+    - 광학 신경영상·neurophotonics 연구는 주로 Theme J(Techniques) 또는 해당 생물학 주제 테마로 제출
+    - 대규모 산업 전시회 병행(Exhibitor Prospectus 운영)
+  acceptance_rate: null
+  sources:
+    - https://www.sfn.org/meetings/neuroscience-2026
+    - https://www.sfn.org/meetings/neuroscience-2026/call-for-abstracts
+    - https://www.sfn.org/meetings/neuroscience-2026/call-for-abstracts/rules-for-abstract-submissions
+    - https://www.sfn.org/meetings/neuroscience-2026/themes-and-topics
+    - https://en.wikipedia.org/wiki/Society_for_Neuroscience
+ohbm:
+  about: >-
+    Organization for Human Brain Mapping(OHBM, 1995년 파리에서 설립)은 인간 뇌의 해부학적·기능적 조직을 연구하는 뉴로이미징 학회로, 매년 6월 대륙을 바꾸며 연례 학술대회를 연다(최근 참가자 약
+    2,500~3,000명). 2026년은 6월 14~18일 프랑스 보르도, 2027년은 6월 26~30일 캐나다 토론토 Metro Toronto Convention Centre에서 개최된다. 신경과·정신과 임상의부터 물리·공학·소프트웨어·통계
+    분야까지 회원이 분포한다.
+  topics:
+    - Poster Abstracts
+    - Symposia
+    - Educational Courses
+    - Roundtable Discussions
+    - Registered Reports (new for 2027)
+    - SIG, Chapter, and Committee Activities
+  features:
+    - 초록 650단어 상한(Introduction/Methods/Results/Conclusion 4개 섹션 필수, 그림 캡션 포함), 그림 최대 2개(각 2MB)
+    - 일반 투고는 'Poster Abstracts' 카테고리 - 구두 발표는 Symposia 등 별도 제안 형태, 참여는 Educational Course 1개 + 과학 세션 1개로 제한
+    - 초록 제출 수수료 $45(환불 불가), UNESCO 기준 적격 국가 제출자는 면제 가능; 발표자는 현장 참가 의무
+    - '2027 일정: 11/2/2026 제출 개시 - 12/14/2026 마감 - 2027년 2월 채택 통보 - 2027년 1월 등록 개시'
+    - 2027년부터 Registered Reports 신설(Stage 1 통보 2027-01-15, 최종 결정 2027-05-07)
+    - OHBM 자체 출판 플랫폼 Aperture Neuro 운영, 한국 챕터(Korea Chapter) 존재
+  acceptance_rate: null
+  sources:
+    - https://humanbrainmapping.org/ohbm-2027/
+    - https://humanbrainmapping.org/ohbm-annual-meeting-faq/
+    - https://www.humanbrainmapping.org/
+    - https://en.wikipedia.org/wiki/Organization_for_Human_Brain_Mapping
+fens:
+  about: >-
+    FENS Forum of Neuroscience는 유럽신경과학회연합(FENS; 32~33개국 42~43개 학회, 회원 22,000명 이상)이 1998년부터 2년마다(짝수 해 7월) 개최하는 유럽 최대 국제 신경과학 학회다. 참가자 규모는
+    2022년 파리 7,890명, 2024년 비엔나 7,155명이었다. 2026년은 7월 6~10일 바르셀로나(스페인신경과학회 공동), 2028년은 7월 8~12일 영국 글래스고(British Neuroscience Association 주최)에서
+    열린다.
+  topics: []
+  features:
+    - 2년 주기(짝수 해) - 개최국 학회와 공동 주최(2026 스페인, 2028 BNA/글래스고)
+    - '초록 제출 마감이 개최 5개월 전(2026: 2/5, 여행지원금·조기등록과 동일 마감), 늦은 초록(late-breaking) 마감 2026-04-27'
+    - 포스터 중심 프로그램('Poster Presentations and Guidelines'), 2024년에는 ePoster 운영
+    - 전시회·스폰서 프로그램 병행(전시 플로어플랜, 스폰서 시어터 세션)
+    - 테마/토픽 목록은 공식 사이트 'Themes and Topics' 메뉴에 있으나 본 조사에서 본문 확인 불가
+  acceptance_rate: null
+  sources:
+    - https://fensforum.org/
+    - https://fensforum.org/?p=5511
+    - https://fens.org/news-activities/news/fens-forum-2028-location-announcement
+    - https://www.bordeaux-neurocampus.fr/?p=195173
+fom:
+  about: >-
+    Focus on Microscopy(FOM)는 1988년 시작된 광학현미경 분야의 연례 국제학회로, 네덜란드의 FOM foundation이 현지 기관과 공동으로 매년 부활절 직전 주에 개최지를 바꾸며 연다(2025 타이베이, 2026 스톡홀름,
+    2027 오사카). 컨포컬·다광자 현미경의 3차원 영상 기술에서 출발해 초고해상도, 광시트, 적응광학, AI 등 현미경 혁신 전반을 다루며, 개발자와 사용자가 만나는 장으로 기술 전시회가 함께 열린다.
+  topics:
+    - Theory and practice of confocal and multiphoton-excitation microscopy
+    - Super-resolution microscopy
+    - AI in microscopy
+    - 3D and 4D live cell and tissue imaging
+    - Adaptive optics for microscopy
+    - Light sheet microscopy
+    - Phase/interference based microscopies
+    - OCT, holography, endoscopy
+    - 'Advanced fluorescence imaging/spectroscopy: FRET, FRAP, FLIM, FCS, SOFI'
+    - New fluorescent probes, proteins, quantum dots, single molecule imaging
+    - Clearing and expansion techniques
+    - 'Coherent non-linear microscopies: SHG, THG, SFG, CARS'
+    - Multi-dimensional fluorescence and Raman spectroscopy imaging
+    - Fast acquisition, automated and high-content microscopy
+    - 3D image processing and visualization for multidimensional data
+  features:
+    - 1페이지 PDF 초록 제출(2004년 이후 모든 1페이지 초록이 온라인 FOM 아카이브에 영구 보존·검색 가능), 별도 proceedings 없음
+    - 20분 구두 발표 또는 포스터 선택 요청 가능하나 'Oral presentations can not be guaranteed' - 초록선정위원회와 조직위가 최종 결정, 2027년은 2월 초 통보
+    - 연례 개최, 매년 개최지 변경(부활절 전 주), FOM foundation + 현지 학회/대학 공동 조직
+    - '플레너리 40분·병렬 세션 20분(토론 포함), 포스터 세션 2회(2027: 3/22, 3/23), 과거 flash poster 발표 운영'
+    - 현미경 기업 기술 전시회 동반('accompanied by a technical exhibition'), 2027 메인 스폰서 Nikon
+  acceptance_rate: null
+  sources:
+    - https://www.focusonmicroscopy.org/
+    - https://www.focusonmicroscopy.org/2027-submit/?event_id=11725
+    - https://www.focusonmicroscopy.org/2027-about/?event_id=11725
+    - https://www.becker-hickl.com/events/focus-on-microscopy-2026/
+abc:
+  about: >-
+    SPIE Advanced Biophotonics Conference(SPIE ABC)는 한국광학회(OSK)가 주최(host)하고 SPIE가 조직위원회를 운영하는 바이오포토닉스 국제학회로, 한국에서 가을에 열린다(2021 부산 11/4~6,
+    2023 제주 11/1~4, 2025 제주 Sono Belle 10/29~11/1). 2025년 대회는 KAIST 정기훈 교수(conference chair)·장재범 교수(event chair)가 이끌었고, 발표 논문은 Proc. SPIE
+    14016(86쪽)으로 출판되었다. 지금까지 홀수 해에 개최된 기록만 확인되어 2년 주기로 보이나, 2026/2027 차기 대회는 공식 발표를 찾지 못했다.
+  topics:
+    - Clinical and translational biophotonics (keynote session)
+    - Neurotechnology in surgery (satellite symposium, 2025)
+    - OSK-CSOE Joint Symposium
+    - Young Investigator's Award session
+  features:
+    - >-
+      SPIE Proceedings 출판 - 2025년은 Proc. SPIE Vol. 14016(편집: Ki-Hun Jeong, Hongki Yoo, Seung Ah Lee, Eun-Yeong Park), 2023·2021년 판도
+      proceedings.com에 등재
+    - 한국광학회 주최 + SPIE 조직위원회 운영의 한-미 공동 구조로 국내 바이오포토닉스 연구자 접근성이 높음
+    - 자체 초록 템플릿(docx) 제출 방식(2025 사이트 자료), 영 인베스티게이터 어워드 세션 운영
+    - 2025년 기준 86쪽 분량의 소규모 프로시딩 - 대형 학회(BiOS 등)에 비해 소규모 집중형
+    - 개최 기록이 2021, 2023, 2025로 홀수 해만 확인됨(2년 주기 추정) - 2027 일정·마감은 미공개
+  acceptance_rate: null
+  sources:
+    - https://www.proceedings.com/spie14016.html
+    - https://www.proceedings.com/content/085/085286webtoc.pdf
+    - https://d2j16w31g89z0j.cloudfront.net/site/spie2025/SPIE_ABC_2025_Sponsorship_Prospectus(EN).pdf
+    - https://d2j16w31g89z0j.cloudfront.net/site/spie2025/glance/SPIE_ABC_2025_Program_Book.pdf
+    - https://ndlsearch.ndl.go.jp/books/R100000002-I032030470
+fnirs:
+  about: >-
+    Society for functional Near-Infrared Spectroscopy(SfNIRS)가 2년마다 개최하는 fNIRS 분야 최대 학회로, 'the largest and most important scientific
+    conference about fNIRS in the world'로 소개된다. 2010년 보스턴에서 시작해 런던·몬트리올·파리·도쿄·보스턴·버밍엄을 거쳐 2026년(10/16~19)에는 마카오에서 열렸으며, 이후
+    아메리카(2028)-유럽(2030)-아시아(2032) 순으로 대륙을 순환한다. 학회의 공식 저널은 SPIE의 Neurophotonics이다.
+  topics: []
+  features:
+    - '제출 형식: 100단어 짧은 초록 + 템플릿에 맞춘 1페이지 PDF 요약(참고문헌·그림 포함, Times/Palatino 10pt)'
+    - '''All paper submissions will be carefully peer-reviewed'' - 발표 선호(oral or poster / poster only / virtual only) 선택 가능, 구두 발표는 위원회가 최종 결정'
+    - 채택·발표 논문은 학회 웹사이트에 게재(별도 proceedings 없음)
+    - 2년 주기, 대륙 순환(America 2028 → Europe 2030 → Asia 2032), 2030 개최지 제안 공모 중
+    - '본 대회 전 교육 코스(2026: 10/15~16)와 가상 컨퍼런스(2026: 10/13~14) 병행, DEI 여행지원금 별도 신청'
+    - 2026 초록 마감은 2026-03-31 23:59 GMT+8였음(접수 1/15 개시) - 개최 약 6.5개월 전 마감 패턴
+  acceptance_rate: null
+  sources:
+    - https://fnirs.org/conferences/
+    - https://fnirs2026.fnirs.org/
+    - https://fnirs2026.fnirs.org/call-for-abstracts/
+    - https://fnirs.org/
+optica-imaging:
+  about: >-
+    Optica Imaging Congress(구 Imaging and Applied Optics Congress)는 2027년부터 'Optica ImageSense Congress'로 명칭을 바꿔 Optica가 매년 7월 개최하는 이미징·센싱
+    통합 학회로, COSI(Computational Optical Sensing and Imaging), DH(Digital Holography), 3D, AO, IS 등 14개 토피컬 미팅을 한 자리에 모은다. 'showcases
+    breakthroughs in image acquisition, processing and display'를 표방하며 계산 이미징, 뉴로모픽 이미징, AR/VR, 광센서를 다룬다. 2026년은 7월 12~17일 마스트리흐트, 2027년은 7월
+    11~15일 캐나다 오타와(The Westin Ottawa)에서 열린다.
+  topics:
+    - 'COSI: Computational Optical Sensing and Imaging'
+    - 'DH: Digital Holography and 3-D Imaging (standalone in alternating years)'
+    - '3D: 3D Image Acquisition and Display'
+    - 'AO: Adaptive Optics'
+    - 'IS: Imaging Systems and Applications'
+    - 'pcAOP: Propagation through and Characterization of Atmospheric and Oceanic Phenomena'
+    - 'QSM: Quantum Sensing and Metrology'
+    - 'HISE: Hyperspectral Imaging and Sounding of the Environment'
+    - 'AIS: Applied Industrial Spectroscopy'
+    - 'FTS: Fourier Transform Spectroscopy'
+    - 'LACSEA: Laser Applications to Chemical, Security and Environmental Analysis'
+    - Optical Sensors / ES / RadIT
+    - 'Category: Photonic and Biological/Biomedical Sensing and Imaging'
+    - 'Subtopic: 2D/3D Computational Microscopy, Tomography and Endoscopy'
+  features:
+    - '제출 형식: 35단어 초록 + 2페이지 요약, 요약은 Technical Digest로 Optica Publishing Group에 게재(Ei Compendex, Scopus, Google Scholar 색인)'
+    - '''All paper submissions are carefully peer-reviewed'' - Oral Only / Poster Only / Oral or Poster 선택, 위원회 최종 결정'
+    - '2027 마감: 2027-03-09 12:00 미동부시간(UTC-5), 마감 후 수정 불가'
+    - >-
+      9개 토픽 카테고리 중 'Photonic and Biological/Biomedical Sensing and Imaging'과 'Computational Imaging Techniques'(계산 현미경·토모그래피 포함)가 신경광학 연구에
+      해당
+    - 토피컬 미팅별 학생 논문 경진(3~4명 결선, 제출 시 opt-in)
+    - COSI 연계 저널 특집호 운영(Applied Optics / Biomedical Optics Express / Optics Express, 2026 특집호 마감 2026-11-30)
+  acceptance_rate: null
+  sources:
+    - https://www.optica.org/events/congress/optica_imagesense_congress/
+    - https://www.optica.org/events/congress/optica_imagesense_congress/about/
+    - https://www.optica.org/events/congress/optica_imagesense_congress/submit_papers/
+    - https://www.optica.org/events/congress/optica_imagesense_congress/program/topic_categories/
+    - https://opg.optica.org/content/feature/announcement/item/boe-cosi2026
+kccv:
+  about: >-
+    KCCV(Korean Conference on Computer Vision)는 사단법인 한국컴퓨터비전학회(KCVS)가 주최하는 국내 컴퓨터비전 분야 대표 학술대회로, 2014년 첫 개최 후 2025년에 12회를 맞았다. 매년 여름(8월 초)
+    1회 개최되며, CVPR·ICCV·NeurIPS·ICLR 등 최상위 국제학회에서 성과를 발표한 국내 연구자를 초청해 구두·포스터 발표를 진행하는 형식이 중심이다. 2026년(부산 벡스코)에는 약 170편 발표, 1,300명 이상 참가가 예상되어
+    역대 최대 규모로 안내되었다.
+  topics:
+    - 컴퓨터비전 전반 (CVPR·ICCV·ECCV·NeurIPS·ICLR 등 최상위 학회 발표 성과 중심)
+    - Privacy & Safety (2026 구두 세션명)
+    - Diffusion Models (2026 구두 세션명)
+    - 3D 비전 (2026 기조·초청연사 Matthias Nießner, Angela Dai 전공 분야 — 공식 분야 목록은 미확인)
+  features:
+    - 별도 공개 논문모집(CFP) 문서를 공식 사이트에서 확인하지 못함. 공식 안내는 '최상위 국제학회에 성과를 발표한 국내 연구자를 초청하여 구두 및 포스터 발표'로 기술됨 (이미 출판된 논문의 재발표 형식)
+    - 메인 컨퍼런스 3일 + 별도 온라인(virtual only) 워크숍/튜토리얼 1일 구성
+    - Doctoral Colloquium(박사과정 세션), 멘토링 세션, 스폰서 전시·채용 부스 운영
+    - 2026년 학생 포스터 발표 기회가 크게 확대되었다고 공식 안내
+    - '기조강연은 해외 연사 영어 발표 (2026: René Vidal, Matthias Nießner, Angela Yao)'
+    - '등록비(2026, 사전/현장): 일반 36만/40만원, 대학원생 26만/30만원, 학부생 20만/20만원'
+    - 주최 학회 KCVS는 IPIU 워크샵도 주관하며 연 2회 '연구자 포럼'도 운영
+  typical_schedule: >-
+    매년 8월 초 3일간 개최 (2025: 8/4~6 부산 벡스코, 2026: 8/3~5 부산 벡스코). 2026년 사전등록 마감 7/30. 논문·포스터 신청 마감 패턴은 공식 페이지에서 확인 불가. 2027년 일정 미공개(2026-11-17
+    기준)
+  acceptance_rate: null
+  sources:
+    - https://kcvs.kr/?act=info.workshop&pseq=9
+    - https://kcvs.kr/?act=info.workshop&pseq=8
+    - http://kcvs.kr/
+    - https://kcvs.kr/?act=board&bbs_code=news-notice
+ipiu:
+  about: >-
+    IPIU(영상처리 및 이해에 관한 워크샵)는 1989년에 시작되어 2027년 제39회를 맞는 국내 영상처리·컴퓨터비전 분야의 장수 워크샵이다. 한국컴퓨터비전학회(KCVS)가 주관하고
+    한국방송미디어공학회·대한전자공학회·한국정보과학회·한국멀티미디어학회·한국통신학회가 공동 주최하며, 매년 2월 제주에서 1회 개최된다. 학계·산업계 연구자와 학생이 함께 모이며 한화·삼성·LG AI연구원·퀄컴 등 다수 기업이 후원한다.
+  topics:
+    - 영상처리
+    - 영상이해
+    - 패턴인식
+    - 영상부호화
+    - 영상처리용 S/W
+    - 컴퓨터비전
+    - 기계학습
+    - 의료영상
+    - 멀티미디어 통신
+    - 멀티미디어응용
+    - 문자인식 및 관련분야
+  features:
+    - 논문 분량 2~6쪽, 국문 또는 영문 작성 가능 (아래아한글/MS Word 양식 및 Overleaf LaTeX 템플릿 제공)
+    - 구두 및 포스터 발표 중심 프로그램; 심사 결과 통보 후 최종 수정 논문 제출
+    - 신진연구자 세션(2027년 4개 세션), 특별강연·초청강연 운영
+    - 'Doctoral Consortium: 신규 박사 또는 박사학위 취득 예정자 대상 별도 모집'
+    - Platinum~Startup 등급의 다수 산업체 후원 및 채용 홍보 (한화비전, 삼성, LG AI Research, Qualcomm 등)
+    - IPIU 2026 Proceedings 및 프로그램북을 공지사항에 게시 (DBpia 등재 여부는 미확인)
+    - 저자 등록 마감이 일반 사전등록보다 1주 빠름
+  typical_schedule: '매년 2월 중순 제주에서 3일간 개최 (2027: 2/17~19 메종 글래드 제주). 논문 마감은 12월 중순 (2027: 2026-12-18), 심사 통보 1/18, 최종본 1/22, 저자 등록 1/29, 사전등록 2/5'
+  acceptance_rate: null
+  sources:
+    - https://ipiu.or.kr/
+    - https://ipiu.or.kr/?act=info.page&pcode=sub02
+    - https://ipiu.or.kr/?act=info.page&pcode=greetings
+    - http://kcvs.kr/
+kcc:
+  about: >-
+    KCC(한국컴퓨터종합학술대회)는 한국정보과학회(KIISE)가 주최하는 컴퓨터과학·정보기술 전 분야의 종합학술대회로, 매년 6월 말 3일간 개최된다(KSC와 함께 연 2회 종합학술대회 중 하나). 2026년은 '초지능 AI 시대를 향한 컴퓨팅의
+    새로운 도전'을 주제로 제주 ICC에서 열렸으며, 일반논문·학부생논문·주니어논문 구분으로 구두 25개 세션과 포스터 10개 세션이 운영되었다. 정보통신기획평가원, 삼성SDS, SK하이닉스 등 약 35개 기관·기업이 후원했다.
+  topics:
+    - 인공지능 (일반·응용)
+    - 컴퓨터 시스템·차세대 아키텍처
+    - 시스템 소프트웨어
+    - 데이터 보안 및 윤리
+    - 온디바이스 AI 최적화 (2026 경진대회 주제)
+    - 설명가능 인공지능(XAI) 등 분과·연구회 주관 워크숍 분야
+    - (KIISE 종합학술대회 공통 모집분야는 KSC 2025 안내 기준 고성능컴퓨팅·데이터베이스·소프트웨어공학·알고리즘·언어공학 등 23개 분야 — KCC 2026 자체 목록은 미확인)
+  features:
+    - '논문 구분: 일반논문 / 학부생논문 / 주니어논문(제1저자 고등학생); 학부생·주니어 논문은 포스터 세션에서 별도 평가위원이 심사'
+    - '발표 평가: 좌장·평가위원이 ''내용전달의 우수성 50점 + 연구결과의 우수성 50점''으로 100점 만점 평가'
+    - 채택 논문 상위 약 10%를 우수논문, 발표 상위 약 10%를 우수발표논문으로 선정해 학회 논문지 게재 추천 (학부생/주니어 논문은 제외)
+    - 구두 발표 15분(질의응답 포함, USB 지참·개인 노트북 사용 불가), 포스터 보드 1×2m(A4 9장 또는 전지), 포스터 발표 5~7분
+    - 미발표 시 게재 취소·지도교수 통보·연구실적 불인정
+    - 기조강연, 초청강연, 특별세션, Top Conference 세션, 튜토리얼, 워크숍, 신진연구자 네트워킹 세션, 경진대회(온디바이스 AI 최적화 등), 홍보부스 운영
+    - 일반논문 및 학부생/주니어논문 양식(한글/MS Word)을 자료실에서 배포
+  typical_schedule: '매년 6월 말 3일간 개최 (2026: 6/24~26 제주 ICC). 2026 논문 양식 공개 3/18; 논문 마감일은 공식 페이지에서 확인 불가(공지 게시판이 JS 렌더링). 2027년 일정 미공개'
+  acceptance_rate: null
+  sources:
+    - https://www.kiise.or.kr/conference/main/index.do?CC=kcc&CS=2026
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2431&PARENT_ID=011000
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2422&PARENT_ID=020400
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2543&PARENT_ID=020400
+ksc:
+  about: >-
+    KSC(한국소프트웨어종합학술대회)는 한국정보과학회(KIISE)가 주최하는 연말 종합학술대회로, 매년 12월 중하순 3~4일간 개최된다(6월 KCC와 함께 연 2회). 2025년은 '여수엑스포컨벤션센터', 2026년은 '범용인공지능 시대를 여는
+    클라우드와 소프트웨어 혁신'을 주제로 경주화백컨벤션센터에서 열린다. 23개 모집분야에 일반논문과 학부생/주니어논문을 접수하며, 학회 주관 논문발표·튜토리얼·특별세션과 분과·산학연 워크숍이 함께 진행된다.
+  topics:
+    - 고성능컴퓨팅
+    - 국방소프트웨어
+    - 데이터베이스
+    - 모바일응용및시스템
+    - 사물인터넷
+    - 소프트웨어공학
+    - 스마트시티
+    - 알고리즘
+    - 언어공학
+    - 오픈소스소프트웨어
+    - 인공지능 응용 (포스터 발표만, 최우수·우수논문상 제외)
+    - 인공지능 이론
+    - (이상 포함 총 23개 분야 — KSC 2025 일반논문 안내 기준)
+  features:
+    - 심사용 논문 2~3쪽, 저자정보·사사 제외한 블라인드 PDF 제출(한글/MS Word 양식); 채택 후 출판용 양식으로 최종본 재제출
+    - 학회 심사기준에 따라 심사되며 미채택 가능; Oral/Poster 배정은 프로그램위원회가 결정(Oral 신청도 Poster 채택 가능)
+    - Oral 세션 투고 논문만 우수논문상 심사 대상; 우수발표논문은 논문지 게재 추천
+    - '학부생/주니어논문: 모든 저자 고등학생 이상, 제1저자 학부생→학부생논문·고등학생→주니어논문, Poster만 신청 가능; 서면심사+현장발표 합산으로 최우수상·우수상·장려상 시상'
+    - 구두 15분(질의응답 포함), 포스터 보드 1×2m, 포스터 발표 5~7분; 미발표(no show) 시 게재 취소
+    - 논문 1편당 발표자 1인 참가등록 필수(여러 편이면 편수만큼 등록); 미등록 시 논문집·온라인 게재 제외 가능
+    - 기조강연·초청강연·Top Conference 세션·신진연구자 세션·홍보부스 운영, 다수 기업 후원(카카오, SK브로드밴드, 파두 등)
+  typical_schedule: >-
+    매년 12월 중하순 개최 (2025: 12/16~19 여수, 2026: 12/21~23 경주). 논문 마감 10월 말(2025: 10/27→10/30 연장; 2026: CFP 9/4 게시, 10/19→10/26 연장), 심사결과 11월
+    중순(2025: 11/14), 최종본·발표자 등록 11월 말(2025: 11/24)
+  acceptance_rate: null
+  sources:
+    - https://www.kiise.or.kr/conference/main/index.do?CC=ksc&CS=2025
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2346&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2347&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2348&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/index.do?CC=ksc&CS=2026
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2026&content_no=2572&PARENT_ID=010100
+ieie:
+  about: >-
+    대한전자공학회(IEIE, 2026년 창립 80주년)가 주최·주관하는 국내 전자공학 종합학술대회로, 매년 6월 하계종합학술대회(제주 롯데호텔, 4일)와 11월 추계학술대회(2일)를 개최한다. 통신·반도체·컴퓨터·인공지능 신호처리·시스템 및
+    제어·산업전자 6개 소사이어티 산하 연구회별로 논문을 모집하며, 2026 하계대회는 논문 1,400여 편·참가자 3,000여 명 규모로 보도되었다.
+  topics:
+    - 통신 (통신, 미래지능형네트워크, 마이크로파 및 전파전파, ITS, 군사 전자, 무선PAN/BAN)
+    - 반도체 (반도체소자 및 재료, 광파 및 양자전자공학, SoC 설계, RF 집적회로, 인 메모리 컴퓨팅, 이미지센서 등)
+    - 컴퓨터 (멀티미디어, 휴먼ICT, 인공지능/신경망/퍼지, M2M/IoT, AI 응용, 블록체인 등)
+    - 인공지능 신호처리 (음향 및 음성신호처리, 영상이해, 영상처리, 바이오영상신호처리, 딥러닝, 로봇지능, 가상융합)
+    - 시스템 및 제어 (제어계측, 의용전자 및 생체공학, 지능로봇, 의료영상시스템, 자동차전자, 인공지능 전환(AX) 등)
+    - 산업전자 (산업전자제어, 임베디드시스템, 유비쿼터스 센서네트워크, 디지털통신시스템)
+    - New Emerging Area (바이오메디컬연구회, 의료, 에너지, Software, 기타)
+  features:
+    - '논문 분량: Double Column 1쪽 이상 5쪽 이내, 학회 학술대회 양식(docx/hwp); 홈페이지 업로드 접수'
+    - 일반세션·특별세션(연구회 제안)·최우수논문상 트랙으로 구분 접수
+    - '최우수논문상: 주저자가 국내 대학(원) 재학 학생회원; 별도 4쪽 논문지 양식 블라인드 서면심사 + 일반세션 구두발표 심사 합산; 총상금 500만원(최우수 1편 300만원, 우수 2편 각 100만원, 삼성전자 후원)'
+    - 학부생 논문경진대회, My Chip 경진대회, 인공지능 학부생 논문 경진대회 병행
+    - 구두 발표 10~15분(질의응답 포함, USB 지참); 포스터 패널 100×180cm, 저자 1인 상주 필수
+    - 기조강연, Invited Talk, 튜토리얼, 특별세션, Young Leaders' Symposium(YLS), 전시부스 운영
+    - 하계대회는 지부 학술활동 및 AI 융합기술 세션 포함
+  typical_schedule: >-
+    하계: 매년 6월 넷째 주 4일간 제주 롯데호텔(2026: 6/23~26), 논문 마감 5월 초~중순(2026: 일반/특별세션 5/8→5/22 17:00, 최우수논문상 5/8→5/15), 심사통보 5/22, 사전등록 6/7. 추계: 매년 11월
+    말 2일간(2026: 11/27~28 곤지암리조트), 논문 마감 10월 중순~말(2026: 10/19→10/26), 심사통보 10/30, 사전등록 11/16
+  acceptance_rate: null
+  sources:
+    - https://www.theieie.org/
+    - https://conf.theieie.org/2026s
+    - https://conf.theieie.org/2026s/pages/awards.vm
+    - https://conf.theieie.org/2026f
+    - https://conf.theieie.org/2026f/pages/outlines.vm
+    - https://conf.theieie.org/2026f/pages/conference_paperinfo.vm
+    - https://conf.theieie.org/2026f/pages/conference_paper_announce.vm
+    - https://www.koreadaily.com/article/20260626020541632
+kosombe:
+  about: >-
+    대한의용생체공학회(KOSOMBE)는 국내 의공학 분야 대표 학회로, 매년 5월 춘계학술대회(주로 제주, 3일)와 11월 추계학술대회를 개최한다. 2026년 제67회 춘계학술대회(제주 신화월드)에는 교수·연구자·학생 약 1,300명이 참가해 국내
+    의용생체공학 분야 최대 규모의 학술 교류의 장으로 소개되었다. 2026년 추계는 KOSOMBE가 IFMBE와 공동 주최하는 국제대회 APCMBE 2026(11/4~7, 대구 EXCO)과 함께 열렸다.
+  topics:
+    - 뇌공학
+    - 생체계측
+    - 의료영상 처리 및 시스템
+    - 의료인공지능
+    - 바이오센서&바이오칩
+    - 의광학
+    - 생체소재
+    - 생체역학 및 의료로봇
+    - 의료기기규제과학
+    - 바이오반도체
+    - 의료초음파
+    - 의료데이터분석 및 생체전자시스템 (2026 신설 분과)
+    - 의사공학자 / 여성의공학자 (초청 발표만)
+  features:
+    - '초록 양식: Extended abstract A4 2쪽 (워드 원본 + PDF 압축 업로드, 이메일 접수 불가)'
+    - 구두 발표 희망 시 5분 이내 약식 발표 영상(avi/mp4/mov, 100MB 이하) 제출 → 사전심사 탈락 시 포스터로 자동 전환 (2025 춘계 기준); 추계는 학생 경연 Oral/Poster 선택제
+    - Oral 발표 및 포스터 세션에서 우수 발표자 선정·시상
+    - 발표자(초청·포스터)는 초록 제출 전 연회비 및 사전등록비 온라인 납부 필수
+    - 생명과학·생물학 데이터 포함 연구는 IRB/IACUC 승인번호 필요(없으면 심사 제외 가능)
+    - 포스터 A0(84.4×118.9cm) 출력(2025 춘계); 추계는 90×120cm 현장 인쇄(2024)
+    - 기조강연, 특별세션(식약처 성과공유회 등), 패밀리 세션, 멘토링 세션, 숏츠 콘테스트, 전시부스 운영; 초록집(ebook PDF) 공개
+  typical_schedule: >-
+    춘계: 매년 5월 둘째 주 목~토 3일간 제주(2025: 5/8~10 롯데호텔, 2026: 5/7~9 신화월드). 초록 마감 4월 초~중순(2025: 4/11→4/18; 2026: 4/3, 포스터 한정 4/10, 채택통보 4/17, 사전등록
+    4/17→4/24). 추계: 매년 11월 초(2024: 11/7~9, 초록 마감 10/11; 2025 추계 초록 마감 10/17 연장; 2026은 APCMBE 2026 11/4~7과 통합, 초록 마감 10/8)
+  acceptance_rate: null
+  sources:
+    - https://www.kosombe.or.kr/
+    - https://www.kosombe.or.kr/register/2026_spring/main.html
+    - https://www.kosombe.or.kr/register/2025_spring/main.html
+    - https://www.kosombe.or.kr/register/2025_spring/abstract/info.html
+    - https://kosombe.or.kr/register/2024_fall/abstract/info.html
+    - https://www.medipharmhealth.co.kr/news/article.html?no=116209
+    - https://www.apcmbe2026.org/
+osk:
+  about: >-
+    한국광학회(OSK)는 광학·포토닉스 분야 국내 학회로, 매년 2월 정기총회와 함께 동계학술발표회(최근 부산 벡스코, 광산업전시회 OptoWin 병행)를 열고, 여름에는 하계 학술행사(2026년은 Optics and Photonics
+    Congress, OPC 2026, 7월 제주 ICC)를 개최한다. 이와 별도로 포토닉스 분과가 매년 11월 말 분과학술대회 'Photonics Conference(PC)'를 2008년부터 개최하고 있다(2026: 소노캄 여수).
+    광과학·광기술·포토닉스·바이오포토닉스·양자광학 등 9개 분과로 초록을 모집한다.
+  topics:
+    - 광과학 (나노/마이크로 광학, 메타광학 등)
+    - 광기술
+    - 디지털홀로그래피 및 정보광학
+    - 양자전자
+    - 포토닉스
+    - 바이오포토닉스 (OCT, 내시경 등)
+    - 디스플레이
+    - 양자광학 및 양자정보
+    - 리소그래피
+  features:
+    - '초록 제출: MS Word/HWP 템플릿, 온라인 제출만 가능(이메일 불가), 발표 언어 국문/영문 선택, 사전등록비 미납 상태에서도 제출 가능 (2027 동계 기준)'
+    - '구두: 일반발표 15분(질의응답 포함), 초청 30분, 튜토리얼 90분, 플레너리 45분; 장소 운영에 따라 구두→포스터 전환 가능'
+    - 포스터 패널 95×150cm, 세션 시작 후 최소 40분 상주(미상주 시 No Show 처리)
+    - 동계학술발표회는 제N회 정기총회와 동시 개최, 광산업전시회 OptoWin 병행
+    - 비회원도 사전등록 시 생성한 계정으로 초록 제출 가능
+    - 'Photonics Conference(PC)는 분과학술대회로 Program(Oral)/Program(Poster) 구분, 특별세션(2026: 이차전지 레이저노칭) 운영; 포토닉스 분과가 COOC(광전자 및 광통신 학술대회)와 함께 연례 개최'
+    - 학회 Young Scientist 지원금은 동·하계학술발표회 등록비에 사용 가능
+  typical_schedule: >-
+    동계: 매년 2월 초~중순 부산 벡스코 4일간(2026: 2/3~6, 2027: 2/16~19). 초록 접수 10월 중순~12월 중순(2026 동계: 10/20~12/14; 2027 동계: 2026-10-19~12-13), 사전등록 ~1월
+    중하순(2027: ~1/25). 하계(OPC 2026): 7/19~22 제주 ICC, 초록 3/30~5/17, 사전등록 ~6/29. Photonics Conference: 매년 11월 마지막 주 3일(2026: 11/25~27 여수), 초록
+    마감 10월 중순(2026: 10/16→10/23, 추가 연장 없음), 사전등록 11/6
+  acceptance_rate: null
+  sources:
+    - https://www.osk.or.kr/
+    - https://www.osk.or.kr/content/event/calendar_list.php
+    - https://www.osk.or.kr/conference/event/index.php?cfrid=150
+    - https://www.osk.or.kr/conference/event/content/content.php?_mid=2980,2983&cfrid=150
+    - https://www.osk.or.kr/conference/event/content/content.php?_mid=2981,2992&cfrid=150
+    - https://www.osk.or.kr/conference/event/index.php?cfrid=149
+    - https://www.osk.or.kr/content/event/event_list.php?event_type=DIV
+    - https://www.kofst.or.kr/portal/bbs/B0000042/view.do?menuSn=59&pageIndex=1&pstSn=5555
+    - https://www.kofst.or.kr/portal/bbs/B0000042/view.do?pstSn=4337&menuSn=59&pageIndex=1
+kosaim:
+  about: >-
+    대한의료인공지능학회(KoSAIM)는 2018년 7월 서울아산병원에서 창립공청회·발기인대회를 거쳐 의료계와 공학계가 함께 설립한 의료 인공지능 학회로, 2019년 5월 첫 춘계학회에 전문가 600여 명이 참석했다. 현재는 매년 10월 서울 그랜드
+    인터컨티넨탈 파르나스에서 정기학술대회를 개최하며(2025: 10/24~25, 2026: 10/23~24), KoSAIM 2026에는 전년 대비 약 1.5배인 700여 명이 참석했다. 영상의학 중심에서 병리·생체신호(ECG) 등으로 범위가
+    넓어지고 있으며 루닛·딥노이드·뷰노 등 의료 AI 기업이 전시에 참여한다.
+  topics:
+    - 의료 파운데이션 모델 (2026 세션 주제)
+    - 에이전틱 AI (2026 세션 주제)
+    - 흉부 영상 AI (X-ray/CT, vision-language)
+    - 뇌 MRI 분석
+    - 디지털 병리 / 세포병리 (AI for Pathology 위성 워크샵)
+    - 생체신호(ECG) 분석
+    - 병원 AI 도입 사례 (서울아산병원·서울대병원·세브란스 발표)
+    - 의료 AI 수가·규제·신뢰성
+  features:
+    - '초록 접수 부문: 포스터 전시/발표 vs 자유연제 구연발표 선택; 구연 접수분은 심사 후 포스터로 통보될 수 있음 (2025 안내)'
+    - 학회 홈페이지 회원가입/로그인 후 행사 페이지 초록접수 메뉴로 온라인 제출; 초록집 게재용 Abstract Template 작성·업로드 필수, 발표자 밑줄 표기
+    - 2026년 포스터/자유연제 초록 접수 9/15까지 연장; 2025년 마감 9/12 자정; 2024년 7/15~8/31 23시
+    - '위성 세션 운영 (2026: AI for Pathology — 제1회 병리영상연구회 워크샵)'
+    - 루닛학술상 등 시상 공고 운영 (2026 신청 마감 6/30)
+    - 기업 전시 부스 (루닛, 딥노이드, 뷰노, 에이트릭스, 씨어스테크놀로지, 메디웨일 등)
+    - 공식 사이트(kosaim.org)가 자동 fetch를 차단(HTTP 403)하여 세부 양식·분량·언어는 미확인
+  typical_schedule: '매년 10월 넷째 주 금~토 2일간 서울 그랜드 인터컨티넨탈 파르나스(2025: 10/24~25, 2026: 10/23~24). 초록 마감 9월 중순(2025: 9/12, 2026: 9/15 연장). 2027 일정 미공개'
+  acceptance_rate: null
+  sources:
+    - https://www.kosaim.org/html/?pmode=BBBS0007100001
+    - https://www.kosaim.org/html/?pmode=BBBS0007100001&seq=1163&smode=view
+    - https://kosaim.org/html/?pmode=BBBS0007100001&seq=1043&smode=view
+    - https://newsway.co.kr/news/view?ud=2026102009380157840
+    - https://medicaltimes.com/Users/News/NewsView.html?ID=1171474
+    - https://www.medicaltimes.com/Main/view.html?ID=1126525
+ksbns:
+  about: >-
+    사단법인 한국뇌신경과학회(KSBNS)는 1998년 12월 한국신경과학회와 한국신경생물학회가 통합하여 창립된 국내 뇌과학 대표 학회로(2018년 사단법인화), 1999년 6월 제1차 정기학술대회 이후 매년 1회 정기국제학술대회를 개최한다.
+    최근에는 'K-Brain'으로 브랜드화되어 2026년 제29회 대회(K-Brain 2026, 9/6~8 대전컨벤션센터)에 20개국 2,500여 명이 참가하는 국내 최대 규모의 뇌과학 국제학술대회로 보도되었다. 신경교세포·시냅스·고등인지·중개의학
+    등 10개 분과를 두고 있다.
+  topics:
+    - Molecular and Cellular Neuroscience
+    - Synapses and Circuits Neuroscience
+    - Systems and Cognitive Neuroscience
+    - Mechanistic, Translational, and Clinical Neuroscience of Brain Disorders
+    - Computational Neuroscience, Neuro-Tools and Neuroengineering
+    - Others
+  features:
+    - 초록 전면 영어, 온라인 제출; 제목 250자·본문 2,200자·사사 400자(공백 포함), 그래픽 1개(JPG/PDF 10MB 이하), 1인 1편 제한, 카테고리 2개 지정
+    - 발표 유형 Poster / Oral / Invited session 선택; Oral 선정은 Scientific Program Committee 심사로 결정, 미선정 시 포스터 발표 가능; 심사 결과는 채택·거절·수정요청
+    - 제출·발표자는 등록비 납부 완료 필수; 공동저자도 개별 등록
+    - >-
+      수상: KSBNS Outstanding Poster Awards(학생·포닥 회원, 10만원), Scitech Korea Best Oral Presentation Awards(10편, 50만원), IBRO Travel
+      Awards(IBRO-APRC 국가 14편, 50만원); 수상 신청 시 extended abstract·research highlights 제출, 폐회식 참석 필수
+    - Late-breaking abstract 모집 운영 (2026)
+    - 31개 심포지엄, 교육 세션, 유관 학회(대한비만학회·대한파킨슨병및이상운동질환학회·대한뇌자극학회 등) 공동 세션, 보수교육 평점 최대 15점
+    - '기조강연 해외 석학 중심 (2026: Ole Kiehn, Masashi Yanagisawa, Jennifer Raymond, Jun Huh); Abstract Book 공개'
+  typical_schedule: >-
+    매년 9월 초 3일간 개최 (2026: 9/6~8 대전 DCC). 2026 초록 접수 3/16~8/31 23:59 KST, 얼리버드 등록 3/16~6/12. K-Brain 2027 심포지엄 공모 마감 2027-01-10 (2026-11-16
+    공지); 2027 본대회 일정·초록 마감은 미공개
+  acceptance_rate: null
+  sources:
+    - https://www.ksbns.org/
+    - https://www.ksbns.org/info/history.asp
+    - https://ksbns2026.org/
+    - https://ksbns2026.org/abstract/
+    - https://www.newswire.co.kr/newsRead.php?no=1036298
+auto-icpr:
+  about: >-
+    ICPR(International Conference on Pattern Recognition)은 국제패턴인식학회(IAPR)의 플래그십 학회로, 2024년 콜카타(27회)에 이어 2026년 8월 17-22일 프랑스 리옹에서 28회가 열렸다.
+    2024년에 50주년을 맞은 역사 있는 학회이며, 패턴인식·머신러닝·컴퓨터비전·영상/신호처리·생체인식·문서분석·바이오메디컬 이미징 등 6개 트랙으로 구성된다.
+  topics:
+    - Artificial Intelligence, Pattern Recognition and Machine Learning
+    - Computer and Robot Vision
+    - Image, Speech, Signal and Video Processing
+    - Biometrics and Human Computer Interaction
+    - Document Analysis and Recognition
+    - Biomedical Imaging and Bioinformatics
+  features:
+    - 6개 트랙 체제이며 'Biomedical Imaging and Bioinformatics' 트랙이 별도로 있어 의료영상 연구 투고 가능
+    - 리뷰는 single-blind (저자명·소속을 원고에 기재해야 함; ICPR 2024·2026 공식 안내 모두 동일)
+    - ICPR 2024 기준 Springer LNCS 포맷, 참고문헌 포함 최대 15페이지 (ICPR 2026 페이지 제한은 공식 페이지에서 확인 못함)
+    - 보충자료는 선택이며 단일 파일 50MB 이내, 리뷰어 참고용으로만 사용 (ICPR 2026 Instructions)
+    - '프로시딩은 Springer 출간 (ICPR 2024: Springer LNCS; ICPR 2026 Proceedings 페이지는 Springer DOI 링크, 본 학회 16권 + 워크숍 5권)'
+    - 재현성 연구 배지(Reproducible Research in Pattern Recognition, RRPR Badge) 제도 운영
+    - ICPR 2024(콜카타)는 2,106편 투고 중 963편 채택 (Springer LNCS 프로시딩 설명문 기준, 검색 스니펫으로 확인)
+  acceptance_rate: '2024: 963 accepted / 2,106 submissions (약 45.7%, Springer LNCS 프로시딩 설명문; 검색 결과 스니펫 기반, 직접 페이지 열람은 못함)'
+  sources:
+    - https://icpr2026.org/
+    - https://icpr2026.org/calls.html
+    - https://icpr2026.org/instructions.html
+    - https://icpr2026.org/proceedings.html
+    - https://iapr.org/archives/icpr2024/cfp.html
+auto-icme:
+  about: >-
+    IEEE ICME(International Conference on Multimedia and Expo)는 IEEE 4개 소사이어티(Circuits and Systems, Communications, Computer, Signal
+    Processing)가 공동 후원하는 멀티미디어 분야 플래그십 학회로 2000년부터 매년 개최된다. 2026년은 7월 5-9일 태국 방콕(QSNCC)에서, 2027년은 7월 중국 샤먼에서 열릴 예정이며 구두·포스터 세션, 키노트, 전시, 데모,
+    튜토리얼, 그랜드 챌린지, 산업 워크숍을 포함한다.
+  topics:
+    - 3D multimedia, AR/VR and immersive media
+    - Emerging multimedia applications and technologies
+    - AI/machine learning-based multimedia
+    - Image and video processing
+    - Multimedia analysis and generation
+    - Multimedia communications, networking and mobility
+    - Multimedia databases and data mining
+    - Multimedia quality assessment and metrics
+    - Multimedia security, privacy and forensics
+    - Multimedia standards, trends and related research
+    - Multi-modal media computing, interaction, and human-machine interaction
+    - Social media analysis and applications
+    - Speech/audio processing
+  features:
+    - IEEE CAS·ComSoc·CS·SPS 4개 소사이어티 공동 후원 플래그십 멀티미디어 학회
+    - 'ICME 2026 일정: 정규논문 마감 2025-12-31(AoE), 저자 리버털 2026-02-22~26, 통보 2026-03-13 (리버털 단계 존재)'
+    - 프로시딩은 IEEE 출판, IEEE Xplore 수록, EI Compendex 색인
+    - 정규/특별세션 논문 외 Grand Challenges, 데모, 워크숍, 산업 기술 워크숍, 튜토리얼, 패널 트랙 운영
+    - '랭킹: CCF B, CORE(ICORE) A, QUALIS A1 (myhuiban 집계)'
+    - 페이지 제한·더블블라인드 여부는 열람 가능한 공식 페이지에서 확인 못함 (공식 사이트 attend.ieee.org/icme-2026 접근 불가)
+  acceptance_rate: null
+  sources:
+    - https://www.aischolar.com/conference/icme2026
+    - https://gdr-iasis.cnrs.fr/?p=4682
+    - https://www.myhuiban.com/conference/278?lang=en-us
+auto-icmr:
+  about: >-
+    ACM ICMR(International Conference on Multimedia Retrieval)은 ACM SIGMM이 후원하는 멀티미디어 검색 분야의 대표 학회로, 2011년 트렌토 이후 매년 개최되며 같은 대륙에서 연속 개최하지 않는
+    것을 원칙으로 한다. 16회(2026)는 6월 16-19일 암스테르담(KIT)에서 하이브리드로 열렸고, 2027년은 싱가포르(6월 7-10일 잠정), 2028년은 더블린 예정이다. 영상·비디오·오디오·멀티모달 콘텐츠의 분석·검색·추천이 핵심
+    범위이다.
+  topics:
+    - Content-based and hybrid search, retrieval, and recommender systems (large-scale / web-scale)
+    - Multimedia content extraction, analysis, indexing, semantic features
+    - Multimedia analytics, knowledge discovery, browsing, summarization, visualization
+    - Machine, deep, and transfer learning for retrieval; relevance feedback, active learning
+    - Fine-grained retrieval, event-based indexing, query processing
+    - Crowdsourcing, community-contributed and social multimedia
+    - Synthetic media generation and detection; narrative generation and analysis
+    - User intent and human perception in retrieval
+    - Multimedia beyond video (3D, sensor data), mobile search, hardware acceleration (GPU, FPGA)
+    - Benchmarks and evaluation methodologies
+    - Privacy, fairness, explainability; legal, ethical, societal impact
+    - Applications in news, media, medicine, sports, commerce, lifelogs, travel, security, environment
+  features:
+    - Long paper 8페이지 + 참고문헌 2페이지, Short paper 4페이지 + 참고문헌 2페이지 (ACM sigconf 양식, 부록·보충자료 불허)
+    - 정규논문 더블블라인드 리뷰; 투고 저자는 TPC 요청 시 리뷰어로 참여 의무
+    - 프로시딩은 ACM International Conference Proceedings Series로 출판 (2026년부터 ACM 완전 오픈액세스, APC 또는 ACM Open 적용)
+    - CFP 응용 분야에 medicine(의료) 명시 - 의료영상 검색/분석 연구 투고 가능
+    - MediaEval 워크숍, ACM SIGMM European Chapter Symposium 등 병행 개최
+    - 'ICMR 2026 일정: 논문 마감 2026-02-13, 통보 04-15, 카메라레디 04-25'
+  acceptance_rate: null
+  sources:
+    - https://icmr2026.org/
+    - https://icmr2026.org/calls.html
+    - https://sites.google.com/view/www-acmicmr-org
+auto-acm-mm:
+  about: >-
+    ACM Multimedia(ACM MM)는 1993년 애너하임에서 시작된 ACM SIGMM의 플래그십 학회로 멀티미디어 연구·혁신·응용 분야 최고 권위 국제학회로 꼽히며 매년 개최된다. 2025년 5,330편 투고로 규모가 매우 크고,
+    2026년 34회는 11월 10-14일 브라질 리우데자네이루에서 열렸다. 기술 세션 외 튜토리얼·패널·인터랙티브 아트 전시를 포함한다.
+  topics:
+    - Art and Culture
+    - Data Systems Management and Indexing
+    - Embodied and Immersive Multimedia
+    - Emotional and Social Signals
+    - Interactions and Quality of Experience
+    - Multimedia Applications
+    - Multimodal Fusion
+    - Multimedia Generative and Foundation Models
+    - Multimedia Interpretability and Explainability
+    - Multimedia and Language
+    - Multimedia Search and Recommendation
+    - Multimedia Reasoning
+    - New Forms of Media Content
+    - Responsible Multimedia
+    - Summarization, Analytics, and Storytelling
+    - Transport and Delivery
+  features:
+    - 본문 6-8페이지 + 참고문헌 전용 2페이지, 초과 시 데스크리젝; 보충자료 50MB 별도 제출
+    - 더블블라인드 리뷰 (OpenReview), 선택적 익명 리버털, Author's Advocate 중재 제도; 투고 저자는 리뷰 의무(최대 4편)
+    - 멀티미디어/멀티모달 기여가 아닌 논문은 데스크리젝 가능; 저자당 3개 트랙 합산 최대 10편
+    - Main Technical Track 외 Brave New Ideas(BNI) 트랙과 Datasets 트랙 운영; BNI 논문은 본 프로시딩에 수록되며 신규성·영향력 중심 평가
+    - '채택률 추이: 2020 27.9%, 2022 27.95%, 2023 29.36%, 2024 26.2%, 2025 23.45% (acmmm.org 연구트랙 통계)'
+    - '랭킹: CCF A, CORE(ICORE) A* (myhuiban 집계); 2006 CORE A+, 2012 브라질 Qualis A1 (Wikipedia)'
+  acceptance_rate: '2025: 1,250 / 5,330 = 23.45% (acmmm.org research track statistics)'
+  sources:
+    - https://2026.acmmm.org/site/cfp-guidelines.html
+    - https://2026.acmmm.org/site/call-bni.html
+    - https://acmmm.org/
+    - https://en.wikipedia.org/wiki/ACM_Multimedia
+    - https://www.myhuiban.com/conference/53?lang=en-us
+auto-mmm:
+  about: >-
+    MMM(International Conference on Multimedia Modeling)은 매년 1월경 개최되는 중규모 국제 멀티미디어 학회로, 2026년 32회는 프라하, 2027년 33회는 1월 5-8일 캄보디아 시엠레아프에서 열린다.
+    정규/특별세션 논문, 데모, Brave New Ideas 세션, 키노트와 함께 대화형 비디오 검색 대회인 Video Browser Showdown(VBS)이 함께 열리는 것이 특징이다.
+  topics:
+    - 'Multimedia content analysis: indexing, retrieval, summarisation, annotation, fusion, verification, content generation'
+    - 'Signal processing and communications: media representation, coding, streaming, security/privacy, sensor networks, multi-camera systems'
+    - >-
+      Applications and services: browsing/retrieval tools, AR/VR, mobile, analytics, personalisation, multimodal conversation and
+      recommendation
+    - 'Domain applications: cultural, educational, social media, e-health and medical uses'
+    - 'Ethical, legal and societal aspects: fairness, environmental impact, reproducibility, responsible modeling'
+    - 'Emerging topics: large multimedia models and LLMs, multimodal pre-training, embodied multimodal systems'
+    - 'Special session (2027): Multimodal Computer Vision in Medicine'
+    - 'Special session (2027): Embodied Multimedia Modeling'
+    - 'Special session (2027): Video Understanding with Multimodal LLMs'
+    - 'Special session (2027): Multimodal Agentic Systems and Applications'
+    - 'Special session (2027): Trustworthy Multimedia Modeling'
+  features:
+    - Full paper 본문 12페이지(그림·표·부록 포함) + 참고문헌 2페이지, Springer LNCS 양식
+    - 정규/특별세션 논문 더블블라인드 리뷰 (ConfTool 제출)
+    - 프로시딩 Springer LNCS 출간 (Open Access/Open Choice 선택 가능)
+    - 2027 특별세션에 'Multimodal Computer Vision in Medicine' 포함, CFP에 e-health/medical 응용 명시 - 의료영상 관련 투고에 적합
+    - Video Browser Showdown(VBS), 데모 트랙, Best Paper(USD 1,500)/Best Student Paper(USD 1,000) 시상, 여행 지원금 운영
+    - 'MMM 2027 일정: 정규논문 마감 2026-08-30(연장), 통보 10-19, 카메라레디 11-01'
+    - '랭킹: CCF C, CORE(ICORE) B, QUALIS B1 (myhuiban 집계)'
+  acceptance_rate: null
+  sources:
+    - https://mmm2027.net/
+    - https://mmm2027.net/call_for_papers.html
+    - https://www.myhuiban.com/conference/620?lang=en-us
+auto-euvip:
+  about: >-
+    EUVIP(European Conference on Visual Information Processing, 구 European Workshop on Visual Information Processing)는 시각정보처리 분야의 학계·산업계가
+    모이는 유럽 학회로, 14회(2026)는 9월 28일-10월 1일 룩셈부르크에서 열렸다. EURASIP과 IEEE Signal Processing Society 등이 커뮤니티 후원자로 참여하며 키노트·튜토리얼·구두/포스터·특별세션·데모·학생
+    세션으로 구성된다.
+  topics:
+    - 'Modalities: conventional image/video, stereoscopic, multi-view, 360°, light fields, point clouds, meshes, holography'
+    - Medical imaging
+    - Multimodal perception (vision, language, audio, depth); multi-/hyper-spectral, thermal, event-based sensing
+    - 'Performance assessment: subjective/objective quality, QoE, benchmarking, robustness, bias, explainability'
+    - 'Applications: biometrics, forensics, trust and security; face, body, pose, gesture'
+    - 'Applications: AR/VR, gaming, broadcasting; medical, education, cultural, industrial uses'
+    - 'Applications: drones, autonomous vehicles, autonomous navigation and perception in space systems'
+    - Sensing, representation, modelling, registration; computational vision modelling
+    - Vision-language modelling; multimodal learning and cross-modal fusion
+    - 3D vision from sensors; visual anomaly detection
+    - Restoration, denoising, enhancement; detection, recognition, retrieval, classification
+    - Coding and transmission; efficient, scalable, distributed vision; synthesis, rendering, visualization
+  features:
+    - 본문 최대 6페이지(그림·참고문헌 포함, 6페이지는 참고문헌만) - 짧은 분량의 학회
+    - 더블블라인드 리뷰, Microsoft CMT 제출
+    - 정규논문은 프로시딩 수록 및 IEEE Xplore 게재 예정
+    - CFP 주제에 'medical imaging'과 medical 응용이 명시되어 의료영상 연구 투고에 적합
+    - 튜토리얼, 데모/산업 전시, 프로젝트 성과 발표 세션, 박사과정 대상 학생 세션(2페이지 형식) 운영; 박사과정 여행 지원금(€500, 10명)
+    - EURASIP, IEEE SPS, IEEE Benelux가 커뮤니티/학회 후원자로 참여 (2026 공식 사이트)
+    - 'EUVIP 2026 일정: 논문 마감 2026-06-15(연장), 결과 발표 07-23'
+  acceptance_rate: null
+  sources:
+    - https://euvip2026.github.io/
+    - https://euvip2026.github.io/calls/
+    - https://euvip2026.github.io/C4P.pdf
+    - https://euvip2026.github.io/information/paper-submission/
+    - https://signalprocessingsociety.org/tags/euvip-2026
+auto-sibgrapi:
+  about: >-
+    SIBGRAPI(Conference on Graphics, Patterns and Images)는 브라질컴퓨터학회(SBC)의 컴퓨터그래픽스·패턴인식·영상처리 분과(CEGRAPI)가 주관하는 라틴아메리카의 연례 학회로 1988년 시작되었다.
+    컴퓨터그래픽스·비전·패턴인식·영상처리를 다루며 메인 트랙 외 워크숍과 단기 코스로 구성되고, SBGames·SVR 등과 공동 개최된다. 2026년 39회는 브라질 고이아니아(Goiânia)에서 열렸다.
+  topics:
+    - Computer graphics
+    - Computer vision
+    - Pattern recognition
+    - Image processing
+    - Remote sensing / Earth observation image analysis (GRSL special stream)
+    - Image enhancement and restoration (GRSL stream)
+    - Low-level feature extraction (GRSL stream)
+  features:
+    - 메인 트랙 논문은 영어, IEEE 양식 최대 6페이지 (2024·2025 기준)
+    - 더블블라인드 리뷰, 논문당 최소 3명 전문가 리뷰; 조건부 채택 시 2차 짧은 리뷰 사이클(리버털/수정) 운영
+    - 프로시딩 IEEE Xplore 게재, SIBGRAPI Digital Library Archive(INPE) 및 SBC Open Lib(SOL) 색인
+    - '저널 연계 트랙: Computers & Graphics(C&G) 트랙, IEEE GRSL(Geoscience and Remote Sensing Letters) 트랙, JBCS 특별호'
+    - '부가 트랙: WIP(Work in Progress), WTD(학위논문 워크숍), WUW, WIA(산업 워크숍), 주제별 워크숍, 튜토리얼'
+    - arXiv 프리프린트 허용; 현장 구두 발표 필수(원격 발표 불가, 미발표 시 프로시딩 제외)
+    - '메인 트랙 마감은 통상 6월 중하순 (2024: 06-30 연장마감, 2025: 06-23/06-30)'
+  acceptance_rate: null
+  sources:
+    - https://sibgrapi.sbc.org.br/2025/?p=4432
+    - https://sibgrapi.sbc.org.br/2025/?p=4741
+    - https://sibgrapi.sbc.org.br/2024/?p=1203
+    - >-
+      https://www.grss-ieee.org/publications/author-resources/grsl-special-streams/grss-special-stream-of-the-pattern-recognition-and-image-analysis-for-geoscience-and-remote-sensing-at-sibgrapi-2026/

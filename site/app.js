@@ -97,7 +97,7 @@
       m.core ? `<span class="badge">CORE ${esc(m.core)}</span>` : '',
       m.ccf ? `<span class="badge gray">CCF ${esc(m.ccf)}</span>` : '',
     ].join('');
-    const where = ed ? [ed.year, ed.date, ed.place].filter(Boolean).map(esc).join(' · ') : '';
+    const where = ed ? [ed.year, ed.date].filter(Boolean).map(esc).join(' · ') : '';
     const link = ed?.link || c.link;
 
     let cd;
@@ -106,10 +106,12 @@
       cd = `<div class="${level(ms)}"><div class="cd-type">${esc(TYPE_KO[nd.type] || nd.label)}${nd.label && /\(/.test(nd.label) ? ' ' + esc(nd.label.replace(/^[^(]*/, '')) : ''}</div>
         <div class="cd" data-at="${nd.t}">${countdown(ms)}</div>
         <div class="cd-date">${kst(nd.at)}</div>
+        ${ed?.place ? `<div class="cd-place">📍 ${esc(ed.place)}</div>` : ''}
         <div class="src">${SRC[nd.edition.source] || ''}${nd.edition.source === 'scraped' ? ` <a href="${esc(nd.edition.link)}" target="_blank" rel="noopener">원문</a> <span class="warn-ico" title="공식 페이지에서 자동으로 읽은 날짜입니다. 원문을 확인하세요.">⚠</span>` : ''}</div></div>`;
     } else {
       const ld = lastDeadline(c, now);
-      cd = `<div class="cd-none">다음 마감 미발표<br><span class="meta">${ld ? '지난 마감 ' + kst(ld.at).slice(0, 10) : '공식 사이트 확인'}</span></div>`;
+      cd = `<div class="cd-none">다음 마감 미발표<br><span class="meta">${ld ? '지난 마감 ' + kst(ld.at).slice(0, 10) : '공식 사이트 확인'}</span>
+        ${ed?.place ? `<div class="cd-place">📍 ${esc(ed.place)}</div>` : ''}</div>`;
     }
 
     const diff = [
@@ -124,6 +126,18 @@
           .flatMap((e) => e.deadlines.map((d) => `<li class="${Date.parse(d.at) < now ? 'done' : ''}"><span><span class="ed">${e.year}</span> ${esc(d.label || d.type)}</span><span>${kst(d.at).slice(0, 18)}</span></li>`))
           .join('')}</ul></details>`
       : '';
+    const dt = c.details;
+    const detail = dt && (dt.about || dt.features?.length || dt.topics?.length)
+      ? `<details class="dl detail"><summary>학회 상세 · 제출 분야 · 특징</summary>
+          <div class="dbody">
+            ${dt.about ? `<p class="dabout">${esc(dt.about)}</p>` : ''}
+            ${dt.features?.length ? `<h4>특징</h4><ul class="dlist">${dt.features.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+            ${dt.acceptance_rate ? `<p class="dmeta">채택률: ${esc(dt.acceptance_rate)}</p>` : ''}
+            ${dt.typical_schedule ? `<p class="dmeta">일정 패턴: ${esc(dt.typical_schedule)}</p>` : ''}
+            ${dt.topics?.length ? `<h4>제출 분야</h4><div class="dtopics">${dt.topics.map((t) => `<span>${esc(t)}</span>`).join('')}</div>` : ''}
+            ${dt.sources?.length ? `<p class="dsrc">출처: ${dt.sources.map((s) => `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, '').split('/')[0])}</a>`).join(' · ')}</p>` : ''}
+          </div></details>`
+      : '';
 
     return `<article class="item ${c.target ? 'target' : ''} ${nd ? '' : 'past'}">
       <div>
@@ -134,6 +148,7 @@
       </div>
       <div>${cd}</div>
       ${scoreBlock(c, diff ? `<div class="smeta">${diff}${warn(c)}</div>` : `<div class="smeta">${warn(c)}</div>`)}
+      ${detail}
       ${tl}
     </article>`;
   }
