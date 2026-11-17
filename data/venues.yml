@@ -393,6 +393,8 @@ conferences:
     link: https://www.ipiu.or.kr/
     scrape: { url: "https://www.ipiu.or.kr/", label: after }
     watch: https://www.ipiu.or.kr/
+    editions:   # 장소·날짜만 직접 입력 (마감은 자동 추출)
+      - { year: 2027, date: "Feb 17-19, 2027", place: "Maison Glad Jeju" }
     metrics: { tier: 0.4 }
 
   - id: kcc
@@ -446,7 +448,7 @@ conferences:
     metrics: { tier: 0.4 }
     editions:
       - year: 2027
-        date: "Feb 16-19, 2027 (동계학술발표회 / 제38회 정기총회)"
+        date: "Feb 16-19, 2027 (Winter Meeting)"
         place: "BEXCO, Busan"
         link: https://www.osk.or.kr/
         deadlines:

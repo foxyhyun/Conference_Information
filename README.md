@@ -11,6 +11,7 @@ Neurophotonics Lab 학회·저널 마감 트래커. 랩원은 사이트를 보�
 | `data/candidates.yml` | WikiCFP 후보 (사이트 '신규 후보' 탭에만 표시) |
 | `data/crawled/` | 크롤링 원본 (자동 생성, 수정 X) |
 | `data/details.yml` | 학회 상세 (소개·제출 분야·특징·출처). 사이트의 "학회 상세" 패널 |
+| `data/details_en.yml` | 위 파일의 영어 번역 + 국내 학회 영어 이름(`name_en`, `full_en`). 사이트 English 모드에서 사용 |
 | `data/notices.yml` | 국내 학회 홈페이지의 논문/초록 모집 공지 (`hidden: true` 로 숨김) |
 | `scripts/crawl.mjs` | ccfddl · huggingface/ai-deadlines · WikiCFP · 공식 사이트 크롤러 |
 | `scripts/scrape.mjs` | 공식 사이트 날짜 추출기 + 국내 공지 감시 |

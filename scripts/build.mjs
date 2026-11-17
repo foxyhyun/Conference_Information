@@ -22,6 +22,11 @@ const meta = readJson(p('data/crawled/meta.json'), {});
 const scraped = readJson(p('data/crawled/scraped.json'), {});
 const notices = (readYaml(p('data/notices.yml'), []) || []).filter((n) => !n.hidden);
 const details = readYaml(p('data/details.yml'), {}) || {};
+const detailsEn = readYaml(p('data/details_en.yml'), {}) || {};
+const pickDetails = (d) => (d ? {
+  about: d.about || null, topics: d.topics || [], features: d.features || [],
+  acceptance_rate: d.acceptance_rate || null, typical_schedule: d.typical_schedule || null, sources: d.sources || [],
+} : null);
 
 // ------------------------------------------------------------------ 일정 병합
 function manualEditions(v) {
@@ -102,14 +107,10 @@ const confList = [...(venues.conferences || []), ...discovered].map((v) => {
     fields: v.fields || [], region: v.region || 'intl', target: !!v.target, link: v.link,
     status: v.status || null, verified: !!(m.verified ?? v.verified),
     metrics, difficulty: difficulty(metrics.accept_rate), editions: mergeEditions(v),
-    details: details[v.id] ? {
-      about: details[v.id].about || null,
-      topics: details[v.id].topics || [],
-      features: details[v.id].features || [],
-      acceptance_rate: details[v.id].acceptance_rate || null,
-      typical_schedule: details[v.id].typical_schedule || null,
-      sources: details[v.id].sources || [],
-    } : null,
+    details: pickDetails(details[v.id]),
+    details_en: pickDetails(detailsEn[v.id]),
+    name_en: v.name_en || detailsEn[v.id]?.name_en || null,
+    full_en: v.full_en || detailsEn[v.id]?.full_en || null,
   };
 });
 

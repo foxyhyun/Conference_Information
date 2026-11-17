@@ -61,6 +61,8 @@ a:hover { text-decoration: underline; }
 .top-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 20px; padding-bottom: 20px; }
 h1 { margin: 0; font-size: 22px; letter-spacing: -0.02em; }
 .sub { margin: 2px 0 0; color: var(--ink-3); font-size: 13px; }
+.top-right { display: flex; align-items: center; gap: 16px; }
+.seg.lang button { padding: 4px 10px; }
 .clock { text-align: right; }
 .clock-time { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 18px; }
 .clock-meta { color: var(--ink-3); font-size: 12px; }
@@ -173,5 +175,6 @@ details.dl summary { cursor: pointer; font-size: 12.5px; color: var(--ink-3); }
 @media (max-width: 760px) {
   .item { grid-template-columns: 1fr; gap: 10px; }
   .top-inner { flex-direction: column; align-items: flex-start; }
-  .clock { text-align: left; }
+  .top-right { width: 100%; justify-content: space-between; }
+  .clock { text-align: right; }
 }

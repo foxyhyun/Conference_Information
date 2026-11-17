@@ -1,0 +1,1994 @@
+# English translation of details.yml (shown when the site language is English).
+# name_en / full_en give English names for Korean venues.
+
+cvpr:
+  about: >-
+    The largest annual conference in computer vision, co-sponsored by the IEEE Computer Society and the Computer Vision Foundation (CVF),
+    held every year since 1985. The 2026 meeting in Denver received 16,092 submissions, accepted 4,071 papers and drew 12,322 registrants,
+    making it the flagship venue of the computer vision and pattern recognition community. According to Wikipedia, it is a selective
+    conference that accepts fewer than 30% of all papers and fewer than 5% as oral presentations.
+  topics:
+    - 3D from multi-view and sensors / 3D from single images
+    - Computational imaging
+    - Medical and biological vision, cell microscopy
+    - Low-level vision
+    - Image and video synthesis and generation
+    - 'Recognition: categorization, detection, retrieval'
+    - Segmentation, grouping and shape analysis
+    - Self-, semi-, meta- and unsupervised learning
+    - Transfer / low-shot / continual / long-tail learning
+    - Vision, language, and reasoning
+    - Multimodal learning
+    - Datasets and evaluation
+    - Efficient and scalable vision
+    - Physics-based vision and shape-from-X
+    - 'Video: action and event understanding / low-level analysis, motion, tracking'
+  features:
+    - >-
+      8-page main-text limit (including figures and tables, excluding references); CVPR style template required. Papers exceeding the limit
+      are rejected without review.
+    - >-
+      Double-blind review on OpenReview. All co-authors must have an up-to-date OpenReview profile; profiles without an institutional email
+      can take up to 2 weeks to be approved.
+    - >-
+      A 1-page PDF rebuttal period follows the release of reviews (2026 conference: January 22-29). No new contributions or external links
+      may be added in the rebuttal.
+    - >-
+      All authors must commit to serving as reviewers, ACs or SACs if invited (reviewer-service commitment); exceptions require prior
+      approval from the program chairs. The same clause is retained in the 2027 CFP.
+    - >-
+      Accepted papers are released on CVF Open Access 2 weeks before the conference. The 2027 CFP adds new topics such as 'Agentic AI' and
+      'Physical AI: World Models, VLA, Planning, Simulation'.
+    - >-
+      Dual submission is prohibited (rejection if 20% or more of the content overlaps); arXiv preprints are not considered publications.
+      LLM-related errors such as citing non-existent references are grounds for rejection ('an LLM did it' is not a defense).
+    - >-
+      Separate abstract and paper submission deadlines, with no extensions (2026: abstract 11/7, paper 11/13; 2027: registration 11/10,
+      paper 11/16).
+  acceptance_rate: '2026: 25.3% (4071/16092); 2025: 22.1% (2872/13008) — per the table in the Wikipedia CVPR article'
+  typical_schedule: null
+  sources:
+    - https://cvpr.thecvf.com/Conferences/2026/CallForPapers
+    - https://cvpr.thecvf.com/Conferences/2026/AuthorGuidelines
+    - https://cvpr.thecvf.com/Conferences/2027/CallForPapers
+    - https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition
+    - https://github.com/lixin4ever/Conference-Acceptance-Rate
+iccv:
+  about: >-
+    An IEEE-sponsored computer vision conference that began in 1987 and is held biennially in odd-numbered years, when ECCV does not take
+    place. Together with CVPR and ECCV it is regarded as one of the three top computer vision conferences; its best paper award is the Marr
+    Prize, named after the neuroscientist David Marr. The 2025 meeting (Hawaii) received about 11,000 submissions and accepted about 2,700
+    papers.
+  topics:
+    - 3D from multi-view and sensors / single images
+    - Computational imaging
+    - Medical and biological vision, cell microscopy
+    - Low-level vision
+    - Image and video synthesis and generation
+    - 'Recognition: categorization, detection, retrieval'
+    - Segmentation, grouping and shape analysis
+    - Self-, semi-, meta- and unsupervised learning
+    - Transfer / low-shot / continual / long-tail learning
+    - Vision, language, and reasoning
+    - Multimodal learning
+    - Datasets and evaluation
+    - Physics-based vision and shape-from-X
+    - 'Video: action and event understanding / motion and tracking'
+    - Photogrammetry and remote sensing
+  features:
+    - >-
+      8-page main-text limit (including figures and tables, excluding references), ICCV style. Papers exceeding the limit are rejected
+      without review.
+    - >-
+      Double-blind review on OpenReview, with a 1-page PDF rebuttal after reviews are released (2025: 5/10-5/16). No external links (code,
+      video) are allowed in the rebuttal.
+    - Authors must serve as reviewers when asked, and all authors need an up-to-date OpenReview profile.
+    - >-
+      Dual submission is prohibited (a violation if 20% or more overlaps); arXiv preprints and technical reports are not considered
+      publications. LLM-related errors such as citing non-existent references are grounds for rejection.
+    - Accepted papers are released on CVF Open Access 2 weeks before the conference (in parallel with IEEE Xplore).
+    - 'No extensions to the paper registration and submission deadlines (2025: registration 3/3, submission 3/7 HST).'
+    - The 2025 CFP lists 37 topic areas and explicitly includes 'Medical and biological vision, cell microscopy'.
+  acceptance_rate: '2025: about 24.2% (2698/11152) — Paper Copilot (third-party tally, not an official figure)'
+  typical_schedule: null
+  sources:
+    - https://iccv.thecvf.com/Conferences/2025/CallForPapers
+    - https://iccv.thecvf.com/Conferences/2025/AuthorGuidelines
+    - https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision
+    - https://papercopilot.com/venue-overview/iccv-2025-venue-overview/
+eccv:
+  about: >-
+    A computer vision conference organized by the European Computer Vision Association (ECVA), a non-profit based in Zurich, Switzerland. It
+    began in Antibes, France in 1990 and is held biennially in even-numbered years. Together with CVPR and ICCV it is regarded as one of the
+    three top computer vision conferences, and its proceedings are published by Springer (LNCS template). The 2024 meeting in Milan received
+    about 8,585 submissions.
+  topics:
+    - 3D from multi-view and sensors / single images
+    - Camera pose estimation and calibration
+    - Computational imaging
+    - Medical and biological vision, cell microscopy
+    - Low-level vision
+    - Image and video synthesis and generation
+    - (Neural) scene representations
+    - 'Recognition: categorization, detection, retrieval'
+    - Segmentation, grouping and shape analysis
+    - Self-, semi-, meta- and unsupervised learning
+    - Vision, language, and reasoning
+    - Synthetic data and simulation
+    - Visual localization, SLAM, Structure-from-Motion
+    - Geometric deep learning
+    - Vision for climate and sustainability
+  features:
+    - >-
+      14-page main-text limit (including figures and tables, excluding references); the ECCV 2026 LNCS template is required. Using another
+      conference's template or fonts, or altering the margins, results in a desk reject.
+    - >-
+      Double-blind review on OpenReview. A 1-page two-column PDF rebuttal follows the release of reviews (2026: reviews released 5/2,
+      rebuttal deadline 5/11).
+    - >-
+      All authors are automatically added to the reviewer pool (exceptions are extremely limited), and reviewers may not upload or process
+      submissions with LLMs.
+    - >-
+      Accepted papers are made available through Springer and/or ECVA from 4 weeks before the conference onward. 2026 submissions are
+      checked for plagiarism with iThenticate.
+    - >-
+      The author list cannot be changed (additions or removals) after the registration deadline (2026: 2/26); only reordering is allowed.
+      From 2026, selecting a primary Contribution Type is mandatory, and the Datasets/Benchmarks type must be publicly released by
+      camera-ready.
+    - >-
+      A media and social media embargo applies from January 29 until final decisions. External links are prohibited in submissions,
+      supplementary material and rebuttals.
+    - Accepted papers must be presented in person by an author or a delegate.
+  acceptance_rate: >-
+    2024: 27.9% (2395/8585, poster basis; 30.2% including 200 orals) — Paper Copilot/aiwiki tally (based on search results, re-quoting
+    officially announced figures)
+  typical_schedule: null
+  sources:
+    - https://eccv.ecva.net/Conferences/2026/CallForPapers
+    - https://eccv.ecva.net/Conferences/2026/SubmissionPolicies
+    - https://www.ecva.net/
+    - https://en.wikipedia.org/wiki/European_Conference_on_Computer_Vision
+    - https://papercopilot.com/statistics/ECCV-statistics
+wacv:
+  about: >-
+    An annual IEEE/CVF-sponsored conference focused on computer vision applications, held every winter (February-March). While algorithmic
+    papers are accepted, its distinguishing emphasis is on 'systems and applications with a significant vision component', and it is divided
+    into an Applications track and an Algorithms track with different review criteria. From 2027 a new Evaluations & Dataset track has been
+    introduced.
+  topics:
+    - 'Applications track: Biomedical, healthcare, and medicine'
+    - 'Applications track: Robotics / Autonomous driving / Remote sensing'
+    - 'Applications track: Virtual and augmented reality / Visualization'
+    - 'Applications track: Embedded sensing and real-time techniques'
+    - 'Applications track: Agriculture / Environmental monitoring / Social good'
+    - 'Algorithms track: 3D computer vision'
+    - 'Algorithms track: Computational photography'
+    - 'Algorithms track: Generative models for image, video, 3D'
+    - 'Algorithms track: Low-level and physics-based vision'
+    - 'Algorithms track: Image recognition and understanding (detection, segmentation, scene modeling)'
+    - 'Algorithms track: Video recognition and understanding (tracking, action recognition)'
+    - 'Algorithms track: Vision + language and/or other modalities'
+    - 'Algorithms track: Foundation models for downstream vision tasks'
+    - 'Algorithms track: Datasets and evaluations'
+    - Evaluations & Dataset track (new in 2027)
+  features:
+    - >-
+      Two submission rounds. Round 1 (July) papers receive an accept / revise-and-resubmit / reject decision; revised papers are resubmitted
+      with a 1-page rebuttal and re-reviewed in Round 2. New Round 2 (September) submissions receive only an accept/reject decision, with no
+      rebuttal.
+    - >-
+      8-page main-text limit (including figures and tables, excluding references); WACV template required. Double-blind review on
+      OpenReview, with at least 3 reviewers per paper.
+    - >-
+      The Applications track is reviewed on system-level innovation, domain novelty and comparative evaluation; the Algorithms track is
+      reviewed on algorithmic novelty and quantitative comparison, similar to CVPR/ICCV/ECCV.
+    - All authors must be willing to serve as reviewers/ACs, and papers by authors who submit low-quality reviews may be desk rejected.
+    - >-
+      Accepted papers are released on CVF Open Access 2 weeks before the conference. At least one author must register in person
+      (unregistered papers are removed from the proceedings). Extended versions of 2026 accepted papers are to appear in a special issue of
+      Machine Vision and Applications (MVA).
+    - >-
+      The LLM policy is based on the NeurIPS 2025 guidelines: any use of LLMs in the methodology must be described, and citing non-existent
+      references leads to rejection.
+    - 'The Round 1 stand-alone acceptance rate is very low (2025 Round 1: 85 of 1,329 papers accepted, 732 invited to resubmit in Round 2).'
+  acceptance_rate: >-
+    2024: 41.4% (846/2043) — Paper Copilot (third-party tally); 2025 Round 1: 6.4% (85/1329), Round 2: 440 resubmissions and 303 new
+    submissions accepted (out of 1,809) — official per-round figures; no official overall acceptance rate published
+  typical_schedule: null
+  sources:
+    - https://wacv.thecvf.com/Conferences/2026/CallForPapers
+    - https://wacv.thecvf.com/Conferences/2027/AuthorGuides
+    - https://papercopilot.com/statistics/wacv-statistics/
+    - https://ami.kaist.ac.kr/275fdae6-c854-80b1-8169-dff86cc4665e
+neurips:
+  about: >-
+    An annual conference in machine learning and computational neuroscience founded in 1987, held every December and organized by the
+    NeurIPS Foundation (the first meeting was IEEE-sponsored). It began as an interdisciplinary gathering of researchers in biological and
+    artificial neural networks and changed its abbreviation from NIPS to NeurIPS in 2018. The 2025 main track received 21,575 submissions
+    and accepted 5,290 papers; together with ICML and ICLR it is regarded as one of the most prestigious venues in ML.
+  topics:
+    - Applications (vision, language, speech, etc.)
+    - Deep learning
+    - Evaluation
+    - General machine learning
+    - Infrastructure / ML systems
+    - Machine learning for sciences
+    - Neuroscience and cognitive science
+    - Optimization
+    - Probabilistic methods
+    - Reinforcement learning
+    - Social and economic aspects of machine learning
+    - Theory
+    - Robotics and embodied systems (2026 CFP)
+    - AI/ML for health, sustainability, creative work (2026 CFP)
+  features:
+    - >-
+      9-page main-text limit (including figures and tables; excluding references, checklist and technical appendices), with 1 extra page at
+      camera-ready upon acceptance. The Paper Checklist must be appended to the end of the paper.
+    - >-
+      Double-blind review on OpenReview. Authors cannot be added or removed after the abstract deadline (reordering only). There is a 1-week
+      author response period for reviews, but revised papers cannot be submitted.
+    - >-
+      In addition to the main track, a Datasets & Benchmarks track (2026: Evaluations and Datasets) and a Position Paper track (introduced
+      in 2025) are run through separate portals; papers cannot move between tracks after submission.
+    - >-
+      Authors are asked to participate in reviewing (reciprocal reviewing); detected collusion leads to rejection and future sanctions. The
+      program chairs run randomized controlled experiments on the review process under IRB approval.
+    - >-
+      arXiv preprints are allowed (but must not be labeled 'Under review at NeurIPS'). Papers made public after March 1, 2025 are treated as
+      concurrent work, and a submission is not rejected solely for omitting a comparison to them.
+    - >-
+      Funding sources must be disclosed at camera-ready; code and data release is strongly encouraged. In 2026 the conference is held in
+      multiple cities (Sydney, Paris, Atlanta).
+    - >-
+      According to Wikipedia, a 2021 duplicate-submission experiment found that 23% of papers received different acceptance decisions,
+      prompting debate over review consistency.
+  acceptance_rate: '2025: 24.5% (5290/21575); 2024: 25.8% (4037/15671) — lixin4ever/Conference-Acceptance-Rate tally'
+  typical_schedule: null
+  sources:
+    - https://neurips.cc/Conferences/2025/CallForPapers
+    - https://neurips.cc/Conferences/2026/CallForPapers
+    - https://en.wikipedia.org/wiki/Conference_on_Neural_Information_Processing_Systems
+    - https://github.com/lixin4ever/Conference-Acceptance-Rate
+    - https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/
+iclr:
+  about: >-
+    An annual machine learning conference centered on representation learning, founded in 2012 by Yann LeCun and Yoshua Bengio with its
+    first meeting in 2013; it is usually held in late April to early May. Its defining feature is open peer review on OpenReview, adopted
+    since its inception, and together with NeurIPS and ICML it is counted among the three top ML conferences. The 2025 meeting in Singapore
+    drew 11,039 attendees from 85 countries, and in 2026, 5,355 of 19,525 submissions were accepted.
+  topics:
+    - Representation learning (supervised, self-supervised, semi-supervised, unsupervised)
+    - Reinforcement learning
+    - Generative models
+    - Causal reasoning
+    - Optimization
+    - Learning theory
+    - Fairness, safety, privacy
+    - Datasets and benchmarks
+    - Neurosymbolic systems
+    - Robotics
+    - Applications to neuroscience and cognitive science
+    - Applications to physical sciences
+    - General machine learning
+  features:
+    - >-
+      9-page main-text limit at submission, extended to 10 pages at the rebuttal and camera-ready stages. References and appendices are
+      unlimited; exceeding the limit leads to a desk reject.
+    - >-
+      Reviews are posted anonymously on OpenReview, and during a roughly 3-week public discussion period (2026: 11/11-12/3) authors can
+      respond and revise their papers. After decisions, all submissions are de-anonymized and made public, and reviews of rejected papers
+      remain visible.
+    - >-
+      Strong reciprocal reviewing obligation: authors with 3 or more submissions must review at least 6 papers, and every submission must
+      register at least one reviewer-eligible author (with a publication record at ICLR/NeurIPS/ICML, etc.). Non-compliance can lead to a
+      desk reject.
+    - >-
+      Double-blind, but posting on arXiv is allowed. Papers withdrawn after the deadline are also immediately de-anonymized and remain
+      public.
+    - >-
+      If an LLM played a substantial role in developing the ideas or writing, this must be disclosed in a dedicated section; failure to
+      disclose can lead to a desk reject. LLMs are not eligible for authorship.
+    - >-
+      Proceedings are hosted open-access on OpenReview (no separate publisher). An ethics statement (1 page) and a reproducibility statement
+      are optional but encouraged.
+  acceptance_rate: '2026: 27% (5355/19525); 2025: 31.9% — Wikipedia (ICLR article)'
+  typical_schedule: null
+  sources:
+    - https://iclr.cc/Conferences/2026/CallForPapers
+    - https://iclr.cc/Conferences/2026/AuthorGuide
+    - https://en.wikipedia.org/wiki/International_Conference_on_Learning_Representations
+icml:
+  about: >-
+    The oldest machine learning conference, which began as a workshop at Carnegie Mellon in 1980 and became a formal conference series in
+    1993. It is organized by the International Machine Learning Society (IMLS), with a deadline in late January and the meeting in July each
+    year. Together with NeurIPS and ICLR it is regarded as one of the three most prestigious ML venues; submissions have surged from 1,037
+    in 2015 to 12,107 in 2025 and about 24,000 in 2026. The 2026 meeting was held in Seoul.
+  topics:
+    - General machine learning
+    - Deep learning
+    - Evaluation
+    - Theory
+    - ML systems
+    - Optimization
+    - Probabilistic methods
+    - Reinforcement learning
+    - Trustworthy machine learning
+    - Application-driven machine learning
+  features:
+    - >-
+      8-page main-text limit (references, impact statement and appendices unlimited), with 1 extra page at camera-ready. An Impact Statement
+      section before the references is mandatory, and a lay summary must be submitted after acceptance.
+    - >-
+      Double-blind review on OpenReview. For accepted papers, the original submission, anonymous reviews, meta-review, rebuttal and
+      discussion are made public along with the camera-ready (optional for rejected papers).
+    - >-
+      Reciprocal reviewing obligation: at least one author per submission must serve as a reviewer (each author handles at most 2 papers),
+      and authors with 4 or more submissions must review. Non-compliance or careless reviewing can lead to a desk reject of the submitted
+      papers.
+    - Proceedings are published open-access in PMLR (Proceedings of Machine Learning Research, under JMLR).
+    - >-
+      A Position Paper track is run on a separate OpenReview site from the main track. From 2026, a proceedings-only (virtual registration)
+      option is allowed for accepted papers.
+    - >-
+      arXiv preprints are allowed (but advertising that the paper is an ICML submission is prohibited). LLM use is permitted with full
+      author responsibility; prompt injection leads to a desk reject. Authors with multiple submissions may optionally submit a ranking of
+      their own papers, visible only to the integrity chair.
+    - >-
+      No extensions to the abstract and paper deadlines (2026: abstract 1/23, paper 1/28). The author list cannot be changed after the
+      abstract deadline.
+  acceptance_rate: '2026: 26.6%; 2025: 26.9% (3260/12107); 2024: 30.5% — Wikipedia (ICML article)'
+  typical_schedule: null
+  sources:
+    - https://icml.cc/Conferences/2026/CallForPapers
+    - https://en.wikipedia.org/wiki/International_Conference_on_Machine_Learning
+aaai:
+  about: >-
+    A general artificial intelligence conference organized by the Association for the Advancement of Artificial Intelligence (AAAI), first
+    held at Stanford in 1980 and now annual (submissions around August, meeting in January-February). It covers all areas of AI including
+    machine learning, NLP, computer vision, planning, reasoning and multi-agent systems, and ranks 4th among AI publications by Google
+    Scholar H5 index, after ICLR, NeurIPS and ICML. AAAI-26 (Singapore) received more than 20,000 submissions.
+  topics:
+    - Machine learning
+    - Natural language processing
+    - Computer vision
+    - Data mining
+    - Multiagent systems
+    - Knowledge representation
+    - Human-in-the-loop AI
+    - Search, planning, reasoning
+    - Robotics and perception
+    - Ethics
+    - 'Special track: AI for Social Impact'
+    - 'Special track: AI Alignment'
+  features:
+    - >-
+      7-page limit for the technical content plus an additional page reserved for references. A reproducibility checklist is mandatory for
+      all authors.
+    - >-
+      Two-phase review on OpenReview: in Phase 1, 2 human reviews plus 1 AI-generated review (non-decisive) inform the SPC's decision on
+      whether a paper advances; in Phase 2, additional human reviews are followed by author response, discussion and a meta-review. Papers
+      eliminated in Phase 1 receive no rebuttal opportunity.
+    - >-
+      An AI-assisted review pilot runs from AAAI-26: AI reviews carry no scores or recommendations and are for reference only, with final
+      decisions made by humans. Authors may also respond to the AI review.
+    - >-
+      LLM-generated text is prohibited unless it is the object of experimental analysis (using LLMs to proofread or polish author-written
+      text is allowed). AI tools cannot be authors or cited sources.
+    - All authors are expected to participate in reviewing (a light load); non-compliance can lead to sanctions including rejection.
+    - >-
+      Separate abstract (late July) and full paper (early August) deadlines. Reviewers are not obligated to read supplementary material, so
+      essential content must be in the main text.
+    - >-
+      Interdisciplinary research (e.g., links with neuroscience and cognitive science) and applications in healthcare and sustainability are
+      explicitly encouraged.
+  acceptance_rate: >-
+    2026: about 17.6% (4167/23680) — Bohrium blog (third-party, source not stated); 2025: 23.4% (3032/12957) —
+    lixin4ever/Conference-Acceptance-Rate
+  typical_schedule: null
+  sources:
+    - https://aaai.org/conference/aaai/aaai-26/main-technical-track-call/
+    - https://en.wikipedia.org/wiki/AAAI_Conference_on_Artificial_Intelligence
+    - https://github.com/lixin4ever/Conference-Acceptance-Rate
+    - https://www.bohrium.com/en/blog/research-notes/aaai-2026-accepted-papers-highlights/
+bmvc:
+  about: >-
+    The UK's annual computer vision conference, organized by the British Machine Vision Association (BMVA); the 2026 meeting in Lancaster is
+    the 37th edition. It is distinctive as a single-track conference of oral and poster presentations, and in 2026 it accepted 406 of 1,448
+    submissions. It covers image processing, computer vision and machine learning broadly, and explicitly includes medical and biological
+    image analysis among its topics.
+  topics:
+    - 3D from X, Shape Modeling and Processing
+    - Medical and Biological Image Analysis
+    - Computational Photography and Photogrammetry
+    - Low-level and Physics-based Vision
+    - Generative Models
+    - Recognition, Segmentation, and Scene Understanding
+    - Representation, Self-supervised, and Transfer Learning
+    - Multimodal Learning (Vision + Language, Audio, etc.)
+    - Motion Estimation and Tracking
+    - Action, Event, and Video Understanding
+    - Uncertainty
+    - Explainable, Fair, and Ethical AI
+    - Datasets and Evaluation
+    - Vision Applications, Systems, and Robotics
+    - Brave New Ideas (novel approaches/theory rather than benchmark gains)
+  features:
+    - >-
+      14-page main-text limit (excluding references); the official BMVC LaTeX/Word template is required. Supplementary material is submitted
+      as a single zip at the same time as the paper deadline.
+    - >-
+      Double-blind review on OpenReview, with at least 3 reviewers per paper plus an Area Chair meta-review. A rebuttal period is held
+      (2026: 7/3-7/10).
+    - >-
+      Community reviewing system: authors commit to reviewing a number of papers proportional to their submissions, and careless
+      participation can lead to rejection.
+    - A 'Brave New Ideas' topic encourages new approaches and theory even without benchmark performance gains.
+    - >-
+      Single-track (oral + poster) format; proceedings are published by BMVA. Concurrent review at other conferences or journals is
+      prohibited; arXiv preprints are not treated as prior publication.
+    - >-
+      Separate abstract (May 22) and paper (May 29) deadlines, with no extensions. The 2026 workshops include medical-related workshops such
+      as MFM4Health (multimodal foundation models for healthcare).
+    - Top accepted papers are invited to submit extended versions to an IJCV special issue (based on a search-result summary).
+  acceptance_rate: '2026: 28.0% (406/1448) — official accepted papers page'
+  typical_schedule: null
+  sources:
+    - https://bmvc2026.bmva.org/calls/call-for-papers/
+    - https://bmvc2026.bmva.org/programme/accepted_papers/
+accv:
+  about: >-
+    The leading computer vision conference of the Asian region, sponsored by the Asian Federation of Computer Vision (AFCV); it is held
+    biennially in even-numbered years, and the 2026 meeting in Osaka is the 18th edition. Proceedings are published in Springer LNCS and
+    also posted on CVF Open Access; the 2024 meeting in Hanoi accepted 270 of 839 submissions. Its topic structure resembles CVPR/ICCV/ECCV,
+    with 'Biomedical Image Analysis' as a separate area.
+  topics:
+    - 3D Computer Vision
+    - Biomedical Image Analysis
+    - Computational Photography, Sensing, and Display
+    - Low-level Vision and Image Processing
+    - Illumination and Reflectance Modeling
+    - Physics-based Vision and Shape from X
+    - Deep Learning for Computer Vision
+    - Generative Models for Computer Vision
+    - Recognition (Feature Detection, Indexing, Matching, Shape Representation)
+    - Segmentation and Grouping
+    - Motion and Tracking
+    - Scene Analysis and Understanding
+    - Video Analysis and Event Recognition
+    - Vision and Language
+    - Datasets and Performance Analysis
+  features:
+    - >-
+      14-page main-text limit (including figures and tables, excluding references); the official LNCS style and ACCV LaTeX template are
+      required. No extra pages at camera-ready.
+    - >-
+      Double-blind review on OpenReview. A 1-page PDF rebuttal (2026: reviews released 8/26, rebuttal deadline 9/2); no new contributions or
+      external links allowed.
+    - Proceedings are published post-conference in Springer LNCS (around January 2027) and also posted on CVF Open Access.
+    - All authors must serve as reviewers when asked and may be automatically added to the reviewer pool.
+    - >-
+      LLM-generated papers and fabricated citations are prohibited (only limited language editing is allowed); inserting hidden prompts or
+      invisible text leads to a desk reject.
+    - >-
+      The author list is fixed after registration, and at least one author must present in person (one registration covers up to 2 papers).
+      Datasets claimed as contributions must be released by camera-ready.
+    - >-
+      Separate registration (7/3), submission (7/5) and supplementary material (7/8) deadlines (2026, 23:59 GMT). Award-winning papers are
+      invited to submit to an IJCV special issue (based on a search-result summary).
+  acceptance_rate: >-
+    2024: about 32% (270/839) — per the Springer LNCS proceedings front matter (search result); no official acceptance-rate announcement
+    confirmed
+  typical_schedule: null
+  sources:
+    - https://accv2026.org/
+    - https://accv2026.org/submissions/author-guidelines/
+    - https://link.springer.com/978-981-96-0916-1
+3dv:
+  about: >-
+    An international conference dedicated to 3D computer vision and graphics, held annually since 2013 and technically co-sponsored by the
+    IEEE Computer Society. The 2026 meeting in Vancouver is the 13th edition, with 177 accepted papers; it is a relatively small,
+    community-oriented conference consisting of single-track oral and poster presentations, an industry exhibition and mentoring sessions.
+    Topics are organized along five axes (acquisition, modelling, analysis, rendering and applications), and the applications area
+    explicitly lists medical, biology and neuroscience.
+  topics:
+    - 'Acquisition: geometry, calibration, photogrammetry, SfM and SLAM'
+    - 'Acquisition: dense reconstruction and stereo, structured light and ToF sensors'
+    - 'Acquisition: physics-based vision and shape from X, computational photography'
+    - 'Modelling: shape representation, geometry processing, registration'
+    - 'Modelling: 4D dynamic shapes and scenes, generative and morphable models'
+    - 'Analysis: shape recognition and analysis, segmentation, motion and tracking'
+    - 'Analysis: body/face/gesture, dataset and benchmarking'
+    - 'Rendering and Interaction: neural rendering, image-based rendering, AR/MR'
+    - 'Applications: medical, biology, neuroscience'
+    - 'Applications: robotics, industrial, cultural heritage, digital fabrication'
+  features:
+    - >-
+      8-page main-text limit (including figures and tables, excluding references); abstracts limited to 4,000 characters. Papers exceeding
+      the limit are rejected without review.
+    - Double-blind review on OpenReview; the 2026 conference has no rebuttal ('there will be no rebuttal at 3DV 2026').
+    - >-
+      Dual submission is prohibited (a violation if 20% or more overlaps); arXiv preprints and technical reports are not considered
+      publications. Supplementary material (PDF/ZIP, 200MB) may not include results on new datasets or results from improved methods.
+    - >-
+      All deadlines are 23:59 Pacific Time with no extensions (2026: paper 8/18, supplementary 8/21, notification 11/5). At least one author
+      must register and present.
+    - >-
+      Submitted papers may be publicized on condition that the conference name is not mentioned on social media before final decisions. The
+      patent disclosure reference date is 1 week before the conference.
+    - >-
+      Best paper award sponsored by Vision Systems Inc., a Dissertation Award, and a Nectar Track with its own deadline. Single-track oral
+      and poster presentations, an industry exhibition and mentoring sessions.
+    - 'The acceptance rate tends to be higher than at the major CV conferences (2025: about 40%, third-party tally).'
+  acceptance_rate: >-
+    2026: 177 papers accepted (official, SFU news) / 404 submissions, 43.8% (Voxel51 dataset card, third-party); 2025: about 40.2% (142/353)
+    — Paper Copilot (third-party)
+  typical_schedule: null
+  sources:
+    - https://3dvconf.github.io/2026/call-for-papers/
+    - https://3dvconf.github.io/2026/author-guidelines/
+    - https://www.sfu.ca/fas/computing/news-events/news/2026/march/sfu-computing-science-helps-bring-the-global-3d-vision-research-.html
+    - https://papercopilot.com/statistics/3dv-statistics/
+miccai:
+  about: >-
+    MICCAI (Medical Image Computing and Computer Assisted Intervention) is the leading international conference in medical image computing
+    and computer-assisted intervention, organized by the MICCAI Society and held annually. It is a large conference that drew 3,677
+    submissions in 2025 and 4,601 in 2026 (official figures); the 2026 meeting (29th edition) was held in Strasbourg, France (September 27 -
+    October 1). The community brings together methodological and clinical researchers across its two pillars, medical image computing (MIC)
+    and computer-assisted intervention (CAI).
+  topics:
+    - Image formation and reconstruction
+    - Image segmentation and anomaly detection
+    - Multimodal data integration
+    - Computer-aided diagnosis
+    - Trustworthy and generalizable AI
+    - Algorithmic fairness
+    - Surgical data science
+    - Image-guided robotic surgery
+    - Point-of-care imaging
+    - Teleradiology
+    - Medical Image Computing (MIC) / Computer Assisted Intervention (CAI) primary areas
+  features:
+    - >-
+      Up to 8 pages of main text plus up to 2 pages of references; the MICCAI-specific LNCS template is required (formatting violations such
+      as altered margins or line spacing result in an automatic desk reject)
+    - 'Fully double-blind review: on average 3 external reviewers plus 1-3 Area Chairs per paper'
+    - >-
+      Two-stage decisions: in the first stage 15-20% are early accepts and 40-50% early rejects; the rest go through a 1-week rebuttal
+      followed by independent decisions from 3 ACs (no new experiments or results may be added)
+    - >-
+      Abstract (intention-to-submit) registration is required 2 weeks before submission, and the full-paper deadline has no extensions;
+      co-authors are asked to register as reviewers
+    - Supplementary material is limited to video (avi/mp4/wmv); PDF supplements are not allowed (as of 2026)
+    - Accepted papers are published in Springer LNCS, with open-access versions posted on the MICCAI Society website
+    - 'The acceptance rate is around 27-29% (2025: 1,027/3,677, about 28%; 2026: about 27% per the official announcement)'
+  acceptance_rate: >-
+    2025: about 28% (1,027/3,677, as reported by the MICCAI 2025 General Chair); 2026: about 27% (1,167 accepted / 4,601 submitted, news
+    reports citing official MICCAI 2026 figures)
+  typical_schedule: null
+  sources:
+    - https://conferences.miccai.org/2026/en/CALL-FOR-PAPERS.html
+    - https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html
+    - https://conferences.miccai.org/2026/en/THE-MICCAI-REVIEW-PROCESS.html
+    - https://www.uni-bamberg.de/en/xai/news/artikel/2026-conference-miccai/
+    - https://miccai.org/index.php/publications/newsletters/december-winter-2025/memories-of-miccai-2025/
+midl:
+  about: >-
+    MIDL (Medical Imaging with Deep Learning) is an international conference dedicated to deep learning for medical imaging, organized by
+    the MIDL Foundation and held annually. The 2026 meeting (July 8-10) was held in Taipei, in person with free online streaming. It is a
+    community centered on researchers developing deep learning methods specialized for medical imaging, and accepted full papers are
+    published in PMLR.
+  topics:
+    - Segmentation, detection, and classification of medical images
+    - Learning-based image registration and reconstruction
+    - Clinical integration, workflow, and deployment
+    - Self-, semi-, and unsupervised representation learning
+    - Transfer learning, domain adaptation, learning with limited or noisy labels
+    - Generative AI and diffusion models for imaging
+    - Foundation and large vision-language models for healthcare
+    - Multimodal learning (imaging with text, omics, sensors, clinical data)
+    - Uncertainty estimation, calibration, and interpretability
+    - Federated, distributed, and privacy-preserving learning
+    - Safe, trustworthy, and responsible AI
+    - Validation and benchmarking across radiology, pathology, endoscopy, dermatology, ophthalmology
+  features:
+    - >-
+      Main Track (methodology) full papers: up to 10 pages at submission (excluding references, acknowledgements and appendices), up to 12
+      pages at camera-ready; the official MIDL LaTeX template is required
+    - >-
+      New Special Track in 2026 (Validation Studies): up to 14 pages at submission, up to 16 pages at camera-ready, with a separate
+      OpenReview portal
+    - Short papers (3 pages or fewer, excluding references) are presented as posters/spotlights and are not included in the proceedings
+    - 'Single-blind review on OpenReview: reviewers know the authors, but authors do not know the reviewers'
+    - Full papers go through roughly 1 week of rebuttal and reviewer discussion, followed by a final decision via meta-review
+    - Accepted full papers are published in the Proceedings of Machine Learning Research (PMLR)
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://2026.midl.io/call-for-papers
+isbi:
+  about: >-
+    ISBI (IEEE International Symposium on Biomedical Imaging) is an annual symposium jointly organized by the IEEE Signal Processing Society
+    (SPS) and the IEEE Engineering in Medicine and Biology Society (EMBS), covering the mathematical, algorithmic and computational aspects
+    of biological and biomedical imaging. The 2026 meeting (23rd edition) was held at ExCeL London (April 8-11) with several hundred
+    attendees, and the 2027 meeting (May 25-28, EPFL Lausanne) marks 25 years since the first ISBI. The program includes keynotes,
+    tutorials, challenges and a clinical day.
+  topics:
+    - Image formation and reconstruction
+    - Computational and statistical image processing and analysis
+    - Segmentation
+    - Image quality assessment
+    - Biological and biomedical imaging (nano to macro)
+  features:
+    - 'Two submission tracks: 4-page full papers (IEEE format, published in IEEE Xplore) and 1-page abstracts (with a later deadline)'
+    - >-
+      The deadlines are far apart; 4-page papers are due in the fall (November 2 for 2027), while 1-page abstracts are due the following
+      February
+    - Accepted papers are published in IEEE Xplore only if the presenting author registers and presents in person (2025 camera-ready policy)
+    - >-
+      Beyond the main track, there are tracks for workshop papers, challenge papers, and tutorial, special session and demo proposals;
+      challenge papers are routed for review through EDAS
+    - Of the 631 papers accepted in 2025 (Houston), 190 were oral presentations
+  acceptance_rate: >-
+    2026: 51.0% (893 papers accepted; statistics from the ISBI 2026 Program PDF — confirmed only via a search snippet, the original PDF
+    could not be opened directly)
+  typical_schedule: null
+  sources:
+    - https://biomedicalimaging.org/2026/
+    - https://biomedicalimaging.org/2027/
+    - https://signalprocessingsociety.org/newsletter/2025/11/isbi-2026-london-where-machines-learn-see-body-and-humans-learn-what-comes-next
+    - https://warwick.ac.uk/fac/cross_fac/tia/news/highlights_from_isbi
+    - https://confcats-event-sessions.s3.us-east-1.amazonaws.com/isbi26/uploads/isbi26-cfp_web-05.pdf
+    - https://confcats-event-sessions.s3.us-east-1.amazonaws.com/isbi26/uploads/ISBI_2026_Program_v11b.pdf
+ipmi:
+  about: >-
+    IPMI (Information Processing in Medical Imaging) is a biennial conference on medical image computing methodology, described as one of
+    the premier forums in the field with a tradition of about 58 years. The 30th edition in 2027 will be held at the Jouvence centre in
+    Orford, Quebec, Canada (June 27 - July 2) with an expected attendance of about 120; it is run in a retreat format in which all
+    participants lodge and dine together. Accepted papers are published in Springer LNCS.
+  topics:
+    - Mathematical foundations and computational methods
+    - Image formation and reconstruction
+    - Machine learning and intelligence
+    - Clinical applications and translation
+    - Visualization and human-AI interaction
+  features:
+    - >-
+      12 pages of main text (excluding references) in Springer LNCS format; no supplementary material of any kind is allowed, and formatting
+      violations result in a desk reject
+    - Double-blind review; the full-paper deadline is 1 week after the abstract deadline (no extensions)
+    - Unlimited, untimed Q&A after each presentation is central to the conference
+    - 'A small retreat of about 120 participants: all-inclusive registration covering lodging and meals'
+    - Authors must attend in person, and one author registration is required per accepted paper
+    - >-
+      Accepted papers are published in Springer LNCS; outstanding papers are invited to submit extended versions to a Medical Image Analysis
+      (MedIA) special issue (2027, publisher process in progress)
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://2027.ipmi-conf.org/
+embc:
+  about: >-
+    EMBC is the annual flagship conference of the IEEE Engineering in Medicine and Biology Society (EMBS); its first meeting was held in
+    Denver in 1979, and average attendance is about 3,000. The 48th edition in 2026 will be held at the Metro Toronto Convention Centre in
+    Toronto, Canada (July 26-30), with submissions from more than 80 countries. It is a broad community spanning all of biomedical
+    engineering, including biosignal processing, medical imaging, neural engineering and wearable sensors.
+  topics:
+    - Biomedical Signal Processing
+    - Biomedical Imaging and Image Processing
+    - Bionanotechnology & BioMEMS (BNM)
+    - Cardio-Pulmonary Systems and Physiological Engineering
+    - Neural and Rehabilitation Engineering
+    - Therapeutic & Diagnostic Systems and Technologies
+    - Wearable Biomedical Sensors and Systems
+    - Biorobotics and Biomechanics
+    - Biomedical & Health Informatics
+    - 'Biomedical Engineering for Society: Educating Innovators and Advancing Health Equity'
+    - 'From Fashion to Function: User-Centered Smart Textiles for Healthcare'
+  features:
+    - Two tracks, Full Contributed Papers (4-7 pages per the 2026 template) and 1-Page Research Poster Papers
+    - Full papers that are not accepted despite high scores are offered a transfer to the 1-page poster track
+    - Single-blind review, with reviewers assigned by theme and keywords
+    - >-
+      Accepted full papers are indexed in IEEE Xplore and PubMed/MEDLINE after on-site presentation; 1-page papers are neither published nor
+      indexed
+    - Roughly the top 7% of submissions by review score are invited to submit extended versions to an IEEE TBME special issue
+    - Up to 2 accepted papers per registration, and up to 35 authors per paper
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://embc.embs.org/2026/
+    - https://embc.embs.org/2026/papers/
+    - https://embs.org/events/sponsorship
+spie-mi:
+  about: >-
+    SPIE Medical Imaging is a symposium dedicated to medical imaging, held every February by SPIE (the international society for optics and
+    photonics) and composed of 9 sub-conferences including image processing, physics, computer-aided diagnosis, perception and image-guided
+    procedures. The 2027 meeting will be held in Vancouver, Canada (February 14-18), and the abstract deadline was August 5, 2026. The
+    community brings together researchers in technology development and clinical evaluation, from imaging physics and hardware to CAD and
+    pathology.
+  topics:
+    - Physics of medical imaging
+    - Medical image processing
+    - Computer-aided diagnosis
+    - Image perception and observer performance
+    - Image-guided procedures
+    - Digital and computational pathology
+    - Ultrasonic imaging and tomography
+    - Imaging informatics
+    - AI/ML application track (artificial intelligence, machine learning, deep learning)
+  features:
+    - >-
+      Abstract-first submission: an abstract for technical review (200-300 words), a program summary (50-150 words) and a review-only 2-4
+      page supplementary PDF
+    - Conference chairs/editors assess technical merit and fit and decide oral/poster assignments
+    - >-
+      After acceptance, a technical manuscript of at least 4 pages must be submitted about 3 weeks before the conference to be published in
+      the Proceedings of SPIE (SPIE Digital Library)
+    - >-
+      Only manuscripts that are presented on site and submitted by the deadline are published; oral presentations are recorded and included
+      in the Proceedings along with the slides
+    - >-
+      About 6 months elapse between the abstract deadline (August) and the conference (February); the manuscript deadline is in January,
+      just before the conference
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://www.spie.org/conferences-and-exhibitions/medical-imaging/presenters/abstract-submission-guidelines
+    - https://www.electrooptics.com/event/spie-medical-imaging-2027
+chil:
+  about: >-
+    CHIL (Conference on Health, Inference, and Learning) is a machine learning for health conference organized by the Association for Health
+    Learning and Inference (AHLI); it has been AHLI's official conference since 2022 and is held annually. The 7th edition in 2026 was held
+    at Seattle Children's Research Institute (June 29-30), with 40 papers published in PMLR Volume 333. It is a relatively small health AI
+    community bringing together ML researchers, clinicians, industry and policy experts.
+  topics:
+    - Models and Methods (2024 CFP track)
+    - Applications and Practice (2024 CFP track)
+    - Policy, Impact and Society (2024 CFP track)
+    - AI/ML for clinical healthcare, public health, health economics, informatics
+  features:
+    - Submission via OpenReview with anonymized PDFs (2024 CFP)
+    - Both an author response period and a reviewer discussion period are held (2024 CFP)
+    - 'Accepted papers are published in the Proceedings of Machine Learning Research (PMLR) (2026: Vol. 333, 40 papers)'
+    - Discussion-oriented programming beyond the main sessions, such as Research Roundtables (30-minute themed discussion sessions) (2025)
+    - Attendees are multidisciplinary, spanning CS, statistics, epidemiology, medicine and public policy
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://proceedings.mlr.press/v333
+    - https://physionet.org/news/post/chil-conference-call-for-papers-1/
+    - https://arxiv.org/html/2510.15217v2
+    - https://ahli.cc/
+icip:
+  about: >-
+    ICIP (IEEE International Conference on Image Processing) is the IEEE Signal Processing Society's flagship conference for image
+    processing, vision and imaging, held annually since 1994 and attended by more than 1,000 participants from over 100 countries. The 33rd
+    edition in 2026 will be held in Tampere, Finland (September 13-17). It is a large community covering all of image processing, with more
+    than 100 technical sessions, satellite workshops, special sessions and grand challenges.
+  topics:
+    - Image processing
+    - Computer vision
+    - Imaging
+    - Special sessions
+    - Satellite workshops
+    - Grand challenges
+  features:
+    - Regular papers of up to 5 pages plus 1 page reserved for references, published in IEEE Xplore
+    - >-
+      OJSP (IEEE Open Journal of Signal Processing) track: 8+1 pages, reviewed on the same timeline as the conference, published in the
+      open-access journal and then presented at the conference
+    - Double-anonymous review plus an author rebuttal period
+    - A 1-page Work-in-Progress abstract track (May deadline) and a track for presenting recently accepted SPS journal papers
+    - Top papers are selected for Spotlight sessions and offered fast-track review of extended versions in IEEE TIP/TCI
+    - >-
+      Open Preview: accepted papers are made freely available on IEEE Xplore before the conference; strict no-show policy (papers not
+      presented are not published)
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://2026.ieeeicip.org/
+    - https://2026.ieeeicip.org/call-for-papers-and-abstracts/
+    - https://ieeeicip.org/
+icassp:
+  about: >-
+    ICASSP (IEEE International Conference on Acoustics, Speech and Signal Processing) is the flagship conference of the IEEE Signal
+    Processing Society, held annually since its start in Philadelphia in 1976. It is the largest conference in signal processing, with 4,403
+    attendees in Seoul in 2024 and about 4,000 in Hyderabad in 2025, and 3,393 accepted papers in 2025; the 51st edition in 2026 will be
+    held in Barcelona (May 4-8) and the 52nd in 2027 in Toronto (May 16-21). It gathers the whole signal processing community, spanning
+    audio, speech, image, medical imaging and machine learning.
+  topics:
+    - Biomedical Imaging & Signal Processing
+    - Computational Imaging
+    - Image, Video & Multidimensional Signal Processing
+    - Machine Learning and Generative AI
+    - Computer Vision
+    - Compressive Sensing, Sparse Modeling
+    - Signal Processing Theory & Methods
+    - Sensor Array & Multichannel SP
+    - Audio & Acoustic Signal Processing
+    - Speech & Language Processing
+    - Signal Processing over Graphs
+    - Multimedia Signal Processing
+    - Remote Sensing & Signal Processing
+    - Applied Signal Processing Systems
+  features:
+    - Regular papers have up to 4 pages of technical content plus a 5th page reserved for references (5 pages total may not be exceeded)
+    - >-
+      Single-anonymous review, at least 3 reviewers per paper, and an optional rebuttal of 1 week or more (visible only to the TC/Area
+      Chair)
+    - 12 Technical Committees handle reviewing by area
+    - >-
+      OJSP special track (8+1 pages): same review timeline as the conference, journal publication followed by conference presentation (not
+      included in the proceedings)
+    - 'Open Preview: proceedings are freely available on IEEE Xplore from 30 days before the conference'
+    - A presentation track for accepted IEEE SPS/EURASIP journal papers (no re-review, not included in the proceedings)
+    - >-
+      One author of each accepted paper must present in person; papers without completed registration are automatically withdrawn from the
+      proceedings
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://2026.ieeeicassp.org/call-for-papers/
+    - https://2026.ieeeicassp.org/editorial-policies/
+    - https://2026.ieeeicassp.org/?p=4445
+    - https://2027.ieeeicassp.org/call-for-papers/
+    - https://en.wikipedia.org/wiki/International_Conference_on_Acoustics,_Speech,_and_Signal_Processing
+iccp:
+  about: >-
+    ICCP (IEEE International Conference on Computational Photography) is a conference dedicated to computational imaging and computational
+    photography, held annually since 2009 and affiliated with the IEEE Computer Society's PAMI Technical Committee. The 2026 meeting is in
+    Princeton (July 13-15) and the 2027 meeting in College Park, Maryland, USA (August 2-4). It is a small, specialized community spanning
+    optics, sensor and illumination hardware through to physics-based rendering combined with machine learning, and it also includes imaging
+    applications in medicine and biology.
+  topics:
+    - High-performance imaging
+    - Computational cameras, illumination, and displays
+    - Advanced image and video processing
+    - Integration of imaging, physics, and machine learning
+    - Structured light and time-of-flight imaging
+    - Appearance, shape, and illumination capture
+    - Computational optics (wavefront coding, digital holography, compressive sensing)
+    - Sensor and illumination hardware
+    - Imaging models and limits
+    - Physics-based, neural, and differentiable rendering
+    - 'Applications: mobile imaging, scientific imaging, medicine and biology, AR/VR'
+  features:
+    - Double-blind review plus a rebuttal after the first round of reviews (2025 CFP)
+    - >-
+      A single review process decides acceptance into either the IEEE TPAMI special issue (entirely new, archival-level work) or the ICCP
+      Proceedings (2025 CFP)
+    - Accepted papers in both tracks are presented orally (2025 CFP)
+    - >-
+      Separate Posters & Demos track: posters on previously published work and late-breaking results plus live demonstrations; accepted
+      papers are guaranteed poster space (2026)
+    - 'No extensions to the submission deadline (2025: fixed at April 9 PT)'
+    - An ICCP Summer School is run in conjunction with the conference
+  acceptance_rate: null
+  typical_schedule: null
+  sources:
+    - https://iccp2027.iccp-conference.org/
+    - https://iccp2026.iccp-conference.org/
+    - https://www.f4news.com/2025/02/24/international-conference-on-computational-photography-iccp-2025-call-for-papers
+    - https://www.f4news.com/2026/04/26/iccp-2026-posts-call-for-posters-demos-registrations-open/
+pw-bios:
+  about: >-
+    The Biomedical Optics / Biophotonics Symposium (BiOS) held within SPIE Photonics West, organized by SPIE every year in late January to
+    early February at the Moscone Center in San Francisco. Photonics West as a whole draws roughly 24,000 attendees, more than 100
+    conferences and over 4,500 presentations (per the 2027 announcement); BiOS is the track covering biophotonics, biomedical optics and
+    imaging and is described as 'the most comprehensive biophotonics conference in the field'. Photonics West 2027 runs January 30 to
+    February 4, with the BiOS Expo on January 30-31.
+  topics:
+    - Neurophotonics, Neurosurgery, and Optogenetics
+    - Clinical and Translational Neurophotonics
+    - 'Photons Plus Ultrasound: Imaging and Sensing'
+    - Multiphoton Microscopy in the Biomedical Sciences
+    - Optical Coherence Tomography
+    - Therapeutics and Diagnostics
+    - Tissue Optics
+    - Nanophotonics (biomedical)
+    - New imaging modalities
+  features:
+    - >-
+      Abstract-only submission - per the SPIE 2025 flyer, a 250-word abstract for technical review plus a 100-word summary for the program;
+      the 2026 flyer changes this to a 200-300-word technical abstract plus a 50-150-word summary (based on search snippet; varies by
+      conference)
+    - >-
+      After acceptance, a SPIE Proceedings manuscript is submitted separately - the manuscript is submitted after the presentation, and
+      acceptance is decided by the conference chairs
+    - >-
+      One of the six technical areas of Photonics West; runs alongside the BiOS Expo (January 30-31) and the Photonics West exhibition
+      (February 2-4, more than 1,400 exhibitors)
+    - >-
+      Neurophotonics-related conferences are run as two or more separate conferences - 'Neurophotonics, Neurosurgery, and Optogenetics' and
+      'Clinical and Translational Neurophotonics' (confirmed to be held January 17-19, 2026)
+    - Hot Topics and plenary sessions take place during the week (per press release)
+    - >-
+      The 2027 BiOS abstract deadline could not be confirmed on accessible pages (spie.org blocked) - another Photonics West conference,
+      LA303, lists a deadline of 2026-07-22, so a mid-2026 deadline for BiOS is possible but unconfirmed
+  acceptance_rate: null
+  sources:
+    - https://via.tt.se/pressmeddelande/4596753/international-optics-and-photonics-community-invited-to-spie-photonics-west-2027?lang=en
+    - https://www.laserfocusworld.com/events/event/55389685/spie-the-intl-society-for-optics-photonics-spie-bios-2027
+    - https://www.gophotonics.com/events/details/1173-spie-bios-expo-2027
+    - https://www.photonics.com/Articles/Photonics-West-Prepares-for-2026-Showcase/p1/a71728
+    - https://www.proceedings.com/content/085/085196webtoc.pdf
+    - https://www.proceedings.com/content/085/085213webtoc.pdf
+    - https://spie.org/documents/cfp-flyers/PW25/BO603call.pdf
+    - https://lux.spie.org/conferences-and-exhibitions/photonics-west/presenters/abstract-submission-guidelines
+    - https://en.wikipedia.org/wiki/Photonics_West
+cleo:
+  about: >-
+    CLEO (Conference on Lasers and Electro-Optics) is the leading international conference on lasers and electro-optics, co-sponsored by
+    Optica, the IEEE Photonics Society and the American Physical Society, and held every May in the United States. It features more than
+    2,000 technical presentations across 29 topic categories, spanning fundamental science to industrial applications. The 2027 edition
+    takes place May 2-7 at the Long Beach Convention Center (California), with the exhibition on May 4-5.
+  topics:
+    - Fundamental Science
+    - Science & Innovations
+    - Applications & Technology
+    - Quantum computing / quantum technologies
+    - Advanced imaging technologies
+    - Laser science
+    - Photonics / electro-optic technologies
+  features:
+    - >-
+      Submission format: 35-word abstract plus 2-page summary; accepted summaries are published in the Technical Digest (based on a snippet
+      of the CLEO submission guidelines page)
+    - >-
+      'Comprehensive, peer-reviewed' technical sessions - the IEEE Photonics Society announced that the 2026 program committee reviewed
+      'thousands of submitted abstracts'
+    - Postdeadline paper option available - 'strictly oral' (based on snippet)
+    - >-
+      Invited speakers and the program are organized around three core areas (Fundamental Science / Science & Innovations / Applications &
+      Technology)
+    - A two-day exhibition (May 4-5) runs alongside the Technical Conference (May 2-7)
+    - >-
+      2027 submission deadline: the official site shows only 'Now Accepting Submissions'; an aggregator site (cantonfair.net) lists
+      2026-11-23 - official confirmation needed
+  acceptance_rate: null
+  sources:
+    - https://www.cleoconference.org/
+    - https://www.cleoconference.org/home/about/
+    - https://www.cleoconference.org/home/submissions/submit-electronically
+    - https://ieeephotonics.org/announcements/cleo-2026-promotes-breakthroughs-in-research-and-applied-innovations/
+    - https://cantonfair.net/event/34302-cleo-conference-and-exhibition
+optica-biophotonics:
+  about: >-
+    The Optica Biophotonics Congress is a conference covering all of biophotonics, held by Optica (formerly OSA) every April in the United
+    States; it merges the topics of Optica's former Biomedical Optics (BIOMED) and Optics in Life Sciences meetings into a single integrated
+    program. Described as 'a leading international forum covering the full spectrum of biophotonics', it consists of technical sessions,
+    industry panels, posters, postdeadline papers and networking. The 2027 edition takes place April 18-21 in Denver (Embassy Suites by
+    Hilton Denver Downtown); the 2026 edition was held April 26-29 in Fort Lauderdale.
+  topics:
+    - 'Bio-Optics: Design and Application'
+    - Clinical and Translational Biophotonics
+    - Novel Techniques in Microscopy
+    - Optical Manipulation and Its Applications
+    - Optical Molecular Probes, Imaging and Drug Delivery
+    - Optics and the Brain (Brain)
+    - '  - Optics in the human central nervous system and peripheral nerves'
+    - '  - Rethinking scan patterns and shaping light'
+    - '  - Structural and super-resolution techniques'
+    - '  - Analyzing circuitry, network function and information processing'
+    - '  - Optogenetics, genetic encoding and novel probes'
+    - '  - Scattering, clearing and wavefront engineering'
+    - '  - Brain physiology and disease'
+    - '  - Functional brain imaging and neurodevelopment'
+    - '  - Big data tools / Optical hybrids'
+  features:
+    - >-
+      Submission format: 35-word abstract plus 2-page summary; summaries are published as the Technical Digest on the Optica Publishing
+      Group platform (indexed in Ei Compendex, Scopus and Google Scholar)
+    - >-
+      'All paper submissions are carefully peer-reviewed' - presentation type is chosen from Oral Only / Poster Only / Oral or Poster
+      Acceptable, with the final decision made by the committee
+    - '2027 deadline: 2026-12-08, 12:00 US Eastern Time (UTC-5); no revisions after the deadline'
+    - >-
+      The neurophotonics community participates through the 'Optics and the Brain' category (formerly the BRAIN topical meeting) - 10
+      subtopics are listed in the official category
+    - >-
+      Through 2026 the congress was organized as five topical meetings (Translational / Microscopy / OCT / OT&S / Brain); from 2027 it is
+      restructured into six topic categories
+    - >-
+      Recorded presentations are made available on the Optica website for up to 60 days after the meeting, including the postdeadline papers
+      session
+  acceptance_rate: null
+  sources:
+    - https://www.optica.org/events/congress/biophotonics_congress/about/
+    - https://www.optica.org/events/congress/biophotonics_congress/submit_papers/
+    - https://www.optica.org/events/congress/biophotonics_congress/program/topic_categories/
+ecbo:
+  about: >-
+    The European Conferences on Biomedical Optics (ECBO), co-sponsored by Optica and SPIE, is Europe's largest biomedical optics conference.
+    It is held biennially (June of odd years) at the ICM in Munich as part of the World of Photonics Congress, alongside the LASER World of
+    PHOTONICS trade fair. It brings together researchers, engineers and clinicians applying optics and photonics to medical and biomedical
+    problems; the 2027 edition takes place June 20-24 in Munich. The World of Photonics Congress 2025 as a whole had 3,500 attendees and
+    2,670 oral and poster presentations.
+  topics:
+    - 'ECBO 1: Translational Biophotonics: Diagnostics and Therapeutics'
+    - 'ECBO 2: Diffuse Optical Spectroscopy and Imaging'
+    - 'ECBO 3: Optical Systems for Mechanical and Biophysical Investigation (OMBI)'
+    - 'ECBO 4: Advances in Microscopic Imaging'
+    - 'ECBO 5: Optoacoustic Methods and Applications in Biophotonics'
+    - 'ECBO 6: Optical Coherence Imaging Techniques and Imaging in Scattering Media'
+  features:
+    - >-
+      Biennial - held concurrently with the World of Photonics Congress (2027: June 20-25) and the LASER World of PHOTONICS trade fair
+      (2027: June 22-25)
+    - '2027 abstract deadline: 2027-01-27, 23:55 US Eastern Time (UTC-5) (per the Optica submission page)'
+    - >-
+      Co-sponsored by Optica and SPIE - presented papers are published in both the SPIE Digital Library and Optica Publishing Group (per
+      SPIE guidance snippet); Optica provides them as 'Technical Digest papers'
+    - >-
+      Organized as six sub-conferences (ECBO 1-6) (topic list as of 2025) - includes neurophotonics-related tracks such as diffuse optical
+      spectroscopy/imaging (ECBO 2) and optoacoustics (ECBO 5)
+    - >-
+      CLEO/Europe-EQEC, Optical Metrology, Digital Optical Technologies, LiM and others are held within the same Congress, allowing
+      cross-attendance
+  acceptance_rate: null
+  sources:
+    - https://www.optica.org/events/topical_meetings/european_conferences_biomedical_optics/about/
+    - https://optica.org/events/topical_meetings/european_conferences_biomedical_optics/program/scope_and_topics/
+    - https://www.optica.org/events/topical_meetings/european_conferences_biomedical_optics/submit_papers/
+    - https://world-of-photonics.com/en/congress
+    - https://lux.spie.org/conferences-and-exhibitions/european-conferences-on-biomedical-optics/programme/conferences
+spie-optics-photonics:
+  about: >-
+    SPIE Optics + Photonics is North America's largest multidisciplinary optics and photonics meeting ('the largest international,
+    multidisciplinary optical sciences and technology meeting in North America'), held by SPIE every August at the San Diego Convention
+    Center and consisting of a technical program, an industry exhibition and networking. Third-party tallies put attendance at roughly
+    4,000. It covers a broad range including optical engineering, nanophotonics, quantum technologies, organic photonics and astronomical
+    instrumentation; biomedical optics is not a main track.
+  topics:
+    - Nanoscience + Engineering (Applications)
+    - Optical Engineering + Applications
+    - Organic Photonics + Electronics
+    - Nano-photonics
+    - Quantum technologies / quantum science
+    - Imaging
+    - Astronomical instrumentation
+  features:
+    - >-
+      Organized into three programs (Nanoscience + Engineering / Optical Engineering + Applications / Organic Photonics + Electronics)
+      (based on search results)
+    - >-
+      SPIE-style abstract submission followed by a SPIE Proceedings manuscript (presumed to follow the same system as Photonics West, but
+      the official O+P 2027 guidance was not accessible)
+    - Industry exhibition held alongside - the 2026 exhibition is August 25-27 (per third-party listing)
+    - Scheduled for San Diego in 2027 but dates are 'TBD' and the abstract deadline is unpublished (the 2025 deadline was May 7)
+    - 2026 dates differ between sources (August 17-21 vs August 23-27) - official confirmation needed
+  acceptance_rate: null
+  sources:
+    - https://starbridge.ai/conferences/spie-optics-photonics-2026
+    - https://www.showsbee.com/fairs/90242-SPIE-Optics-Photonics-2027.html
+    - https://www.gophotonics.com/events/details/1128-spie-optics-photonics-2026
+    - https://spie.org/conferences-and-exhibitions/optics-and-photonics/presenters
+sfn:
+  about: >-
+    'Neuroscience 20xx' is the world's largest neuroscience meeting, held by the Society for Neuroscience (SfN; founded 1969, roughly
+    35,000-37,000 members) every October-November in a major US city. The 2024 meeting in Chicago had 22,359 attendees. The 2026 meeting
+    takes place November 14-18 at the Walter E. Washington Convention Center in Washington, D.C., with a virtual component running November
+    5 to December 20.
+  topics:
+    - 'Theme A: Development'
+    - 'Theme B: Neural Excitability, Synapses, and Glia'
+    - 'Theme C: Neural Aging and Degeneration'
+    - 'Theme D: Neuroimmunity, Neurovasculature, and Neural Injury'
+    - 'Theme E: Sensory Systems'
+    - 'Theme F: Motor Systems'
+    - 'Theme G: Integrative Physiology and Behavior'
+    - 'Theme H: Motivation and Emotion'
+    - 'Theme I: Cognition'
+    - 'Theme J: Techniques'
+    - 'Theme K: History, Education, and Society'
+  features:
+    - >-
+      Abstract-only submission with a short regular submission window (2026: May 27 to June 10, 5 p.m. EDT); late-breaking abstracts
+      September 8-15 or until the cap of 2,500 is reached
+    - >-
+      An SfN regular member must sign as the submitting author, and each person may be presenting author on only one scientific abstract
+      plus one Theme K abstract
+    - 'Non-refundable fee per abstract: $175 regular, $260 late-breaking'
+    - >-
+      Presentation formats: Nanosymposium (oral), Poster, Theme K Poster - no cap on the total number of regular abstracts accepted; the
+      Program Committee rejects abstracts that violate the rules
+    - Optical neuroimaging and neurophotonics work is typically submitted under Theme J (Techniques) or the relevant biological theme
+    - Large industry exhibition held alongside (Exhibitor Prospectus available)
+  acceptance_rate: null
+  sources:
+    - https://www.sfn.org/meetings/neuroscience-2026
+    - https://www.sfn.org/meetings/neuroscience-2026/call-for-abstracts
+    - https://www.sfn.org/meetings/neuroscience-2026/call-for-abstracts/rules-for-abstract-submissions
+    - https://www.sfn.org/meetings/neuroscience-2026/themes-and-topics
+    - https://en.wikipedia.org/wiki/Society_for_Neuroscience
+ohbm:
+  about: >-
+    The Organization for Human Brain Mapping (OHBM, founded in Paris in 1995) is a neuroimaging society studying the anatomical and
+    functional organization of the human brain; it holds its annual meeting every June, rotating between continents (recent attendance
+    roughly 2,500-3,000). The 2026 meeting is June 14-18 in Bordeaux, France, and the 2027 meeting is June 26-30 at the Metro Toronto
+    Convention Centre in Toronto, Canada. Members range from clinicians in neurology and psychiatry to physicists, engineers, software
+    developers and statisticians.
+  topics:
+    - Poster Abstracts
+    - Symposia
+    - Educational Courses
+    - Roundtable Discussions
+    - Registered Reports (new for 2027)
+    - SIG, Chapter, and Committee Activities
+  features:
+    - >-
+      650-word abstract limit (four mandatory sections - Introduction/Methods/Results/Conclusion - including figure captions), up to 2
+      figures (2MB each)
+    - >-
+      Regular submissions go to the 'Poster Abstracts' category - oral presentations are separate proposals such as Symposia; participation
+      is limited to one Educational Course plus one scientific session
+    - >-
+      Abstract submission fee of $45 (non-refundable), waivable for submitters from eligible countries by UNESCO criteria; presenters must
+      attend in person
+    - >-
+      2027 timeline: submissions open 11/2/2026 - deadline 12/14/2026 - acceptance notification February 2027 - registration opens January
+      2027
+    - Registered Reports introduced from 2027 (Stage 1 notification 2027-01-15, final decision 2027-05-07)
+    - OHBM runs its own publishing platform, Aperture Neuro; a Korea Chapter exists
+  acceptance_rate: null
+  sources:
+    - https://humanbrainmapping.org/ohbm-2027/
+    - https://humanbrainmapping.org/ohbm-annual-meeting-faq/
+    - https://www.humanbrainmapping.org/
+    - https://en.wikipedia.org/wiki/Organization_for_Human_Brain_Mapping
+fens:
+  about: >-
+    The FENS Forum of Neuroscience is Europe's largest international neuroscience meeting, held biennially (July of even years) since 1998
+    by the Federation of European Neuroscience Societies (FENS; 42-43 societies from 32-33 countries, more than 22,000 members). Attendance
+    was 7,890 in Paris in 2022 and 7,155 in Vienna in 2024. The 2026 Forum is July 6-10 in Barcelona (jointly with the Spanish Society for
+    Neuroscience) and the 2028 Forum is July 8-12 in Glasgow, UK (hosted by the British Neuroscience Association).
+  topics: []
+  features:
+    - Biennial (even years) - co-hosted with the host country's society (Spain in 2026, BNA/Glasgow in 2028)
+    - >-
+      Abstract deadline is five months before the meeting (2026: February 5, the same deadline as travel grants and early registration);
+      late-breaking abstract deadline 2026-04-27
+    - Poster-centered program ('Poster Presentations and Guidelines'); ePosters were used in 2024
+    - Exhibition and sponsor program held alongside (exhibition floor plan, sponsor theatre sessions)
+    - >-
+      A theme/topic list exists under the 'Themes and Topics' menu on the official site, but its content could not be verified in this
+      survey
+  acceptance_rate: null
+  sources:
+    - https://fensforum.org/
+    - https://fensforum.org/?p=5511
+    - https://fens.org/news-activities/news/fens-forum-2028-location-announcement
+    - https://www.bordeaux-neurocampus.fr/?p=195173
+fom:
+  about: >-
+    Focus on Microscopy (FOM) is an annual international conference on optical microscopy that began in 1988, organized by the Dutch FOM
+    foundation together with local institutions in the week before Easter at a different location each year (Taipei 2025, Stockholm 2026,
+    Osaka 2027). Starting from three-dimensional imaging with confocal and multiphoton microscopy, it now covers the full range of
+    microscopy innovation including super-resolution, light sheet, adaptive optics and AI, and serves as a meeting place for developers and
+    users with an accompanying technical exhibition.
+  topics:
+    - Theory and practice of confocal and multiphoton-excitation microscopy
+    - Super-resolution microscopy
+    - AI in microscopy
+    - 3D and 4D live cell and tissue imaging
+    - Adaptive optics for microscopy
+    - Light sheet microscopy
+    - Phase/interference based microscopies
+    - OCT, holography, endoscopy
+    - 'Advanced fluorescence imaging/spectroscopy: FRET, FRAP, FLIM, FCS, SOFI'
+    - New fluorescent probes, proteins, quantum dots, single molecule imaging
+    - Clearing and expansion techniques
+    - 'Coherent non-linear microscopies: SHG, THG, SFG, CARS'
+    - Multi-dimensional fluorescence and Raman spectroscopy imaging
+    - Fast acquisition, automated and high-content microscopy
+    - 3D image processing and visualization for multidimensional data
+  features:
+    - >-
+      One-page PDF abstract submission (all one-page abstracts since 2004 are permanently archived and searchable in the online FOM
+      archive); no separate proceedings
+    - >-
+      Authors may request a 20-minute oral presentation or a poster, but 'Oral presentations can not be guaranteed' - the abstract selection
+      committee and organizing committee make the final decision; for 2027, notification in early February
+    - >-
+      Held annually at a different location each year (the week before Easter), co-organized by the FOM foundation and a local
+      society/university
+    - >-
+      40-minute plenaries and 20-minute parallel-session talks (including discussion), two poster sessions (2027: March 22 and 23); flash
+      poster presentations have been held in the past
+    - >-
+      Accompanied by a technical exhibition of microscopy companies ('accompanied by a technical exhibition'); the 2027 main sponsor is
+      Nikon
+  acceptance_rate: null
+  sources:
+    - https://www.focusonmicroscopy.org/
+    - https://www.focusonmicroscopy.org/2027-submit/?event_id=11725
+    - https://www.focusonmicroscopy.org/2027-about/?event_id=11725
+    - https://www.becker-hickl.com/events/focus-on-microscopy-2026/
+abc:
+  about: >-
+    The SPIE Advanced Biophotonics Conference (SPIE ABC) is an international biophotonics conference hosted by the Optical Society of Korea
+    (OSK) with an organizing committee run by SPIE, held in Korea in the autumn (Busan, November 4-6, 2021; Jeju, November 1-4, 2023; Sono
+    Belle Jeju, October 29 to November 1, 2025). The 2025 meeting was led by Prof. Ki-Hun Jeong of KAIST (conference chair) and Prof.
+    Jae-Byum Chang (event chair), and its papers were published as Proc. SPIE 14016 (86 pages). Only odd-year editions have been confirmed
+    so far, suggesting a biennial cycle, but no official announcement of a 2026/2027 edition was found.
+  topics:
+    - Clinical and translational biophotonics (keynote session)
+    - Neurotechnology in surgery (satellite symposium, 2025)
+    - OSK-CSOE Joint Symposium
+    - Young Investigator's Award session
+  features:
+    - >-
+      Published in SPIE Proceedings - 2025 as Proc. SPIE Vol. 14016 (editors: Ki-Hun Jeong, Hongki Yoo, Seung Ah Lee, Eun-Yeong Park); the
+      2023 and 2021 editions are also listed on proceedings.com
+    - >-
+      A Korea-US joint structure (hosted by the Optical Society of Korea with an SPIE-run organizing committee), making it highly accessible
+      to Korean biophotonics researchers
+    - Submission via the conference's own abstract template (docx) (per 2025 site materials); Young Investigator Award session held
+    - As of 2025, a small proceedings volume of 86 pages - a small, focused meeting compared with large conferences such as BiOS
+    - Editions confirmed only in odd years (2021, 2023, 2025; biennial cycle presumed) - 2027 dates and deadlines unpublished
+  acceptance_rate: null
+  sources:
+    - https://www.proceedings.com/spie14016.html
+    - https://www.proceedings.com/content/085/085286webtoc.pdf
+    - https://d2j16w31g89z0j.cloudfront.net/site/spie2025/SPIE_ABC_2025_Sponsorship_Prospectus(EN).pdf
+    - https://d2j16w31g89z0j.cloudfront.net/site/spie2025/glance/SPIE_ABC_2025_Program_Book.pdf
+    - https://ndlsearch.ndl.go.jp/books/R100000002-I032030470
+fnirs:
+  about: >-
+    The largest conference in the fNIRS field, held biennially by the Society for functional Near-Infrared Spectroscopy (SfNIRS) and
+    described as 'the largest and most important scientific conference about fNIRS in the world'. It began in Boston in 2010 and has since
+    been held in London, Montreal, Paris, Tokyo, Boston and Birmingham; the 2026 edition (October 16-19) took place in Macau, and the
+    meeting subsequently rotates between the Americas (2028), Europe (2030) and Asia (2032). The society's official journal is SPIE's
+    Neurophotonics.
+  topics: []
+  features:
+    - >-
+      Submission format: 100-word short abstract plus a 1-page PDF summary following the template (including references and figures,
+      Times/Palatino 10pt)
+    - >-
+      'All paper submissions will be carefully peer-reviewed' - a presentation preference (oral or poster / poster only / virtual only) can
+      be selected; oral presentations are decided by the committee
+    - Accepted and presented papers are posted on the conference website (no separate proceedings)
+    - Biennial, rotating between continents (America 2028 → Europe 2030 → Asia 2032); a call for proposals to host the 2030 edition is open
+    - >-
+      Educational courses before the main meeting (2026: October 15-16) and a virtual conference (2026: October 13-14) held alongside; DEI
+      travel grants require a separate application
+    - >-
+      The 2026 abstract deadline was 2026-03-31, 23:59 GMT+8 (submissions opened January 15) - a pattern of deadlines roughly 6.5 months
+      before the meeting
+  acceptance_rate: null
+  sources:
+    - https://fnirs.org/conferences/
+    - https://fnirs2026.fnirs.org/
+    - https://fnirs2026.fnirs.org/call-for-abstracts/
+    - https://fnirs.org/
+optica-imaging:
+  about: >-
+    The Optica Imaging Congress (formerly the Imaging and Applied Optics Congress), renamed the 'Optica ImageSense Congress' from 2027, is
+    an integrated imaging and sensing conference held by Optica every July that brings together 14 topical meetings including COSI
+    (Computational Optical Sensing and Imaging), DH (Digital Holography), 3D, AO and IS. It 'showcases breakthroughs in image acquisition,
+    processing and display' and covers computational imaging, neuromorphic imaging, AR/VR and optical sensors. The 2026 edition is July
+    12-17 in Maastricht and the 2027 edition is July 11-15 in Ottawa, Canada (The Westin Ottawa).
+  topics:
+    - 'COSI: Computational Optical Sensing and Imaging'
+    - 'DH: Digital Holography and 3-D Imaging (standalone in alternating years)'
+    - '3D: 3D Image Acquisition and Display'
+    - 'AO: Adaptive Optics'
+    - 'IS: Imaging Systems and Applications'
+    - 'pcAOP: Propagation through and Characterization of Atmospheric and Oceanic Phenomena'
+    - 'QSM: Quantum Sensing and Metrology'
+    - 'HISE: Hyperspectral Imaging and Sounding of the Environment'
+    - 'AIS: Applied Industrial Spectroscopy'
+    - 'FTS: Fourier Transform Spectroscopy'
+    - 'LACSEA: Laser Applications to Chemical, Security and Environmental Analysis'
+    - Optical Sensors / ES / RadIT
+    - 'Category: Photonic and Biological/Biomedical Sensing and Imaging'
+    - 'Subtopic: 2D/3D Computational Microscopy, Tomography and Endoscopy'
+  features:
+    - >-
+      Submission format: 35-word abstract plus 2-page summary; summaries are published as the Technical Digest by Optica Publishing Group
+      (indexed in Ei Compendex, Scopus and Google Scholar)
+    - >-
+      'All paper submissions are carefully peer-reviewed' - Oral Only / Poster Only / Oral or Poster selection, with the final decision made
+      by the committee
+    - '2027 deadline: 2027-03-09, 12:00 US Eastern Time (UTC-5); no revisions after the deadline'
+    - >-
+      Of the nine topic categories, 'Photonic and Biological/Biomedical Sensing and Imaging' and 'Computational Imaging Techniques'
+      (including computational microscopy and tomography) are the ones relevant to neurophotonics research
+    - Student paper competitions per topical meeting (3-4 finalists, opt-in at submission)
+    - >-
+      Journal special issues linked to COSI (Applied Optics / Biomedical Optics Express / Optics Express; 2026 special issue deadline
+      2026-11-30)
+  acceptance_rate: null
+  sources:
+    - https://www.optica.org/events/congress/optica_imagesense_congress/
+    - https://www.optica.org/events/congress/optica_imagesense_congress/about/
+    - https://www.optica.org/events/congress/optica_imagesense_congress/submit_papers/
+    - https://www.optica.org/events/congress/optica_imagesense_congress/program/topic_categories/
+    - https://opg.optica.org/content/feature/announcement/item/boe-cosi2026
+auto-icpr:
+  about: >-
+    ICPR (International Conference on Pattern Recognition) is the flagship conference of the International Association for Pattern
+    Recognition (IAPR); following the 27th edition in Kolkata in 2024, the 28th was held August 17-22, 2026 in Lyon, France. A
+    long-established conference that marked its 50th anniversary in 2024, it is organized into six tracks spanning pattern recognition,
+    machine learning, computer vision, image/signal processing, biometrics, document analysis and biomedical imaging.
+  topics:
+    - Artificial Intelligence, Pattern Recognition and Machine Learning
+    - Computer and Robot Vision
+    - Image, Speech, Signal and Video Processing
+    - Biometrics and Human Computer Interaction
+    - Document Analysis and Recognition
+    - Biomedical Imaging and Bioinformatics
+  features:
+    - Six-track structure with a dedicated 'Biomedical Imaging and Bioinformatics' track, so medical imaging work can be submitted
+    - >-
+      Review is single-blind (author names and affiliations must appear on the manuscript; the same in both the ICPR 2024 and 2026 official
+      guidelines)
+    - >-
+      As of ICPR 2024, Springer LNCS format with a maximum of 15 pages including references (the ICPR 2026 page limit could not be confirmed
+      on the official page)
+    - Supplementary material is optional, a single file of up to 50MB, used for reviewers' reference only (ICPR 2026 Instructions)
+    - >-
+      Proceedings published by Springer (ICPR 2024: Springer LNCS; the ICPR 2026 Proceedings page links to Springer DOIs, 16 volumes for the
+      main conference plus 5 for workshops)
+    - Reproducible Research in Pattern Recognition (RRPR) badge program in place
+    - ICPR 2024 (Kolkata) accepted 963 of 2,106 submissions (per the Springer LNCS proceedings description, confirmed via search snippet)
+  acceptance_rate: >-
+    2024: 963 accepted / 2,106 submissions (approx. 45.7%, Springer LNCS proceedings description; based on search result snippet, the page
+    itself could not be opened)
+  sources:
+    - https://icpr2026.org/
+    - https://icpr2026.org/calls.html
+    - https://icpr2026.org/instructions.html
+    - https://icpr2026.org/proceedings.html
+    - https://iapr.org/archives/icpr2024/cfp.html
+auto-icme:
+  about: >-
+    IEEE ICME (International Conference on Multimedia and Expo) is the flagship multimedia conference co-sponsored by four IEEE societies
+    (Circuits and Systems, Communications, Computer, Signal Processing), held annually since 2000. The 2026 edition is July 5-9 in Bangkok,
+    Thailand (QSNCC), and the 2027 edition is scheduled for July in Xiamen, China; it includes oral and poster sessions, keynotes, an expo,
+    demos, tutorials, grand challenges and industry workshops.
+  topics:
+    - 3D multimedia, AR/VR and immersive media
+    - Emerging multimedia applications and technologies
+    - AI/machine learning-based multimedia
+    - Image and video processing
+    - Multimedia analysis and generation
+    - Multimedia communications, networking and mobility
+    - Multimedia databases and data mining
+    - Multimedia quality assessment and metrics
+    - Multimedia security, privacy and forensics
+    - Multimedia standards, trends and related research
+    - Multi-modal media computing, interaction, and human-machine interaction
+    - Social media analysis and applications
+    - Speech/audio processing
+  features:
+    - Flagship multimedia conference co-sponsored by four IEEE societies (CAS, ComSoc, CS, SPS)
+    - >-
+      ICME 2026 timeline: regular paper deadline 2025-12-31 (AoE), author rebuttal 2026-02-22 to 26, notification 2026-03-13 (a rebuttal
+      stage exists)
+    - Proceedings published by IEEE, included in IEEE Xplore and indexed in EI Compendex
+    - >-
+      Beyond regular and special-session papers, there are Grand Challenges, demo, workshop, industry technical workshop, tutorial and panel
+      tracks
+    - 'Rankings: CCF B, CORE (ICORE) A, QUALIS A1 (as tallied by myhuiban)'
+    - >-
+      Page limit and whether review is double-blind could not be confirmed on accessible official pages (the official site
+      attend.ieee.org/icme-2026 was not accessible)
+  acceptance_rate: null
+  sources:
+    - https://www.aischolar.com/conference/icme2026
+    - https://gdr-iasis.cnrs.fr/?p=4682
+    - https://www.myhuiban.com/conference/278?lang=en-us
+auto-icmr:
+  about: >-
+    ACM ICMR (International Conference on Multimedia Retrieval) is the leading conference on multimedia retrieval, sponsored by ACM SIGMM
+    and held annually since Trento in 2011, with the principle of not being held on the same continent in consecutive years. The 16th
+    edition (2026) was held in hybrid form June 16-19 in Amsterdam (KIT); the 2027 edition is planned for Singapore (tentatively June 7-10)
+    and 2028 for Dublin. Its core scope is the analysis, retrieval and recommendation of image, video, audio and multimodal content.
+  topics:
+    - Content-based and hybrid search, retrieval, and recommender systems (large-scale / web-scale)
+    - Multimedia content extraction, analysis, indexing, semantic features
+    - Multimedia analytics, knowledge discovery, browsing, summarization, visualization
+    - Machine, deep, and transfer learning for retrieval; relevance feedback, active learning
+    - Fine-grained retrieval, event-based indexing, query processing
+    - Crowdsourcing, community-contributed and social multimedia
+    - Synthetic media generation and detection; narrative generation and analysis
+    - User intent and human perception in retrieval
+    - Multimedia beyond video (3D, sensor data), mobile search, hardware acceleration (GPU, FPGA)
+    - Benchmarks and evaluation methodologies
+    - Privacy, fairness, explainability; legal, ethical, societal impact
+    - Applications in news, media, medicine, sports, commerce, lifelogs, travel, security, environment
+  features:
+    - >-
+      Long papers 8 pages plus 2 pages of references, short papers 4 pages plus 2 pages of references (ACM sigconf format; no appendices or
+      supplementary material)
+    - Double-blind review for regular papers; submitting authors are required to serve as reviewers if requested by the TPC
+    - Proceedings published in the ACM International Conference Proceedings Series (fully open access at ACM from 2026, via APC or ACM Open)
+    - The CFP explicitly lists medicine among application areas - medical image retrieval/analysis work can be submitted
+    - Co-located events include the MediaEval workshop and the ACM SIGMM European Chapter Symposium
+    - 'ICMR 2026 timeline: paper deadline 2026-02-13, notification 04-15, camera-ready 04-25'
+  acceptance_rate: null
+  sources:
+    - https://icmr2026.org/
+    - https://icmr2026.org/calls.html
+    - https://sites.google.com/view/www-acmicmr-org
+auto-acm-mm:
+  about: >-
+    ACM Multimedia (ACM MM), which began in Anaheim in 1993, is the flagship conference of ACM SIGMM and is regarded as the premier
+    international conference for multimedia research, innovation and applications, held annually. It is very large, with 5,330 submissions
+    in 2025; the 34th edition in 2026 was held November 10-14 in Rio de Janeiro, Brazil. Beyond technical sessions it includes tutorials,
+    panels and an interactive art exhibition.
+  topics:
+    - Art and Culture
+    - Data Systems Management and Indexing
+    - Embodied and Immersive Multimedia
+    - Emotional and Social Signals
+    - Interactions and Quality of Experience
+    - Multimedia Applications
+    - Multimodal Fusion
+    - Multimedia Generative and Foundation Models
+    - Multimedia Interpretability and Explainability
+    - Multimedia and Language
+    - Multimedia Search and Recommendation
+    - Multimedia Reasoning
+    - New Forms of Media Content
+    - Responsible Multimedia
+    - Summarization, Analytics, and Storytelling
+    - Transport and Delivery
+  features:
+    - >-
+      6-8 pages of main text plus 2 pages reserved for references; exceeding this results in desk rejection; supplementary material up to
+      50MB submitted separately
+    - >-
+      Double-blind review (OpenReview), optional anonymous rebuttal, Author's Advocate mediation system; submitting authors are required to
+      review (up to 4 papers)
+    - >-
+      Papers without a multimedia/multimodal contribution may be desk-rejected; a maximum of 10 papers per author across the three tracks
+      combined
+    - >-
+      In addition to the Main Technical Track there are a Brave New Ideas (BNI) track and a Datasets track; BNI papers appear in the main
+      proceedings and are evaluated with an emphasis on novelty and impact
+    - 'Acceptance rate trend: 2020 27.9%, 2022 27.95%, 2023 29.36%, 2024 26.2%, 2025 23.45% (acmmm.org research track statistics)'
+    - 'Rankings: CCF A, CORE (ICORE) A* (as tallied by myhuiban); CORE A+ in 2006, Brazilian Qualis A1 in 2012 (Wikipedia)'
+  acceptance_rate: '2025: 1,250 / 5,330 = 23.45% (acmmm.org research track statistics)'
+  sources:
+    - https://2026.acmmm.org/site/cfp-guidelines.html
+    - https://2026.acmmm.org/site/call-bni.html
+    - https://acmmm.org/
+    - https://en.wikipedia.org/wiki/ACM_Multimedia
+    - https://www.myhuiban.com/conference/53?lang=en-us
+auto-mmm:
+  about: >-
+    MMM (International Conference on Multimedia Modeling) is a mid-sized international multimedia conference held around January each year;
+    the 32nd edition in 2026 is in Prague and the 33rd in 2027 takes place January 5-8 in Siem Reap, Cambodia. Alongside regular and
+    special-session papers, demos, a Brave New Ideas session and keynotes, it is distinguished by hosting the Video Browser Showdown (VBS),
+    an interactive video retrieval competition.
+  topics:
+    - 'Multimedia content analysis: indexing, retrieval, summarisation, annotation, fusion, verification, content generation'
+    - 'Signal processing and communications: media representation, coding, streaming, security/privacy, sensor networks, multi-camera systems'
+    - >-
+      Applications and services: browsing/retrieval tools, AR/VR, mobile, analytics, personalisation, multimodal conversation and
+      recommendation
+    - 'Domain applications: cultural, educational, social media, e-health and medical uses'
+    - 'Ethical, legal and societal aspects: fairness, environmental impact, reproducibility, responsible modeling'
+    - 'Emerging topics: large multimedia models and LLMs, multimodal pre-training, embodied multimodal systems'
+    - 'Special session (2027): Multimodal Computer Vision in Medicine'
+    - 'Special session (2027): Embodied Multimedia Modeling'
+    - 'Special session (2027): Video Understanding with Multimodal LLMs'
+    - 'Special session (2027): Multimodal Agentic Systems and Applications'
+    - 'Special session (2027): Trustworthy Multimedia Modeling'
+  features:
+    - Full papers of 12 pages of main text (including figures, tables and appendices) plus 2 pages of references, Springer LNCS format
+    - Double-blind review for regular and special-session papers (submission via ConfTool)
+    - Proceedings published in Springer LNCS (Open Access/Open Choice available)
+    - >-
+      The 2027 special sessions include 'Multimodal Computer Vision in Medicine', and the CFP explicitly lists e-health/medical applications
+      - suitable for medical imaging submissions
+    - Video Browser Showdown (VBS), demo track, Best Paper (USD 1,500) and Best Student Paper (USD 1,000) awards, travel grants
+    - 'MMM 2027 timeline: regular paper deadline 2026-08-30 (extended), notification 10-19, camera-ready 11-01'
+    - 'Rankings: CCF C, CORE (ICORE) B, QUALIS B1 (as tallied by myhuiban)'
+  acceptance_rate: null
+  sources:
+    - https://mmm2027.net/
+    - https://mmm2027.net/call_for_papers.html
+    - https://www.myhuiban.com/conference/620?lang=en-us
+auto-euvip:
+  about: >-
+    EUVIP (European Conference on Visual Information Processing, formerly the European Workshop on Visual Information Processing) is a
+    European conference bringing together academia and industry in visual information processing; the 14th edition (2026) was held September
+    28 to October 1 in Luxembourg. EURASIP and the IEEE Signal Processing Society, among others, participate as community sponsors, and the
+    program consists of keynotes, tutorials, oral/poster sessions, special sessions, demos and a student session.
+  topics:
+    - 'Modalities: conventional image/video, stereoscopic, multi-view, 360°, light fields, point clouds, meshes, holography'
+    - Medical imaging
+    - Multimodal perception (vision, language, audio, depth); multi-/hyper-spectral, thermal, event-based sensing
+    - 'Performance assessment: subjective/objective quality, QoE, benchmarking, robustness, bias, explainability'
+    - 'Applications: biometrics, forensics, trust and security; face, body, pose, gesture'
+    - 'Applications: AR/VR, gaming, broadcasting; medical, education, cultural, industrial uses'
+    - 'Applications: drones, autonomous vehicles, autonomous navigation and perception in space systems'
+    - Sensing, representation, modelling, registration; computational vision modelling
+    - Vision-language modelling; multimodal learning and cross-modal fusion
+    - 3D vision from sensors; visual anomaly detection
+    - Restoration, denoising, enhancement; detection, recognition, retrieval, classification
+    - Coding and transmission; efficient, scalable, distributed vision; synthesis, rendering, visualization
+  features:
+    - Up to 6 pages including figures and references (the 6th page for references only) - a short-format conference
+    - Double-blind review, submission via Microsoft CMT
+    - Regular papers are included in the proceedings and scheduled for publication in IEEE Xplore
+    - The CFP topics explicitly list 'medical imaging' and medical applications, making it suitable for medical imaging submissions
+    - >-
+      Tutorials, demo/industry exhibition, project showcase sessions and a student session for PhD students (2-page format); PhD student
+      travel grants (€500, 10 recipients)
+    - EURASIP, IEEE SPS and IEEE Benelux participate as community/society sponsors (2026 official site)
+    - 'EUVIP 2026 timeline: paper deadline 2026-06-15 (extended), decisions announced 07-23'
+  acceptance_rate: null
+  sources:
+    - https://euvip2026.github.io/
+    - https://euvip2026.github.io/calls/
+    - https://euvip2026.github.io/C4P.pdf
+    - https://euvip2026.github.io/information/paper-submission/
+    - https://signalprocessingsociety.org/tags/euvip-2026
+auto-sibgrapi:
+  about: >-
+    SIBGRAPI (Conference on Graphics, Patterns and Images) is Latin America's annual conference organized by the Special Committee on
+    Computer Graphics, Pattern Recognition and Image Processing (CEGRAPI) of the Brazilian Computer Society (SBC), established in 1988. It
+    covers computer graphics, vision, pattern recognition and image processing, with workshops and short courses alongside the main track,
+    and is co-located with events such as SBGames and SVR. The 39th edition in 2026 was held in Goiânia, Brazil.
+  topics:
+    - Computer graphics
+    - Computer vision
+    - Pattern recognition
+    - Image processing
+    - Remote sensing / Earth observation image analysis (GRSL special stream)
+    - Image enhancement and restoration (GRSL stream)
+    - Low-level feature extraction (GRSL stream)
+  features:
+    - Main track papers in English, IEEE format, up to 6 pages (as of 2024 and 2025)
+    - >-
+      Double-blind review with at least 3 expert reviewers per paper; conditionally accepted papers go through a second short review cycle
+      (rebuttal/revision)
+    - Proceedings published in IEEE Xplore and indexed in the SIBGRAPI Digital Library Archive (INPE) and SBC Open Lib (SOL)
+    - 'Journal-linked tracks: Computers & Graphics (C&G) track, IEEE GRSL (Geoscience and Remote Sensing Letters) track, JBCS special issue'
+    - >-
+      Additional tracks: WIP (Work in Progress), WTD (thesis and dissertation workshop), WUW, WIA (industry workshop), thematic workshops,
+      tutorials
+    - >-
+      arXiv preprints allowed; in-person oral presentation is mandatory (no remote presentation; papers not presented are removed from the
+      proceedings)
+    - 'Main track deadline is typically mid-to-late June (2024: extended deadline 06-30; 2025: 06-23/06-30)'
+  acceptance_rate: null
+  sources:
+    - https://sibgrapi.sbc.org.br/2025/?p=4432
+    - https://sibgrapi.sbc.org.br/2025/?p=4741
+    - https://sibgrapi.sbc.org.br/2024/?p=1203
+    - >-
+      https://www.grss-ieee.org/publications/author-resources/grsl-special-streams/grss-special-stream-of-the-pattern-recognition-and-image-analysis-for-geoscience-and-remote-sensing-at-sibgrapi-2026/
+kccv:
+  name_en: KCCV
+  full_en: Korean Conference on Computer Vision
+  about: >-
+    KCCV (Korean Conference on Computer Vision) is the flagship domestic computer vision conference organized by the Korean Computer Vision
+    Society (KCVS), an incorporated association. First held in 2014, it reached its 12th edition in 2025. It is held once a year in summer
+    (early August), and the core format invites Korean researchers who have published at top-tier international venues such as CVPR, ICCV,
+    NeurIPS and ICLR to give oral and poster presentations. For 2026 (BEXCO, Busan), about 170 presentations and more than 1,300
+    participants are expected, announced as the largest edition ever.
+  topics:
+    - Computer vision in general (centered on work presented at top-tier venues such as CVPR, ICCV, ECCV, NeurIPS and ICLR)
+    - Privacy & Safety (2026 oral session name)
+    - Diffusion Models (2026 oral session name)
+    - 3D vision (specialty of 2026 keynote/invited speakers Matthias Niessner and Angela Dai; an official topic list has not been confirmed)
+  features:
+    - >-
+      No separate public call for papers (CFP) document could be found on the official site. The official description reads 'Korean
+      researchers who have presented results at top-tier international conferences are invited to give oral and poster presentations' (i.e.,
+      a re-presentation format for already-published papers)
+    - Main conference of 3 days plus a separate 1-day online (virtual only) workshop/tutorial day
+    - Doctoral Colloquium (PhD student session), mentoring sessions, sponsor exhibition and recruiting booths
+    - Officially announced that student poster presentation opportunities were greatly expanded in 2026
+    - 'Keynotes are delivered in English by overseas speakers (2026: Rene Vidal, Matthias Niessner, Angela Yao)'
+    - >-
+      Registration fees (2026, early/on-site): regular KRW 360,000/400,000, graduate students KRW 260,000/300,000, undergraduates KRW
+      200,000/200,000
+    - The host society KCVS also organizes the IPIU workshop and runs a 'Researcher Forum' twice a year
+  typical_schedule: >-
+    Held for 3 days in early August every year (2025: Aug 4-6, BEXCO Busan; 2026: Aug 3-5, BEXCO Busan). 2026 early registration deadline
+    Jul 30. The pattern of paper/poster application deadlines could not be confirmed on the official pages. 2027 schedule not yet announced
+    (as of 2026-11-17)
+  acceptance_rate: null
+  sources:
+    - https://kcvs.kr/?act=info.workshop&pseq=9
+    - https://kcvs.kr/?act=info.workshop&pseq=8
+    - http://kcvs.kr/
+    - https://kcvs.kr/?act=board&bbs_code=news-notice
+ipiu:
+  name_en: IPIU
+  full_en: Workshop on Image Processing and Image Understanding
+  about: >-
+    IPIU (Workshop on Image Processing and Image Understanding) is a long-running domestic workshop in image processing and computer vision,
+    started in 1989 and reaching its 39th edition in 2027. It is organized by the Korean Computer Vision Society (KCVS) and co-hosted by the
+    Korean Institute of Broadcast and Media Engineers, The Institute of Electronics and Information Engineers, the Korean Institute of
+    Information Scientists and Engineers, the Korea Multimedia Society and the Korean Institute of Communications and Information Sciences,
+    and is held once a year in February on Jeju. It brings together academic and industry researchers and students, and is sponsored by many
+    companies including Hanwha, Samsung, LG AI Research and Qualcomm.
+  topics:
+    - Image processing
+    - Image understanding
+    - Pattern recognition
+    - Image coding
+    - Software for image processing
+    - Computer vision
+    - Machine learning
+    - Medical imaging
+    - Multimedia communications
+    - Multimedia applications
+    - Character recognition and related areas
+  features:
+    - Papers of 2-6 pages, written in Korean or English (Hangul/MS Word templates and an Overleaf LaTeX template provided)
+    - Program centered on oral and poster presentations; final revised paper submitted after review notification
+    - Early-career researcher sessions (4 sessions in 2027), special lectures and invited talks
+    - 'Doctoral Consortium: separate call for new PhDs or PhD candidates about to graduate'
+    - >-
+      Many industry sponsors from Platinum to Startup tiers, with recruiting promotion (Hanwha Vision, Samsung, LG AI Research, Qualcomm,
+      etc.)
+    - IPIU 2026 Proceedings and program book posted on the notice board (DBpia indexing not confirmed)
+    - Author registration deadline is one week earlier than general early registration
+  typical_schedule: >-
+    Held for 3 days in mid-February every year on Jeju (2027: Feb 17-19, Maison Glad Jeju). Paper deadline in mid-December (2027:
+    2026-12-18), review notification Jan 18, camera-ready Jan 22, author registration Jan 29, early registration Feb 5
+  acceptance_rate: null
+  sources:
+    - https://ipiu.or.kr/
+    - https://ipiu.or.kr/?act=info.page&pcode=sub02
+    - https://ipiu.or.kr/?act=info.page&pcode=greetings
+    - http://kcvs.kr/
+kcc:
+  name_en: KCC
+  full_en: Korea Computer Congress
+  about: >-
+    KCC (Korea Computer Congress) is a comprehensive conference covering all areas of computer science and information technology, organized
+    by the Korean Institute of Information Scientists and Engineers (KIISE), and held for 3 days in late June every year (one of two annual
+    comprehensive conferences, together with KSC). The 2026 edition was held at ICC Jeju under the theme 'New Challenges of Computing toward
+    the Era of Superintelligent AI', with 25 oral sessions and 10 poster sessions organized across regular, undergraduate and junior paper
+    categories. About 35 institutions and companies sponsored it, including IITP, Samsung SDS and SK hynix.
+  topics:
+    - Artificial intelligence (general and applied)
+    - Computer systems and next-generation architecture
+    - System software
+    - Data security and ethics
+    - On-device AI optimization (2026 competition topic)
+    - Workshop areas run by SIGs and research groups, such as explainable AI (XAI)
+    - >-
+      (The common KIISE comprehensive-conference call covers 23 areas per the KSC 2025 announcement, including high-performance computing,
+      databases, software engineering, algorithms and language engineering; the KCC 2026-specific list has not been confirmed)
+  features:
+    - >-
+      Paper categories: regular papers / undergraduate papers / junior papers (first author a high-school student); undergraduate and junior
+      papers are judged by separate evaluators in the poster session
+    - >-
+      Presentation evaluation: session chairs and evaluators score out of 100 as 'quality of delivery 50 points + quality of research
+      results 50 points'
+    - >-
+      About the top 10% of accepted papers are selected as Outstanding Papers and about the top 10% of presentations as Outstanding
+      Presentation Papers, recommended for publication in the society's journals (undergraduate/junior papers excluded)
+    - >-
+      Oral presentations 15 minutes (including Q&A; bring a USB drive, personal laptops not allowed), poster boards 1 x 2 m (nine A4 sheets
+      or one full sheet), poster presentations 5-7 minutes
+    - No-show results in withdrawal from the proceedings, notification to the advisor, and non-recognition as a research achievement
+    - >-
+      Keynotes, invited talks, special sessions, Top Conference sessions, tutorials, workshops, early-career researcher networking session,
+      competitions (on-device AI optimization, etc.), promotional booths
+    - Templates for regular papers and undergraduate/junior papers (Hangul/MS Word) distributed in the resources section
+  typical_schedule: >-
+    Held for 3 days in late June every year (2026: Jun 24-26, ICC Jeju). 2026 paper templates released Mar 18; the paper deadline could not
+    be confirmed on the official pages (the notice board is JS-rendered). 2027 schedule not yet announced
+  acceptance_rate: null
+  sources:
+    - https://www.kiise.or.kr/conference/main/index.do?CC=kcc&CS=2026
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2431&PARENT_ID=011000
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2422&PARENT_ID=020400
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2543&PARENT_ID=020400
+ksc:
+  name_en: KSC
+  full_en: Korea Software Congress
+  about: >-
+    KSC (Korea Software Congress) is the year-end comprehensive conference organized by the Korean Institute of Information Scientists and
+    Engineers (KIISE), held for 3-4 days in mid-to-late December every year (twice a year together with KCC in June). The 2025 edition was
+    held at the Yeosu Expo Convention Center, and the 2026 edition will be held at the Gyeongju HICO under the theme 'Cloud and Software
+    Innovation Opening the Era of General-Purpose AI'. Regular papers and undergraduate/junior papers are accepted in 23 areas, and
+    society-run paper presentations, tutorials and special sessions are held alongside SIG and industry-academia workshops.
+  topics:
+    - High-performance computing
+    - Defense software
+    - Databases
+    - Mobile applications and systems
+    - Internet of Things
+    - Software engineering
+    - Smart cities
+    - Algorithms
+    - Language engineering
+    - Open-source software
+    - AI applications (poster presentation only, excluded from Best/Outstanding Paper Awards)
+    - AI theory
+    - (23 areas in total including the above, per the KSC 2025 regular-paper announcement)
+  features:
+    - >-
+      Review version 2-3 pages, submitted as a blind PDF without author information or acknowledgments (Hangul/MS Word templates); after
+      acceptance, the final version is resubmitted in the publication template
+    - >-
+      Reviewed according to the society's review criteria and may be rejected; Oral/Poster assignment is decided by the program committee
+      (an Oral request may be accepted as Poster)
+    - >-
+      Only papers submitted to Oral sessions are eligible for the Outstanding Paper Award; Outstanding Presentation Papers are recommended
+      for journal publication
+    - >-
+      Undergraduate/junior papers: all authors must be high-school students or above; first author an undergraduate -> undergraduate paper,
+      a high-school student -> junior paper; Poster only; Best, Outstanding and Encouragement awards based on combined written review and
+      on-site presentation scores
+    - >-
+      Oral 15 minutes (including Q&A), poster boards 1 x 2 m, poster presentations 5-7 minutes; no-show results in withdrawal from the
+      proceedings
+    - >-
+      One presenter must register per paper (multiple papers require one registration each); unregistered papers may be excluded from the
+      proceedings and online publication
+    - >-
+      Keynotes, invited talks, Top Conference sessions, early-career researcher sessions and promotional booths; sponsored by many companies
+      (Kakao, SK Broadband, FADU, etc.)
+  typical_schedule: >-
+    Held in mid-to-late December every year (2025: Dec 16-19, Yeosu; 2026: Dec 21-23, Gyeongju). Paper deadline late October (2025: Oct 27
+    -> extended to Oct 30; 2026: CFP posted Sep 4, Oct 19 -> extended to Oct 26), review results mid-November (2025: Nov 14), camera-ready
+    and presenter registration late November (2025: Nov 24)
+  acceptance_rate: null
+  sources:
+    - https://www.kiise.or.kr/conference/main/index.do?CC=ksc&CS=2025
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2346&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2347&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2348&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/index.do?CC=ksc&CS=2026
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2026&content_no=2572&PARENT_ID=010100
+ieie:
+  name_en: IEIE Conferences
+  full_en: IEIE Summer/Fall Annual Conference
+  about: >-
+    The comprehensive domestic electronics conferences hosted and organized by The Institute of Electronics and Information Engineers (IEIE,
+    celebrating its 80th anniversary in 2026): the Summer Annual Conference every June (Lotte Hotel Jeju, 4 days) and the Fall Conference
+    every November (2 days). Papers are solicited by research groups under six societies (Communications, Semiconductors, Computers, AI
+    Signal Processing, Systems and Control, Industrial Electronics). The 2026 Summer Conference was reported at a scale of about 1,400
+    papers and about 3,000 participants.
+  topics:
+    - >-
+      Communications (communications, future intelligent networks, microwave and radio propagation, ITS, military electronics, wireless
+      PAN/BAN)
+    - >-
+      Semiconductors (semiconductor devices and materials, lightwave and quantum electronics, SoC design, RF integrated circuits, in-memory
+      computing, image sensors, etc.)
+    - Computers (multimedia, human ICT, AI/neural networks/fuzzy, M2M/IoT, AI applications, blockchain, etc.)
+    - >-
+      AI signal processing (acoustic and speech signal processing, image understanding, image processing, biomedical image/signal
+      processing, deep learning, robot intelligence, virtual convergence)
+    - >-
+      Systems and control (control and instrumentation, medical electronics and biomedical engineering, intelligent robots, medical imaging
+      systems, automotive electronics, AI transformation (AX), etc.)
+    - Industrial electronics (industrial electronic control, embedded systems, ubiquitous sensor networks, digital communication systems)
+    - New Emerging Area (biomedical research group, medical, energy, software, others)
+  features:
+    - 'Paper length: double column, 1 to 5 pages, in the society''s conference template (docx/hwp); submitted by upload on the website'
+    - Submissions accepted separately for regular sessions, special sessions (proposed by research groups) and the Best Paper Award track
+    - >-
+      Best Paper Award: first author must be a student member enrolled at a Korean university or graduate school; a separate 4-page
+      journal-format paper is blind-reviewed and combined with the oral presentation evaluation in a regular session; total prize KRW 5
+      million (Best 1 paper KRW 3 million, Outstanding 2 papers KRW 1 million each, sponsored by Samsung Electronics)
+    - Undergraduate paper competition, My Chip competition and AI undergraduate paper competition held in parallel
+    - Oral presentations 10-15 minutes (including Q&A; bring a USB drive); poster panels 100 x 180 cm, one author must stay at the poster
+    - Keynotes, invited talks, tutorials, special sessions, Young Leaders' Symposium (YLS), exhibition booths
+    - The Summer Conference includes regional chapter academic activities and AI convergence technology sessions
+  typical_schedule: >-
+    Summer: 4 days in the fourth week of June every year at Lotte Hotel Jeju (2026: Jun 23-26); paper deadline early-to-mid May (2026:
+    regular/special sessions May 8 -> extended to May 22 17:00, Best Paper Award May 8 -> May 15), review notification May 22, early
+    registration Jun 7. Fall: 2 days in late November every year (2026: Nov 27-28, Konjiam Resort); paper deadline mid-to-late October
+    (2026: Oct 19 -> Oct 26), review notification Oct 30, early registration Nov 16
+  acceptance_rate: null
+  sources:
+    - https://www.theieie.org/
+    - https://conf.theieie.org/2026s
+    - https://conf.theieie.org/2026s/pages/awards.vm
+    - https://conf.theieie.org/2026f
+    - https://conf.theieie.org/2026f/pages/outlines.vm
+    - https://conf.theieie.org/2026f/pages/conference_paperinfo.vm
+    - https://conf.theieie.org/2026f/pages/conference_paper_announce.vm
+    - https://www.koreadaily.com/article/20260626020541632
+kosombe:
+  name_en: KOSOMBE Conference
+  full_en: KOSOMBE Spring/Fall Conference
+  about: >-
+    The Korean Society of Medical and Biological Engineering (KOSOMBE) is the leading domestic society in biomedical engineering, holding a
+    Spring Conference every May (mostly on Jeju, 3 days) and a Fall Conference every November. The 67th Spring Conference in 2026 (Jeju
+    Shinhwa World) drew about 1,300 professors, researchers and students and was introduced as the largest academic exchange venue in Korean
+    biomedical engineering. The 2026 Fall Conference was held together with APCMBE 2026 (Nov 4-7, EXCO Daegu), an international conference
+    co-hosted by KOSOMBE and IFMBE.
+  topics:
+    - Brain engineering
+    - Biomedical instrumentation
+    - Medical image processing and systems
+    - Medical AI
+    - Biosensors & biochips
+    - Biomedical optics
+    - Biomaterials
+    - Biomechanics and medical robotics
+    - Medical device regulatory science
+    - Bio-semiconductors
+    - Medical ultrasound
+    - Medical data analysis and bioelectronic systems (new division in 2026)
+    - Physician-engineers / women in biomedical engineering (invited presentations only)
+  features:
+    - >-
+      Abstract format: extended abstract, A4 2 pages (original Word file plus PDF uploaded as a compressed file; email submission not
+      accepted)
+    - >-
+      For an oral presentation request, a short presentation video of up to 5 minutes (avi/mp4/mov, 100 MB or less) must be submitted; if
+      not selected in pre-screening, it is automatically converted to a poster (per 2025 Spring); the Fall Conference uses an Oral/Poster
+      choice for the student competition
+    - Outstanding presenters are selected and awarded in oral and poster sessions
+    - Presenters (invited and poster) must pay the annual membership fee and early registration fee online before submitting an abstract
+    - Research involving life-science/biological data requires an IRB/IACUC approval number (may be excluded from review without one)
+    - Posters printed at A0 (84.4 x 118.9 cm) (2025 Spring); the Fall Conference uses 90 x 120 cm on-site printing (2024)
+    - >-
+      Keynotes, special sessions (e.g., MFDS results-sharing session), family session, mentoring session, shorts contest, exhibition booths;
+      abstract book (ebook PDF) made public
+  typical_schedule: >-
+    Spring: 3 days, Thursday to Saturday in the second week of May every year on Jeju (2025: May 8-10, Lotte Hotel; 2026: May 7-9, Shinhwa
+    World). Abstract deadline early-to-mid April (2025: Apr 11 -> extended to Apr 18; 2026: Apr 3, poster-only Apr 10, acceptance
+    notification Apr 17, early registration Apr 17 -> Apr 24). Fall: early November every year (2024: Nov 7-9, abstract deadline Oct 11;
+    2025 Fall abstract deadline extended to Oct 17; 2026 merged with APCMBE 2026 Nov 4-7, abstract deadline Oct 8)
+  acceptance_rate: null
+  sources:
+    - https://www.kosombe.or.kr/
+    - https://www.kosombe.or.kr/register/2026_spring/main.html
+    - https://www.kosombe.or.kr/register/2025_spring/main.html
+    - https://www.kosombe.or.kr/register/2025_spring/abstract/info.html
+    - https://kosombe.or.kr/register/2024_fall/abstract/info.html
+    - https://www.medipharmhealth.co.kr/news/article.html?no=116209
+    - https://www.apcmbe2026.org/
+osk:
+  name_en: OSK Meetings
+  full_en: Optical Society of Korea Winter/Summer Meetings and Photonics Conference
+  about: >-
+    The Optical Society of Korea (OSK) is the domestic society for optics and photonics. It holds the Winter Meeting every February together
+    with its annual general assembly (recently at BEXCO Busan, alongside the optical industry exhibition OptoWin), and a summer meeting (in
+    2026 the Optics and Photonics Congress, OPC 2026, in July at ICC Jeju). Separately, the Photonics Division has held its divisional
+    conference, the 'Photonics Conference (PC)', every late November since 2008 (2026: Sono Calm Yeosu). Abstracts are solicited in 9
+    divisions including optical science, optical technology, photonics, biophotonics and quantum optics.
+  topics:
+    - Optical science (nano/micro optics, meta-optics, etc.)
+    - Optical technology
+    - Digital holography and information optics
+    - Quantum electronics
+    - Photonics
+    - Biophotonics (OCT, endoscopy, etc.)
+    - Displays
+    - Quantum optics and quantum information
+    - Lithography
+  features:
+    - >-
+      Abstract submission: MS Word/HWP templates, online submission only (no email), presentation language Korean or English, submission
+      possible even before paying the early registration fee (per 2027 Winter)
+    - >-
+      Oral: regular talks 15 minutes (including Q&A), invited 30 minutes, tutorials 90 minutes, plenary 45 minutes; oral may be converted to
+      poster depending on venue operations
+    - Poster panels 95 x 150 cm; presenters must stay at least 40 minutes after the session starts (otherwise treated as a No Show)
+    - The Winter Meeting is held concurrently with the Nth annual general assembly, alongside the optical industry exhibition OptoWin
+    - Non-members can also submit abstracts using the account created at early registration
+    - >-
+      The Photonics Conference (PC) is a divisional conference with Program (Oral)/Program (Poster) tracks and special sessions (2026: laser
+      notching for secondary batteries); the Photonics Division holds it annually together with COOC (Conference on Optoelectronics and
+      Optical Communications)
+    - The society's Young Scientist grant can be used for Winter/Summer Meeting registration fees
+  typical_schedule: >-
+    Winter: 4 days in early-to-mid February every year at BEXCO Busan (2026: Feb 3-6; 2027: Feb 16-19). Abstract submission mid-October to
+    mid-December (2026 Winter: Oct 20 - Dec 14; 2027 Winter: 2026-10-19 - 12-13), early registration until mid-to-late January (2027: until
+    Jan 25). Summer (OPC 2026): Jul 19-22, ICC Jeju, abstracts Mar 30 - May 17, early registration until Jun 29. Photonics Conference: 3
+    days in the last week of November every year (2026: Nov 25-27, Yeosu), abstract deadline mid-October (2026: Oct 16 -> Oct 23, no further
+    extension), early registration Nov 6
+  acceptance_rate: null
+  sources:
+    - https://www.osk.or.kr/
+    - https://www.osk.or.kr/content/event/calendar_list.php
+    - https://www.osk.or.kr/conference/event/index.php?cfrid=150
+    - https://www.osk.or.kr/conference/event/content/content.php?_mid=2980,2983&cfrid=150
+    - https://www.osk.or.kr/conference/event/content/content.php?_mid=2981,2992&cfrid=150
+    - https://www.osk.or.kr/conference/event/index.php?cfrid=149
+    - https://www.osk.or.kr/content/event/event_list.php?event_type=DIV
+    - https://www.kofst.or.kr/portal/bbs/B0000042/view.do?menuSn=59&pageIndex=1&pstSn=5555
+    - https://www.kofst.or.kr/portal/bbs/B0000042/view.do?pstSn=4337&menuSn=59&pageIndex=1
+kosaim:
+  name_en: KoSAIM Conference
+  full_en: Korean Society of Artificial Intelligence in Medicine Annual Conference
+  about: >-
+    The Korean Society of Artificial Intelligence in Medicine (KoSAIM) is a medical AI society founded jointly by the medical and
+    engineering communities, following a founding public hearing and founders' meeting at Asan Medical Center in Seoul in July 2018; its
+    first Spring Conference in May 2019 drew about 600 experts. It now holds its annual conference every October at the Grand
+    InterContinental Seoul Parnas (2025: Oct 24-25; 2026: Oct 23-24), and KoSAIM 2026 drew about 700 attendees, roughly 1.5 times the
+    previous year. Its scope is expanding from radiology to pathology and biosignals (ECG), and medical AI companies such as Lunit, Deepnoid
+    and VUNO take part in the exhibition.
+  topics:
+    - Medical foundation models (2026 session topic)
+    - Agentic AI (2026 session topic)
+    - Chest imaging AI (X-ray/CT, vision-language)
+    - Brain MRI analysis
+    - Digital pathology / cytopathology (AI for Pathology satellite workshop)
+    - Biosignal (ECG) analysis
+    - Hospital AI adoption cases (presentations from Asan Medical Center, Seoul National University Hospital and Severance)
+    - Medical AI reimbursement, regulation and trustworthiness
+  features:
+    - >-
+      Abstract submission categories: poster exhibition/presentation vs. free-paper oral presentation; oral submissions may be reassigned to
+      poster after review (2025 announcement)
+    - >-
+      Online submission via the abstract submission menu on the event page after signing up/logging in on the society website; an Abstract
+      Template for the abstract book must be completed and uploaded, with the presenter underlined
+    - 2026 poster/free-paper abstract submission extended to Sep 15; 2025 deadline Sep 12 midnight; 2024 window Jul 15 - Aug 31 23:00
+    - 'Satellite sessions (2026: AI for Pathology, the 1st Pathology Imaging Research Group workshop)'
+    - Award calls such as the Lunit Academic Award (2026 application deadline Jun 30)
+    - Corporate exhibition booths (Lunit, Deepnoid, VUNO, AITRICS, Seers Technology, Mediwhale, etc.)
+    - >-
+      The official site (kosaim.org) blocks automated fetching (HTTP 403), so detailed format, length and language requirements are
+      unconfirmed
+  typical_schedule: >-
+    2 days, Friday to Saturday in the fourth week of October every year at the Grand InterContinental Seoul Parnas (2025: Oct 24-25; 2026:
+    Oct 23-24). Abstract deadline mid-September (2025: Sep 12; 2026: extended to Sep 15). 2027 schedule not yet announced
+  acceptance_rate: null
+  sources:
+    - https://www.kosaim.org/html/?pmode=BBBS0007100001
+    - https://www.kosaim.org/html/?pmode=BBBS0007100001&seq=1163&smode=view
+    - https://kosaim.org/html/?pmode=BBBS0007100001&seq=1043&smode=view
+    - https://newsway.co.kr/news/view?ud=2026102009380157840
+    - https://medicaltimes.com/Users/News/NewsView.html?ID=1171474
+    - https://www.medicaltimes.com/Main/view.html?ID=1126525
+ksbns:
+  name_en: KSBNS K-Brain
+  full_en: Korean Society for Brain and Neural Sciences Annual Meeting (K-Brain)
+  about: >-
+    The Korean Society for Brain and Neural Sciences (KSBNS), an incorporated association, is the leading domestic neuroscience society,
+    founded in December 1998 through the merger of the Korean Society for Neuroscience and the Korean Society for Neurobiology (incorporated
+    in 2018). Since its 1st annual meeting in June 1999 it has held an annual international meeting once a year. Recently branded 'K-Brain',
+    the 29th meeting in 2026 (K-Brain 2026, Sep 6-8, Daejeon Convention Center) was reported as the largest international neuroscience
+    conference in Korea, with about 2,500 participants from 20 countries. The society has 10 divisions including glia, synapses, higher
+    cognition and translational medicine.
+  topics:
+    - Molecular and Cellular Neuroscience
+    - Synapses and Circuits Neuroscience
+    - Systems and Cognitive Neuroscience
+    - Mechanistic, Translational, and Clinical Neuroscience of Brain Disorders
+    - Computational Neuroscience, Neuro-Tools and Neuroengineering
+    - Others
+  features:
+    - >-
+      Abstracts entirely in English, submitted online; title 250 characters, body 2,200 characters, acknowledgments 400 characters
+      (including spaces), one graphic (JPG/PDF, 10 MB or less), one abstract per person, two categories designated
+    - >-
+      Presentation type chosen among Poster / Oral / Invited session; Oral selection is decided by Scientific Program Committee review, and
+      those not selected may present a poster; review outcomes are accept, reject or revision requested
+    - Submitters and presenters must complete registration payment; co-authors also register individually
+    - >-
+      Awards: KSBNS Outstanding Poster Awards (student and postdoc members, KRW 100,000), Scitech Korea Best Oral Presentation Awards (10
+      papers, KRW 500,000), IBRO Travel Awards (14 papers from IBRO-APRC countries, KRW 500,000); award applicants must submit an extended
+      abstract and research highlights and attend the closing ceremony
+    - Late-breaking abstract call (2026)
+    - >-
+      31 symposia, educational sessions, joint sessions with related societies (Korean Society for the Study of Obesity, Korean Movement
+      Disorder Society, Korean Society for Brain Stimulation, etc.), up to 15 continuing education credits
+    - >-
+      Keynotes centered on overseas distinguished scholars (2026: Ole Kiehn, Masashi Yanagisawa, Jennifer Raymond, Jun Huh); Abstract Book
+      made public
+  typical_schedule: >-
+    Held for 3 days in early September every year (2026: Sep 6-8, DCC Daejeon). 2026 abstract submission Mar 16 - Aug 31 23:59 KST,
+    early-bird registration Mar 16 - Jun 12. K-Brain 2027 symposium proposal deadline 2027-01-10 (announced 2026-11-16); 2027 main meeting
+    dates and abstract deadline not yet announced
+  acceptance_rate: null
+  sources:
+    - https://www.ksbns.org/
+    - https://www.ksbns.org/info/history.asp
+    - https://ksbns2026.org/
+    - https://ksbns2026.org/abstract/
+    - https://www.newswire.co.kr/newsRead.php?no=1036298
