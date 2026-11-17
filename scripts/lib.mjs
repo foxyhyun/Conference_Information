@@ -8,11 +8,11 @@ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 export const p = (...a) => path.join(ROOT, ...a);
 
 export const readYaml = (f, fallback) =>
-  fs.existsSync(f) ? (yaml.load(fs.readFileSync(f, 'utf8')) ?? fallback) : fallback;
+  fs.existsSync(f) ? (yaml.load(fs.readFileSync(f, 'utf8').replace(/^﻿/, '')) ?? fallback) : fallback;
 export const writeYaml = (f, obj, header = '') =>
   fs.writeFileSync(f, header + yaml.dump(obj, { lineWidth: 140, noRefs: true }));
 export const readJson = (f, fallback) =>
-  fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : fallback;
+  fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8').replace(/^﻿/, '')) : fallback;
 export const writeJson = (f, obj) => {
   fs.mkdirSync(path.dirname(f), { recursive: true });
   fs.writeFileSync(f, JSON.stringify(obj, null, 2));
