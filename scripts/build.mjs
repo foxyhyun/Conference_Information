@@ -19,6 +19,8 @@ const candidates = (readYaml(p('data/candidates.yml'), []) || []).filter((c) => 
 const ccf = readJson(p('data/crawled/ccfddl.json'), {});
 const hf = readJson(p('data/crawled/hf.json'), {});
 const meta = readJson(p('data/crawled/meta.json'), {});
+const scraped = readJson(p('data/crawled/scraped.json'), {});
+const notices = (readYaml(p('data/notices.yml'), []) || []).filter((n) => !n.hidden);
 
 // ------------------------------------------------------------------ 일정 병합
 function manualEditions(v) {
@@ -34,7 +36,8 @@ function manualEditions(v) {
 }
 
 function mergeEditions(v) {
-  const pools = [manualEditions(v), ccf[v.sources?.ccfddl]?.editions || [], hf[v.sources?.hf]?.editions || []];
+  // 우선순위: 수동 입력 > ccfddl > huggingface > 공식 사이트 자동 추출
+  const pools = [manualEditions(v), ccf[v.sources?.ccfddl]?.editions || [], hf[v.sources?.hf]?.editions || [], scraped[v.id] || []];
   const years = new Set(pools.flat().map((e) => e.year));
   const out = [];
   for (const y of [...years].sort()) {
@@ -140,6 +143,7 @@ const out = {
   conferences: confList,
   journals,
   candidates: candidates.map(({ hidden, ...c }) => c),
+  notices: notices.map(({ hidden, ...n }) => n).sort((a, b) => b.first_seen.localeCompare(a.first_seen)),
 };
 writeJson(p('site/data.json'), out);
 

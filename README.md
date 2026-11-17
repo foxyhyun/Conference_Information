@@ -10,7 +10,9 @@ Neurophotonics Lab 학회·저널 마감 트래커. 랩원은 사이트를 보�
 | `data/discovered.yml` | 크롤러가 새로 찾은 학회 (PR 로 올라옴, `hidden: true` 로 숨김) |
 | `data/candidates.yml` | WikiCFP 후보 (사이트 '신규 후보' 탭에만 표시) |
 | `data/crawled/` | 크롤링 원본 (자동 생성, 수정 X) |
-| `scripts/crawl.mjs` | ccfddl · huggingface/ai-deadlines · WikiCFP 크롤러 |
+| `data/notices.yml` | 국내 학회 홈페이지의 논문/초록 모집 공지 (`hidden: true` 로 숨김) |
+| `scripts/crawl.mjs` | ccfddl · huggingface/ai-deadlines · WikiCFP · 공식 사이트 크롤러 |
+| `scripts/scrape.mjs` | 공식 사이트 날짜 추출기 + 국내 공지 감시 |
 | `scripts/build.mjs` | 병합 + 점수 계산 → `site/data.json` |
 | `site/` | 정적 사이트 (GitHub Pages) |
 
@@ -19,6 +21,11 @@ Neurophotonics Lab 학회·저널 마감 트래커. 랩원은 사이트를 보�
 - **학회 추가/수정**: `data/venues.yml` 수정 → commit/push → 1~2분 뒤 사이트 반영
 - **국내 학회 마감 입력**: 해당 학회에 `editions:` 블록 추가 (파일 상단 예시 참고, 시간대 기본값 UTC+9)
 - **IF 갱신** (매년 6월 JCR 발표 후): `journals:` 의 `if`, `if_year`, `quartile` 수정, 확인한 항목은 `verified: true`
+- **공식 사이트 자동 추출 추가**: 학회에 `scrape:` 설정 → `node scripts/scrape.mjs <id> --dump` 로 확인
+  (현재: ISBI, MIDL, EMBC, CLEO, Optica Biophotonics, OHBM, SfN, IPIU)
+- **국내 공지 감시 추가**: 학회에 `watch: <홈페이지 URL>`
+  (현재: IPIU, 대한전자공학회, 대한의용생체공학회, 한국광학회, 대한의료인공지능학회, 한국뇌신경과학회)
+- **자동 추출이 안 되는 곳** (SPIE 봇 차단, KIISE·KCCV 등 JS 렌더링/접속 불가): `editions:` 로 직접 입력
 - **즉시 크롤링**: GitHub → Actions → `update` → Run workflow
 - **새 학회 PR**: 매월 1일·15일 자동 생성 → 분야 확인 후 Merge
 

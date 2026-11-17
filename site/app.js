@@ -7,6 +7,7 @@
     abstract: 'Abstract 마감', paper: 'Paper 마감', supplementary: 'Supplementary 마감', rebuttal: 'Rebuttal 마감',
     camera_ready: 'Camera-ready', registration: '등록 마감', notification: '결과 발표', other: '마감',
   };
+  const SRC = { ccfddl: '출처 ccfddl', hf: '출처 HF ai-deadlines', manual: '직접 입력', scraped: '공식 사이트 자동 추출' };
   const SUBMIT = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'registration', 'other']);
   const SORTS = {
     conf: [['deadline', '마감 임박순'], ['tier', '티어순'], ['difficulty', '난이도순 (채택률 낮은 순)'], ['name', '이름순']],
@@ -104,7 +105,8 @@
       const ms = nd.t - now;
       cd = `<div class="${level(ms)}"><div class="cd-type">${esc(TYPE_KO[nd.type] || nd.label)}${nd.label && /\(/.test(nd.label) ? ' ' + esc(nd.label.replace(/^[^(]*/, '')) : ''}</div>
         <div class="cd" data-at="${nd.t}">${countdown(ms)}</div>
-        <div class="cd-date">${kst(nd.at)}</div></div>`;
+        <div class="cd-date">${kst(nd.at)}</div>
+        <div class="src">${SRC[nd.edition.source] || ''}${nd.edition.source === 'scraped' ? ` <a href="${esc(nd.edition.link)}" target="_blank" rel="noopener">원문</a> <span class="warn-ico" title="공식 페이지에서 자동으로 읽은 날짜입니다. 원문을 확인하세요.">⚠</span>` : ''}</div></div>`;
     } else {
       const ld = lastDeadline(c, now);
       cd = `<div class="cd-none">다음 마감 미발표<br><span class="meta">${ld ? '지난 마감 ' + kst(ld.at).slice(0, 10) : '공식 사이트 확인'}</span></div>`;
@@ -209,7 +211,20 @@
     const now = Date.now();
     const list = filtered(now);
     const card = { conf: confCard, journal: journalCard, cand: candCard }[state.tab];
-    $('#list').innerHTML = list.length ? list.map((x) => card(x, now)).join('') : '<div class="empty">조건에 맞는 항목이 없습니다.</div>';
+    let html = list.length ? list.map((x) => card(x, now)).join('') : '<div class="empty">조건에 맞는 항목이 없습니다.</div>';
+    if (state.tab === 'cand' && DATA.notices?.length) {
+      const q = state.q.trim().toLowerCase();
+      const ns = DATA.notices.filter((n) => !q || `${n.venue_name} ${n.title}`.toLowerCase().includes(q));
+      const recent = Date.now() - 14 * 864e5;
+      html = `<article class="item notices"><div style="grid-column:1/-1">
+        <div class="name">국내 학회 공지 <span class="badge dom">${ns.length}</span></div>
+        <div class="meta">국내 학회 홈페이지에서 수집한 논문·초록 모집 공지입니다. 날짜는 원문에서 확인하세요.</div>
+        <ul class="nlist">${ns.map((n) => `<li><span class="nv">${esc(n.venue_name)}</span>
+          <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
+          ${Date.parse(n.first_seen) > recent ? '<span class="badge new">NEW</span>' : ''}<span class="nd">${esc(n.first_seen)}</span></li>`).join('')}</ul>
+      </div></article>` + html;
+    }
+    $('#list').innerHTML = html;
     const n = $('#notice');
     n.hidden = state.tab !== 'cand';
     n.textContent = 'WikiCFP 에서 자동 수집한 후보입니다. 검증되지 않았고 질 낮은(약탈적) 학회가 섞여 있을 수 있으니 투고 전 반드시 확인하세요.';
@@ -290,7 +305,7 @@
     }
     $('#cnt-conf').textContent = DATA.conferences.length;
     $('#cnt-journal').textContent = DATA.journals.length;
-    $('#cnt-cand').textContent = DATA.candidates.length;
+    $('#cnt-cand').textContent = DATA.candidates.length + (DATA.notices?.length || 0);
     const upd = DATA.crawledAt || DATA.generatedAt;
     $('#updated').textContent = '데이터 갱신 ' + kst(upd).replace(' KST', '');
     render();

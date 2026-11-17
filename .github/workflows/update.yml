@@ -33,7 +33,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cp data/discovered.yml /tmp/discovered.yml 2>/dev/null || true
           git checkout -- data/discovered.yml 2>/dev/null || rm -f data/discovered.yml
-          git add data/crawled data/candidates.yml
+          git add data/crawled data/candidates.yml data/notices.yml
           if git diff --cached --quiet; then
             echo "no schedule changes"
           else

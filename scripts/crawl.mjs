@@ -6,6 +6,7 @@
 //   data/candidates.yml  — WikiCFP 에서 찾은 후보 (검증 전, 사이트의 '후보' 탭에만 표시)
 import yaml from 'js-yaml';
 import { p, readYaml, writeYaml, writeJson, fetchText, toUtcIso, normType, sleep } from './lib.mjs';
+import { scrapeVenue, watchNotices } from './scrape.mjs';
 
 const NOW = new Date();
 const MIN_YEAR = NOW.getUTCFullYear() - 1;
@@ -221,9 +222,49 @@ try {
 }
 console.log(`  ${wiki.total} candidates (${wiki.fresh} new)`);
 
+// ------------------------------------------------------------------ 공식 사이트 추출 + 국내 공지
+console.log('official sites ...');
+const allVenues = [...confs, ...(readYaml(p('data/discovered.yml'), []) || [])];
+const scraped = {};
+for (const v of allVenues.filter((v) => v.scrape)) {
+  try {
+    const eds = await scrapeVenue(v, NOW);
+    if (eds.length) scraped[v.id] = eds;
+    console.log(`  ${v.name}: ${eds.reduce((s, e) => s + e.deadlines.length, 0)} dates`);
+  } catch (e) {
+    console.warn(`  ${v.name}: failed (${e.message})`);
+  }
+  await sleep(800);
+}
+writeJson(p('data/crawled/scraped.json'), scraped);
+
+console.log('domestic notices ...');
+const noticeFile = p('data/notices.yml');
+const prevNotices = readYaml(noticeFile, []) || [];
+const prevByKey = new Map(prevNotices.map((n) => [n.venue + '|' + n.title, n]));
+const notices = [];
+let newNotices = 0;
+for (const v of allVenues.filter((v) => v.watch)) {
+  for (const n of await watchNotices(v).catch(() => [])) {
+    const old = prevByKey.get(n.venue + '|' + n.title);
+    if (!old) newNotices++;
+    notices.push({ ...n, first_seen: old?.first_seen || NOW.toISOString().slice(0, 10), hidden: old?.hidden ?? false });
+  }
+  await sleep(800);
+}
+// 이번에 안 보인 공지도 60일간 유지 (홈페이지에서 밀려났을 수 있음)
+for (const n of prevNotices) {
+  if (!notices.some((x) => x.venue === n.venue && x.title === n.title) && Date.parse(n.first_seen) > NOW.getTime() - 60 * 864e5) notices.push(n);
+}
+writeYaml(noticeFile, notices,
+  '# 국내 학회 홈페이지에서 수집한 논문/초록 모집 공지. 숨기려면 hidden: true\n\n');
+console.log(`  ${notices.length} notices (${newNotices} new)`);
+
 writeJson(p('data/crawled/meta.json'), {
   crawledAt: NOW.toISOString(),
   discovered: added.map((a) => a.name),
   wikicfpNew: wiki.fresh,
+  scraped: Object.keys(scraped),
+  noticesNew: newNotices,
 });
 console.log(`done in ${((Date.now() - t0) / 1000).toFixed(1)}s`);

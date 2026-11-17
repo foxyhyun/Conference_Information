@@ -1,0 +1,219 @@
+{
+  "midl": [
+    {
+      "year": 2027,
+      "link": "https://2027.midl.io/",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "Abstract registration deadline",
+          "at": "2026-12-01T11:59:00.000Z"
+        },
+        {
+          "type": "paper",
+          "label": "Full paper submission deadline",
+          "at": "2026-12-05T11:59:00.000Z"
+        },
+        {
+          "type": "rebuttal",
+          "label": "Rebuttal period: 18",
+          "at": "2027-01-25T11:59:00.000Z"
+        },
+        {
+          "type": "notification",
+          "label": "Authors notification",
+          "at": "2027-02-13T11:59:00.000Z"
+        },
+        {
+          "type": "camera_ready",
+          "label": "Camera-ready deadline",
+          "at": "2027-03-13T11:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "isbi": [
+    {
+      "year": 2027,
+      "link": "https://biomedicalimaging.org/2027/",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "Four Page Papers · Submission",
+          "at": "2026-11-03T04:59:00.000Z"
+        },
+        {
+          "type": "notification",
+          "label": "Four Page Papers · Notification",
+          "at": "2027-01-13T04:59:00.000Z"
+        },
+        {
+          "type": "camera_ready",
+          "label": "Four Page Papers · Final Submission",
+          "at": "2027-01-27T04:59:00.000Z"
+        },
+        {
+          "type": "abstract",
+          "label": "One Page Abstracts · Submission",
+          "at": "2027-02-02T04:59:00.000Z"
+        },
+        {
+          "type": "notification",
+          "label": "One Page Abstracts · Notification",
+          "at": "2027-02-16T04:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "embc": [
+    {
+      "year": 2027,
+      "link": "https://embc.embs.org/2027/important-dates/",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "Full Contributed Papers · Submission Deadline",
+          "at": "2027-01-25T11:59:00.000Z"
+        },
+        {
+          "type": "notification",
+          "label": "Full Contributed Papers · Accept/Reject Notification",
+          "at": "2027-04-17T11:59:00.000Z"
+        },
+        {
+          "type": "paper",
+          "label": "1 Page Research Poster Papers · Submission Deadline",
+          "at": "2027-04-24T11:59:00.000Z"
+        },
+        {
+          "type": "camera_ready",
+          "label": "Full Contributed Papers · Final Submission Deadline",
+          "at": "2027-05-01T11:59:00.000Z"
+        },
+        {
+          "type": "notification",
+          "label": "1 Page Research Poster Papers · Accept/Reject Notification",
+          "at": "2027-05-08T11:59:00.000Z"
+        },
+        {
+          "type": "camera_ready",
+          "label": "1 Page Research Poster Papers · Final Submission Deadline",
+          "at": "2027-05-17T11:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "cleo": [
+    {
+      "year": 2027,
+      "link": "https://cleoconference.org/2027-call-for-papers/",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "Abstract and Summary Submission Deadline",
+          "at": "2026-11-24T07:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "optica-biophotonics": [
+    {
+      "year": 2027,
+      "link": "https://www.optica.org/events/congress/biophotonics_congress/",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "Deadline",
+          "at": "2026-12-08T17:00:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "sfn": [
+    {
+      "year": 2026,
+      "link": "https://www.sfn.org/meetings/neuroscience-2026/general-information/dates-and-deadlines",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "Abstracts and Sessions",
+          "at": "2026-01-27T04:59:00.000Z"
+        },
+        {
+          "type": "abstract",
+          "label": "Extended deadline for abstract submission, 2 p.m. EDT",
+          "at": "2026-06-13T04:59:00.000Z"
+        },
+        {
+          "type": "registration",
+          "label": "Registration",
+          "at": "2026-07-15T04:59:00.000Z"
+        },
+        {
+          "type": "notification",
+          "label": "Notifications of abstract acceptance status sent to presenting authors",
+          "at": "2026-09-09T04:59:00.000Z"
+        },
+        {
+          "type": "registration",
+          "label": "Deadline for online advance registration, 11:59 p.m. EDT",
+          "at": "2026-10-07T04:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "ohbm": [
+    {
+      "year": 2027,
+      "link": "https://www.humanbrainmapping.org/2027CallforContent/",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "Snapshot deadline",
+          "at": "2026-12-15T04:59:00.000Z"
+        },
+        {
+          "type": "paper",
+          "label": "Submissions close",
+          "at": "2026-12-15T05:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ],
+  "ipiu": [
+    {
+      "year": 2027,
+      "link": "https://www.ipiu.or.kr/",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문제출 마감",
+          "at": "2027-01-18T14:59:00.000Z"
+        },
+        {
+          "type": "notification",
+          "label": "심사 결과 통보",
+          "at": "2027-01-22T14:59:00.000Z"
+        },
+        {
+          "type": "camera_ready",
+          "label": "최종 수정 논문 제출",
+          "at": "2027-01-29T14:59:00.000Z"
+        },
+        {
+          "type": "registration",
+          "label": "저자 등록 마감",
+          "at": "2027-02-05T14:59:00.000Z"
+        }
+      ],
+      "source": "scraped"
+    }
+  ]
+}

@@ -527,6 +527,7 @@
   deadline: '2026-11-20'
   categories:
     - computer vision
+    - deep learning
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192039
@@ -783,6 +784,7 @@
   deadline: '2026-11-20'
   categories:
     - deep learning
+    - machine learning
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199892
@@ -1014,6 +1016,19 @@
   fields:
     - neuro
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194649
+  hidden: false
+  first_seen: '2026-11-17'
+- eventid: 201167
+  name: RTME  2027
+  full: 12th International Conference on Recent Trends in Mechanical Engineering
+  when: Mar 30, 2027 - Mar 31, 2027
+  where: Virtual Conference
+  deadline: '2026-11-20'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201167
   hidden: false
   first_seen: '2026-11-17'
 - eventid: 199582

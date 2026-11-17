@@ -1,13 +1,16 @@
 {
-  "crawledAt": "2026-11-17T05:58:24.611Z",
-  "discovered": [
-    "ICPR",
-    "ICME",
-    "ICMR",
-    "ACM MM",
-    "MMM",
-    "EUVIP",
-    "SIBGRAPI"
+  "crawledAt": "2026-11-17T06:25:24.124Z",
+  "discovered": [],
+  "wikicfpNew": 0,
+  "scraped": [
+    "midl",
+    "isbi",
+    "embc",
+    "cleo",
+    "optica-biophotonics",
+    "sfn",
+    "ohbm",
+    "ipiu"
   ],
-  "wikicfpNew": 0
+  "noticesNew": 1
 }

@@ -33,6 +33,18 @@
 #        - { type: paper,    at: "2026-12-08 23:59" }
 #    type: abstract | paper | supplementary | rebuttal | camera_ready | notification | registration
 #    수동 입력값은 크롤링 값보다 우선합니다.
+#
+#  scrape: 공식 사이트에서 마감을 자동 추출 (우선순위 가장 낮음, 사이트에 ⚠ 표시)
+#    scrape: { url: "https://embc.embs.org/{year}/important-dates/", label: after }
+#      url       {year} 는 내년 → 올해 순으로 시도
+#      follow    true 면 페이지 안의 Important Dates / Call for Papers 링크도 읽음
+#      label     after = 라벨이 날짜 뒤에 오는 사이트 (기본 before)
+#      timezone  시각이 없을 때 기준 시간대 (국제 기본 AoE, 국내 기본 UTC+9)
+#      include / exclude   라벨 필터 정규식
+#    테스트: node scripts/scrape.mjs <id> --dump
+#
+#  watch: 국내 학회 홈페이지 URL → '논문모집/초록모집' 공지를 '신규 후보' 탭에 표시
+#    테스트: node scripts/scrape.mjs --watch
 # =====================================================================
 
 conferences:
@@ -158,6 +170,7 @@ conferences:
     fields: [medai, dl]
     region: intl
     link: https://www.midl.io/
+    scrape: { url: "https://{year}.midl.io/", follow: true }
     metrics: { h5: 45, tier: 0.6, accept_rate: 0.40 }
 
   - id: isbi
@@ -166,6 +179,7 @@ conferences:
     fields: [medai, imgproc, optics]
     region: intl
     link: https://biomedicalimaging.org/
+    scrape: { url: "https://biomedicalimaging.org/{year}/", timezone: UTC-5 }
     metrics: { h5: 65, core: B }
 
   - id: ipmi
@@ -182,6 +196,7 @@ conferences:
     fields: [medai, neuro, optics]
     region: intl
     link: https://embc.embs.org/
+    scrape: { url: "https://embc.embs.org/{year}/important-dates/", label: after }
     metrics: { h5: 55, tier: 0.5 }
 
   - id: spie-mi
@@ -243,6 +258,7 @@ conferences:
     fields: [optics]
     region: intl
     link: https://www.cleoconference.org/
+    scrape: { url: "https://cleoconference.org/{year}-call-for-papers/" }
     metrics: { tier: 0.7 }
 
   - id: optica-biophotonics
@@ -250,7 +266,8 @@ conferences:
     full: Optica Biophotonics Congress (incl. Optics in the Life Sciences)
     fields: [optics, neuro]
     region: intl
-    link: https://www.optica.org/events/congress/
+    link: https://www.optica.org/events/congress/biophotonics_congress/
+    scrape: { url: "https://www.optica.org/events/congress/biophotonics_congress/", timezone: UTC-5 }
     metrics: { tier: 0.65 }
 
   - id: ecbo
@@ -276,6 +293,7 @@ conferences:
     fields: [neuro]
     region: intl
     link: https://www.sfn.org/meetings
+    scrape: { url: "https://www.sfn.org/meetings/neuroscience-{year}/general-information/dates-and-deadlines", timezone: UTC-5, yearless: true, exclude: "Art of Neuroscience|booth|switch|presenters to" }
     metrics: { tier: 0.7 }
 
   - id: ohbm
@@ -284,6 +302,7 @@ conferences:
     fields: [neuro, medai]
     region: intl
     link: https://www.humanbrainmapping.org/
+    scrape: { url: "https://www.humanbrainmapping.org/{year}CallforContent/", timezone: UTC-6 }
     metrics: { tier: 0.65 }
 
   - id: fens
@@ -309,6 +328,8 @@ conferences:
     fields: [imgproc, dl]
     region: domestic
     link: https://www.ipiu.or.kr/
+    scrape: { url: "https://www.ipiu.or.kr/" }
+    watch: https://www.ipiu.or.kr/
     metrics: { tier: 0.4 }
 
   - id: kcc
@@ -333,6 +354,7 @@ conferences:
     fields: [imgproc, dl]
     region: domestic
     link: https://www.theieie.org/
+    watch: https://www.theieie.org/
     metrics: { tier: 0.35 }
 
   - id: kosombe
@@ -341,6 +363,7 @@ conferences:
     fields: [medai, optics, neuro]
     region: domestic
     link: https://www.kosombe.or.kr/
+    watch: https://www.kosombe.or.kr/
     metrics: { tier: 0.35 }
 
   - id: osk
@@ -349,6 +372,7 @@ conferences:
     fields: [optics]
     region: domestic
     link: https://www.osk.or.kr/
+    watch: https://www.osk.or.kr/
     metrics: { tier: 0.4 }
 
   - id: kosaim
@@ -356,7 +380,8 @@ conferences:
     full: 대한의료인공지능학회 (KoSAIM) 학술대회
     fields: [medai]
     region: domestic
-    link: https://kosaim.org/
+    link: https://www.kosaim.org/
+    watch: https://www.kosaim.org/html/
     metrics: { tier: 0.35 }
 
   - id: ksbns
@@ -365,6 +390,7 @@ conferences:
     fields: [neuro]
     region: domestic
     link: https://www.ksbns.org/
+    watch: https://www.ksbns.org/
     metrics: { tier: 0.4 }
 
 # =====================================================================
