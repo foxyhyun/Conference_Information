@@ -109,19 +109,6 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203483
   hidden: false
   first_seen: '2026-11-17'
-- eventid: 202539
-  name: FuzzyAI 2026
-  full: 12th International Conference on Fuzzy Systems and Intelligent AI
-  when: Dec 19, 2026 - Dec 20, 2026
-  where: Sydney, Australia
-  deadline: '2026-11-20'
-  categories:
-    - deep learning
-  fields:
-    - dl
-  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202539
-  hidden: false
-  first_seen: '2026-11-17'
 - eventid: 202479
   name: SIGEM 2026
   full: 12th International Conference on Signal, Image Processing and Embedded Systems
@@ -147,6 +134,19 @@
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195488
+  hidden: false
+  first_seen: '2026-11-17'
+- eventid: 202539
+  name: FuzzyAI 2026
+  full: 12th International Conference on Fuzzy Systems and Intelligent AI
+  when: Dec 19, 2026 - Dec 20, 2026
+  where: Sydney, Australia
+  deadline: '2026-11-21'
+  categories:
+    - deep learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202539
   hidden: false
   first_seen: '2026-11-17'
 - eventid: 191645
@@ -325,8 +325,10 @@
   deadline: '2026-11-21'
   categories:
     - image processing
+    - machine learning
   fields:
     - imgproc
+    - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192361
   hidden: false
   first_seen: '2026-11-17'
@@ -405,6 +407,7 @@
   deadline: '2026-11-21'
   categories:
     - deep learning
+    - machine learning
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191741
@@ -634,6 +637,7 @@
   deadline: '2026-11-21'
   categories:
     - bioinformatics
+    - deep learning
   fields:
     - neuro
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192324
@@ -676,6 +680,47 @@
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201167
+  hidden: false
+  first_seen: '2026-11-17'
+- eventid: 191788
+  name: NLAICSE 2026
+  full: 3rd International Conference on NLP, AI, Computer Science & Engineering
+  when: Dec 30, 2026 - Dec 31, 2026
+  where: Virtual Conference
+  deadline: '2026-11-21'
+  categories:
+    - image processing
+    - bioinformatics
+  fields:
+    - neuro
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191788
+  hidden: false
+  first_seen: '2026-11-17'
+- eventid: 195010
+  name: IJSPTM 2026
+  full: International Journal of Security, Privacy and Trust Management
+  when: N/A
+  where: N/A
+  deadline: '2026-11-21'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195010
+  hidden: false
+  first_seen: '2026-11-17'
+- eventid: 195438
+  name: DMAP 2027
+  full: International Conference on Data Mining and Applications
+  when: Jan 30, 2027 - Jan 31, 2027
+  where: Copenhagen, Denmark
+  deadline: '2026-11-21'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195438
   hidden: false
   first_seen: '2026-11-17'
 - eventid: 199582
@@ -730,6 +775,7 @@
     - biomedical engineering
     - bioinformatics
   fields:
+    - medai
     - neuro
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200094
   hidden: false
