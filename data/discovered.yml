@@ -6,6 +6,8 @@
   full: International Conference on Pattern Recognition
   fields:
     - dl
+    - imgproc
+    - medai
   region: intl
   link: https://www.icpr2027.com/
   sources:
@@ -15,14 +17,12 @@
   status: new
   discovered: '2026-11-17'
   hidden: false
-  also:
-    - imgproc
-    - medai
 - id: auto-icme
   name: ICME
   full: The IEEE International Conference on Multimedia & Expo
   fields:
     - imgproc
+    - dl
   region: intl
   link: https://2027.ieeeicme.org/
   sources:
@@ -32,13 +32,12 @@
   status: new
   discovered: '2026-11-17'
   hidden: false
-  also:
-    - dl
 - id: auto-icmr
   name: ICMR
   full: ACM SIGMM International Conference on Multimedia Retrieval
   fields:
     - imgproc
+    - dl
   region: intl
   link: https://www.icmr2027.org/
   sources:
@@ -48,8 +47,6 @@
   status: new
   discovered: '2026-11-17'
   hidden: false
-  also:
-    - dl
 - id: auto-acm-mm
   name: ACM MM
   full: ACM International Conference on Multimedia
@@ -85,6 +82,7 @@
   fields:
     - imgproc
     - dl
+    - medai
   region: intl
   link: https://euvip2026.github.io/
   sources:
@@ -93,8 +91,6 @@
   status: new
   discovered: '2026-11-17'
   hidden: false
-  also:
-    - medai
 - id: auto-sibgrapi
   name: SIBGRAPI
   full: Conference on Graphics, Patterns and Images

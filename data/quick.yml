@@ -1,0 +1,1197 @@
+# 학회별 핵심 정보 (카드에 항상 표시): format/review/proceedings/cadence 는 {ko, en} 한 줄, looks_for 는 {ko:[..], en:[..]}
+# 공식 안내(리뷰어 가이드라인, CFP)에서 확인된 내용만. 모르면 null / []
+
+cvpr:
+  format:
+    ko: 본문 8쪽 + 참고문헌 무제한 (CVPR 템플릿)
+    en: 8 pages + unlimited references (CVPR template)
+  review:
+    ko: 이중맹검 · 1쪽 PDF rebuttal · OpenReview
+    en: Double-blind · 1-page PDF rebuttal · OpenReview
+  proceedings:
+    ko: CVF 오픈액세스 (학회 2주 전 공개)
+    en: CVF Open Access (2 weeks before conference)
+  cadence:
+    ko: 매년 개최 · 논문 마감 11월 중순 (연장 없음)
+    en: Annual · paper deadline mid-November (no extensions)
+  looks_for:
+    ko:
+      - 기술적 건전성 + 분야 기여 (technically sound)
+      - 대담한 새 개념 환영, 데이터셋 수 적어도 OK
+      - SOTA 미달 자체는 거절 사유 아님
+      - 코드 제출 권장 · 기여 데이터셋은 카메라레디까지 공개
+    en:
+      - Technically sound + contribution to the field
+      - Embrace novel, brave concepts even if few datasets
+      - Not beating SOTA is not grounds for rejection
+      - Code encouraged; claimed datasets public by camera-ready
+  sources:
+    - https://cvpr.thecvf.com/Conferences/2026/ReviewerGuidelines
+    - https://cvpr.thecvf.com/Conferences/2026/CallForPapers
+    - https://cvpr.thecvf.com/Conferences/2026/AuthorGuidelines
+iccv:
+  format:
+    ko: 본문 8쪽 + 참고문헌 무제한 (ICCV 템플릿)
+    en: 8 pages + unlimited references (ICCV template)
+  review:
+    ko: 이중맹검 · 1쪽 PDF rebuttal · OpenReview
+    en: Double-blind · 1-page PDF rebuttal · OpenReview
+  proceedings:
+    ko: CVF 오픈액세스 + IEEE Xplore
+    en: CVF Open Access + IEEE Xplore
+  cadence:
+    ko: '홀수 해 격년 · 논문 마감 3월 초 (2025: 3/7)'
+    en: 'Odd years, biennial · deadline early March (2025: 3/7)'
+  looks_for:
+    ko:
+      - 기술적 건전성 + 지식 진전(knowledge advance)
+      - 대담한 새 개념 환영, 데이터셋 수 적어도 OK
+      - SOTA/arXiv 미달만으로 거절 불가
+      - 코드 제출 권장 · 기여 데이터셋은 카메라레디까지 공개
+    en:
+      - Technically sound; what knowledge advance it makes
+      - Embrace novel, brave concepts even if few datasets
+      - Not beating SOTA/arXiv is not sole grounds to reject
+      - Code encouraged; claimed datasets public by camera-ready
+  sources:
+    - https://iccv.thecvf.com/Conferences/2025/ReviewerGuidelines
+    - https://iccv.thecvf.com/Conferences/2025/CallForPapers
+    - https://iccv.thecvf.com/Conferences/2025/AuthorGuidelines
+eccv:
+  format:
+    ko: 본문 14쪽 + 참고문헌 무제한 (LNCS 템플릿)
+    en: 14 pages + unlimited references (LNCS template)
+  review:
+    ko: 이중맹검 · 1쪽 2단 PDF rebuttal · OpenReview
+    en: Double-blind · 1-page 2-col PDF rebuttal · OpenReview
+  proceedings:
+    ko: Springer LNCS + ECVA 오픈액세스
+    en: Springer LNCS + ECVA open access
+  cadence:
+    ko: '짝수 해 격년 · 등록 마감 2월 말 (2026: 2/26)'
+    en: 'Even years, biennial · registration late Feb (2026: 2/26)'
+  looks_for:
+    ko:
+      - 대담한 새 개념 환영 · 'novelty fallacy' 경계
+      - SOTA 미달 자체는 거절 사유 아님
+      - Contribution Type별 심사 (데이터셋 논문에 새 방법 요구 X)
+      - 코드 제출 권장 · 데이터셋 유형은 카메라레디까지 공개
+    en:
+      - Embrace brave concepts; avoid the 'novelty fallacy'
+      - Not beating SOTA is not grounds for rejection
+      - Judged per Contribution Type (datasets need no new method)
+      - Code encouraged; Datasets type public by camera-ready
+  sources:
+    - https://eccv.ecva.net/Conferences/2026/ReviewerGuide
+    - https://eccv.ecva.net/Conferences/2026/CallForPapers
+    - https://eccv.ecva.net/Conferences/2026/SubmissionPolicies
+wacv:
+  format:
+    ko: 본문 8쪽 + 참고문헌 무제한 (WACV 템플릿)
+    en: 8 pages + unlimited references (WACV template)
+  review:
+    ko: 이중맹검 · 2라운드(R1 수정재투고+1쪽 rebuttal) · OpenReview
+    en: Double-blind · 2 rounds (R1 revise+1-page rebuttal) · OpenReview
+  proceedings:
+    ko: CVF 오픈액세스 (학회 2주 전 공개)
+    en: CVF Open Access (2 weeks before conference)
+  cadence:
+    ko: 매년 겨울(2~3월) 개최 · R1 7월, R2 9월 마감
+    en: Every winter (Feb-Mar) · Round 1 July, Round 2 September
+  looks_for:
+    ko:
+      - 'Applications: 시스템 수준 혁신·도메인 신규성·비교 평가'
+      - 'Algorithms: 알고리즘 신규성 + 정량 비교 (CVPR류)'
+      - 대담한 응용·개념 환영, 데이터셋 수 적어도 OK
+      - Reproducibility Checklist 활용 · 코드 선택적 확인
+    en:
+      - 'Applications: systems-level innovation, domain novelty, comparison'
+      - 'Algorithms: algorithmic novelty + quantified evaluation'
+      - Embrace novel, brave applications even if few datasets
+      - Reproducibility Checklist as guide; code optionally checked
+  sources:
+    - https://wacv.thecvf.com/Conferences/2027/ReviewerGuidelines
+    - https://wacv.thecvf.com/Conferences/2026/CallForPapers
+    - https://wacv.thecvf.com/Conferences/2027/AuthorGuides
+neurips:
+  format:
+    ko: 본문 9쪽 + 참고문헌·체크리스트·부록 무제한
+    en: 9 pages + unlimited refs, checklist and appendix
+  review:
+    ko: 이중맹검 · 1주 author response(수정본 불가) · OpenReview
+    en: Double-blind · 1-week author response (no revision) · OpenReview
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 매년 12월 개최
+    en: Every December
+  looks_for:
+    ko:
+      - 'Quality: 주장을 이론/실험이 뒷받침하는가'
+      - 'Clarity: 전문가가 결과 재현 가능할 만큼 명확한가'
+      - 'Significance: 커뮤니티가 쓰거나 발전시킬 결과인가'
+      - 'Originality: 새 방법 없어도 새 통찰·이해면 인정'
+    en:
+      - 'Quality: claims supported by theory or experiments'
+      - 'Clarity: enough detail for an expert to reproduce'
+      - 'Significance: will others use or build on it?'
+      - 'Originality: new insights count, not only new methods'
+  sources:
+    - https://neurips.cc/Conferences/2025/ReviewerGuidelines
+    - https://neurips.cc/Conferences/2025/CallForPapers
+    - https://neurips.cc/Conferences/2026/CallForPapers
+iclr:
+  format:
+    ko: 본문 9쪽(rebuttal·카메라레디 10쪽) + 참고문헌·부록 무제한
+    en: 9 pages (10 at rebuttal/camera-ready) + unlimited refs/appendix
+  review:
+    ko: 공개 리뷰(저자 익명) · 3주 공개 토론·수정 가능 · OpenReview
+    en: Open review (authors anonymous) · 3-week discussion, revisions · OpenReview
+  proceedings:
+    ko: OpenReview 오픈액세스 (별도 출판사 없음)
+    en: Open access on OpenReview (no publisher)
+  cadence:
+    ko: 매년 4월 말~5월 초 개최 · 리뷰 토론 11~12월
+    en: Late April-early May · review discussion Nov-Dec
+  looks_for:
+    ko:
+      - 명확·기술적 정확·실험적 엄밀·재현 가능·새 발견
+      - 동기 타당성 + 문헌 내 위치 설정
+      - SOTA 결과 필수 아님 · SOTA 미달은 거절 사유 아님
+      - 새롭고 관련 있고 영향력 있는 지식을 설득력 있게
+    en:
+      - Clear, technically correct, rigorous, reproducible, novel
+      - Well motivated and well placed in the literature
+      - SOTA not required; lack of SOTA is not grounds to reject
+      - Convincingly demonstrate new, relevant, impactful knowledge
+  sources:
+    - https://iclr.cc/Conferences/2026/ReviewerGuide
+    - https://iclr.cc/Conferences/2026/CallForPapers
+    - https://iclr.cc/Conferences/2026/AuthorGuide
+icml:
+  format:
+    ko: 본문 8쪽 + 참고문헌·Impact Statement·부록 무제한
+    en: 8 pages + unlimited refs, impact statement, appendix
+  review:
+    ko: 이중맹검 · rebuttal·토론 (채택 시 리뷰 공개) · OpenReview
+    en: Double-blind · rebuttal + discussion (reviews public if accepted) · OpenReview
+  proceedings:
+    ko: PMLR (오픈액세스)
+    en: PMLR (open access)
+  cadence:
+    ko: '매년 7월 개최 · 논문 마감 1월 말 (2026: 1/28)'
+    en: 'Every July · paper deadline late January (2026: 1/28)'
+  looks_for:
+    ko:
+      - 'Soundness: 주장이 이론/실험으로 뒷받침되는가'
+      - 'Significance: 중요한 문제·ML 이해/역량/실무 진전'
+      - 'Originality: 새 방법 없어도 새 통찰이면 인정'
+      - 한계·사회적 영향 솔직히 기술하면 가점
+    en:
+      - 'Soundness: claims supported by theory or experiments'
+      - 'Significance: important problem; advances ML understanding'
+      - Originality need not mean an entirely new method
+      - Up-front limitations are rewarded, not punished
+  sources:
+    - https://icml.cc/Conferences/2026/ReviewerInstructions
+    - https://icml.cc/Conferences/2026/CallForPapers
+aaai:
+  format:
+    ko: 기술 본문 7쪽 + 참고문헌 1쪽 · 재현성 체크리스트 필수
+    en: 7 pages + 1 reference page · reproducibility checklist required
+  review:
+    ko: 이중맹검 · 2단계(Phase1 AI 참고리뷰 포함) · 1회 author response
+    en: Double-blind · 2-phase (AI advisory review in Phase 1) · 1 author response
+  proceedings:
+    ko: null
+    en: null
+  cadence:
+    ko: 매년 1~2월 개최 · 초록 7월 말, 논문 8월 초 마감
+    en: Every Jan-Feb · abstract late July, paper early August
+  looks_for:
+    ko:
+      - 기여의 중요성·신규성 + 이론/실험적 건전성
+      - AAAI 커뮤니티 관련성 + 서술 명확성
+      - 새 영역 개척·새 방향 제시 > 점진적 개선
+      - 재현성 조치(증명·실험 기록·코드/데이터 공개) 평가
+    en:
+      - Significance and novelty + theoretical/empirical soundness
+      - Relevance to AAAI community + clarity of exposition
+      - New territory / new directions over incremental gains
+      - Steps to ensure reproducibility (proofs, code, data)
+  sources:
+    - https://aaai.org/conference/aaai/aaai-26/main-technical-track-call/
+    - https://aaai.org/conference/aaai/aaai-26/review-process/
+bmvc:
+  format:
+    ko: 본문 14쪽 + 참고문헌 무제한 (BMVC 템플릿)
+    en: 14 pages + unlimited references (BMVC template)
+  review:
+    ko: 이중맹검 · 리뷰어 3명+AC 메타리뷰 · rebuttal · OpenReview
+    en: Double-blind · 3 reviewers + AC meta-review · rebuttal · OpenReview
+  proceedings:
+    ko: BMVA 발행 proceedings
+    en: Proceedings published by BMVA
+  cadence:
+    ko: '매년 개최 (2026: 11월) · 논문 마감 5월 말'
+    en: 'Annual (2026: November) · paper deadline late May'
+  looks_for:
+    ko:
+      - '심사 기준: 독창성·발표·실험 결과·평가 품질'
+      - 'Brave New Ideas: 벤치마크 향상 없는 새 접근 환영'
+      - SOTA 미달 자체는 거절 사유 아님
+      - rebuttal에 대규모 추가 실험 요구 금지
+    en:
+      - Refereed on originality, presentation, results, evaluation
+      - 'Brave New Ideas: novel approaches, not necessarily benchmark gains'
+      - Not beating SOTA is not grounds for rejection
+      - Reviewers must not ask for substantial new experiments
+  sources:
+    - https://bmvc2026.bmva.org/authors/reviewing-guidelines/
+    - https://bmvc2026.bmva.org/calls/call-for-papers/
+accv:
+  format:
+    ko: 본문 14쪽 + 참고문헌 무제한 (LNCS·ACCV 템플릿)
+    en: 14 pages + unlimited references (LNCS/ACCV template)
+  review:
+    ko: 이중맹검 · 1쪽 PDF rebuttal · OpenReview
+    en: Double-blind · 1-page PDF rebuttal · OpenReview
+  proceedings:
+    ko: Springer LNCS + CVF 오픈액세스
+    en: Springer LNCS + CVF Open Access
+  cadence:
+    ko: '짝수 해 격년 · 논문 마감 7월 초 (2026: 7/5)'
+    en: 'Even years, biennial · paper deadline early July (2026: 7/5)'
+  looks_for:
+    ko:
+      - 주장이 충분한 증거로 뒷받침되는가 · 의미 있는 기여
+      - 모든 지표에서 선행 연구 미달해도 감점 아님
+      - 재현성·보충 코드/데이터 확인 (코드 검토는 선택)
+      - '데이터셋 기여: 공개 계획 적절성 · 외부 자산 출처 명시'
+    en:
+      - Claims supported by adequate evidence; meaningful contribution
+      - Not exceeding prior work on every metric is not a negative
+      - Reproducibility; supplementary code/data (checking optional)
+      - 'Dataset papers: appropriate release plan, assets acknowledged'
+  sources:
+    - https://accv2026.org/submissions/reviewer-guidelines/
+    - https://accv2026.org/submissions/author-guidelines/
+    - https://accv2026.org/
+3dv:
+  format:
+    ko: 본문 8쪽 + 참고문헌 무제한 · 초록 4,000자
+    en: 8 pages + unlimited references · 4,000-char abstract
+  review:
+    ko: 이중맹검 · rebuttal 없음(2026) · OpenReview
+    en: Double-blind · no rebuttal (2026) · OpenReview
+  proceedings:
+    ko: IEEE Computer Society 기술 후원 proceedings
+    en: IEEE Computer Society technically co-sponsored proceedings
+  cadence:
+    ko: '매년 개최 (2026: 3월) · 논문 마감 8월 중순'
+    en: 'Annual (2026: March) · paper deadline mid-August'
+  looks_for:
+    ko:
+      - 기술적 건전성 + 분야 기여
+      - 대담한 새 개념 환영, 데이터셋 수 적어도 OK
+      - 성능 수치만으로 채택/거절 결정 금지
+      - Reproducibility Checklist 활용 · 코드 선택적 확인
+    en:
+      - Technically sound + contribution to the field
+      - Embrace novel, brave concepts even if few datasets
+      - Decisions not determined solely by raw performance
+      - Reproducibility Checklist as guide; code optionally checked
+  sources:
+    - https://3dvconf.github.io/2026/reviewer-guidelines/
+    - https://3dvconf.github.io/2026/call-for-papers/
+    - https://3dvconf.github.io/2026/author-guidelines/
+miccai:
+  format:
+    ko: 본문 8쪽 + 참고문헌 2쪽 (MICCAI LNCS 템플릿)
+    en: 8 pages + 2 reference pages (MICCAI LNCS template)
+  review:
+    ko: 이중맹검 · 리뷰어 3명+AC · early accept/reject · 1주 rebuttal
+    en: Double-blind · 3 reviewers + ACs · early accept/reject · 1-week rebuttal
+  proceedings:
+    ko: Springer LNCS + MICCAI Society 오픈액세스
+    en: Springer LNCS + MICCAI Society open access
+  cadence:
+    ko: 매년 9~10월 개최 · 초록 2월 중순, 논문 2월 말 마감
+    en: Every Sep-Oct · abstract mid-Feb, paper late February
+  looks_for:
+    ko:
+      - '임상적 중요성: 주제가 clinically significant한가'
+      - 방법 또는 응용의 혁신성 (새 알고리즘은 기여의 한 형태)
+      - 데이터 수집·분할 설명, 환자 다양성, 통계 분석, 불확도
+      - 오픈 데이터·코드 권장, 불가 시 상세 알고리즘 기술
+    en:
+      - Clinical significance of the topic
+      - Innovative method OR innovative application
+      - Data collection/splits, patient diversity, statistics, uncertainty
+      - Open data/code encouraged; else detailed description
+  sources:
+    - https://conferences.miccai.org/2026/en/REVIEWER-GUIDELINES.html
+    - https://conferences.miccai.org/2026/en/CALL-FOR-PAPERS.html
+    - https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html
+    - https://conferences.miccai.org/2026/en/THE-MICCAI-REVIEW-PROCESS.html
+midl:
+  format:
+    ko: 본문 10쪽(카메라레디 12쪽) · Validation 트랙 14쪽 · 단편 3쪽
+    en: 10 pages (12 camera-ready) · Validation track 14 · short 3
+  review:
+    ko: 단일맹검 · 약 1주 rebuttal+토론 · 메타리뷰 · OpenReview
+    en: Single-blind · ~1-week rebuttal + discussion · meta-review · OpenReview
+  proceedings:
+    ko: PMLR (full paper만)
+    en: PMLR (full papers only)
+  cadence:
+    ko: 매년 7월 개최 · 논문 마감 12월 초
+    en: Every July · paper deadline early December
+  looks_for:
+    ko:
+      - 'Main: 의료영상용 새 알고리즘·아키텍처·모델'
+      - 'Validation: 데이터셋·기관·환자군 간 일반화 증거'
+      - 신규성 부족 지적은 선행 연구 참조로 입증 필수
+    en:
+      - 'Main: new algorithms, architectures, models for imaging'
+      - 'Validation: generalization across datasets/sites/populations'
+      - Novelty concerns must cite prior work
+  sources:
+    - https://2026.midl.io/review-guidelines
+    - https://2026.midl.io/call-for-papers
+isbi:
+  format:
+    ko: 4쪽 full paper (IEEE 형식) 또는 1쪽 abstract
+    en: 4-page full paper (IEEE format) or 1-page abstract
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: IEEE Xplore (4쪽 논문, 현장 발표 조건)
+    en: IEEE Xplore (4-page papers, if presented on site)
+  cadence:
+    ko: 매년 4~5월 개최 · 4쪽 논문 11월 초, 1쪽 2월 마감
+    en: Every Apr-May · 4-page papers early Nov, abstracts Feb
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://biomedicalimaging.org/2027/
+    - https://biomedicalimaging.org/2026/
+ipmi:
+  format:
+    ko: 본문 12쪽 + 참고문헌 (LNCS) · 보충자료 불허
+    en: 12 pages + references (LNCS) · no supplementary material
+  review:
+    ko: 이중맹검 · 토론 기간 · OpenReview
+    en: Double-blind · discussion period · OpenReview
+  proceedings:
+    ko: Springer LNCS
+    en: Springer LNCS
+  cadence:
+    ko: '홀수 해 격년, 6~7월 개최 · 논문 마감 12월 (2026: 12/14)'
+    en: 'Odd years, Jun-Jul · paper deadline Dec (2026: 12/14)'
+  looks_for:
+    ko:
+      - '''Algorithms with a Soul'': 돌파구·엄밀한 분석'
+      - 리더보드 경쟁 아님 (not leaderboard chasing)
+      - 혁신적 알고리즘 + 건전한 이론적 토대
+    en:
+      - '''Algorithms with a Soul'': breakthroughs, rigorous analysis'
+      - Not leaderboard chasing
+      - Innovative algorithms and sound theoretical foundations
+  sources:
+    - https://2027.ipmi-conf.org/
+embc:
+  format:
+    ko: Full paper 4~7쪽 또는 1쪽 포스터 논문
+    en: Full paper 4-7 pages or 1-page poster paper
+  review:
+    ko: 단일맹검 · 테마·키워드 기반 배정
+    en: Single-blind · assigned by theme and keywords
+  proceedings:
+    ko: IEEE Xplore + PubMed/MEDLINE (full paper만)
+    en: IEEE Xplore + PubMed/MEDLINE (full papers only)
+  cadence:
+    ko: '매년 7월 개최 (2026: 7/26~30)'
+    en: 'Every July (2026: Jul 26-30)'
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://embc.embs.org/2026/papers/
+    - https://embc.embs.org/2026/
+spie-mi:
+  format:
+    ko: 초록 200~300단어 + 심사용 2~4쪽 PDF → 채택 후 4쪽+ 원고
+    en: 200-300-word abstract + 2-4 page review PDF; 4+ page manuscript later
+  review:
+    ko: 학회 chair/editor가 기술적 가치·적합성 심사
+    en: Conference chairs/editors assess technical merit and fit
+  proceedings:
+    ko: Proceedings of SPIE (SPIE Digital Library)
+    en: Proceedings of SPIE (SPIE Digital Library)
+  cadence:
+    ko: 매년 2월 개최 · 초록 마감 8월 초
+    en: Every February · abstract deadline early August
+  looks_for:
+    ko:
+      - 기술적 가치(technical merit)와 내용 적합성
+    en:
+      - Technical merit and suitability of content
+  sources:
+    - https://www.spie.org/conferences-and-exhibitions/medical-imaging/presenters/abstract-submission-guidelines
+chil:
+  format:
+    ko: 익명 PDF · 트랙 3개 (Methods / Applications / Policy) · 쪽수 미확인
+    en: Anonymized PDF · 3 tracks (Methods / Applications / Policy) · pages n/a
+  review:
+    ko: 익명 투고 · author response + 리뷰어 토론 · OpenReview
+    en: Anonymized · author response + reviewer discussion · OpenReview
+  proceedings:
+    ko: PMLR
+    en: PMLR
+  cadence:
+    ko: 매년 6월 말 개최 · 논문 마감 2월 초
+    en: Every late June · paper deadline early February
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://physionet.org/news/post/chil-conference-call-for-papers-1/
+    - https://proceedings.mlr.press/v333
+icip:
+  format:
+    ko: 5쪽 + 참고문헌 1쪽 · OJSP 트랙 8+1쪽
+    en: 5 pages + 1 reference page · OJSP track 8+1
+  review:
+    ko: 이중맹검 · author rebuttal
+    en: Double-anonymous · author rebuttal
+  proceedings:
+    ko: IEEE Xplore (Open Preview)
+    en: IEEE Xplore (Open Preview)
+  cadence:
+    ko: '매년 개최 (2026: 9월) · 논문 마감 2월 초'
+    en: 'Annual (2026: September) · paper deadline early February'
+  looks_for:
+    ko:
+      - '원저 기술 연구: 이론·방법·시스템·응용'
+      - 뛰어난 성숙도/신규성 논문은 Spotlight + 확장판 신속 심사
+    en:
+      - 'Original technical work: theory, methods, systems, applications'
+      - 'Exceptional maturity/novelty: Spotlight + expedited extension review'
+  sources:
+    - https://2026.ieeeicip.org/call-for-papers-and-abstracts/
+    - https://2026.ieeeicip.org/
+icassp:
+  format:
+    ko: 본문 4쪽 + 참고문헌 1쪽 (총 5쪽) · OJSP 트랙 8+1쪽
+    en: 4 pages + 1 reference page (5 total) · OJSP track 8+1
+  review:
+    ko: 단일맹검 · 리뷰어 3명 · 선택적 rebuttal(AC만 열람)
+    en: Single-anonymous · 3 reviewers · optional rebuttal (ACs only)
+  proceedings:
+    ko: IEEE Xplore (학회 30일 전 Open Preview)
+    en: IEEE Xplore (Open Preview 30 days before)
+  cadence:
+    ko: '매년 5월 개최 · 논문 마감 9월 중순 (2025: 9/17)'
+    en: 'Every May · paper deadline mid-Sept (2025: 9/17)'
+  looks_for:
+    ko:
+      - 중요성/관련성 · 신규성/독창성 · 기술적 정확성
+      - 실험적 검증 · 선행 연구 인용 · 언어·명확성
+      - 선행 연구 반복·검증 불충분·관련 연구 미인용 = 거절
+    en:
+      - Importance/relevance · novelty/originality · correctness
+      - Experimental validation · prior work cited · clarity
+      - '''Done before'', insufficient validation, missing refs = reject'
+  sources:
+    - https://2026.ieeeicassp.org/editorial-policies/
+    - https://2026.ieeeicassp.org/call-for-papers/
+iccp:
+  format:
+    ko: 쪽수 공식 미확인 · TPAMI 특집호 또는 Proceedings 단일 심사
+    en: Page limit n/a · single review for TPAMI issue or Proceedings
+  review:
+    ko: 이중맹검 · 1차 리뷰 후 rebuttal
+    en: Double-blind · rebuttal after first-round reviews
+  proceedings:
+    ko: IEEE TPAMI 특집호 또는 ICCP Proceedings
+    en: IEEE TPAMI special issue or ICCP Proceedings
+  cadence:
+    ko: '매년 7~8월 개최 · 논문 마감 4월 (2025: 4/9)'
+    en: 'Every Jul-Aug · paper deadline April (2025: 4/9)'
+  looks_for:
+    ko:
+      - 'TPAMI: 완전히 새로운 연구 + 포괄적 평가·분석(archival)'
+      - 'Proceedings: 전통적 학회 수준의 품질·신규성'
+    en:
+      - 'TPAMI: entirely novel, archival quality, comprehensive evaluation'
+      - 'Proceedings: traditional conference criteria for quality and novelty'
+  sources:
+    - https://www.f4news.com/2025/02/24/international-conference-on-computational-photography-iccp-2025-call-for-papers
+    - https://iccp2026.iccp-conference.org/
+    - https://iccp2027.iccp-conference.org/
+pw-bios:
+  format:
+    ko: '초록만: 기술심사 250단어 + 프로그램 100단어(2025 플라이어)'
+    en: 'Abstract only: 250-word technical + 100-word program (2025)'
+  review:
+    ko: 컨퍼런스 체어가 채택 결정; 세부 기준 비공개
+    en: Conference chairs decide acceptance; criteria not posted
+  proceedings:
+    ko: SPIE Proceedings(발표 후 원고 별도 제출)
+    en: Proceedings of SPIE (manuscript submitted after talk)
+  cadence:
+    ko: 매년 1월 말~2월 초 샌프란시스코; 초록 마감 전년 중반(미확인)
+    en: Late Jan-early Feb, San Francisco; abstracts mid-prev-year (unconfirmed)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://spie.org/documents/cfp-flyers/PW25/BO603call.pdf
+    - https://lux.spie.org/conferences-and-exhibitions/photonics-west/presenters/abstract-submission-guidelines
+    - https://via.tt.se/pressmeddelande/4596753/international-optics-and-photonics-community-invited-to-spie-photonics-west-2027?lang=en
+cleo:
+  format:
+    ko: 35단어 초록 + 2페이지 요약 PDF(공식 스타일)
+    en: 35-word abstract + 2-page summary PDF (official style)
+  review:
+    ko: TPC 동료심사; 구두/포스터는 위원회 최종 결정
+    en: TPC peer review; committee decides oral vs poster
+  proceedings:
+    ko: Optica Technical Digest(OPG) + IEEE Xplore 제출, 발표 조건
+    en: Optica Technical Digest (OPG) + IEEE Xplore, if presented
+  cadence:
+    ko: 매년 5월 미국(2027 롱비치); 마감 전년 11월 말
+    en: Every May, USA (2027 Long Beach); due late previous Nov
+  looks_for:
+    ko:
+      - '''original research'', ''Show What Is New'', ''original contribution'''
+      - 아카이브 저널에 상당 부분 기출판 시 거절 가능
+      - 기출판 자료 인용 부적절 시 거절 가능
+      - Postdeadline 논문은 구두 발표만
+    en:
+      - '''original research'', ''Show What Is New'', ''original contribution'''
+      - May reject if substantial parts appeared in archival journal
+      - May reject if prior material not referenced appropriately
+      - Postdeadline papers are strictly oral
+  sources:
+    - https://cleoconference.org/2027-call-for-papers/
+    - https://cleoconference.org/2027-paper-preparation-and-requirements/
+    - https://www.cleoconference.org/
+optica-biophotonics:
+  format:
+    ko: 35단어 초록 + 2페이지 요약(Technical Digest 수록)
+    en: 35-word abstract + 2-page summary (in Technical Digest)
+  review:
+    ko: '''carefully peer-reviewed''; 발표 유형은 위원회 최종 결정'
+    en: '''Carefully peer-reviewed''; committee has final say on type'
+  proceedings:
+    ko: Optica Technical Digest(OPG); Ei Compendex·Scopus 색인
+    en: Optica Technical Digest (OPG); Ei Compendex, Scopus indexed
+  cadence:
+    ko: 매년 4월 미국(2027 덴버 4/18~21); 마감 전년 12월 초
+    en: Every April, USA (2027 Denver); due early previous Dec
+  looks_for:
+    ko:
+      - '''high-quality program on emerging topics'' 위한 심사'
+      - Oral Only / Poster Only / Oral or Poster 선택 가능
+      - 마감 후 수정 불가; 요건 미충족 시 거절 가능
+      - 학생 논문상은 제출 시 opt-in
+    en:
+      - Reviewed for 'high-quality program on emerging topics'
+      - Choose Oral Only / Poster Only / Oral or Poster Acceptable
+      - No changes after deadline; unmet requirements may reject
+      - Student Paper Prize requires opt-in at submission
+  sources:
+    - https://www.optica.org/events/congress/biophotonics_congress/submit_papers/
+ecbo:
+  format:
+    ko: null
+    en: null
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: SPIE Digital Library + Optica Technical Digest(details.yml)
+    en: SPIE Digital Library + Optica Technical Digest (details.yml)
+  cadence:
+    ko: 2년마다 홀수 해 6월 뮌헨; 2027 마감 1~2월(페이지 간 상이)
+    en: Biennial, odd years, June Munich; 2027 due Jan-Feb (pages differ)
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.optica.org/events/topical_meetings/european_conferences_biomedical_optics/
+    - https://www.optica.org/events/topical_meetings/european_conferences_biomedical_optics/submit_papers/
+    - https://lux.spie.org/conferences-and-exhibitions/european-conferences-on-biomedical-optics/programme/conferences
+spie-optics-photonics:
+  format:
+    ko: SPIE 초록 선투고 방식(추정, 공식 안내 접근 불가)
+    en: SPIE abstract-first (presumed; official page blocked)
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: SPIE Proceedings(추정, details.yml)
+    en: Proceedings of SPIE (presumed, details.yml)
+  cadence:
+    ko: 매년 8월 샌디에이고; 2025 초록 마감 5/7
+    en: Every August, San Diego; 2025 abstracts due May 7
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://spie.org/conferences-and-exhibitions/optics-and-photonics/presenters
+    - https://www.gophotonics.com/events/details/1128-spie-optics-photonics-2026
+sfn:
+  format:
+    ko: 초록만(글자 수 미기재); 데이터 포함 필수(Theme K 제외)
+    en: Abstract only (no limit posted); data required (not Theme K)
+  review:
+    ko: Program Committee가 세션 배치·규칙 위반 거절; 구두/포스터
+    en: Program Committee groups sessions, rejects rule breaches
+  proceedings:
+    ko: 초록만(Neuroscience Meeting Planner); 논문 없음
+    en: Abstracts only (Neuroscience Meeting Planner); no paper
+  cadence:
+    ko: 매년 10~11월 미국; 정규 5월 말~6월 초, late-breaking 9월
+    en: Oct-Nov, USA; regular late May-June, late-breaking Sept
+  looks_for:
+    ko:
+      - 논문·초록으로 그대로 기출판된 연구 불가; 프리프린트 허용
+      - '''results will be discussed'' 초록 거절; 데이터 필수'
+      - 탐색적/확증적 연구 여부 명시
+      - 상업 광고성 초록 거절 가능; late-breaking 별도(2,500편 상한)
+    en:
+      - Not published verbatim before; preprints eligible
+      - '''Results will be discussed'' rejected; data required'
+      - State whether exploratory or confirmatory
+      - Commercial ads may be rejected; late-breaking cap 2,500
+  sources:
+    - https://www.sfn.org/meetings/neuroscience-2026/call-for-abstracts/rules-for-abstract-submissions
+    - https://www.sfn.org/meetings/neuroscience-2026/call-for-abstracts
+ohbm:
+  format:
+    ko: 650단어 초록(서론·방법·결과·결론 필수) + 그림 최대 2개
+    en: 650-word abstract (Intro/Methods/Results/Concl.) + 2 figs
+  review:
+    ko: 피어리뷰; 일반 투고는 포스터, 구두는 심포지엄 별도 제안
+    en: Peer review; posters by default, orals via symposia
+  proceedings:
+    ko: 초록집(Abstract Book); Aperture Neuro 아카이브(casrai)
+    en: Abstract Book; archived in Aperture Neuro (per casrai)
+  cadence:
+    ko: 매년 6월 대륙 순환(2027 토론토); 마감 12월 중순
+    en: Every June, rotating (2027 Toronto); due mid-December
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://humanbrainmapping.org/ohbm-annual-meeting-faq/
+    - https://humanbrainmapping.org/2027CallforContent/
+    - https://humanbrainmapping.org/ohbm-2027/
+    - https://casrai.org/guides/ohbm
+fens:
+  format:
+    ko: 본문 250단어(제목 25단어) + 그림/표 1개, 섹션 없는 단락
+    en: 250-word body (25-word title) + 1 fig/table, no headings
+  review:
+    ko: 포스터만; 심사 방식 미기재, 윤리 우려 미해소 시 거절
+    en: Poster only; review method unstated; ethics issues reject
+  proceedings:
+    ko: 초록 제출본 그대로 웹·프로그램 게재; 논문집 없음
+    en: Abstracts published as submitted on web/programme; no paper
+  cadence:
+    ko: 2년마다 짝수 해 7월 유럽; 초록 2월 초, late-breaking 4월 말
+    en: Biennial, even years, July Europe; due early Feb, LB late Apr
+  looks_for:
+    ko:
+      - 최소 예비 데이터 포함 연구만; 리뷰 초록 불가
+      - 포스터 발표만 접수
+      - 'late-breaking 초록 별도 접수(2026: 4/15~27)'
+    en:
+      - Study with at least preliminary data; no review abstracts
+      - Abstracts accepted for poster presentations only
+      - 'Separate late-breaking call (2026: Apr 15-27)'
+  sources:
+    - https://fensforum.org/abstract-submission/
+    - https://fensforum.org/
+fom:
+  format:
+    ko: 1페이지 PDF 초록
+    en: 1-page PDF abstract
+  review:
+    ko: 초록선정위+조직위 최종 결정; 20분 구두 보장 안 됨
+    en: Selection + organizing committee decide; orals not guaranteed
+  proceedings:
+    ko: 별도 논문집 없음; FOM 온라인 아카이브 영구 보존
+    en: No proceedings; permanent online FOM archive
+  cadence:
+    ko: 매년 부활절 전 주, 개최지 순환(2027 오사카 3/21~24); 통보 2월 초
+    en: Yearly, week before Easter, rotating (2027 Osaka); notice early Feb
+  looks_for:
+    ko:
+      - FOM2027 토픽 내 'original work'
+      - 구두 발표는 공간 제한으로 보장 안 됨
+      - '''developers and users'' 만남의 장'
+    en:
+      - '''Original work in the topics of FOM2027'''
+      - Oral slots not guaranteed (limited space)
+      - Meeting point for 'developers and users'
+  sources:
+    - https://www.focusonmicroscopy.org/2027-submit/?event_id=11725
+    - https://www.focusonmicroscopy.org/2027-about/?event_id=11725
+abc:
+  format:
+    ko: A4 1쪽 초록(250단어 미만, 그림 제외) + 50단어 짧은 초록(2025)
+    en: 1 A4 page abstract (<250 words, excl. figs) + 50-word short (2025)
+  review:
+    ko: Technical Program Committee 위원 심사
+    en: Reviewed by Technical Program Committee members
+  proceedings:
+    ko: 'Proc. SPIE(2025: Vol. 14016)'
+    en: 'Proceedings of SPIE (2025: Vol. 14016)'
+  cadence:
+    ko: 홀수 해 가을 한국(2년 주기 추정); 2025 초록 마감 7/18
+    en: Odd years, autumn, Korea (biennial?); 2025 due Jul 18
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://d2j16w31g89z0j.cloudfront.net/site/spie2025/SPIE-ABC2025_Abstract%2BTemplate_rev.docx
+    - https://d2j16w31g89z0j.cloudfront.net/site/spie2025/SPIE_ABC_2025_Sponsorship_Prospectus(EN).pdf
+    - https://www.proceedings.com/spie14016.html
+fnirs:
+  format:
+    ko: 100단어 초록 + 1페이지 PDF 요약(템플릿, 10pt)
+    en: 100-word abstract + 1-page PDF summary (template, 10pt)
+  review:
+    ko: '''carefully peer-reviewed''; 구두는 위원회 최종 결정'
+    en: '''Carefully peer-reviewed''; committee decides orals'
+  proceedings:
+    ko: 학회 웹사이트 게재; 별도 논문집 없음
+    en: Posted on society website; no proceedings
+  cadence:
+    ko: 2년마다 대륙 순환(2028 아메리카); 초록 마감 개최 ~6.5개월 전
+    en: Biennial, rotating (2028 Americas); due ~6.5 months before
+  looks_for:
+    ko:
+      - '''high-quality program on emerging topics'' 위한 심사'
+      - oral or poster / poster only / virtual only 선택
+      - 마감 후 수정 불가
+    en:
+      - Reviewed for 'high-quality program on emerging topics'
+      - Choose oral or poster / poster only / virtual only
+      - No changes after the deadline
+  sources:
+    - https://fnirs2026.fnirs.org/call-for-abstracts/
+    - https://fnirs.org/conferences/
+optica-imaging:
+  format:
+    ko: 35단어 초록 + 2페이지 요약(Technical Digest 수록)
+    en: 35-word abstract + 2-page summary (in Technical Digest)
+  review:
+    ko: '''carefully peer-reviewed''; 발표 유형은 위원회 최종 결정'
+    en: '''Carefully peer-reviewed''; committee has final say on type'
+  proceedings:
+    ko: Optica Technical Digest(OPG); Ei Compendex·Scopus 색인
+    en: Optica Technical Digest (OPG); Ei Compendex, Scopus indexed
+  cadence:
+    ko: 매년 7월(2027 오타와 7/11~15); 마감 3월 초
+    en: Every July (2027 Ottawa, Jul 11-15); due early March
+  looks_for:
+    ko:
+      - '''high-quality program on emerging topics'' 위한 심사'
+      - Oral Only / Poster Only / Oral or Poster 선택
+      - 학생 논문상 opt-in, 토피컬 미팅별 3~4명 결선
+    en:
+      - Reviewed for 'high-quality program on emerging topics'
+      - Choose Oral Only / Poster Only / Oral or Poster
+      - Student prize opt-in; 3-4 finalists per topical meeting
+  sources:
+    - https://www.optica.org/events/congress/optica_imagesense_congress/submit_papers/
+    - https://www.optica.org/events/congress/optica_imagesense_congress/
+auto-icpr:
+  format:
+    ko: Springer LNCS 최대 15쪽(참고문헌 포함, 2024; 2026 미확인)
+    en: Springer LNCS, max 15 pp incl. refs (2024; 2026 unconfirmed)
+  review:
+    ko: single-blind; 보충자료는 참고용, 본문 중심 판정
+    en: Single-blind; supplement optional, decision on main paper
+  proceedings:
+    ko: Springer LNCS
+    en: Springer LNCS
+  cadence:
+    ko: 2년마다 짝수 해(2026 리옹 8/17~22)
+    en: Biennial, even years (2026 Lyon, Aug 17-22)
+  looks_for:
+    ko:
+      - 미출판 연구만; 20% 이상 중복 시 기출판 간주
+      - 본문 자체 완결; 리뷰어는 보충자료 심사 의무 없음
+      - 재현성 배지(RRPR); 코드·데이터 공개 권장(필수 아님)
+    en:
+      - Unpublished work only; 20%+ overlap counts as published
+      - Main paper self-contained; reviewers need not read supplement
+      - RRPR reproducibility badge; code/data release encouraged
+  sources:
+    - https://icpr2026.org/instructions.html
+    - https://icpr2026.org/calls.html
+    - https://iapr.org/archives/icpr2024/cfp.html
+auto-icme:
+  format:
+    ko: null
+    en: null
+  review:
+    ko: '저자 리버틀 단계 있음(2026: 2/22~26); 블라인드 여부 미확인'
+    en: 'Author rebuttal stage (2026: Feb 22-26); blinding unconfirmed'
+  proceedings:
+    ko: IEEE 프로시딩, IEEE Xplore, EI Compendex
+    en: IEEE proceedings, IEEE Xplore, EI Compendex
+  cadence:
+    ko: 매년 7월(2027 샤먼 7/13~17); 정규논문 마감 전년 12월 말
+    en: Every July (2027 Xiamen); regular papers due late prev Dec
+  looks_for:
+    ko:
+      - '''high-quality, original research papers'' 모집'
+    en:
+      - Invites 'high-quality, original research papers'
+  sources:
+    - https://2027.ieeeicme.org/
+    - https://2027.ieeeicme.org/authors/call-for-papers
+    - https://www.aischolar.com/conference/icme2026
+    - https://signalprocessingsociety.org/tags/icme-2027
+auto-icmr:
+  format:
+    ko: Long 8쪽 / Short 4쪽 + 참고문헌 2쪽, ACM sigconf; 부록 불허
+    en: Long 8 pp / Short 4 pp + 2 ref pp, ACM sigconf; no appendix
+  review:
+    ko: 더블블라인드; 저자는 TPC 요청 시 리뷰 의무
+    en: Double-blind; authors must review when TPC invites
+  proceedings:
+    ko: ACM ICPS; 2026부터 ACM 완전 오픈액세스
+    en: ACM ICPS; fully Open Access from 2026
+  cadence:
+    ko: 매년 6월, 대륙 순환(2027 싱가포르); 마감 2월 중순
+    en: Every June, rotating (2027 Singapore); due mid-February
+  looks_for:
+    ko:
+      - '''high-quality original papers'', 멀티미디어 검색 혁신 연구'
+      - 'Long: 평가 포함 완결 연구 / Short: 예비 결과·집중 기여'
+      - 선행 출판물과 substantial overlap 금지
+    en:
+      - '''High-quality original papers'', innovative retrieval research'
+      - 'Long: complete work with evaluations / Short: preliminary'
+      - No substantial overlap with prior publications
+  sources:
+    - https://icmr2026.org/calls.html
+    - https://icmr2026.org/
+auto-acm-mm:
+  format:
+    ko: 본문 6~8쪽 + 참고문헌 2쪽; 보충자료 50MB
+    en: 6-8 pp + 2 ref pp; supplementary up to 50MB
+  review:
+    ko: 더블블라인드(OpenReview), 익명 리버틀, Author's Advocate
+    en: Double-blind (OpenReview), anonymous rebuttal, Author's Advocate
+  proceedings:
+    ko: ACM MM 학회 프로시딩(ACM)
+    en: ACM MM conference proceedings (ACM)
+  cadence:
+    ko: 매년 10~11월(2026 리우 11/10~14); 초록 3월 말·논문 4월 초
+    en: Oct-Nov (2026 Rio); abstract late Mar, paper early Apr
+  looks_for:
+    ko:
+      - 멀티미디어/멀티모달 기여 논문 우선; 범위 외 데스크리젝
+      - '''novel theoretical and algorithmic solutions'''
+      - '''bold, forward-looking ideas'' + 초기지만 유망한 결과 환영'
+      - 타 학회·워크숍 피어리뷰 출판물 재투고 불가
+    en:
+      - Multimedia/multimodal contributions preferred; else desk reject
+      - '''Novel theoretical and algorithmic solutions'''
+      - '''Bold, forward-looking ideas'' with early promising results'
+      - Peer-reviewed conference/workshop papers may not be resubmitted
+  sources:
+    - https://2026.acmmm.org/site/cfp-guidelines.html
+    - https://2026.acmmm.org/site/call-bni.html
+auto-mmm:
+  format:
+    ko: LNCS 본문 12쪽(그림·표·부록 포함) + 참고문헌 2쪽
+    en: LNCS, 12 content pp (figs/tables/appx) + 2 ref pp
+  review:
+    ko: 정규/특별세션 더블블라인드
+    en: Double-blind for regular and special sessions
+  proceedings:
+    ko: Springer LNCS
+    en: Springer LNCS
+  cadence:
+    ko: 매년 1월(2027 시엠레아프 1/5~8); 마감 8월 말
+    en: Every January (2027 Siem Reap); due late August
+  looks_for:
+    ko:
+      - novelty, technical quality, relevance to MMM, clarity
+      - original이며 타 학회 심사 중이 아닐 것
+      - 프리프린트(arXiv) 정책은 Springer 규정 준수
+    en:
+      - Novelty, technical quality, relevance to MMM, clarity
+      - Original and not under review elsewhere
+      - Preprint (arXiv) policy follows Springer's regulations
+  sources:
+    - https://mmm2027.net/call_for_papers.html
+    - https://mmm2027.net/
+auto-euvip:
+  format:
+    ko: 최대 6쪽(그림·참고문헌 포함; 6쪽은 참고문헌만)
+    en: Max 6 pp incl. figs/refs (page 6 references only)
+  review:
+    ko: 더블블라인드, Microsoft CMT
+    en: Double-blind via Microsoft CMT
+  proceedings:
+    ko: 학회 프로시딩, IEEE Xplore 수록 예정
+    en: Conference proceedings, expected in IEEE Xplore
+  cadence:
+    ko: 매년 9월 말~10월 초 유럽(2026 룩셈부르크); 마감 6월 중순
+    en: Late Sep-early Oct, Europe (2026 Luxembourg); due mid-June
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://euvip2026.github.io/information/paper-submission/
+    - https://euvip2026.github.io/C4P.pdf
+    - https://euvip2026.github.io/calls/
+auto-sibgrapi:
+  format:
+    ko: IEEE 양식 최대 6쪽, 영어
+    en: IEEE format, max 6 pages, English
+  review:
+    ko: 더블블라인드 최소 3명; 조건부 채택 시 2차 짧은 리뷰
+    en: Double-blind, 3+ reviewers; short 2nd cycle if conditional
+  proceedings:
+    ko: IEEE Xplore + SIBGRAPI DL(INPE) + SBC SOL
+    en: IEEE Xplore + SIBGRAPI DL (INPE) + SBC SOL
+  cadence:
+    ko: 매년 9~10월 브라질(2026 고이아니아); 마감 6월 하순
+    en: Sep-Oct, Brazil (2026 Goiania); due late June
+  looks_for:
+    ko:
+      - '''brand new, innovating ideas'' 요청'
+      - arXiv 프리프린트 허용(dual submission 정책)
+      - 현장 구두 발표 필수; 원격 불가, 미발표 시 프로시딩 제외
+    en:
+      - Invites 'brand new, innovating ideas'
+      - arXiv preprints allowed under dual submission policy
+      - In-person oral required; no remote; no-shows removed
+  sources:
+    - https://sibgrapi.sbc.org.br/2025/?p=4432
+    - https://sibgrapi.sbc.org.br/2025/?p=4741
+kccv:
+  format:
+    ko: 별도 논문 투고 없음(톱티어 발표 성과 초청·재발표)
+    en: No paper submission; invited re-presentation of top-venue work
+  review:
+    ko: 공개 CFP·심사 안내 미확인; 구두/포스터는 초청 형식
+    en: No public CFP/review info found; oral/poster by invitation
+  proceedings:
+    ko: 논문집·DBpia 등재 여부 미확인
+    en: Proceedings/DBpia status not confirmed
+  cadence:
+    ko: 매년 8월 초 3일 부산 벡스코; 투고 마감 패턴 없음
+    en: Early August, 3 days, BEXCO Busan; no paper deadline
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://kcvs.kr/?act=info.workshop&pseq=9
+    - https://kcvs.kr/?act=info.workshop&pseq=8
+    - https://kcvs.kr/?act=board&bbs_code=news-notice
+ipiu:
+  format:
+    ko: 2~6쪽, 국문/영문; HWP·Word·Overleaf 템플릿
+    en: 2-6 pages, Korean or English; HWP/Word/Overleaf templates
+  review:
+    ko: 심사 후 통보→최종 수정본 제출; 구두/포스터 배정 방식 미공개
+    en: Reviewed, then camera-ready; oral/poster assignment not stated
+  proceedings:
+    ko: IPIU Proceedings 공지 게시; DBpia 등재 미확인
+    en: Proceedings posted on notice board; DBpia not confirmed
+  cadence:
+    ko: 매년 2월 중순 제주 3일; 논문 마감 12월 중순
+    en: Mid-February, Jeju, 3 days; papers due mid-December
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://ipiu.or.kr/
+    - https://ipiu.or.kr/?act=info.page&pcode=sub02
+kcc:
+  format:
+    ko: 일반/학부생/주니어 논문; HWP·Word 양식(쪽수 미확인)
+    en: Regular/undergrad/junior papers; HWP/Word template (pages n/a)
+  review:
+    ko: 심사 채택 후 구두/포스터; 발표 평가 100점(전달 50+결과 50)
+    en: Reviewed; oral/poster; talk scored 100 (delivery 50+results 50)
+  proceedings:
+    ko: 논문집 게재, 미발표 시 게재 취소; DBpia 등재 미확인
+    en: In proceedings; no-show withdrawn; DBpia not confirmed
+  cadence:
+    ko: 매년 6월 말 3일(2026 제주 ICC); 마감 패턴 미확인
+    en: Late June, 3 days (2026 ICC Jeju); deadline pattern n/a
+  looks_for:
+    ko:
+      - '발표평가: 내용전달의 우수성 50점 + 연구결과의 우수성 50점'
+      - 채택 상위 약 10% 우수논문, 발표 상위 약 10% 우수발표논문
+      - 우수논문→학회 논문지 게재 추천(학부생/주니어 제외)
+    en:
+      - 'Talk score: delivery quality 50 + research quality 50'
+      - Top ~10% accepted = Outstanding Paper; top ~10% talks = Outstanding Talk
+      - Winners recommended to KIISE journals (undergrad/junior excluded)
+  sources:
+    - https://www.kiise.or.kr/conference/main/index.do?CC=kcc&CS=2026
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2431&PARENT_ID=011000
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=kcc&CS=2026&content_no=2422&PARENT_ID=020400
+ksc:
+  format:
+    ko: 심사용 2~3쪽 블라인드 PDF(HWP/Word); 채택 후 출판용 재제출
+    en: 'Review: 2-3 pp blind PDF (HWP/Word); camera-ready after accept'
+  review:
+    ko: 학회 심사기준 서면심사, 미채택 가능; 구두/포스터는 PC가 배정
+    en: Written review by society criteria, may reject; PC assigns oral/poster
+  proceedings:
+    ko: 논문집·온라인 게재(미등록·미발표 시 제외); DBpia 미확인
+    en: Proceedings + online (dropped if unregistered/no-show); DBpia n/a
+  cadence:
+    ko: 매년 12월 중하순 3~4일; 논문 마감 10월 말, 결과 11월 중순
+    en: Mid/late December, 3-4 days; papers due late Oct, results mid-Nov
+  looks_for:
+    ko:
+      - 학술·산업발전 기여 또는 독창성이 인정되는 내용
+      - 우수논문상은 Oral 투고 논문만 대상(인공지능 응용 분야 제외)
+      - '학부생/주니어: 서면심사+현장발표 종합으로 최우수·우수·장려'
+    en:
+      - Contribution to academia/industry, or recognized originality
+      - Best Paper only for Oral submissions (AI Applications excluded)
+      - 'Undergrad/junior awards: written review + on-site talk combined'
+  sources:
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2346&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2025&content_no=2347&PARENT_ID=020100
+    - https://www.kiise.or.kr/conference/main/getContent.do?CC=ksc&CS=2026&content_no=2572&PARENT_ID=010100
+ieie:
+  format:
+    ko: Double column 1~5쪽, 학회 양식(docx/hwp); 최우수상은 4쪽 추가
+    en: Double column 1-5 pp, IEIE template (docx/hwp); +4pp for award
+  review:
+    ko: 일반/특별세션 접수 후 통보; 최우수상은 블라인드 서면+구두 합산
+    en: 'Regular/special sessions notified; award: blind written + oral'
+  proceedings:
+    ko: 학술대회 논문집, DBpia 등재(2025 하계 1,326편 확인)
+    en: 'Conference proceedings on DBpia (2025 Summer: 1,326 papers)'
+  cadence:
+    ko: 하계 6월 넷째 주 제주(마감 5월 초); 추계 11월 말(마감 10월 중)
+    en: Summer 4th wk June, Jeju (due early May); Fall late Nov (due mid-Oct)
+  looks_for:
+    ko:
+      - '최우수논문상: 국내 대학(원) 재학 학생회원 주저자'
+      - 미발표 연구 결과만; 서면(Blind) + 일반세션 구두발표 심사 합산
+      - 작성 언어에 따른 심사상 유불리 없음
+      - 총상금 500만원(최우수 1편 300, 우수 2편 각 100; 삼성전자 후원)
+    en:
+      - 'Best Paper: first author a student member at a Korean university'
+      - Unpublished work only; blind written review + oral talk combined
+      - No advantage or penalty by writing language
+      - KRW 5M total (Best 3M, Outstanding 2x1M; Samsung-sponsored)
+  sources:
+    - https://conf.theieie.org/2026s/pages/awards.vm
+    - https://conf.theieie.org/2026f/pages/conference_paperinfo.vm
+    - https://conf.theieie.org/2026f/pages/conference_paper_announce.vm
+    - https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00779192
+kosombe:
+  format:
+    ko: Extended abstract A4 2쪽(Word+PDF 압축 업로드)
+    en: Extended abstract, A4 2 pages (Word + PDF zipped upload)
+  review:
+    ko: 구두 희망 시 5분 영상 사전심사, 탈락 시 포스터 자동 전환
+    en: 'Oral: 5-min video pre-screened; else auto-converted to poster'
+  proceedings:
+    ko: 초록집(ebook PDF) 공개; DBpia 등재 미확인
+    en: Abstract book (ebook PDF) released; DBpia not confirmed
+  cadence:
+    ko: 춘계 5월 둘째 주 제주(초록 4월 초); 추계 11월 초(초록 10월 중)
+    en: Spring 2nd wk May, Jeju (abs. early Apr); Fall early Nov (abs. mid-Oct)
+  looks_for:
+    ko:
+      - 생명과학·생물학 데이터 연구는 IRB/IACUC 승인번호 필수
+      - Oral·포스터 세션 우수 발표자 선정·시상(기준 미공개)
+    en:
+      - IRB/IACUC approval number required for life-science data
+      - Outstanding presenters awarded in oral/poster (criteria n/a)
+  sources:
+    - https://www.kosombe.or.kr/register/2026_spring/main.html
+    - https://www.kosombe.or.kr/register/2025_spring/abstract/info.html
+    - https://kosombe.or.kr/register/2024_fall/abstract/info.html
+osk:
+  format:
+    ko: 초록만(Word/HWP 템플릿), 국문/영문 발표 선택, 온라인 제출
+    en: Abstract only (Word/HWP template), Korean or English, online
+  review:
+    ko: 구두 15분/포스터; 장소 운영에 따라 구두→포스터 전환 가능
+    en: Oral 15 min / poster; oral may be moved to poster by venue
+  proceedings:
+    ko: 논문집·DBpia 등재 여부 미확인
+    en: Proceedings/DBpia status not confirmed
+  cadence:
+    ko: 동계 2월 초 부산(초록 ~12월 중); 하계 7월; PC 11월 말(초록 10월 중)
+    en: Winter early Feb, Busan (abs. mid-Dec); Summer Jul; PC late Nov
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.osk.or.kr/conference/event/content/content.php?_mid=2980,2983&cfrid=150
+    - https://www.osk.or.kr/conference/event/content/content.php?_mid=2981,2992&cfrid=150
+    - https://www.osk.or.kr/content/event/calendar_list.php
+kosaim:
+  format:
+    ko: 초록만(Abstract Template 업로드); 분량·언어 미확인
+    en: Abstract only (template upload); length/language not confirmed
+  review:
+    ko: 포스터 vs 자유연제 구연 선택; 구연은 심사 후 포스터 전환 가능
+    en: Choose poster or free-paper oral; oral may be moved to poster
+  proceedings:
+    ko: 초록집 게재; DBpia 등재 미확인
+    en: Abstract book; DBpia not confirmed
+  cadence:
+    ko: 매년 10월 넷째 주 금~토 서울 파르나스; 초록 마감 9월 중순
+    en: 4th wk Oct, Fri-Sat, Seoul Parnas; abstracts due mid-Sep
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.kosaim.org/html/?pmode=BBBS0007100001
+    - https://www.kosaim.org/html/?pmode=BBBS0007100001&seq=1163&smode=view
+    - https://kosaim.org/html/?pmode=BBBS0007100001&seq=1043&smode=view
+ksbns:
+  format:
+    ko: '영문 초록만: 제목 250자·본문 2,200자·그래픽 1개; 1인 1편'
+    en: 'English abstract only: 250-char title, 2,200-char body, 1 figure'
+  review:
+    ko: SPC 심사로 Oral 선정, 미선정 시 포스터; 채택/거절/수정 통보
+    en: SPC picks orals, others poster; accept/reject/revise outcomes
+  proceedings:
+    ko: Abstract Book 공개; DBpia 등재 미확인
+    en: Abstract Book published; DBpia not confirmed
+  cadence:
+    ko: 매년 9월 초 3일(2026 대전); 초록 접수 3월 중~8월 말
+    en: Early September, 3 days (2026 Daejeon); abstracts mid-Mar to Aug 31
+  looks_for:
+    ko:
+      - 'Outstanding Poster Awards: 학생·포닥 회원 대상'
+      - Best Oral Presentation Awards 10편(Scitech Korea)
+      - 수상 신청 시 extended abstract·research highlights 제출, 폐회식 참석
+    en:
+      - 'Outstanding Poster Awards: student and postdoc members'
+      - Best Oral Presentation Awards, 10 papers (Scitech Korea)
+      - Award applicants submit extended abstract + highlights; attend closing
+  sources:
+    - https://ksbns2026.org/abstract/
+    - https://ksbns2026.org/
+    - https://www.ksbns.org/

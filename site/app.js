@@ -26,7 +26,8 @@
       score_field: '분야 내', score_all: '전체',
       difficulty: '난이도', accept: '채택률',
       diff: { '최상': '최상', '상': '상', '중상': '중상', '중': '중', '하': '하' },
-      all_dates: '전체 일정 보기', detail: '학회 상세 · 제출 분야 · 특징', features: '특징', topics: '제출 분야', schedule: '일정 패턴', sources: '출처',
+      all_dates: '전체 일정', detail: '더 보기 — 소개 · 특징 · 제출 분야 · 전체 일정', features: '특징', topics: '제출 분야', schedule: '일정 패턴', sources: '출처',
+      f_format: '형식', f_review: '심사', f_proc: '논문집', f_accept: '채택률', f_cadence: '시기', f_looks: '이런 논문을 봅니다',
       if_label: 'Impact Factor', special: '특집호', rolling: '상시 투고',
       cand_dl: '제출 마감 (AoE 가정)', first_seen: '첫 발견', category: '분류',
       cand_notice: 'WikiCFP 에서 자동 수집한 후보입니다. 검증되지 않았고 질 낮은(약탈적) 학회가 섞여 있을 수 있으니 투고 전 반드시 확인하세요.',
@@ -58,7 +59,8 @@
       score_field: 'In field', score_all: 'Overall',
       difficulty: 'Difficulty', accept: 'Acceptance',
       diff: { '최상': 'very hard', '상': 'hard', '중상': 'mod. hard', '중': 'moderate', '하': 'easy' },
-      all_dates: 'All dates', detail: 'About · submission areas · characteristics', features: 'Characteristics', topics: 'Submission areas', schedule: 'Typical schedule', sources: 'Sources',
+      all_dates: 'All dates', detail: 'More — about · characteristics · submission areas · all dates', features: 'Characteristics', topics: 'Submission areas', schedule: 'Typical schedule', sources: 'Sources',
+      f_format: 'Format', f_review: 'Review', f_proc: 'Proceedings', f_accept: 'Acceptance', f_cadence: 'When', f_looks: 'What they look for',
       if_label: 'Impact Factor', special: 'Special issue', rolling: 'Rolling submission',
       cand_dl: 'Submission deadline (AoE assumed)', first_seen: 'First seen', category: 'Categories',
       cand_notice: 'Automatically collected from WikiCFP. Unverified and may include low-quality (predatory) venues — check carefully before submitting.',
@@ -141,33 +143,27 @@
     return c.editions.find((e) => e.year >= y) || c.editions.at(-1) || null;
   }
   const selFields = () => [...state.fields];
-  // 선택 분야가 없으면 전체 점수, 하나면 그 분야 점수, 여러 개면 평균
+  // 정렬용 점수: 분야 하나만 골랐으면 그 분야 점수, 아니면 전체 점수
   const tierOf = (x) => {
     const fs = selFields();
-    if (!fs.length) return x.score.overall ?? -1;
-    const v = fs.map((f) => x.score.byField[f]).filter((s) => s != null);
-    return v.length ? v.reduce((a, b) => a + b, 0) / v.length : -1;
+    return (fs.length === 1 ? x.score.byField[fs[0]] : x.score.overall) ?? -1;
   };
 
   // ---------------------------------------------------------------- 렌더링
-  function scoreBlock(x, extra = '') {
+  // 점수: 분야별 점수를 알약 형태로. 선택한 분야는 강조
+  function scorePills(x) {
     const t = T();
-    const rows = [];
-    const bar = (label, v) =>
-      `<div class="srow"><span>${label}</span><div class="bar"><i style="width:${Math.round((v ?? 0) * 100)}%"></i></div><b>${v == null ? '–' : v.toFixed(2)}</b></div>`;
     const fs = selFields();
-    if (fs.length === 1) rows.push(bar(t.score_field, x.score.byField[fs[0]]));
-    else for (const f of fs) rows.push(bar(t.fields_tiny[f], x.score.byField[f]));
-    rows.push(bar(t.score_all, x.score.overall));
-    if (!fs.length && x.fields.length > 1) {
-      for (const f of x.fields) rows.push(bar(t.fields_tiny[f], x.score.byField[f]));
-    }
-    return `<div class="score">${rows.join('')}${extra}</div>`;
+    const pill = (label, v, on) => `<span class="pill ${on ? 'on' : ''}"><span>${label}</span><b>${v == null ? '–' : v.toFixed(2)}</b></span>`;
+    const parts = x.fields.map((f) => pill(t.fields_tiny[f], x.score.byField[f], fs.includes(f)));
+    parts.push(pill(t.score_all, x.score.overall, fs.length === 0));
+    return `<div class="pills">${parts.join('')}</div>`;
   }
   const warn = (x) => (x.verified ? '' : ` <span class="warn-ico" title="${T().unverified}">⚠</span>`);
   const placeLine = (ed) => (ed?.place ? `<div class="cd-place">📍 ${esc(ed.place)}</div>` : '');
-  const allFields = (x) => [...x.fields, ...(x.also || [])];
-  const fieldTags = (x) => `<div class="fields">${x.fields.map((f) => `<span class="ftag">${T().fields[f]}</span>`).join('')}${(x.also || []).map((f) => `<span class="ftag sec" title="${T().also_hint}">${T().fields[f]}</span>`).join('')}</div>`;
+  const allFields = (x) => x.fields;
+  const fieldTags = (x) => `<div class="fields">${x.fields.map((f) => `<span class="ftag ${state.fields.has(f) ? 'on' : ''}">${T().fields[f]}</span>`).join('')}</div>`;
+  const L = (v) => (v == null ? null : typeof v === 'object' ? (v[lang] ?? v.ko ?? v.en) : v);
 
   function confCard(c, now) {
     const t = T();
@@ -199,42 +195,57 @@
       cd = `<div class="cd-none">${t.no_next}<br><span class="meta">${ld ? `${t.last_dl} ${kst(ld.at, true)}` : t.check_site}</span>${placeLine(ed)}</div>`;
     }
 
-    const diff = [
-      c.difficulty ? `${t.difficulty} <b>${t.diff[c.difficulty] || c.difficulty}</b>` : '',
-      m.accept_rate != null ? `${t.accept} ${(m.accept_rate * 100).toFixed(0)}%` : '',
-      m.h5 ? `h5 ${m.h5}` : '',
-    ].filter(Boolean).join(' · ');
-
-    const allDl = c.editions.filter((e) => e.deadlines.length);
-    const tl = allDl.length
-      ? `<details class="dl"><summary>${t.all_dates} (${allDl.map((e) => e.year).join(', ')})</summary><ul class="tl">${allDl
-          .flatMap((e) => e.deadlines.map((d) => `<li class="${Date.parse(d.at) < now ? 'done' : ''}"><span><span class="ed">${e.year}</span> ${esc(d.label || d.type)}</span><span>${kst(d.at)}</span></li>`))
-          .join('')}</ul></details>`
+    // 핵심 정보 (항상 표시)
+    const q = c.quick || {};
+    const acceptStr = m.accept_rate != null
+      ? `${(m.accept_rate * 100).toFixed(0)}%${c.difficulty ? ` · ${t.diff[c.difficulty] || c.difficulty}` : ''}`
+      : null;
+    const facts = [
+      [t.f_format, L(q.format)],
+      [t.f_review, L(q.review)],
+      [t.f_proc, L(q.proceedings)],
+      [t.f_accept, acceptStr],
+      [t.f_cadence, L(q.cadence)],
+    ].filter(([, v]) => v);
+    const factsHtml = facts.length
+      ? `<dl class="facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>`
       : '';
+    const looks = L(q.looks_for);
+    const looksHtml = looks?.length
+      ? `<div class="looks"><span class="lk">${t.f_looks}</span><ul>${looks.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>`
+      : '';
+
+    // 접힘: 소개 · 특징 · 제출 분야 · 전체 일정
+    const allDl = c.editions.filter((e) => e.deadlines.length);
     const dt = detailsOf(c);
-    const detail = dt && (dt.about || dt.features?.length || dt.topics?.length)
+    const more = (dt && (dt.about || dt.features?.length || dt.topics?.length)) || allDl.length
       ? `<details class="dl detail"><summary>${t.detail}</summary>
           <div class="dbody">
-            ${dt.about ? `<p class="dabout">${esc(dt.about)}</p>` : ''}
-            ${dt.features?.length ? `<h4>${t.features}</h4><ul class="dlist">${dt.features.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
-            ${dt.acceptance_rate ? `<p class="dmeta">${t.accept}: ${esc(dt.acceptance_rate)}</p>` : ''}
-            ${dt.typical_schedule ? `<p class="dmeta">${t.schedule}: ${esc(dt.typical_schedule)}</p>` : ''}
-            ${dt.topics?.length ? `<h4>${t.topics}</h4><div class="dtopics">${dt.topics.map((x) => `<span>${esc(x)}</span>`).join('')}</div>` : ''}
-            ${dt.sources?.length ? `<p class="dsrc">${t.sources}: ${dt.sources.map((s) => `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, '').split('/')[0])}</a>`).join(' · ')}</p>` : ''}
+            ${dt?.about ? `<p class="dabout">${esc(dt.about)}</p>` : ''}
+            ${dt?.features?.length ? `<h4>${t.features}</h4><ul class="dlist">${dt.features.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+            ${dt?.acceptance_rate ? `<p class="dmeta">${t.accept}: ${esc(dt.acceptance_rate)}</p>` : ''}
+            ${dt?.topics?.length ? `<h4>${t.topics}</h4><div class="dtopics">${dt.topics.map((x) => `<span>${esc(x)}</span>`).join('')}</div>` : ''}
+            ${allDl.length ? `<h4>${t.all_dates}</h4><ul class="tl">${allDl
+              .flatMap((e) => e.deadlines.map((d) => `<li class="${Date.parse(d.at) < now ? 'done' : ''}"><span><span class="ed">${e.year}</span> ${esc(d.label || d.type)}</span><span>${kst(d.at)}</span></li>`))
+              .join('')}</ul>` : ''}
+            ${(dt?.sources?.length || q.sources?.length) ? `<p class="dsrc">${t.sources}: ${[...new Set([...(dt?.sources || []), ...(q.sources || [])])].map((s) => `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, '').split('/')[0])}</a>`).join(' · ')}</p>` : ''}
           </div></details>`
       : '';
 
     return `<article class="item ${c.target ? 'target' : ''} ${nd ? '' : 'past'}">
-      <div>
-        <div class="name">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(nameOf(c))}</a>` : esc(nameOf(c))} ${badges}</div>
-        <div class="full">${esc(fullOf(c))}</div>
-        ${where ? `<div class="meta">${where}</div>` : ''}
-        ${fieldTags(c)}
+      <div class="head">
+        <div>
+          <div class="name">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(nameOf(c))}</a>` : esc(nameOf(c))} ${badges}</div>
+          <div class="full">${esc(fullOf(c))}</div>
+          ${where ? `<div class="meta">${where}</div>` : ''}
+          ${fieldTags(c)}
+          ${scorePills(c)}${m.h5 ? `<span class="h5">h5 ${m.h5}${warn(c)}</span>` : warn(c)}
+        </div>
+        <div class="cdwrap">${cd}</div>
       </div>
-      <div>${cd}</div>
-      ${scoreBlock(c, `<div class="smeta">${diff}${warn(c)}</div>`)}
-      ${detail}
-      ${tl}
+      ${factsHtml}
+      ${looksHtml}
+      ${more}
     </article>`;
   }
 
@@ -254,7 +265,7 @@
       </div>
       <div><div class="cd-type">${t.if_label}${j.if_year ? ` (${j.if_year})` : ''}</div>
         <div class="cd">${j.if != null ? j.if.toFixed(1) : '–'}${warn(j)}</div>${cd}</div>
-      ${scoreBlock(j)}
+      <div>${scorePills(j)}</div>
     </article>`;
   }
 
@@ -363,8 +374,8 @@
     document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t[el.dataset.i18n]; });
     document.querySelectorAll('[data-i18n-html]').forEach((el) => { el.innerHTML = t[el.dataset.i18nHtml]; });
     $('#q').placeholder = t.search;
-    $('#field-chips').innerHTML = [['all', t.field_all], ...Object.entries(t.fields)]
-      .map(([k, v]) => `<button class="chip" data-v="${k}">${v}</button>`).join('');
+    $('#field-chips').innerHTML = `<label class="fchk all"><input type="checkbox" data-v="all"> ${t.field_all}</label>` +
+      Object.entries(t.fields).map(([k, v]) => `<label class="fchk"><input type="checkbox" data-v="${k}"> ${v}</label>`).join('');
     $('#field-chips').title = t.field_hint;
     document.querySelectorAll('#lang-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === lang));
     if (DATA) {
@@ -375,12 +386,12 @@
 
   // ---------------------------------------------------------------- 컨트롤
   function setupControls() {
-    $('#field-chips').addEventListener('click', (e) => {
-      const b = e.target.closest('.chip'); if (!b) return;
+    $('#field-chips').addEventListener('change', (e) => {
+      const b = e.target.closest('input'); if (!b) return;
       const v = b.dataset.v;
       if (v === 'all') state.fields.clear();
-      else if (state.fields.has(v)) state.fields.delete(v);
-      else state.fields.add(v);
+      else if (b.checked) state.fields.add(v);
+      else state.fields.delete(v);
       syncUi(); render();
     });
     $('#region-seg').addEventListener('click', (e) => {
@@ -408,7 +419,10 @@
   }
   function syncUi() {
     const sorts = T().sorts[state.tab];
-    document.querySelectorAll('.chip').forEach((b) => b.classList.toggle('on', b.dataset.v === 'all' ? state.fields.size === 0 : state.fields.has(b.dataset.v)));
+    document.querySelectorAll('.fchk input').forEach((b) => {
+      b.checked = b.dataset.v === 'all' ? state.fields.size === 0 : state.fields.has(b.dataset.v);
+      b.parentElement.classList.toggle('on', b.checked);
+    });
     document.querySelectorAll('#region-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === state.region));
     document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('active', b.dataset.tab === state.tab));
     $('#sort').innerHTML = sorts.map(([v, l]) => `<option value="${v}">${l}</option>`).join('');

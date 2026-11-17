@@ -23,6 +23,11 @@ const scraped = readJson(p('data/crawled/scraped.json'), {});
 const notices = (readYaml(p('data/notices.yml'), []) || []).filter((n) => !n.hidden);
 const details = readYaml(p('data/details.yml'), {}) || {};
 const detailsEn = readYaml(p('data/details_en.yml'), {}) || {};
+const quick = readYaml(p('data/quick.yml'), {}) || {};
+const pickQuick = (q) => (q ? {
+  format: q.format || null, review: q.review || null, proceedings: q.proceedings || null, cadence: q.cadence || null,
+  looks_for: q.looks_for || null, sources: q.sources || [],
+} : null);
 const pickDetails = (d) => (d ? {
   about: d.about || null, topics: d.topics || [], features: d.features || [],
   acceptance_rate: d.acceptance_rate || null, typical_schedule: d.typical_schedule || null, sources: d.sources || [],
@@ -104,11 +109,12 @@ const confList = [...(venues.conferences || []), ...discovered].map((v) => {
   };
   return {
     id: v.id, name: v.name, full: v.full || c?.full || h?.full || '', kind: 'conference',
-    fields: v.fields || [], also: (v.also || []).filter((f) => !(v.fields || []).includes(f)), region: v.region || 'intl', target: !!v.target, link: v.link,
+    fields: v.fields || [], region: v.region || 'intl', target: !!v.target, link: v.link,
     status: v.status || null, verified: !!(m.verified ?? v.verified),
     metrics, difficulty: difficulty(metrics.accept_rate), editions: mergeEditions(v),
     details: pickDetails(details[v.id]),
     details_en: pickDetails(detailsEn[v.id]),
+    quick: pickQuick(quick[v.id]),
     name_en: v.name_en || detailsEn[v.id]?.name_en || null,
     full_en: v.full_en || detailsEn[v.id]?.full_en || null,
   };
