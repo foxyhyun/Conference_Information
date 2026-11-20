@@ -1128,3 +1128,100 @@ cosyne:
       - Significance, originality, clarity, relevance to Cosyne audience
   sources:
     - https://www.cosyne.org/abstracts
+nss-mic:
+  format:
+    ko: 초록 2,000자 + 2p Summary(TNS 양식) + eCF
+    en: 2,000-char abstract + 2-page summary (TNS layout)
+  review:
+    ko: 프로그램 위원회 초록·Summary 심사, 7월 통보
+    en: Program committee reviews abstract+summary; July
+  proceedings:
+    ko: 초록만 IEEE Xplore 게재, 전문은 TNS/TRPMS 투고
+    en: Abstracts in IEEE Xplore; full papers to TNS/TRPMS
+  cadence:
+    ko: 매년 10~11월 · 초록 마감 5월 초~중순
+    en: Yearly Oct-Nov; abstracts due early/mid May
+  looks_for:
+    ko:
+      - Summary에 가설·배경·방법·결과·결론을 담고 '새로운 기여'를 명확히 제시
+    en:
+      - Summary must state aims, background, methods, results and clearly identify the novel contribution
+  sources:
+    - https://nssmic.ieee.org/2026/abstract/
+    - https://ieee-npss.org/conferences/
+animma:
+  format:
+    ko: 초록 제출(Indico) → 채택 후 전문 proceedings
+    en: Abstract via Indico; full paper for proceedings
+  review:
+    ko: 과학위원회 초록 심사, 구두/포스터 분류
+    en: Scientific committee reviews; oral or poster
+  proceedings:
+    ko: EPJ Web of Conferences + EPJ-N 특집호
+    en: EPJ Web of Conferences + EPJ-N special issue
+  cadence:
+    ko: 격년(홀수년) 6월 · 초록 마감 전년 11월 중순
+    en: Odd years, June; abstracts due mid-Nov prior year
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://animma.com/
+    - https://animma.com/conference-scope-framework/
+isord:
+  format:
+    ko: 초록 → 선택적 전문(저널 게재용)
+    en: Abstract, then optional full paper for journal
+  review:
+    ko: 초록 심사 후 구두/포스터; 전문은 저널 심사
+    en: Abstract review; full papers journal-refereed
+  proceedings:
+    ko: Radioisotopes 저널(ISORD-12) 등 개최국 저널
+    en: Host-country journal, e.g. Radioisotopes (2025)
+  cadence:
+    ko: 약 2년마다(홀수년) 6~7월 · 초록 마감 4월
+    en: ~Biennial (odd yrs) Jun-Jul; abstracts due April
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://isord-12.org/
+    - https://karp.or.kr/index.php?hCode=INTER_05_02
+knsconf:
+  format:
+    ko: 짧은 전문 논문 제출(온라인), 한/영 선택
+    en: Short full paper online; Korean or English
+  review:
+    ko: 연구회별 채택 심사
+    en: Reviewed by research group; accept/reject
+  proceedings:
+    ko: 학술발표회 논문집(ISSN 3140-1864) 온라인
+    en: KNS proceedings (ISSN 3140-1864) online
+  cadence:
+    ko: 연 2회(5월·10월 말) · 논문 마감 약 2개월 전
+    en: Twice yearly (May, late Oct); papers ~2 months before
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://www.kns.org/boards/view/notice/103354
+    - https://www.kns.org/boards/download/34061
+karp:
+  format:
+    ko: 초록(논문) 온라인 제출
+    en: Online abstract (paper) submission
+  review:
+    ko: null
+    en: null
+  proceedings:
+    ko: 학술대회 논문집(KoreaScience 등재)
+    en: Meeting proceedings (indexed in KoreaScience)
+  cadence:
+    ko: 연 2회(4월 하순·10~11월 말) · 초록 약 1개월 전
+    en: Twice yearly (late Apr, Oct-Nov); abstracts ~1 mo before
+  looks_for:
+    ko: []
+    en: []
+  sources:
+    - https://karp.or.kr/index.php?hCode=CONF_05_01
+    - https://karp.or.kr/index.php?page=view&pg=1&idx=10984&hCode=BOARD&bo_idx=8

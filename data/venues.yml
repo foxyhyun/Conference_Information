@@ -603,6 +603,69 @@ conferences:
     editions:
       - {year: 2027, date: 'Mar 11-14, 2027 (main meeting); workshops Mar 15-16, 2027', place: 'Montréal, QC, Canada (Fairmont The Queen Elizabeth; workshops at Le Westin Montréal)', link: https://www.cosyne.org, deadlines: [{type: registration, at: 2027-01-31 23:59, label: Presenting-author registration (EST per abstracts page; AoE per home page)}, {type: registration, at: 2027-02-02 23:59, label: Early-bird registration (EST)}]}
 
+  # ---------------- 방사선 · 원자력 (2026-11 추가) ----------------
+  - id: nss-mic
+    name: IEEE NSS/MIC/RTSD
+    full: IEEE Nuclear Science Symposium, Medical Imaging Conference and Room-Temperature Semiconductor Detector Conference
+    fields:
+      - rad
+      - medai
+      - imgproc
+    region: intl
+    link: https://nssmic.ieee.org/
+    metrics:
+      tier: 0.7
+    editions:
+      - {year: 2027, date: 'Oct 30 - Nov 6, 2027', place: 'Pasadena, CA, USA (venue TBA)', link: https://ieee-npss.org/conferences/}
+
+  - id: animma
+    name: ANIMMA
+    full: International Conference on Advancements in Nuclear Instrumentation Measurement Methods and their Applications
+    fields:
+      - rad
+    region: intl
+    link: https://animma.com/
+    metrics:
+      tier: 0.55
+    editions:
+      - {year: 2027, date: 'Jun 14-18, 2027', place: 'Prague, Czech Republic (Clarion Congress Hotel Prague)', link: https://animma.com/, deadlines: [{type: abstract, at: '2026-11-16', label: Abstract submission (closed)}, {type: registration, at: '2027-03-31', label: Early-bird registration}]}
+
+  - id: isord
+    name: ISORD
+    full: International Symposium on Radiation Safety and Detection Technology
+    fields:
+      - rad
+    region: intl
+    link: https://isord-12.org/
+    metrics:
+      tier: 0.4
+    editions:
+      - {year: 2025, date: 'Jun 30 - Jul 3, 2025', place: 'Tokyo, Japan (The University of Tokyo, Hongo campus)', link: https://isord-12.org/}
+
+  - id: knsconf
+    name: KNS 학술발표회
+    full: 한국원자력학회 춘계/추계 학술발표회 (Korean Nuclear Society Spring/Autumn Meeting)
+    fields:
+      - rad
+    region: domestic
+    link: https://www.kns.org/
+    metrics:
+      tier: 0.4
+    editions:
+      - {year: 2026, date: 'Oct 28-30, 2026', place: '경주, 대한민국 (경주화백컨벤션센터 HICO)', link: https://www.kns.org/boards/view/notice/103354, timezone: UTC+9}
+
+  - id: karp
+    name: KARP 학술대회
+    full: 대한방사선방어학회 춘계/추계 학술대회
+    fields:
+      - rad
+    region: domestic
+    link: https://karp.or.kr/
+    metrics:
+      tier: 0.35
+    editions:
+      - {year: 2026, date: 'Oct 29-31, 2026', place: '제주, 대한민국 (롯데호텔 제주)', link: https://karp.or.kr/index.php?page=view&pg=1&idx=10984&hCode=BOARD&bo_idx=8, timezone: UTC+9}
+
 # =====================================================================
 #  저널 — 이름·IF·범위 등 조사 정보는 data/journals.yml 에 있습니다 (출처 포함).
 #  여기서는 분야와 랩 게재 이력 매칭만 정합니다.
@@ -688,3 +751,10 @@ journals:
   - { id: nat-comput-sci,   fields: [dl, biomed],               match: "Nature Computational Science" }
   - { id: elight,           fields: [optics, imgproc],          match: "^eLight$" }
   - { id: j-microsc,        fields: [optics, imgproc, biomed],  match: "Journal of Microscopy|J\\.? Microsc" }
+
+  # ---- 방사선 · 핵계측 ----
+  - { id: nima,         fields: [rad],                 match: "Nuclear Instruments and Methods|NIM-?A" }
+  - { id: tns,          fields: [rad, medai],          match: "Transactions on Nuclear Science" }
+  - { id: rad-meas,     fields: [rad],                 match: "^Radiation Measurements$" }
+  - { id: jer,          fields: [rad],                 match: "Environmental Radioactivity" }
+  - { id: net,          fields: [rad],                 match: "Nuclear Engineering and Technology" }

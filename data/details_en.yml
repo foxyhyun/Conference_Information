@@ -1828,3 +1828,159 @@ cosyne:
   sources:
     - https://www.cosyne.org
     - https://www.cosyne.org/abstracts
+nss-mic:
+  about: >-
+    Annual flagship meeting of the IEEE Nuclear and Plasma Sciences Society (NPSS), held every Oct-Nov, and the largest yearly gathering for
+    radiation detectors, nuclear instrumentation and radiation-based medical imaging. The 2024 Tampa edition drew around 1,400 registered
+    participants and 56 exhibitors (NPSS newsletter). NSS, MIC and RTSD run jointly; the venue rotates among North America, Europe and Asia:
+    2026 Granada (Nov 7-14), 2027 Pasadena (Oct 30-Nov 6), 2028 Athens (TBD).
+  topics:
+    - AI and ML for radiation detection (NSS 2026 topic)
+    - Computational methods, modeling and data analysis
+    - Gas detectors
+    - Scintillator detectors
+    - Semiconductor detectors
+    - Photodetectors
+    - Analog and digital circuits
+    - DAQ, front-end and electronics
+    - Neutron and gamma-ray detectors and applications, including security, dosimetry and other related applications
+    - Nuclear, HEP and astrophysics detectors
+    - Synchrotron, FEL and XFEL detectors
+    - Novel detectors and associated technologies
+    - Novel applications of AI in radiation-based medical imaging (MIC 2026 topic)
+    - Nonproliferation, Homeland Security & Safeguards, Treaty Verification and Contraband Detection (NSS 2025 topic)
+  features:
+    - >-
+      Submission = abstract (<2,000 characters, one paragraph) + summary (max 2 pages incl. abstract, TNS layout preferred, figures allowed)
+      + IEEE eCF; summaries that merely reword the abstract are rejected
+    - 2026 abstract deadline May 12, 11:59:59 pm Granada time (CEST); acceptance notified in July
+    - >-
+      Oral and poster presentations; abstracts of presented work published in IEEE Xplore as the Conference Record (no further record); full
+      papers encouraged to TNS, TRPMS or TMI
+    - >-
+      Workshop 'AI in Nuclear Sciences and Nuclear Medical Imaging' (2026, ~150 participants); short course 'Deep Learning/AI for
+      Radioactive Source Detection' (2025)
+    - >-
+      NPSS Student Paper Awards (2 per NSS/MIC, USD 500), Trainee Grants (fees only), Jordanov Travel Grant (up to USD 2,000),
+      Knoll/Gatti/Hoffman society awards
+    - Short courses (NSS Sat-Sun, MIC Mon-Tue), workshops and industrial exhibition alongside
+  acceptance_rate: null
+  sources:
+    - https://nssmic.ieee.org/2026/abstract/
+    - https://nssmic.ieee.org/2026/program/
+    - https://nssmic.ieee.org/2026/information/
+    - https://nssmic.ieee.org/2025/program/
+    - https://ieee-npss.org/conferences/
+    - https://newsletter.ieee-npss.org/nssmicrtsd-conf-report-march-2025/
+animma:
+  about: >-
+    Biennial (odd years, June) international conference devoted to nuclear instrumentation and measurement methods. Founded 2009; CEA
+    (France), SCK CEN (Belgium) and Aix-Marseille University are long-standing partners and it is an IEEE NPSS Technically Cosponsored
+    Conference. ANIMMA 2023 (Lucca) had 403 attendees from 31 countries and 270+ presentations in 43 sessions (NPSS newsletter). The 10th
+    edition (2027) is hosted locally by IEAP, Czech Technical University in Prague; organisers foresee ~400 participants.
+  topics:
+    - Fundamental Physics
+    - Space Sciences and Technology
+    - Fusion Diagnostics and Technology
+    - Research Reactors and Particle Accelerators
+    - Nuclear Power Reactors and Nuclear Fuel Cycle
+    - Nuclear Safeguards, Homeland Security and CBRN
+    - Decommissioning, Dismantling and Severe Accident Monitoring
+    - Environmental and Medical Sciences
+    - Current Trends in Development of Radiation Detectors
+    - Machine Learning and AI for Detection and Measurement Sciences
+    - Education, Training and Outreach
+  features:
+    - Abstracts reviewed by the scientific committee and classified oral/poster; notification mid-January 2027
+    - Accepted papers published in EPJ Web of Conferences (EPJ-WoC) proceedings after a dedicated review; proceedings due mid-July 2027
+    - >-
+      Extended versions in an EPJ Nuclear Sciences & Technologies special issue (peer-reviewed); 2025 edition linked to an IEEE TNS special
+      issue
+    - Summer school (AISS, Jun 12-14, max 40 students) and four parallel workshops on Jun 14
+    - Student grants, best student paper (2) and best poster (3) awards in 2023, industrial exhibition (21 exhibitors in 2023)
+  acceptance_rate: null
+  sources:
+    - https://animma.com/
+    - https://animma.com/conference-scope-framework/
+    - https://indico.utef.cvut.cz/event/54/page/218-application-fields
+    - https://newsletter.ieee-npss.org/animma-2023-conference-report/
+    - https://animma.com/opportunities/
+isord:
+  about: >-
+    A real series: an Asia-centred biennial symposium on radiation safety and detection technology that began at Hanyang University
+    (ISORD-1, 2001) and rotates among Korea, Japan, China and Malaysia (per the AESJ PNST foreword: 2003 Tohoku, 2005 CIRP China, 2007
+    Hanyang, 2009 Kitakyushu, 2011 Malaysia, 2013 Hainan, 2015 Jeju, 2017 Nagoya). ISORD-11 was held Jul 4-7, 2023 at Hanyang University,
+    Seoul (listed among KARP's international conferences); ISORD-12 on Jun 30-Jul 3, 2025 at the University of Tokyo (organised by UTokyo
+    Institute of Engineering Innovation, supported by AESJ Radiation Science & Technology Division and JSAP). ISORD-13 (expected 2027) is
+    not yet announced.
+  topics:
+    - Radiation transport and shielding
+    - Radiation dosimetry
+    - Radiation detection and sensor technology
+    - Environmental radiation measurements and assessments
+    - Radiological risk management
+  features:
+    - >-
+      ISORD-12 deadlines: abstract Apr 14, 2025 (extended Apr 22), early registration May 15 (extended May 30), optional full paper Jul 15
+      (extended Jul 31)
+    - >-
+      Papers presented are reviewed and published in the international journal Radioisotopes (ISORD-12); ISORD-9 proceedings appeared in
+      AESJ Progress in Nuclear Science and Technology
+    - 'ISORD-9 (Nagoya 2017): 122 presentations (9 invited, 40 oral, 73 poster), 153 participants'
+    - Young researchers' session at ISORD-12 (IRPA Bulletin 47, Japanese)
+    - Run by the host country's society (KARP hosts when in Korea and lists it as its international conference)
+  acceptance_rate: null
+  sources:
+    - https://isord-12.org/
+    - https://isord-12.org/greetings.html
+    - https://karp.or.kr/index.php?hCode=INTER_05_02
+    - https://www.aesj.net/document/pnst006/data/Foreword.pdf
+knsconf:
+  about: >-
+    Korea's largest nuclear-engineering meeting, held twice a year by the Korean Nuclear Society (spring in May, autumn late October). The
+    2026 spring meeting was May 6-8 at ICC Jeju; the 2026 autumn meeting Oct 28-30 at HICO Gyeongju with the 59th general assembly, about
+    1,500 attendees, ~600 papers and 18 workshops (Kyongbuk Maeil report). Among 12 research groups, 'Radiation Protection', 'Radiation
+    Applications and Instruments' and 'I&C, Human Factors and Remote Automation' run the radiation-measurement sessions. The 2027 spring
+    meeting is not yet announced.
+  topics:
+    - Radiation Protection (방사선 방호)
+    - Radiation Applications and Instruments (방사선 이용 및 기기)
+    - Nuclear I&C, Human Factors and Remote Automation
+    - Nuclear Safety
+    - Nuclear Fuel and Materials
+    - Thermal Hydraulics
+    - Nuclear Policy, Human Resources and Cooperation
+  features:
+    - Presentation language (Korean/English) chosen at submission; accepted authors must pay registration
+    - 2026 autumn paper deadline Aug 20, 2026 24:00 KST (KNS circular 2026-226)
+    - Proceedings (ISSN 3140-1864) online; best papers awarded at the following meeting
+    - >-
+      Many research-group workshops and tutorials (18 in autumn 2026); 'Nuclear AI tutorial' (autumn 2025), 'Severe-accident research meets
+      AI' workshop (spring 2026)
+    - No Radiation Protection group sessions in 2026 because of ICRS15
+  acceptance_rate: null
+  sources:
+    - https://www.kns.org/boards/view/notice/103354
+    - https://www.kns.org/boards/view/notice/103371
+    - https://www.kns.org/boards/download/34061
+    - https://kbmaeil.com/article/20261028500207
+karp:
+  name_en: KARP Meeting
+  full_en: Korean Association for Radiation Protection Spring/Autumn Scientific Meeting
+  about: >-
+    Domestic Korean meeting on radiation protection, dosimetry and detection held twice a year by the Korean Association for Radiation
+    Protection (KARP): spring in late April, autumn in late Oct-late Nov together with the general assembly. 2026 spring Apr 22-24; 2026
+    autumn (50th general assembly) Oct 29-31 at Lotte Hotel Jeju right after ICRS15/RPSD2026. KARP publishes the Journal of Radiation
+    Protection and Research (JRPR). 2027 dates not yet announced.
+  topics: []
+  features:
+    - Online abstract (paper) submission; 2026 autumn deadline Sep 21 extended to Sep 30 (notice), event list shows Oct 7 23:59
+    - Oral presentations and poster sessions
+    - Pre-registration until Oct 28, 2026
+    - 'Workshops alongside (2026: AMETEK ORTEC LabVision; next-generation nuclear leaders program)'
+    - Awards announced at the general assembly (50th in 2026)
+  acceptance_rate: null
+  sources:
+    - https://karp.or.kr/index.php?page=view&pg=1&idx=10984&hCode=BOARD&bo_idx=8
+    - https://karp.or.kr/index.php?page=view&pg=1&idx=11004&hCode=BOARD&bo_idx=8
+    - https://karp.or.kr/index.php?hCode=CONF_05_01

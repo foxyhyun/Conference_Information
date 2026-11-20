@@ -1401,3 +1401,134 @@ cosyne:
   sources:
     - https://www.cosyne.org
     - https://www.cosyne.org/abstracts
+nss-mic:
+  about: >-
+    IEEE Nuclear and Plasma Sciences Society(NPSS)가 매년 10~11월에 여는 방사선 검출기·핵계측·의료영상 분야 최대 연례 학회. 2024 Tampa 대회 등록 참가자 약 1,400명, 전시업체 56개(NPSS
+    뉴스레터). NSS(핵과학 심포지엄)·MIC(의료영상)·RTSD(상온 반도체 검출기) 3개가 합동 개최되며, 북미·유럽·아시아를 순환. 2026 Granada(11/7-14), 2027 Pasadena(10/30-11/6), 2028
+    Athens 예정.
+  topics:
+    - AI and ML for radiation detection (NSS 2026 topic)
+    - Computational methods, modeling and data analysis
+    - Gas detectors
+    - Scintillator detectors
+    - Semiconductor detectors
+    - Photodetectors
+    - Analog and digital circuits
+    - DAQ, front-end and electronics
+    - Neutron and gamma-ray detectors and applications, including security, dosimetry and other related applications
+    - Nuclear, HEP and astrophysics detectors
+    - Synchrotron, FEL and XFEL detectors
+    - Novel detectors and associated technologies
+    - Novel applications of AI in radiation-based medical imaging (MIC 2026 topic)
+    - Nonproliferation, Homeland Security & Safeguards, Treaty Verification and Contraband Detection (NSS 2025 topic)
+  features:
+    - '제출물: 초록(2,000자 이내, 1단락) + 2페이지 이내 Summary(TNS 양식 권장, 그림 포함) + IEEE eCF; Summary 없거나 초록 재서술이면 거부'
+    - 2026 초록 마감 5월 12일 23:59:59 (Granada 현지, CEST), 채택 통보 7월
+    - 구두/포스터 발표; 초록만 IEEE Xplore에 Conference Record로 게재(발표된 것만), 전문은 TNS·TRPMS·TMI 투고 권장
+    - >-
+      Workshop 'AI in Nuclear Sciences and Nuclear Medical Imaging'(2026, 약 150명), Short course 'Deep Learning/AI for Radioactive Source
+      Detection'(2025)
+    - NPSS Student Paper Award(NSS/MIC 각 2편, USD 500), Trainee Grant(등록비), Jordanov Travel Grant(USD 2,000), Knoll·Gatti·Hoffman 등 학회상
+    - Short course(NSS 토·일, MIC 월·화)·워크숍·산업 전시 동반
+  acceptance_rate: null
+  sources:
+    - https://nssmic.ieee.org/2026/abstract/
+    - https://nssmic.ieee.org/2026/program/
+    - https://nssmic.ieee.org/2026/information/
+    - https://nssmic.ieee.org/2025/program/
+    - https://ieee-npss.org/conferences/
+    - https://newsletter.ieee-npss.org/nssmicrtsd-conf-report-march-2025/
+animma:
+  about: >-
+    핵계측(nuclear instrumentation)·측정법 전반을 다루는 격년(홀수년 6월) 국제학회. 2009년 창립, CEA(프랑스)·SCK CEN(벨기에)·Aix-Marseille 대학 등이 파트너이며 IEEE NPSS
+    Technically Cosponsored Conference. 2023 Lucca 대회는 31개국 403명 참가, 43개 세션 270여 편 발표(NPSS 뉴스레터). 2027년 제10회는 프라하 체코공대 IEAP가 로컬 호스트, 400명 참가
+    예상(주최측 안내).
+  topics:
+    - Fundamental Physics
+    - Space Sciences and Technology
+    - Fusion Diagnostics and Technology
+    - Research Reactors and Particle Accelerators
+    - Nuclear Power Reactors and Nuclear Fuel Cycle
+    - Nuclear Safeguards, Homeland Security and CBRN
+    - Decommissioning, Dismantling and Severe Accident Monitoring
+    - Environmental and Medical Sciences
+    - Current Trends in Development of Radiation Detectors
+    - Machine Learning and AI for Detection and Measurement Sciences
+    - Education, Training and Outreach
+  features:
+    - '초록은 과학위원회가 심사해 구두/포스터로 분류 후 통보(2027: 1월 중순)'
+    - 채택 논문은 EPJ Web of Conferences(EPJ-WoC) proceedings로 출판(별도 심사, 2027년 7월 중순 제출)
+    - 확장판은 EPJ Nuclear Sciences & Technologies 특집호에 peer review 후 게재; 2025년 판은 IEEE TNS 특집호와 연계
+    - 본회의 직전 Summer School(AISS, 6/12-14, 최대 40명)과 6/14 워크숍 4개 병행
+    - '학생 그랜트, 최우수 학생논문상 2편·포스터상 3편(2023), 산업 전시(2023: 21개사)'
+  acceptance_rate: null
+  sources:
+    - https://animma.com/
+    - https://animma.com/conference-scope-framework/
+    - https://indico.utef.cvut.cz/event/54/page/218-application-fields
+    - https://newsletter.ieee-npss.org/animma-2023-conference-report/
+    - https://animma.com/opportunities/
+isord:
+  about: >-
+    실존하는 학회임. 2001년 한양대(ISORD-1)에서 시작해 한국·일본·중국·말레이시아를 순환하며 대체로 2년마다 열리는 아시아 중심의 방사선안전·검출기술 심포지엄(AESJ PNST 서문 기준: 2003 Tohoku, 2005 CIRP 중국,
+    2007 한양대, 2009 Kitakyushu, 2011 말레이시아, 2013 하이난, 2015 제주, 2017 Nagoya). 11회는 2023.7.4-7 한양대(서울, 대한방사선방어학회 국제학술대회 목록에 수록), 12회는
+    2025.6.30-7.3 도쿄대(주최: 도쿄대 Institute of Engineering Innovation, 후원: AESJ 방사선분과·JSAP). 13회(2027 추정) 개최지·일정은 미공개.
+  topics:
+    - Radiation transport and shielding
+    - Radiation dosimetry
+    - Radiation detection and sensor technology
+    - Environmental radiation measurements and assessments
+    - Radiological risk management
+  features:
+    - 'ISORD-12: 초록 마감 2025-04-14(→4-22 연장), 조기등록 5-15(→5-30), 선택적 전문 7-15(→7-31)'
+    - 발표 논문은 심사 후 국제 저널 Radioisotopes에 게재(ISORD-12 안내); ISORD-9 proceedings는 AESJ Progress in Nuclear Science and Technology
+    - 'ISORD-9(2017 나고야): 발표 122편(초청 9·구두 40·포스터 73), 참가 153명'
+    - ISORD-12에 젊은 연구자 세션 운영(IRPA Bulletin 47 일본어판)
+    - 개최국 학회가 주관(한국 개최 시 KARP가 주관·KARP 국제학술대회로 등재)
+  acceptance_rate: null
+  sources:
+    - https://isord-12.org/
+    - https://isord-12.org/greetings.html
+    - https://karp.or.kr/index.php?hCode=INTER_05_02
+    - https://www.aesj.net/document/pnst006/data/Foreword.pdf
+knsconf:
+  about: >-
+    한국원자력학회가 매년 5월(춘계)과 10월 말(추계) 두 차례 여는 국내 최대 원자력 학술행사. 2026 춘계는 5.6-8 제주 ICC, 2026 추계는 10.28-30 경주 HICO에서 제59회 정기총회와 함께 개최되어 1,500여 명 참가,
+    논문 600여 편, 워크숍 18개(경북매일 보도). 12개 연구회 중 '방사선 방호', '방사선 이용 및 기기', '원자력계측제어·인간공학 및 자동원격' 연구회가 방사선 계측 관련 세션을 운영. 2027 춘계 일정은 미공지(2026 추계 공문에
+    '우수논문은 2027 춘계에서 시상' 언급만 있음).
+  topics:
+    - 방사선 방호
+    - 방사선 이용 및 기기
+    - 원자력계측제어, 인간공학 및 자동원격
+    - 원자력안전
+    - 핵연료 및 원자력재료
+    - 원자력 열수력
+    - 원자력 정책, 인력 및 협력
+  features:
+    - 논문 제출 시 발표언어(한국어/영어) 선택; 채택 논문은 등록비 필수 납부
+    - 2026 추계 논문 마감 2026-08-20(목) 24:00(학회 공문 제2026-226호)
+    - 학술발표회 논문집(ISSN 3140-1864) 온라인 게재; 우수논문 선정 후 다음 학술발표회에서 시상
+    - 연구회 주관 워크숍·강습회 다수(2026 추계 18개); 2025 추계 '원자력 인공지능 강습회', 2026 춘계 '중대사고 연구와 AI 연구의 융합' 워크숍
+    - 2026년은 ICRS15 개최로 춘·추계 '방사선 방호 연구회' 발표 세션 미운영
+  acceptance_rate: null
+  sources:
+    - https://www.kns.org/boards/view/notice/103354
+    - https://www.kns.org/boards/view/notice/103371
+    - https://www.kns.org/boards/download/34061
+    - https://kbmaeil.com/article/20261028500207
+karp:
+  about: >-
+    대한방사선방어학회(KARP)가 매년 4월 하순(춘계)과 10월 말~11월 하순(추계, 정기총회 병행) 두 차례 여는 방사선방호·선량·검출 분야 국내 학술대회. 2026 춘계 4.22-24, 2026 추계(50차 정기총회) 10.29-31
+    롯데호텔 제주(ICRS15/RPSD2026 직후 연계 개최). 학회지 JRPR(Journal of Radiation Protection and Research) 발행. 2027 일정 미공지.
+  topics: []
+  features:
+    - 초록(논문) 온라인 제출; 2026 추계 마감 9/21 → 9/30 연장(공지), 학술행사 목록에는 10/7 23:59로 표기
+    - 구두발표·포스터 세션
+    - 사전등록 2026-10-28까지
+    - '워크숍 병행(2026: AMETEK ORTEC LabVision 소개, 원자력차세대리더육성사업 학술발표회)'
+    - 정기총회 수상자 발표(2026 제50회)
+  acceptance_rate: null
+  sources:
+    - https://karp.or.kr/index.php?page=view&pg=1&idx=10984&hCode=BOARD&bo_idx=8
+    - https://karp.or.kr/index.php?page=view&pg=1&idx=11004&hCode=BOARD&bo_idx=8
+    - https://karp.or.kr/index.php?hCode=CONF_05_01

@@ -180,7 +180,7 @@ const out = {
   generatedAt: NOW.toISOString(),
   crawledAt: meta.crawledAt || null,
   crawlStale: !meta.crawledAt || NOW - Date.parse(meta.crawledAt) > 21 * 864e5,
-  recentChanges: (meta.changes || []).slice(0, 30),
+  recentChanges: (meta.changes || []).filter((c) => confList.some((x) => x.name === c.venue)).slice(0, 30),
   fields: FIELDS,
   conferences: confList,
   journals,

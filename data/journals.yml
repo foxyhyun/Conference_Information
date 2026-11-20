@@ -1896,3 +1896,77 @@ j-microsc:
   sources:
     - https://www.rms.org.uk/journal/
     - Wiley page https://onlinelibrary.wiley.com/journal/13652818 returned 403
+nima:
+  name: NIM-A
+  full: Nuclear Instruments and Methods in Physics Research Section A
+  publisher: Elsevier
+  link: >-
+    https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment
+  if: 1.5
+  if_year: 2025
+  quick:
+    scope:
+      ko: 검출기·가속기·분광기 등 핵계측 장비와 방법
+      en: Detectors, accelerators, spectrometers and associated equipment
+  if_source: >-
+    https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment
+  sources:
+    - >-
+      https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment
+tns:
+  name: IEEE TNS
+  full: IEEE Transactions on Nuclear Science
+  publisher: IEEE
+  link: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=23
+  if: 2.4
+  if_year: null
+  quick:
+    scope:
+      ko: 핵계측·방사선 검출·의료 영상 기기 (NSS/MIC 본논문 투고처)
+      en: Nuclear instrumentation, radiation detection, imaging instruments (full papers from NSS/MIC)
+  if_source: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=23
+  sources:
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=23
+rad-meas:
+  name: Radiation Measurements
+  full: Radiation Measurements
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/radiation-measurements
+  if: 1.8
+  if_year: 2025
+  quick:
+    scope:
+      ko: 방사선 측정·선량계·루미네선스·검출기 응용
+      en: Radiation measurement, dosimetry, luminescence, detector applications
+  if_source: https://www.sciencedirect.com/journal/radiation-measurements
+  sources:
+    - https://www.sciencedirect.com/journal/radiation-measurements
+jer:
+  name: J. Environ. Radioactivity
+  full: Journal of Environmental Radioactivity
+  publisher: Elsevier
+  link: https://www.sciencedirect.com/journal/journal-of-environmental-radioactivity
+  if: 2.2
+  if_year: 2025
+  quick:
+    scope:
+      ko: 환경 방사능 (대기·토양·해양), 라돈, 핵종 거동·모니터링
+      en: Environmental radioactivity (air, soil, marine), radon, radionuclide monitoring
+  if_source: https://www.sciencedirect.com/journal/journal-of-environmental-radioactivity
+  sources:
+    - https://www.sciencedirect.com/journal/journal-of-environmental-radioactivity
+net:
+  name: Nucl. Eng. Technol.
+  full: Nuclear Engineering and Technology (Korean Nuclear Society)
+  publisher: Elsevier / 한국원자력학회
+  link: https://www.sciencedirect.com/journal/nuclear-engineering-and-technology
+  if: 2.9
+  if_year: 2025
+  oa: full OA
+  quick:
+    scope:
+      ko: 원자력 공학 전반 (KNS 학회지, 오픈액세스)
+      en: Nuclear engineering (KNS journal, open access)
+  if_source: https://www.sciencedirect.com/journal/nuclear-engineering-and-technology
+  sources:
+    - https://www.sciencedirect.com/journal/nuclear-engineering-and-technology
