@@ -1,5 +1,17 @@
 # 국내 학회 홈페이지에서 수집한 논문/초록 모집 공지. 숨기려면 hidden: true
 
+- venue: ipiu
+  venue_name: IPIU
+  title: ✓ 논문제출 사이트(CMT) Open
+  url: https://www.ipiu.or.kr/?act=board&bbs_code=notice&bbs_mode=view&bbs_seq=80
+  first_seen: '2026-11-20'
+  hidden: false
+- venue: ipiu
+  venue_name: IPIU
+  title: 논문제출 사이트(CMT) Open 2026.11.19
+  url: https://www.ipiu.or.kr/?act=board&bbs_mode=view&bbs_code=notice&bbs_seq=80
+  first_seen: '2026-11-20'
+  hidden: false
 - venue: ksbns
   venue_name: 한국뇌신경과학회 학술대회
   title: '1 Call for Symposia for K-Brain 2027 (Deadline: 2027.1.10)'

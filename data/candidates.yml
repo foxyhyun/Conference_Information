@@ -188,6 +188,7 @@
   categories:
     - computer vision
     - bioinformatics
+    - image processing
   fields:
     - biomed
     - imgproc
@@ -208,14 +209,15 @@
   hidden: false
   first_seen: '2026-11-17'
 - eventid: 192039
-  name: CSEA 2026
-  full: 12th International Conference on Computer Science, Engineering and Applications
-  when: Dec 19, 2026 - Dec 20, 2026
-  where: Sydney, Australia
+  name: NATAP 2027
+  full: 10th International Conference on Natural Language Processing and Trends
+  when: Jan 30, 2027 - Jan 31, 2027
+  where: Copenhagen, Denmark
   deadline: '2026-11-21'
   categories:
     - computer vision
     - deep learning
+    - machine learning
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192039
@@ -422,6 +424,7 @@
   deadline: '2026-11-21'
   categories:
     - deep learning
+    - machine learning
   fields:
     - dl
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199700
@@ -530,6 +533,7 @@
   categories:
     - biomedical engineering
     - bioinformatics
+    - machine learning
   fields:
     - biomed
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201306
@@ -752,6 +756,45 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=201716
   hidden: false
   first_seen: '2026-11-17'
+- eventid: 191434
+  name: EDUAI 2026
+  full: 3rd International Conference on Education and Artificial Intelligence
+  when: Dec 30, 2026 - Dec 31, 2026
+  where: Virtual Conference
+  deadline: '2026-11-21'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191434
+  hidden: false
+  first_seen: '2026-11-20'
+- eventid: 191786
+  name: CSITA  2027
+  full: 13th International Conference on Computer Science, Information Technology and Applications
+  when: Jan 30, 2027 - Jan 31, 2027
+  where: Copenhagen, Denmark
+  deadline: '2026-11-21'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191786
+  hidden: false
+  first_seen: '2026-11-20'
+- eventid: 191480
+  name: AIMDS 2026
+  full: 3rd International Conference on AI, Machine Learning and Data Science
+  when: Dec 30, 2026 - Dec 31, 2026
+  where: Virtual Conference
+  deadline: '2026-11-21'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191480
+  hidden: false
+  first_seen: '2026-11-20'
 - eventid: 199582
   name: IJBB 2026
   full: International Journal on Bioinformatics & Biosciences
@@ -766,6 +809,47 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199582
   hidden: false
   first_seen: '2026-11-17'
+- eventid: 195150
+  name: SIPIJ 2026
+  full: 'Signal & Image Processing : An International Journal - H index - 33'
+  when: N/A
+  where: N/A
+  deadline: '2026-11-22'
+  categories:
+    - computer vision
+  fields:
+    - imgproc
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195150
+  hidden: false
+  first_seen: '2026-11-20'
+- eventid: 191992
+  name: IJNGN 2026
+  full: 15th International Conference on Digital Image Processing and Vision
+  when: N/A
+  where: N/A
+  deadline: '2026-11-22'
+  categories:
+    - computer vision
+  fields:
+    - imgproc
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191992
+  hidden: false
+  first_seen: '2026-11-20'
+- eventid: 191359
+  name: IJCSEA 2026
+  full: International Journal of Computer Science, Engineering and Applications
+  when: N/A
+  where: N/A
+  deadline: '2026-11-22'
+  categories:
+    - computer vision
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191359
+  hidden: false
+  first_seen: '2026-11-20'
 - eventid: 200097
   name: BIOIMAGING 2027
   full: 14th International Conference on Bioimaging

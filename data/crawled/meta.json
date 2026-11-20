@@ -1,7 +1,11 @@
 {
-  "crawledAt": "2026-11-17T12:21:40.114Z",
-  "discovered": [],
-  "wikicfpNew": 2,
+  "crawledAt": "2026-11-20T10:27:06.100Z",
+  "discovered": [
+    "ACCV",
+    "3DV",
+    "CHIL"
+  ],
+  "wikicfpNew": 6,
   "scraped": [
     "midl",
     "isbi",
@@ -12,8 +16,152 @@
     "ohbm",
     "ipiu"
   ],
-  "noticesNew": 0,
+  "noticesNew": 2,
   "changes": [
+    {
+      "venue": "SfN Neuroscience",
+      "year": 2027,
+      "label": "Abstracts and Sessions",
+      "kind": "new",
+      "at": "2027-01-28T04:59:00.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "SfN Neuroscience",
+      "year": 2027,
+      "label": "Deadline for abstract submission, 5 p.m. EDT",
+      "kind": "new",
+      "at": "2027-05-28T04:59:00.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "SfN Neuroscience",
+      "year": 2027,
+      "label": "Notifications of abstract acceptance status sent to presenting authors",
+      "kind": "new",
+      "at": "2027-08-06T04:59:00.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ICPR",
+      "year": 2027,
+      "label": "abstract (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))",
+      "kind": "new",
+      "at": "2027-03-02T11:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ICPR",
+      "year": 2027,
+      "label": "paper (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))",
+      "kind": "new",
+      "at": "2027-03-09T11:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ICPR",
+      "year": 2027,
+      "label": "notification (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))",
+      "kind": "new",
+      "at": "2027-06-15T11:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ACCV",
+      "year": 2026,
+      "label": "abstract",
+      "kind": "new",
+      "at": "2026-07-03T23:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ACCV",
+      "year": 2026,
+      "label": "paper",
+      "kind": "new",
+      "at": "2026-07-05T23:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ACCV",
+      "year": 2026,
+      "label": "rebuttal",
+      "kind": "new",
+      "at": "2026-09-02T23:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ACCV",
+      "year": 2026,
+      "label": "notification",
+      "kind": "new",
+      "at": "2026-09-20T23:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "3DV",
+      "year": 2027,
+      "label": "Paper Submission Deadline",
+      "kind": "new",
+      "at": "2026-08-28T18:00:00.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "3DV",
+      "year": 2027,
+      "label": "Supplementary Material Deadline",
+      "kind": "new",
+      "at": "2026-09-02T18:00:00.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "3DV",
+      "year": 2027,
+      "label": "Preliminary Notification",
+      "kind": "new",
+      "at": "2026-10-27T18:00:00.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "3DV",
+      "year": 2027,
+      "label": "Final Notification",
+      "kind": "new",
+      "at": "2026-12-02T18:00:00.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "CHIL",
+      "year": 2026,
+      "label": "Paper Submission",
+      "kind": "new",
+      "at": "2026-02-05T11:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "CHIL",
+      "year": 2026,
+      "label": "Reviews Released",
+      "kind": "new",
+      "at": "2026-03-11T11:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "CHIL",
+      "year": 2026,
+      "label": "Rebuttal Period Ends",
+      "kind": "new",
+      "at": "2026-03-18T11:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "CHIL",
+      "year": 2026,
+      "label": "Final Decisions",
+      "kind": "new",
+      "at": "2026-04-10T11:59:59.000Z",
+      "when": "2026-11-20"
+    },
     {
       "venue": "ISC",
       "year": 2027,

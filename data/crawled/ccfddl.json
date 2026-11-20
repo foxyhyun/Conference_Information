@@ -1276,6 +1276,38 @@
       }
     ]
   },
+  "ECAF": {
+    "title": "ECAF",
+    "full": "European Conference on Algorithmic Fairness",
+    "sub": "AI",
+    "rank": {
+      "ccf": "N",
+      "core": "N",
+      "thcpl": "N"
+    },
+    "editions": [
+      {
+        "year": 2027,
+        "link": "https://2027.ecafconference.org/",
+        "date": "August 25-27, 2027",
+        "place": "Vilnius, Lithuania",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "paper (Regular full research papers. The 5 May 2027 notification publishes a date only; its clock time 23:59:59 and timezone AoE are repository defaults.)",
+            "at": "2027-03-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification (Regular full research papers. The 5 May 2027 notification publishes a date only; its clock time 23:59:59 and timezone AoE are repository defaults.)",
+            "at": "2027-05-06T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      }
+    ]
+  },
   "ECAI": {
     "title": "ECAI",
     "full": "European Conference on Artificial Intelligence",
@@ -2583,18 +2615,18 @@
         "deadlines": [
           {
             "type": "abstract",
-            "label": "abstract (All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified))",
+            "label": "abstract (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))",
             "at": "2027-03-02T11:59:59.000Z"
           },
           {
             "type": "paper",
-            "label": "paper (All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified))",
+            "label": "paper (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))",
             "at": "2027-03-09T11:59:59.000Z"
           },
           {
             "type": "notification",
-            "label": "notification (All dates tentative; March 1 is paper registration; author rebuttal April 23 (provisional, cutoff unspecified))",
-            "at": "2027-06-01T11:59:59.000Z"
+            "label": "notification (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))",
+            "at": "2027-06-15T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -5064,6 +5096,15 @@
           }
         ],
         "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://www.ieeeismar.net/2027/",
+        "date": "TBD",
+        "place": "Kobe, Japan",
+        "timezone": "AoE",
+        "deadlines": [],
+        "source": "ccfddl"
       }
     ]
   },
@@ -5115,6 +5156,15 @@
             "at": "2026-04-02T11:59:59.000Z"
           }
         ],
+        "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://2027.acmmm.org/",
+        "date": "November 8-12, 2027",
+        "place": "Hong Kong SAR, China",
+        "timezone": "AoE",
+        "deadlines": [],
         "source": "ccfddl"
       }
     ]
@@ -6945,7 +6995,28 @@
         "date": "June 21-24, 2027",
         "place": "Montréal, Canada",
         "timezone": "AoE",
-        "deadlines": [],
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2027-01-15T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2027-01-22T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "rebuttal",
+            "at": "2027-03-29T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-04-16T11:59:59.000Z"
+          }
+        ],
         "source": "ccfddl"
       }
     ]
@@ -8504,7 +8575,7 @@
           {
             "type": "paper",
             "label": "paper",
-            "at": "2026-11-21T11:59:59.000Z"
+            "at": "2026-12-05T11:59:59.000Z"
           },
           {
             "type": "notification",
@@ -8957,7 +9028,7 @@
       {
         "year": 2027,
         "link": "https://sigir2027.org/",
-        "date": "July 18-24, 2027",
+        "date": "July 20-22, 2027",
         "place": "San Jose, California, USA",
         "timezone": "AoE",
         "deadlines": [
@@ -8970,6 +9041,11 @@
             "type": "paper",
             "label": "paper",
             "at": "2027-01-22T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-04-06T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -10122,6 +10198,31 @@
           }
         ],
         "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://atc.sigops.org/2027/",
+        "date": "June 28-July 1, 2027",
+        "place": "Rennes, France",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2027-01-20T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "rebuttal",
+            "at": "2027-04-06T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-04-28T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
       }
     ]
   },
@@ -10285,6 +10386,31 @@
             "type": "paper",
             "label": "paper",
             "at": "2026-02-02T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://www.computingfrontiers.org/2027/",
+        "date": "May 25-27, 2027",
+        "place": "Trento, Italy",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2027-01-19T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2027-01-26T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-03-16T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -10607,7 +10733,7 @@
           {
             "type": "notification",
             "label": "notification",
-            "at": "2026-11-24T11:59:00.000Z"
+            "at": "2026-11-24T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -11491,6 +11617,31 @@
           }
         ],
         "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://hpdc.sci.utah.edu/2027/",
+        "date": "June 7-9, 2027",
+        "place": "Atlanta, GA, USA",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2027-01-12T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2027-01-19T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-03-31T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
       }
     ]
   },
@@ -11696,7 +11847,23 @@
         "date": "July 5-8, 2027",
         "place": "Melbourne, Australia",
         "timezone": "AoE",
-        "deadlines": [],
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2027-01-07T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2027-01-14T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-04-19T11:59:59.000Z"
+          }
+        ],
         "source": "ccfddl"
       }
     ]
@@ -13771,6 +13938,15 @@
           }
         ],
         "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://ecscw.eusset.eu/2027/",
+        "date": "July 5-9, 2027",
+        "place": "Limassol, Cyprus",
+        "timezone": "AoE",
+        "deadlines": [],
+        "source": "ccfddl"
       }
     ]
   },
@@ -14667,6 +14843,26 @@
             "type": "paper",
             "label": "paper",
             "at": "2026-04-01T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://uist.acm.org/2027/",
+        "date": "October 27-29, 2027",
+        "place": "VIECON - Vienna Congress & Convention Center, Vienna, Austria",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2027-04-01T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2027-04-08T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -15933,6 +16129,11 @@
             "at": "2026-10-26T11:59:59.000Z"
           },
           {
+            "type": "rebuttal",
+            "label": "rebuttal",
+            "at": "2026-12-21T11:59:59.000Z"
+          },
+          {
             "type": "notification",
             "label": "notification",
             "at": "2027-01-05T11:59:59.000Z"
@@ -16350,6 +16551,11 @@
             "type": "paper",
             "label": "paper",
             "at": "2027-02-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-04-17T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -16849,7 +17055,7 @@
           {
             "type": "abstract",
             "label": "abstract (Research Track - Second Round)",
-            "at": "2026-11-13T11:59:59.000Z"
+            "at": "2026-11-20T11:59:59.000Z"
           },
           {
             "type": "paper",
@@ -17222,6 +17428,31 @@
             "type": "paper",
             "label": "paper",
             "at": "2026-03-01T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://networking.ifip.org/2027/",
+        "date": "June 13-16, 2027",
+        "place": "Dublin, Ireland",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2027-01-16T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2027-01-23T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-04-10T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -18507,12 +18738,12 @@
           {
             "type": "abstract",
             "label": "abstract",
-            "at": "2026-11-17T11:59:59.000Z"
+            "at": "2026-12-01T11:59:59.000Z"
           },
           {
             "type": "paper",
             "label": "paper",
-            "at": "2026-11-24T11:59:59.000Z"
+            "at": "2026-12-08T11:59:59.000Z"
           },
           {
             "type": "rebuttal",
@@ -22016,6 +22247,83 @@
       }
     ]
   },
+  "ICSE-CHASE": {
+    "title": "ICSE-CHASE",
+    "full": "International Conference on Cooperative and Human Aspects of Software Engineering",
+    "sub": "SE",
+    "rank": {
+      "ccf": "N",
+      "core": "B",
+      "thcpl": "N"
+    },
+    "editions": [
+      {
+        "year": 2025,
+        "link": "https://conf.researchr.org/home/chase-2025",
+        "date": "April 27-28, 2025",
+        "place": "Ottawa, Ontario, Canada",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2024-11-10T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2025-01-13T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      },
+      {
+        "year": 2026,
+        "link": "https://conf.researchr.org/home/chase-2026",
+        "date": "April 13-14, 2026",
+        "place": "Rio De Janeiro, Brazil",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2025-10-24T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2026-01-06T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://conf.researchr.org/home/chase-2027",
+        "date": "April 26-27, 2027",
+        "place": "Dublin, Ireland",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2026-10-24T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2026-10-31T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2026-12-19T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      }
+    ]
+  },
   "ICSE": {
     "title": "ICSE",
     "full": "International Conference on Software Engineering",
@@ -22176,19 +22484,24 @@
         "timezone": "AoE",
         "deadlines": [
           {
+            "type": "abstract",
+            "label": "abstract (Research Papers Track)",
+            "at": "2027-02-20T11:59:59.000Z"
+          },
+          {
             "type": "paper",
             "label": "paper (Research Papers Track)",
-            "at": "2027-03-06T11:59:59.000Z"
+            "at": "2027-02-27T11:59:59.000Z"
           },
           {
             "type": "rebuttal",
             "label": "rebuttal (Research Papers Track)",
-            "at": "2027-05-08T11:59:59.000Z"
+            "at": "2027-05-01T11:59:59.000Z"
           },
           {
             "type": "notification",
             "label": "notification (Research Papers Track)",
-            "at": "2027-05-29T11:59:59.000Z"
+            "at": "2027-05-26T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"
@@ -22482,6 +22795,36 @@
           }
         ],
         "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://ispass.org/2027/",
+        "date": "May 9-11, 2027",
+        "place": "New York City, USA",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "at": "2026-12-12T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper",
+            "at": "2026-12-19T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "rebuttal",
+            "at": "2027-02-20T11:59:59.000Z"
+          },
+          {
+            "type": "notification",
+            "label": "notification",
+            "at": "2027-03-09T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
       }
     ]
   },
@@ -22726,6 +23069,46 @@
             "type": "paper",
             "label": "paper (Round 2)",
             "at": "2026-06-06T11:59:59.000Z"
+          }
+        ],
+        "source": "ccfddl"
+      },
+      {
+        "year": 2027,
+        "link": "https://middleware-conf.github.io/2027/",
+        "date": "December 13-17, 2027",
+        "place": "Kyoto, Japan",
+        "timezone": "AoE",
+        "deadlines": [
+          {
+            "type": "abstract",
+            "label": "abstract (Winter cycle)",
+            "at": "2026-11-27T12:00:00.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper (Winter cycle)",
+            "at": "2026-12-04T12:00:00.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "rebuttal (Winter cycle)",
+            "at": "2027-03-08T11:59:59.000Z"
+          },
+          {
+            "type": "abstract",
+            "label": "abstract (Summer cycle)",
+            "at": "2027-05-29T11:59:59.000Z"
+          },
+          {
+            "type": "paper",
+            "label": "paper (Summer cycle)",
+            "at": "2027-06-05T11:59:59.000Z"
+          },
+          {
+            "type": "rebuttal",
+            "label": "rebuttal (Summer cycle)",
+            "at": "2027-08-23T11:59:59.000Z"
           }
         ],
         "source": "ccfddl"

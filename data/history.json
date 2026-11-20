@@ -822,5 +822,77 @@
   "cosyne|2027|registration|Early-bird registration (EST)": {
     "at": "2027-02-02T14:59:59.000Z",
     "since": "2026-11-17T12:21:40.114Z"
+  },
+  "sfn|2027|abstract|Abstracts and Sessions": {
+    "at": "2027-01-28T04:59:00.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "sfn|2027|abstract|Deadline for abstract submission, 5 p.m. EDT": {
+    "at": "2027-05-28T04:59:00.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "sfn|2027|notification|Notifications of abstract acceptance status sent to presenting authors": {
+    "at": "2027-08-06T04:59:00.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-icpr|2027|abstract|abstract (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))": {
+    "at": "2027-03-02T11:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-icpr|2027|paper|paper (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))": {
+    "at": "2027-03-09T11:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-icpr|2027|notification|notification (All dates tentative; March 1 is paper registration; author rebuttal May 17 (provisional, cutoff unspecified))": {
+    "at": "2027-06-15T11:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-accv|2026|abstract|abstract": {
+    "at": "2026-07-03T23:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-accv|2026|paper|paper": {
+    "at": "2026-07-05T23:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-accv|2026|rebuttal|rebuttal": {
+    "at": "2026-09-02T23:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-accv|2026|notification|notification": {
+    "at": "2026-09-20T23:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-3dv|2027|paper|Paper Submission Deadline": {
+    "at": "2026-08-28T18:00:00.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-3dv|2027|supplementary|Supplementary Material Deadline": {
+    "at": "2026-09-02T18:00:00.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-3dv|2027|notification|Preliminary Notification": {
+    "at": "2026-10-27T18:00:00.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-3dv|2027|notification|Final Notification": {
+    "at": "2026-12-02T18:00:00.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-chil|2026|paper|Paper Submission": {
+    "at": "2026-02-05T11:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-chil|2026|notification|Reviews Released": {
+    "at": "2026-03-11T11:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-chil|2026|rebuttal|Rebuttal Period Ends": {
+    "at": "2026-03-18T11:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
+  },
+  "auto-chil|2026|notification|Final Decisions": {
+    "at": "2026-04-10T11:59:59.000Z",
+    "since": "2026-11-20T10:27:06.100Z"
   }
 }
