@@ -12,8 +12,8 @@
       changes_title: '최근 변경된 마감', chg_new: '추가', chg_changed: '변경', prev: '이전',
       months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'], this_month: '이번 달', items: '건', days_left: '일 남음', today: '오늘', passed: '지남',
       field_all: '전체 분야', field_hint: '분야를 여러 개 고르면 모두 해당하는 학회만 보입니다', also_hint: '부 분야 — 제출은 가능하지만 이 분야의 점수 순위에는 포함되지 않음',
-      fields: { dl: 'Deep Learning', medai: '의료 AI', imgproc: '이미지 처리', optics: 'Optics', neuro: 'Neuro (신경과학)', biomed: '의생명 (Bio·임상·통증)' },
-      fields_tiny: { dl: 'DL', medai: '의료AI', imgproc: '영상처리', optics: 'Optics', neuro: 'Neuro', biomed: '의생명' },
+      fields: { dl: 'Deep Learning', medai: '의료 AI', imgproc: '이미지 처리', optics: 'Optics', neuro: 'Neuro (신경과학)', biomed: '의생명 (Bio·임상·통증)', rad: '방사선·원자력' },
+      fields_tiny: { dl: 'DL', medai: '의료AI', imgproc: '영상처리', optics: 'Optics', neuro: 'Neuro', biomed: '의생명', rad: '방사선' },
       region_all: '전체', region_intl: '국제', region_domestic: '국내',
       sort: '정렬', only_upcoming: '마감 일정 있는 것만', target_first: '★ 타겟 먼저', search: '검색 (이름, 장소…)',
       sorts: {
@@ -40,7 +40,7 @@
       only_lab: '🏠 랩이 낸 저널만',
       only_research: '🔬 내 연구 관련만', research_hint: '제출 분야·소개에 내 연구 키워드가 있음 (data/research.yml)',
       scope_ai: '🤖 AI 중심', scope_all: '전체 보기',
-      scope_hint_ai: 'DL·의료 AI·이미지 처리 또는 🔬 내 연구 관련 · 학회 {c} · 저널 {j}', scope_hint_all: '의생명·통증·신경과학·광학 전부 · 학회 {c} · 저널 {j}',
+      scope_hint_ai: 'DL·의료 AI·이미지 처리·방사선, 🔬 내 연구 관련, ★ 타겟·☆ 즐겨찾기 · 학회 {c} · 저널 {j}', scope_hint_all: '의생명·통증·신경과학·광학 전부 · 학회 {c} · 저널 {j}',
       if_label: 'Impact Factor', special: '특집호', rolling: '상시 투고',
       cand_dl: '제출 마감 (AoE 가정)', first_seen: '첫 발견', category: '분류',
       cand_notice: 'WikiCFP 에서 자동 수집한 후보입니다. 검증되지 않았고 질 낮은(약탈적) 학회가 섞여 있을 수 있으니 투고 전 반드시 확인하세요.',
@@ -58,8 +58,8 @@
       changes_title: 'Recently changed deadlines', chg_new: 'added', chg_changed: 'changed', prev: 'was',
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], this_month: 'this month', items: 'items', days_left: 'days left', today: 'today', passed: 'passed',
       field_all: 'All fields', field_hint: 'Pick several fields to show only venues matching all of them', also_hint: 'Secondary field — accepts such submissions but is not ranked within this field',
-      fields: { dl: 'Deep Learning', medai: 'Medical AI', imgproc: 'Image Processing', optics: 'Optics', neuro: 'Neuroscience', biomed: 'Biomedical (bio · clinical · pain)' },
-      fields_tiny: { dl: 'DL', medai: 'Med AI', imgproc: 'Img Proc', optics: 'Optics', neuro: 'Neuro', biomed: 'Biomed' },
+      fields: { dl: 'Deep Learning', medai: 'Medical AI', imgproc: 'Image Processing', optics: 'Optics', neuro: 'Neuroscience', biomed: 'Biomedical (bio · clinical · pain)', rad: 'Radiation · Nuclear' },
+      fields_tiny: { dl: 'DL', medai: 'Med AI', imgproc: 'Img Proc', optics: 'Optics', neuro: 'Neuro', biomed: 'Biomed', rad: 'Rad' },
       region_all: 'All', region_intl: 'International', region_domestic: 'Korea',
       sort: 'Sort', only_upcoming: 'Only with upcoming deadline', target_first: '★ Targets first', search: 'Search (name, place…)',
       sorts: {
@@ -86,7 +86,7 @@
       only_lab: '🏠 Journals our lab used',
       only_research: '🔬 Related to my research', research_hint: 'Submission areas / description mention my research keywords (data/research.yml)',
       scope_ai: '🤖 AI focus', scope_all: 'Show all',
-      scope_hint_ai: 'DL · medical AI · image processing, or 🔬 my research · {c} conferences · {j} journals', scope_hint_all: 'Everything incl. biomedical, pain, neuro, optics · {c} conferences · {j} journals',
+      scope_hint_ai: 'DL · medical AI · image processing · radiation, 🔬 my research, ★ targets · ☆ favorites · {c} conferences · {j} journals', scope_hint_all: 'Everything incl. biomedical, pain, neuro, optics · {c} conferences · {j} journals',
       if_label: 'Impact Factor', special: 'Special issue', rolling: 'Rolling submission',
       cand_dl: 'Submission deadline (AoE assumed)', first_seen: 'First seen', category: 'Categories',
       cand_notice: 'Automatically collected from WikiCFP. Unverified and may include low-quality (predatory) venues — check carefully before submitting.',
@@ -104,8 +104,8 @@
   const state = { tab: 'conf', scope: 'ai', fields: new Set(), region: 'all', sort: 'deadline', q: '', onlyUpcoming: false, targetFirst: true, onlyFav: false, onlyLab: false, onlyResearch: false };
   try { const s = localStorage.getItem('scope'); if (s === 'ai' || s === 'all') state.scope = s; } catch {}
   // AI 중심 범위: DL·의료 AI·이미지 처리 분야이거나 🔬 내 연구 키워드가 걸린 곳
-  const AI_FIELDS = ['dl', 'medai', 'imgproc'];
-  const inScope = (x) => state.scope === 'all' || x.fields.some((f) => AI_FIELDS.includes(f)) || (x.research_score || 0) > 0;
+  const AI_FIELDS = ['dl', 'medai', 'imgproc', 'rad'];
+  const inScope = (x) => state.scope === 'all' || x.always || x.target || FAV.has(x.id) || x.fields.some((f) => AI_FIELDS.includes(f)) || (x.research_score || 0) > 0;
   let DATA = null;
   // 즐겨찾기 (브라우저 로컬 저장)
   const FAV = new Set();
@@ -553,7 +553,7 @@
       state.scope = b.dataset.v;
       try { localStorage.setItem('scope', state.scope); } catch {}
       // AI 중심으로 돌아올 때 범위 밖 분야 체크는 해제
-      if (state.scope === 'ai') for (const f of [...state.fields]) if (!AI_FIELDS.includes(f) && f !== 'optics') state.fields.delete(f);
+      if (state.scope === 'ai') for (const f of [...state.fields]) if (!AI_FIELDS.includes(f)) state.fields.delete(f);
       syncUi(); render();
     });
     $('#lang-seg').addEventListener('click', (e) => {
@@ -597,7 +597,7 @@
       b.checked = b.dataset.v === 'all' ? state.fields.size === 0 : state.fields.has(b.dataset.v);
       b.parentElement.classList.toggle('on', b.checked);
       // AI 중심일 때 비-AI 분야는 흐리게 (🔬 관련 항목만 남으므로)
-      b.parentElement.classList.toggle('dim', state.scope === 'ai' && ['neuro', 'biomed'].includes(b.dataset.v));
+      b.parentElement.classList.toggle('dim', state.scope === 'ai' && ['neuro', 'biomed', 'optics'].includes(b.dataset.v));
     });
     document.querySelectorAll('#scope-seg button').forEach((b) => b.classList.toggle('on', b.dataset.v === state.scope));
     if (DATA) {

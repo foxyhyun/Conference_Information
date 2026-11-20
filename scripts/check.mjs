@@ -2,7 +2,7 @@
 //   node scripts/check.mjs   (오류가 있으면 종료 코드 1)
 import { p, readYaml, toUtcIso, isKnownTz } from './lib.mjs';
 
-const FIELDS = new Set(['dl', 'medai', 'imgproc', 'optics', 'neuro', 'biomed']);
+const FIELDS = new Set(['dl', 'medai', 'imgproc', 'optics', 'neuro', 'biomed', 'rad']);
 const TYPES = new Set(['abstract', 'paper', 'supplementary', 'rebuttal', 'camera_ready', 'notification', 'registration', 'other']);
 const errors = [];
 const warns = [];

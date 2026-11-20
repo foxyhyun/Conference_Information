@@ -30,3 +30,8 @@ keywords:
     ko: "칼슘 이미징·신경 신호"
     en: "Calcium imaging / neural signals"
     match: "calcium|neural activit|neuronal activit|spike|neural (signal|record)|칼슘|신경 활동"
+  - id: radiation
+    ko: "방사선 신호·이상탐지"
+    en: "Radiation signals / anomaly detection"
+    main: true
+    match: "radiat|radon|neutron|gamma[- ]ray|spectroscop(y|ic) unmix|dosimet|radioactiv|anomaly detect|time[- ]series|nuclear instrument|방사선|라돈|중성자|이상 ?탐지"

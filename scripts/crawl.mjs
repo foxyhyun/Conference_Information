@@ -94,6 +94,7 @@ function guessFields(text) {
   if (/optic|photon|laser/.test(t)) f.add('optics');
   if (/neuro|brain/.test(t)) f.add('neuro');
   if (/biolog|bioinformatic|biomed|clinical|pain|stroke|ophthalm|cell/.test(t)) f.add('biomed');
+  if (/radiat|nuclear|radon|neutron|dosimet|radioact/.test(t)) f.add('rad');
   if (/image|imaging|video|multimedia|visual|graphic/.test(t)) f.add('imgproc');
   if (/vision|learning|neural|artificial intelligence|\bai\b|pattern/.test(t)) f.add('dl');
   return f.size ? [...f] : ['dl'];

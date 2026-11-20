@@ -31,7 +31,7 @@
     core: A
   status: new
   discovered: '2026-11-17'
-  hidden: false
+  hidden: true
 - id: auto-icmr
   name: ICMR
   full: ACM SIGMM International Conference on Multimedia Retrieval
@@ -46,7 +46,7 @@
     core: B
   status: new
   discovered: '2026-11-17'
-  hidden: false
+  hidden: true
 - id: auto-acm-mm
   name: ACM MM
   full: ACM International Conference on Multimedia
@@ -61,7 +61,7 @@
     core: A*
   status: new
   discovered: '2026-11-17'
-  hidden: false
+  hidden: true
 - id: auto-mmm
   name: MMM
   full: International Conference on Multimedia Modeling
@@ -75,7 +75,7 @@
     core: B
   status: new
   discovered: '2026-11-17'
-  hidden: false
+  hidden: true
 - id: auto-euvip
   name: EUVIP
   full: European Conference on Visual Information Processing
@@ -90,7 +90,7 @@
   metrics: {}
   status: new
   discovered: '2026-11-17'
-  hidden: false
+  hidden: true
 - id: auto-sibgrapi
   name: SIBGRAPI
   full: Conference on Graphics, Patterns and Images
@@ -104,4 +104,4 @@
   metrics: {}
   status: new
   discovered: '2026-11-17'
-  hidden: false
+  hidden: true
