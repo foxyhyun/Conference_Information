@@ -795,6 +795,19 @@
   link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191480
   hidden: false
   first_seen: '2026-11-20'
+- eventid: 192619
+  name: BINLP 2026
+  full: 6th International Conference on Big Data, IOT & NLP
+  when: Dec 26, 2026 - Dec 27, 2026
+  where: Dubai, UAE
+  deadline: '2026-11-21'
+  categories:
+    - machine learning
+  fields:
+    - dl
+  link: http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192619
+  hidden: false
+  first_seen: '2026-11-20'
 - eventid: 199582
   name: IJBB 2026
   full: International Journal on Bioinformatics & Biosciences

@@ -1,11 +1,11 @@
 {
-  "crawledAt": "2026-11-20T10:27:06.100Z",
+  "crawledAt": "2026-11-20T10:39:05.240Z",
   "discovered": [
     "ACCV",
     "3DV",
     "CHIL"
   ],
-  "wikicfpNew": 6,
+  "wikicfpNew": 1,
   "scraped": [
     "midl",
     "isbi",
@@ -16,8 +16,24 @@
     "ohbm",
     "ipiu"
   ],
-  "noticesNew": 2,
+  "noticesNew": 0,
   "changes": [
+    {
+      "venue": "ANIMMA",
+      "year": 2027,
+      "label": "Abstract submission (closed)",
+      "kind": "new",
+      "at": "2026-11-16T14:59:59.000Z",
+      "when": "2026-11-20"
+    },
+    {
+      "venue": "ANIMMA",
+      "year": 2027,
+      "label": "Early-bird registration",
+      "kind": "new",
+      "at": "2027-03-31T14:59:59.000Z",
+      "when": "2026-11-20"
+    },
     {
       "venue": "SfN Neuroscience",
       "year": 2027,

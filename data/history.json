@@ -894,5 +894,13 @@
   "auto-chil|2026|notification|Final Decisions": {
     "at": "2026-04-10T11:59:59.000Z",
     "since": "2026-11-20T10:27:06.100Z"
+  },
+  "animma|2027|abstract|Abstract submission (closed)": {
+    "at": "2026-11-16T14:59:59.000Z",
+    "since": "2026-11-20T10:39:05.240Z"
+  },
+  "animma|2027|registration|Early-bird registration": {
+    "at": "2027-03-31T14:59:59.000Z",
+    "since": "2026-11-20T10:39:05.240Z"
   }
 }
