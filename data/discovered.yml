@@ -105,3 +105,44 @@
   status: new
   discovered: '2026-11-17'
   hidden: true
+- id: auto-accv
+  name: ACCV
+  full: Asian Conference on Computer Vision
+  fields:
+    - dl
+  region: intl
+  link: https://accv2026.org/
+  sources:
+    ccfddl: ACCV
+  metrics:
+    core: B
+  status: new
+  discovered: '2026-11-20'
+  hidden: false
+- id: auto-3dv
+  name: 3DV
+  full: International Conference on 3D Vision
+  fields:
+    - dl
+  region: intl
+  link: https://3dvconf.github.io/2027/
+  sources:
+    hf: 3dv
+  metrics: {}
+  status: new
+  discovered: '2026-11-20'
+  hidden: false
+- id: auto-chil
+  name: CHIL
+  full: AHLI Conference on Health, Inference, and Learning
+  fields:
+    - medai
+    - dl
+  region: intl
+  link: https://chil.ahli.cc/submit/call-for-papers/
+  sources:
+    hf: chil
+  metrics: {}
+  status: new
+  discovered: '2026-11-20'
+  hidden: false
